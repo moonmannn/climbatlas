@@ -1,0 +1,383 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #2b2118;
+  background: #2b2118;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+@layer utilities {
+  .paper-texture {
+    background-color: #f4ead6;
+    background-image:
+      radial-gradient(circle at 18% 14%, rgb(255 255 255 / 35%), transparent 24%),
+      radial-gradient(circle at 86% 72%, rgb(199 151 72 / 13%), transparent 24%),
+      linear-gradient(90deg, rgb(140 115 87 / 8%) 1px, transparent 1px),
+      linear-gradient(180deg, rgb(140 115 87 / 6%) 1px, transparent 1px);
+    background-size:
+      100% 100%,
+      100% 100%,
+      26px 26px,
+      26px 26px;
+  }
+
+  .medieval-panel {
+    background:
+      radial-gradient(circle at 14% 10%, rgb(199 151 72 / 16%), transparent 24%),
+      linear-gradient(135deg, #2b2118, #1b1611 62%, #1f4d36);
+    border: 1px solid rgb(199 151 72 / 38%);
+    border-radius: 16px 12px 18px 11px;
+    box-shadow:
+      0 28px 90px rgb(12 9 7 / 34%),
+      inset 0 0 0 1px rgb(244 234 214 / 9%);
+    isolation: isolate;
+    position: relative;
+  }
+
+  .medieval-panel::before {
+    border: 1px solid rgb(244 234 214 / 12%);
+    border-radius: 13px 16px 12px 18px;
+    content: "";
+    inset: 7px;
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .medieval-panel::after {
+    background:
+      linear-gradient(45deg, transparent 44%, rgb(199 151 72 / 25%) 45%, rgb(199 151 72 / 25%) 55%, transparent 56%),
+      linear-gradient(-45deg, transparent 44%, rgb(199 151 72 / 22%) 45%, rgb(199 151 72 / 22%) 55%, transparent 56%),
+      radial-gradient(circle, transparent 48%, rgb(199 151 72 / 25%) 49%, transparent 52%);
+    bottom: 18px;
+    content: "";
+    height: 86px;
+    opacity: 0.42;
+    pointer-events: none;
+    position: absolute;
+    right: 18px;
+    width: 86px;
+    z-index: -1;
+  }
+
+  .handdrawn-card {
+    border: 1px solid rgb(140 115 87 / 36%);
+    border-radius: 12px 10px 14px 9px;
+    box-shadow:
+      0 16px 38px rgb(43 33 24 / 14%),
+      inset 0 0 0 1px rgb(255 255 255 / 28%);
+    position: relative;
+  }
+
+  .handdrawn-card::before {
+    border: 1px solid rgb(31 77 54 / 14%);
+    border-radius: 10px 14px 9px 12px;
+    content: "";
+    inset: 4px;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .ink-divider {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(140 115 87 / 45%),
+      transparent
+    );
+    height: 1px;
+    position: relative;
+  }
+
+  .ink-divider::after {
+    background: rgb(31 77 54 / 45%);
+    border-radius: 999px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: -1px;
+    transform: translateX(-50%);
+    width: 42px;
+  }
+
+  .scroll-card {
+    background:
+      radial-gradient(circle at 20% 8%, rgb(255 255 255 / 42%), transparent 24%),
+      linear-gradient(180deg, #fff7e8, #f4ead6);
+    border: 1px solid rgb(140 115 87 / 38%);
+    border-radius: 11px 14px 10px 13px;
+    box-shadow:
+      0 14px 34px rgb(43 33 24 / 16%),
+      inset 0 0 0 1px rgb(255 255 255 / 38%);
+    position: relative;
+  }
+
+  .ink-frame {
+    border: 1px solid rgb(43 33 24 / 22%);
+    box-shadow:
+      inset 0 0 0 1px rgb(140 115 87 / 12%),
+      0 12px 28px rgb(43 33 24 / 12%);
+  }
+
+  .quest-answer {
+    background:
+      linear-gradient(180deg, rgb(255 247 232 / 92%), rgb(244 234 214 / 92%));
+    border: 1px solid rgb(140 115 87 / 34%);
+    border-radius: 10px 14px 10px 12px;
+    padding: 0.9rem;
+    transition:
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+    width: 100%;
+  }
+
+  .quest-answer:hover {
+    border-color: rgb(31 77 54 / 48%);
+    box-shadow: 0 10px 26px rgb(31 77 54 / 13%);
+    transform: translateY(-1px);
+  }
+
+  .quest-answer-selected {
+    background:
+      linear-gradient(180deg, rgb(199 151 72 / 30%), rgb(244 234 214 / 94%));
+    border-color: rgb(31 77 54 / 58%);
+  }
+
+  .quest-reveal {
+    animation: quest-reveal 360ms ease both;
+  }
+
+  .field-note-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes quest-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.treasure-map-frame {
+  background:
+    radial-gradient(circle at 18% 18%, rgb(255 247 232 / 42%), transparent 26%),
+    linear-gradient(135deg, #c79748, #7a3f24 42%, #2b2118);
+  box-shadow:
+    inset 0 0 0 10px rgb(43 33 24 / 22%),
+    inset 0 0 0 13px rgb(244 234 214 / 20%);
+  overflow: hidden;
+  position: relative;
+}
+
+.treasure-map-frame::before {
+  background:
+    linear-gradient(90deg, rgb(43 33 24 / 28%), transparent 8%, transparent 92%, rgb(43 33 24 / 28%)),
+    linear-gradient(0deg, rgb(43 33 24 / 24%), transparent 9%, transparent 91%, rgb(43 33 24 / 24%));
+  content: "";
+  inset: 0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  position: absolute;
+  z-index: 540;
+}
+
+.atlas-map .leaflet-tile {
+  filter: saturate(0.46) sepia(0.52) contrast(0.92) brightness(1.04);
+}
+
+.atlas-map .leaflet-control-zoom a {
+  background: #f4ead6;
+  border-color: rgb(122 63 36 / 32%);
+  color: #2b2118;
+  font-weight: 900;
+}
+
+.atlas-map .leaflet-control-attribution {
+  background: rgb(244 234 214 / 78%);
+  border: 1px solid rgb(122 63 36 / 18%);
+  color: rgb(43 33 24 / 70%);
+}
+
+.atlas-map::after {
+  background:
+    radial-gradient(circle at 22% 22%, rgb(255 247 232 / 28%), transparent 22%),
+    linear-gradient(90deg, rgb(43 33 24 / 20%), transparent 28%, transparent 70%, rgb(43 33 24 / 16%)),
+    radial-gradient(circle at 70% 16%, rgb(244 184 96 / 16%), transparent 30%),
+    repeating-linear-gradient(0deg, rgb(43 33 24 / 4%) 0 1px, transparent 1px 18px),
+    repeating-linear-gradient(90deg, rgb(43 33 24 / 3%) 0 1px, transparent 1px 20px);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 500;
+}
+
+.map-ink-overlay {
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 560;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #f4ead6;
+  border: 1px solid rgb(199 151 72 / 48%);
+  border-radius: 12px 9px 14px 10px;
+  box-shadow: 0 24px 60px rgb(43 33 24 / 32%);
+}
+
+.leaflet-popup-content {
+  margin: 12px;
+}
+
+.leaflet-popup-tip {
+  background: #f4ead6;
+}
+
+.climb-marker {
+  align-items: center;
+  background:
+    radial-gradient(circle at 40% 35%, #fff7e8 0 12%, transparent 13%),
+    linear-gradient(145deg, #c79748, #7a3f24);
+  border: 2px solid rgb(43 33 24 / 72%);
+  border-radius: 999px 999px 999px 8px;
+  box-shadow:
+    0 10px 24px rgb(31 77 54 / 34%),
+    0 0 0 3px rgb(244 234 214 / 76%),
+    inset 0 0 0 1px rgb(43 33 24 / 24%);
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  transform: rotate(-45deg);
+  width: 22px;
+}
+
+.climb-marker::after {
+  background: #1f4d36;
+  border-radius: 999px;
+  content: "";
+  display: block;
+  height: 8px;
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+.region-marker-shell {
+  background: transparent;
+  border: 0;
+}
+
+.region-marker {
+  align-items: center;
+  background:
+    radial-gradient(circle at 30% 20%, rgb(255 247 232 / 92%), transparent 22%),
+    linear-gradient(145deg, rgb(244 234 214 / 96%), rgb(199 151 72 / 90%));
+  border: 2px solid rgb(43 33 24 / 70%);
+  border-radius: 999px 999px 999px 18px;
+  box-shadow:
+    0 16px 28px rgb(43 33 24 / 26%),
+    0 0 0 4px rgb(244 234 214 / 62%),
+    inset 0 0 0 1px rgb(255 247 232 / 72%);
+  color: #2b2118;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 58px;
+  justify-content: center;
+  transform: rotate(-3deg);
+  width: 118px;
+}
+
+.region-marker::before {
+  border: 1px dashed rgb(43 33 24 / 42%);
+  border-radius: inherit;
+  content: "";
+  inset: 5px;
+  position: absolute;
+}
+
+.region-marker-count {
+  color: #1f4d36;
+  font-size: 20px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.region-marker-name {
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  max-width: 98px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.expedition-log {
+  background:
+    linear-gradient(135deg, rgb(244 234 214 / 94%), rgb(255 247 232 / 84%)),
+    repeating-linear-gradient(0deg, rgb(122 63 36 / 8%) 0 1px, transparent 1px 16px);
+  border: 1px solid rgb(122 63 36 / 34%);
+  border-radius: 8px 12px 9px 14px;
+  bottom: 4.75rem;
+  box-shadow: 0 18px 46px rgb(43 33 24 / 24%);
+  max-width: 260px;
+  padding: 1rem;
+  position: absolute;
+  right: 1rem;
+  z-index: 1000;
+}
+
+@media (max-width: 767px) {
+  .expedition-log {
+    bottom: 4.25rem;
+    left: 1rem;
+    max-width: none;
+    right: 1rem;
+  }
+
+  .region-marker {
+    width: 104px;
+  }
+}
