@@ -204,7 +204,7 @@ const chineseQuestions: QuestQuestion[] = [
       {
         value: "strong",
         label: "状态很强",
-        description: "想要一点身体感强、印象深的目标。"
+        description: "想要一点身体参与感强、印象深的目标。"
       }
     ]
   },
@@ -521,7 +521,7 @@ export function RouteFinder({
 
                           <Link
                             className="mt-4 inline-flex w-full items-center justify-center rounded-md border border-forest/30 bg-forest px-3 py-2 text-sm font-black text-parchment transition hover:bg-bark"
-                            href={`/destinations/${recommendation.destinationSlug}#route-${recommendation.route.id}`}
+                            href={`/destinations/${recommendation.destinationSlug}/routes/${recommendation.route.id}`}
                           >
                             {t.openRouteCard}
                           </Link>

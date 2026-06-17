@@ -44,12 +44,21 @@ export type ExternalResourceType =
   | "guidebook/resource"
   | "video/beta";
 
+export type ExternalLinkStatus =
+  | "route-specific"
+  | "guidebook-specific"
+  | "area-only"
+  | "needs-upgrade";
+
 export type ExternalResource = {
   title: string;
   url: string;
   type: ExternalResourceType;
+  linkStatus?: ExternalLinkStatus;
   description: LocalizedText;
 };
+
+export type RouteStatus = "highlight" | "metadata";
 
 export type NotableAscent = {
   climber: string;
@@ -81,6 +90,8 @@ export type RouteHighlight = {
   grade: string;
   type: ClimbingType;
   length: string;
+  sector?: string;
+  status?: RouteStatus;
   style: string;
   summary: string;
   practiceFocus: string[];

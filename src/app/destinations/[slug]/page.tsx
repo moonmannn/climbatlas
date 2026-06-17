@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
 import { RouteFinder } from "@/components/RouteFinder";
-import { RouteHighlightCard } from "@/components/RouteHighlightCard";
+import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
 
 type DestinationPageProps = {
@@ -378,10 +378,12 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                   />
                 </div>
 
-                <div className="mt-6 grid gap-5">
-                  {destination.routes.map((route) => (
-                    <RouteHighlightCard key={route.id} route={route} />
-                  ))}
+                <div className="mt-6">
+                  <RouteIndex
+                    destinationName={destination.name}
+                    destinationSlug={destination.slug}
+                    routes={destination.routes}
+                  />
                 </div>
               </>
             ) : (

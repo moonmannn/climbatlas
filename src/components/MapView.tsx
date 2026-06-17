@@ -23,6 +23,7 @@ import type { Destination } from "@/types/destination";
 type MapViewProps = {
   compact?: boolean;
   destinations: Destination[];
+  showExpeditionLog?: boolean;
 };
 
 type AtlasRegion = {
@@ -128,7 +129,11 @@ function RegionMarker({
   );
 }
 
-export function MapView({ compact = false, destinations }: MapViewProps) {
+export function MapView({
+  compact = false,
+  destinations,
+  showExpeditionLog = true
+}: MapViewProps) {
   const { locale } = useLanguage();
   const t = getUiText(locale);
   const [zoom, setZoom] = useState(2);
@@ -245,7 +250,7 @@ export function MapView({ compact = false, destinations }: MapViewProps) {
             ))}
       </MapContainer>
 
-      {!compact && (
+      {!compact && showExpeditionLog && (
         <aside className="expedition-log">
           <p className="text-[11px] font-black uppercase tracking-[0.2em] text-ridge">
             {locale === "zh" ? "探险日志" : "Expedition log"}

@@ -276,6 +276,7 @@ export function getRouteRecommendations(
   answers: RouteFinderAnswers
 ) {
   return candidates
+    .filter((candidate) => (candidate.route.status ?? "highlight") === "highlight")
     .map<RouteRecommendation>((candidate) => {
       const score =
         40 +

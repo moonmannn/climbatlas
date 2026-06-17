@@ -441,7 +441,7 @@ Object.assign(routeLocalizedContent, {
   "southern-smoke-direct-red-river-gorge": routeCopy({
     style: ["A sharper version of Red River Gorge endurance and power.", "更尖锐的红河峡谷耐力与力量组合。"],
     summary: ["This is the choice when regular pump sounds too polite and you want the direct version of the conversation.", "当普通泵感听起来太客气，你想直接进入重点时，可以看它。"],
-    bestFor: ["Strong climbers who want a serious, physical sport objective.", "适合想要认真、身体感强运动目标的强力攀岩者。"],
+    bestFor: ["Strong climbers who want a serious, physical sport objective.", "适合想要认真、身体参与感强的运动攀目标的强力攀岩者。"],
     decisionHint: ["Pick it when you feel strong and want the route to know it.", "当你状态很强，也想让路线知道这件事时，选它。"],
     practiceFocus: [["limit endurance", "try quality", "mental reset"], ["极限耐力", "尝试质量", "心理重启"]],
     editorialTips: [["Do fewer attempts if it keeps them meaningful.", "Power endurance is still endurance; respect recovery."], ["如果能保证质量，就少做几次尝试。", "力量耐力也是耐力，请尊重恢复。"]]
@@ -547,7 +547,7 @@ Object.assign(routeLocalizedContent, {
   }),
   "shock-wall-squamish": routeCopy({
     style: ["A Squamish hard-route reference with sharp technical energy.", "带尖锐技术感的斯阔米什高难参考线。"],
-    summary: ["Shock Wall is for days when you want the route finder to point toward something crisp, difficult, and not especially cuddly.", "Shock Wall 适合想让路线推荐指向清晰、困难、并且不太会撒娇的东西。"],
+    summary: ["Shock Wall is for days when you want the route finder to point toward something crisp, difficult, and not especially forgiving.", "Shock Wall 适合想让路线推荐指向清晰、很难、而且不太会放水的目标。"],
     bestFor: ["Strong climbers comparing harder Squamish candidates.", "适合比较斯阔米什较难目标的强力攀岩者。"],
     decisionHint: ["Choose it when you want a serious technical challenge.", "当你想要认真技术挑战时，选它。"],
     practiceFocus: [["precision", "strength", "try quality"], ["精准", "力量", "尝试质量"]],
@@ -566,7 +566,7 @@ Object.assign(routeLocalizedContent, {
   }),
   "labattoir-fontainebleau": routeCopy({
     style: ["A compact Fontainebleau power-and-position puzzle.", "短小但很考位置和力量的枫丹抱石谜题。"],
-    summary: ["L'Abattoir is for days when you want a classic that feels direct, physical, and slightly rude in a useful way.", "L'Abattoir 适合想要直接、身体感强、并且有点有用地不客气的经典。"],
+    summary: ["L'Abattoir is for days when you want a classic that feels direct, physical, and blunt in a useful way.", "L'Abattoir 适合想要直接、身体参与感强、而且不客气但很有用的经典。"],
     bestFor: ["Boulderers practicing commitment on short classic problems.", "适合在短经典上练投入度的抱石者。"],
     decisionHint: ["Choose it when you want a clear little test, not a long negotiation.", "当你想要一个清楚的小测试，而不是长谈判时，选它。"],
     practiceFocus: [["body tension", "commitment", "precision"], ["身体张力", "投入度", "精准"]],
@@ -574,7 +574,7 @@ Object.assign(routeLocalizedContent, {
   }),
   "le-joker-fontainebleau": routeCopy({
     style: ["A Fontainebleau classic with playful technical character.", "带一点顽皮技术感的枫丹白露经典。"],
-    summary: ["Le Joker is the route-card equivalent of a raised eyebrow: fun, famous, and not here to do the work for you.", "Le Joker 像路线卡里的挑眉：有趣、有名，但不会替你把活干了。"],
+    summary: ["Le Joker feels like a raised eyebrow in route form: fun, famous, and not here to do the work for you.", "Le Joker 像一张会挑眉的路线卡：有趣、有名，但不会替你把活干了。"],
     bestFor: ["Climbers who enjoy solving movement rather than forcing it.", "适合喜欢解动作，而不是硬拽过去的人。"],
     decisionHint: ["Pick it when you want technique with a grin.", "当你想要带一点笑意的技术题时，选它。"],
     practiceFocus: [["movement reading", "body position", "play"], ["动作阅读", "身体位置", "玩心"]],
@@ -617,7 +617,7 @@ Object.assign(routeLocalizedContent, {
     summary: ["Soudain Seul is the card for when inspiration is useful even if the route is not today's realistic plan.", "Soudain Seul 适合当作灵感卡，即使它不一定是今天的现实计划。"],
     bestFor: ["Elite climbers and readers tracking the top end of bouldering.", "适合精英攀岩者和关注抱石顶端发展的读者。"],
     decisionHint: ["Choose it as inspiration unless your current season truly points there.", "除非你的当前周期真的指向它，否则先把它当灵感。"],
-    practiceFocus: [["elite power", "grade humility", "long-term vision"], ["精英力量", "难度谦逊", "长期视角"]],
+    practiceFocus: [["elite power", "grade perspective", "long-term vision"], ["精英力量", "难度判断", "长期视角"]],
     editorialTips: [["Aspirational routes are useful when they clarify training, not when they inflate ego.", "Let the grade discussion stay honest and flexible."], ["灵感路线的价值在于明确训练，不是膨胀 ego。", "让难度讨论保持诚实和弹性。"]]
   })
 });
@@ -913,7 +913,7 @@ Object.assign(routeLocalizedContent, {
     bestFor: ["Alpine climbers considering major Mont Blanc routes.", "适合考虑勃朗峰主要路线的阿尔卑斯攀登者。"],
     decisionHint: ["Pick it when your mountain systems feel calm, not improvised.", "当你的山地系统感觉冷静，而不是临时拼凑时，考虑它。"],
     practiceFocus: [["endurance", "weather judgment", "mountain pacing"], ["耐力", "天气判断", "山地节奏"]],
-    editorialTips: [["Big snowy objectives amplify small decisions.", "Ambition should arrive with humility."], ["大型雪山目标会放大小决定。", "野心最好和谦逊一起到场。"]]
+    editorialTips: [["Big snowy objectives amplify small decisions.", "Ambition should arrive with clear judgment."], ["大型雪山目标会放大小决定。", "野心最好和清醒判断一起到场。"]]
   }),
   "gouter-route-mont-blanc": routeCopy({
     style: ["Classic Mont Blanc ascent style with serious mountain logistics.", "经典勃朗峰登顶风格，山地后勤很认真。"],
@@ -971,7 +971,7 @@ Object.assign(routeLocalizedContent, {
     summary: ["Bibliographie is for days when inspiration sits at the edge of what sport climbing currently asks from people.", "Bibliographie 适合把灵感放在运动攀当前极限边缘来看的日子。"],
     bestFor: ["Elite climbers and readers following top-end sport progression.", "适合关注运动攀顶端发展的精英攀岩者和读者。"],
     decisionHint: ["Choose it as a serious inspiration card unless your season truly points there.", "除非你的周期真的指向它，否则先把它当认真灵感卡。"],
-    practiceFocus: [["top-end endurance", "grade humility", "long-term planning"], ["顶端耐力", "难度谦逊", "长期计划"]],
+    practiceFocus: [["top-end endurance", "grade perspective", "long-term planning"], ["顶端耐力", "难度判断", "长期计划"]],
     editorialTips: [["Extreme grades are conversations, not decorations.", "Let source strength guide how confidently the card speaks."], ["极限难度是对话，不是装饰。", "让来源强度决定卡片说话的确定程度。"]]
   }),
   "three-degrees-of-separation-ceuse": routeCopy({
@@ -1184,11 +1184,11 @@ Object.assign(routeLocalizedContent, {
     editorialTips: [["Critical does not mean chaotic.", "A hard project improves when feedback gets specific."], ["临界不等于混乱。", "反馈越具体，高难项目越会进步。"]]
   }),
   "sleeping-lion-siurana": routeCopy({
-    style: ["Modern Siurana hard sport route with big-cat energy.", "带大型猫科气质的现代休拉纳高难运动线。"],
+    style: ["Modern Siurana hard sport route with sleeping-lion pressure.", "像狮子一样安静但有压迫感的现代休拉纳高难运动线。"],
     summary: ["Sleeping Lion is for climbers who like inspiration that looks calm until it opens one eye.", "Sleeping Lion 适合喜欢那种看起来很安静、直到睁开一只眼的灵感。"],
     bestFor: ["Elite climbers and readers following modern sport-climbing progression.", "适合关注现代运动攀发展的精英攀岩者和读者。"],
     decisionHint: ["Choose it as a long-view inspiration card.", "把它当成长期视角的灵感卡。"],
-    practiceFocus: [["elite endurance", "grade humility", "long-term vision"], ["精英耐力", "难度谦逊", "长期视角"]],
+    practiceFocus: [["elite endurance", "grade perspective", "long-term vision"], ["精英耐力", "难度判断", "长期视角"]],
     editorialTips: [["Use elite routes to clarify direction, not inflate urgency.", "Let repeat history shape how confidently you speak about grades."], ["用精英路线明确方向，不要放大焦虑。", "让重复历史决定你谈难度的确定程度。"]]
   }),
   "king-capella-siurana": routeCopy({
@@ -1231,8 +1231,8 @@ Object.assign(routeLocalizedContent, {
     summary: ["Perfecto Mundo is for climbers who want inspiration that feels polished, brutal, and very much at the top end.", "Perfecto Mundo 适合想要看起来精致、实际残酷、并且非常顶端的灵感。"],
     bestFor: ["Elite climbers and readers following top sport-climbing progression.", "适合关注顶端运动攀进展的精英攀岩者和读者。"],
     decisionHint: ["Pick it as a serious inspiration card unless your training truly points there.", "除非你的训练真的指向它，否则先把它当认真灵感卡。"],
-    practiceFocus: [["elite pocket power", "project discipline", "grade humility"], ["精英洞点力量", "项目纪律", "难度谦逊"]],
-    editorialTips: [["Perfect names still come with imperfect sessions.", "Let elite inspiration clarify the next humble step."], ["完美名字也会有不完美 session。", "让精英灵感明确下一个谦逊步骤。"]]
+    practiceFocus: [["elite pocket power", "project discipline", "grade perspective"], ["精英洞点力量", "项目纪律", "难度判断"]],
+    editorialTips: [["Perfect names still come with imperfect sessions.", "Let elite inspiration clarify the next practical step."], ["完美名字也会有不完美 session。", "让精英灵感明确下一步该怎么练。"]]
   }),
   "first-round-first-minute-margalef": routeCopy({
     style: ["Short, powerful Margalef pocket climbing with knockout personality.", "短强度马尔加莱夫洞点线，名字自带击倒感。"],
@@ -1303,7 +1303,7 @@ Object.assign(routeLocalizedContent, {
   }),
   "over-the-moon-yangshuo": routeCopy({
     style: ["Yangshuo limestone with cheerful route-name energy.", "带开心路线名气质的阳朔灰岩线。"],
-    summary: ["Over the Moon is a good card when you want climbing to feel bright without becoming empty calories.", "Over the Moon 适合想让攀岩感觉明亮，但不是空热量的人。"],
+    summary: ["Over the Moon is a good card when you want climbing to feel bright without becoming shallow.", "Over the Moon 适合想让攀岩感觉明亮，但不只是好看的人。"],
     bestFor: ["Climbers mixing confidence, flow, and a travel mood.", "适合把信心、流动感和旅行心情混在一起的人。"],
     decisionHint: ["Choose it when joy is useful fuel.", "当快乐是有用燃料时，选它。"],
     practiceFocus: [["confidence", "movement flow", "breathing"], ["信心", "动作流动", "呼吸"]],
@@ -1441,7 +1441,7 @@ Object.assign(routeLocalizedContent, {
     bestFor: ["Climbers interested in Long Dong trad character and area context.", "适合对龙洞 trad 性格和区域语境感兴趣的人。"],
     decisionHint: ["Choose it as a research card for adventurous seaside style.", "把它当研究卡，用来理解海边冒险风格。"],
     practiceFocus: [["trad judgment", "movement control", "ocean exposure"], ["trad 判断", "动作控制", "海边暴露感"]],
-    editorialTips: [["Area-context cards should stay humble.", "Do not turn weak metadata into confident advice."], ["区域语境卡要保持谦逊。", "不要把弱元数据写成自信建议。"]]
+    editorialTips: [["Area-context cards should stay cautious.", "Do not turn weak metadata into confident advice."], ["区域语境卡要保持克制。", "不要把弱元数据写成自信建议。"]]
   }),
   "back-door-route-line-long-dong": routeCopy({
     style: ["Long Dong sandstone route-line context for style comparison.", "用于风格比较的龙洞砂岩路线线索。"],
@@ -1565,7 +1565,7 @@ Object.assign(routeLocalizedContent, {
     style: ["Long Grampians cave link-up with bouldering power and route-style endurance.", "结合抱石力量和路线式耐力的 Grampians 长洞穴连接线。"],
     summary: ["The Wheel of Life is for climbers who want a problem that feels less like a single move and more like a weather system.", "The Wheel of Life 适合想要一条不像单个动作、更像一套天气系统的抱石的人。"],
     bestFor: ["Elite climbers comparing long roof links and grade-history context.", "适合比较长屋檐连接和难度历史语境的精英攀岩者。"],
-    decisionHint: ["Pick it when endurance, patience, and grade humility are the whole point.", "当耐力、耐心和难度谦逊就是重点时，选它。"],
+    decisionHint: ["Pick it when endurance, patience, and grade honesty are the whole point.", "当耐力、耐心和清醒看待难度就是重点时，选它。"],
     practiceFocus: [["long power-endurance", "rest strategy", "mental pacing"], ["长力量耐力", "休息策略", "心理节奏"]],
     editorialTips: [["Long boulders reward patience that looks almost unreasonable.", "Use the grade discussion as context, not a promise."], ["长抱石奖励看起来几乎不合理的耐心。", "把难度讨论当语境，不要当承诺。"]]
   }),
@@ -1583,7 +1583,7 @@ Object.assign(routeLocalizedContent, {
     bestFor: ["Strong boulderers comparing cave components before bigger links.", "适合在更大连接线前比较洞穴组件的强力抱石者。"],
     decisionHint: ["Pick it when you want a hard cave objective with a clearer frame.", "当你想要一个框架更清楚的高难洞穴目标时，选它。"],
     practiceFocus: [["roof body tension", "specific power", "section rehearsal"], ["屋檐身体张力", "专项力量", "分段练习"]],
-    editorialTips: [["Component problems are useful maps of a bigger style.", "This card still needs stronger source depth, so keep it humble."], ["组件问题是理解更大风格的有用地图。", "这张卡仍需要更强来源，所以保持谦逊。"]]
+    editorialTips: [["Component problems are useful maps of a bigger style.", "This card still needs stronger source depth, so keep it cautious."], ["组成线路有助于理解更大的风格。", "这张卡仍需要更强来源，所以表达要克制。"]]
   }),
   "cave-man-grampians": routeCopy({
     style: ["Grampians cave problem with approachable roof-style reference value.", "具有较亲近屋檐风格参考价值的 Grampians 洞穴问题。"],
@@ -1595,7 +1595,7 @@ Object.assign(routeLocalizedContent, {
   }),
   "dead-cant-dance-grampians": routeCopy({
     style: ["Hard Grampians cave component with contact-strength emphasis.", "强调接触力量的 Grampians 高难洞穴组件。"],
-    summary: ["Dead Can't Dance is for climbers who want the cave to feel sharp, physical, and more focused than sprawling.", "Dead Can't Dance 适合想让洞穴感觉尖锐、身体感强，而不是铺得很开的人。"],
+    summary: ["Dead Can't Dance is for climbers who want the cave to feel sharp, physical, and focused rather than sprawling.", "Dead Can't Dance 适合想要尖锐、身体参与感强、而且更集中的洞穴路线的人。"],
     bestFor: ["Advanced boulderers comparing named cave components.", "适合比较有名洞穴组件的进阶抱石者。"],
     decisionHint: ["Pick it when focused cave power is the goal.", "当目标是集中的洞穴力量时，选它。"],
     practiceFocus: [["contact strength", "try quality", "fatigue control"], ["接触力量", "尝试质量", "疲劳控制"]],
@@ -1649,7 +1649,7 @@ Object.assign(routeLocalizedContent, {
     summary: ["Livin' Large is for climbers who understand that sometimes the hardest part is not only the holds.", "Livin' Large 适合明白有时候最难的不只是手点的人。"],
     bestFor: ["Experienced highball boulderers thinking carefully about risk and readiness.", "适合认真考虑风险和准备度的有经验高球抱石者。"],
     decisionHint: ["Pick it when mental readiness is the main attraction, not a footnote.", "当心理准备是主要吸引力，而不是脚注时，选它。"],
-    practiceFocus: [["highball composure", "risk judgment", "grade humility"], ["高球镇定", "风险判断", "难度谦逊"]],
+    practiceFocus: [["highball composure", "risk judgment", "grade perspective"], ["高球镇定", "风险判断", "难度判断"]],
     editorialTips: [["A highball card should never sound casual.", "Choosing a lower-consequence objective can be excellent judgment."], ["高球卡永远不该听起来随便。", "选择后果更低的目标也可以是优秀判断。"]]
   }),
   "golden-shadow-rocklands": routeCopy({
@@ -1747,7 +1747,7 @@ Object.assign(routeLocalizedContent, {
     style: ["Sustained hard sandstone with project-list personality.", "持续高难砂岩，很适合进入项目清单。"],
     summary: ["Transworld Depravity is a lively hard-route card: useful for making training specific without making the day heavy.", "Transworld Depravity 是一张很有性格的高难卡：能让训练更具体，又不必把一天变沉。"],
     bestFor: ["Experienced sport climbers who like hard goals with character.", "适合喜欢有性格高难目标的有经验运动攀者。"],
-    decisionHint: ["Pick it when your notes need details, not just motivation.", "当你的记录需要细节，而不只是鸡血时，选它。"],
+    decisionHint: ["Pick it when your notes need details, not just motivation.", "当你的记录需要细节，而不只是打气时，选它。"],
     practiceFocus: [["endurance intervals", "movement economy", "session notes"], ["耐力间歇", "动作经济性", "session 记录"]],
     editorialTips: [["Specific feedback makes hard routes less mysterious.", "Do not let a wild name create a wild warm-up."], ["具体反馈会让高难路线没那么神秘。", "不要让狂野名字制造狂野热身。"]]
   }),
@@ -1819,7 +1819,7 @@ Object.assign(routeLocalizedContent, {
     style: ["Aspirational Fontainebleau benchmark with modern bite.", "现代感很强的枫丹灵感标杆。"],
     summary: ["Karma is a dream with teeth. Use it to clarify training, not to rush the story.", "Karma 是一个有牙齿的梦想。用它明确训练，不要催剧情。"],
     bestFor: ["Strong boulderers studying the forest's harder references.", "适合研究枫丹更高难参照的强抱石者。"],
-    decisionHint: ["Choose it when a hard idea helps you plan the next humble step.", "当一个硬想法能帮你规划下一个谦逊步骤时，选它。"],
+    decisionHint: ["Choose it when a hard idea helps you plan the next practical step.", "当一个高难想法能帮你规划下一步练什么时，选它。"],
     practiceFocus: [["limit bouldering", "body tension", "patience"], ["极限抱石", "身体张力", "耐心"]],
     editorialTips: [["Keep the dream vivid and the session practical.", "Aspirational routes are useful when they create honest questions."], ["让梦想鲜明，让 session 实际。", "灵感路线在能提出诚实问题时最有用。"]]
   }),
@@ -1981,7 +1981,9 @@ export function getRouteSearchText(route: RouteHighlight) {
     ]),
     ...(route.externalResources ?? []).flatMap((resource) => [
       resource.title,
+      resource.url,
       resource.type,
+      resource.linkStatus,
       resource.description.en,
       resource.description.zh
     ]),

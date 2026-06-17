@@ -2,6 +2,10 @@ node_modules
 .next
 out
 dist
+.codex-logs
+outputs
+work
+tsconfig.tsbuildinfo
 .env
 .env.local
 npm-debug.log*
