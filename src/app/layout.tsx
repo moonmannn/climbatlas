@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { SupabaseProvider } from "@/components/SupabaseProvider";
+import { UserProfileProvider } from "@/components/UserProfileProvider";
+import { UserRoutesProvider } from "@/components/UserRoutesProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <SupabaseProvider>
+            <UserProfileProvider>
+              <UserRoutesProvider>{children}</UserRoutesProvider>
+            </UserProfileProvider>
+          </SupabaseProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

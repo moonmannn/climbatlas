@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
 import { RouteFinder } from "@/components/RouteFinder";
@@ -59,7 +60,10 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           >
             <LocalizedText en="Back to map" zh="返回地图" />
           </Link>
-          <LanguageToggle />
+          <div className="flex flex-wrap items-center gap-2">
+            <AuthButton tone="dark" />
+            <LanguageToggle />
+          </div>
         </div>
 
         <section className="paper-texture mt-5 overflow-hidden rounded-lg border border-ridge/30 bg-parchment shadow-atlas">

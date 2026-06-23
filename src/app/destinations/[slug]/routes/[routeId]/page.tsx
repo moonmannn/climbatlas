@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
 import { RouteHighlightCard } from "@/components/RouteHighlightCard";
 import { RouteMetadataCard } from "@/components/RouteMetadataCard";
+import { UserRouteControls } from "@/components/UserRouteControls";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
 
 type RoutePageProps = {
@@ -62,7 +64,10 @@ export default async function RoutePage({ params }: RoutePageProps) {
               <LocalizedText en="Back to map" zh="返回地图" />
             </Link>
           </div>
-          <LanguageToggle />
+          <div className="flex flex-wrap items-center gap-2">
+            <AuthButton tone="dark" />
+            <LanguageToggle />
+          </div>
         </div>
 
         <section className="paper-texture mt-5 overflow-hidden rounded-lg border border-ridge/30 bg-parchment shadow-atlas">
@@ -82,6 +87,11 @@ export default async function RoutePage({ params }: RoutePageProps) {
           </div>
 
           <div className="p-5 sm:p-6">
+            <UserRouteControls
+              destinationName={destination.name}
+              destinationSlug={destination.slug}
+              route={route}
+            />
             {route.status === "metadata" ? (
               <RouteMetadataCard route={route} />
             ) : (

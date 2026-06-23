@@ -13,7 +13,9 @@ import {
   type Filters,
   type SearchResults
 } from "@/components/FilterSidebar";
+import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, useLanguage } from "@/components/LanguageProvider";
+import { MyAtlasClient } from "@/components/MyAtlasClient";
 import { getUiText } from "@/lib/uiText";
 
 const MapView = dynamic(
@@ -36,9 +38,12 @@ const defaultFilters: Filters = {
   searchQuery: ""
 };
 
+type HomeMode = "map" | "profile";
+
 export function HomeClient() {
   const { locale } = useLanguage();
   const t = getUiText(locale);
+  const [activeMode, setActiveMode] = useState<HomeMode>("map");
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const feedbackUrl = process.env.NEXT_PUBLIC_FEEDBACK_URL?.trim();
@@ -151,6 +156,30 @@ export function HomeClient() {
           </Link>
 
           <div className="flex flex-wrap items-center justify-end gap-2">
+            <div className="flex rounded-lg border border-ridge/25 bg-white/55 p-1 shadow-sm">
+              <button
+                className={`rounded-md px-3 py-2 text-sm font-black transition ${
+                  activeMode === "map"
+                    ? "bg-forest text-parchment"
+                    : "text-bark/70 hover:bg-white hover:text-bark"
+                }`}
+                onClick={() => setActiveMode("map")}
+                type="button"
+              >
+                {locale === "zh" ? "地图" : "Map"}
+              </button>
+              <button
+                className={`rounded-md px-3 py-2 text-sm font-black transition ${
+                  activeMode === "profile"
+                    ? "bg-forest text-parchment"
+                    : "text-bark/70 hover:bg-white hover:text-bark"
+                }`}
+                onClick={() => setActiveMode("profile")}
+                type="button"
+              >
+                {locale === "zh" ? "个人主页" : "Profile"}
+              </button>
+            </div>
             <a
               className="rounded-lg border border-ridge/25 bg-white/70 px-4 py-2 text-sm font-black text-bark shadow-sm transition hover:border-forest/35 hover:bg-white"
               href={feedbackHref}
@@ -159,116 +188,123 @@ export function HomeClient() {
             >
               {t.sendFeedback}
             </a>
+            <AuthButton />
             <LanguageToggle />
           </div>
         </div>
       </header>
 
-      <section className="mx-auto grid min-h-[calc(100vh-73px)] max-w-[96rem] bg-parchment lg:grid-cols-[minmax(0,1fr)_28rem]">
-        <div className="relative min-h-[520px] border-r border-ridge/20">
-          <MapView destinations={filteredDestinations} showExpeditionLog={false} />
-        </div>
-
-        <aside className="paper-texture flex flex-col border-t border-ridge/25 bg-parchment lg:border-l lg:border-t-0">
-          <div className="border-b border-ridge/25 p-6">
-            <p className="field-note-label text-forest">
-              {locale === "zh" ? "地图入口" : "Atlas entry"}
-            </p>
-            <h1 className="mt-3 text-4xl font-black leading-tight text-forest">
-              ClimbAtlas
-            </h1>
-            <h2 className="mt-2 text-2xl font-black leading-tight text-bark">
-              {locale === "zh"
-                ? "从地图直接选目的地"
-                : "Choose a climbing destination from the map"}
-            </h2>
-            <p className="mt-3 text-sm font-bold leading-6 text-bark/68">
-              {locale === "zh"
-                ? "首页先帮你找到想去的岩区。进入目的地后，再用路线目录和小测试决定具体爬哪条线。"
-                : "Start by choosing a place. Once you enter a destination, the route directory and quiz help you decide what to climb."}
-            </p>
-
-            <button
-              className="mt-5 inline-flex w-full items-center justify-center rounded-lg border border-forest/25 bg-forest px-4 py-3 text-sm font-black text-parchment shadow-atlas transition hover:bg-bark"
-              onClick={() => setIsFilterOpen(true)}
-              type="button"
-            >
-              {locale === "zh" ? "筛选与搜索" : "Filter and search"}
-            </button>
+      {activeMode === "map" ? (
+        <section className="mx-auto grid min-h-[calc(100vh-73px)] max-w-[96rem] bg-parchment lg:grid-cols-[minmax(0,1fr)_28rem]">
+          <div className="relative min-h-[520px] border-r border-ridge/20">
+            <MapView destinations={filteredDestinations} showExpeditionLog={false} />
           </div>
 
-          <dl className="grid grid-cols-3 border-b border-ridge/25 bg-bark p-5 text-parchment">
-            <AtlasStat label={locale === "zh" ? "目的地" : "Places"} value={destinations.length} />
-            <AtlasStat label={locale === "zh" ? "路线" : "Routes"} value={routeCount} />
-            <AtlasStat label={locale === "zh" ? "国家" : "Countries"} value={stats.countries} />
-          </dl>
-
-          <div className="flex-1 overflow-y-auto p-5">
-            <div className="flex items-center justify-between gap-3">
-              <h2 className="text-base font-black text-bark">
-                {locale === "zh" ? "精选目的地" : "Featured destinations"}
+          <aside className="paper-texture flex flex-col border-t border-ridge/25 bg-parchment lg:border-l lg:border-t-0">
+            <div className="border-b border-ridge/25 p-6">
+              <p className="field-note-label text-forest">
+                {locale === "zh" ? "地图入口" : "Atlas entry"}
+              </p>
+              <h1 className="mt-3 text-4xl font-black leading-tight text-forest">
+                ClimbAtlas
+              </h1>
+              <h2 className="mt-2 text-2xl font-black leading-tight text-bark">
+                {locale === "zh"
+                  ? "从地图直接选目的地"
+                  : "Choose a climbing destination from the map"}
               </h2>
+              <p className="mt-3 text-sm font-bold leading-6 text-bark/68">
+                {locale === "zh"
+                  ? "首页先帮你找到想去的岩区。进入目的地后，再用路线目录和小测试决定具体爬哪条线。"
+                  : "Start by choosing a place. Once you enter a destination, the route directory and quiz help you decide what to climb."}
+              </p>
+
               <button
-                className="text-xs font-black text-forest underline decoration-forest/30 underline-offset-4"
+                className="mt-5 inline-flex w-full items-center justify-center rounded-lg border border-forest/25 bg-forest px-4 py-3 text-sm font-black text-parchment shadow-atlas transition hover:bg-bark"
                 onClick={() => setIsFilterOpen(true)}
                 type="button"
               >
-                {locale === "zh" ? "查看全部" : "View all"}
+                {locale === "zh" ? "筛选与搜索" : "Filter and search"}
               </button>
             </div>
 
-            <div className="mt-4 grid gap-3">
-              {featuredDestinations.map((destination) => (
-                <Link
-                  className="group grid grid-cols-[5.25rem_1fr_auto] items-center gap-3 rounded-md border border-ridge/20 bg-white/50 p-2 transition hover:border-forest/40 hover:bg-white/75"
-                  href={`/destinations/${destination.slug}`}
-                  key={destination.slug}
+            <dl className="grid grid-cols-3 border-b border-ridge/25 bg-bark p-5 text-parchment">
+              <AtlasStat label={locale === "zh" ? "目的地" : "Places"} value={destinations.length} />
+              <AtlasStat label={locale === "zh" ? "路线" : "Routes"} value={routeCount} />
+              <AtlasStat label={locale === "zh" ? "国家" : "Countries"} value={stats.countries} />
+            </dl>
+
+            <div className="flex-1 overflow-y-auto p-5">
+              <div className="flex items-center justify-between gap-3">
+                <h2 className="text-base font-black text-bark">
+                  {locale === "zh" ? "精选目的地" : "Featured destinations"}
+                </h2>
+                <button
+                  className="text-xs font-black text-forest underline decoration-forest/30 underline-offset-4"
+                  onClick={() => setIsFilterOpen(true)}
+                  type="button"
                 >
-                  {destination.images?.[0] ? (
-                    <img
-                      alt={destination.images[0].alt}
-                      className="h-14 w-20 rounded object-cover"
-                      src={destination.images[0].src}
-                    />
-                  ) : (
-                    <div className="grid h-14 w-20 place-items-center rounded border border-ridge/20 bg-parchment text-[10px] font-black uppercase text-bark/45">
-                      Atlas
+                  {locale === "zh" ? "查看全部" : "View all"}
+                </button>
+              </div>
+
+              <div className="mt-4 grid gap-3">
+                {featuredDestinations.map((destination) => (
+                  <Link
+                    className="group grid grid-cols-[5.25rem_1fr_auto] items-center gap-3 rounded-md border border-ridge/20 bg-white/50 p-2 transition hover:border-forest/40 hover:bg-white/75"
+                    href={`/destinations/${destination.slug}`}
+                    key={destination.slug}
+                  >
+                    {destination.images?.[0] ? (
+                      <img
+                        alt={destination.images[0].alt}
+                        className="h-14 w-20 rounded object-cover"
+                        src={destination.images[0].src}
+                      />
+                    ) : (
+                      <div className="grid h-14 w-20 place-items-center rounded border border-ridge/20 bg-parchment text-[10px] font-black uppercase text-bark/45">
+                        Atlas
+                      </div>
+                    )}
+
+                    <div className="min-w-0">
+                      <p className="truncate text-sm font-black text-bark group-hover:text-forest">
+                        {destination.name}
+                      </p>
+                      <p className="mt-1 truncate text-xs font-bold text-bark/58">
+                        {destination.country} / {destination.rockType}
+                      </p>
                     </div>
-                  )}
 
-                  <div className="min-w-0">
-                    <p className="truncate text-sm font-black text-bark group-hover:text-forest">
-                      {destination.name}
-                    </p>
-                    <p className="mt-1 truncate text-xs font-bold text-bark/58">
-                      {destination.country} / {destination.rockType}
-                    </p>
-                  </div>
-
-                  <span className="rounded-full border border-forest/20 bg-forest/10 px-3 py-2 text-sm font-black text-forest">
-                    {destination.routes?.length ?? 0}
-                  </span>
-                </Link>
-              ))}
+                    <span className="rounded-full border border-forest/20 bg-forest/10 px-3 py-2 text-sm font-black text-forest">
+                      {destination.routes?.length ?? 0}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="border-t border-ridge/25 p-5">
-            <button
-              className="flex w-full items-center justify-between rounded-lg border border-ridge/25 bg-white/60 px-4 py-4 text-left text-sm font-black text-forest shadow-sm transition hover:border-forest/40 hover:bg-white"
-              onClick={() => setIsFilterOpen(true)}
-              type="button"
-            >
-              <span>{locale === "zh" ? "打开地图手册" : "Open atlas guide"}</span>
-              <span className="rounded-md bg-parchment px-3 py-1 text-xs text-bark/65">
-                {locale === "zh"
-                  ? `${stats.visible} 个目的地可见`
-                  : `${stats.visible} places visible`}
-              </span>
-            </button>
-          </div>
-        </aside>
-      </section>
+            <div className="border-t border-ridge/25 p-5">
+              <button
+                className="flex w-full items-center justify-between rounded-lg border border-ridge/25 bg-white/60 px-4 py-4 text-left text-sm font-black text-forest shadow-sm transition hover:border-forest/40 hover:bg-white"
+                onClick={() => setIsFilterOpen(true)}
+                type="button"
+              >
+                <span>{locale === "zh" ? "打开地图手册" : "Open atlas guide"}</span>
+                <span className="rounded-md bg-parchment px-3 py-1 text-xs text-bark/65">
+                  {locale === "zh"
+                    ? `${stats.visible} 个目的地可见`
+                    : `${stats.visible} places visible`}
+                </span>
+              </button>
+            </div>
+          </aside>
+        </section>
+      ) : (
+        <section className="min-h-[calc(100vh-73px)] bg-bark px-5 py-6">
+          <MyAtlasClient variant="embedded" />
+        </section>
+      )}
 
       {isFilterOpen && (
         <div className="fixed inset-0 z-[1300] bg-bark/45 backdrop-blur-sm">

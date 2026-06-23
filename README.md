@@ -2,7 +2,7 @@
 
 ClimbAtlas is a climbing destination and route-choice MVP. It helps climbers first decide where to climb, then browse route highlights or metadata-only route indexes with clear outbound links to current external resources.
 
-The project is intentionally frontend-first: no accounts, no database, no copied guidebook text, and no copied route beta.
+The project is still content-first, but V3 adds an optional private user notebook through Supabase. ClimbAtlas still does not copy guidebook text or route beta.
 
 ## What this version includes
 
@@ -23,7 +23,10 @@ The project is intentionally frontend-first: no accounts, no database, no copied
   - `needs-upgrade`: not ready yet
 - Lightweight English / Chinese language switching
 - Built-in feedback page at `/feedback`
-- Local TypeScript and CSV seed data instead of Supabase for now
+- Optional Supabase Auth for private saved routes and notes
+- `/my-atlas` private notebook for `want to climb`, `climbed`, and personal notes
+- Private profile fields for display name, home base, experience level, preferred styles, and bio
+- Local TypeScript and CSV seed data for route content; Supabase only stores user actions
 
 ## How to run locally
 
@@ -64,6 +67,53 @@ node scripts/route-metadata.mjs
 
 The script checks required fields, duplicate route IDs, valid link statuses, and basic guardrails against accidentally storing guidebook-style beta.
 
+## Supabase setup for V3
+
+The site still works without Supabase, but login and saved routes require a Supabase project.
+
+1. Create a Supabase project.
+2. Open the Supabase SQL editor and run:
+
+```bash
+supabase/schema.sql
+```
+
+3. Copy the project URL and anon key into `.env.local`:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your-project-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+4. In Supabase Auth settings, add your local and deployed URLs as allowed redirect URLs:
+
+```bash
+http://localhost:3000
+https://climbatlas.vercel.app
+```
+
+The database stores only user actions:
+
+- private profile fields: display name, home base, experience level, preferred styles, bio
+- saved route status: `want-to-climb` or `climbed`
+- private route notes
+
+It does not store copied route descriptions, beta, comments, ratings, or guidebook content.
+
+### Supabase launch checklist
+
+- In Supabase SQL editor, run `supabase/schema.sql`.
+- In Supabase Auth settings, enable email magic link sign-in.
+- Add these redirect URLs:
+  - `http://localhost:3000`
+  - `https://climbatlas.vercel.app`
+- In local `.env.local`, add:
+  - `NEXT_PUBLIC_SUPABASE_URL`
+  - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- In Vercel Project Settings > Environment Variables, add the same two values.
+- Redeploy after adding Vercel environment variables.
+- Test login, profile editing, saved route status, and private notes with a real email.
+
 ## Beta launch checks
 
 Before sharing the Beta link, run:
@@ -84,6 +134,10 @@ Then check the core flows locally:
 - Route Finder works on destination pages and recommends highlight routes only.
 - Feedback page opens at `/feedback`.
 - The `EN / 中文` language toggle works.
+- `/my-atlas` opens.
+- With Supabase configured, users can sign in, save a route, mark it climbed, and save a private note.
+- Signed-in users can edit private profile fields on `/my-atlas`.
+- Notes-only routes appear on `/my-atlas`.
 - Mobile layout keeps the map, destination panel, search drawer, and route pages usable.
 
 ## Deploying on Vercel
@@ -101,7 +155,11 @@ The simplest deployment path is Vercel:
    - Leave `NEXT_PUBLIC_FEEDBACK_URL` blank to use the built-in `/feedback` page.
    - Add `NEXT_PUBLIC_FEEDBACK_EMAIL` if you want the feedback page to open an email draft.
    - Add `NEXT_PUBLIC_FEEDBACK_URL` only if you later want the feedback button to open an external form service.
-5. Deploy, open the Vercel preview URL, and repeat the Beta launch checks above.
+5. Optional Supabase setup:
+   - Add `NEXT_PUBLIC_SUPABASE_URL`.
+   - Add `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+   - Run `supabase/schema.sql` in the Supabase SQL editor before testing saved routes.
+6. Deploy, open the Vercel preview URL, and repeat the Beta launch checks above.
 
 ## Content boundaries
 
@@ -122,13 +180,10 @@ Metadata routes are meant to help users choose what to research next. Full route
 
 ## What is intentionally not included yet
 
-- No user registration or login
-- No Supabase database
 - No public comments or ratings
-- No saved climbed routes, wishlist, or personal notes
 - No real community tips until there are real users and moderation rules
 
-Those features are represented as placeholders so testers can react to the idea before the project takes on account, moderation, and database complexity.
+V3 adds private saved routes and notes, but public community features remain intentionally closed until moderation rules are clear.
 
 ## Important files
 
@@ -140,11 +195,14 @@ Those features are represented as placeholders so testers can react to the idea 
 - `src/components/RouteIndex.tsx` renders the destination route directory.
 - `src/components/RouteHighlightCard.tsx` renders full highlight routes.
 - `src/components/RouteMetadataCard.tsx` renders metadata-only route pages.
+- `src/components/UserRouteControls.tsx` renders saved-route and note controls.
+- `src/components/MyAtlasClient.tsx` renders the private route notebook.
 - `src/data/destinations.ts` stores destination data and highlight routes.
 - `src/data/route-metadata.csv` stores metadata route rows.
 - `scripts/route-metadata.mjs` validates and generates metadata route data.
+- `supabase/schema.sql` defines V3 user tables and private row-level security policies.
 - `src/types/destination.ts` defines the TypeScript data model.
 
 ## Beginner note
 
-This version intentionally uses local data first. Later, the same destination, route, source, image, review, and saved-list concepts can move into Supabase when the product direction is clearer.
+This version intentionally keeps route content local. Supabase is only for accounts, saved-route status, and private notes.

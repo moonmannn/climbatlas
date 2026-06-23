@@ -10,6 +10,9 @@ import type {
   RouteStatus
 } from "@/types/destination";
 import { useLanguage } from "@/components/LanguageProvider";
+import { useSupabaseAuth } from "@/components/SupabaseProvider";
+import { useUserRoutes } from "@/components/UserRoutesProvider";
+import type { SavedRouteStatus } from "@/lib/supabaseClient";
 
 type RouteIndexProps = {
   routes: RouteHighlight[];
@@ -78,8 +81,13 @@ export function RouteIndex({
   const [query, setQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState<"all" | ClimbingType>("all");
   const [statusFilter, setStatusFilter] = useState<"all" | RouteStatus>("all");
+  const [personalFilter, setPersonalFilter] = useState<
+    "all" | SavedRouteStatus
+  >("all");
   const [sectorFilter, setSectorFilter] = useState("all");
   const isZh = locale === "zh";
+  const { user } = useSupabaseAuth();
+  const { getSavedStatus, savedRoutes } = useUserRoutes();
 
   const sectors = useMemo(() => {
     return Array.from(
@@ -93,8 +101,11 @@ export function RouteIndex({
     return routes.filter((route) => {
       const status = route.status ?? "highlight";
       const linkStatus = getPrimaryLinkStatus(route) ?? "";
+      const personalStatus = getSavedStatus(destinationSlug, route.id);
       const matchesType = typeFilter === "all" || route.type === typeFilter;
       const matchesStatus = statusFilter === "all" || status === statusFilter;
+      const matchesPersonal =
+        personalFilter === "all" || personalStatus === personalFilter;
       const matchesSector =
         sectorFilter === "all" || route.sector === sectorFilter;
       const searchable = [
@@ -118,11 +129,21 @@ export function RouteIndex({
       return (
         matchesType &&
         matchesStatus &&
+        matchesPersonal &&
         matchesSector &&
         (!normalizedQuery || searchable.includes(normalizedQuery))
       );
     });
-  }, [query, routes, sectorFilter, statusFilter, typeFilter]);
+  }, [
+    destinationSlug,
+    getSavedStatus,
+    personalFilter,
+    query,
+    routes,
+    sectorFilter,
+    statusFilter,
+    typeFilter
+  ]);
 
   const highlightCount = routes.filter(
     (route) => (route.status ?? "highlight") === "highlight"
@@ -130,6 +151,15 @@ export function RouteIndex({
   const metadataCount = routes.length - highlightCount;
   const exactLinkCount = routes.filter(
     (route) => getPrimaryLinkStatus(route) === "route-specific"
+  ).length;
+  const personalRoutes = savedRoutes.filter(
+    (record) => record.destination_slug === destinationSlug
+  );
+  const wantCount = personalRoutes.filter(
+    (record) => record.status === "want-to-climb"
+  ).length;
+  const climbedCount = personalRoutes.filter(
+    (record) => record.status === "climbed"
   ).length;
 
   return (
@@ -157,6 +187,16 @@ export function RouteIndex({
             <span className="rounded-full border border-forest/20 bg-forest/10 px-3 py-1 text-xs font-black text-forest">
               {exactLinkCount} {isZh ? "精确外链" : "exact links"}
             </span>
+            {user && (
+              <>
+                <span className="rounded-full border border-sunlit/40 bg-sunlit/20 px-3 py-1 text-xs font-black text-bark">
+                  {wantCount} {isZh ? "想爬" : "want"}
+                </span>
+                <span className="rounded-full border border-forest/20 bg-forest/10 px-3 py-1 text-xs font-black text-forest">
+                  {climbedCount} {isZh ? "已爬" : "climbed"}
+                </span>
+              </>
+            )}
           </div>
         </div>
 
@@ -180,6 +220,27 @@ export function RouteIndex({
               </option>
             ))}
           </select>
+          {user && (
+            <select
+              className="rounded-md border border-ridge/25 bg-parchment/80 px-3 py-2 text-sm font-bold text-bark outline-none transition focus:border-forest"
+              onChange={(event) =>
+                setPersonalFilter(
+                  event.target.value as "all" | SavedRouteStatus
+                )
+              }
+              value={personalFilter}
+            >
+              <option value="all">
+                {isZh ? "全部个人状态" : "All personal statuses"}
+              </option>
+              <option value="want-to-climb">
+                {isZh ? "只看想爬" : "Want to climb only"}
+              </option>
+              <option value="climbed">
+                {isZh ? "只看已爬" : "Climbed only"}
+              </option>
+            </select>
+          )}
           <select
             className="rounded-md border border-ridge/25 bg-parchment/80 px-3 py-2 text-sm font-bold text-bark outline-none transition focus:border-forest"
             onChange={(event) =>
@@ -216,6 +277,7 @@ export function RouteIndex({
         {filteredRoutes.map((route) => {
           const status = route.status ?? "highlight";
           const linkStatus = getPrimaryLinkStatus(route);
+          const personalStatus = getSavedStatus(destinationSlug, route.id);
 
           return (
             <Link
@@ -246,6 +308,17 @@ export function RouteIndex({
                 {route.sector && (
                   <span className="rounded-full border border-ridge/25 bg-white/55 px-2 py-1 text-[11px] font-black text-bark/60">
                     {route.sector}
+                  </span>
+                )}
+                {personalStatus && (
+                  <span className="rounded-full border border-sunlit/40 bg-sunlit/20 px-2 py-1 text-[11px] font-black text-bark">
+                    {personalStatus === "want-to-climb"
+                      ? isZh
+                        ? "想爬"
+                        : "want"
+                      : isZh
+                        ? "已爬"
+                        : "climbed"}
                   </span>
                 )}
                 <span className="rounded-full border border-ridge/25 bg-white/55 px-2 py-1 text-[11px] font-black text-bark/60">

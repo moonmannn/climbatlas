@@ -63,12 +63,12 @@ export function LanguageToggle() {
     "rounded-md border px-3 py-2 text-xs font-black uppercase tracking-wide transition";
 
   return (
-    <div className="flex rounded-lg border border-antiquegold/30 bg-bark/88 p-1 shadow-atlas backdrop-blur">
+    <div className="flex rounded-lg border border-ridge/25 bg-parchment/95 p-1 shadow-atlas backdrop-blur">
       <button
         className={`${buttonBase} ${
           locale === "en"
             ? "border-antiquegold/40 bg-antiquegold text-bark"
-            : "border-transparent text-parchment hover:border-antiquegold/30"
+            : "border-transparent text-bark/70 hover:border-ridge/25 hover:bg-white/55 hover:text-bark"
         }`}
         onClick={() => setLocale("en")}
         type="button"
@@ -79,7 +79,7 @@ export function LanguageToggle() {
         className={`${buttonBase} ${
           locale === "zh"
             ? "border-antiquegold/40 bg-antiquegold text-bark"
-            : "border-transparent text-parchment hover:border-antiquegold/30"
+            : "border-transparent text-bark/70 hover:border-ridge/25 hover:bg-white/55 hover:text-bark"
         }`}
         onClick={() => setLocale("zh")}
         type="button"
