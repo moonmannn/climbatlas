@@ -42,7 +42,23 @@ const linkStatusStyles: Record<ExternalLinkStatus, string> = {
 };
 
 function getPrimaryLinkStatus(route: RouteHighlight): ExternalLinkStatus | undefined {
-  return route.externalResources?.[0]?.linkStatus;
+  const statuses = (route.externalResources ?? [])
+    .map((resource) => resource.linkStatus)
+    .filter((status): status is ExternalLinkStatus => Boolean(status));
+
+  if (statuses.includes("route-specific")) {
+    return "route-specific";
+  }
+
+  if (statuses.includes("guidebook-specific")) {
+    return "guidebook-specific";
+  }
+
+  if (statuses.includes("area-only")) {
+    return "area-only";
+  }
+
+  return statuses[0];
 }
 
 function getLinkStatusLabel(status: ExternalLinkStatus | undefined, isZh: boolean) {
@@ -296,7 +312,11 @@ export function RouteIndex({
                   {route.type}
                 </span>
                 <span className="rounded-full border border-ridge/25 bg-white/55 px-2 py-1 text-[11px] font-black text-bark/60">
-                  {status}
+                  {status === "metadata" && route.metadataKind === "area-index"
+                    ? isZh
+                      ? "????"
+                      : "area index"
+                    : status}
                 </span>
                 {linkStatus && (
                   <span

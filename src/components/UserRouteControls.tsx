@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AuthButton } from "@/components/AuthButton";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
@@ -44,6 +45,7 @@ export function UserRouteControls({
   const isZh = locale === "zh";
   const currentStatus = getSavedStatus(destinationSlug, route.id);
   const savedNote = getNote(destinationSlug, route.id);
+  const hasNoteChange = noteDraft.trim() !== savedNote.trim();
 
   useEffect(() => {
     setNoteDraft(savedNote);
@@ -54,16 +56,32 @@ export function UserRouteControls({
     const didSave = await saveStatus(destinationSlug, route.id, nextStatus);
 
     if (didSave) {
-      setMessage(isZh ? "路线本已更新。" : "Your atlas was updated.");
+      setMessage(
+        nextStatus
+          ? isZh
+            ? `已标记为${statusLabels[nextStatus].zh}。`
+            : `Marked as ${statusLabels[nextStatus].en.toLowerCase()}.`
+          : isZh
+            ? "已从路线本移除。"
+            : "Removed from your atlas."
+      );
     }
   }
 
-  async function handleNoteSave() {
+  async function handleNoteSave(nextNote = noteDraft) {
     setMessage(null);
-    const didSave = await saveNote(destinationSlug, route.id, noteDraft);
+    const didSave = await saveNote(destinationSlug, route.id, nextNote);
 
     if (didSave) {
-      setMessage(isZh ? "私人笔记已保存。" : "Private note saved.");
+      setMessage(
+        nextNote.trim()
+          ? isZh
+            ? "私人笔记已保存。"
+            : "Private note saved."
+          : isZh
+            ? "私人笔记已清空。"
+            : "Private note cleared."
+      );
     }
   }
 
@@ -79,8 +97,8 @@ export function UserRouteControls({
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-bark/70">
             {isZh
-              ? "这些记录只属于你自己。ClimbAtlas V3 先做私人想爬、已爬和笔记，不开放公开评价。"
-              : "These records are private to you. V3 starts with personal want-to-climb, climbed, and note tools instead of public reviews."}
+              ? "这些记录只属于你自己。V3 先做私人想爬、已爬和笔记，不开放公开评价。"
+              : "These records are private to you. V3 starts with personal want-to-climb, climbed, and notes instead of public reviews."}
           </p>
         </div>
         <div className="rounded-md border border-ridge/25 bg-parchment/70 px-3 py-2 text-xs font-black text-bark/65">
@@ -97,16 +115,29 @@ export function UserRouteControls({
       )}
 
       {isConfigured && !user && (
-        <p className="mt-4 rounded-md border border-ridge/25 bg-white/60 p-3 text-sm font-bold leading-6 text-bark/70">
-          {isZh
-            ? "登录后可以保存想爬、已爬和私人笔记。"
-            : "Sign in to save want-to-climb, climbed, and private notes."}
-        </p>
+        <div className="mt-4 flex flex-col gap-3 rounded-md border border-ridge/25 bg-white/60 p-3 text-sm font-bold leading-6 text-bark/70 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            {isZh
+              ? "登录后可以保存想爬、已爬和私人笔记。"
+              : "Sign in to save want-to-climb, climbed, and private notes."}
+          </p>
+          <AuthButton />
+        </div>
       )}
 
       {user && (
         <div className="mt-4 grid gap-4 lg:grid-cols-[18rem_1fr]">
           <div className="grid gap-2">
+            <div className="rounded-md border border-ridge/25 bg-parchment/70 p-3 text-xs font-black leading-5 text-bark/65">
+              {isZh ? "当前状态：" : "Current status: "}
+              <span className="text-forest">
+                {currentStatus
+                  ? statusLabels[currentStatus][locale]
+                  : isZh
+                    ? "未保存"
+                    : "not saved"}
+              </span>
+            </div>
             {(["want-to-climb", "climbed"] as SavedRouteStatus[]).map(
               (status) => (
                 <button
@@ -125,7 +156,7 @@ export function UserRouteControls({
               )
             )}
             <button
-              className="rounded-md border border-ridge/25 bg-white/40 px-3 py-3 text-left text-sm font-black text-bark/60 transition hover:border-forest/35 hover:text-bark"
+              className="rounded-md border border-ridge/25 bg-white/40 px-3 py-3 text-left text-sm font-black text-bark/60 transition hover:border-forest/35 hover:text-bark disabled:cursor-not-allowed disabled:opacity-45"
               disabled={isLoading || !currentStatus}
               onClick={() => void handleStatus(null)}
               type="button"
@@ -147,19 +178,32 @@ export function UserRouteControls({
               onChange={(event) => setNoteDraft(event.target.value)}
               placeholder={
                 isZh
-                  ? "只给自己看的路线想法、训练目标或下次要确认的事项。"
+                  ? "只给自己看的路线想法、训练目标，或下次要确认的事项。"
                   : "Private thoughts, training goals, or things to confirm next time."
               }
               value={noteDraft}
             />
-            <button
-              className="mt-2 rounded-md bg-bark px-4 py-2 text-sm font-black text-parchment transition hover:bg-forest"
-              disabled={isLoading}
-              onClick={() => void handleNoteSave()}
-              type="button"
-            >
-              {isZh ? "保存笔记" : "Save note"}
-            </button>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <button
+                className="rounded-md bg-bark px-4 py-2 text-sm font-black text-parchment transition hover:bg-forest disabled:cursor-not-allowed disabled:bg-bark/45"
+                disabled={isLoading || !hasNoteChange}
+                onClick={() => void handleNoteSave()}
+                type="button"
+              >
+                {isZh ? "保存笔记" : "Save note"}
+              </button>
+              <button
+                className="rounded-md border border-ridge/25 bg-white/45 px-4 py-2 text-sm font-black text-bark/65 transition hover:border-forest/35 hover:text-bark disabled:cursor-not-allowed disabled:opacity-45"
+                disabled={isLoading || (!savedNote && !noteDraft)}
+                onClick={() => {
+                  setNoteDraft("");
+                  void handleNoteSave("");
+                }}
+                type="button"
+              >
+                {isZh ? "清空笔记" : "Clear note"}
+              </button>
+            </div>
           </div>
         </div>
       )}

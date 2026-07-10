@@ -76,13 +76,18 @@ function getLinkDescription(resource: ExternalResource, isZh: boolean) {
 export function RouteMetadataCard({ route }: RouteMetadataCardProps) {
   const { locale } = useLanguage();
   const isZh = locale === "zh";
+  const isAreaIndex = route.metadataKind === "area-index";
 
   return (
     <article className="handdrawn-card overflow-hidden bg-white/55">
       <div className="border-b border-ridge/25 bg-parchment/70 p-5 sm:p-6">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-bark px-3 py-1 text-xs font-black uppercase tracking-wide text-parchment">
-            metadata
+            {isAreaIndex
+              ? isZh
+                ? "区域索引"
+                : "area index"
+              : "metadata"}
           </span>
           <span className="rounded-full bg-forest px-3 py-1 text-xs font-black uppercase tracking-wide text-parchment">
             {route.type}
@@ -102,9 +107,13 @@ export function RouteMetadataCard({ route }: RouteMetadataCardProps) {
 
         <h3 className="mt-4 text-3xl font-black text-bark">{route.name}</h3>
         <p className="mt-2 max-w-3xl text-sm font-bold leading-6 text-bark/70">
-          {isZh
-            ? "这是 metadata-only 路线索引。ClimbAtlas 只展示基础事实和外链，不复制 beta、topo、approach、保护信息、评论、评分或图片。"
-            : "This is a metadata-only route index entry. ClimbAtlas shows basic facts and outbound links only; it does not copy beta, topos, approach notes, protection details, comments, ratings, or photos."}
+          {isAreaIndex
+            ? isZh
+              ? "这是区域或 sector 索引，不是单条线路。它帮助你理解目的地结构，并跳转到外部区域资料。"
+              : "This is an area or sector index, not a single route. It helps explain the destination structure and links to external area resources."
+            : isZh
+              ? "这是 metadata-only 路线索引。ClimbAtlas 只展示基础事实和外链，不复制 beta、topo、approach、保护信息、评论、评分或图片。"
+              : "This is a metadata-only route index entry. ClimbAtlas shows basic facts and outbound links only; it does not copy beta, topos, approach notes, protection details, comments, ratings, or photos."}
         </p>
       </div>
 
@@ -125,9 +134,13 @@ export function RouteMetadataCard({ route }: RouteMetadataCardProps) {
               {isZh ? "下一步" : "Next step"}
             </h4>
             <p className="mt-2 text-sm font-bold leading-6 text-bark/75">
-              {isZh
-                ? "如果这条线看起来适合你，请打开外部资料查看最新 beta、路况、保护、approach、下降和当地规定。"
-                : "If this line looks right for you, open the external resources for current beta, conditions, protection, approach, descent, and local rules."}
+              {isAreaIndex
+                ? isZh
+                  ? "先打开区域资料，再选择有精确线路页或最新路书支持的具体线路。"
+                  : "Open the area resource, then choose a specific route supported by an exact route page or current guidebook."
+                : isZh
+                  ? "如果这条线看起来适合你，请打开外部资料查看最新 beta、路况、保护、approach、下降和当地规定。"
+                  : "If this line looks right for you, open the external resources for current beta, conditions, protection, approach, descent, and local rules."}
             </p>
           </div>
         </section>

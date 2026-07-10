@@ -60,6 +60,8 @@ export type ExternalResource = {
 
 export type RouteStatus = "highlight" | "metadata";
 
+export type MetadataKind = "route" | "area-index";
+
 export type NotableAscent = {
   climber: string;
   note: LocalizedText;
@@ -92,6 +94,7 @@ export type RouteHighlight = {
   length: string;
   sector?: string;
   status?: RouteStatus;
+  metadataKind?: MetadataKind;
   style: string;
   summary: string;
   practiceFocus: string[];

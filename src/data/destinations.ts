@@ -1,5 +1,11 @@
-import type { Destination, RouteHighlight } from "@/types/destination";
+import type {
+  Destination,
+  ExternalLinkStatus,
+  ExternalResource,
+  RouteHighlight
+} from "@/types/destination";
 import { metadataRoutesByDestination } from "@/data/generatedRouteMetadata";
+import { resolveRouteId } from "@/lib/routeAliases";
 
 const lastChecked = "2026-06-10";
 
@@ -3555,6 +3561,7 @@ function v2ImportedRoute(input: {
         title: `${input.sourcePack.databaseLabel}: ${input.name}`,
         url: input.sourcePack.databaseUrl,
         type: "route-database",
+        linkStatus: "needs-upgrade",
         description: {
           en: "External metadata entry point. Use the original site for current route pages, local updates, and detailed beta.",
           zh: "外部元数据入口。请到原站查看最新路线页面、本地更新和具体 beta。"
@@ -10864,6 +10871,153 @@ export function getDestinationBySlug(slug: string) {
   return destinations.find((destination) => destination.slug === slug);
 }
 
+export function getRouteById(destinationSlug: string, routeId: string) {
+  const destination = getDestinationBySlug(destinationSlug);
+  const canonicalRouteId = resolveRouteId(destinationSlug, routeId);
+
+  return destination?.routes?.find((route) => route.id === canonicalRouteId);
+}
+
+const routeExternalLinkOverrides: Record<string, ExternalResource[]> = {
+  // Add hand-checked exact route or guidebook links here as
+  // "destinationSlug:routeId" when a route needs a manual upgrade.
+};
+
+function normalizeRouteNameForLinkMatch(name: string) {
+  return name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/gi, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function inferExternalLinkStatus(
+  resource: Pick<ExternalResource, "type" | "url" | "linkStatus">
+): ExternalLinkStatus | undefined {
+  if (resource.linkStatus) {
+    return resource.linkStatus;
+  }
+
+  if (/mountainproject\.com\/route\//i.test(resource.url)) {
+    return "route-specific";
+  }
+
+  if (resource.type === "guidebook/resource") {
+    return "guidebook-specific";
+  }
+
+  if (
+    resource.type === "route-database" ||
+    /mountainproject\.com\/area\//i.test(resource.url)
+  ) {
+    return "needs-upgrade";
+  }
+
+  return undefined;
+}
+
+function resourceFromRouteSource(route: RouteHighlight): ExternalResource[] {
+  const resources: ExternalResource[] = [];
+
+  for (const routeSource of route.sources) {
+    const inferredStatus = inferExternalLinkStatus({
+      type: "route-database",
+      url: routeSource.sourceUrl
+    });
+
+    if (inferredStatus === "route-specific") {
+      resources.push({
+        title: routeSource.sourceLabel,
+        url: routeSource.sourceUrl,
+        type: "route-database",
+        linkStatus: inferredStatus,
+        description: {
+          en: "Exact external route page for current metadata and local updates. ClimbAtlas links out without copying route beta.",
+          zh: "精确外部线路页，用于查看当前元数据和本地更新。ClimbAtlas 只做导流，不复制路线 beta。"
+        }
+      });
+    }
+  }
+
+  return resources;
+}
+
+function metadataResourcesForRoute(
+  destinationSlug: string,
+  route: RouteHighlight
+): ExternalResource[] {
+  const metadataRoutes = metadataRoutesByDestination[destinationSlug] ?? [];
+  const routeName = normalizeRouteNameForLinkMatch(route.name);
+
+  return metadataRoutes
+    .filter(
+      (metadataRoute) =>
+        metadataRoute.id === route.id ||
+        normalizeRouteNameForLinkMatch(metadataRoute.name) === routeName
+    )
+    .flatMap((metadataRoute) => metadataRoute.externalResources ?? [])
+    .filter((resource) => {
+      const status = inferExternalLinkStatus(resource);
+      return status === "route-specific" || status === "guidebook-specific";
+    })
+    .map((resource) => ({
+      ...resource,
+      linkStatus: inferExternalLinkStatus(resource)
+    }));
+}
+
+function dedupeExternalResources(resources: ExternalResource[]) {
+  const seen = new Set<string>();
+
+  return resources.filter((resource) => {
+    const key = `${resource.url}::${resource.title}`;
+
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+    return true;
+  });
+}
+
+function upgradeRouteExternalResources(
+  destinationSlug: string,
+  route: RouteHighlight
+): RouteHighlight {
+  const manualResources =
+    routeExternalLinkOverrides[`${destinationSlug}:${route.id}`] ?? [];
+  const sourceResources = resourceFromRouteSource(route);
+  const metadataResources = metadataResourcesForRoute(destinationSlug, route);
+  const currentResources = (route.externalResources ?? []).map((resource) => ({
+    ...resource,
+    linkStatus: inferExternalLinkStatus(resource)
+  }));
+  const exactResources = [
+    ...manualResources,
+    ...metadataResources,
+    ...sourceResources
+  ].map((resource) => ({
+    ...resource,
+    linkStatus: inferExternalLinkStatus(resource)
+  }));
+
+  const externalResources = dedupeExternalResources([
+    ...exactResources,
+    ...currentResources
+  ]);
+
+  if (externalResources.length === 0) {
+    return route;
+  }
+
+  return {
+    ...route,
+    externalResources
+  };
+}
+
 for (const destination of destinations) {
   const contextSource = v2SourcePacks[destination.slug];
 
@@ -10894,6 +11048,16 @@ for (const destination of destinations) {
 }
 
 for (const destination of destinations) {
+  if (!destination.routes) {
+    continue;
+  }
+
+  destination.routes = destination.routes.map((route) =>
+    upgradeRouteExternalResources(destination.slug, route)
+  );
+}
+
+for (const destination of destinations) {
   const metadataRoutes = metadataRoutesByDestination[destination.slug] ?? [];
 
   if (metadataRoutes.length === 0) {
@@ -10903,7 +11067,16 @@ for (const destination of destinations) {
   const existingRouteIds = new Set(
     (destination.routes ?? []).map((route) => route.id)
   );
-  const newRoutes = metadataRoutes.filter((route) => !existingRouteIds.has(route.id));
+  const existingRouteNames = new Set(
+    (destination.routes ?? []).map((route) =>
+      normalizeRouteNameForLinkMatch(route.name)
+    )
+  );
+  const newRoutes = metadataRoutes.filter(
+    (route) =>
+      !existingRouteIds.has(route.id) &&
+      !existingRouteNames.has(normalizeRouteNameForLinkMatch(route.name))
+  );
 
   destination.routes = [...(destination.routes ?? []), ...newRoutes];
 }

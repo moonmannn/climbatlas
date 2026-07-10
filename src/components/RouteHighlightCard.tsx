@@ -11,7 +11,7 @@ import {
 } from "@/data/localizedContent";
 import { useLanguage } from "@/components/LanguageProvider";
 import { getUiText } from "@/lib/uiText";
-import type { RouteHighlight } from "@/types/destination";
+import type { ExternalLinkStatus, RouteHighlight } from "@/types/destination";
 import {
   getRouteDecisionHint as getRouteFinderDecisionHint,
   getRoutePersonalityTags
@@ -47,6 +47,35 @@ const imageTypeLabels = {
     route: "精确路线照片",
     "area-context": "区域环境照片，不是精确路线",
     "destination-context": "目的地环境照片"
+  }
+};
+
+const linkStatusStyles: Record<ExternalLinkStatus, string> = {
+  "route-specific": "border-forest/25 bg-forest/10 text-forest",
+  "guidebook-specific": "border-sunlit/45 bg-sunlit/20 text-bark",
+  "area-only": "border-ridge/25 bg-white/55 text-bark/60",
+  "needs-upgrade": "border-red-900/20 bg-red-900/10 text-red-950"
+};
+
+const linkStatusLabels: Record<
+  ExternalLinkStatus,
+  { en: string; zh: string }
+> = {
+  "route-specific": {
+    en: "Exact route page",
+    zh: "精确线路页"
+  },
+  "guidebook-specific": {
+    en: "Guidebook resource",
+    zh: "路书资源"
+  },
+  "area-only": {
+    en: "Area fallback",
+    zh: "区域备用"
+  },
+  "needs-upgrade": {
+    en: "Needs exact link",
+    zh: "待补精确链接"
   }
 };
 
@@ -361,8 +390,21 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      <span className="text-[11px] font-black uppercase text-ridge">
-                        {resource.type}
+                      <span className="flex flex-wrap items-center gap-2">
+                        <span className="text-[11px] font-black uppercase text-ridge">
+                          {resource.type}
+                        </span>
+                        {resource.linkStatus && (
+                          <span
+                            className={`rounded-full border px-2 py-1 text-[10px] font-black uppercase ${linkStatusStyles[resource.linkStatus]}`}
+                          >
+                            {
+                              linkStatusLabels[resource.linkStatus][
+                                locale
+                              ]
+                            }
+                          </span>
+                        )}
                       </span>
                       <span className="mt-1 block text-sm font-black text-forest underline decoration-forest/35 underline-offset-4">
                         {resource.title}

@@ -16,6 +16,11 @@ import {
   type SavedRouteStatus
 } from "@/lib/supabaseClient";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
+import {
+  getRouteIdsForStorage,
+  resolveRouteId,
+  routeRecordKey
+} from "@/lib/routeAliases";
 
 type UserRoutesContextValue = {
   error: string | null;
@@ -42,9 +47,6 @@ type UserRoutesContextValue = {
 
 const UserRoutesContext = createContext<UserRoutesContextValue | null>(null);
 
-function routeKey(destinationSlug: string, routeId: string) {
-  return `${destinationSlug}::${routeId}`;
-}
 
 export function UserRoutesProvider({ children }: { children: ReactNode }) {
   const { user } = useSupabaseAuth();
@@ -100,7 +102,7 @@ export function UserRoutesProvider({ children }: { children: ReactNode }) {
   const savedMap = useMemo(() => {
     return new Map(
       savedRoutes.map((record) => [
-        routeKey(record.destination_slug, record.route_id),
+        routeRecordKey(record.destination_slug, record.route_id),
         record.status
       ])
     );
@@ -109,7 +111,7 @@ export function UserRoutesProvider({ children }: { children: ReactNode }) {
   const noteMap = useMemo(() => {
     return new Map(
       notes.map((record) => [
-        routeKey(record.destination_slug, record.route_id),
+        routeRecordKey(record.destination_slug, record.route_id),
         record.note
       ])
     );
@@ -119,10 +121,10 @@ export function UserRoutesProvider({ children }: { children: ReactNode }) {
     () => ({
       error,
       getNote(destinationSlug, routeId) {
-        return noteMap.get(routeKey(destinationSlug, routeId)) ?? "";
+        return noteMap.get(routeRecordKey(destinationSlug, routeId)) ?? "";
       },
       getSavedStatus(destinationSlug, routeId) {
-        return savedMap.get(routeKey(destinationSlug, routeId));
+        return savedMap.get(routeRecordKey(destinationSlug, routeId));
       },
       isLoading,
       notes,
@@ -135,29 +137,47 @@ export function UserRoutesProvider({ children }: { children: ReactNode }) {
 
         setError(null);
         const trimmedNote = note.trim();
+        const canonicalRouteId = resolveRouteId(destinationSlug, routeId);
+        const storedRouteIds = getRouteIdsForStorage(destinationSlug, routeId);
 
         if (!trimmedNote) {
           const { error: deleteError } = await supabase
             .from("route_notes")
             .delete()
-            .match({
-              user_id: user.id,
-              destination_slug: destinationSlug,
-              route_id: routeId
-            });
+            .eq("user_id", user.id)
+            .eq("destination_slug", destinationSlug)
+            .in("route_id", storedRouteIds);
 
           if (deleteError) {
             setError(deleteError.message);
             return false;
           }
         } else {
+          const aliasRouteIds = storedRouteIds.filter(
+            (storedRouteId) => storedRouteId !== canonicalRouteId
+          );
+
+          if (aliasRouteIds.length > 0) {
+            const { error: aliasDeleteError } = await supabase
+              .from("route_notes")
+              .delete()
+              .eq("user_id", user.id)
+              .eq("destination_slug", destinationSlug)
+              .in("route_id", aliasRouteIds);
+
+            if (aliasDeleteError) {
+              setError(aliasDeleteError.message);
+              return false;
+            }
+          }
+
           const { error: upsertError } = await supabase
             .from("route_notes")
             .upsert(
               {
                 destination_slug: destinationSlug,
                 note: trimmedNote,
-                route_id: routeId,
+                route_id: canonicalRouteId,
                 user_id: user.id
               },
               { onConflict: "user_id,destination_slug,route_id" }
@@ -179,28 +199,46 @@ export function UserRoutesProvider({ children }: { children: ReactNode }) {
         }
 
         setError(null);
+        const canonicalRouteId = resolveRouteId(destinationSlug, routeId);
+        const storedRouteIds = getRouteIdsForStorage(destinationSlug, routeId);
 
         if (!status) {
           const { error: deleteError } = await supabase
             .from("saved_routes")
             .delete()
-            .match({
-              user_id: user.id,
-              destination_slug: destinationSlug,
-              route_id: routeId
-            });
+            .eq("user_id", user.id)
+            .eq("destination_slug", destinationSlug)
+            .in("route_id", storedRouteIds);
 
           if (deleteError) {
             setError(deleteError.message);
             return false;
           }
         } else {
+          const aliasRouteIds = storedRouteIds.filter(
+            (storedRouteId) => storedRouteId !== canonicalRouteId
+          );
+
+          if (aliasRouteIds.length > 0) {
+            const { error: aliasDeleteError } = await supabase
+              .from("saved_routes")
+              .delete()
+              .eq("user_id", user.id)
+              .eq("destination_slug", destinationSlug)
+              .in("route_id", aliasRouteIds);
+
+            if (aliasDeleteError) {
+              setError(aliasDeleteError.message);
+              return false;
+            }
+          }
+
           const { error: upsertError } = await supabase
             .from("saved_routes")
             .upsert(
               {
                 destination_slug: destinationSlug,
-                route_id: routeId,
+                route_id: canonicalRouteId,
                 status,
                 user_id: user.id
               },

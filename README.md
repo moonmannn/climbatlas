@@ -62,10 +62,18 @@ src/data/route-metadata.csv
 After editing the CSV, regenerate the TypeScript data:
 
 ```bash
-node scripts/route-metadata.mjs
+npm run routes:generate
 ```
 
-The script checks required fields, duplicate route IDs, valid link statuses, and basic guardrails against accidentally storing guidebook-style beta.
+The generator checks required fields, duplicate route IDs, publication status, route-versus-area classification, link-status consistency, and guardrails against accidentally storing guidebook-style beta. Rows marked `hidden` stay in the CSV for later research but are not generated into the public catalog.
+
+Before publishing route-data changes, run the live link audit:
+
+```bash
+npm run routes:verify-links
+```
+
+The audit fails on published 404/410 links. A 401/403/429 is reported as blocked because some route sites reject automated checks; review those links manually in a browser.
 
 ## Supabase setup for V3
 
@@ -103,6 +111,7 @@ It does not store copied route descriptions, beta, comments, ratings, or guidebo
 ### Supabase launch checklist
 
 - In Supabase SQL editor, run `supabase/schema.sql`.
+- For an existing V3 database, also run `supabase/migrations/20260710_merge_route_aliases.sql` once to migrate saved duplicate route IDs.
 - In Supabase Auth settings, enable email magic link sign-in.
 - Add these redirect URLs:
   - `http://localhost:3000`
@@ -119,6 +128,8 @@ It does not store copied route descriptions, beta, comments, ratings, or guidebo
 Before sharing the Beta link, run:
 
 ```bash
+npm run routes:generate
+npm run routes:verify-links
 npm run typecheck
 npm run build
 ```
@@ -200,6 +211,9 @@ V3 adds private saved routes and notes, but public community features remain int
 - `src/data/destinations.ts` stores destination data and highlight routes.
 - `src/data/route-metadata.csv` stores metadata route rows.
 - `scripts/route-metadata.mjs` validates and generates metadata route data.
+- `scripts/verify-route-links.mjs` checks published source and external URLs for broken links.
+- `src/lib/routeAliases.ts` keeps old duplicate route URLs and private saved data compatible.
+- `supabase/migrations/20260710_merge_route_aliases.sql` merges legacy saved route IDs.
 - `supabase/schema.sql` defines V3 user tables and private row-level security policies.
 - `src/types/destination.ts` defines the TypeScript data model.
 

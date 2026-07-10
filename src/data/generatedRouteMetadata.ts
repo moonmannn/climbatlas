@@ -5,89 +5,729 @@ import type { RouteHighlight } from "@/types/destination";
 // Metadata routes are route index entries only; they must not contain copied beta.
 
 export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
+  "ceuse-france": [
+    {
+      id: "biographie-sector-ceuse-index",
+      name: "Biographie sector",
+      grade: "7a-9a+",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Biographie",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Biographie.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Ceuse",
+          sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Ceuse",
+          url: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "demi-lune-sector-ceuse-index",
+      name: "Demi Lune sector",
+      grade: "6a-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Demi Lune",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Demi Lune.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Ceuse",
+          sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Ceuse",
+          url: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "berlin-sector-ceuse-index",
+      name: "Berlin sector",
+      grade: "6c-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Berlin",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Berlin.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Ceuse",
+          sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Ceuse",
+          url: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "cascade-sector-ceuse-index",
+      name: "Cascade sector",
+      grade: "6a-8b",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Cascade",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Cascade.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Ceuse",
+          sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Ceuse",
+          url: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "thorgal-sector-ceuse-index",
+      name: "Thorgal sector",
+      grade: "6a-8b",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Thorgal",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Thorgal.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Ceuse",
+          sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Ceuse",
+          url: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "natilik-sector-ceuse-index",
+      name: "Natilik sector",
+      grade: "7a-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Natilik",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Natilik.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Ceuse",
+          sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Ceuse",
+          url: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "chamonix-france": [
+    {
+      id: "aiguille-du-midi-sector-chamonix-index",
+      name: "Aiguille du Midi sector",
+      grade: "AD-7a",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Aiguille du Midi",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Aiguille du Midi.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chamonix official visitor resource",
+          sourceUrl: "https://www.chamonix.com/",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chamonix official visitor resource",
+          url: "https://www.chamonix.com/",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "mont-blanc-du-tacul-sector-chamonix-index",
+      name: "Mont Blanc du Tacul sector",
+      grade: "AD-7a",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Mont Blanc du Tacul",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Mont Blanc du Tacul.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chamonix official visitor resource",
+          sourceUrl: "https://www.chamonix.com/",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chamonix official visitor resource",
+          url: "https://www.chamonix.com/",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "envers-des-aiguilles-sector-chamonix-index",
+      name: "Envers des Aiguilles sector",
+      grade: "5c-7b",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Envers des Aiguilles",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Envers des Aiguilles.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chamonix official visitor resource",
+          sourceUrl: "https://www.chamonix.com/",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chamonix official visitor resource",
+          url: "https://www.chamonix.com/",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "aiguilles-rouges-sector-chamonix-index",
+      name: "Aiguilles Rouges sector",
+      grade: "4c-7a",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Aiguilles Rouges",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Aiguilles Rouges.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chamonix official visitor resource",
+          sourceUrl: "https://www.chamonix.com/",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chamonix official visitor resource",
+          url: "https://www.chamonix.com/",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "dolomites-italy": [
+    {
+      id: "tre-cime-sector-dolomites-index",
+      name: "Tre Cime sector",
+      grade: "IV-VIII",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Tre Cime",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Tre Cime.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Dolomites",
+          sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Dolomites",
+          url: "https://en.wikipedia.org/wiki/Dolomites",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "marmolada-sector-dolomites-index",
+      name: "Marmolada sector",
+      grade: "V-VIII",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Marmolada",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Marmolada.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Dolomites",
+          sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Dolomites",
+          url: "https://en.wikipedia.org/wiki/Dolomites",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "sella-towers-sector-dolomites-index",
+      name: "Sella Towers sector",
+      grade: "IV-VII",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Sella Towers",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Sella Towers.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Dolomites",
+          sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Dolomites",
+          url: "https://en.wikipedia.org/wiki/Dolomites",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "cinque-torri-sector-dolomites-index",
+      name: "Cinque Torri sector",
+      grade: "IV-VII",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Cinque Torri",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Cinque Torri.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Dolomites",
+          sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Dolomites",
+          url: "https://en.wikipedia.org/wiki/Dolomites",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "el-potrero-chico-mexico": [
+    {
+      id: "mota-wall-sector-el-potrero-chico-index",
+      name: "Mota Wall sector",
+      grade: "5.8-5.13",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Mota Wall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Mota Wall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Potrero Chico",
+          sourceUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Potrero Chico",
+          url: "https://en.wikipedia.org/wiki/Potrero_Chico",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "el-toro-sector-el-potrero-chico-index",
+      name: "El Toro sector",
+      grade: "5.8-5.13",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "El Toro",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for El Toro.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Potrero Chico",
+          sourceUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Potrero Chico",
+          url: "https://en.wikipedia.org/wiki/Potrero_Chico",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "virgin-canyon-sector-el-potrero-chico-index",
+      name: "Virgin Canyon sector",
+      grade: "5.8-5.12",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Virgin Canyon",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Virgin Canyon.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Potrero Chico",
+          sourceUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Potrero Chico",
+          url: "https://en.wikipedia.org/wiki/Potrero_Chico",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
   "fontainebleau-france": [
-    {
-      id: "le-toit-du-cul-de-chien-fontainebleau",
-      name: "Le Toit du Cul de Chien",
-      grade: "7A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Cul de Chien",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Cul de Chien.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; no copied topo beta comments ratings or photos."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "l-elephant-fontainebleau",
-      name: "L'Elephant",
-      grade: "5C",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "L'Elephant",
-      status: "metadata" as const,
-      style: "boulder metadata entry for L'Elephant.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
     {
       id: "bas-cuvier-fontainebleau",
       name: "Bas Cuvier",
@@ -96,6 +736,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder circuit",
       sector: "Bas Cuvier",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "boulder metadata entry for Bas Cuvier.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -106,11 +747,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Fontainebleau routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -123,48 +764,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "cuir-moustache-fontainebleau",
-      name: "Cuir Moustache",
-      grade: "7A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Bas Cuvier",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Bas Cuvier.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -178,6 +778,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Bas Cuvier",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Bas Cuvier.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -188,7 +789,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: La Baleine",
           sourceUrl: "https://bleau.info/canon/462.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -205,7 +806,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -219,6 +820,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Cuvier Rempart",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Cuvier Rempart.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -229,7 +831,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: La Mouche",
           sourceUrl: "https://bleau.info/beauvais/88.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -246,7 +848,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -260,6 +862,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Roche aux Sabots",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Roche aux Sabots.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -270,7 +873,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Hip Hop",
           sourceUrl: "https://bleau.info/cailles/1154.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -287,7 +890,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -301,6 +904,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Franchard Isatis",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Franchard Isatis.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -311,7 +915,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Graviton",
           sourceUrl: "https://bleau.info/sabots/782.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -328,7 +932,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -342,6 +946,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Apremont",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Apremont.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -352,7 +957,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Magic Bus",
           sourceUrl: "https://bleau.info/y/686.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -369,171 +974,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-marie-rose-direct-fontainebleau",
-      name: "La Marie Rose Direct",
-      grade: "6A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Bas Cuvier",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Bas Cuvier.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-prestat-fontainebleau",
-      name: "La Prestat",
-      grade: "7A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Franchard",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Franchard.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-dalle-a-poly-fontainebleau",
-      name: "La Dalle a Poly",
-      grade: "6A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Bas Cuvier",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Bas Cuvier.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-guerre-sainte-fontainebleau",
-      name: "La Guerre Sainte",
-      grade: "7B",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Cuvier Rempart",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Cuvier Rempart.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -547,6 +988,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Bas Cuvier",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Bas Cuvier.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -557,7 +999,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Pendu",
           sourceUrl: "https://bleau.info/pendu/938.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -574,48 +1016,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-marquise-fontainebleau",
-      name: "La Marquise",
-      grade: "7B",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Franchard",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Franchard.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -629,6 +1030,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Apremont",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Apremont.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -639,7 +1041,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Bilboquet",
           sourceUrl: "https://bleau.info/envers/5116.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -656,48 +1058,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "le-corto-fontainebleau",
-      name: "Le Corto",
-      grade: "7A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Franchard",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Franchard.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -711,6 +1072,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Bas Cuvier",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Bas Cuvier.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -721,7 +1083,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: El Poussah",
           sourceUrl: "https://bleau.info/isatis/551.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -738,7 +1100,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -752,6 +1114,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Apremont",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Apremont.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -762,7 +1125,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Sphinx",
           sourceUrl: "https://bleau.info/canon/18892.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -779,48 +1142,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "le-passage-fontainebleau",
-      name: "Le Passage",
-      grade: "7A",
-      type: "boulder" as const,
-      length: "boulder problem",
-      sector: "Franchard",
-      status: "metadata" as const,
-      style: "boulder metadata entry for Franchard.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Fontainebleau routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Fontainebleau",
-          url: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -834,6 +1156,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Bas Cuvier",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Bas Cuvier.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -844,7 +1167,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: La Balance",
           sourceUrl: "https://bleau.info/cuvier/274.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -861,7 +1184,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -875,6 +1198,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "boulder problem",
       sector: "Bas Cuvier",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "boulder metadata entry for Bas Cuvier.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -885,7 +1209,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Plafond",
           sourceUrl: "https://bleau.info/jouanne/389.html",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -902,7 +1226,853 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "cortomaltese-fontainebleau",
+      name: "Cortomaltèse",
+      grade: "V5",
+      type: "boulder" as const,
+      length: "boulder problem",
+      sector: "Cuvier Rempart",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "boulder metadata entry for Cuvier Rempart.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Cortomaltèse",
+          sourceUrl: "https://www.mountainproject.com/route/119450273/cortomaltese",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Cortomaltèse",
+          url: "https://www.mountainproject.com/route/119450273/cortomaltese",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "beatle-juice-fontainebleau",
+      name: "Beatle juice",
+      grade: "V7",
+      type: "boulder" as const,
+      length: "boulder problem",
+      sector: "Franchard",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "boulder metadata entry for Franchard.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Beatle juice",
+          sourceUrl: "https://www.mountainproject.com/route/113316770/beatle-juice",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Beatle juice",
+          url: "https://www.mountainproject.com/route/113316770/beatle-juice",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "jet-set-fontainebleau",
+      name: "Jet Set",
+      grade: "V6+",
+      type: "boulder" as const,
+      length: "boulder problem",
+      sector: "Cuvier Rempart",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "boulder metadata entry for Cuvier Rempart.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Jet Set",
+          sourceUrl: "https://www.mountainproject.com/route/202584579/jet-set",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Jet Set",
+          url: "https://www.mountainproject.com/route/202584579/jet-set",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "sur-prises-fontainebleau",
+      name: "Sur Prises",
+      grade: "V9",
+      type: "boulder" as const,
+      length: "boulder problem",
+      sector: "Apremont",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "boulder metadata entry for Apremont.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Sur Prises",
+          sourceUrl: "https://www.mountainproject.com/route/200680724/sur-prises",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Sur Prises",
+          url: "https://www.mountainproject.com/route/200680724/sur-prises",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "rainbow-rocket-fontainebleau",
+      name: "Rainbow Rocket",
+      grade: "V11",
+      type: "boulder" as const,
+      length: "boulder problem",
+      sector: "Franchard",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "boulder metadata entry for Franchard.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Rainbow Rocket",
+          sourceUrl: "https://www.mountainproject.com/route/123838667/rainbow-rocket",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Rainbow Rocket",
+          url: "https://www.mountainproject.com/route/123838667/rainbow-rocket",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "big-dragon-fontainebleau",
+      name: "Big Dragon",
+      grade: "V12",
+      type: "boulder" as const,
+      length: "boulder problem",
+      sector: "Fontainebleau",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "boulder metadata entry for Fontainebleau.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Big Dragon",
+          sourceUrl: "https://www.mountainproject.com/route/200569222/big-dragon",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Big Dragon",
+          url: "https://www.mountainproject.com/route/200569222/big-dragon",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "frankenjura-germany": [
+    {
+      id: "krottenseer-turm-sector-frankenjura-index",
+      name: "Krottenseer Turm sector",
+      grade: "6-11 UIAA",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Krottenseer Turm",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Krottenseer Turm.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Frankenjura",
+          sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Frankenjura",
+          url: "https://en.wikipedia.org/wiki/Frankenjura",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "waldkopf-sector-frankenjura-index",
+      name: "Waldkopf sector",
+      grade: "6-11 UIAA",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Waldkopf",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Waldkopf.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Frankenjura",
+          sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Frankenjura",
+          url: "https://en.wikipedia.org/wiki/Frankenjura",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "rabenfels-sector-frankenjura-index",
+      name: "Rabenfels sector",
+      grade: "6-11 UIAA",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Rabenfels",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Rabenfels.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Frankenjura",
+          sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Frankenjura",
+          url: "https://en.wikipedia.org/wiki/Frankenjura",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "eldorado-sector-frankenjura-index",
+      name: "Eldorado sector",
+      grade: "6-11 UIAA",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Eldorado",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Eldorado.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Frankenjura",
+          sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Frankenjura",
+          url: "https://en.wikipedia.org/wiki/Frankenjura",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "schlossbergwand-sector-frankenjura-index",
+      name: "Schlossbergwand sector",
+      grade: "6-11 UIAA",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Schlossbergwand",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Schlossbergwand.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Frankenjura",
+          sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Frankenjura",
+          url: "https://en.wikipedia.org/wiki/Frankenjura",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "grampians-australia": [
+    {
+      id: "taipan-wall-sector-grampians-index",
+      name: "Taipan Wall sector",
+      grade: "22-35",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Taipan Wall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Taipan Wall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Parks Victoria: Grampians National Park",
+          sourceUrl: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "high" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Parks Victoria: Grampians National Park",
+          url: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "hollow-mountain-cave-sector-grampians-index",
+      name: "Hollow Mountain Cave sector",
+      grade: "24-35",
+      type: "boulder" as const,
+      length: "sector index",
+      sector: "Hollow Mountain Cave",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "boulder metadata entry for Hollow Mountain Cave.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Parks Victoria: Grampians National Park",
+          sourceUrl: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "high" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Parks Victoria: Grampians National Park",
+          url: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "stapylton-amphitheatre-sector-grampians-index",
+      name: "Stapylton Amphitheatre sector",
+      grade: "18-32",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Stapylton Amphitheatre",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Stapylton Amphitheatre.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Parks Victoria: Grampians National Park",
+          sourceUrl: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "high" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Parks Victoria: Grampians National Park",
+          url: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+          type: "official" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "joshua-tree-usa": [
+    {
+      id: "touch-and-go-joshua-tree-metadata",
+      name: "Touch and Go",
+      grade: "5.9",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Echo Rock",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Echo Rock.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Touch and Go",
+          sourceUrl: "https://www.mountainproject.com/route/105722359/touch-and-go",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; exact route page verified from public route link. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Touch and Go",
+          url: "https://www.mountainproject.com/route/105722359/touch-and-go",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "sexy-grandma-joshua-tree-metadata",
+      name: "Sexy Grandma",
+      grade: "5.9",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Hidden Valley",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Hidden Valley.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Sexy Grandma",
+          sourceUrl: "https://www.mountainproject.com/route/105723454/sexy-grandma",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; exact route page verified from public route link. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Sexy Grandma",
+          url: "https://www.mountainproject.com/route/105723454/sexy-grandma",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "hidden-valley-sector-joshua-tree-index",
+      name: "Hidden Valley sector",
+      grade: "5.6-5.12",
+      type: "trad" as const,
+      length: "sector index",
+      sector: "Hidden Valley",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "trad metadata entry for Hidden Valley.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Joshua Tree",
+          sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Joshua Tree",
+          url: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          type: "route-database" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "wonderland-of-rocks-sector-joshua-tree-index",
+      name: "Wonderland of Rocks sector",
+      grade: "5.6-5.12",
+      type: "trad" as const,
+      length: "sector index",
+      sector: "Wonderland of Rocks",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "trad metadata entry for Wonderland of Rocks.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Joshua Tree",
+          sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Joshua Tree",
+          url: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          type: "route-database" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "lost-horse-sector-joshua-tree-index",
+      name: "Lost Horse sector",
+      grade: "5.7-5.12",
+      type: "trad" as const,
+      length: "sector index",
+      sector: "Lost Horse",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "trad metadata entry for Lost Horse.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Joshua Tree",
+          sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Joshua Tree",
+          url: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          type: "route-database" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "echo-rock-sector-joshua-tree-index",
+      name: "Echo Rock sector",
+      grade: "5.6-5.12",
+      type: "trad" as const,
+      length: "sector index",
+      sector: "Echo Rock",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "trad metadata entry for Echo Rock.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Joshua Tree",
+          sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Joshua Tree",
+          url: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+          type: "route-database" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -918,6 +2088,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Spartacus",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Spartacus.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -928,11 +2099,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; do not copy descriptions beta comments ratings or photos."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -945,7 +2116,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -959,6 +2130,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Grande Grotta",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Grande Grotta.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -969,7 +2141,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Daniboy",
           sourceUrl: "https://www.mountainproject.com/route/107801184/daniboy",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -986,253 +2158,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "ilias-kalymnos",
-      name: "Ilias",
-      grade: "6c+",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Grande Grotta",
-      status: "metadata" as const,
-      style: "sport metadata entry for Grande Grotta.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "afternoon-direct-kalymnos",
-      name: "Afternoon Direct",
-      grade: "7a+",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-moulinette-kalymnos",
-      name: "La Moulinette",
-      grade: "6b+",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "monkey-business-kalymnos",
-      name: "Monkey Business",
-      grade: "7a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "angelica-kalymnos",
-      name: "Angelica",
-      grade: "6c+",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "poets-kalymnos",
-      name: "Poets",
-      grade: "6c",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Poets",
-      status: "metadata" as const,
-      style: "sport metadata entry for Poets.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1246,6 +2172,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "sector",
       sector: "Odyssey",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Odyssey.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1256,11 +2183,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -1273,7 +2200,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1287,6 +2214,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "sector",
       sector: "Spartacus",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Spartacus.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1297,11 +2225,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -1314,7 +2242,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1328,6 +2256,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "sector",
       sector: "Grande Grotta",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Grande Grotta.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1338,11 +2267,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -1355,7 +2284,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1369,6 +2298,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "cave sector",
       sector: "Sikati Cave",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Sikati Cave.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1379,11 +2309,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -1396,7 +2326,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1410,6 +2340,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1420,7 +2351,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Aroma",
           sourceUrl: "https://www.mountainproject.com/route/126081245/aroma",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1437,48 +2368,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "kalymnian-cheese-kalymnos",
-      name: "Kalymnian Cheese",
-      grade: "7a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1492,6 +2382,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1502,7 +2393,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Bye Bye Doc",
           sourceUrl: "https://www.mountainproject.com/route/107623918/bye-bye-doc",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1519,171 +2410,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "il-migliore-kalymnos",
-      name: "Il Migliore",
-      grade: "7a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "la-vie-en-rose-kalymnos",
-      name: "La Vie en Rose",
-      grade: "7a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "dolce-vita-kalymnos",
-      name: "Dolce Vita",
-      grade: "7a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "gerakios-kalymnos",
-      name: "Gerakios",
-      grade: "6c",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1697,6 +2424,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1707,7 +2435,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Styx",
           sourceUrl: "https://www.mountainproject.com/route/108421050/styx",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1724,7 +2452,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1738,6 +2466,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "sector",
       sector: "Pocket Wall",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Pocket Wall.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1748,11 +2477,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -1765,48 +2494,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "local-freezer-kalymnos",
-      name: "Local Freezer",
-      grade: "7a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Kalymnos",
-      status: "metadata" as const,
-      style: "sport metadata entry for Kalymnos.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Kalymnos routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Kalymnos",
-          url: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1820,6 +2508,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1830,11 +2519,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Priapos",
           sourceUrl: "https://www.mountainproject.com/route/107179233/priapos",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; do not copy route description beta approach protection ratings comments or photos."
+          notes: "Canonical duplicate retained for exact-link enrichment and legacy route-ID aliasing; public catalogs must resolve to priapios-kalymnos."
         }
       ],
       images: [],
@@ -1847,7 +2536,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1861,6 +2550,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1871,7 +2561,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Wings for Life",
           sourceUrl: "https://www.mountainproject.com/route/107867694/wings-for-life",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1888,7 +2578,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1902,6 +2592,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1912,7 +2603,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: DNA",
           sourceUrl: "https://www.mountainproject.com/route/106804759/dna",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1929,7 +2620,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1943,6 +2634,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1953,7 +2645,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Fun de Chichunne",
           sourceUrl: "https://www.mountainproject.com/route/107804615/fun-de-chichunne",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1970,7 +2662,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -1984,6 +2676,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -1994,7 +2687,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Kerveros",
           sourceUrl: "https://www.mountainproject.com/route/106924634/kerveros",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2011,7 +2704,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2025,6 +2718,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Kalymnos",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Kalymnos.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2035,7 +2729,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Aegialis",
           sourceUrl: "https://www.mountainproject.com/route/106804781/aegialis",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2052,7 +2746,559 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "tufa-king-pumped-kalymnos",
+      name: "Tufa King Pumped",
+      grade: "5.12c",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Kalymnos",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Kalymnos.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Tufa King Pumped",
+          sourceUrl: "https://www.mountainproject.com/route/107335878/tufa-king-pumped",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Tufa King Pumped",
+          url: "https://www.mountainproject.com/route/107335878/tufa-king-pumped",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "island-in-the-sun-kalymnos",
+      name: "Island in the Sun",
+      grade: "5.12a",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Kalymnos",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Kalymnos.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Island in the Sun",
+          sourceUrl: "https://www.mountainproject.com/route/107942813/island-in-the-sun",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Island in the Sun",
+          url: "https://www.mountainproject.com/route/107942813/island-in-the-sun",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "happy-girlfriend-kalymnos",
+      name: "Happy Girlfriend",
+      grade: "5.9+",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Kalymnos",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Kalymnos.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Happy Girlfriend",
+          sourceUrl: "https://www.mountainproject.com/route/107136770/happy-girlfriend",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Happy Girlfriend",
+          url: "https://www.mountainproject.com/route/107136770/happy-girlfriend",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "long-dong-taiwan": [
+    {
+      id: "school-gate-sector-long-dong-index",
+      name: "School Gate sector",
+      grade: "5.6-5.12",
+      type: "trad" as const,
+      length: "sector index",
+      sector: "School Gate",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "trad metadata entry for School Gate.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chinese Wikipedia: Long Dong climbing area",
+          sourceUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chinese Wikipedia: Long Dong climbing area",
+          url: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "music-hall-sector-long-dong-index",
+      name: "Music Hall sector",
+      grade: "5.7-5.12",
+      type: "trad" as const,
+      length: "sector index",
+      sector: "Music Hall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "trad metadata entry for Music Hall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chinese Wikipedia: Long Dong climbing area",
+          sourceUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chinese Wikipedia: Long Dong climbing area",
+          url: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "golden-valley-sector-long-dong-index",
+      name: "Golden Valley sector",
+      grade: "5.7-5.12",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Golden Valley",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Golden Valley.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Chinese Wikipedia: Long Dong climbing area",
+          sourceUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Chinese Wikipedia: Long Dong climbing area",
+          url: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "margalef-spain": [
+    {
+      id: "raco-de-la-finestra-sector-margalef-index",
+      name: "Raco de la Finestra sector",
+      grade: "6a-9a",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Raco de la Finestra",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Raco de la Finestra.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Margalef",
+          sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Margalef",
+          url: "https://en.wikipedia.org/wiki/Margalef",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "laboratori-sector-margalef-index",
+      name: "Laboratori sector",
+      grade: "7a-9b",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Laboratori",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Laboratori.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Margalef",
+          sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Margalef",
+          url: "https://en.wikipedia.org/wiki/Margalef",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "espadelles-sector-margalef-index",
+      name: "Espadelles sector",
+      grade: "6a-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Espadelles",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Espadelles.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Margalef",
+          sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Margalef",
+          url: "https://en.wikipedia.org/wiki/Margalef",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "catedral-sector-margalef-index",
+      name: "Catedral sector",
+      grade: "6a-9a",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Catedral",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Catedral.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Margalef",
+          sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Margalef",
+          url: "https://en.wikipedia.org/wiki/Margalef",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "railay-tonsai-thailand": [
+    {
+      id: "thaiwand-wall-sector-railay-tonsai-index",
+      name: "Thaiwand Wall sector",
+      grade: "6a-8a",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Thaiwand Wall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Thaiwand Wall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Railay Beach",
+          sourceUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Railay Beach",
+          url: "https://en.wikipedia.org/wiki/Railay_Beach",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "tonsai-wall-sector-railay-tonsai-index",
+      name: "Tonsai Wall sector",
+      grade: "6a-8a",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Tonsai Wall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Tonsai Wall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Railay Beach",
+          sourceUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Railay Beach",
+          url: "https://en.wikipedia.org/wiki/Railay_Beach",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "fire-wall-sector-railay-tonsai-index",
+      name: "Fire Wall sector",
+      grade: "6a-8a",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Fire Wall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Fire Wall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Railay Beach",
+          sourceUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Railay Beach",
+          url: "https://en.wikipedia.org/wiki/Railay_Beach",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2068,6 +3314,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Muir Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Muir Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2078,7 +3325,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Stunning the Hog",
           sourceUrl: "https://www.mountainproject.com/route/106146849/stunning-the-hog",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2095,7 +3342,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2109,6 +3356,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2119,7 +3367,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Table of Colors",
           sourceUrl: "https://www.mountainproject.com/route/106304964/table-of-colors",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2136,7 +3384,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2150,6 +3398,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2160,7 +3409,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mercy, the Huff",
           sourceUrl: "https://www.mountainproject.com/route/106045269/mercy-the-huff",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2177,7 +3426,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2191,6 +3440,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2201,11 +3451,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -2218,48 +3468,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "undertow-red-river-gorge",
-      name: "Undertow",
-      grade: "5.12a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Red River Gorge",
-      status: "metadata" as const,
-      style: "sport metadata entry for Red River Gorge.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Red River Gorge routes",
-          sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Red River Gorge",
-          url: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2273,6 +3482,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2283,7 +3493,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Ale-8-One",
           sourceUrl: "https://www.mountainproject.com/route/106445478/ale-8-one",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2300,7 +3510,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2314,6 +3524,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2324,7 +3535,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Nagypapa",
           sourceUrl: "https://www.mountainproject.com/route/106053937/nagypapa",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2341,7 +3552,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2355,6 +3566,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2365,7 +3577,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Ro Shampo",
           sourceUrl: "https://www.mountainproject.com/route/105860759/ro-shampo",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2382,7 +3594,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2396,6 +3608,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2406,11 +3619,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -2423,7 +3636,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2437,6 +3650,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Chocolate Factory",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Chocolate Factory.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2447,7 +3661,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Oompa",
           sourceUrl: "https://www.mountainproject.com/route/106782060/oompa",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2464,7 +3678,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2478,6 +3692,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Chocolate Factory",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Chocolate Factory.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2488,7 +3703,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Snozzberries",
           sourceUrl: "https://www.mountainproject.com/route/108411358/snozzberries",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2505,48 +3720,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "everlasting-gobstopper-red-river-gorge",
-      name: "Everlasting Gobstopper",
-      grade: "5.13b",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Chocolate Factory",
-      status: "metadata" as const,
-      style: "sport metadata entry for Chocolate Factory.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Red River Gorge routes",
-          sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Red River Gorge",
-          url: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2560,6 +3734,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2570,11 +3745,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -2587,7 +3762,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2601,6 +3776,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Muir Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Muir Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2611,7 +3787,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Breakfast Burrito",
           sourceUrl: "https://www.mountainproject.com/route/106081922/breakfast-burrito",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2628,7 +3804,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2642,6 +3818,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Muir Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Muir Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2652,7 +3829,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Boltergeist",
           sourceUrl: "https://www.mountainproject.com/route/106580228/boltergeist",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2669,7 +3846,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2683,6 +3860,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Muir Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Muir Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2693,7 +3871,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Air Ride Equipped",
           sourceUrl: "https://www.mountainproject.com/route/106586504/air-ride-equipped",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2710,7 +3888,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2724,6 +3902,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2734,7 +3913,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Tissue Tiger",
           sourceUrl: "https://www.mountainproject.com/route/105870261/tissue-tiger",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2751,7 +3930,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2765,6 +3944,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2775,7 +3955,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Chainsaw Massacre",
           sourceUrl: "https://www.mountainproject.com/route/106153682/chainsaw-massacre",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2792,48 +3972,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "mercy-street-red-river-gorge",
-      name: "Mercy Street",
-      grade: "5.12a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Red River Gorge",
-      status: "metadata" as const,
-      style: "sport metadata entry for Red River Gorge.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Red River Gorge routes",
-          sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Red River Gorge",
-          url: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2847,6 +3986,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2857,7 +3997,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Paradise Lost",
           sourceUrl: "https://www.mountainproject.com/route/106575827/paradise-lost",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2874,7 +4014,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2888,6 +4028,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2898,11 +4039,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -2915,7 +4056,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2929,6 +4070,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2939,11 +4081,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -2956,7 +4098,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -2970,6 +4112,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -2980,7 +4123,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Amarillo Sunset",
           sourceUrl: "https://www.mountainproject.com/route/106286394/amarillo-sunset",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2997,7 +4140,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3011,6 +4154,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3021,7 +4165,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Banshee",
           sourceUrl: "https://www.mountainproject.com/route/106333612/banshee",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3038,7 +4182,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3052,6 +4196,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3062,7 +4207,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Johnny B. Good",
           sourceUrl: "https://www.mountainproject.com/route/106154626/johnny-b-good",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3079,7 +4224,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3093,6 +4238,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3103,7 +4249,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Cell Block Six",
           sourceUrl: "https://www.mountainproject.com/route/106586323/cell-block-six",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3120,7 +4266,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3134,6 +4280,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3144,7 +4291,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Convicted",
           sourceUrl: "https://www.mountainproject.com/route/106598931/convicted",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3161,7 +4308,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3175,6 +4322,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3185,7 +4333,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Hippocrite",
           sourceUrl: "https://www.mountainproject.com/route/106126244/hippocrite",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3202,48 +4350,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "apollo-reed-red-river-gorge",
-      name: "Apollo Reed",
-      grade: "5.13a",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Red River Gorge",
-      status: "metadata" as const,
-      style: "sport metadata entry for Red River Gorge.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Red River Gorge routes",
-          sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Red River Gorge",
-          url: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3257,6 +4364,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3267,7 +4375,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rat Stew",
           sourceUrl: "https://www.mountainproject.com/route/106061906/rat-stew",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3284,7 +4392,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3298,6 +4406,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3308,7 +4417,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mona Lisa Overdrive",
           sourceUrl: "https://www.mountainproject.com/route/106925375/mona-lisa-overdrive",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3325,7 +4434,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3339,6 +4448,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Red River Gorge",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Red River Gorge.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3349,7 +4459,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Team Wilson",
           sourceUrl: "https://www.mountainproject.com/route/106916504/team-wilson",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3366,7 +4476,935 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "king-me-red-river-gorge",
+      name: "King Me",
+      grade: "5.11b",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: King Me",
+          sourceUrl: "https://www.mountainproject.com/route/105964688/king-me",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: King Me",
+          url: "https://www.mountainproject.com/route/105964688/king-me",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "black-gold-red-river-gorge",
+      name: "Black Gold",
+      grade: "5.13c",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Black Gold",
+          sourceUrl: "https://www.mountainproject.com/route/106975129/black-gold",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Black Gold",
+          url: "https://www.mountainproject.com/route/106975129/black-gold",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "return-of-darth-moll-red-river-gorge",
+      name: "Return of Darth Moll",
+      grade: "5.13b/c",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Return of Darth Moll",
+          sourceUrl: "https://www.mountainproject.com/route/107285945/return-of-darth-moll",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Return of Darth Moll",
+          url: "https://www.mountainproject.com/route/107285945/return-of-darth-moll",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "flour-power-red-river-gorge",
+      name: "Flour Power",
+      grade: "5.13b",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Flour Power",
+          sourceUrl: "https://www.mountainproject.com/route/106969206/flour-power",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Flour Power",
+          url: "https://www.mountainproject.com/route/106969206/flour-power",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "creep-show-red-river-gorge",
+      name: "Creep Show",
+      grade: "5.10d",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Creep Show",
+          sourceUrl: "https://www.mountainproject.com/route/105889540/creep-show",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Creep Show",
+          url: "https://www.mountainproject.com/route/105889540/creep-show",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "check-your-grip-red-river-gorge",
+      name: "Check Your Grip",
+      grade: "5.12a",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Check Your Grip",
+          sourceUrl: "https://www.mountainproject.com/route/106081909/check-your-grip",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Check Your Grip",
+          url: "https://www.mountainproject.com/route/106081909/check-your-grip",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "where-lizards-dare-red-river-gorge",
+      name: "Where Lizards Dare",
+      grade: "5.10b",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Where Lizards Dare",
+          sourceUrl: "https://www.mountainproject.com/route/105919793/where-lizards-dare",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Where Lizards Dare",
+          url: "https://www.mountainproject.com/route/105919793/where-lizards-dare",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "iniquity-red-river-gorge",
+      name: "Iniquity",
+      grade: "5.12b",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Iniquity",
+          sourceUrl: "https://www.mountainproject.com/route/106586316/iniquity",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Iniquity",
+          url: "https://www.mountainproject.com/route/106586316/iniquity",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "kampsight-red-river-gorge",
+      name: "Kampsight",
+      grade: "5.9+",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Kampsight",
+          sourceUrl: "https://www.mountainproject.com/route/105882851/kampsight",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Kampsight",
+          url: "https://www.mountainproject.com/route/105882851/kampsight",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "fire-and-brimstone-red-river-gorge",
+      name: "Fire and Brimstone",
+      grade: "5.10d",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Fire and Brimstone",
+          sourceUrl: "https://www.mountainproject.com/route/106081931/fire-and-brimstone",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Fire and Brimstone",
+          url: "https://www.mountainproject.com/route/106081931/fire-and-brimstone",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "manifest-destiny-red-river-gorge",
+      name: "Manifest Destiny",
+      grade: "5.11d",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Manifest Destiny",
+          sourceUrl: "https://www.mountainproject.com/route/106316623/manifest-destiny",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Manifest Destiny",
+          url: "https://www.mountainproject.com/route/106316623/manifest-destiny",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "windy-corner-red-river-gorge",
+      name: "Windy Corner",
+      grade: "5.11b",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Windy Corner",
+          sourceUrl: "https://www.mountainproject.com/route/106166699/windy-corner",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Windy Corner",
+          url: "https://www.mountainproject.com/route/106166699/windy-corner",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "belly-of-the-beast-red-river-gorge",
+      name: "Belly of the Beast",
+      grade: "5.12c",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Belly of the Beast",
+          sourceUrl: "https://www.mountainproject.com/route/106782221/belly-of-the-beast",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Belly of the Beast",
+          url: "https://www.mountainproject.com/route/106782221/belly-of-the-beast",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "the-return-of-chris-snyder-red-river-gorge",
+      name: "The Return of Chris Snyder",
+      grade: "5.11d",
+      type: "sport" as const,
+      length: "single pitch",
+      sector: "Red River Gorge",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "sport metadata entry for Red River Gorge.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: The Return of Chris Snyder",
+          sourceUrl: "https://www.mountainproject.com/route/106020821/the-return-of-chris-snyder",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: The Return of Chris Snyder",
+          url: "https://www.mountainproject.com/route/106020821/the-return-of-chris-snyder",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "siurana-spain": [
+    {
+      id: "el-pati-sector-siurana-index",
+      name: "El Pati sector",
+      grade: "7a-9a+",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "El Pati",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for El Pati.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Siurana",
+          sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Siurana",
+          url: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "can-piqui-pugui-sector-siurana-index",
+      name: "Can Piqui Pugui sector",
+      grade: "6a-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Can Piqui Pugui",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Can Piqui Pugui.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Siurana",
+          sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Siurana",
+          url: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "siuranella-sector-siurana-index",
+      name: "Siuranella sector",
+      grade: "6a-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Siuranella",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Siuranella.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Siurana",
+          sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Siurana",
+          url: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "l-olla-sector-siurana-index",
+      name: "L Olla sector",
+      grade: "6a-8c",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "L Olla",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for L Olla.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Siurana",
+          sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Siurana",
+          url: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "smith-rock-usa": [
+    {
+      id: "dihedrals-sector-smith-rock-index",
+      name: "Dihedrals sector",
+      grade: "5.8-5.14",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Dihedrals",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Dihedrals.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Smith Rock State Park",
+          sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Smith Rock State Park",
+          url: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "morning-glory-wall-sector-smith-rock-index",
+      name: "Morning Glory Wall sector",
+      grade: "5.7-5.13",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Morning Glory Wall",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Morning Glory Wall.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Smith Rock State Park",
+          sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Smith Rock State Park",
+          url: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "christian-brothers-sector-smith-rock-index",
+      name: "Christian Brothers sector",
+      grade: "5.8-5.13",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Christian Brothers",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Christian Brothers.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Smith Rock State Park",
+          sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Smith Rock State Park",
+          url: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "monkey-face-sector-smith-rock-index",
+      name: "Monkey Face sector",
+      grade: "5.7-5.14",
+      type: "multi-pitch" as const,
+      length: "sector index",
+      sector: "Monkey Face",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "multi-pitch metadata entry for Monkey Face.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Smith Rock State Park",
+          sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Smith Rock State Park",
+          url: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3375,47 +5413,6 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
   ],
   "squamish-canada": [
     {
-      id: "crack-of-dawn-squamish",
-      name: "Crack of Dawn",
-      grade: "5.10c",
-      type: "trad" as const,
-      length: "single pitch",
-      sector: "Smoke Bluffs",
-      status: "metadata" as const,
-      style: "trad metadata entry for Smoke Bluffs.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "theCrag Squamish routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; do not copy descriptions beta comments ratings or photos."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Squamish",
-          url: "https://www.thecrag.com/en/climbing/canada/squamish",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
       id: "crime-of-the-century-squamish",
       name: "Crime of the Century",
       grade: "5.11c",
@@ -3423,6 +5420,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3433,7 +5431,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Crime of the Century",
           sourceUrl: "https://www.mountainproject.com/route/105842838/crime-of-the-century",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3450,7 +5448,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3464,6 +5462,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3474,7 +5473,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Merci Me",
           sourceUrl: "https://www.mountainproject.com/route/106527466/merci-me",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3491,48 +5490,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "boogie-till-you-poop-squamish",
-      name: "Boogie Till You Poop",
-      grade: "5.12b",
-      type: "sport" as const,
-      length: "single pitch",
-      sector: "Squamish",
-      status: "metadata" as const,
-      style: "sport metadata entry for Squamish.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Squamish routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Squamish",
-          url: "https://www.thecrag.com/en/climbing/canada/squamish",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3546,6 +5504,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "sport metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3556,7 +5515,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Minor Threat",
           sourceUrl: "https://www.mountainproject.com/route/111998633/minor-threat",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3573,7 +5532,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3587,6 +5546,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "sport metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3597,11 +5557,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Squamish routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -3614,7 +5574,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3628,6 +5588,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "wall sector",
       sector: "The Chief",
       status: "metadata" as const,
+      metadataKind: "area-index" as const,
       style: "trad metadata entry for The Chief.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3638,11 +5599,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Squamish routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only sector index; verify exact route pages manually before richer content."
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, ratings, comments, or photos."
         }
       ],
       images: [],
@@ -3655,7 +5616,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "area-only" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3669,6 +5630,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Chief",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Chief.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3679,11 +5641,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Angel's Crest",
           sourceUrl: "https://www.mountainproject.com/route/105847203/angels-crest",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
+          notes: "Canonical duplicate retained for exact-link enrichment and legacy route-ID aliasing; public catalogs must resolve to angels-crest-squamish."
         }
       ],
       images: [],
@@ -3696,7 +5658,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3710,6 +5672,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Chief",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Chief.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3720,7 +5683,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: The Ultimate Everything",
           sourceUrl: "https://www.mountainproject.com/route/106480430/the-ultimate-everything",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3737,48 +5700,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "calculous-crack-squamish",
-      name: "Calculous Crack",
-      grade: "5.8",
-      type: "trad" as const,
-      length: "single pitch",
-      sector: "Smoke Bluffs",
-      status: "metadata" as const,
-      style: "trad metadata entry for Smoke Bluffs.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Squamish routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Squamish",
-          url: "https://www.thecrag.com/en/climbing/canada/squamish",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3792,6 +5714,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3802,7 +5725,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Flying Circus",
           sourceUrl: "https://www.mountainproject.com/route/105845816/flying-circus",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3819,7 +5742,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3833,6 +5756,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3843,7 +5767,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Neat and Cool",
           sourceUrl: "https://www.mountainproject.com/route/105910806/neat-and-cool",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3860,7 +5784,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3874,6 +5798,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3884,7 +5809,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mosquito",
           sourceUrl: "https://www.mountainproject.com/route/105842817/mosquito",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3901,7 +5826,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3915,6 +5840,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3925,7 +5851,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Klahanie Crack",
           sourceUrl: "https://www.mountainproject.com/route/105947052/klahanie-crack",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3942,7 +5868,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3956,6 +5882,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -3966,7 +5893,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Quarryman",
           sourceUrl: "https://www.mountainproject.com/route/105857742/quarryman",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3983,7 +5910,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -3997,6 +5924,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4007,7 +5935,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Penny Lane",
           sourceUrl: "https://www.mountainproject.com/route/105842825/penny-lane",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4024,48 +5952,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "exasperator-direct-squamish",
-      name: "Exasperator Direct",
-      grade: "5.11c",
-      type: "trad" as const,
-      length: "single pitch",
-      sector: "Smoke Bluffs",
-      status: "metadata" as const,
-      style: "trad metadata entry for Smoke Bluffs.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "TheCrag Squamish routes",
-          sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "TheCrag Squamish",
-          url: "https://www.thecrag.com/en/climbing/canada/squamish",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4079,6 +5966,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Chief",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Chief.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4089,7 +5977,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Bullethead East",
           sourceUrl: "https://www.mountainproject.com/route/107237875/bullethead-east",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4106,7 +5994,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4120,6 +6008,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4130,7 +6019,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Skywalker",
           sourceUrl: "https://www.mountainproject.com/route/107198282/skywalker",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4147,7 +6036,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4161,6 +6050,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4171,7 +6061,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Star Chek",
           sourceUrl: "https://www.mountainproject.com/route/107104796/star-chek",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4188,7 +6078,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4202,6 +6092,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Apron",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Apron.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4212,7 +6103,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Apron Strings",
           sourceUrl: "https://www.mountainproject.com/route/105886110/apron-strings",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4229,7 +6120,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4243,6 +6134,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Apron",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Apron.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4253,7 +6145,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: St. Vitus' Dance",
           sourceUrl: "https://www.mountainproject.com/route/105843781/st-vitus-dance",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4270,7 +6162,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4284,6 +6176,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Apron",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Apron.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4294,7 +6187,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Diedre",
           sourceUrl: "https://www.mountainproject.com/route/105857666/diedre",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4311,7 +6204,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4325,6 +6218,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Apron",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Apron.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4335,7 +6229,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rambles",
           sourceUrl: "https://www.mountainproject.com/route/107577227/rambles",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4352,7 +6246,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4366,6 +6260,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4376,7 +6271,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Boomstick Crack",
           sourceUrl: "https://www.mountainproject.com/route/106188277/boomstick-crack",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4393,7 +6288,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4407,6 +6302,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4417,7 +6313,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: The Zip",
           sourceUrl: "https://www.mountainproject.com/route/105941644/the-zip",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4434,7 +6330,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4448,6 +6344,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4458,7 +6355,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Laughing Crack",
           sourceUrl: "https://www.mountainproject.com/route/105959460/laughing-crack",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4475,7 +6372,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4489,6 +6386,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4499,7 +6397,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Birds of Prey",
           sourceUrl: "https://www.mountainproject.com/route/105844620/birds-of-prey",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4516,7 +6414,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4530,6 +6428,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "The Chief",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for The Chief.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4540,7 +6439,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rock On",
           sourceUrl: "https://www.mountainproject.com/route/105910904/rock-on",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4557,7 +6456,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4571,6 +6470,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Smoke Bluffs",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Smoke Bluffs.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4581,7 +6481,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Crescent Crack (closed)",
           sourceUrl: "https://www.mountainproject.com/route/107224616/crescent-crack-closed",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4598,7 +6498,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4612,6 +6512,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Squamish",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Squamish.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4622,7 +6523,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Jabberwocky",
           sourceUrl: "https://www.mountainproject.com/route/106170451/jabberwocky",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4639,7 +6540,597 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "high-mountain-woody-squamish",
+      name: "High Mountain Woody",
+      grade: "5.8+",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: High Mountain Woody",
+          sourceUrl: "https://www.mountainproject.com/route/105934194/high-mountain-woody",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: High Mountain Woody",
+          url: "https://www.mountainproject.com/route/105934194/high-mountain-woody",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "seasoned-in-the-sun-squamish",
+      name: "Seasoned in the Sun",
+      grade: "5.10-",
+      type: "multi-pitch" as const,
+      length: "multi-pitch",
+      sector: "The Chief",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "multi-pitch metadata entry for The Chief.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Seasoned in the Sun",
+          sourceUrl: "https://www.mountainproject.com/route/105979707/seasoned-in-the-sun",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Seasoned in the Sun",
+          url: "https://www.mountainproject.com/route/105979707/seasoned-in-the-sun",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "tantalus-wall-squamish",
+      name: "Tantalus Wall",
+      grade: "5.11c C0",
+      type: "multi-pitch" as const,
+      length: "long multi-pitch",
+      sector: "The Chief",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "multi-pitch metadata entry for The Chief.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Tantalus Wall",
+          sourceUrl: "https://www.mountainproject.com/route/105880812/tantalus-wall",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Tantalus Wall",
+          url: "https://www.mountainproject.com/route/105880812/tantalus-wall",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "sunblessed-squamish",
+      name: "Sunblessed",
+      grade: "5.10b PG13",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Sunblessed",
+          sourceUrl: "https://www.mountainproject.com/route/105918391/sunblessed",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Sunblessed",
+          url: "https://www.mountainproject.com/route/105918391/sunblessed",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "burgers-and-fries-squamish",
+      name: "Burgers and Fries",
+      grade: "5.7 PG13",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Burgers and Fries",
+          sourceUrl: "https://www.mountainproject.com/route/105957572/burgers-and-fries",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Burgers and Fries",
+          url: "https://www.mountainproject.com/route/105957572/burgers-and-fries",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "kangaroo-corner-squamish",
+      name: "Kangaroo Corner",
+      grade: "5.11a",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Kangaroo Corner",
+          sourceUrl: "https://www.mountainproject.com/route/105808602/kangaroo-corner",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Kangaroo Corner",
+          url: "https://www.mountainproject.com/route/105808602/kangaroo-corner",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "overly-hanging-out-squamish",
+      name: "Overly Hanging Out",
+      grade: "5.11b",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Overly Hanging Out",
+          sourceUrl: "https://www.mountainproject.com/route/106530275/overly-hanging-out",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Overly Hanging Out",
+          url: "https://www.mountainproject.com/route/106530275/overly-hanging-out",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "papoose-one-squamish",
+      name: "Papoose One",
+      grade: "5.10b",
+      type: "multi-pitch" as const,
+      length: "multi-pitch",
+      sector: "Papoose",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "multi-pitch metadata entry for Papoose.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Papoose One",
+          sourceUrl: "https://www.mountainproject.com/route/107256764/papoose-one",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Papoose One",
+          url: "https://www.mountainproject.com/route/107256764/papoose-one",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "rainy-day-dream-away-squamish",
+      name: "Rainy Day Dream Away",
+      grade: "5.10c",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Squamish",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Squamish.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Rainy Day Dream Away",
+          sourceUrl: "https://www.mountainproject.com/route/105842909/rainy-day-dream-away",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Rainy Day Dream Away",
+          url: "https://www.mountainproject.com/route/105842909/rainy-day-dream-away",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "slot-machine-squamish",
+      name: "Slot Machine",
+      grade: "5.8+",
+      type: "trad" as const,
+      length: "single pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Slot Machine",
+          sourceUrl: "https://www.mountainproject.com/route/105842934/slot-machine",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Slot Machine",
+          url: "https://www.mountainproject.com/route/105842934/slot-machine",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "smoke-bluff-connection-squamish",
+      name: "Smoke Bluff Connection",
+      grade: "5.10-",
+      type: "multi-pitch" as const,
+      length: "multi-pitch",
+      sector: "Smoke Bluffs",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "multi-pitch metadata entry for Smoke Bluffs.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Smoke Bluff Connection",
+          sourceUrl: "https://www.mountainproject.com/route/106173601/smoke-bluff-connection",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Smoke Bluff Connection",
+          url: "https://www.mountainproject.com/route/106173601/smoke-bluff-connection",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    }
+  ],
+  "yangshuo-china": [
+    {
+      id: "moon-hill-sector-yangshuo-index",
+      name: "Moon Hill sector",
+      grade: "5.8-5.13",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Moon Hill",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Moon Hill.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Yangshuo County",
+          sourceUrl: "https://en.wikipedia.org/wiki/Yangshuo_County",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Yangshuo County",
+          url: "https://en.wikipedia.org/wiki/Yangshuo_County",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "white-mountain-sector-yangshuo-index",
+      name: "White Mountain sector",
+      grade: "5.8-5.13",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "White Mountain",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for White Mountain.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Yangshuo County",
+          sourceUrl: "https://en.wikipedia.org/wiki/Yangshuo_County",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Yangshuo County",
+          url: "https://en.wikipedia.org/wiki/Yangshuo_County",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "low-mountain-sector-yangshuo-index",
+      name: "Low Mountain sector",
+      grade: "5.7-5.12",
+      type: "sport" as const,
+      length: "sector index",
+      sector: "Low Mountain",
+      status: "metadata" as const,
+      metadataKind: "area-index" as const,
+      style: "sport metadata entry for Low Mountain.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Wikipedia: Yangshuo County",
+          sourceUrl: "https://en.wikipedia.org/wiki/Yangshuo_County",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "low" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata-only area or sector index; this is intentionally an area fallback, not an exact route page. Do not copy route descriptions, beta, approach, protection, descent, topo, ratings, comments, or photos."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Wikipedia: Yangshuo County",
+          url: "https://en.wikipedia.org/wiki/Yangshuo_County",
+          type: "history/article" as const,
+          linkStatus: "area-only" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4655,6 +7146,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "big wall",
       sector: "El Capitan",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for El Capitan.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4665,7 +7157,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Freerider",
           sourceUrl: "https://www.mountainproject.com/route/106261545/freerider",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4682,7 +7174,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4690,12 +7182,13 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
     },
     {
       id: "separate-reality-direct-yosemite",
-      name: "Separate Reality Direct",
+      name: "Separate Reality",
       grade: "5.12a",
       type: "trad" as const,
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4704,26 +7197,26 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
       sources: [
         {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
+          sourceLabel: "Wikipedia: Separate Reality",
+          sourceUrl: "https://en.wikipedia.org/wiki/Separate_Reality_(climb)",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; verify exact route page manually before publishing richer content."
+          notes: "Canonical duplicate retained for exact-link enrichment and legacy route-ID aliasing; public catalogs must resolve to separate-reality."
         }
       ],
       images: [],
       editorialTips: [],
       externalResources: [
         {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
+          title: "TheCrag: Separate Reality",
+          url: "https://www.thecrag.com/en/climbing/united-states/yosemite-national-park/route/20666677",
           type: "route-database" as const,
-          linkStatus: "area-only" as const,
+          linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4737,6 +7230,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4747,7 +7241,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Cosmic Debris",
           sourceUrl: "https://www.mountainproject.com/route/106416910/cosmic-debris",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4764,7 +7258,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -4778,6 +7272,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -4788,7 +7283,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Book of Hate",
           sourceUrl: "https://www.mountainproject.com/route/114315261/book-of-hate",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4805,212 +7300,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "romantic-warrior-yosemite",
-      name: "Romantic Warrior",
-      grade: "5.12b",
-      type: "trad" as const,
-      length: "multi-pitch",
-      sector: "The Needles",
-      status: "metadata" as const,
-      style: "trad metadata entry for The Needles.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "beckey-chouinard-yosemite",
-      name: "Beckey-Chouinard",
-      grade: "5.10c",
-      type: "trad" as const,
-      length: "multi-pitch",
-      sector: "High Sierra",
-      status: "metadata" as const,
-      style: "trad metadata entry for High Sierra.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "incredible-hulk-positive-vibrations-yosemite",
-      name: "Positive Vibrations",
-      grade: "5.11a",
-      type: "trad" as const,
-      length: "multi-pitch",
-      sector: "High Sierra",
-      status: "metadata" as const,
-      style: "trad metadata entry for High Sierra.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "red-dihedral-yosemite",
-      name: "Red Dihedral",
-      grade: "5.10b",
-      type: "trad" as const,
-      length: "multi-pitch",
-      sector: "High Sierra",
-      status: "metadata" as const,
-      style: "trad metadata entry for High Sierra.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "piece-de-resistance-yosemite",
-      name: "Piece de Resistance",
-      grade: "5.13c",
-      type: "trad" as const,
-      length: "single pitch",
-      sector: "Yosemite Valley",
-      status: "metadata" as const,
-      style: "trad metadata entry for Yosemite Valley.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5024,6 +7314,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5034,7 +7325,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Drive By Shooting",
           sourceUrl: "https://www.mountainproject.com/route/106690707/drive-by-shooting",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5051,7 +7342,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5065,6 +7356,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5075,7 +7367,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Outer Limits",
           sourceUrl: "https://www.mountainproject.com/route/105874465/outer-limits",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5092,7 +7384,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5106,6 +7398,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5116,7 +7409,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Catchy",
           sourceUrl: "https://www.mountainproject.com/route/105939236/catchy",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5133,7 +7426,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5147,6 +7440,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5157,11 +7451,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Reed's Pinnacle Direct Route",
           sourceUrl: "https://www.mountainproject.com/route/105865301/reeds-pinnacle-direct-route",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
+          notes: "Canonical duplicate retained for exact-link enrichment and legacy route-ID aliasing; public catalogs must resolve to reeds-pinnacle-direct-yosemite."
         }
       ],
       images: [],
@@ -5174,7 +7468,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5188,6 +7482,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "Middle Cathedral",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Middle Cathedral.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5198,11 +7493,11 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Central Pillar of Frenzy",
           sourceUrl: "https://www.mountainproject.com/route/105862930/central-pillar-of-frenzy",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
+          notes: "Canonical duplicate retained for exact-link enrichment and legacy route-ID aliasing; public catalogs must resolve to central-pillar-of-frenzy-yosemite."
         }
       ],
       images: [],
@@ -5215,7 +7510,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5229,6 +7524,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5239,7 +7535,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Regular Route (Higher Cathedral Spire)",
           sourceUrl: "https://www.mountainproject.com/route/105956387/regular-route-higher-cathedral-spire",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5256,7 +7552,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5270,6 +7566,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "multi-pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5280,7 +7577,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Lost Arrow Tip",
           sourceUrl: "https://www.mountainproject.com/route/105912192/lost-arrow-tip",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5297,48 +7594,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "west-face-leaning-tower-yosemite",
-      name: "West Face of Leaning Tower",
-      grade: "5.13b",
-      type: "trad" as const,
-      length: "big wall",
-      sector: "Leaning Tower",
-      status: "metadata" as const,
-      style: "trad metadata entry for Leaning Tower.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5352,6 +7608,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "big wall",
       sector: "El Capitan",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for El Capitan.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5362,7 +7619,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Muir Wall",
           sourceUrl: "https://www.mountainproject.com/route/105924815/muir-wall",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5379,48 +7636,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
-    },
-    {
-      id: "freestone-yosemite",
-      name: "Freestone",
-      grade: "5.13a",
-      type: "trad" as const,
-      length: "multi-pitch",
-      sector: "Yosemite Valley",
-      status: "metadata" as const,
-      style: "trad metadata entry for Yosemite Valley.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          type: "route-database" as const,
-          linkStatus: "area-only" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
@@ -5434,6 +7650,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       length: "single pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
+      metadataKind: "route" as const,
       style: "trad metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
@@ -5444,7 +7661,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Crimson Cringe",
           sourceUrl: "https://www.mountainproject.com/route/106351823/crimson-cringe",
-          lastChecked: "2026-06-17",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5461,21 +7678,22 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
           linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
       communityStatus: "coming-soon" as const
     },
     {
-      id: "donini-route-yosemite",
-      name: "Donini Route",
-      grade: "5.11c",
-      type: "trad" as const,
-      length: "multi-pitch",
+      id: "arrowhead-arete-yosemite",
+      name: "Arrowhead Arête",
+      grade: "5.9-",
+      type: "multi-pitch" as const,
+      length: "long multi-pitch",
       sector: "Yosemite Valley",
       status: "metadata" as const,
-      style: "trad metadata entry for Yosemite Valley.",
+      metadataKind: "route" as const,
+      style: "multi-pitch metadata entry for Yosemite Valley.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
       bestFor: "Climbers building a destination shortlist before opening current external resources.",
@@ -5483,40 +7701,41 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
       sources: [
         {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
+          sourceLabel: "Mountain Project: Arrowhead Arête",
+          sourceUrl: "https://www.mountainproject.com/route/106269845/arrowhead-arete",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
         }
       ],
       images: [],
       editorialTips: [],
       externalResources: [
         {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
+          title: "Mountain Project: Arrowhead Arête",
+          url: "https://www.mountainproject.com/route/106269845/arrowhead-arete",
           type: "route-database" as const,
-          linkStatus: "area-only" as const,
+          linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
       communityStatus: "coming-soon" as const
     },
     {
-      id: "psycho-killer-yosemite",
-      name: "Psycho Killer",
-      grade: "5.12c",
+      id: "salathe-wall-yosemite",
+      name: "Salathé Wall",
+      grade: "5.9 C2",
       type: "trad" as const,
-      length: "single pitch",
-      sector: "Yosemite Valley",
+      length: "big wall",
+      sector: "El Capitan",
       status: "metadata" as const,
-      style: "trad metadata entry for Yosemite Valley.",
+      metadataKind: "route" as const,
+      style: "trad metadata entry for El Capitan.",
       summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
       practiceFocus: ["source check", "route selection", "local update"],
       bestFor: "Climbers building a destination shortlist before opening current external resources.",
@@ -5524,30 +7743,207 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
       decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
       sources: [
         {
-          sourceLabel: "Mountain Project Yosemite routes",
-          sourceUrl: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
-          lastChecked: "2026-06-17",
+          sourceLabel: "Mountain Project: Salathé Wall",
+          sourceUrl: "https://www.mountainproject.com/route/106154042/salathe-wall",
+          lastChecked: "2026-07-10",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata-only route index; verify exact route page manually before richer content."
+          notes: "Canonical duplicate retained for exact-link enrichment and legacy route-ID aliasing; public catalogs must resolve to salathe-wall-el-capitan."
         }
       ],
       images: [],
       editorialTips: [],
       externalResources: [
         {
-          title: "Mountain Project Yosemite",
-          url: "https://www.mountainproject.com/area/105833388/yosemite-national-park",
+          title: "Mountain Project: Salathé Wall",
+          url: "https://www.mountainproject.com/route/106154042/salathe-wall",
           type: "route-database" as const,
-          linkStatus: "area-only" as const,
+          linkStatus: "route-specific" as const,
           description: {
             en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新路线信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "lurking-fear-yosemite",
+      name: "Lurking Fear",
+      grade: "5.7 C2",
+      type: "trad" as const,
+      length: "big wall",
+      sector: "El Capitan",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for El Capitan.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Lurking Fear",
+          sourceUrl: "https://www.mountainproject.com/route/106110258/lurking-fear",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Lurking Fear",
+          url: "https://www.mountainproject.com/route/106110258/lurking-fear",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "zodiac-yosemite",
+      name: "Zodiac",
+      grade: "5.7 C3",
+      type: "trad" as const,
+      length: "big wall",
+      sector: "El Capitan",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for El Capitan.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Zodiac",
+          sourceUrl: "https://www.mountainproject.com/route/106152347/zodiac",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Zodiac",
+          url: "https://www.mountainproject.com/route/106152347/zodiac",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "mescalito-yosemite",
+      name: "Mescalito",
+      grade: "5.9+ A3",
+      type: "trad" as const,
+      length: "big wall",
+      sector: "El Capitan",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "trad metadata entry for El Capitan.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Mescalito",
+          sourceUrl: "https://www.mountainproject.com/route/105996954/mescalito",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Mescalito",
+          url: "https://www.mountainproject.com/route/105996954/mescalito",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
+          }
+        }
+      ],
+      communityStatus: "coming-soon" as const
+    },
+    {
+      id: "steck-salathe-yosemite",
+      name: "Steck-Salathe",
+      grade: "5.10-",
+      type: "multi-pitch" as const,
+      length: "long multi-pitch",
+      sector: "Sentinel Rock",
+      status: "metadata" as const,
+      metadataKind: "route" as const,
+      style: "multi-pitch metadata entry for Sentinel Rock.",
+      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
+      practiceFocus: ["source check", "route selection", "local update"],
+      bestFor: "Climbers building a destination shortlist before opening current external resources.",
+      personalityTags: ["Metadata index", "External links", "No beta"],
+      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
+      sources: [
+        {
+          sourceLabel: "Mountain Project: Steck-Salathe",
+          sourceUrl: "https://www.mountainproject.com/route/105862873/steck-salathe",
+          lastChecked: "2026-07-10",
+          type: "route-database-metadata" as const,
+          trustLevel: "medium" as const,
+          verifies: ["name", "grade", "type", "sector"],
+          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
+        }
+      ],
+      images: [],
+      editorialTips: [],
+      externalResources: [
+        {
+          title: "Mountain Project: Steck-Salathe",
+          url: "https://www.mountainproject.com/route/105862873/steck-salathe",
+          type: "route-database" as const,
+          linkStatus: "route-specific" as const,
+          description: {
+            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
+            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
           }
         }
       ],
       communityStatus: "coming-soon" as const
     }
   ]
+};
+
+export const metadataRouteAliases: Record<string, string> = {
+  "yosemite-usa:separate-reality-direct-yosemite": "separate-reality",
+  "yosemite-usa:reed-pinnacle-direct-yosemite": "reeds-pinnacle-direct-yosemite",
+  "yosemite-usa:central-pillar-frenzy-yosemite": "central-pillar-of-frenzy-yosemite",
+  "squamish-canada:angel-crest-squamish": "angels-crest-squamish",
+  "kalymnos-greece:priapos-kalymnos": "priapios-kalymnos",
+  "yosemite-usa:salathe-wall-yosemite": "salathe-wall-el-capitan"
 };

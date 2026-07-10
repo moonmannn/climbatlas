@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, useLanguage } from "@/components/LanguageProvider";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserProfile } from "@/components/UserProfileProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
 import { getRouteSummary } from "@/data/localizedContent";
+import { routeRecordKey } from "@/lib/routeAliases";
 import { getAllRoutesWithDestinations } from "@/lib/routes";
 import type {
   ExperienceLevel,
@@ -79,19 +80,19 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
   const atlasItems = useMemo<AtlasItem[]>(() => {
     const routeLookup = new Map(
       getAllRoutesWithDestinations().map((item) => [
-        `${item.destination.slug}::${item.route.id}`,
+        routeRecordKey(item.destination.slug, item.route.id),
         item
       ])
     );
     const savedLookup = new Map(
       savedRoutes.map((record) => [
-        `${record.destination_slug}::${record.route_id}`,
+        routeRecordKey(record.destination_slug, record.route_id),
         record
       ])
     );
     const noteLookup = new Map(
       notes.map((record) => [
-        `${record.destination_slug}::${record.route_id}`,
+        routeRecordKey(record.destination_slug, record.route_id),
         record
       ])
     );
@@ -215,6 +216,13 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
           <div className="p-5 sm:p-6">
             {!isConfigured && (
               <EmptyState
+                action={
+                  <span className="rounded-md border border-ridge/25 bg-parchment/70 px-3 py-2 text-xs font-black leading-5 text-bark/65">
+                    {isZh
+                      ? "下一步：运行 supabase/schema.sql，并在本地和 Vercel 填入 Supabase 环境变量。"
+                      : "Next: run supabase/schema.sql, then add Supabase env variables locally and in Vercel."}
+                  </span>
+                }
                 body={
                   isZh
                     ? "Supabase 环境变量还没有配置。配置完成后，用户就能登录、编辑个人资料并保存路线。"
@@ -226,6 +234,7 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
 
             {isConfigured && !user && (
               <EmptyState
+                action={<AuthButton />}
                 body={
                   isZh
                     ? "登录后可以看到自己的个人主页、想爬路线、已爬路线和私人笔记。"
@@ -238,7 +247,10 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
             {user && (
               <>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-                  <Stat label={isZh ? "全部保存" : "Saved"} value={savedRoutes.length} />
+                  <Stat
+                    label={isZh ? "全部保存" : "Saved"}
+                    value={atlasItems.filter((item) => item.saved).length}
+                  />
                   <Stat label={isZh ? "想爬" : "Want"} value={wantItems.length} />
                   <Stat label={isZh ? "已爬" : "Climbed"} value={climbedItems.length} />
                   <Stat label={isZh ? "笔记" : "Notes"} value={noteItems.length} />
@@ -508,9 +520,17 @@ function RouteSection({
           ))}
         </div>
       ) : (
-        <p className="mt-3 rounded-md border border-dashed border-ridge/35 bg-parchment/55 p-4 text-sm font-bold leading-6 text-bark/65">
-          {emptyText}
-        </p>
+        <div className="mt-3 rounded-md border border-dashed border-ridge/35 bg-parchment/55 p-4">
+          <p className="text-sm font-bold leading-6 text-bark/65">
+            {emptyText}
+          </p>
+          <Link
+            className="mt-3 inline-flex rounded-md border border-forest/25 bg-forest px-3 py-2 text-xs font-black text-parchment transition hover:bg-bark"
+            href="/"
+          >
+            {locale === "zh" ? "去地图找路线" : "Find routes on the map"}
+          </Link>
+        </div>
       )}
     </section>
   );
@@ -575,13 +595,22 @@ function Stat({ label, value }: { label: string; value: number }) {
   );
 }
 
-function EmptyState({ body, title }: { body: string; title: string }) {
+function EmptyState({
+  action,
+  body,
+  title
+}: {
+  action?: ReactNode;
+  body: string;
+  title: string;
+}) {
   return (
     <div className="rounded-lg border border-dashed border-ridge/40 bg-white/35 p-6">
       <h2 className="text-2xl font-black text-bark">{title}</h2>
       <p className="mt-2 max-w-2xl text-sm font-bold leading-6 text-bark/70">
         {body}
       </p>
+      {action && <div className="mt-4 flex flex-wrap gap-2">{action}</div>}
     </div>
   );
 }

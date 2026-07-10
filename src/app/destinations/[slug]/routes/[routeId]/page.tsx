@@ -1,11 +1,16 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
 import { RouteHighlightCard } from "@/components/RouteHighlightCard";
 import { RouteMetadataCard } from "@/components/RouteMetadataCard";
 import { UserRouteControls } from "@/components/UserRouteControls";
-import { destinations, getDestinationBySlug } from "@/data/destinations";
+import {
+  destinations,
+  getDestinationBySlug,
+  getRouteById
+} from "@/data/destinations";
+import { getRouteAliasParams, resolveRouteId } from "@/lib/routeAliases";
 
 type RoutePageProps = {
   params: Promise<{
@@ -15,18 +20,20 @@ type RoutePageProps = {
 };
 
 export function generateStaticParams() {
-  return destinations.flatMap((destination) =>
+  const routeParams = destinations.flatMap((destination) =>
     (destination.routes ?? []).map((route) => ({
       slug: destination.slug,
       routeId: route.id
     }))
   );
+
+  return [...routeParams, ...getRouteAliasParams()];
 }
 
 export async function generateMetadata({ params }: RoutePageProps) {
   const { slug, routeId } = await params;
   const destination = getDestinationBySlug(slug);
-  const route = destination?.routes?.find((item) => item.id === routeId);
+  const route = getRouteById(slug, routeId);
 
   return {
     title: route
@@ -38,7 +45,13 @@ export async function generateMetadata({ params }: RoutePageProps) {
 export default async function RoutePage({ params }: RoutePageProps) {
   const { slug, routeId } = await params;
   const destination = getDestinationBySlug(slug);
-  const route = destination?.routes?.find((item) => item.id === routeId);
+  const canonicalRouteId = resolveRouteId(slug, routeId);
+
+  if (canonicalRouteId !== routeId) {
+    redirect(`/destinations/${slug}/routes/${canonicalRouteId}`);
+  }
+
+  const route = getRouteById(slug, canonicalRouteId);
 
   if (!destination || !route) {
     notFound();

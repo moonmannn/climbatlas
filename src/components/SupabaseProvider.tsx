@@ -66,7 +66,7 @@ export function SupabaseProvider({ children }: { children: ReactNode }) {
         const { error } = await supabase.auth.signInWithOtp({
           email,
           options: {
-            emailRedirectTo: window.location.origin
+            emailRedirectTo: window.location.href
           }
         });
 
