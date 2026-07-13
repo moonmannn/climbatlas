@@ -1,13 +1,6 @@
-"use client";
+﻿"use client";
 
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode
-} from "react";
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { Locale } from "@/types/destination";
 
 type LanguageContextValue = {
@@ -23,75 +16,37 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const storedLocale = window.localStorage.getItem(storageKey);
-
-    if (storedLocale === "en" || storedLocale === "zh") {
-      setLocaleState(storedLocale);
-    }
+    if (storedLocale === "en" || storedLocale === "zh") setLocaleState(storedLocale);
   }, []);
 
-  const value = useMemo<LanguageContextValue>(
-    () => ({
-      locale,
-      setLocale(nextLocale) {
-        setLocaleState(nextLocale);
-        window.localStorage.setItem(storageKey, nextLocale);
-      }
-    }),
-    [locale]
-  );
+  const value = useMemo<LanguageContextValue>(() => ({
+    locale,
+    setLocale(nextLocale) {
+      setLocaleState(nextLocale);
+      window.localStorage.setItem(storageKey, nextLocale);
+    }
+  }), [locale]);
 
-  return (
-    <LanguageContext.Provider value={value}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 }
 
 export function useLanguage() {
   const context = useContext(LanguageContext);
-
-  if (!context) {
-    throw new Error("useLanguage must be used inside LanguageProvider.");
-  }
-
+  if (!context) throw new Error("useLanguage must be used inside LanguageProvider.");
   return context;
 }
 
 export function LanguageToggle() {
   const { locale, setLocale } = useLanguage();
-  const buttonBase =
-    "rounded-md border px-3 py-2 text-xs font-black uppercase tracking-wide transition";
-
   return (
-    <div className="flex rounded-lg border border-ridge/25 bg-parchment/95 p-1 shadow-atlas backdrop-blur">
-      <button
-        className={`${buttonBase} ${
-          locale === "en"
-            ? "border-antiquegold/40 bg-antiquegold text-bark"
-            : "border-transparent text-bark/70 hover:border-ridge/25 hover:bg-white/55 hover:text-bark"
-        }`}
-        onClick={() => setLocale("en")}
-        type="button"
-      >
-        EN
-      </button>
-      <button
-        className={`${buttonBase} ${
-          locale === "zh"
-            ? "border-antiquegold/40 bg-antiquegold text-bark"
-            : "border-transparent text-bark/70 hover:border-ridge/25 hover:bg-white/55 hover:text-bark"
-        }`}
-        onClick={() => setLocale("zh")}
-        type="button"
-      >
-        中文
-      </button>
+    <div className="flex items-center border border-brandforest/15 bg-cream p-0.5">
+      <button className={`min-h-9 px-2.5 text-xs font-semibold transition-colors ${locale === "en" ? "bg-brandforest text-cream" : "text-brandforest/60 hover:text-brandforest"}`} onClick={() => setLocale("en")} type="button">EN</button>
+      <button className={`min-h-9 px-2.5 text-xs font-semibold transition-colors ${locale === "zh" ? "bg-brandforest text-cream" : "text-brandforest/60 hover:text-brandforest"}`} onClick={() => setLocale("zh")} type="button">中文</button>
     </div>
   );
 }
 
 export function LocalizedText({ en, zh }: { en: string; zh: string }) {
   const { locale } = useLanguage();
-
   return <>{locale === "zh" ? zh : en}</>;
 }

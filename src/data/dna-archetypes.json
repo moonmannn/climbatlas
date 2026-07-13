@@ -1,0 +1,171 @@
+[
+  {
+    "id": "sun-chasing-explorer",
+    "name": {
+      "en": "The Sun-Chasing Explorer",
+      "zh": "追光探索者"
+    },
+    "tagline": {
+      "en": "Warm rock, open horizons, and days worth remembering.",
+      "zh": "温暖岩壁、开阔视野和值得记住的日子。"
+    },
+    "description": {
+      "en": "You are energized by discovery, friendly climbing cultures, and trips that feel generous rather than severe.",
+      "zh": "你会被发现感、友好的攀岩文化，以及不必过度严酷的旅程点亮。"
+    },
+    "dominantDimensions": [
+      "exploration",
+      "social",
+      "comfort"
+    ],
+    "idealVector": {
+      "exploration": 88,
+      "performance": 62,
+      "adventure": 68,
+      "social": 86,
+      "comfort": 82,
+      "flow": 76
+    },
+    "accent": "terracotta"
+  },
+  {
+    "id": "wild-edge-adventurer",
+    "name": {
+      "en": "The Wild-Edge Adventurer",
+      "zh": "荒野边界冒险者"
+    },
+    "tagline": {
+      "en": "Commitment, uncertainty, and the long way in.",
+      "zh": "投入、未知，以及更长的进入方式。"
+    },
+    "description": {
+      "en": "You want climbing days to feel like journeys, with real landscape, teamwork, and a little uncertainty.",
+      "zh": "你希望攀岩日像一段旅程，包含真实风景、团队配合和一点未知。"
+    },
+    "dominantDimensions": [
+      "adventure",
+      "exploration"
+    ],
+    "idealVector": {
+      "exploration": 92,
+      "performance": 72,
+      "adventure": 98,
+      "social": 58,
+      "comfort": 28,
+      "flow": 68
+    },
+    "accent": "forest"
+  },
+  {
+    "id": "movement-cartographer",
+    "name": {
+      "en": "The Movement Cartographer",
+      "zh": "动作制图师"
+    },
+    "tagline": {
+      "en": "Read the rock, solve the sequence, remember the feeling.",
+      "zh": "阅读岩壁、解开动作，并记住那种感觉。"
+    },
+    "description": {
+      "en": "Movement quality and body awareness matter more to you than collecting impressive numbers.",
+      "zh": "比起收集漂亮数字，你更在意动作质量和身体感知。"
+    },
+    "dominantDimensions": [
+      "flow",
+      "exploration"
+    ],
+    "idealVector": {
+      "exploration": 76,
+      "performance": 78,
+      "adventure": 50,
+      "social": 55,
+      "comfort": 66,
+      "flow": 98
+    },
+    "accent": "sky"
+  },
+  {
+    "id": "project-driven-performer",
+    "name": {
+      "en": "The Project-Driven Performer",
+      "zh": "项目型突破者"
+    },
+    "tagline": {
+      "en": "Clear goals, honest effort, measurable progress.",
+      "zh": "清晰目标、诚实投入和看得见的进步。"
+    },
+    "description": {
+      "en": "You enjoy focused attempts, useful difficulty, and destinations that reward returning with a plan.",
+      "zh": "你喜欢专注尝试、有意义的难度，以及值得带着计划反复回去的目的地。"
+    },
+    "dominantDimensions": [
+      "performance",
+      "flow"
+    ],
+    "idealVector": {
+      "exploration": 54,
+      "performance": 98,
+      "adventure": 66,
+      "social": 52,
+      "comfort": 48,
+      "flow": 84
+    },
+    "accent": "terracotta"
+  },
+  {
+    "id": "campfire-connector",
+    "name": {
+      "en": "The Campfire Connector",
+      "zh": "岩场连接者"
+    },
+    "tagline": {
+      "en": "Good people turn a climbing day into a story.",
+      "zh": "合适的伙伴，会把攀岩日变成故事。"
+    },
+    "description": {
+      "en": "Community, shared judgment, and flexible days shape your best memories on and off the wall.",
+      "zh": "社群、共同判断和灵活节奏，会塑造你在岩壁上下最好的回忆。"
+    },
+    "dominantDimensions": [
+      "social",
+      "comfort"
+    ],
+    "idealVector": {
+      "exploration": 66,
+      "performance": 58,
+      "adventure": 48,
+      "social": 98,
+      "comfort": 86,
+      "flow": 72
+    },
+    "accent": "sand"
+  },
+  {
+    "id": "thoughtful-basecamp-builder",
+    "name": {
+      "en": "The Thoughtful Basecamp Builder",
+      "zh": "从容大本营规划者"
+    },
+    "tagline": {
+      "en": "Smooth logistics leave more room for good climbing.",
+      "zh": "顺畅安排，会为好攀爬留下更多空间。"
+    },
+    "description": {
+      "en": "You value reliable conditions, practical choices, and enough comfort to stay curious for several days.",
+      "zh": "你重视稳定条件、实际选择，以及足以让好奇心持续好几天的舒适度。"
+    },
+    "dominantDimensions": [
+      "comfort",
+      "flow"
+    ],
+    "idealVector": {
+      "exploration": 62,
+      "performance": 68,
+      "adventure": 34,
+      "social": 74,
+      "comfort": 98,
+      "flow": 82
+    },
+    "accent": "sky"
+  }
+]

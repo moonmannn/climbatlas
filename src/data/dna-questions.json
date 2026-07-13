@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ideal-day",
+    "order": 1,
+    "prompt": {
+      "en": "Which climbing day feels most like you?",
+      "zh": "哪一种攀岩日最像你？"
+    },
+    "helper": {
+      "en": "Choose the atmosphere, not a famous destination.",
+      "zh": "选择氛围，不需要联想到真实目的地。"
+    },
+    "options": [
+      {
+        "id": "sunlit-limestone",
+        "label": {
+          "en": "Sunlit limestone",
+          "zh": "阳光下的石灰岩"
+        },
+        "description": {
+          "en": "Warm rock, long days, and an easy social rhythm.",
+          "zh": "温暖岩壁、漫长白昼和轻松的社交节奏。"
+        },
+        "illustrationKey": "sunlit-limestone",
+        "effects": {
+          "exploration": 2,
+          "social": 3,
+          "comfort": 3,
+          "flow": 4
+        }
+      },
+      {
+        "id": "forest-granite",
+        "label": {
+          "en": "Forest granite",
+          "zh": "森林花岗岩"
+        },
+        "description": {
+          "en": "Texture, quiet focus, and movement that rewards attention.",
+          "zh": "有质感、安静专注，也奖励认真移动。"
+        },
+        "illustrationKey": "forest-granite",
+        "effects": {
+          "exploration": 3,
+          "adventure": 2,
+          "flow": 4
+        }
+      },
+      {
+        "id": "high-alpine-wall",
+        "label": {
+          "en": "High alpine wall",
+          "zh": "高山大岩壁"
+        },
+        "description": {
+          "en": "Commitment, exposure, and a day that feels like an expedition.",
+          "zh": "投入、暴露感，以及像小型远征一样的一天。"
+        },
+        "illustrationKey": "high-alpine-wall",
+        "effects": {
+          "exploration": 3,
+          "performance": 2,
+          "adventure": 4
+        }
+      },
+      {
+        "id": "lively-local-crag",
+        "label": {
+          "en": "A lively local crag",
+          "zh": "热闹的本地岩场"
+        },
+        "description": {
+          "en": "Familiar systems, shared energy, and plenty of people around.",
+          "zh": "熟悉的系统、共同能量和身边的伙伴。"
+        },
+        "illustrationKey": "lively-local-crag",
+        "effects": {
+          "performance": 1,
+          "social": 4,
+          "comfort": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "trip-memory",
+    "order": 2,
+    "prompt": {
+      "en": "What makes a climbing trip memorable?",
+      "zh": "什么会让一次攀岩旅行难忘？"
+    },
+    "helper": {
+      "en": "Pick the part you would tell someone about first.",
+      "zh": "选择你最想先讲给朋友听的部分。"
+    },
+    "options": [
+      {
+        "id": "new-grade",
+        "label": {
+          "en": "Reaching a new grade",
+          "zh": "突破新的难度"
+        },
+        "description": {
+          "en": "A clear goal and the satisfaction of measurable progress.",
+          "zh": "清晰目标，以及看得见的进步。"
+        },
+        "illustrationKey": "new-grade",
+        "effects": {
+          "performance": 4,
+          "flow": 1
+        }
+      },
+      {
+        "id": "unknown-place",
+        "label": {
+          "en": "Discovering somewhere unknown",
+          "zh": "发现陌生的地方"
+        },
+        "description": {
+          "en": "New landscapes, new habits, and a wider atlas.",
+          "zh": "新的风景、习惯，以及更大的地图。"
+        },
+        "illustrationKey": "unknown-place",
+        "effects": {
+          "exploration": 4,
+          "adventure": 2
+        }
+      },
+      {
+        "id": "shared-day",
+        "label": {
+          "en": "Sharing the day with friends",
+          "zh": "和朋友共享一天"
+        },
+        "description": {
+          "en": "The people, encouragement, and stories after climbing.",
+          "zh": "伙伴、鼓励，以及攀完之后的故事。"
+        },
+        "illustrationKey": "shared-day",
+        "effects": {
+          "social": 4,
+          "comfort": 2
+        }
+      },
+      {
+        "id": "perfect-movement",
+        "label": {
+          "en": "Finding perfect movement",
+          "zh": "找到完美的动作流动"
+        },
+        "description": {
+          "en": "A sequence that feels precise, surprising, and worth repeating.",
+          "zh": "一段精准、惊喜，而且值得重复的动作。"
+        },
+        "illustrationKey": "perfect-movement",
+        "effects": {
+          "performance": 1,
+          "flow": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "approach",
+    "order": 3,
+    "prompt": {
+      "en": "How adventurous should the approach feel?",
+      "zh": "你希望接近岩壁的过程有多冒险？"
+    },
+    "helper": {
+      "en": "Think about the whole day, not only the climbing.",
+      "zh": "考虑完整的一天，而不只是攀爬本身。"
+    },
+    "options": [
+      {
+        "id": "park-and-climb",
+        "label": {
+          "en": "Park and climb",
+          "zh": "停车就爬"
+        },
+        "description": {
+          "en": "Keep logistics light and save energy for the rock.",
+          "zh": "让行程简单，把体力留给岩壁。"
+        },
+        "illustrationKey": "park-and-climb",
+        "effects": {
+          "social": 1,
+          "comfort": 4
+        }
+      },
+      {
+        "id": "short-walk",
+        "label": {
+          "en": "A short walk",
+          "zh": "短距离步行"
+        },
+        "description": {
+          "en": "Enough transition to arrive, without turning it into a mission.",
+          "zh": "有一点进入状态的过程，但不变成任务。"
+        },
+        "illustrationKey": "short-walk",
+        "effects": {
+          "exploration": 1,
+          "comfort": 3,
+          "flow": 1
+        }
+      },
+      {
+        "id": "scenic-approach",
+        "label": {
+          "en": "A long scenic approach",
+          "zh": "风景很好的长距离接近"
+        },
+        "description": {
+          "en": "The landscape is part of why the day matters.",
+          "zh": "沿途风景本身就是这一天的一部分。"
+        },
+        "illustrationKey": "scenic-approach",
+        "effects": {
+          "exploration": 3,
+          "adventure": 3,
+          "flow": 1
+        }
+      },
+      {
+        "id": "remote-is-better",
+        "label": {
+          "en": "The more remote, the better",
+          "zh": "越偏远越好"
+        },
+        "description": {
+          "en": "Distance and uncertainty make the experience richer.",
+          "zh": "距离和未知会让体验更丰富。"
+        },
+        "illustrationKey": "remote-is-better",
+        "effects": {
+          "exploration": 4,
+          "adventure": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "return",
+    "order": 4,
+    "prompt": {
+      "en": "What makes you return to a route or area?",
+      "zh": "什么会让你重回一条路线或一个岩区？"
+    },
+    "helper": {
+      "en": "Choose the quality that keeps working on your imagination.",
+      "zh": "选择最容易让你念念不忘的东西。"
+    },
+    "options": [
+      {
+        "id": "difficulty",
+        "label": {
+          "en": "Difficulty",
+          "zh": "难度"
+        },
+        "description": {
+          "en": "A demanding benchmark that gives training a direction.",
+          "zh": "一个能为训练提供方向的明确挑战。"
+        },
+        "illustrationKey": "difficulty",
+        "effects": {
+          "performance": 4,
+          "adventure": 1
+        }
+      },
+      {
+        "id": "movement",
+        "label": {
+          "en": "Movement",
+          "zh": "动作"
+        },
+        "description": {
+          "en": "Body position, rhythm, and the pleasure of solving.",
+          "zh": "身体位置、节奏，以及解题的快乐。"
+        },
+        "illustrationKey": "movement",
+        "effects": {
+          "performance": 1,
+          "flow": 4
+        }
+      },
+      {
+        "id": "scenery",
+        "label": {
+          "en": "Scenery",
+          "zh": "风景"
+        },
+        "description": {
+          "en": "The place is memorable before you even pull on.",
+          "zh": "还没开始攀爬，这个地方就已经难忘。"
+        },
+        "illustrationKey": "scenery",
+        "effects": {
+          "exploration": 4,
+          "adventure": 2
+        }
+      },
+      {
+        "id": "people",
+        "label": {
+          "en": "The people around it",
+          "zh": "身边的人"
+        },
+        "description": {
+          "en": "Community makes an ordinary session worth repeating.",
+          "zh": "社群让普通的一次攀爬也值得重复。"
+        },
+        "illustrationKey": "people",
+        "effects": {
+          "social": 4,
+          "comfort": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "trip-rhythm",
+    "order": 5,
+    "prompt": {
+      "en": "What rhythm fits a climbing trip?",
+      "zh": "怎样的节奏最适合一次攀岩旅行？"
+    },
+    "helper": {
+      "en": "Pick the plan you would be happiest repeating for several days.",
+      "zh": "选择你愿意连续过好几天的节奏。"
+    },
+    "options": [
+      {
+        "id": "single-project",
+        "label": {
+          "en": "One meaningful project",
+          "zh": "专注一个重要项目"
+        },
+        "description": {
+          "en": "Go deep, learn carefully, and measure small changes.",
+          "zh": "深入学习，认真记录细小变化。"
+        },
+        "illustrationKey": "single-project",
+        "effects": {
+          "performance": 4,
+          "comfort": 1,
+          "flow": 2
+        }
+      },
+      {
+        "id": "style-sampler",
+        "label": {
+          "en": "A sampler of styles",
+          "zh": "体验多种风格"
+        },
+        "description": {
+          "en": "Let curiosity choose a different lesson each day.",
+          "zh": "每天让好奇心选择不同的功课。"
+        },
+        "illustrationKey": "style-sampler",
+        "effects": {
+          "exploration": 4,
+          "flow": 2
+        }
+      },
+      {
+        "id": "long-objective",
+        "label": {
+          "en": "One long objective",
+          "zh": "完成一个长目标"
+        },
+        "description": {
+          "en": "Build the day around commitment and teamwork.",
+          "zh": "围绕投入和团队配合安排一整天。"
+        },
+        "illustrationKey": "long-objective",
+        "effects": {
+          "performance": 2,
+          "adventure": 4,
+          "social": 1
+        }
+      },
+      {
+        "id": "flexible-group-day",
+        "label": {
+          "en": "A flexible group day",
+          "zh": "灵活的团队攀岩日"
+        },
+        "description": {
+          "en": "Leave room for mixed energy, laughter, and changing plans.",
+          "zh": "为不同状态、笑声和临时变化留出空间。"
+        },
+        "illustrationKey": "flexible-group-day",
+        "effects": {
+          "social": 4,
+          "comfort": 4,
+          "flow": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "conditions",
+    "order": 6,
+    "prompt": {
+      "en": "Which conditions bring out your best climbing?",
+      "zh": "哪种条件最能让你发挥状态？"
+    },
+    "helper": {
+      "en": "There is no tough answer here, only an honest one.",
+      "zh": "这里没有更强硬的答案，只有更诚实的选择。"
+    },
+    "options": [
+      {
+        "id": "warm-predictable",
+        "label": {
+          "en": "Warm and predictable",
+          "zh": "温暖且稳定"
+        },
+        "description": {
+          "en": "Comfortable weather keeps attention on movement and people.",
+          "zh": "舒适天气让注意力留在动作和伙伴上。"
+        },
+        "illustrationKey": "warm-predictable",
+        "effects": {
+          "social": 2,
+          "comfort": 4,
+          "flow": 2
+        }
+      },
+      {
+        "id": "crisp-technical",
+        "label": {
+          "en": "Crisp and technical",
+          "zh": "凉爽且技术感强"
+        },
+        "description": {
+          "en": "Good friction and focused attempts make the day satisfying.",
+          "zh": "良好摩擦和专注尝试让一天更满足。"
+        },
+        "illustrationKey": "crisp-technical",
+        "effects": {
+          "performance": 3,
+          "flow": 4
+        }
+      },
+      {
+        "id": "wild-weather",
+        "label": {
+          "en": "Wild and changeable",
+          "zh": "多变而野性"
+        },
+        "description": {
+          "en": "Adaptation and uncertainty are part of the appeal.",
+          "zh": "适应变化和未知本身就是吸引力。"
+        },
+        "illustrationKey": "wild-weather",
+        "effects": {
+          "exploration": 2,
+          "adventure": 4
+        }
+      },
+      {
+        "id": "team-matters-most",
+        "label": {
+          "en": "Any weather with the right team",
+          "zh": "有合适队友，天气都可以"
+        },
+        "description": {
+          "en": "Shared judgment and energy matter more than perfect conditions.",
+          "zh": "共同判断和能量比完美天气更重要。"
+        },
+        "illustrationKey": "team-matters-most",
+        "effects": {
+          "adventure": 1,
+          "social": 4,
+          "comfort": 2
+        }
+      }
+    ]
+  }
+]

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FormEvent, useMemo, useState } from "react";
 import { LanguageToggle, useLanguage } from "@/components/LanguageProvider";
+import { SiteHeader } from "@/components/SiteHeader";
 
 type FeedbackForm = {
   routeGoal: string;
@@ -125,11 +126,11 @@ export function FeedbackClient() {
   }
 
   return (
-    <main className="min-h-screen bg-bark px-4 py-6 text-bark sm:px-6 lg:px-8">
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_80%_10%,rgba(199,151,72,0.22),transparent_28%),linear-gradient(180deg,rgba(246,237,214,0.12),transparent_35%)]" />
+    <main className="phase6-content min-h-screen bg-cream text-charcoal">
+      <SiteHeader />
 
-      <div className="relative mx-auto max-w-5xl">
-        <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+      <div className="relative mx-auto max-w-5xl px-5 py-[72px] sm:px-8 lg:px-12 lg:py-20">
+        <div className="hidden">
           <Link
             className="rounded-lg border border-antiquegold/30 bg-parchment/90 px-4 py-2 text-sm font-black text-bark shadow-atlas transition hover:bg-antiquegold"
             href="/"
@@ -139,12 +140,12 @@ export function FeedbackClient() {
           <LanguageToggle />
         </div>
 
-        <section className="medieval-panel paper-texture overflow-hidden">
-          <div className="border-b border-bark/15 bg-parchment/95 p-6 shadow-[inset_0_-1px_0_rgba(43,33,24,0.08)] sm:p-8">
+        <section className="overflow-hidden border-y border-brandforest/15 bg-cream">
+          <div className="border-b border-brandforest/15 bg-cream p-6 sm:p-8">
             <p className="field-note-label text-ridge">
               {isZh ? "Beta 反馈" : "Beta feedback"}
             </p>
-            <h1 className="mt-3 max-w-3xl text-4xl font-black leading-tight text-bark sm:text-5xl">
+            <h1 className="display-serif mt-3 max-w-3xl text-5xl font-medium leading-tight text-brandforest sm:text-6xl">
               {isZh
                 ? "帮我们判断 ClimbAtlas 下一步该做什么"
                 : "Help shape what ClimbAtlas builds next"}

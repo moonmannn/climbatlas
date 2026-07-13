@@ -1,0 +1,542 @@
+[
+  {
+    "destinationSlug": "yosemite-usa",
+    "vector": {
+      "exploration": 78,
+      "performance": 92,
+      "adventure": 96,
+      "social": 72,
+      "comfort": 35,
+      "flow": 72
+    },
+    "summary": {
+      "en": "Historic granite objectives with commitment, scale, and performance energy.",
+      "zh": "历史感强烈的花岗岩目标，强调投入、尺度和突破。"
+    },
+    "traits": {
+      "en": [
+        "big-wall history",
+        "high commitment",
+        "granite systems"
+      ],
+      "zh": [
+        "大岩壁历史",
+        "高投入度",
+        "花岗岩系统"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "red-river-gorge-usa",
+    "vector": {
+      "exploration": 60,
+      "performance": 85,
+      "adventure": 45,
+      "social": 82,
+      "comfort": 72,
+      "flow": 78
+    },
+    "summary": {
+      "en": "A social sandstone destination built around steep movement and endurance.",
+      "zh": "以陡峭动作、耐力和社交氛围为核心的砂岩目的地。"
+    },
+    "traits": {
+      "en": [
+        "steep endurance",
+        "friendly crag rhythm",
+        "broad route choice"
+      ],
+      "zh": [
+        "陡峭耐力",
+        "友好岩场节奏",
+        "丰富路线选择"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "joshua-tree-usa",
+    "vector": {
+      "exploration": 70,
+      "performance": 72,
+      "adventure": 58,
+      "social": 55,
+      "comfort": 60,
+      "flow": 84
+    },
+    "summary": {
+      "en": "Desert granite that rewards friction, style, and careful movement.",
+      "zh": "奖励摩擦、风格和细致动作的沙漠花岗岩。"
+    },
+    "traits": {
+      "en": [
+        "desert character",
+        "movement lessons",
+        "compact objectives"
+      ],
+      "zh": [
+        "沙漠性格",
+        "动作功课",
+        "紧凑目标"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "smith-rock-usa",
+    "vector": {
+      "exploration": 68,
+      "performance": 88,
+      "adventure": 55,
+      "social": 72,
+      "comfort": 66,
+      "flow": 82
+    },
+    "summary": {
+      "en": "Technical volcanic climbing with strong history and honest footwork.",
+      "zh": "拥有鲜明历史、技术感和诚实脚法要求的火山岩攀爬。"
+    },
+    "traits": {
+      "en": [
+        "technical movement",
+        "sport history",
+        "desert-edge travel"
+      ],
+      "zh": [
+        "技术动作",
+        "运动攀历史",
+        "沙漠边缘旅行"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "squamish-canada",
+    "vector": {
+      "exploration": 82,
+      "performance": 86,
+      "adventure": 80,
+      "social": 80,
+      "comfort": 70,
+      "flow": 88
+    },
+    "summary": {
+      "en": "Granite variety, forest-town energy, and room for both movement and adventure.",
+      "zh": "花岗岩风格多样，兼具森林小镇能量、动作与冒险。"
+    },
+    "traits": {
+      "en": [
+        "granite variety",
+        "forest atmosphere",
+        "community energy"
+      ],
+      "zh": [
+        "花岗岩多样性",
+        "森林氛围",
+        "社群能量"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "el-potrero-chico-mexico",
+    "vector": {
+      "exploration": 75,
+      "performance": 78,
+      "adventure": 90,
+      "social": 76,
+      "comfort": 60,
+      "flow": 72
+    },
+    "summary": {
+      "en": "Long limestone days where teamwork and exposure shape the memory.",
+      "zh": "由长距离石灰岩、团队配合和暴露感塑造记忆。"
+    },
+    "traits": {
+      "en": [
+        "long limestone",
+        "team objectives",
+        "vertical travel"
+      ],
+      "zh": [
+        "长距离石灰岩",
+        "团队目标",
+        "垂直旅行"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "fontainebleau-france",
+    "vector": {
+      "exploration": 74,
+      "performance": 90,
+      "adventure": 35,
+      "social": 78,
+      "comfort": 75,
+      "flow": 98
+    },
+    "summary": {
+      "en": "A sandstone movement laboratory for precision, creativity, and repeat visits.",
+      "zh": "适合精准、创造性动作和反复探索的砂岩实验室。"
+    },
+    "traits": {
+      "en": [
+        "movement puzzles",
+        "forest circuits",
+        "precision footwork"
+      ],
+      "zh": [
+        "动作谜题",
+        "森林线路组合",
+        "精准脚法"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "chamonix-france",
+    "vector": {
+      "exploration": 90,
+      "performance": 88,
+      "adventure": 100,
+      "social": 58,
+      "comfort": 25,
+      "flow": 72
+    },
+    "summary": {
+      "en": "Alpine scale, changing conditions, and serious expedition character.",
+      "zh": "高山尺度、多变条件和鲜明的远征感。"
+    },
+    "traits": {
+      "en": [
+        "alpine commitment",
+        "changing conditions",
+        "high-mountain systems"
+      ],
+      "zh": [
+        "高山投入",
+        "多变条件",
+        "高山系统"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "ceuse-france",
+    "vector": {
+      "exploration": 78,
+      "performance": 96,
+      "adventure": 72,
+      "social": 76,
+      "comfort": 45,
+      "flow": 92
+    },
+    "summary": {
+      "en": "A scenic limestone benchmark with approach effort and elite movement quality.",
+      "zh": "兼具接近强度、风景和高质量动作的石灰岩标杆。"
+    },
+    "traits": {
+      "en": [
+        "performance limestone",
+        "scenic approach",
+        "sustained movement"
+      ],
+      "zh": [
+        "表现型石灰岩",
+        "风景接近",
+        "持续动作"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "kalymnos-greece",
+    "vector": {
+      "exploration": 72,
+      "performance": 82,
+      "adventure": 58,
+      "social": 95,
+      "comfort": 86,
+      "flow": 88
+    },
+    "summary": {
+      "en": "Warm limestone, sea air, and one of the atlas’s strongest social rhythms.",
+      "zh": "温暖石灰岩、海风，以及地图册里最鲜明的社交节奏之一。"
+    },
+    "traits": {
+      "en": [
+        "warm limestone",
+        "social climbing",
+        "tufa flow"
+      ],
+      "zh": [
+        "温暖石灰岩",
+        "社交攀岩",
+        "钟乳石流动"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "dolomites-italy",
+    "vector": {
+      "exploration": 92,
+      "performance": 86,
+      "adventure": 100,
+      "social": 55,
+      "comfort": 28,
+      "flow": 76
+    },
+    "summary": {
+      "en": "Large mountain architecture for climbers drawn to history and commitment.",
+      "zh": "面向喜欢历史感、山体尺度和投入感的攀岩者。"
+    },
+    "traits": {
+      "en": [
+        "mountain scale",
+        "historic lines",
+        "team commitment"
+      ],
+      "zh": [
+        "山体尺度",
+        "历史线路",
+        "团队投入"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "frankenjura-germany",
+    "vector": {
+      "exploration": 72,
+      "performance": 95,
+      "adventure": 48,
+      "social": 78,
+      "comfort": 68,
+      "flow": 86
+    },
+    "summary": {
+      "en": "Compact limestone power, forest exploration, and deep performance history.",
+      "zh": "紧凑石灰岩力量、森林探索和深厚突破历史。"
+    },
+    "traits": {
+      "en": [
+        "pocket power",
+        "forest crags",
+        "performance heritage"
+      ],
+      "zh": [
+        "洞点力量",
+        "森林岩场",
+        "突破传统"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "siurana-spain",
+    "vector": {
+      "exploration": 75,
+      "performance": 95,
+      "adventure": 55,
+      "social": 88,
+      "comfort": 72,
+      "flow": 90
+    },
+    "summary": {
+      "en": "Technical limestone, project culture, and a strong shared climbing identity.",
+      "zh": "技术型石灰岩、项目文化和鲜明的共同攀岩身份。"
+    },
+    "traits": {
+      "en": [
+        "technical limestone",
+        "project culture",
+        "village rhythm"
+      ],
+      "zh": [
+        "技术石灰岩",
+        "项目文化",
+        "村落节奏"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "margalef-spain",
+    "vector": {
+      "exploration": 70,
+      "performance": 96,
+      "adventure": 48,
+      "social": 86,
+      "comfort": 74,
+      "flow": 88
+    },
+    "summary": {
+      "en": "Pocketed limestone with focused performance energy and flexible crag days.",
+      "zh": "洞点石灰岩、专注突破能量和灵活岩场节奏。"
+    },
+    "traits": {
+      "en": [
+        "pocket climbing",
+        "hard projects",
+        "social sectors"
+      ],
+      "zh": [
+        "洞点攀爬",
+        "高难项目",
+        "社交岩区"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "yangshuo-china",
+    "vector": {
+      "exploration": 88,
+      "performance": 78,
+      "adventure": 72,
+      "social": 90,
+      "comfort": 72,
+      "flow": 84
+    },
+    "summary": {
+      "en": "Karst discovery, travel culture, and sociable limestone variety.",
+      "zh": "喀斯特探索、旅行文化和富有社交感的石灰岩多样性。"
+    },
+    "traits": {
+      "en": [
+        "karst landscape",
+        "travel discovery",
+        "social limestone"
+      ],
+      "zh": [
+        "喀斯特风景",
+        "旅行发现",
+        "社交石灰岩"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "liming-china",
+    "vector": {
+      "exploration": 95,
+      "performance": 82,
+      "adventure": 94,
+      "social": 62,
+      "comfort": 30,
+      "flow": 85
+    },
+    "summary": {
+      "en": "Remote sandstone cracks for climbers who want discovery and real commitment.",
+      "zh": "适合追求发现感、偏远环境和真实投入的砂岩裂缝。"
+    },
+    "traits": {
+      "en": [
+        "remote exploration",
+        "sandstone cracks",
+        "expedition mood"
+      ],
+      "zh": [
+        "偏远探索",
+        "砂岩裂缝",
+        "远征氛围"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "long-dong-taiwan",
+    "vector": {
+      "exploration": 82,
+      "performance": 75,
+      "adventure": 72,
+      "social": 78,
+      "comfort": 58,
+      "flow": 80
+    },
+    "summary": {
+      "en": "Sea-cliff climbing with changing weather, community, and coastal atmosphere.",
+      "zh": "结合海崖、多变天气、社群和海岸氛围的攀爬。"
+    },
+    "traits": {
+      "en": [
+        "coastal rock",
+        "weather judgment",
+        "local community"
+      ],
+      "zh": [
+        "海岸岩壁",
+        "天气判断",
+        "本地社群"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "railay-tonsai-thailand",
+    "vector": {
+      "exploration": 85,
+      "performance": 80,
+      "adventure": 72,
+      "social": 94,
+      "comfort": 78,
+      "flow": 86
+    },
+    "summary": {
+      "en": "Tropical limestone where travel, community, and playful movement meet.",
+      "zh": "旅行、社群和有趣动作相遇的热带石灰岩。"
+    },
+    "traits": {
+      "en": [
+        "tropical limestone",
+        "beach community",
+        "playful movement"
+      ],
+      "zh": [
+        "热带石灰岩",
+        "海滩社群",
+        "有趣动作"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "grampians-australia",
+    "vector": {
+      "exploration": 92,
+      "performance": 94,
+      "adventure": 88,
+      "social": 62,
+      "comfort": 35,
+      "flow": 90
+    },
+    "summary": {
+      "en": "Sandstone depth, wild landscape, and serious movement exploration.",
+      "zh": "兼具砂岩深度、野外风景和认真动作探索。"
+    },
+    "traits": {
+      "en": [
+        "wild sandstone",
+        "movement depth",
+        "remote sectors"
+      ],
+      "zh": [
+        "野外砂岩",
+        "动作深度",
+        "偏远岩区"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "rocklands-south-africa",
+    "vector": {
+      "exploration": 94,
+      "performance": 96,
+      "adventure": 78,
+      "social": 82,
+      "comfort": 52,
+      "flow": 95
+    },
+    "summary": {
+      "en": "A bouldering pilgrimage shaped by movement quality and landscape discovery.",
+      "zh": "由动作质量和风景发现共同塑造的抱石朝圣地。"
+    },
+    "traits": {
+      "en": [
+        "world-class bouldering",
+        "movement quality",
+        "landscape discovery"
+      ],
+      "zh": [
+        "世界级抱石",
+        "动作质量",
+        "风景发现"
+      ]
+    }
+  }
+]

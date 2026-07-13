@@ -24,6 +24,7 @@ type MapViewProps = {
   compact?: boolean;
   destinations: Destination[];
   showExpeditionLog?: boolean;
+  visualStyle?: "atlas" | "clean";
 };
 
 type AtlasRegion = {
@@ -132,7 +133,8 @@ function RegionMarker({
 export function MapView({
   compact = false,
   destinations,
-  showExpeditionLog = true
+  showExpeditionLog = true,
+  visualStyle = "atlas"
 }: MapViewProps) {
   const { locale } = useLanguage();
   const t = getUiText(locale);
@@ -159,16 +161,22 @@ export function MapView({
   }, [destinations]);
 
   return (
-    <div className={`treasure-map-frame h-full w-full ${compact ? "min-h-[300px]" : "min-h-[560px]"}`}>
+    <div
+      className={`h-full w-full ${
+        visualStyle === "clean" ? "clean-map-frame" : "treasure-map-frame"
+      } ${compact ? "min-h-[300px]" : "min-h-[560px]"}`}
+    >
       <MapContainer
         center={[24, 8]}
-        className="atlas-map h-full w-full"
+        className={`atlas-map h-full w-full ${
+          visualStyle === "clean" ? "atlas-map-clean" : ""
+        }`}
         maxBounds={[
           [-85, -180],
           [85, 180]
         ]}
         minZoom={2}
-        scrollWheelZoom
+        scrollWheelZoom={!compact}
         zoom={2}
       >
         <MapZoomTracker onZoomChange={setZoom} />

@@ -2,7 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
+import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
+import { DestinationHeroImage } from "@/components/DestinationHeroImage";
 import { RouteFinder } from "@/components/RouteFinder";
 import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
@@ -50,13 +52,14 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
     })) ?? [];
 
   return (
-    <main className="min-h-screen bg-bark px-5 py-6 text-bark">
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_78%_12%,rgba(244,184,96,0.2),transparent_26%),linear-gradient(180deg,rgba(43,33,24,0),rgba(43,33,24,0.22))]" />
-      <div className="relative mx-auto max-w-5xl">
-        <div className="flex flex-wrap items-center justify-between gap-3">
+    <main className="phase6-content min-h-screen bg-cream text-charcoal">
+      <SiteHeader />
+      <div className="mx-auto max-w-[1240px] px-5 py-[72px] sm:px-8 lg:px-12 lg:py-20">
+      <div>
+        <div className="hidden">
           <Link
             className="inline-flex rounded-md border border-parchment/25 bg-parchment/10 px-3 py-2 text-sm font-bold text-parchment backdrop-blur transition hover:bg-parchment/20"
-            href="/"
+            href="/explore"
           >
             <LocalizedText en="Back to map" zh="返回地图" />
           </Link>
@@ -66,8 +69,19 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           </div>
         </div>
 
-        <section className="paper-texture mt-5 overflow-hidden rounded-lg border border-ridge/30 bg-parchment shadow-atlas">
-          <div className="relative overflow-hidden border-b border-ridge/30 bg-[linear-gradient(135deg,#1f4d36,#3b6978)] px-6 py-10 text-parchment sm:px-8 sm:py-14">
+        <section className="grid gap-10 border-y border-brandforest/15 py-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div>
+            <Link className="text-link" href="/explore"><LocalizedText en="Back to map" zh="返回地图" /> →</Link>
+            <p className="editorial-kicker mt-10 text-terracotta">{destination.country}</p>
+            <h1 className="display-serif mt-4 text-5xl font-medium leading-[1.02] text-brandforest sm:text-7xl">{destination.name}</h1>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-charcoal/68"><LocalizedDestinationDescription destination={destination} /></p>
+          </div>
+          <DestinationHeroImage image={heroImage} slug={destination.slug} />
+
+        </section>
+
+        <section className="mt-12 overflow-hidden border-y border-brandforest/15 bg-cream">
+          <div className="hidden">
             {heroImage ? (
               <img
                 alt={heroImage.alt}
@@ -402,6 +416,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             )}
           </section>
         </section>
+      </div>
       </div>
     </main>
   );

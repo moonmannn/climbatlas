@@ -7,7 +7,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ClimbAtlas",
-  description: "Discover famous climbing destinations around the world."
+  description: "Find climbing destinations that fit how you climb."
 };
 
 export default function RootLayout({

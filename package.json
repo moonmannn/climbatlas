@@ -8,7 +8,8 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "routes:generate": "node scripts/route-metadata.mjs",
-    "routes:verify-links": "node scripts/verify-route-links.mjs"
+    "routes:verify-links": "node scripts/verify-route-links.mjs",
+    "dna:validate": "node scripts/validate-climbing-dna.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

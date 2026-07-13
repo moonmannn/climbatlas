@@ -75,6 +75,26 @@ npm run routes:verify-links
 
 The audit fails on published 404/410 links. A 401/403/429 is reported as blocked because some route sites reject automated checks; review those links manually in a browser.
 
+
+## Climbing DNA data workflow
+
+Phase 2 keeps Climbing DNA separate from the destination-level Route Finder.
+
+- `src/data/dna-questions.json`: bilingual questions, visual option keys, and scoring effects
+- `src/data/dna-archetypes.json`: bilingual personality archetypes and ideal vectors
+- `src/data/destination-dna-profiles.json`: one six-dimension profile for every destination
+- `src/lib/climbingDna.ts`: deterministic scoring, archetype selection, and destination matching
+
+After editing DNA data, run:
+
+```bash
+npm run dna:validate
+npm run typecheck
+npm run build
+```
+
+The match percentage is an explainable preference-distance score, not a scientific assessment. It does not use randomness or machine learning.
+
 ## Supabase setup for V3
 
 The site still works without Supabase, but login and saved routes require a Supabase project.

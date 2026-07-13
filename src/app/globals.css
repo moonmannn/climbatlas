@@ -381,3 +381,265 @@ body {
     width: 104px;
   }
 }
+
+
+/* V4 editorial discovery system. Existing field-guide utilities remain for detail pages. */
+.display-serif {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0;
+}
+
+.editorial-kicker {
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.clean-map-frame {
+  background: #d8e3e1;
+  overflow: hidden;
+  position: relative;
+}
+
+.atlas-map-clean .leaflet-tile {
+  filter: saturate(0.64) contrast(0.94) brightness(1.03);
+}
+
+.clean-map-frame .region-marker {
+  background: rgb(244 239 227 / 96%);
+  border: 1px solid rgb(38 48 45 / 28%);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgb(14 46 34 / 18%);
+  color: #26302d;
+  height: 54px;
+  transform: none;
+  width: 116px;
+}
+
+.clean-map-frame .region-marker::before {
+  display: none;
+}
+
+.clean-map-frame .region-marker-count {
+  color: #0e2e22;
+}
+
+.clean-map-frame .climb-marker {
+  background: #e26a3c;
+  border-color: #f4efe3;
+  box-shadow:
+    0 8px 20px rgb(14 46 34 / 28%),
+    0 0 0 2px rgb(38 48 45 / 45%);
+}
+
+.clean-map-frame .climb-marker::after {
+  background: #f4efe3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quest-reveal {
+    animation: none;
+  }
+
+  .quest-answer,
+  .group img {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ClimbAtlas V2 editorial print system */
+:root {
+  color: #1b2823;
+  background: #f3eee2;
+  --ca-cream: #f3eee2;
+  --ca-forest: #10382e;
+  --ca-charcoal: #1b2823;
+  --ca-terracotta: #cb6038;
+  --ca-sky: #91adb3;
+  --ca-sand: #d9ccb6;
+}
+
+body {
+  background: var(--ca-cream);
+  color: var(--ca-charcoal);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.display-serif {
+  font-family: Newsreader, Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.editorial-kicker {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.primary-action {
+  align-items: center;
+  background: var(--ca-terracotta);
+  border: 1px solid var(--ca-terracotta);
+  border-radius: 6px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 600;
+  gap: 0.75rem;
+  height: 52px;
+  justify-content: center;
+  padding: 0 24px;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.primary-action:hover {
+  background: var(--ca-forest);
+  border-color: var(--ca-forest);
+}
+
+.text-link {
+  color: var(--ca-forest);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 6px;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--ca-terracotta);
+}
+
+.art-plate {
+  border: 1px solid rgb(16 56 46 / 14%);
+  padding: 14px;
+}
+
+.artwork-card,
+.destination-card {
+  border-top: 1px solid rgb(16 56 46 / 14%);
+  display: block;
+  padding-top: 16px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.artwork-card:hover,
+.destination-card:hover {
+  border-color: var(--ca-terracotta);
+  transform: translateY(-2px);
+}
+
+.dna-option-card {
+  background: transparent;
+  border: 1px solid rgb(16 56 46 / 14%);
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 180ms ease;
+  width: 100%;
+}
+
+.dna-option-card:hover {
+  border-color: rgb(16 56 46 / 45%);
+}
+
+.dna-option-card-selected {
+  border: 2px solid var(--ca-forest);
+  padding: 11px;
+}
+
+@keyframes ca-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+main > section {
+  animation: ca-enter 240ms ease both;
+}
+
+@media (max-width: 767px) {
+  .primary-action { min-height: 48px; }
+  .art-plate { padding: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > section { animation: none; }
+  .artwork-card,
+  .destination-card,
+  .dna-option-card,
+  .dna-option-card img { transition-duration: 0.01ms !important; }
+}
+
+/* Phase 6: unify legacy content pages with the V2 editorial system. */
+.phase6-content {
+  background: var(--ca-cream);
+  color: var(--ca-charcoal);
+}
+
+.phase6-content h1 {
+  font-family: Newsreader, Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.phase6-content .font-black {
+  font-weight: 600;
+}
+
+.phase6-content .paper-texture,
+.phase6-content .scroll-card,
+.phase6-content .medieval-panel {
+  background-color: var(--ca-cream);
+  background-image: none;
+}
+
+.phase6-content .medieval-panel,
+.phase6-content .handdrawn-card,
+.phase6-content .scroll-card,
+.phase6-content .ink-frame {
+  border-color: rgb(16 56 46 / 14%);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.phase6-content .medieval-panel::before,
+.phase6-content .medieval-panel::after,
+.phase6-content .handdrawn-card::before {
+  display: none;
+}
+
+.phase6-content .shadow-atlas,
+.phase6-content .shadow-editorial,
+.phase6-content .shadow-2xl,
+.phase6-content .shadow-xl,
+.phase6-content .shadow-lg,
+.phase6-content .shadow-md,
+.phase6-content .shadow-sm {
+  box-shadow: none;
+}
+
+.phase6-content button,
+.phase6-content a,
+.phase6-content input,
+.phase6-content select,
+.phase6-content textarea {
+  border-radius: 6px;
+}
+
+.phase6-content input,
+.phase6-content select,
+.phase6-content textarea {
+  font-weight: 400;
+}
+
+.phase6-content .field-note-label {
+  color: var(--ca-terracotta);
+  font-weight: 600;
+}
+
+.phase6-content .ink-divider::after {
+  display: none;
+}

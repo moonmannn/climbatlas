@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { AuthButton } from "@/components/AuthButton";
 import { LanguageToggle, useLanguage } from "@/components/LanguageProvider";
+import { SiteHeader } from "@/components/SiteHeader";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserProfile } from "@/components/UserProfileProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
@@ -150,7 +151,7 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
   const content = (
     <div className="relative mx-auto max-w-6xl">
       {variant === "page" && (
-        <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="hidden">
           <Link
             className="inline-flex rounded-md border border-parchment/25 bg-parchment/10 px-3 py-2 text-sm font-bold text-parchment backdrop-blur transition hover:bg-parchment/20"
             href="/"
@@ -164,8 +165,8 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
         </div>
       )}
 
-        <section className="paper-texture mt-5 overflow-hidden rounded-lg border border-ridge/30 bg-parchment shadow-atlas">
-          <div className="border-b border-ridge/30 bg-[linear-gradient(135deg,#1f4d36,#3b6978)] px-6 py-8 text-parchment sm:px-8">
+        <section className="mt-5 overflow-hidden border-y border-brandforest/15 bg-cream">
+          <div className="border-b border-brandforest/15 bg-brandforest px-6 py-8 text-parchment sm:px-8">
             <p className="text-xs font-black uppercase tracking-[0.24em] text-sunlit">
               {isZh ? "私人个人主页" : "Private profile"}
             </p>
@@ -331,9 +332,9 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
   }
 
   return (
-    <main className="min-h-screen bg-bark px-5 py-6 text-bark">
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_78%_12%,rgba(244,184,96,0.2),transparent_26%),linear-gradient(180deg,rgba(43,33,24,0),rgba(43,33,24,0.22))]" />
-      {content}
+    <main className="phase6-content min-h-screen bg-cream text-charcoal">
+      <SiteHeader />
+      <div className="px-5 py-[72px] sm:px-8 lg:px-12 lg:py-20">{content}</div>
     </main>
   );
 }

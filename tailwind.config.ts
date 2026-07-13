@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+﻿import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -9,19 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        antiquegold: "#c79748",
-        bark: "#2b2118",
-        forest: "#1f4d36",
-        ink: "#1b1611",
-        moss: "#6f7f48",
-        parchment: "#f4ead6",
-        ridge: "#8c7357",
-        stoneblue: "#3b6978",
-        sunlit: "#f4b860"
+        brandforest: "#10382E",
+        pine: "#1F3B2E",
+        cream: "#F3EEE2",
+        charcoal: "#1B2823",
+        sand: "#D9CCB6",
+        terracotta: "#CB6038",
+        sky: "#91ADB3",
+        antiquegold: "#C79748",
+        bark: "#2B2118",
+        forest: "#1F4D36",
+        ink: "#1B1611",
+        moss: "#6F7F48",
+        parchment: "#F4EAD6",
+        ridge: "#8C7357",
+        stoneblue: "#3B6978",
+        sunlit: "#F4B860"
       },
       boxShadow: {
-        atlas: "0 24px 80px rgb(43 33 24 / 24%)",
-        marker: "0 10px 24px rgb(31 77 54 / 35%)"
+        atlas: "0 8px 30px rgb(16 56 46 / 6%)",
+        marker: "0 8px 20px rgb(16 56 46 / 18%)",
+        editorial: "0 8px 30px rgb(16 56 46 / 6%)"
       }
     }
   },
