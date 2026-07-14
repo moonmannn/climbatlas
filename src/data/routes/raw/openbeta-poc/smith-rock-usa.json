@@ -1,0 +1,2647 @@
+{
+  "source": "openbeta",
+  "sourceUrl": "https://api.openbeta.io",
+  "license": "CC0-1.0",
+  "attribution": "OpenBeta contributors",
+  "fetchedAt": "2026-07-14T09:43:39.457Z",
+  "scope": {
+    "destinationId": "smith-rock-usa",
+    "sourceAreaName": "Smith Rock",
+    "maxRoutes": 75,
+    "ancestors": [
+      "1db1e8ba-a40e-587c-88a4-64f5ea814b8e",
+      "5f05ed84-1a18-52d9-b8cf-77f8fd01e061",
+      "e7aeefae-15e1-5de7-a395-a48727784e98",
+      "f3c655b6-9c95-597f-aaa6-fd7d8a4865ec"
+    ]
+  },
+  "routes": [
+    {
+      "uuid": "8a716c8a-4e67-50e4-a5a9-f81621d9ecaf",
+      "name": "Caffeine Free",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "91580e5d-0ef3-5367-850d-949a991792ab",
+      "name": "Caffeine Free Finish",
+      "length": -1,
+      "grades": {
+        "yds": "5.10d",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "3e233500-993e-5846-a6d2-b7aff986978f",
+      "name": "COVID-5.10",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "26c338e5-3c8e-5050-8718-8bd5c042a0bd",
+      "name": "Mr. Yuk",
+      "length": -1,
+      "grades": {
+        "yds": "5.14a",
+        "french": "8b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "0cbd3f65-7a89-54e6-8aec-3405985103fa",
+      "name": "Phone Call From Satan",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "1473090c-ef7c-5a33-86a0-43d609d66348",
+      "name": "Power",
+      "length": -1,
+      "grades": {
+        "yds": "5.13b",
+        "french": "8a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "494547a3-b68f-5e4d-82bf-667513bf2f9b",
+      "name": "Purple Headed Warrior",
+      "length": -1,
+      "grades": {
+        "yds": "5.7",
+        "french": "5a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "dd9fb5b1-1941-594f-a6b0-cf43302f1c0d",
+      "name": "Slit Your Wrists",
+      "length": -1,
+      "grades": {
+        "yds": "5.13b",
+        "french": "8a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "0a55fe45-d53b-5abb-a75a-83606ec7f38f",
+      "name": "Solar",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "92ef700a-5b1d-5033-a5d4-751572690170",
+      "name": "Time's Up",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a/b",
+        "french": "8a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "d6d3ebe2-c973-55a0-b3c5-5ba3b1001d97",
+      "name": "Vertical Taco (Nacho Libre)",
+      "length": -1,
+      "grades": {
+        "yds": "5.6",
+        "french": "4c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "67688e9a-22e2-5863-974e-78f070cc2d90",
+      "areaName": "(e) Western Ship - River Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(e) Western Ship - River Face"
+      ]
+    },
+    {
+      "uuid": "fb1049dc-a0b2-5f5d-ab97-3aac70ed8b17",
+      "name": "[Redacted]",
+      "length": -1,
+      "grades": {
+        "yds": "5.12b",
+        "french": "7b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "802cf570-6c60-5cbf-bd4d-cb3690504d0a",
+      "name": "Armageddon",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "93b6b9e8-df6a-581e-ba2a-9d980d0d7cf2",
+      "name": "Bloodshot",
+      "length": -1,
+      "grades": {
+        "yds": "5.11c",
+        "french": "6c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "d8369eac-b778-50de-b323-3abe49a0664d",
+      "name": "Bongo Fury",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "e70d655d-8558-5e1e-ab53-764599f35ca2",
+      "name": "Bound in Bogata",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b/c",
+        "french": "6c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "cd260ea0-6e7b-57b5-ac35-86e1f2d511d1",
+      "name": "Chicken McNuggets",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "a1d01a83-a605-56e0-881d-c809d1f00a0b",
+      "name": "Cocaine Crack",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "c1390545-31cc-5fed-88dc-5f0c6d55836e",
+      "name": "Crack Cocaine",
+      "length": -1,
+      "grades": {
+        "yds": "5.11d",
+        "french": "7a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "8dcdb32f-ee2e-53b5-9174-11b1e14f7a73",
+      "name": "Deep Impact",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "d3e796ac-c01d-51b6-b7c7-6bf71529cfcd",
+      "name": "Exile On Main Street",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "bacc6182-a5f4-55e6-9f17-2364fa4d3c9e",
+      "name": "Freebase",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "38806712-8199-5ae8-aeb1-a59a84dcb777",
+      "name": "Happy Meal",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "36d48ace-bf03-5e52-bb4d-14440e420f4b",
+      "name": "Hippos on Ice",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "0a524ab7-4858-51d6-97f7-e37fa83f296d",
+      "name": "Hobbit's Pockets",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "ad238c22-0549-54ce-b262-a0f571703907",
+      "name": "Powder Up the Nose",
+      "length": -1,
+      "grades": {
+        "yds": "5.10d",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "eb1d3549-49ab-5ec1-9062-642329479b04",
+      "name": "Quest to Fire",
+      "length": -1,
+      "grades": {
+        "yds": "5.12b",
+        "french": "7b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "b9e2a600-e812-5945-8b52-6fed6d57afe9",
+      "name": "Shake 'n Flake",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "f0fa17eb-f1b6-5293-bab1-d305d107f182",
+      "name": "Skeleton Surfer",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "3ab1ab37-9e11-5b49-bb91-b0ee0cd8f17b",
+      "name": "The Blade",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "b170a85b-dfc9-533b-85e7-dff9d1842183",
+      "name": "Thieves",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "6ba05513-4803-52e5-a516-c948b4b940a9",
+      "name": "Vomit Launch",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04a57afd-046c-5e0a-9a63-2bc8bae153f0",
+      "areaName": "(f) Cocaine Gully",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(f) Cocaine Gully"
+      ]
+    },
+    {
+      "uuid": "ce6a1f4e-6f7c-5c76-a339-8acf1f3e57be",
+      "name": "5 Gallon Buckets",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "abb0124a-cc20-5d57-b1a3-2a5ed2cde0c9",
+      "name": "Anonymity",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "f3fbcdbd-93e0-567f-9910-3d306caf1220",
+      "name": "Cat Scan",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "811774a1-265f-5d2d-9368-54acb5a8e306",
+      "name": "Choss in America",
+      "length": -1,
+      "grades": {
+        "yds": "5.12c",
+        "french": "7b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "150f8ea0-dd89-579f-823a-c76530dfecd3",
+      "name": "Churning in the Ozone",
+      "length": -1,
+      "grades": {
+        "yds": "5.13b",
+        "french": "8a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "3704ab47-6093-567f-8456-24e7f7e03f90",
+      "name": "Churning in the Sky",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "78b428a3-2676-5bb4-8f46-16981302cbc0",
+      "name": "Churning in the Wake",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "6876e2fb-2dd1-5c40-8581-da935f583a09",
+      "name": "Cool Ranch Flavor",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "827ea559-2140-53ee-8c7a-8f84c6f4cb36",
+      "name": "Cool Ranch Flavor Extension",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "fa4f6283-589c-5f77-99e1-4b5e3f5a6d30",
+      "name": "Da Kine Corner",
+      "length": -1,
+      "grades": {
+        "yds": "5.12c",
+        "french": "7b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "b5628600-6d71-5849-97a4-ff6353b3ff7f",
+      "name": "Dandy Line",
+      "length": -1,
+      "grades": {
+        "yds": "5.12d",
+        "french": "7c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "3c55121c-ec94-51da-8d94-bfaae1b81686",
+      "name": "Doritos",
+      "length": -1,
+      "grades": {
+        "yds": "5.12c",
+        "french": "7b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "444b214f-bd83-53ac-a8fc-d80d8417b9bb",
+      "name": "Energy Crisis",
+      "length": -1,
+      "grades": {
+        "yds": "5.12b",
+        "french": "7b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "e22f8c75-db87-58fe-874b-17ca7f572003",
+      "name": "Fun Churning Buttress Linkups",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a/b",
+        "french": "8a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "8c7d55b4-c7bb-53fe-844e-020e8be92b45",
+      "name": "Gumby",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "107dbdce-e2dd-533b-a9ac-c9c9b484da9d",
+      "name": "Kings of Rap",
+      "length": -1,
+      "grades": {
+        "yds": "5.12d",
+        "french": "7c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "edbb0353-9c35-5bff-8096-3c8869fe18fe",
+      "name": "Light on the Path",
+      "length": -1,
+      "grades": {
+        "yds": "5.10a",
+        "french": "6a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "42bb9102-8363-555a-9c21-1bc083b0cb46",
+      "name": "Lion Zion",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "471f17cb-7aa2-56eb-993e-a36fc06a1811",
+      "name": "Lion's Chair",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "a5404c15-2834-52a3-be0a-a126036aac06",
+      "name": "Lion's Chair Start",
+      "length": -1,
+      "grades": {
+        "yds": "5.10+",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "89b10af4-e152-5ff2-96c9-cb70b2f52004",
+      "name": "Lion's Jaw",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "b733a50e-1863-5f6c-bdee-e40d10d2d5b8",
+      "name": "Magic Light",
+      "length": -1,
+      "grades": {
+        "yds": "5.12b",
+        "french": "7b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "f9226042-5a5b-58eb-8bfc-f79547d155f6",
+      "name": "Magic Light Start",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "b480c064-5217-530c-a7ea-cb2bb0d2d677",
+      "name": "Mane Line",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "3e8d2fa6-85b8-5a89-aff7-5fa3536b7d13",
+      "name": "Morning Sky",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "a6342baa-ec7b-5920-9938-fca69aec600a",
+      "name": "Nacho Cheese",
+      "length": -1,
+      "grades": {
+        "yds": "5.12d",
+        "french": "7c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "0848b657-da60-587e-8b83-72635145e778",
+      "name": "Nine Gallon Buckets",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "a14fb060-ef9b-50cd-98f2-a63737c25ff5",
+      "name": "Overboard",
+      "length": -1,
+      "grades": {
+        "yds": "5.11c",
+        "french": "6c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "3e62736b-2e45-5f3c-b314-c84a976e7f02",
+      "name": "Oxygen",
+      "length": -1,
+      "grades": {
+        "yds": "5.13b",
+        "french": "8a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "95e5c111-f82b-54a5-8590-d2934b3619ae",
+      "name": "Ozone Hole",
+      "length": -1,
+      "grades": {
+        "yds": "5.13d",
+        "french": "8b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "bed9968f-22b8-5e9b-bdd1-2b2ff5562b10",
+      "name": "Sign of the Times",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "c5227a57-bd8e-507d-aec5-027698ccf6b4",
+      "name": "Sketch Pad",
+      "length": -1,
+      "grades": {
+        "yds": "5.12d",
+        "french": "7c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "e4dd65d2-6a20-591e-ae3a-a5b68329fda8",
+      "name": "Taco Chips",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "f4ff8868-b2b4-5c01-9a0e-d2554a380ee3",
+      "name": "Taco Times",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "37c02ba1-7b2a-582e-8abf-e3b65902a28d",
+      "name": "Tammy Bakker's Face",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "0aadaca8-5667-51af-9a3c-5f77b890c742",
+      "name": "The Outsiders",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "ede718dd-c3b5-5663-ab73-bb8adc09b457",
+      "name": "Vicious Fish",
+      "length": -1,
+      "grades": {
+        "yds": "5.13d",
+        "french": "8b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "31178f06-4a9c-5520-beb8-b8e7487e3382",
+      "name": "Waste Case",
+      "length": -1,
+      "grades": {
+        "yds": "5.13b/c",
+        "french": "8a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "1e96e2de-12d8-51d2-ad2f-8f32e2f386ce",
+      "name": "Zebra Direct",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "f50ca264-a4a0-5715-8d49-8a2379a2c5b5",
+      "name": "Zebra Seam",
+      "length": -1,
+      "grades": {
+        "yds": "5.11d",
+        "french": "7a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "0fbf4f1e-1553-5752-8659-727b85f8ce29",
+      "name": "Zion",
+      "length": -1,
+      "grades": {
+        "yds": "5.10a/b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "13118923-e9df-5bbf-ae7c-2fb7be89f1a6",
+      "areaName": "(g) Morning Glory Wall",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(g) Morning Glory Wall"
+      ]
+    },
+    {
+      "uuid": "022c451e-b9a4-5343-9d34-5acaa81659c8",
+      "name": "Damage, Inc",
+      "length": -1,
+      "grades": {
+        "yds": "5.11d",
+        "french": "7a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "91964a04-fe5d-58c6-9612-1b352859e38f",
+      "areaName": "(1) Northeast Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(m) Smith Rock Group",
+        "(1) Northeast Face"
+      ]
+    },
+    {
+      "uuid": "70e66ee1-8dc4-5b6a-92c8-2dff99af6d55",
+      "name": "European Vacation",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "91964a04-fe5d-58c6-9612-1b352859e38f",
+      "areaName": "(1) Northeast Face",
+      "pathTokens": [
+        "USA",
+        "Oregon",
+        "Central Oregon",
+        "Smith Rock",
+        "(m) Smith Rock Group",
+        "(1) Northeast Face"
+      ]
+    }
+  ]
+}

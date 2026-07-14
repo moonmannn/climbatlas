@@ -8,6 +8,11 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "routes:generate": "node scripts/route-metadata.mjs",
+    "routes:validate-schema": "node scripts/validate-route-schema.mjs",
+    "routes:validate": "node scripts/routes/validate-routes.mjs",
+    "routes:audit": "node scripts/routes/audit-routes.mjs",
+    "routes:dna-validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/routes/validate-route-dna.mjs",
+    "routes:import-openbeta-poc": "node scripts/routes/import-openbeta-poc.mjs",
     "routes:verify-links": "node scripts/verify-route-links.mjs",
     "dna:validate": "node scripts/validate-climbing-dna.mjs"
   },

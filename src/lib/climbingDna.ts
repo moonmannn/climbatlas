@@ -50,7 +50,16 @@ function getArchetypeDistance(scores: DnaVector, archetype: DnaArchetype) {
 }
 
 export function getDnaArchetype(scores: DnaVector) {
-  return [...dnaArchetypes].sort((first, second) => getArchetypeDistance(scores, first) - getArchetypeDistance(scores, second) || first.id.localeCompare(second.id))[0];
+  return getRankedDnaArchetypes(scores)[0];
+}
+
+export function getRankedDnaArchetypes(scores: DnaVector) {
+  return [...dnaArchetypes].sort(
+    (first, second) =>
+      getArchetypeDistance(scores, first) -
+        getArchetypeDistance(scores, second) ||
+      first.id.localeCompare(second.id)
+  );
 }
 
 export function scoreDnaAnswers(answers: DnaAnswerMap): DnaProfileResult {
@@ -73,8 +82,13 @@ export function scoreDnaAnswers(answers: DnaAnswerMap): DnaProfileResult {
     const normalized = possible === 0 ? 50 : 20 + (totals[dimension] / possible) * 80;
     return [dimension, clampScore(normalized)];
   })) as DnaVector;
-  const archetype = getDnaArchetype(scores);
-  return { scores, archetypeId: archetype.id, completedQuestionIds };
+  const [archetype, secondaryArchetype] = getRankedDnaArchetypes(scores);
+  return {
+    scores,
+    archetypeId: archetype.id,
+    secondaryArchetypeId: secondaryArchetype.id,
+    completedQuestionIds
+  };
 }
 
 export function getLocalizedDnaText(text: LocalizedText, locale: Locale) {

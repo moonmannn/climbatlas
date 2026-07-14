@@ -5,9 +5,11 @@ import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
 import { DestinationHeroImage } from "@/components/DestinationHeroImage";
-import { RouteFinder } from "@/components/RouteFinder";
+import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
 import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
+import { getAllRouteRecordsWithDestinations } from "@/lib/routes";
+import { toRouteExplorerItem } from "@/lib/routes/route-explorer";
 
 type DestinationPageProps = {
   params: Promise<{
@@ -43,14 +45,9 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   const heroImage = destination.images?.[0];
   const galleryImages = destination.images?.slice(0, 4) ?? [];
   const guideContent = destination.guideContent;
-  const routeFinderCandidates =
-    destination.routes?.map((route) => ({
-      route,
-      destinationName: destination.name,
-      destinationSlug: destination.slug,
-      country: destination.country
-    })) ?? [];
-
+  const explorerRoutes = getAllRouteRecordsWithDestinations()
+    .filter((item) => item.destination.slug === destination.slug)
+    .map((item) => toRouteExplorerItem(item.route));
   return (
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
       <SiteHeader />
@@ -363,53 +360,24 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             </section>
           )}
 
-          <section className="border-t border-ridge/30 p-6 sm:p-8">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-forest">
-                  <LocalizedText
-                    en="Verified route highlights"
-                    zh="已验证路线精选"
-                  />
-                </p>
-                <h2 className="mt-2 text-3xl font-black text-bark">
-                  <LocalizedText
-                    en="Real routes, original notes"
-                    zh="真实路线，原创笔记"
-                  />
-                </h2>
-              </div>
-              <p className="max-w-xl text-sm leading-6 text-bark/70">
-                <LocalizedText
-                  en="ClimbAtlas shows verified route facts with original summaries. It does not publish topo, beta, protection, or approach details."
-                  zh="ClimbAtlas 展示可核验的路线事实和原创摘要，不发布 topo、beta、保护、approach 等路书细节。"
-                />
-              </p>
-            </div>
+          <DestinationDnaMatch
+            destinationName={destination.name}
+            destinationSlug={destination.slug}
+          />
 
-            {destination.routes && destination.routes.length > 0 ? (
-              <>
-                <div className="mt-6">
-                  <RouteFinder
-                    candidates={routeFinderCandidates}
-                    scopeLabel={destination.name}
-                  />
-                </div>
-
-                <div className="mt-6">
-                  <RouteIndex
-                    destinationName={destination.name}
-                    destinationSlug={destination.slug}
-                    routes={destination.routes}
-                  />
-                </div>
-              </>
+          <section className="border-t border-ridge/30 px-6 py-8 sm:px-8">
+            {explorerRoutes.length > 0 ? (
+              <RouteIndex
+                destinationName={destination.name}
+                destinationSlug={destination.slug}
+                routes={explorerRoutes}
+              />
             ) : (
-              <div className="mt-6 rounded-lg border border-dashed border-ridge/45 bg-white/45 p-6">
+              <div className="border-y border-dashed border-ridge/45 py-10">
                 <p className="text-sm font-bold leading-6 text-bark/70">
                   <LocalizedText
-                    en="Verified route highlights have not been added for this destination yet. ClimbAtlas will only publish route facts and media after source and license checks."
-                    zh="这个目的地还没有添加已验证路线。ClimbAtlas 只会在来源和图片许可检查后发布路线事实和媒体。"
+                    en="No source-backed routes have been added for this destination yet."
+                    zh="这个目的地还没有加入有来源支持的路线。"
                   />
                 </p>
               </div>

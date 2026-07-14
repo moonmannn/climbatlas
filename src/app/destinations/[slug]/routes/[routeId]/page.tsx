@@ -5,13 +5,17 @@ import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { RouteHighlightCard } from "@/components/RouteHighlightCard";
 import { RouteMetadataCard } from "@/components/RouteMetadataCard";
+import { RouteRecordCard } from "@/components/RouteRecordCard";
+import { RouteDnaMatchPanel } from "@/components/RouteDnaMatchPanel";
 import { UserRouteControls } from "@/components/UserRouteControls";
-import {
-  destinations,
-  getDestinationBySlug,
-  getRouteById
-} from "@/data/destinations";
+import { getDestinationBySlug } from "@/data/destinations";
 import { getRouteAliasParams, resolveRouteId } from "@/lib/routeAliases";
+import {
+  findRouteCatalogEntryWithDestination,
+  getAllRouteCatalogEntries
+} from "@/lib/routes";
+import { buildRouteDnaSnapshot } from "@/lib/routes/route-dna";
+import { getRouteDifficulty } from "@/lib/routes/route-explorer";
 
 type RoutePageProps = {
   params: Promise<{
@@ -21,12 +25,10 @@ type RoutePageProps = {
 };
 
 export function generateStaticParams() {
-  const routeParams = destinations.flatMap((destination) =>
-    (destination.routes ?? []).map((route) => ({
-      slug: destination.slug,
-      routeId: route.id
-    }))
-  );
+  const routeParams = getAllRouteCatalogEntries().map(({ destination, entry }) => ({
+    slug: destination.slug,
+    routeId: entry.id
+  }));
 
   return [...routeParams, ...getRouteAliasParams()];
 }
@@ -34,11 +36,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: RoutePageProps) {
   const { slug, routeId } = await params;
   const destination = getDestinationBySlug(slug);
-  const route = getRouteById(slug, routeId);
+  const canonicalRouteId = resolveRouteId(slug, routeId);
+  const item = findRouteCatalogEntryWithDestination(slug, canonicalRouteId);
 
   return {
-    title: route
-      ? `${route.name} | ${destination?.name} | ClimbAtlas`
+    title: item
+      ? `${item.entry.name} | ${destination?.name} | ClimbAtlas`
       : "Route | ClimbAtlas"
   };
 }
@@ -52,11 +55,20 @@ export default async function RoutePage({ params }: RoutePageProps) {
     redirect(`/destinations/${slug}/routes/${canonicalRouteId}`);
   }
 
-  const route = getRouteById(slug, canonicalRouteId);
+  const item = findRouteCatalogEntryWithDestination(slug, canonicalRouteId);
 
-  if (!destination || !route) {
+  if (!destination || !item) {
     notFound();
   }
+
+  const entry = item.entry;
+  const legacyRoute = entry.legacy;
+  const routeDnaSnapshot = entry.kind === "route"
+    ? buildRouteDnaSnapshot(
+        entry,
+        getRouteDifficulty(entry)?.band ?? "unknown"
+      )
+    : null;
 
   return (
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
@@ -91,7 +103,7 @@ export default async function RoutePage({ params }: RoutePageProps) {
               {destination.name} / {destination.country}
             </p>
             <h1 className="display-serif mt-3 text-5xl font-medium leading-tight text-brandforest sm:text-6xl">
-              {route.name}
+              {entry.name}
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-charcoal/65">
               <LocalizedText
@@ -105,13 +117,23 @@ export default async function RoutePage({ params }: RoutePageProps) {
             <UserRouteControls
               destinationName={destination.name}
               destinationSlug={destination.slug}
-              route={route}
+              route={entry}
             />
-            {route.status === "metadata" ? (
-              <RouteMetadataCard route={route} />
-            ) : (
-              <RouteHighlightCard route={route} />
+            {routeDnaSnapshot && (
+              <RouteDnaMatchPanel
+                routeName={entry.name}
+                snapshot={routeDnaSnapshot}
+              />
             )}
+            {legacyRoute ? (
+              legacyRoute.status === "metadata" ? (
+                <RouteMetadataCard route={legacyRoute} />
+              ) : (
+                <RouteHighlightCard route={legacyRoute} />
+              )
+            ) : entry.kind === "route" ? (
+              <RouteRecordCard route={entry} />
+            ) : null}
           </div>
         </section>
       </div>

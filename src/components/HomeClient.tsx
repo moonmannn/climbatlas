@@ -30,7 +30,7 @@ const copy = {
   en: {
     eyebrow: "Personalized climbing discovery",
     title: "Find places that fit how you climb.",
-    intro: "Discover landscapes, destinations, and climbing days shaped around what draws you outside.",
+    intro: "Discover routes, crags, and climbing experiences shaped around your movement, motivation, and appetite for adventure.",
     primary: "Discover your Climbing DNA",
     secondary: "Explore the map",
     plate: "ClimbAtlas field study",
@@ -38,11 +38,11 @@ const copy = {
     plateName: "Forest granite",
     dnaKicker: "More than grades",
     dnaTitle: "Every climber is drawn to something different.",
-    dnaBody: "Grades only tell part of the story. Discover the landscapes, experiences, and climbing days that feel most like you.",
+    dnaBody: "Grades are only part of the story. Answer 10 questions to discover your climbing profile—and find the routes, crags, and experiences that match you.",
     choiceKicker: "A question of instinct",
-    choiceTitle: "Which climbing day feels most like you?",
-    choices: ["Seaside limestone", "Forest granite", "High alpine walls", "Climbing community"],
-    choiceNotes: ["Warm rock / Open horizons", "Quiet movement / Cool shade", "Big scale / Thin air", "Shared days / Good energy"],
+    choiceTitle: "What kind of climbing fits you?",
+    choices: ["Seaside limestone", "Forest granite", "High alpine walls", "A lively crag"],
+    choiceNotes: ["Warm rock / Open horizons", "Quiet movement / Cool shade", "Big scale / Thin air", "Shared energy / Friendly rhythm"],
     matchesKicker: "Personalized matches",
     matchesTitle: "Places selected around how you climb.",
     match: "match",
@@ -60,7 +60,7 @@ const copy = {
   zh: {
     eyebrow: "个性化攀岩发现",
     title: "找到真正适合你攀岩方式的地方。",
-    intro: "从吸引你走向户外的事物出发，发现更合拍的风景、目的地与攀岩体验。",
+    intro: "从你的动作偏好、攀岩动力和冒险倾向出发，发现更合拍的路线、岩场与攀岩体验。",
     primary: "发现我的攀岩 DNA",
     secondary: "探索地图",
     plate: "ClimbAtlas 户外研究",
@@ -68,11 +68,11 @@ const copy = {
     plateName: "森林花岗岩",
     dnaKicker: "不只是难度",
     dnaTitle: "每位攀岩者，都会被不同的事物吸引。",
-    dnaBody: "难度只讲了故事的一部分。去发现最像你的风景、体验与攀岩日。",
+    dnaBody: "难度只是攀岩的一部分。回答 10 个问题，了解你的攀岩偏好，并找到与你匹配的线路、岩场和攀岩体验。",
     choiceKicker: "跟着直觉选择",
-    choiceTitle: "哪一种攀岩日最像你？",
-    choices: ["海边石灰岩", "森林花岗岩", "高山岩壁", "攀岩伙伴"],
-    choiceNotes: ["温暖岩石 / 开阔视野", "安静移动 / 林间凉意", "巨大尺度 / 高处空气", "一起出发 / 分享快乐"],
+    choiceTitle: "什么样的攀岩最适合你？",
+    choices: ["海边石灰岩", "森林花岗岩", "高山岩壁", "热闹岩场"],
+    choiceNotes: ["温暖岩石 / 开阔视野", "安静移动 / 林间凉意", "巨大尺度 / 高处空气", "共享能量 / 友好节奏"],
     matchesKicker: "个性化匹配",
     matchesTitle: "根据你的攀岩方式挑选目的地。",
     match: "匹配",
@@ -90,10 +90,22 @@ const copy = {
 };
 
 const choiceImages = [
-  "/images/editorial/seaside-limestone-plate.png",
-  "/images/editorial/forest-granite-plate.png",
-  "/images/editorial/climbatlas-discovery-hero.png",
-  "/images/editorial/forest-granite-plate.png"
+  {
+    src: "/images/climbing-dna/quiz/seaside-limestone.webp",
+    alt: { en: "Sunlit limestone cliffs above the sea", zh: "阳光下临海而立的石灰岩岩壁版画" }
+  },
+  {
+    src: "/images/climbing-dna/quiz/forest-granite.webp",
+    alt: { en: "Granite cliffs surrounded by pine forest", zh: "松林环绕的花岗岩岩壁版画" }
+  },
+  {
+    src: "/images/climbing-dna/quiz/high-alpine-wall.webp",
+    alt: { en: "A monumental alpine wall above a mountain valley", zh: "高山山谷上方巨大岩壁的版画" }
+  },
+  {
+    src: "/images/climbing-dna/quiz/lively-crag.webp",
+    alt: { en: "A lively climber basecamp beneath a starry crag", zh: "星空岩壁下热闹攀岩营地的版画" }
+  }
 ];
 
 const matchScores = [94, 89, 86];
@@ -137,9 +149,9 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
             <p className="mt-7 text-lg leading-8 text-cream/72">{text.dnaBody}</p>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            {choiceImages.map((src, index) => (
-              <div className="overflow-hidden rounded-lg border border-cream/15" key={`${src}-${index}`}>
-                <img alt="" className="aspect-[4/3] h-full w-full object-cover opacity-90" src={src} />
+            {choiceImages.map((image) => (
+              <div className="overflow-hidden rounded-lg border border-cream/15" key={image.src}>
+                <img alt={image.alt[locale]} className="aspect-[4/3] h-full w-full object-cover opacity-90" src={image.src} />
               </div>
             ))}
           </div>
@@ -154,7 +166,7 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
             {text.choices.map((choice, index) => (
               <Link className="artwork-card group" href="/climbing-dna" key={choice}>
                 <div className="aspect-[4/5] overflow-hidden rounded-lg bg-sand/30">
-                  <img alt="" className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={choiceImages[index]} />
+                  <img alt={choiceImages[index].alt[locale]} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={choiceImages[index].src} />
                 </div>
                 <h3 className="display-serif mt-5 text-2xl font-medium text-brandforest">{choice}</h3>
                 <p className="mt-2 text-sm text-charcoal/58">{text.choiceNotes[index]}</p>
@@ -172,7 +184,7 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
             {featuredDestinations.map((destination, index) => (
               <Link className="destination-card group" href={`/destinations/${destination.slug}`} key={destination.slug}>
                 <div className="aspect-[4/3] overflow-hidden rounded-lg bg-sky/20">
-                  <img alt={destination.image?.alt ?? destination.name} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={destination.image?.src ?? choiceImages[index]} />
+                  <img alt={destination.image?.alt ?? destination.name} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={destination.image?.src ?? choiceImages[index].src} />
                 </div>
                 <div className="pt-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">{destination.country}</p>

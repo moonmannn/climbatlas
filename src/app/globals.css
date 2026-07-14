@@ -643,3 +643,40 @@ main > section {
 .phase6-content .ink-divider::after {
   display: none;
 }
+
+.route-filter-label {
+  display: block;
+  margin-bottom: 7px;
+  color: rgb(42 45 40 / 62%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.route-filter-control {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgb(16 56 46 / 18%);
+  background: rgb(255 253 248 / 72%);
+  padding: 0 12px;
+  color: var(--ca-charcoal);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.route-filter-control:focus {
+  border-color: var(--ca-terracotta);
+  background: #fffdf8;
+}
+
+.route-result-badge {
+  display: inline-flex;
+  min-height: 26px;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+}

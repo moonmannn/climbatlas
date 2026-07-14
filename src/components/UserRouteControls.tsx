@@ -6,12 +6,16 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
 import type { SavedRouteStatus } from "@/lib/supabaseClient";
-import type { RouteHighlight } from "@/types/destination";
+
+type RouteIdentity = {
+  id: string;
+  name: string;
+};
 
 type UserRouteControlsProps = {
   destinationName: string;
   destinationSlug: string;
-  route: RouteHighlight;
+  route: RouteIdentity;
 };
 
 const statusLabels: Record<SavedRouteStatus, { en: string; zh: string }> = {

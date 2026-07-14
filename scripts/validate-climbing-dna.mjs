@@ -59,8 +59,8 @@ function requireVector(vector, pathLabel, minimum = 0, maximum = 100) {
   }
 }
 
-if (questions.length < 6 || questions.length > 8) {
-  issues.push("Question count must stay between 6 and 8");
+if (questions.length !== 10) {
+  issues.push("Climbing DNA 2.0 must contain exactly 10 questions");
 }
 
 const questionIds = new Set();
@@ -126,6 +126,14 @@ for (const dimension of dimensions) {
 }
 
 const archetypeIds = new Set();
+const expectedArchetypeIds = [
+  "horizon-seeker",
+  "movement-architect",
+  "project-hunter",
+  "alpine-voyager",
+  "crag-connector",
+  "balanced-roamer"
+];
 
 for (const archetype of archetypes) {
   if (archetypeIds.has(archetype.id)) {
@@ -136,12 +144,48 @@ for (const archetype of archetypes) {
   requireLocalized(archetype.name, `${archetype.id}.name`);
   requireLocalized(archetype.tagline, `${archetype.id}.tagline`);
   requireLocalized(archetype.description, `${archetype.id}.description`);
+  requireLocalized(archetype.longDescription, `${archetype.id}.longDescription`);
   requireVector(archetype.idealVector, `${archetype.id}.idealVector`);
+
+  for (const field of ["strengths", "routeStyles", "environments"]) {
+    if (!archetype[field]?.en?.length || !archetype[field]?.zh?.length) {
+      issues.push(`${archetype.id}.${field} needs bilingual content`);
+    }
+  }
+
+  requireLocalized(archetype.image?.alt, `${archetype.id}.image.alt`);
+  if (!archetype.image?.src?.startsWith("/images/climbing-dna/archetypes/")) {
+    issues.push(`${archetype.id} needs a dedicated archetype image`);
+  } else if (!fs.existsSync(path.join(root, "public", archetype.image.src))) {
+    issues.push(`${archetype.id} image does not exist: ${archetype.image.src}`);
+  }
 
   for (const dimension of archetype.dominantDimensions ?? []) {
     if (!dimensions.includes(dimension)) {
       issues.push(`${archetype.id} has unknown dominant dimension ${dimension}`);
     }
+  }
+}
+
+for (const archetypeId of expectedArchetypeIds) {
+  if (!archetypeIds.has(archetypeId)) {
+    issues.push(`Missing confirmed archetype: ${archetypeId}`);
+  }
+}
+
+const q1Artwork = {
+  "seaside-limestone": "/images/climbing-dna/quiz/seaside-limestone.webp",
+  "forest-granite": "/images/climbing-dna/quiz/forest-granite.webp",
+  "high-alpine-wall": "/images/climbing-dna/quiz/high-alpine-wall.webp",
+  "lively-local-crag": "/images/climbing-dna/quiz/lively-crag.webp"
+};
+
+for (const [optionId, imagePath] of Object.entries(q1Artwork)) {
+  if (!questions[0]?.options.some((option) => option.id === optionId)) {
+    issues.push(`Q1 is missing the confirmed option ${optionId}`);
+  }
+  if (!fs.existsSync(path.join(root, "public", imagePath))) {
+    issues.push(`Q1 image does not exist: ${imagePath}`);
   }
 }
 
@@ -175,12 +219,16 @@ for (const slug of profileSlugs) {
 
 
 const sampleAnswers = {
-  "ideal-day": "sunlit-limestone",
-  "trip-memory": "shared-day",
-  approach: "short-walk",
-  return: "movement",
-  "trip-rhythm": "flexible-group-day",
-  conditions: "warm-predictable"
+  environment: "seaside-limestone",
+  motivation: "share-the-day",
+  "route-preference": "classic-with-friends",
+  "failure-response": "laugh-and-reset",
+  approach: "pleasant-walk",
+  "crag-atmosphere": "friendly-busy",
+  "travel-priority": "good-people-good-base",
+  "adventure-comfort": "balanced-day",
+  "trip-outcome": "people-made-it",
+  identity: "build-connection"
 };
 const sampleTotals = Object.fromEntries(
   dimensions.map((dimension) => [dimension, 0])

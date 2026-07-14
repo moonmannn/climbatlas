@@ -34,6 +34,14 @@ export type DnaArchetype = {
   name: LocalizedText;
   tagline: LocalizedText;
   description: LocalizedText;
+  longDescription: LocalizedText;
+  strengths: LocalizedList;
+  routeStyles: LocalizedList;
+  environments: LocalizedList;
+  image: {
+    src: string;
+    alt: LocalizedText;
+  };
   dominantDimensions: DnaDimension[];
   idealVector: DnaVector;
   accent: "forest" | "terracotta" | "sky" | "sand";
@@ -51,6 +59,7 @@ export type DnaAnswerMap = Record<string, string>;
 export type DnaProfileResult = {
   scores: DnaVector;
   archetypeId: string;
+  secondaryArchetypeId: string;
   completedQuestionIds: string[];
 };
 

@@ -1,171 +1,86 @@
 [
   {
-    "id": "sun-chasing-explorer",
-    "name": {
-      "en": "The Sun-Chasing Explorer",
-      "zh": "追光探索者"
-    },
-    "tagline": {
-      "en": "Warm rock, open horizons, and days worth remembering.",
-      "zh": "温暖岩壁、开阔视野和值得记住的日子。"
-    },
-    "description": {
-      "en": "You are energized by discovery, friendly climbing cultures, and trips that feel generous rather than severe.",
-      "zh": "你会被发现感、友好的攀岩文化，以及不必过度严酷的旅程点亮。"
-    },
-    "dominantDimensions": [
-      "exploration",
-      "social",
-      "comfort"
-    ],
-    "idealVector": {
-      "exploration": 88,
-      "performance": 62,
-      "adventure": 68,
-      "social": 86,
-      "comfort": 82,
-      "flow": 76
-    },
+    "id": "horizon-seeker",
+    "name": { "en": "The Horizon Seeker", "zh": "地平线探索者" },
+    "tagline": { "en": "You climb to make the world feel larger.", "zh": "你攀岩，是为了让世界变得更辽阔。" },
+    "description": { "en": "New landscapes, unfamiliar rock, and the promise of discovery pull you forward.", "zh": "新的风景、陌生的岩石和发现的可能，会不断把你向前拉。" },
+    "longDescription": { "en": "For you, climbing is a passport into places you might never meet otherwise. A memorable day has a strong sense of landscape and leaves you curious about what lies beyond the next ridge. Grades matter, but they rarely lead the decision on their own.", "zh": "对你来说，攀岩像一本进入陌生地方的护照。难忘的一天必须拥有鲜明的环境感，也会让你继续好奇下一道山脊后面有什么。难度当然重要，但很少会独自决定你的选择。" },
+    "strengths": { "en": ["Curiosity", "Adaptability", "Sense of place"], "zh": ["好奇心", "适应力", "地点感知"] },
+    "routeStyles": { "en": ["Scenic classics", "Varied multi-pitch", "Exploratory crag days"], "zh": ["风景型经典线", "变化丰富的多段路线", "探索型岩场日"] },
+    "environments": { "en": ["Remote valleys", "Coastal cliffs", "Distinctive landscapes"], "zh": ["偏远山谷", "海岸岩壁", "个性鲜明的自然环境"] },
+    "image": { "src": "/images/climbing-dna/archetypes/horizon-seeker.webp", "alt": { "en": "A climber looking across a wide coastal climbing landscape", "zh": "攀岩者眺望辽阔海岸攀岩地貌的版画插图" } },
+    "dominantDimensions": ["exploration", "adventure"],
+    "idealVector": { "exploration": 98, "performance": 58, "adventure": 82, "social": 62, "comfort": 48, "flow": 72 },
+    "accent": "sky"
+  },
+  {
+    "id": "movement-architect",
+    "name": { "en": "The Movement Architect", "zh": "动作建筑师" },
+    "tagline": { "en": "You climb to understand how movement fits together.", "zh": "你攀岩，是为了理解动作如何彼此连接。" },
+    "description": { "en": "Balance, timing, and elegant solutions matter more than collecting numbers.", "zh": "平衡、时机和优雅解法，比收集难度数字更吸引你。" },
+    "longDescription": { "en": "You read a route as a structure of choices. The best climbing gives you something to refine: a quieter foot, a more patient hip, a sequence that suddenly becomes obvious. Progress feels most satisfying when it changes how you move, not only what you send.", "zh": "你会把路线读成一组彼此关联的选择。最好的攀爬总有值得打磨的细节：更安静的脚步、更耐心的髋部，或突然变得清晰的动作序列。真正让你满足的进步，是改变了你如何移动，而不只是完攀了什么。" },
+    "strengths": { "en": ["Body awareness", "Problem solving", "Patience"], "zh": ["身体感知", "动作解题", "耐心"] },
+    "routeStyles": { "en": ["Technical faces", "Slabs", "Movement-rich boulders"], "zh": ["技术型岩面", "摩擦板", "动作丰富的抱石"] },
+    "environments": { "en": ["Granite forests", "Quiet sectors", "High-quality rock"], "zh": ["花岗岩森林", "安静岩区", "高质量岩石"] },
+    "image": { "src": "/images/climbing-dna/archetypes/movement-architect.webp", "alt": { "en": "A climber tracing movement patterns across a geometric rock face", "zh": "攀岩者在几何岩面上寻找动作路径的版画插图" } },
+    "dominantDimensions": ["flow", "performance"],
+    "idealVector": { "exploration": 66, "performance": 80, "adventure": 46, "social": 48, "comfort": 64, "flow": 98 },
+    "accent": "sky"
+  },
+  {
+    "id": "project-hunter",
+    "name": { "en": "The Project Hunter", "zh": "项目猎手" },
+    "tagline": { "en": "You come alive when effort has a clear direction.", "zh": "当投入拥有明确方向时，你最有生命力。" },
+    "description": { "en": "A demanding line, honest attempts, and measurable progress make climbing meaningful.", "zh": "高要求路线、诚实尝试和可见进步，让攀岩对你产生意义。" },
+    "longDescription": { "en": "You enjoy building a relationship with a difficult route. Each attempt is information, each return has purpose, and small improvements are worth celebrating. You are not chasing difficulty for display; you value the focus and self-knowledge a serious project can create.", "zh": "你喜欢与一条困难路线建立长期关系。每次尝试都是信息，每次回来都有目的，哪怕很小的进步也值得庆祝。你并不是为了展示而追求难度；真正吸引你的是项目带来的专注和自我认识。" },
+    "strengths": { "en": ["Commitment", "Focused learning", "Resilience"], "zh": ["投入", "专注学习", "韧性"] },
+    "routeStyles": { "en": ["Limit projects", "Power-endurance routes", "Benchmark lines"], "zh": ["极限项目", "力量耐力路线", "标志性难度线"] },
+    "environments": { "en": ["Project caves", "Training-oriented crags", "Reliable sectors"], "zh": ["项目型洞穴", "训练氛围岩场", "条件稳定的岩区"] },
+    "image": { "src": "/images/climbing-dna/archetypes/project-hunter.webp", "alt": { "en": "A focused climber working a steep crack project", "zh": "攀岩者专注尝试陡峭裂缝项目的版画插图" } },
+    "dominantDimensions": ["performance", "flow"],
+    "idealVector": { "exploration": 48, "performance": 98, "adventure": 68, "social": 44, "comfort": 42, "flow": 84 },
     "accent": "terracotta"
   },
   {
-    "id": "wild-edge-adventurer",
-    "name": {
-      "en": "The Wild-Edge Adventurer",
-      "zh": "荒野边界冒险者"
-    },
-    "tagline": {
-      "en": "Commitment, uncertainty, and the long way in.",
-      "zh": "投入、未知，以及更长的进入方式。"
-    },
-    "description": {
-      "en": "You want climbing days to feel like journeys, with real landscape, teamwork, and a little uncertainty.",
-      "zh": "你希望攀岩日像一段旅程，包含真实风景、团队配合和一点未知。"
-    },
-    "dominantDimensions": [
-      "adventure",
-      "exploration"
-    ],
-    "idealVector": {
-      "exploration": 92,
-      "performance": 72,
-      "adventure": 98,
-      "social": 58,
-      "comfort": 28,
-      "flow": 68
-    },
+    "id": "alpine-voyager",
+    "name": { "en": "The Alpine Voyager", "zh": "高山远征者" },
+    "tagline": { "en": "You want a climbing day to feel like a journey.", "zh": "你希望一个攀岩日真正像一段旅程。" },
+    "description": { "en": "Scale, commitment, and the long way in are part of what makes the experience worthwhile.", "zh": "宏大尺度、投入感和漫长接近，本来就是体验价值的一部分。" },
+    "longDescription": { "en": "You are drawn to objectives that demand a whole-day mindset. The climbing matters, but so do the approach, changing weather, teamwork, and the feeling of moving through consequential terrain. Preparation gives you freedom to meet uncertainty with calm.", "zh": "你会被需要整日投入的目标吸引。攀爬本身很重要，但接近、天气变化、团队配合，以及穿越严肃地形的感受同样重要。充分准备会给你自由，让你更从容地面对未知。" },
+    "strengths": { "en": ["Commitment", "Composure", "Expedition mindset"], "zh": ["投入感", "沉着", "远征思维"] },
+    "routeStyles": { "en": ["Alpine rock", "Long multi-pitch", "Adventure classics"], "zh": ["高山岩攀", "长距离多段路线", "冒险型经典线"] },
+    "environments": { "en": ["High mountains", "Big walls", "Remote approaches"], "zh": ["高山环境", "大岩壁", "偏远接近路线"] },
+    "image": { "src": "/images/climbing-dna/archetypes/alpine-voyager.webp", "alt": { "en": "An alpinist looking toward a remote mountain spire", "zh": "高山攀登者望向偏远山峰的版画插图" } },
+    "dominantDimensions": ["adventure", "exploration"],
+    "idealVector": { "exploration": 86, "performance": 72, "adventure": 98, "social": 54, "comfort": 24, "flow": 66 },
     "accent": "forest"
   },
   {
-    "id": "movement-cartographer",
-    "name": {
-      "en": "The Movement Cartographer",
-      "zh": "动作制图师"
-    },
-    "tagline": {
-      "en": "Read the rock, solve the sequence, remember the feeling.",
-      "zh": "阅读岩壁、解开动作，并记住那种感觉。"
-    },
-    "description": {
-      "en": "Movement quality and body awareness matter more to you than collecting impressive numbers.",
-      "zh": "比起收集漂亮数字，你更在意动作质量和身体感知。"
-    },
-    "dominantDimensions": [
-      "flow",
-      "exploration"
-    ],
-    "idealVector": {
-      "exploration": 76,
-      "performance": 78,
-      "adventure": 50,
-      "social": 55,
-      "comfort": 66,
-      "flow": 98
-    },
-    "accent": "sky"
-  },
-  {
-    "id": "project-driven-performer",
-    "name": {
-      "en": "The Project-Driven Performer",
-      "zh": "项目型突破者"
-    },
-    "tagline": {
-      "en": "Clear goals, honest effort, measurable progress.",
-      "zh": "清晰目标、诚实投入和看得见的进步。"
-    },
-    "description": {
-      "en": "You enjoy focused attempts, useful difficulty, and destinations that reward returning with a plan.",
-      "zh": "你喜欢专注尝试、有意义的难度，以及值得带着计划反复回去的目的地。"
-    },
-    "dominantDimensions": [
-      "performance",
-      "flow"
-    ],
-    "idealVector": {
-      "exploration": 54,
-      "performance": 98,
-      "adventure": 66,
-      "social": 52,
-      "comfort": 48,
-      "flow": 84
-    },
-    "accent": "terracotta"
-  },
-  {
-    "id": "campfire-connector",
-    "name": {
-      "en": "The Campfire Connector",
-      "zh": "岩场连接者"
-    },
-    "tagline": {
-      "en": "Good people turn a climbing day into a story.",
-      "zh": "合适的伙伴，会把攀岩日变成故事。"
-    },
-    "description": {
-      "en": "Community, shared judgment, and flexible days shape your best memories on and off the wall.",
-      "zh": "社群、共同判断和灵活节奏，会塑造你在岩壁上下最好的回忆。"
-    },
-    "dominantDimensions": [
-      "social",
-      "comfort"
-    ],
-    "idealVector": {
-      "exploration": 66,
-      "performance": 58,
-      "adventure": 48,
-      "social": 98,
-      "comfort": 86,
-      "flow": 72
-    },
+    "id": "crag-connector",
+    "name": { "en": "The Crag Connector", "zh": "岩场连接者" },
+    "tagline": { "en": "The people around the route are part of the route.", "zh": "路线周围的人，也是路线体验的一部分。" },
+    "description": { "en": "Shared energy, encouragement, and the stories between attempts shape your best days.", "zh": "共享能量、互相鼓励和尝试之间的故事，塑造了你最好的攀岩日。" },
+    "longDescription": { "en": "Climbing is one of the ways you build belonging. You appreciate destinations where information travels easily, partners are found naturally, and the end of the day has room for conversation. A good send is wonderful; a good day shared well lasts longer.", "zh": "攀岩是你建立归属感的方式之一。你喜欢信息自然流动、容易找到伙伴、一天结束后仍有交流空间的目的地。完攀当然很棒，但与合适的人共享的一天，会留得更久。" },
+    "strengths": { "en": ["Community building", "Encouragement", "Flexible judgment"], "zh": ["建立社群", "鼓励他人", "灵活判断"] },
+    "routeStyles": { "en": ["Social sport crags", "Shared classics", "Flexible circuit days"], "zh": ["社交型运动攀岩场", "适合共享的经典线", "灵活刷线日"] },
+    "environments": { "en": ["Lively crags", "Climber towns", "Welcoming sectors"], "zh": ["有活力的岩场", "攀岩小镇", "氛围友好的岩区"] },
+    "image": { "src": "/images/climbing-dna/archetypes/crag-connector.webp", "alt": { "en": "Climbers resting together at a warm mountain crag", "zh": "攀岩伙伴在温暖山地岩场共同休息的版画插图" } },
+    "dominantDimensions": ["social", "comfort"],
+    "idealVector": { "exploration": 64, "performance": 56, "adventure": 46, "social": 98, "comfort": 82, "flow": 68 },
     "accent": "sand"
   },
   {
-    "id": "thoughtful-basecamp-builder",
-    "name": {
-      "en": "The Thoughtful Basecamp Builder",
-      "zh": "从容大本营规划者"
-    },
-    "tagline": {
-      "en": "Smooth logistics leave more room for good climbing.",
-      "zh": "顺畅安排，会为好攀爬留下更多空间。"
-    },
-    "description": {
-      "en": "You value reliable conditions, practical choices, and enough comfort to stay curious for several days.",
-      "zh": "你重视稳定条件、实际选择，以及足以让好奇心持续好几天的舒适度。"
-    },
-    "dominantDimensions": [
-      "comfort",
-      "flow"
-    ],
-    "idealVector": {
-      "exploration": 62,
-      "performance": 68,
-      "adventure": 34,
-      "social": 74,
-      "comfort": 98,
-      "flow": 82
-    },
-    "accent": "sky"
+    "id": "balanced-roamer",
+    "name": { "en": "The Balanced Roamer", "zh": "自由漫游者" },
+    "tagline": { "en": "You leave room for the day to become what it needs to be.", "zh": "你愿意给一天留出空间，让它自然成为该有的样子。" },
+    "description": { "en": "Variety, sustainable rhythm, and good judgment matter more than chasing one extreme.", "zh": "变化、可持续节奏和良好判断，比追逐某个极端更重要。" },
+    "longDescription": { "en": "You are at your best when a trip offers options. Some days become projects, some become explorations, and some are simply satisfying sessions with good people. You value the freedom to respond to weather, energy, and curiosity without feeling that the plan has failed.", "zh": "当一趟旅行拥有选择空间时，你最自在。有些日子会变成项目日，有些会变成探索日，还有些只是和伙伴一起完成一次舒服的 session。你珍惜根据天气、体力和好奇心调整计划的自由，而不会因此觉得计划失败了。" },
+    "strengths": { "en": ["Adaptability", "Sustainable pacing", "Balanced judgment"], "zh": ["适应力", "可持续节奏", "平衡判断"] },
+    "routeStyles": { "en": ["Varied crag circuits", "Moderate classics", "Choose-your-own-adventure days"], "zh": ["多样刷线组合", "中等难度经典线", "自由选择型攀岩日"] },
+    "environments": { "en": ["Multi-style destinations", "Comfortable basecamps", "Season-flexible areas"], "zh": ["多风格目的地", "舒适大本营", "季节选择灵活的地区"] },
+    "image": { "src": "/images/climbing-dna/archetypes/balanced-roamer.webp", "alt": { "en": "A climber overlooking several possible paths through a mountain landscape", "zh": "攀岩者眺望山地中多种可能路径的版画插图" } },
+    "dominantDimensions": ["comfort", "exploration"],
+    "idealVector": { "exploration": 76, "performance": 68, "adventure": 62, "social": 72, "comfort": 82, "flow": 78 },
+    "accent": "terracotta"
   }
 ]

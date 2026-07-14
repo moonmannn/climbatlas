@@ -1,0 +1,2732 @@
+{
+  "source": "openbeta",
+  "sourceUrl": "https://api.openbeta.io",
+  "license": "CC0-1.0",
+  "attribution": "OpenBeta contributors",
+  "fetchedAt": "2026-07-14T09:43:37.604Z",
+  "scope": {
+    "destinationId": "yosemite-usa",
+    "sourceAreaName": "Yosemite Valley",
+    "maxRoutes": 75,
+    "ancestors": [
+      "1db1e8ba-a40e-587c-88a4-64f5ea814b8e",
+      "1e18b6dd-d8b1-5c36-b555-175190184622",
+      "8ab53875-745f-5076-b396-d3d84945e52c",
+      "0f1eddf1-5a79-556e-92f6-0d91627e1f2f"
+    ]
+  },
+  "routes": [
+    {
+      "uuid": "e7223b43-229e-59a7-a89f-2e058391634c",
+      "name": "A Pizza View",
+      "length": -1,
+      "grades": {
+        "yds": "5.6",
+        "french": "4c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "4fe2bc01-ca2d-5654-b491-e67059127ac6",
+      "name": "Dark Slab top rope",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "385529ab-dfc8-5827-bfa4-946cb1e00b59",
+      "name": "Greedy Fischerman",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "b1c2acf6-966c-57bd-a05b-c8fbefb801bb",
+      "name": "Sean's Arete",
+      "length": -1,
+      "grades": {
+        "yds": "5.11d",
+        "french": "7a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "e9dee573-9abe-5141-9761-5d514b2dbb75",
+      "name": "The Lombard Classic",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "ffc8f21d-6c16-587a-8565-e31c89f6dbba",
+      "name": "The Sniper's Post",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "7aa986e5-fca9-5b8b-8263-0df6100013e3",
+      "name": "Tones Of Home",
+      "length": -1,
+      "grades": {
+        "yds": "5.11c",
+        "french": "6c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "9f0a9d5e-b4fe-568f-bc33-1b43b2768fb5",
+      "areaName": "Road Closure Crag",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Road Closure Crag"
+      ]
+    },
+    {
+      "uuid": "695bd2f3-cebe-5b72-9c5d-7660368ec1c7",
+      "name": "Helling/Perrin Route",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "ba9a5eed-9514-5d8d-8eaf-9da13aa05518",
+      "areaName": "Wilde Pinnacle, The",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Wilde Pinnacle, The"
+      ]
+    },
+    {
+      "uuid": "ab0be459-1001-558d-b881-1a25a33bfcc0",
+      "name": "Little Big Boy",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "ba9a5eed-9514-5d8d-8eaf-9da13aa05518",
+      "areaName": "Wilde Pinnacle, The",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Wilde Pinnacle, The"
+      ]
+    },
+    {
+      "uuid": "2743fa44-836d-567e-9b5e-9e691aa8c588",
+      "name": "Sage",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "ba9a5eed-9514-5d8d-8eaf-9da13aa05518",
+      "areaName": "Wilde Pinnacle, The",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Wilde Pinnacle, The"
+      ]
+    },
+    {
+      "uuid": "8de21bbe-3319-522e-bb35-b3aa809a4cee",
+      "name": "Smart Like Tractor",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "ba9a5eed-9514-5d8d-8eaf-9da13aa05518",
+      "areaName": "Wilde Pinnacle, The",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Wilde Pinnacle, The"
+      ]
+    },
+    {
+      "uuid": "a40230bf-2a7a-5ea8-ab7e-9ff8ca99ec70",
+      "name": "Wilde At Heart",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "ba9a5eed-9514-5d8d-8eaf-9da13aa05518",
+      "areaName": "Wilde Pinnacle, The",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        ". Outside the Park",
+        "Wilde Pinnacle, The"
+      ]
+    },
+    {
+      "uuid": "f597efab-713a-5e1e-ab04-e0203f3814ea",
+      "name": "Back for More",
+      "length": -1,
+      "grades": {
+        "yds": "5.10+",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "b8968506-2b7d-5d7a-8510-287245e01026",
+      "name": "Bombay Bitch",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "3ef0aa42-4df8-5b30-b7eb-28407e330741",
+      "name": "Bring in the Fembots",
+      "length": -1,
+      "grades": {
+        "yds": "5.8-",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "2bd47e0d-c55e-5482-b835-41e27baac7e3",
+      "name": "Caribbean Cruise",
+      "length": -1,
+      "grades": {
+        "yds": "5.7",
+        "french": "5a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "0db62b97-fa1b-567f-ae3b-1b4ba785443e",
+      "name": "Center Route",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "76080176-aac7-596b-b132-ef5bd9dedb6c",
+      "name": "Clowns to the left",
+      "length": -1,
+      "grades": {
+        "yds": "5.11-",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "88af3a2d-2f82-5582-a063-307ac472458b",
+      "name": "Color Me Gone (P1)",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "9d1db03c-a2fb-5fd0-9363-42d5872817f7",
+      "name": "Cool Cliff 170",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "3d80b76e-843f-57a7-8000-2ce45cafb8cb",
+      "name": "Costa Rica (p1)",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "25652874-6996-5368-86d6-f177f53c62c5",
+      "name": "Crossover",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "db58ba38-717a-50c7-b1c1-2616327d4114",
+      "name": "Dangling Chads",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "b5536302-fbd9-541f-8bad-5d4d43d46569",
+      "name": "Eye of the Beholder",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "bb59e678-40ed-5a63-a158-b7924932c253",
+      "name": "Farm Alarm",
+      "length": -1,
+      "grades": {
+        "yds": "5.8+",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "98b602e5-0a78-589f-9790-54be4256cb8f",
+      "name": "Fly By",
+      "length": -1,
+      "grades": {
+        "yds": "5.11",
+        "french": "6c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "d44f2f20-83fd-561b-a1c5-193d995ab072",
+      "name": "Flying In The Mountains",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "19376359-dbf6-5f5e-92fa-318de8d0211c",
+      "name": "Free For All",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "51c9c771-8701-5bd1-99d3-2cf760932687",
+      "name": "Hayley Anna",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "45ad5efd-2ecc-5e06-978f-ae099d2f6702",
+      "name": "Hippy Child",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "a119f33a-67c7-5a7a-b410-7a4ade9cadf2",
+      "name": "Homeworld",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "5296b48c-4230-53cc-85bd-79f71d847891",
+      "name": "Hummock World",
+      "length": -1,
+      "grades": {
+        "yds": "5.7",
+        "french": "5a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "18eabee4-01dd-5050-840b-3cdd4bbec5ad",
+      "name": "Jokers to the Right",
+      "length": -1,
+      "grades": {
+        "yds": "5.11-",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "d09bc409-2ef3-571e-829a-816174fb6ba8",
+      "name": "Lily's Way 10d ++",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "bcac42b0-8225-5d67-92fa-97fca4bb8c68",
+      "name": "Lithium Courage",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "5e388f88-64ed-5fd4-bf30-b2fe3ad35a02",
+      "name": "Machine Gun Jubblies",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "f355c513-9617-574e-b15a-c793dd3e5abd",
+      "name": "Moss Madness",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "0a82ff0b-d15c-570f-9547-622ad728549e",
+      "name": "OtherWorld",
+      "length": -1,
+      "grades": {
+        "yds": "5.11d",
+        "french": "7a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "3127f388-8946-547a-8a08-a936c2c40066",
+      "name": "P-Line Express",
+      "length": -1,
+      "grades": {
+        "yds": "5.10+",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "3d396157-85a7-50e6-9f51-7feadee193a2",
+      "name": "Psychedelic Zygote",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "feb6350e-b2f8-5046-9e81-63d5cf3a1880",
+      "name": "Rough Arond the Edges Direct",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "a2e713dc-30f6-5eaf-a900-7e0ffbd15edc",
+      "name": "Rough Around the Edges",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "89172168-c57e-50a4-82c6-a4da20c58ea2",
+      "name": "Saela Silky Drawers",
+      "length": -1,
+      "grades": {
+        "yds": "5.9-",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "9437520a-cbc2-58a9-b8e9-e2d685bfd8d9",
+      "name": "Saved By Zero",
+      "length": -1,
+      "grades": {
+        "yds": "5.10-",
+        "french": "6a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "f5ce5a64-35f4-54d8-a35a-4add5104655e",
+      "name": "Sawyer Crack",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "b22c5ef5-0138-5aee-837e-33d24c1847ba",
+      "name": "Secret  Agent  Dward",
+      "length": -1,
+      "grades": {
+        "yds": "5.7",
+        "french": "5a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "f20641a8-eb2a-537d-83f0-558f130c5483",
+      "name": "Side Tracked",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "84d29de9-f139-516f-a953-5abcd6971b8b",
+      "name": "Simon the Dog",
+      "length": -1,
+      "grades": {
+        "yds": "5.11+",
+        "french": "7a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "17cc5ae0-dbab-532f-af57-4c1e8c0cd904",
+      "name": "Soft in the Middle",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "12adf8ff-4fa9-5aa7-aa08-385b9f707d48",
+      "name": "Stonequest",
+      "length": -1,
+      "grades": {
+        "yds": "5.8+",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "8327f667-4cf5-5621-8918-6a656dfd5d0f",
+      "name": "Striptease",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "0bc6c556-3265-5e7f-8b42-a3236bd0d765",
+      "name": "The Chase",
+      "length": -1,
+      "grades": {
+        "yds": "5.9+",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "be002b7f-9f5f-5614-8ca3-08d4e43a1028",
+      "name": "The Hawaiian",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "6e81e703-0983-5308-8442-e5519af331b3",
+      "name": "The Soloist",
+      "length": -1,
+      "grades": {
+        "yds": "5.10+",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "9b50dc62-02ac-56f4-9425-18d2c39d5a47",
+      "name": "The Unchaste",
+      "length": -1,
+      "grades": {
+        "yds": "5.10b",
+        "french": "6a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "e3c7c6fd-c822-55f0-86d3-7a6ad9ff1a48",
+      "name": "Too High",
+      "length": -1,
+      "grades": {
+        "yds": "5.6",
+        "french": "4c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "47079020-ed97-58bf-9b45-43871f3ed4e6",
+      "name": "Tweet This",
+      "length": -1,
+      "grades": {
+        "yds": "5.11-",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "be959b0e-abc7-5f19-9206-c12070f445c0",
+      "name": "Unnamed Skelton route",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "f319be29-01c8-56df-83c7-6ce7b3c81ec9",
+      "name": "Watercooler cracks",
+      "length": -1,
+      "grades": {
+        "yds": "5.8",
+        "french": "5b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": true
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "2630c2d5-f3a5-5f1a-99d3-1b37207ed799",
+      "name": "Whoreny Toad",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "c0de7a31-25c6-5386-9040-fc0fc2e3cfe2",
+      "name": "Woody Woodpecker",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "9bdc98d4-13de-5224-8af5-326014fabb0d",
+      "name": "Wretched in Stone",
+      "length": -1,
+      "grades": {
+        "yds": "5.10a",
+        "french": "6a",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "12307eb8-89d7-5c4e-b013-7bfd3f2cefe0",
+      "areaName": "Aa. Parkline Slab",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Aa. Parkline Slab"
+      ]
+    },
+    {
+      "uuid": "22253f8e-5af5-580b-9322-fe0b1982a89d",
+      "name": "Cooty Trois",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04809a8c-ed43-5121-98b4-3a12aec39314",
+      "areaName": "Ac. U.S.G.S. Wall",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ac. U.S.G.S. Wall"
+      ]
+    },
+    {
+      "uuid": "2a9a555b-0459-598e-8424-3e1d3542af6c",
+      "name": "Coup d'Etat",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04809a8c-ed43-5121-98b4-3a12aec39314",
+      "areaName": "Ac. U.S.G.S. Wall",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ac. U.S.G.S. Wall"
+      ]
+    },
+    {
+      "uuid": "b259e718-5c6d-5548-90ba-92d8d004f634",
+      "name": "Infectious Groove",
+      "length": -1,
+      "grades": {
+        "yds": "5.10d",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04809a8c-ed43-5121-98b4-3a12aec39314",
+      "areaName": "Ac. U.S.G.S. Wall",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ac. U.S.G.S. Wall"
+      ]
+    },
+    {
+      "uuid": "1381d950-b2dc-5b7e-8280-8bc02666216f",
+      "name": "Stanley Face",
+      "length": -1,
+      "grades": {
+        "yds": "5.13a",
+        "french": "7c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": null,
+        "sport": true,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04809a8c-ed43-5121-98b4-3a12aec39314",
+      "areaName": "Ac. U.S.G.S. Wall",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ac. U.S.G.S. Wall"
+      ]
+    },
+    {
+      "uuid": "db84f93d-76e1-5bd5-95b4-3b6f9ba9e902",
+      "name": "The Road to Madness",
+      "length": -1,
+      "grades": {
+        "yds": "5.11c",
+        "french": "6c+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "04809a8c-ed43-5121-98b4-3a12aec39314",
+      "areaName": "Ac. U.S.G.S. Wall",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ac. U.S.G.S. Wall"
+      ]
+    },
+    {
+      "uuid": "d7bc3864-5ecb-57a9-8f40-059b6d8155bb",
+      "name": "Anticipation",
+      "length": -1,
+      "grades": {
+        "yds": "5.11b",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "bc511f0d-0378-5b57-9a5f-f8c4d3df97cb",
+      "name": "Application",
+      "length": -1,
+      "grades": {
+        "yds": "5.9+",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "ff2132e0-901f-50d9-8562-b1b4260e67fa",
+      "name": "Blotto AKA Axis",
+      "length": -1,
+      "grades": {
+        "yds": "5.10d",
+        "french": "6b+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "6e5c5b5e-8d55-586e-ae38-179837140be3",
+      "name": "Cosmic Messenger",
+      "length": -1,
+      "grades": {
+        "yds": "5.11a",
+        "french": "6c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "2e3fbec4-3e24-5775-a859-84f9d070afde",
+      "name": "Dirty Little Secret",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "3edeefb4-bf6a-5ac9-8bb1-3d4887bdc5f2",
+      "name": "English Breakfast Crack",
+      "length": -1,
+      "grades": {
+        "yds": "5.10c",
+        "french": "6b",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "64fa2dd6-f2c9-5e84-a122-cd80be126426",
+      "name": "Entrance Exam",
+      "length": -1,
+      "grades": {
+        "yds": "5.9",
+        "french": "5c",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    },
+    {
+      "uuid": "df6c746e-62a0-5a0e-b1fe-3c080224f955",
+      "name": "Goldilocks",
+      "length": -1,
+      "grades": {
+        "yds": "5.12a",
+        "french": "7a+",
+        "font": null,
+        "vscale": null,
+        "uiaa": null,
+        "ewbank": null,
+        "wi": null
+      },
+      "type": {
+        "trad": true,
+        "sport": null,
+        "bouldering": null,
+        "deepwatersolo": null,
+        "alpine": null,
+        "snow": null,
+        "ice": null,
+        "mixed": null,
+        "aid": null,
+        "tr": null
+      },
+      "areaUuid": "4e3ad11c-38be-537a-9a02-e1d4b5315d92",
+      "areaName": "Ad. Arch Rock",
+      "pathTokens": [
+        "USA",
+        "California",
+        "Yosemite National Park",
+        "Yosemite Valley",
+        "Lower Merced River Canyon",
+        "Ad. Arch Rock"
+      ]
+    }
+  ]
+}
