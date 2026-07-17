@@ -2,6 +2,7 @@
 import { ClimbingDnaResult, type DestinationMatchCardData } from "@/components/ClimbingDnaResult";
 import { SiteHeader } from "@/components/SiteHeader";
 import { destinations } from "@/data/destinations";
+import { getDestinationRouteCount } from "@/lib/routes/public-routes";
 
 export const metadata: Metadata = {
   title: "Your Climbing DNA | ClimbAtlas",
@@ -15,7 +16,7 @@ const destinationSummaries: DestinationMatchCardData[] = destinations.map((desti
   rockType: destination.rockType,
   climbingTypes: destination.climbingTypes,
   bestSeasons: destination.bestSeasons,
-  routeCount: destination.routes?.length ?? 0,
+  routeCount: getDestinationRouteCount(destination.slug),
   image: destination.images?.[0] ? { src: destination.images[0].src, alt: destination.images[0].alt } : undefined
 }));
 

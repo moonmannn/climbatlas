@@ -167,7 +167,15 @@ export function ClimbingDnaPrototype() {
             {String(questionIndex + 1).padStart(2, "0")} / {String(dnaQuestions.length).padStart(2, "0")}
           </span>
         </div>
-        <div className="mt-4 h-px bg-sand">
+        <div
+          aria-label={locale === "zh" ? "测试进度" : "Quiz progress"}
+          aria-valuemax={dnaQuestions.length}
+          aria-valuemin={1}
+          aria-valuenow={questionIndex + 1}
+          aria-valuetext={`${questionIndex + 1} / ${dnaQuestions.length}`}
+          className="mt-4 h-px bg-sand"
+          role="progressbar"
+        >
           <div
             className="h-px bg-brandforest transition-[width] duration-200"
             style={{ width: `${((questionIndex + 1) / dnaQuestions.length) * 100}%` }}

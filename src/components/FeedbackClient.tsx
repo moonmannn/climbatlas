@@ -32,7 +32,7 @@ const defaultForm: FeedbackForm = {
 const featureOptions = [
   { value: "Map", en: "Map", zh: "地图" },
   { value: "Search", en: "Search", zh: "搜索" },
-  { value: "Route Finder", en: "Route Finder", zh: "路线小测试" },
+  { value: "Climbing DNA", en: "Climbing DNA", zh: "Climbing DNA 偏好测试" },
   { value: "Destination pages", en: "Destination pages", zh: "目的地详情页" },
   { value: "Bilingual content", en: "Bilingual content", zh: "双语内容" }
 ];
@@ -41,7 +41,7 @@ const nextFeatureOptions = [
   { value: "Wishlist", en: "Wishlist", zh: "想爬清单" },
   { value: "Climbed routes", en: "Climbed routes", zh: "已爬记录" },
   { value: "Private notes", en: "Private notes", zh: "私人笔记" },
-  { value: "Public tips", en: "Public tips", zh: "公开 tips" },
+  { value: "Public tips", en: "Public tips", zh: "公开心得" },
   { value: "Conditions updates", en: "Conditions updates", zh: "条件更新" }
 ];
 
@@ -310,8 +310,8 @@ export function FeedbackClient() {
                   }
                   placeholder={
                     isZh
-                      ? "例如：小测试推荐理由让我更容易判断路线风格。"
-                      : "Example: the quiz reasons helped me judge route style."
+                      ? "例如：DNA 偏好匹配让我更容易比较目的地。"
+                      : "Example: DNA preference matches made destinations easier to compare."
                   }
                   value={form.usefulMoment}
                 />

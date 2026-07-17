@@ -1,6 +1,7 @@
 import { HomeClient, type HomeDestinationSummary } from "@/components/HomeClient";
 import { destinations } from "@/data/destinations";
 import { getDestinationDescription } from "@/data/localizedContent";
+import { getDestinationRouteCount } from "@/lib/routes/public-routes";
 import type { Destination } from "@/types/destination";
 
 const featuredSlugs = ["yosemite-usa", "squamish-canada", "fontainebleau-france"];
@@ -23,15 +24,20 @@ function toMapDestination(destination: Destination): Destination {
 }
 
 export default function HomePage() {
-  const featuredDestinations = featuredSlugs
-    .map((slug) => destinations.find((destination) => destination.slug === slug))
-    .filter((destination): destination is Destination => Boolean(destination))
+  const featuredSlugSet = new Set(featuredSlugs);
+  const orderedDestinations = [
+    ...featuredSlugs
+      .map((slug) => destinations.find((destination) => destination.slug === slug))
+      .filter((destination): destination is Destination => Boolean(destination)),
+    ...destinations.filter((destination) => !featuredSlugSet.has(destination.slug))
+  ];
+  const featuredDestinations = orderedDestinations
     .map<HomeDestinationSummary>((destination) => ({
       slug: destination.slug,
       name: destination.name,
       country: destination.country,
       rockType: destination.rockType,
-      routeCount: destination.routes?.length ?? 0,
+      routeCount: getDestinationRouteCount(destination.slug),
       descriptions: {
         en: getDestinationDescription(destination, "en"),
         zh: getDestinationDescription(destination, "zh")

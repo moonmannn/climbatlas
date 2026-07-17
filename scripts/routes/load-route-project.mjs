@@ -51,6 +51,15 @@ export function loadRouteProject(root = process.cwd()) {
   return {
     destinationsModule: require(path.join(root, "src", "data", "destinations.ts")),
     routesModule: require(path.join(root, "src", "lib", "routes.ts")),
+    publicRoutesModule: require(
+      path.join(root, "src", "lib", "routes", "public-routes.ts")
+    ),
+    routeExplorerModule: require(
+      path.join(root, "src", "lib", "routes", "route-explorer.ts")
+    ),
+    gradeParserModule: require(
+      path.join(root, "src", "lib", "routes", "parse-route-grade.ts")
+    ),
     auditModule: require(
       path.join(root, "src", "lib", "routes", "audit-routes.ts")
     ),

@@ -8,6 +8,7 @@ import type {
   RouteClimbingType,
   RouteRecord
 } from "@/types/route";
+import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
 
 const gradeFields: Array<[keyof OpenBetaRawGrade, GradeSystem]> = [
   ["yds", "yds"],
@@ -30,7 +31,11 @@ function routeType(type: OpenBetaRawClimbType): RouteClimbingType {
   return "other";
 }
 
-function routeGrade(grades: OpenBetaRawGrade | null, climbingType: RouteClimbingType) {
+function routeGrade(
+  grades: OpenBetaRawGrade | null,
+  climbingType: RouteClimbingType,
+  destinationId: string
+) {
   const available = gradeFields.filter(([field]) => grades?.[field]?.trim());
   if (available.length === 0) return undefined;
 
@@ -46,11 +51,16 @@ function routeGrade(grades: OpenBetaRawGrade | null, climbingType: RouteClimbing
   const equivalentGrades = Object.fromEntries(
     available.map(([field, system]) => [system, grades?.[field]])
   );
+  const original = grades?.[primaryField]?.trim() ?? "";
+  const parsed = parseRouteGrade(original, destinationId, climbingType);
 
   return {
-    original: grades?.[primaryField]?.trim() ?? "",
+    ...parsed,
     system: primarySystem,
     detectedSystems: available.map(([, system]) => system),
+    primarySystem,
+    primaryDisplay: parsed.primaryDisplay ?? original,
+    normalizedDifficulty: parsed.sortValue,
     equivalentGrades
   };
 }
@@ -62,12 +72,14 @@ export function normalizeOpenBetaRoute(
 ): RouteRecord | undefined {
   const name = raw.name.trim();
   const climbingType = routeType(raw.type);
-  const grade = routeGrade(raw.grades, climbingType);
+  const grade = routeGrade(raw.grades, climbingType, destinationId);
 
   if (!name || name === "[Redacted]" || !raw.uuid || !grade) return undefined;
 
   const id = `openbeta-${raw.uuid.toLowerCase()}`;
-  const sourceUrl = `https://openbeta.io/climbs/${raw.uuid}`;
+  // OpenBeta's former public route URLs are no longer available. Keep the
+  // imported snapshot traceable without presenting a broken exact-route CTA.
+  const sourceUrl = "https://github.com/OpenBeta/openbeta-graphql";
   const lengthMeters = raw.length > 0 ? raw.length : undefined;
 
   return {
@@ -98,7 +110,7 @@ export function normalizeOpenBetaRoute(
     sourceRecords: [
       {
         provider: "openbeta",
-        label: "OpenBeta route metadata",
+        label: "OpenBeta route metadata snapshot",
         sourceUrl,
         externalId: raw.uuid,
         attribution: "OpenBeta contributors",
@@ -114,7 +126,7 @@ export function normalizeOpenBetaRoute(
           "lengthMeters",
           "sectorName"
         ],
-        notes: "Imported from OpenBeta metadata only; descriptions and user content are excluded."
+        notes: "Imported from an OpenBeta metadata snapshot; descriptions and user content are excluded. The external ID preserves record-level provenance."
       }
     ],
     verification: {
@@ -122,18 +134,7 @@ export function normalizeOpenBetaRoute(
       checkedAt,
       notes: "OpenBeta CC0 metadata; not independently field-verified by ClimbAtlas."
     },
-    externalResources: [
-      {
-        title: "OpenBeta route page",
-        url: sourceUrl,
-        type: "route-database",
-        linkStatus: "route-specific",
-        description: {
-          en: "Open the exact route page on OpenBeta.",
-          zh: "前往 OpenBeta 查看这条线路的独立页面。"
-        }
-      }
-    ],
+    externalResources: [],
     createdAt: checkedAt,
     updatedAt: checkedAt
   };

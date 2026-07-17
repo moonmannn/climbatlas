@@ -4,6 +4,7 @@ import {
   type RouteCatalogEntry,
   type RouteSourceRecord
 } from "@/types/route";
+import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
 
 export type RouteValidationSeverity = "error" | "warning" | "info";
 
@@ -37,6 +38,12 @@ function isIsoDate(value: string | undefined) {
   return !value || /^\d{4}-\d{2}-\d{2}$/.test(value);
 }
 
+function isLegacyOpenBetaRouteUrl(value: string) {
+  if (!isWebUrl(value)) return false;
+  const url = new URL(value);
+  return url.hostname === "openbeta.io" && url.pathname.startsWith("/climbs/");
+}
+
 function addIssue(
   issues: RouteValidationIssue[],
   entry: RouteCatalogEntry,
@@ -68,6 +75,13 @@ function validateSource(
       code: "source-url-invalid",
       field,
       message: "Source URL must use http or https."
+    });
+  } else if (isLegacyOpenBetaRouteUrl(source.sourceUrl)) {
+    addIssue(issues, entry, {
+      severity: "error",
+      code: "openbeta-legacy-route-url",
+      field,
+      message: "Legacy OpenBeta /climbs/ URLs are unavailable; retain the external ID and use a stable provider attribution page."
     });
   }
 
@@ -109,6 +123,15 @@ function validateExternalLinks(
 
     const url = new URL(resource.url);
     const isMountainProject = url.hostname.includes("mountainproject.com");
+
+    if (isLegacyOpenBetaRouteUrl(resource.url)) {
+      addIssue(issues, entry, {
+        severity: "error",
+        code: "openbeta-legacy-route-url",
+        field,
+        message: "Legacy OpenBeta /climbs/ URLs must not be published as route resources."
+      });
+    }
 
     if (
       resource.linkStatus === "route-specific" &&
@@ -283,6 +306,41 @@ function validateEntry(
       code: "mixed-grade-without-systems",
       field: "grade.detectedSystems",
       message: "Mixed grades require at least two detected grade systems."
+    });
+  }
+
+  const parsedGrade = parseRouteGrade(
+    entry.grade.original,
+    entry.destinationId,
+    entry.climbingType
+  );
+  if (
+    parsedGrade.parseStatus !== "unparsed" &&
+    (
+      parsedGrade.rangeMin === undefined ||
+      parsedGrade.rangeMax === undefined ||
+      parsedGrade.sortValue === undefined ||
+      !parsedGrade.primarySystem
+    )
+  ) {
+    addIssue(issues, entry, {
+      severity: "error",
+      code: "grade-normalization-incomplete",
+      field: "grade",
+      message: "Parsed grades require a primary system, comparable range, and sort value."
+    });
+  }
+
+  if (
+    entry.grade.primarySystem &&
+    parsedGrade.primarySystem &&
+    entry.grade.primarySystem !== parsedGrade.primarySystem
+  ) {
+    addIssue(issues, entry, {
+      severity: "error",
+      code: "grade-primary-system-mismatch",
+      field: "grade.primarySystem",
+      message: `Stored primary system ${entry.grade.primarySystem} does not match parser result ${parsedGrade.primarySystem}.`
     });
   }
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ClimbAtlas Editorial Copy"
+  short_description: "Write source-aware bilingual ClimbAtlas copy"
+  default_prompt: "Use $climbatlas-editorial-copy to draft clear, decision-useful ClimbAtlas copy in English and Chinese."

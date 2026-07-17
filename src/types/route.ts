@@ -38,11 +38,32 @@ export const gradeSystems = [
 
 export type GradeSystem = (typeof gradeSystems)[number];
 
-export type RouteGrade = {
-  // The source wording is never replaced by a conversion.
+export type RouteGradeParseStatus = "parsed" | "partial" | "unparsed";
+export type RouteGradeFilterBand =
+  | "intro"
+  | "intermediate"
+  | "advanced"
+  | "elite"
+  | "unknown";
+
+export type ParsedRouteGrade = {
   original: string;
-  system: GradeSystem;
   detectedSystems: GradeSystem[];
+  primarySystem?: GradeSystem;
+  primaryDisplay?: string;
+  rangeMin?: number;
+  rangeMax?: number;
+  sortValue?: number;
+  filterBand?: RouteGradeFilterBand;
+  filterBands: RouteGradeFilterBand[];
+  aidGrade?: string;
+  commitmentGrade?: string;
+  parseStatus: RouteGradeParseStatus;
+};
+
+export type RouteGrade = ParsedRouteGrade & {
+  // The source wording is never replaced by a conversion.
+  system: GradeSystem;
   normalizedDifficulty?: number;
   equivalentGrades?: Partial<Record<GradeSystem, string>>;
 };

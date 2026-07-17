@@ -2,9 +2,13 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
+import { getDestinationDnaMatches } from "@/lib/climbingDna";
+import { loadDnaProfile } from "@/lib/climbingDnaStorage";
 import type { Destination } from "@/types/destination";
+import type { DnaVector } from "@/types/climbingDna";
 
 const MapView = dynamic(() => import("@/components/MapView").then((module) => module.MapView), {
   loading: () => <div className="flex h-full min-h-[340px] items-center justify-center bg-sky/20 text-sm font-medium text-brandforest">Loading map...</div>,
@@ -43,9 +47,13 @@ const copy = {
     choiceTitle: "What kind of climbing fits you?",
     choices: ["Seaside limestone", "Forest granite", "High alpine walls", "A lively crag"],
     choiceNotes: ["Warm rock / Open horizons", "Quiet movement / Cool shade", "Big scale / Thin air", "Shared energy / Friendly rhythm"],
-    matchesKicker: "Personalized matches",
-    matchesTitle: "Places selected around how you climb.",
-    match: "match",
+    matchesKicker: "Destinations to explore",
+    matchesTitle: "Start with a place that makes you curious.",
+    personalizedMatchesKicker: "Your DNA preference matches",
+    personalizedMatchesTitle: "Places aligned with how you like to climb.",
+    preferenceMatch: "DNA preference match",
+    matchCta: "Take the DNA quiz for personal matches",
+    routes: "routes",
     mapKicker: "Explore the atlas",
     mapTitle: "The world is your wall.",
     mapBody: "Explore climbing destinations by season, style, and atmosphere.",
@@ -73,9 +81,13 @@ const copy = {
     choiceTitle: "什么样的攀岩最适合你？",
     choices: ["海边石灰岩", "森林花岗岩", "高山岩壁", "热闹岩场"],
     choiceNotes: ["温暖岩石 / 开阔视野", "安静移动 / 林间凉意", "巨大尺度 / 高处空气", "共享能量 / 友好节奏"],
-    matchesKicker: "个性化匹配",
-    matchesTitle: "根据你的攀岩方式挑选目的地。",
-    match: "匹配",
+    matchesKicker: "值得探索的目的地",
+    matchesTitle: "先从一个让你好奇的地方出发。",
+    personalizedMatchesKicker: "你的 DNA 偏好匹配",
+    personalizedMatchesTitle: "这些目的地更贴近你喜欢的攀岩方式。",
+    preferenceMatch: "DNA 偏好匹配",
+    matchCta: "完成 DNA 测试，查看个人匹配",
+    routes: "条路线",
     mapKicker: "探索地图册",
     mapTitle: "世界就是你的岩壁。",
     mapBody: "按照季节、风格与氛围探索全球攀岩目的地。",
@@ -108,11 +120,39 @@ const choiceImages = [
   }
 ];
 
-const matchScores = [94, 89, 86];
-
 export function HomeClient({ featuredDestinations, mapDestinations }: HomeClientProps) {
   const { locale } = useLanguage();
+  const [dnaScores, setDnaScores] = useState<DnaVector | null>(null);
+  const [dnaLoaded, setDnaLoaded] = useState(false);
   const text = copy[locale];
+
+  useEffect(() => {
+    setDnaScores(loadDnaProfile()?.scores ?? null);
+    setDnaLoaded(true);
+  }, []);
+
+  const destinationMatches = useMemo(
+    () => new Map(
+      dnaScores
+        ? getDestinationDnaMatches(dnaScores, locale, 100).map((match) => [
+            match.destinationSlug,
+            match
+          ] as const)
+        : []
+    ),
+    [dnaScores, locale]
+  );
+  const displayedDestinations = useMemo(
+    () => dnaScores
+      ? [...featuredDestinations].sort(
+          (first, second) =>
+            (destinationMatches.get(second.slug)?.score ?? -1) -
+              (destinationMatches.get(first.slug)?.score ?? -1) ||
+            first.name.localeCompare(second.name)
+        ).slice(0, 3)
+      : featuredDestinations.slice(0, 3),
+    [destinationMatches, dnaScores, featuredDestinations]
+  );
 
   return (
     <main className="min-h-screen bg-cream text-charcoal">
@@ -178,10 +218,21 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
 
       <section className="border-y border-brandforest/10 bg-sand/20 px-5 py-[72px] sm:px-8 lg:px-12 lg:py-[120px]">
         <div className="mx-auto max-w-[1440px]">
-          <p className="editorial-kicker text-terracotta">{text.matchesKicker}</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-5xl font-medium leading-[1.04] text-brandforest sm:text-6xl">{text.matchesTitle}</h2>
+          <p className="editorial-kicker text-terracotta">
+            {dnaScores ? text.personalizedMatchesKicker : text.matchesKicker}
+          </p>
+          <h2 className="display-serif mt-4 max-w-3xl text-5xl font-medium leading-[1.04] text-brandforest sm:text-6xl">
+            {dnaScores ? text.personalizedMatchesTitle : text.matchesTitle}
+          </h2>
+          {dnaLoaded && !dnaScores ? (
+            <Link className="text-link mt-6 inline-flex" href="/climbing-dna">
+              {text.matchCta} →
+            </Link>
+          ) : null}
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {featuredDestinations.map((destination, index) => (
+            {displayedDestinations.map((destination, index) => {
+              const match = destinationMatches.get(destination.slug);
+              return (
               <Link className="destination-card group" href={`/destinations/${destination.slug}`} key={destination.slug}>
                 <div className="aspect-[4/3] overflow-hidden rounded-lg bg-sky/20">
                   <img alt={destination.image?.alt ?? destination.name} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={destination.image?.src ?? choiceImages[index].src} />
@@ -190,12 +241,21 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">{destination.country}</p>
                   <div className="mt-2 flex items-end justify-between gap-4">
                     <h3 className="display-serif text-3xl font-medium text-brandforest">{destination.name}</h3>
-                    <span className="text-sm font-semibold text-brandforest">{matchScores[index]}% {text.match}</span>
+                    {match ? (
+                      <span className="max-w-32 text-right text-sm font-semibold text-brandforest">
+                        {match.score}% {text.preferenceMatch}
+                      </span>
+                    ) : (
+                      <span className="max-w-32 text-right text-sm font-semibold text-charcoal/55">
+                        {destination.rockType} · {destination.routeCount} {text.routes}
+                      </span>
+                    )}
                   </div>
                   <p className="mt-4 text-base leading-7 text-charcoal/65">{destination.descriptions[locale]}</p>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

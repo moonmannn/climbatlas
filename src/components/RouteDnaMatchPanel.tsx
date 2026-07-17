@@ -3,13 +3,11 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
-import { dnaQuestions } from "@/data/dnaQuestions";
 import {
   getDnaDimensionLabel,
-  getLocalizedDnaText,
-  scoreDnaAnswers
+  getLocalizedDnaText
 } from "@/lib/climbingDna";
-import { loadDnaAnswers } from "@/lib/climbingDnaStorage";
+import { loadDnaProfile } from "@/lib/climbingDnaStorage";
 import { getRouteDnaMatch } from "@/lib/routes/route-dna";
 import type { DnaVector } from "@/types/climbingDna";
 import type { RouteDnaSnapshot } from "@/types/route-dna";
@@ -20,16 +18,16 @@ const inputLabels = {
     originalGrade: "original grade",
     lengthMeters: "recorded length",
     pitches: "pitch count",
-    controlledTags: "controlled tags",
-    dnaProfile: "editorial DNA profile"
+    controlledTags: "recorded route characteristics",
+    dnaProfile: "reviewed route profile"
   },
   zh: {
     climbingType: "攀岩类型",
     originalGrade: "原始等级",
     lengthMeters: "记录长度",
     pitches: "段数",
-    controlledTags: "受控标签",
-    dnaProfile: "编辑 DNA 画像"
+    controlledTags: "已记录的线路特征",
+    dnaProfile: "已审核的线路画像"
   }
 };
 
@@ -40,16 +38,9 @@ function matchLabel(score: number, isZh: boolean) {
 }
 
 function originLabel(origin: RouteDnaSnapshot["origin"], isZh: boolean) {
-  if (origin === "source") return isZh ? "来源 DNA 画像" : "Source DNA profile";
-  if (origin === "editorial") return isZh ? "编辑 DNA 画像" : "Editorial DNA profile";
-  return isZh ? "ClimbAtlas 推断" : "ClimbAtlas inferred";
-}
-
-function confidenceLabel(confidence: RouteDnaSnapshot["confidence"], isZh: boolean) {
-  if (!isZh) return confidence;
-  if (confidence === "editorial") return "编辑确认";
-  if (confidence === "medium") return "中等";
-  return "有限";
+  if (origin === "source") return isZh ? "线路画像来自已引用资料" : "Route profile from cited information";
+  if (origin === "editorial") return isZh ? "ClimbAtlas 已审核线路画像" : "ClimbAtlas reviewed route profile";
+  return isZh ? "ClimbAtlas 推断的线路画像" : "ClimbAtlas inferred route profile";
 }
 
 export function RouteDnaMatchPanel({
@@ -65,13 +56,7 @@ export function RouteDnaMatchPanel({
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const answers = loadDnaAnswers();
-    if (answers) {
-      const profile = scoreDnaAnswers(answers);
-      if (profile.completedQuestionIds.length === dnaQuestions.length) {
-        setScores(profile.scores);
-      }
-    }
+    setScores(loadDnaProfile()?.scores ?? null);
     setLoaded(true);
   }, []);
 
@@ -88,7 +73,7 @@ export function RouteDnaMatchPanel({
     return (
       <section className="mt-6 border-y border-brandforest/15 py-7">
         <p className="editorial-kicker text-terracotta">
-          {isZh ? "路线 DNA 匹配" : "Route DNA match"}
+          {isZh ? "路线 DNA 偏好匹配" : "Route DNA preference match"}
         </p>
         <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -118,7 +103,7 @@ export function RouteDnaMatchPanel({
       <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="editorial-kicker text-terracotta">
-            {isZh ? "推荐给你的 DNA" : "Recommended for your DNA"}
+            {isZh ? "你的线路偏好匹配" : "Your route preference match"}
           </p>
           <h2 className="display-serif mt-2 text-3xl font-medium text-brandforest">
             {routeName}
@@ -131,7 +116,9 @@ export function RouteDnaMatchPanel({
           <strong className="display-serif text-6xl font-medium leading-none">
             {match.score}
           </strong>
-          <span className="text-sm font-semibold">% {isZh ? "匹配" : "match"}</span>
+          <span className="max-w-28 text-sm font-semibold">
+            % {isZh ? "DNA 偏好匹配" : "DNA preference match"}
+          </span>
         </div>
       </div>
 
@@ -184,7 +171,6 @@ export function RouteDnaMatchPanel({
             {originLabel(snapshot.origin, isZh)}
           </strong>
           {" · "}{isZh ? "依据" : "Based on"}: {inputs.join(isZh ? "、" : ", ")}
-          {" · "}{isZh ? "置信度" : "confidence"}: {confidenceLabel(snapshot.confidence, isZh)}
         </p>
         <p className="max-w-md sm:text-right">
           {isZh

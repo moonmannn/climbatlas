@@ -80,11 +80,12 @@ const ui = {
   en: {
     archetype: "Your climbing archetype",
     secondary: "with a {name} streak",
-    profile: "Your DNA profile",
+    profile: "Your DNA preference profile",
+    profileScale: "Preference profile score (0–100)",
     strengths: "Top strengths",
     styles: "Route styles to explore",
     environments: "Environments that may fit",
-    matches: "Destination matches",
+    matches: "DNA preference matches",
     matchIntro:
       "These places align with your preferences for movement, atmosphere, travel, and challenge—not only grade.",
     why: "Why it fits",
@@ -107,11 +108,12 @@ const ui = {
   zh: {
     archetype: "你的攀岩人格",
     secondary: "同时带有{name}的倾向",
-    profile: "你的 DNA 画像",
+    profile: "你的 DNA 偏好画像",
+    profileScale: "偏好画像分值（0–100）",
     strengths: "你的主要优势",
     styles: "值得探索的路线风格",
     environments: "可能适合你的攀岩环境",
-    matches: "目的地匹配",
+    matches: "DNA 偏好匹配",
     matchIntro: "这些地方匹配的是你的动作、氛围、旅行和挑战偏好，而不只是难度。",
     why: "为什么匹配",
     consider: "值得考虑",
@@ -142,9 +144,9 @@ function getStrongestDimensions(scores: Record<DnaDimension, number>) {
 }
 
 function getMatchLabel(score: number, locale: "en" | "zh") {
-  if (score >= 88) return locale === "zh" ? "强匹配" : "Strong match";
-  if (score >= 78) return locale === "zh" ? "良好匹配" : "Good match";
-  return locale === "zh" ? "混合匹配" : "Mixed match";
+  if (score >= 88) return locale === "zh" ? "偏好高度契合" : "Strong preference match";
+  if (score >= 78) return locale === "zh" ? "偏好较为契合" : "Good preference match";
+  return locale === "zh" ? "偏好部分契合" : "Mixed preference match";
 }
 
 export function ClimbingDnaResult({
@@ -275,8 +277,12 @@ export function ClimbingDnaResult({
             </p>
           </div>
           <div className="space-y-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.12em] text-charcoal/45">
+              {text.profileScale}
+            </p>
             {dnaDimensions.map((dimension) => (
               <div
+                aria-label={`${dimensionNames[locale][dimension]}: ${result.profile.scores[dimension]} / 100`}
                 className="grid grid-cols-[6.5rem_1fr_2.5rem] items-center gap-3 sm:grid-cols-[8rem_1fr_3rem]"
                 key={dimension}
               >
@@ -352,8 +358,8 @@ export function ClimbingDnaResult({
                             {getMatchLabel(match.score, locale)}
                           </p>
                         </div>
-                        <span className="display-serif text-4xl font-medium text-brandforest">
-                          {match.score}%
+                        <span className="max-w-32 text-right text-sm font-semibold text-brandforest">
+                          {match.score}% {locale === "zh" ? "DNA 偏好匹配" : "DNA preference match"}
                         </span>
                       </div>
                       <p className="mt-5 text-base leading-7 text-charcoal/62">

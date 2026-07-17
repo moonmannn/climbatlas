@@ -971,7 +971,7 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     ),
     source(
       "Mountain Project: Smith Rock",
-      "https://www.mountainproject.com/area/105818652/smith-rock",
+      "https://www.mountainproject.com/area/105788989/smith-rock",
       "route-database-metadata",
       "medium",
       ["route metadata", "area context"],
@@ -989,7 +989,7 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     ),
     source(
       "Mountain Project: El Potrero Chico",
-      "https://www.mountainproject.com/area/105924807/el-potrero-chico",
+      "https://www.mountainproject.com/area/105910764/el-potrero-chico",
       "route-database-metadata",
       "medium",
       ["route metadata", "area context"],
@@ -1043,7 +1043,7 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     ),
     source(
       "PlanetMountain: Dolomites climbing",
-      "https://www.planetmountain.com/en/climbing/dolomites",
+      "https://www.planetmountain.com/en/news/climbing/climbing-in-the-dolomites.html",
       "climbing-media",
       "medium",
       ["route metadata", "area context"],
@@ -1061,7 +1061,7 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     ),
     source(
       "Mountain Project: Frankenjura",
-      "https://www.mountainproject.com/area/107537079/frankenjura",
+      "https://www.mountainproject.com/area/106172652/frankenjura",
       "route-database-metadata",
       "medium",
       ["route metadata", "area context"],
@@ -1079,7 +1079,7 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     ),
     source(
       "Mountain Project: Siurana",
-      "https://www.mountainproject.com/area/107849031/siurana",
+      "https://www.mountainproject.com/area/106624710/siurana",
       "route-database-metadata",
       "medium",
       ["route metadata", "area context"],
@@ -1088,16 +1088,16 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
   ],
   "margalef-spain": [
     source(
-      "Wikipedia: Perfecto Mundo",
-      "https://en.wikipedia.org/wiki/Perfecto_Mundo",
-      "open-encyclopedia",
+      "PlanetMountain: Perfecto Mundo interview",
+      "https://www.planetmountain.com/en/news/interviews/alexander-megos-perfecto-mundo-margalef-9b-plus-interview.html",
+      "climbing-media",
       "medium",
       ["area context", "hard-route history"],
-      "Open encyclopedia context for Margalef's modern high-end sport climbing."
+      "Climbing-media context for Perfecto Mundo and modern high-end sport climbing in Margalef."
     ),
     source(
       "Mountain Project: Margalef",
-      "https://www.mountainproject.com/area/106848091/margalef",
+      "https://www.mountainproject.com/area/106631762/margalef",
       "route-database-metadata",
       "medium",
       ["route metadata", "area context"],
@@ -1115,7 +1115,7 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     ),
     source(
       "Mountain Project: Grampians",
-      "https://www.mountainproject.com/area/107254287/grampians",
+      "https://www.mountainproject.com/area/105907768/the-grampians",
       "route-database-metadata",
       "medium",
       ["route metadata", "area context"],
@@ -1128,20 +1128,20 @@ const expansionSourcePacks: Record<string, RouteHighlight["sources"]> = {
     source("Wikipedia: Moon Hill", "https://en.wikipedia.org/wiki/Moon_Hill", "open-encyclopedia", "medium", ["landmark context", "area context"], "Open context for one of Yangshuo's best-known limestone landmarks.")
   ],
   "liming-china": [
-    source("Liming sandstone climbing context", "https://en.wikipedia.org/wiki/Liming,_Yunnan", "open-encyclopedia", "low", ["regional context"], "Regional context only; route cards are conservative metadata prompts until stronger route-specific sources are added."),
+    source("Mountain Project: Liming", "https://www.mountainproject.com/area/108397346/liming", "route-database-metadata", "medium", ["route metadata", "area context"], "External metadata source only; no beta, comments, ratings, or photos are copied."),
     source("ClimbAtlas metadata policy", "https://en.wikipedia.org/wiki/Traditional_climbing", "open-encyclopedia", "low", ["style context"], "General traditional-climbing context; not route beta or a route database.")
   ],
   "long-dong-taiwan": [
     source("Chinese Wikipedia: Long Dong climbing area", "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4", "open-encyclopedia", "medium", ["area context", "sector context"], "Open encyclopedia context for Long Dong sectors; not a route guide."),
-    source("Wikipedia: Longdong Bay", "https://en.wikipedia.org/wiki/Longdong_Bay", "open-encyclopedia", "medium", ["geographic context"], "Open geographic context for the sea-cliff area.")
+    source("Mountain Project: Long Dong", "https://www.mountainproject.com/area/106594934/long-dong-dragon-cave", "route-database-metadata", "medium", ["route metadata", "area context"], "External metadata source only; no beta, comments, ratings, or photos are copied.")
   ],
   "railay-tonsai-thailand": [
     source("Wikipedia: Railay Beach", "https://en.wikipedia.org/wiki/Railay_Beach", "open-encyclopedia", "medium", ["area context", "limestone setting"], "Open context for the Railay peninsula and limestone climbing setting."),
-    source("Wikipedia: Ton Sai Beach", "https://en.wikipedia.org/wiki/Ton_Sai_Beach", "open-encyclopedia", "medium", ["area context", "travel setting"], "Open context for Tonsai's travel and climbing setting; not route beta.")
+    source("Mountain Project: Railay and Tonsai", "https://www.mountainproject.com/area/105894664/laem-phra-nang-railay-tonsai", "route-database-metadata", "medium", ["route metadata", "area context"], "External metadata source only; no beta, comments, ratings, or photos are copied.")
   ],
   "rocklands-south-africa": [
     source("Wikipedia: Rocklands", "https://en.wikipedia.org/wiki/Rocklands", "open-encyclopedia", "medium", ["area context", "bouldering context"], "Open encyclopedia context for Rocklands bouldering."),
-    source("Mountain Project: Rocklands", "https://www.mountainproject.com/area/107254345/rocklands", "route-database-metadata", "medium", ["route metadata", "area context"], "External metadata source only; no beta, comments, ratings, or photos are copied.")
+    source("Mountain Project: Rocklands", "https://www.mountainproject.com/area/108874793/rocklands", "route-database-metadata", "medium", ["route metadata", "area context"], "External metadata source only; no beta, comments, ratings, or photos are copied.")
   ]
 };
 
@@ -1240,12 +1240,12 @@ const popularDestinationResources: Record<
       }
     },
     {
-      title: "UKClimbing Logbook: Kalymnos",
-      url: "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-      type: "route-database",
+      title: "Kalymnos Climbing Guidebook",
+      url: "https://climbkalymnos.com/guidebook/",
+      type: "guidebook/resource",
       description: {
-        en: "External logbook and metadata reference. ClimbAtlas does not copy comments or beta.",
-        zh: "外部日志和元数据参考。ClimbAtlas 不复制评论或 beta。"
+        en: "Guidebook resource from the local guidebook team. ClimbAtlas links out without copying guidebook content.",
+        zh: "当地路书团队提供的路书资源页。ClimbAtlas 仅提供外链，不复制路书内容。"
       }
     }
   ],
@@ -1281,7 +1281,7 @@ const popularDestinationResources: Record<
     },
     {
       title: "Mountain Project: Smith Rock",
-      url: "https://www.mountainproject.com/area/105818652/smith-rock",
+      url: "https://www.mountainproject.com/area/105788989/smith-rock",
       type: "route-database",
       description: {
         en: "External route-database entry point. ClimbAtlas does not copy beta, ratings, comments, or photos.",
@@ -1301,7 +1301,7 @@ const popularDestinationResources: Record<
     },
     {
       title: "Mountain Project: El Potrero Chico",
-      url: "https://www.mountainproject.com/area/105924807/el-potrero-chico",
+      url: "https://www.mountainproject.com/area/105910764/el-potrero-chico",
       type: "route-database",
       description: {
         en: "External route-database entry point for route pages and current community updates.",
@@ -1352,7 +1352,7 @@ const popularDestinationResources: Record<
   "dolomites-italy": [
     {
       title: "PlanetMountain: Dolomites climbing",
-      url: "https://www.planetmountain.com/en/climbing/dolomites",
+      url: "https://www.planetmountain.com/en/news/climbing/climbing-in-the-dolomites.html",
       type: "history/article",
       description: {
         en: "Climbing media entry point for Dolomites route history and broader route research.",
@@ -1372,7 +1372,7 @@ const popularDestinationResources: Record<
   "frankenjura-germany": [
     {
       title: "Mountain Project: Frankenjura",
-      url: "https://www.mountainproject.com/area/107537079/frankenjura",
+      url: "https://www.mountainproject.com/area/106172652/frankenjura",
       type: "route-database",
       description: {
         en: "External route-database entry point for current Frankenjura route metadata.",
@@ -1392,7 +1392,7 @@ const popularDestinationResources: Record<
   "siurana-spain": [
     {
       title: "Mountain Project: Siurana",
-      url: "https://www.mountainproject.com/area/107849031/siurana",
+      url: "https://www.mountainproject.com/area/106624710/siurana",
       type: "route-database",
       description: {
         en: "External route-database entry point for route metadata and local updates.",
@@ -1412,7 +1412,7 @@ const popularDestinationResources: Record<
   "margalef-spain": [
     {
       title: "Mountain Project: Margalef",
-      url: "https://www.mountainproject.com/area/106848091/margalef",
+      url: "https://www.mountainproject.com/area/106631762/margalef",
       type: "route-database",
       description: {
         en: "External metadata entry point for Margalef route research.",
@@ -1420,12 +1420,12 @@ const popularDestinationResources: Record<
       }
     },
     {
-      title: "Wikipedia: Perfecto Mundo",
-      url: "https://en.wikipedia.org/wiki/Perfecto_Mundo",
+      title: "PlanetMountain: Perfecto Mundo interview",
+      url: "https://www.planetmountain.com/en/news/interviews/alexander-megos-perfecto-mundo-margalef-9b-plus-interview.html",
       type: "history/article",
       description: {
-        en: "Open history context for modern high-end sport climbing in Margalef.",
-        zh: "关于 Margalef 现代高难运动攀的开放历史背景。"
+        en: "Climbing-media history context for Perfecto Mundo and modern high-end sport climbing in Margalef.",
+        zh: "关于 Perfecto Mundo 与 Margalef 现代高难度运动攀登的媒体历史资料。"
       }
     }
   ],
@@ -1441,7 +1441,7 @@ const popularDestinationResources: Record<
     },
     {
       title: "Mountain Project: Grampians",
-      url: "https://www.mountainproject.com/area/107254287/grampians",
+      url: "https://www.mountainproject.com/area/105907768/the-grampians",
       type: "route-database",
       description: {
         en: "External route-database entry point for current route metadata.",
@@ -1471,20 +1471,20 @@ const popularDestinationResources: Record<
   ]
 ,
   "liming-china": [
-    { title: "Wikipedia: Liming, Yunnan", url: "https://en.wikipedia.org/wiki/Liming,_Yunnan", type: "history/article", description: { en: "Regional context for Liming and northwest Yunnan travel planning.", zh: "黎明和滇西北旅行规划的区域背景。" } },
+    { title: "Mountain Project: Liming", url: "https://www.mountainproject.com/area/108397346/liming", type: "route-database", description: { en: "External route-database entry point for Liming metadata.", zh: "黎明线路元数据的外部路线数据库入口。" } },
     { title: "Wikipedia: Traditional climbing", url: "https://en.wikipedia.org/wiki/Traditional_climbing", type: "history/article", description: { en: "General context for traditional climbing systems and style boundaries.", zh: "传统攀登系统和风格边界的通用背景。" } }
   ],
   "long-dong-taiwan": [
     { title: "Chinese Wikipedia: Long Dong climbing area", url: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4", type: "history/article", description: { en: "Open sector and area context for Long Dong climbing.", zh: "龙洞攀岩区域和分区背景。" } },
-    { title: "Wikipedia: Longdong Bay", url: "https://en.wikipedia.org/wiki/Longdong_Bay", type: "history/article", description: { en: "Geographic context for the sea-cliff area.", zh: "海崖区域的地理背景。" } }
+    { title: "Mountain Project: Long Dong", url: "https://www.mountainproject.com/area/106594934/long-dong-dragon-cave", type: "route-database", description: { en: "External route-database entry point for Long Dong metadata.", zh: "龙洞线路元数据的外部路线数据库入口。" } }
   ],
   "railay-tonsai-thailand": [
     { title: "Wikipedia: Railay Beach", url: "https://en.wikipedia.org/wiki/Railay_Beach", type: "history/article", description: { en: "Open context for Railay's limestone peninsula and travel setting.", zh: "关于 Railay 灰岩半岛和旅行环境的开放资料。" } },
-    { title: "Wikipedia: Ton Sai Beach", url: "https://en.wikipedia.org/wiki/Ton_Sai_Beach", type: "history/article", description: { en: "Open context for Tonsai's beach and climbing-travel setting.", zh: "关于 Tonsai 海滩和攀岩旅行环境的开放资料。" } }
+    { title: "Mountain Project: Railay and Tonsai", url: "https://www.mountainproject.com/area/105894664/laem-phra-nang-railay-tonsai", type: "route-database", description: { en: "External route-database entry point for Railay and Tonsai metadata.", zh: "Railay 和 Tonsai 线路元数据的外部路线数据库入口。" } }
   ],
   "rocklands-south-africa": [
     { title: "Wikipedia: Rocklands", url: "https://en.wikipedia.org/wiki/Rocklands", type: "history/article", description: { en: "Open context for Rocklands as a global sandstone bouldering area.", zh: "关于 Rocklands 全球砂岩抱石区的开放资料。" } },
-    { title: "Mountain Project: Rocklands", url: "https://www.mountainproject.com/area/107254345/rocklands", type: "route-database", description: { en: "External route-database entry point for current metadata and route research.", zh: "外部路线数据库入口，用于查看当前元数据和继续研究。" } }
+    { title: "Mountain Project: Rocklands", url: "https://www.mountainproject.com/area/108874793/rocklands", type: "route-database", description: { en: "External route-database entry point for current metadata and route research.", zh: "外部路线数据库入口，用于查看当前元数据和继续研究。" } }
   ]
 };
 
@@ -1508,7 +1508,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       sources: [
         source(
           "Mountain Project: Astroman metadata",
-          "https://www.mountainproject.com/route/105862064/astroman",
+          "https://www.mountainproject.com/route/105845493/astroman",
           "route-database-metadata",
           "medium",
           ["name", "grade", "location"],
@@ -1531,7 +1531,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       externalResources: [
         {
           title: "Mountain Project: Astroman",
-          url: "https://www.mountainproject.com/route/105862064/astroman",
+          url: "https://www.mountainproject.com/route/105845493/astroman",
           type: "route-database",
           description: {
             en: "External route-database page for current metadata and community updates.",
@@ -1563,7 +1563,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       sources: [
         source(
           "Mountain Project: The Rostrum metadata",
-          "https://www.mountainproject.com/route/105862091/the-rostrum",
+          "https://www.mountainproject.com/route/105863822/the-north-face",
           "route-database-metadata",
           "medium",
           ["name", "grade", "location"],
@@ -1586,7 +1586,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       externalResources: [
         {
           title: "Mountain Project: The Rostrum",
-          url: "https://www.mountainproject.com/route/105862091/the-rostrum",
+          url: "https://www.mountainproject.com/route/105863822/the-north-face",
           type: "route-database",
           description: {
             en: "External route-database page for current metadata and local updates.",
@@ -1618,7 +1618,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       sources: [
         source(
           "Mountain Project: East Buttress metadata",
-          "https://www.mountainproject.com/route/105862060/east-buttress",
+          "https://www.mountainproject.com/route/105915125/east-buttress",
           "route-database-metadata",
           "medium",
           ["name", "grade", "location"],
@@ -1641,7 +1641,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       externalResources: [
         {
           title: "Mountain Project: East Buttress",
-          url: "https://www.mountainproject.com/route/105862060/east-buttress",
+          url: "https://www.mountainproject.com/route/105915125/east-buttress",
           type: "route-database",
           description: {
             en: "External metadata and community update page.",
@@ -1673,7 +1673,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       sources: [
         source(
           "Mountain Project: The Phoenix metadata",
-          "https://www.mountainproject.com/route/105862538/the-phoenix",
+          "https://www.mountainproject.com/route/105875268/the-phoenix",
           "route-database-metadata",
           "medium",
           ["name", "grade", "location"],
@@ -1707,7 +1707,7 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       externalResources: [
         {
           title: "Mountain Project: The Phoenix",
-          url: "https://www.mountainproject.com/route/105862538/the-phoenix",
+          url: "https://www.mountainproject.com/route/105875268/the-phoenix",
           type: "route-database",
           description: {
             en: "External route-database page for metadata and current community updates.",
@@ -2447,12 +2447,12 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
           "External route database entry point; no route description or comments are copied."
         ),
         source(
-          "UKClimbing Logbook: Kalymnos",
-          "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-          "route-database-metadata",
-          "medium",
-          ["area", "logbook metadata context"],
-          "External logbook reference; ClimbAtlas does not copy comments or beta."
+          "Kalymnos Climbing Guidebook",
+          "https://climbkalymnos.com/guidebook/",
+          "official",
+          "high",
+          ["area", "guidebook coverage"],
+          "Guidebook resource from the local guidebook team; no guidebook content is copied."
         )
       ],
       images: [],
@@ -2502,12 +2502,12 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
           "External route database entry point; no beta is copied."
         ),
         source(
-          "UKClimbing Logbook: Kalymnos",
-          "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-          "route-database-metadata",
-          "medium",
-          ["area", "logbook metadata context"],
-          "External logbook reference only."
+          "Kalymnos Climbing Guidebook",
+          "https://climbkalymnos.com/guidebook/",
+          "official",
+          "high",
+          ["area", "guidebook coverage"],
+          "Guidebook resource from the local guidebook team; no guidebook content is copied."
         )
       ],
       images: [],
@@ -2517,12 +2517,13 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
       },
       externalResources: [
         {
-          title: "UKClimbing Logbook: Kalymnos",
-          url: "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-          type: "route-database",
+          title: "Kalymnos Climbing Guidebook",
+          url: "https://climbkalymnos.com/guidebook/",
+          type: "guidebook/resource",
+          linkStatus: "guidebook-specific",
           description: {
-            en: "External logbook entry point for current route research.",
-            zh: "外部日志入口，用于当前路线研究。"
+            en: "Guidebook resource for current Kalymnos route research.",
+            zh: "用于查询卡林诺斯当前路线资料的路书资源页。"
           }
         }
       ],
@@ -2557,12 +2558,12 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
           "External route database entry point; no route text is copied."
         ),
         source(
-          "UKClimbing Logbook: Kalymnos",
-          "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-          "route-database-metadata",
-          "medium",
-          ["area", "logbook metadata context"],
-          "External logbook reference only."
+          "Kalymnos Climbing Guidebook",
+          "https://climbkalymnos.com/guidebook/",
+          "official",
+          "high",
+          ["area", "guidebook coverage"],
+          "Guidebook resource from the local guidebook team; no guidebook content is copied."
         )
       ],
       images: [],
@@ -2612,12 +2613,12 @@ const popularRouteAdditions: Record<string, RouteHighlight[]> = {
           "External route database entry point; no route description or comments are copied."
         ),
         source(
-          "UKClimbing Logbook: Kalymnos",
-          "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-          "route-database-metadata",
-          "medium",
-          ["area", "logbook metadata context"],
-          "External logbook reference only."
+          "Kalymnos Climbing Guidebook",
+          "https://climbkalymnos.com/guidebook/",
+          "official",
+          "high",
+          ["area", "guidebook coverage"],
+          "Guidebook resource from the local guidebook team; no guidebook content is copied."
         )
       ],
       images: [],
@@ -3400,9 +3401,9 @@ const v2SourcePacks: Record<string, V2SourcePack> = {
   "kalymnos-greece": {
     databaseLabel: "TheCrag: Kalymnos metadata",
     databaseUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-    contextLabel: "UKClimbing Logbook: Kalymnos",
-    contextUrl: "https://www.ukclimbing.com/logbook/crags/kalymnos-108/",
-    contextType: "route-database-metadata"
+    contextLabel: "Kalymnos Climbing Guidebook",
+    contextUrl: "https://climbkalymnos.com/guidebook/",
+    contextType: "official"
   },
   "chamonix-france": {
     databaseLabel: "Camptocamp: Chamonix / Mont Blanc metadata",
@@ -3413,7 +3414,7 @@ const v2SourcePacks: Record<string, V2SourcePack> = {
   },
   "ceuse-france": {
     databaseLabel: "Mountain Project: Ceuse metadata",
-    databaseUrl: "https://www.mountainproject.com/area/106059961/ceuse",
+    databaseUrl: "https://www.mountainproject.com/area/106334422/ceuse",
     contextLabel: "Wikipedia: Ceuse",
     contextUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
     contextType: "open-encyclopedia"
@@ -3436,7 +3437,7 @@ const v2SourcePacks: Record<string, V2SourcePack> = {
     databaseLabel: "theCrag: Siurana metadata",
     databaseUrl: "https://www.thecrag.com/en/climbing/spain/siurana",
     contextLabel: "Wikipedia: Siurana",
-    contextUrl: "https://en.wikipedia.org/wiki/Siurana,_Tarragona",
+    contextUrl: "https://en.wikipedia.org/wiki/Siurana_%28Tarragona%29",
     contextType: "open-encyclopedia"
   },
   "margalef-spain": {
@@ -3448,28 +3449,28 @@ const v2SourcePacks: Record<string, V2SourcePack> = {
   },
   "yangshuo-china": {
     databaseLabel: "Mountain Project: Yangshuo metadata",
-    databaseUrl: "https://www.mountainproject.com/area/106055584/yangshuo",
+    databaseUrl: "https://www.mountainproject.com/area/106763709/yangshuo",
     contextLabel: "Wikipedia: Moon Hill",
     contextUrl: "https://en.wikipedia.org/wiki/Moon_Hill",
     contextType: "open-encyclopedia"
   },
   "liming-china": {
     databaseLabel: "Mountain Project: Liming metadata",
-    databaseUrl: "https://www.mountainproject.com/area/107256638/liming",
+    databaseUrl: "https://www.mountainproject.com/area/108397346/liming",
     contextLabel: "Wikipedia: Three Parallel Rivers of Yunnan Protected Areas",
     contextUrl: "https://en.wikipedia.org/wiki/Three_Parallel_Rivers_of_Yunnan_Protected_Areas",
     contextType: "open-encyclopedia"
   },
   "long-dong-taiwan": {
     databaseLabel: "theCrag: Long Dong metadata",
-    databaseUrl: "https://www.thecrag.com/en/climbing/taiwan/long-dong",
+    databaseUrl: "https://www.thecrag.com/en/climbing/taiwan/longdong",
     contextLabel: "Wikipedia ZH: Long Dong climbing area",
     contextUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
     contextType: "open-encyclopedia"
   },
   "railay-tonsai-thailand": {
     databaseLabel: "theCrag: Railay / Tonsai metadata",
-    databaseUrl: "https://www.thecrag.com/en/climbing/thailand/railay",
+    databaseUrl: "https://www.thecrag.com/en/climbing/thailand/krabi/area/13949881",
     contextLabel: "Wikipedia: Railay Beach",
     contextUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
     contextType: "open-encyclopedia"
@@ -3478,7 +3479,7 @@ const v2SourcePacks: Record<string, V2SourcePack> = {
     databaseLabel: "Mountain Project: Joshua Tree metadata",
     databaseUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
     contextLabel: "Joshua Tree National Park: rock climbing",
-    contextUrl: "https://www.nps.gov/jotr/planyourvisit/rock-climbing.htm",
+    contextUrl: "https://www.nps.gov/jotr/planyourvisit/climbing.htm",
     contextType: "official"
   },
   "smith-rock-usa": {
@@ -3490,7 +3491,7 @@ const v2SourcePacks: Record<string, V2SourcePack> = {
   },
   "el-potrero-chico-mexico": {
     databaseLabel: "Mountain Project: El Potrero Chico metadata",
-    databaseUrl: "https://www.mountainproject.com/area/105924807/el-potrero-chico",
+    databaseUrl: "https://www.mountainproject.com/area/105910764/el-potrero-chico",
     contextLabel: "Wikipedia: Potrero Chico",
     contextUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
     contextType: "open-encyclopedia"

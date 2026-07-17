@@ -5,8 +5,7 @@ import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
 import { destinations } from "@/data/destinations";
 import {
-  getDestinationSearchText,
-  getRouteSearchText
+  getDestinationSearchText
 } from "@/data/localizedContent";
 import {
   FilterSidebar,
@@ -15,6 +14,10 @@ import {
 } from "@/components/FilterSidebar";
 import { useLanguage } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
+import {
+  getDestinationRouteCount,
+  getPublicRouteSummaries
+} from "@/lib/routes/public-routes";
 
 const MapView = dynamic(
   () => import("@/components/MapView").then((module) => module.MapView),
@@ -40,6 +43,7 @@ export function ExploreClient() {
   const { locale } = useLanguage();
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const publicRoutes = useMemo(() => getPublicRouteSummaries(), []);
 
   const rockTypes = useMemo(() => {
     return Array.from(
@@ -47,12 +51,7 @@ export function ExploreClient() {
     ).sort();
   }, []);
 
-  const routeCount = useMemo(() => {
-    return destinations.reduce(
-      (total, destination) => total + (destination.routes?.length ?? 0),
-      0
-    );
-  }, []);
+  const routeCount = publicRoutes.length;
 
   const filteredDestinations = useMemo(() => {
     return destinations.filter((destination) => {
@@ -90,25 +89,19 @@ export function ExploreClient() {
         title: destination.name
       }));
 
-    const routeMatches = destinations.flatMap((destination) =>
-      (destination.routes ?? [])
-        .filter((route) => {
-          const searchableText = getRouteSearchText(route).toLowerCase();
-
-          return searchableText.includes(query);
-        })
-        .map((route) => ({
-          href: `/destinations/${destination.slug}/routes/${route.id}`,
-          meta: `${destination.name} - ${route.grade}`,
-          title: route.name
-        }))
-    );
+    const routeMatches = publicRoutes
+      .filter((route) => route.searchText.toLowerCase().includes(query))
+      .map((route) => ({
+        href: `/destinations/${route.destinationSlug}/routes/${route.id}`,
+        meta: `${route.destinationName} - ${route.grade}`,
+        title: route.name
+      }));
 
     return {
       destinations: destinationMatches.slice(0, 6),
       routes: routeMatches.slice(0, 6)
     };
-  }, [filters.searchQuery]);
+  }, [filters.searchQuery, publicRoutes]);
 
   const stats = useMemo(() => {
     const countries = new Set(destinations.map((destination) => destination.country));
@@ -125,7 +118,10 @@ export function ExploreClient() {
 
   const featuredDestinations = useMemo(() => {
     return [...destinations]
-      .sort((a, b) => (b.routes?.length ?? 0) - (a.routes?.length ?? 0))
+      .sort(
+        (a, b) =>
+          getDestinationRouteCount(b.slug) - getDestinationRouteCount(a.slug)
+      )
       .slice(0, 5);
   }, []);
 
@@ -156,8 +152,8 @@ export function ExploreClient() {
             </h2>
             <p className="mt-3 text-sm font-semibold leading-6 text-charcoal/68">
               {locale === "zh"
-                ? "首页先帮你找到想去的岩区。进入目的地后，再用路线目录和小测试决定具体爬哪条线。"
-                : "Start by choosing a place. Once you enter a destination, the route directory and quiz help you decide what to climb."}
+                ? "先从地图选择目的地。进入目的地后，再通过 DNA 偏好匹配和线路探索器比较具体路线。"
+                : "Choose a destination from the map, then compare routes with DNA preference matching and the Route Explorer."}
             </p>
 
             <button
@@ -218,7 +214,7 @@ export function ExploreClient() {
                   </div>
 
                   <span className="rounded-full border border-brandforest/15 bg-brandforest/10 px-3 py-2 text-sm font-black text-brandforest">
-                    {destination.routes?.length ?? 0}
+                    {getDestinationRouteCount(destination.slug)}
                   </span>
                 </Link>
               ))}

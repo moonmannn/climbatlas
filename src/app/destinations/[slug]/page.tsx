@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AuthButton } from "@/components/AuthButton";
-import { LanguageToggle, LocalizedText } from "@/components/LanguageProvider";
+import { LocalizedText } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
 import { DestinationHeroImage } from "@/components/DestinationHeroImage";
 import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
 import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
-import { getAllRouteRecordsWithDestinations } from "@/lib/routes";
+import { getDestinationLocalizedContent } from "@/data/localizedContent";
+import { getPublicRoutesForDestination } from "@/lib/routes/public-routes";
 import { toRouteExplorerItem } from "@/lib/routes/route-explorer";
 
 type DestinationPageProps = {
@@ -45,69 +45,31 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   const heroImage = destination.images?.[0];
   const galleryImages = destination.images?.slice(0, 4) ?? [];
   const guideContent = destination.guideContent;
-  const explorerRoutes = getAllRouteRecordsWithDestinations()
-    .filter((item) => item.destination.slug === destination.slug)
+  const localizedDescription = getDestinationLocalizedContent(destination)?.description;
+  const explorerRoutes = getPublicRoutesForDestination(destination.slug)
     .map((item) => toRouteExplorerItem(item.route));
   return (
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
       <SiteHeader />
       <div className="mx-auto max-w-[1240px] px-5 py-[72px] sm:px-8 lg:px-12 lg:py-20">
       <div>
-        <div className="hidden">
-          <Link
-            className="inline-flex rounded-md border border-parchment/25 bg-parchment/10 px-3 py-2 text-sm font-bold text-parchment backdrop-blur transition hover:bg-parchment/20"
-            href="/explore"
-          >
-            <LocalizedText en="Back to map" zh="返回地图" />
-          </Link>
-          <div className="flex flex-wrap items-center gap-2">
-            <AuthButton tone="dark" />
-            <LanguageToggle />
-          </div>
-        </div>
-
         <section className="grid gap-10 border-y border-brandforest/15 py-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div>
             <Link className="text-link" href="/explore"><LocalizedText en="Back to map" zh="返回地图" /> →</Link>
             <p className="editorial-kicker mt-10 text-terracotta">{destination.country}</p>
             <h1 className="display-serif mt-4 text-5xl font-medium leading-[1.02] text-brandforest sm:text-7xl">{destination.name}</h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-charcoal/68"><LocalizedDestinationDescription destination={destination} /></p>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-charcoal/68">
+              <LocalizedDestinationDescription
+                description={destination.description}
+                localizedDescription={localizedDescription}
+              />
+            </p>
           </div>
           <DestinationHeroImage image={heroImage} slug={destination.slug} />
 
         </section>
 
         <section className="mt-12 overflow-hidden border-y border-brandforest/15 bg-cream">
-          <div className="hidden">
-            {heroImage ? (
-              <img
-                alt={heroImage.alt}
-                className="absolute inset-0 h-full w-full object-cover"
-                src={heroImage.src}
-              />
-            ) : (
-              <div className="absolute inset-0 opacity-20 [background-image:linear-gradient(30deg,rgba(255,255,255,.28)_1px,transparent_1px),linear-gradient(120deg,rgba(255,255,255,.2)_1px,transparent_1px)] [background-size:42px_42px]" />
-            )}
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(31,77,54,0.95),rgba(43,33,24,0.58)),linear-gradient(180deg,rgba(43,33,24,0.1),rgba(43,33,24,0.62))]" />
-            <div className="relative max-w-3xl">
-              <p className="text-xs font-black uppercase tracking-[0.24em] text-sunlit">
-                {destination.country}
-              </p>
-              <h1 className="mt-3 text-5xl font-black leading-none sm:text-6xl">
-                {destination.name}
-              </h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-parchment/85">
-                <LocalizedDestinationDescription destination={destination} />
-              </p>
-              {heroImage && (
-                <p className="mt-5 max-w-xl text-xs font-bold leading-5 text-parchment/70">
-                  Hero image: {heroImage.caption} Credit: {heroImage.credit} -{" "}
-                  {heroImage.license}.
-                </p>
-              )}
-            </div>
-          </div>
-
           <div className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_18rem]">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.2em] text-forest">
@@ -376,8 +338,8 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
               <div className="border-y border-dashed border-ridge/45 py-10">
                 <p className="text-sm font-bold leading-6 text-bark/70">
                   <LocalizedText
-                    en="No source-backed routes have been added for this destination yet."
-                    zh="这个目的地还没有加入有来源支持的路线。"
+                    en="No routes are available for this destination yet."
+                    zh="这个目的地暂时还没有可浏览的线路。"
                   />
                 </p>
               </div>

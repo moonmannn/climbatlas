@@ -5,20 +5,19 @@ import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 import {
   dnaDimensionLabels,
-  getDestinationDnaMatches,
-  scoreDnaAnswers
+  getDestinationDnaMatches
 } from "@/lib/climbingDna";
-import { loadDnaAnswers } from "@/lib/climbingDnaStorage";
-import type { DnaAnswerMap, DnaDestinationMatch } from "@/types/climbingDna";
+import { loadDnaProfile } from "@/lib/climbingDnaStorage";
+import type { DnaDestinationMatch, DnaVector } from "@/types/climbingDna";
 
 const ui = {
   en: {
-    eyebrow: "DNA Match",
+    eyebrow: "DNA preference match",
     title: "How well does this place fit you?",
     emptyBody:
       "Discover how this destination matches your climbing style, travel preferences, and ideal crag atmosphere.",
     cta: "Discover My Climbing DNA",
-    yourMatch: "Your match",
+    yourMatch: "Your DNA preference match",
     why: "Why you match",
     consider: "Things to consider",
     noGap:
@@ -27,11 +26,11 @@ const ui = {
       "This is a preference match, not a safety or conditions recommendation."
   },
   zh: {
-    eyebrow: "DNA 匹配",
+    eyebrow: "DNA 偏好匹配",
     title: "这个地方与你有多匹配？",
     emptyBody: "看看这个目的地与你的攀岩风格、旅行偏好和理想岩场氛围有多契合。",
     cta: "发现我的攀岩 DNA",
-    yourMatch: "你的匹配度",
+    yourMatch: "你的 DNA 偏好匹配",
     why: "为什么匹配",
     consider: "值得考虑",
     noGap: "没有明显的偏好差距，但季节、当前条件和当地安排仍然重要。",
@@ -40,9 +39,9 @@ const ui = {
 };
 
 function getMatchLabel(score: number, locale: "en" | "zh") {
-  if (score >= 88) return locale === "zh" ? "强匹配" : "Strong Match";
-  if (score >= 78) return locale === "zh" ? "良好匹配" : "Good Match";
-  return locale === "zh" ? "混合匹配" : "Mixed Match";
+  if (score >= 88) return locale === "zh" ? "偏好高度契合" : "Strong preference match";
+  if (score >= 78) return locale === "zh" ? "偏好较为契合" : "Good preference match";
+  return locale === "zh" ? "偏好部分契合" : "Mixed preference match";
 }
 
 export function DestinationDnaMatch({
@@ -53,24 +52,23 @@ export function DestinationDnaMatch({
   destinationName: string;
 }) {
   const { locale } = useLanguage();
-  const [answers, setAnswers] = useState<DnaAnswerMap | null>(null);
+  const [scores, setScores] = useState<DnaVector | null>(null);
   const [loaded, setLoaded] = useState(false);
   const text = ui[locale];
 
   useEffect(() => {
-    setAnswers(loadDnaAnswers());
+    setScores(loadDnaProfile()?.scores ?? null);
     setLoaded(true);
   }, []);
 
   const match = useMemo<DnaDestinationMatch | null>(() => {
-    if (!answers) return null;
-    const profile = scoreDnaAnswers(answers);
+    if (!scores) return null;
     return (
-      getDestinationDnaMatches(profile.scores, locale, 100).find(
+      getDestinationDnaMatches(scores, locale, 100).find(
         (item) => item.destinationSlug === destinationSlug
       ) ?? null
     );
-  }, [answers, destinationSlug, locale]);
+  }, [scores, destinationSlug, locale]);
 
   return (
     <section className="border-t border-brandforest/15 px-6 py-10 sm:px-8 lg:py-12">

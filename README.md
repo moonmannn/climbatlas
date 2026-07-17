@@ -11,16 +11,11 @@ The project is still content-first, but V3 adds an optional private user noteboo
 - A right-side destination discovery panel with featured destinations and stats
 - Search and filters for destinations and routes
 - Destination guide pages with local history, area atmosphere, first-visit tips, and reading links
-- Route indexes on destination pages, with filters for route type, status, and sector
+- Route Explorer indexes on destination pages, with search, type, difficulty, grade-system, sector, and sort controls
 - Independent route pages at `/destinations/[slug]/routes/[routeId]`
-- Two route content levels:
-  - `highlight`: full ClimbAtlas original route notes, photos when licensed, practice focus, story/links, and community placeholder
-  - `metadata`: lightweight route facts, source pack, link-quality labels, and outbound links only
-- Link-quality labels for metadata routes:
-  - `route-specific`: exact route page
-  - `guidebook-specific`: guidebook or specific resource page
-  - `area-only`: area fallback link
-  - `needs-upgrade`: not ready yet
+- Capability-based route pages that show only sections backed by real content, such as route facts, original editorial notes, licensed photos, practice focus, stories, sources, and external resources
+- A unified public route catalog that keeps routes separate from area indexes and hides unreviewed editorial Picks
+- Climbing DNA preference matching for destinations and routes, with explicit limits: a match is not an ability, readiness, or safety score
 - Lightweight English / Chinese language switching
 - Built-in feedback page at `/feedback`
 - Optional Supabase Auth for private saved routes and notes
@@ -73,12 +68,20 @@ Before publishing route-data changes, run the live link audit:
 npm run routes:verify-links
 ```
 
-The audit fails on published 404/410 links. A 401/403/429 is reported as blocked because some route sites reject automated checks; review those links manually in a browser.
+The audit covers every source and external resource used by public routes. It fails on published 404/410 links. A 401/402/403/429 is reported as blocked because some route sites reject automated checks; review those links manually in a browser.
+
+OpenBeta imports are stored as attributed metadata snapshots with their original external IDs. Because the former public route URLs are unavailable, imported records link to the official API project for provenance and do not publish an exact-route CTA.
+
+For a concise report and a machine-readable artifact:
+
+```bash
+npm run routes:verify-links -- --summary-only --output outputs/route-links.json
+```
 
 
 ## Climbing DNA data workflow
 
-Phase 2 keeps Climbing DNA separate from the destination-level Route Finder.
+Climbing DNA is the current preference-discovery system. The older destination Route Finder has been removed.
 
 - `src/data/dna-questions.json`: bilingual questions, visual option keys, and scoring effects
 - `src/data/dna-archetypes.json`: bilingual personality archetypes and ideal vectors
@@ -149,20 +152,20 @@ Before sharing the Beta link, run:
 
 ```bash
 npm run routes:generate
-npm run routes:verify-links
-npm run typecheck
-npm run build
+npm run production:validate
+npm run production:validate:links
 ```
+
+`production:validate` runs the local data validators, TypeScript, the production build, and an HTTP smoke test in sequence. `production:validate:links` adds the live network audit and must pass before release; blocked providers still require a manual browser check.
 
 Then check the core flows locally:
 
 - Homepage map opens and region clusters / destination markers work.
 - Search works for examples like `Yosemite`, `The Nose`, and `花岗岩`.
 - Destination pages open for all 20 destinations.
-- Route indexes filter by type, status, and sector.
-- Metadata route pages show exact route links or area fallback labels clearly.
-- Highlight route pages still show Overview, Photos, Practice, Story / Links, and Community sections.
-- Route Finder works on destination pages and recommends highlight routes only.
+- Route Explorer search, mobile filter disclosure, type, difficulty, grade, sector, and sort controls work.
+- Route pages show route facts and only the editorial, photo, practice, story, source, or external-resource sections that actually have content.
+- Climbing DNA preference matches remain clearly separated from ability, readiness, and safety.
 - Feedback page opens at `/feedback`.
 - The `EN / 中文` language toggle works.
 - `/my-atlas` opens.
@@ -224,14 +227,16 @@ V3 adds private saved routes and notes, but public community features remain int
 - `src/app/destinations/[slug]/page.tsx` renders destination guide pages and route indexes.
 - `src/app/destinations/[slug]/routes/[routeId]/page.tsx` renders independent route pages.
 - `src/components/RouteIndex.tsx` renders the destination route directory.
-- `src/components/RouteHighlightCard.tsx` renders full highlight routes.
-- `src/components/RouteMetadataCard.tsx` renders metadata-only route pages.
+- `src/components/RouteHighlightCard.tsx` renders capability-based editorial route content.
+- `src/components/RouteRecordCard.tsx` renders the shared public route facts and source view.
 - `src/components/UserRouteControls.tsx` renders saved-route and note controls.
 - `src/components/MyAtlasClient.tsx` renders the private route notebook.
 - `src/data/destinations.ts` stores destination data and highlight routes.
 - `src/data/route-metadata.csv` stores metadata route rows.
 - `scripts/route-metadata.mjs` validates and generates metadata route data.
 - `scripts/verify-route-links.mjs` checks published source and external URLs for broken links.
+- `scripts/validate-production.mjs` runs the complete local production gate.
+- `scripts/smoke-production.mjs` checks the main pages, every destination, and representative route pages against a production server.
 - `src/lib/routeAliases.ts` keeps old duplicate route URLs and private saved data compatible.
 - `supabase/migrations/20260710_merge_route_aliases.sql` merges legacy saved route IDs.
 - `supabase/schema.sql` defines V3 user tables and private row-level security policies.

@@ -8,9 +8,11 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserProfile } from "@/components/UserProfileProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
-import { getRouteSummary } from "@/data/localizedContent";
 import { routeRecordKey } from "@/lib/routeAliases";
-import { getAllRoutesWithDestinations } from "@/lib/routes";
+import {
+  getPublicRouteSummaries,
+  type PublicRouteSummary
+} from "@/lib/routes/public-routes";
 import type {
   ExperienceLevel,
   RouteNoteRecord,
@@ -18,7 +20,7 @@ import type {
   SavedRouteStatus,
   UserProfileRecord
 } from "@/lib/supabaseClient";
-import type { ClimbingType, Locale, RouteHighlight } from "@/types/destination";
+import type { ClimbingType, Locale } from "@/types/destination";
 
 type AtlasItem = {
   destination: {
@@ -27,7 +29,7 @@ type AtlasItem = {
     slug: string;
   };
   note?: RouteNoteRecord;
-  route: RouteHighlight;
+  route: PublicRouteSummary;
   saved?: SavedRouteRecord;
 };
 
@@ -80,9 +82,9 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
 
   const atlasItems = useMemo<AtlasItem[]>(() => {
     const routeLookup = new Map(
-      getAllRoutesWithDestinations().map((item) => [
-        routeRecordKey(item.destination.slug, item.route.id),
-        item
+      getPublicRouteSummaries().map((route) => [
+        routeRecordKey(route.destinationSlug, route.id),
+        route
       ])
     );
     const savedLookup = new Map(
@@ -114,12 +116,12 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
       return [
         {
           destination: {
-            country: item.destination.country,
-            name: item.destination.name,
-            slug: item.destination.slug
+            country: item.country,
+            name: item.destinationName,
+            slug: item.destinationSlug
           },
           note: noteLookup.get(key),
-          route: item.route,
+          route: item,
           saved: savedLookup.get(key)
         }
       ];
@@ -566,16 +568,18 @@ function RouteCard({
           {item.route.grade}
         </span>
         <span className="rounded-full border border-ridge/25 bg-white/55 px-2 py-1 text-[11px] font-black text-bark/65">
-          {item.route.type}
+          {item.route.climbingType}
         </span>
       </div>
       <h3 className="mt-3 text-lg font-black text-bark">{item.route.name}</h3>
       <p className="mt-1 text-sm font-bold text-forest">
         {item.destination.name} / {item.destination.country}
       </p>
-      <p className="mt-2 line-clamp-2 text-sm leading-6 text-bark/70">
-        {getRouteSummary(item.route, locale)}
-      </p>
+      {getLocalizedSummary(item.route, locale) && (
+        <p className="mt-2 line-clamp-2 text-sm leading-6 text-bark/70">
+          {getLocalizedSummary(item.route, locale)}
+        </p>
+      )}
       {showNote && item.note?.note && (
         <p className="mt-3 rounded-md border border-sunlit/30 bg-sunlit/15 p-3 text-xs font-bold leading-5 text-bark/70">
           {item.note.note}
@@ -639,4 +643,8 @@ function getStatusLabel(status: SavedRouteStatus, locale: Locale) {
   }
 
   return locale === "zh" ? "已爬" : "climbed";
+}
+
+function getLocalizedSummary(route: PublicRouteSummary, locale: Locale) {
+  return route.summary?.[locale] ?? route.summary?.en ?? route.summary?.zh;
 }

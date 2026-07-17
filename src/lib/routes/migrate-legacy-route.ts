@@ -1,6 +1,5 @@
 import type { RouteHighlight, RouteSource } from "@/types/destination";
 import type {
-  GradeSystem,
   RouteCatalogEntry,
   RouteClimbingType,
   RouteEditorial,
@@ -9,61 +8,24 @@ import type {
   RouteSourceRecord,
   RouteVerification
 } from "@/types/route";
-
-function unique<T>(values: T[]) {
-  return Array.from(new Set(values));
-}
-
-function detectGradeSystems(
-  original: string,
-  destinationId: string,
-  climbingType: RouteClimbingType
-): GradeSystem[] {
-  const systems: GradeSystem[] = [];
-
-  if (/\b5\.\d{1,2}[abcd]?(?:[+-])?\b/i.test(original)) systems.push("yds");
-  if (/\bV\d{1,2}(?:[+-])?\b/i.test(original)) systems.push("v-scale");
-  if (/\bFont\s*[3-9][ABC](?:\+)?\b/.test(original)) systems.push("font");
-  if (climbingType === "boulder" && /\b[3-9][ABC](?:\+)?\b/.test(original)) {
-    systems.push("font");
-  }
-  if (climbingType !== "boulder" && /\b[3-9][abc](?:\+)?\b/.test(original)) {
-    systems.push("french");
-  }
-  if (/\b(?:E\d\s*\d[abc]|HVS|VS|HS|V?Diff|Severe)\b/i.test(original)) {
-    systems.push("british-trad");
-  }
-  if (/\b(?:F|PD|AD|D|TD|ED)(?:[+-])?\b/.test(original)) systems.push("alpine");
-  if (/\b(?:A|C)[0-5]\b/.test(original)) systems.push("aid");
-  if (/\b(?:WI|AI)\d(?:[+-])?\b/i.test(original)) systems.push("ice");
-  if (/\bM\d(?:[+-])?\b/i.test(original)) systems.push("mixed");
-  if (/\bUIAA\b/i.test(original)) systems.push("uiaa");
-  if (
-    destinationId === "grampians-australia" &&
-    /^\d{1,2}(?:\s*[-/]\s*\d{1,2})?$/.test(original.trim())
-  ) {
-    systems.push("australian");
-  }
-
-  return unique(systems);
-}
+import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
 
 export function createRouteGrade(
   original: string,
   destinationId: string,
   climbingType: RouteClimbingType
 ): RouteGrade {
-  const detectedSystems = detectGradeSystems(original, destinationId, climbingType);
+  const parsed = parseRouteGrade(original, destinationId, climbingType);
 
   return {
-    original,
+    ...parsed,
     system:
-      detectedSystems.length === 0
+      parsed.detectedSystems.length === 0
         ? "unknown"
-        : detectedSystems.length === 1
-          ? detectedSystems[0]
+        : parsed.detectedSystems.length === 1
+          ? parsed.detectedSystems[0]
           : "mixed",
-    detectedSystems
+    normalizedDifficulty: parsed.sortValue
   };
 }
 

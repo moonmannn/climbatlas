@@ -95,16 +95,7 @@ export const uiText = {
     communityComingSoon:
       "Community notes are intentionally paused for Beta. No reviews, ratings, or user tips are seeded until real accounts and moderation exist.",
     futureReviewBody:
-      "Beta feedback will decide whether this becomes wishlist notes, climbed logs, private notes, public tips, or condition updates.",
-    routeFinder: {
-      eyebrow: "Route oracle",
-      title: "What should I climb?",
-      top3: (scope: string) => `Top 3 from ${scope}`,
-      resultsEyebrow: "Routes revealed",
-      resultsTitle: "Your atlas points toward these climbs.",
-      awaitingAnswer: "Awaiting answer",
-      reset: "Reset"
-    }
+      "Beta feedback will decide whether this becomes wishlist notes, climbed logs, private notes, public tips, or condition updates."
   },
   zh: {
     allTypes: "全部类型",
@@ -197,16 +188,7 @@ export const uiText = {
     communityComingSoon:
       "社区笔记在 Beta 阶段暂不开放。真实账号和审核机制上线前，不会预填评论、评分或用户 tips。",
     futureReviewBody:
-      "这个区域会根据 Beta 反馈决定优先做想爬清单、已爬记录、私人笔记、公开 tips，还是条件更新。",
-    routeFinder: {
-      eyebrow: "路线小测试",
-      title: "今天爬哪条？",
-      top3: (scope: string) => `从 ${scope} 推荐 Top 3`,
-      resultsEyebrow: "路线揭晓",
-      resultsTitle: "地图把你指向了这些路线。",
-      awaitingAnswer: "等待选择",
-      reset: "重置"
-    }
+      "这个区域会根据 Beta 反馈决定优先做想爬清单、已爬记录、私人笔记、公开 tips，还是条件更新。"
   }
 } as const;
 

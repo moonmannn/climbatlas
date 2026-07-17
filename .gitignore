@@ -4,6 +4,7 @@ out
 dist
 .codex-logs
 outputs
+output/
 work
 tsconfig.tsbuildinfo
 .env

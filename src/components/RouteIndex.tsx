@@ -5,17 +5,17 @@ import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
-import { dnaQuestions } from "@/data/dnaQuestions";
 import {
   getDnaDimensionLabel,
-  getLocalizedDnaText,
-  scoreDnaAnswers
+  getLocalizedDnaText
 } from "@/lib/climbingDna";
-import { loadDnaAnswers } from "@/lib/climbingDnaStorage";
+import { loadDnaProfile } from "@/lib/climbingDnaStorage";
 import { getRouteDnaMatch } from "@/lib/routes/route-dna";
+import { gradeRangesOverlap } from "@/lib/routes/parse-route-grade";
 import { compareRouteDifficulty } from "@/lib/routes/route-explorer";
 import type { SavedRouteStatus } from "@/lib/supabaseClient";
 import type { DnaVector } from "@/types/climbingDna";
+import type { GradeSystem } from "@/types/route";
 import type { RouteDifficultyBand, RouteExplorerItem } from "@/types/route-explorer";
 
 type RouteIndexProps = {
@@ -29,10 +29,16 @@ type SortOption =
   | "dna-match"
   | "easy-hard"
   | "hard-easy"
-  | "name"
-  | "complete";
+  | "name";
 
 const pageSize = 24;
+const difficultyBandOrder: RouteDifficultyBand[] = [
+  "intro",
+  "intermediate",
+  "advanced",
+  "elite",
+  "unknown"
+];
 
 const bandLabels: Record<
   RouteDifficultyBand,
@@ -45,40 +51,49 @@ const bandLabels: Record<
   unknown: { en: "Unclassified", zh: "未分类" }
 };
 
+const gradeSystemLabels: Partial<Record<GradeSystem, string>> = {
+  yds: "YDS",
+  french: "French",
+  font: "Font",
+  "v-scale": "V-scale",
+  uiaa: "UIAA",
+  australian: "Australian",
+  alpine: "Alpine",
+  aid: "Aid",
+  ice: "Ice",
+  mixed: "Mixed"
+};
+
+type GradeFilterOption = {
+  value: string;
+  label: string;
+  system: GradeSystem;
+  min: number;
+  max: number;
+};
+
 function routeSummary(route: RouteExplorerItem, locale: "en" | "zh") {
   return (
     route.summary?.[locale] ??
     route.summary?.en ??
     (locale === "zh"
-      ? "基础路线索引，保留原始等级、来源记录和外部线路页。"
-      : "A lightweight route index with the original grade, source trail, and outbound route page.")
+      ? "查看难度、类型、区域、来源和外部线路资料。"
+      : "View grade, type, sector, sources, and external route resources.")
   );
 }
 
-function linkLabel(route: RouteExplorerItem, isZh: boolean) {
-  switch (route.linkStatus) {
-    case "route-specific":
-      return isZh ? "精确线路页" : "exact route page";
-    case "guidebook-specific":
-      return isZh ? "路书资源" : "guide resource";
-    case "area-only":
-      return isZh ? "区域备用" : "area fallback";
-    case "needs-upgrade":
-      return isZh ? "待升级" : "needs upgrade";
-    default:
-      return isZh ? "暂无外链" : "no outbound link";
-  }
+function pickRank(route: RouteExplorerItem) {
+  return route.isPublishedPick ? 0 : 1;
 }
 
-function pickRank(route: RouteExplorerItem) {
-  if (
-    route.editorialTier === "pick" &&
-    ["reviewed", "published"].includes(route.editorialStatus)
-  ) {
-    return 0;
+function routeProfileBasis(route: RouteExplorerItem, isZh: boolean) {
+  if (route.dnaSnapshot.origin === "source") {
+    return isZh ? "线路画像来自已引用资料" : "Route profile from cited information";
   }
-  if (route.editorialTier === "pick") return 1;
-  return 2;
+  if (route.dnaSnapshot.origin === "editorial") {
+    return isZh ? "ClimbAtlas 已审核线路画像" : "ClimbAtlas reviewed route profile";
+  }
+  return isZh ? "根据已记录的线路事实推断" : "Profile inferred from recorded route facts";
 }
 
 export function RouteIndex({
@@ -97,9 +112,6 @@ export function RouteIndex({
   >("all");
   const [gradeFilter, setGradeFilter] = useState("all");
   const [styleFilter, setStyleFilter] = useState("all");
-  const [tierFilter, setTierFilter] = useState<"all" | "pick" | "index">(
-    "all"
-  );
   const [personalFilter, setPersonalFilter] = useState<
     "all" | SavedRouteStatus
   >("all");
@@ -108,15 +120,13 @@ export function RouteIndex({
   const [visibleCount, setVisibleCount] = useState(pageSize);
   const [dnaScores, setDnaScores] = useState<DnaVector | null>(null);
   const [dnaLoaded, setDnaLoaded] = useState(false);
+  const [isFiltersOpen, setIsFiltersOpen] = useState(false);
 
   useEffect(() => {
-    const answers = loadDnaAnswers();
-    if (answers) {
-      const profile = scoreDnaAnswers(answers);
-      if (profile.completedQuestionIds.length === dnaQuestions.length) {
-        setDnaScores(profile.scores);
-        setSortBy((current) => current === "recommended" ? "dna-match" : current);
-      }
+    const profile = loadDnaProfile();
+    if (profile) {
+      setDnaScores(profile.scores);
+      setSortBy((current) => current === "recommended" ? "dna-match" : current);
     }
     setDnaLoaded(true);
   }, []);
@@ -136,15 +146,59 @@ export function RouteIndex({
     () => Array.from(new Set(routes.flatMap((route) => route.styleTags))).sort(),
     [routes]
   );
-  const gradeOptions = useMemo(() => {
-    const firstRouteByGrade = new Map<string, RouteExplorerItem>();
+  const availableDifficultyBands = useMemo(
+    () => Array.from(new Set(routes.flatMap((route) => route.difficultyBands)))
+      .sort(
+        (first, second) =>
+          difficultyBandOrder.indexOf(first) - difficultyBandOrder.indexOf(second)
+      ),
+    [routes]
+  );
+  const primaryGradeSystem = useMemo(() => {
+    const counts = new Map<GradeSystem, number>();
     for (const route of routes) {
-      if (!firstRouteByGrade.has(route.grade)) firstRouteByGrade.set(route.grade, route);
+      if (
+        route.gradeRangeMin === undefined ||
+        route.gradeRangeMax === undefined ||
+        ["unknown", "mixed"].includes(route.gradeSystem)
+      ) continue;
+      counts.set(route.gradeSystem, (counts.get(route.gradeSystem) ?? 0) + 1);
     }
-    return Array.from(firstRouteByGrade.values())
-      .sort(compareRouteDifficulty)
-      .map((route) => route.grade);
+    return Array.from(counts.entries())
+      .sort(
+        ([firstSystem, firstCount], [secondSystem, secondCount]) =>
+          secondCount - firstCount || firstSystem.localeCompare(secondSystem)
+      )[0]?.[0];
   }, [routes]);
+  const gradeOptions = useMemo(() => {
+    if (!primaryGradeSystem) return [];
+    const options = new Map<string, GradeFilterOption>();
+    for (const route of routes) {
+      if (
+        route.gradeSystem !== primaryGradeSystem ||
+        route.gradeRangeMin === undefined ||
+        route.gradeRangeMax === undefined
+      ) continue;
+      const value = `${primaryGradeSystem}:${route.gradeRangeMin}:${route.gradeRangeMax}`;
+      if (!options.has(value)) {
+        options.set(value, {
+          value,
+          label: route.gradeDisplay,
+          system: primaryGradeSystem,
+          min: route.gradeRangeMin,
+          max: route.gradeRangeMax
+        });
+      }
+    }
+    return Array.from(options.values()).sort(
+      (first, second) =>
+        first.min - second.min || first.max - second.max || first.label.localeCompare(second.label)
+    );
+  }, [primaryGradeSystem, routes]);
+  const selectedGrade = useMemo(
+    () => gradeOptions.find((option) => option.value === gradeFilter),
+    [gradeFilter, gradeOptions]
+  );
   const dnaMatches = useMemo(
     () =>
       new Map(
@@ -165,6 +219,7 @@ export function RouteIndex({
       const searchable = [
         route.name,
         route.grade,
+        route.gradeDisplay,
         route.climbingType,
         route.sectorName ?? "",
         ...route.styleTags,
@@ -176,10 +231,20 @@ export function RouteIndex({
       return (
         (typeFilter === "all" || route.climbingType === typeFilter) &&
         (difficultyFilter === "all" ||
-          route.difficultyBand === difficultyFilter) &&
-        (gradeFilter === "all" || route.grade === gradeFilter) &&
+          route.difficultyBands.includes(difficultyFilter)) &&
+        (gradeFilter === "all" || Boolean(
+          selectedGrade &&
+          route.gradeSystem === selectedGrade.system &&
+          route.gradeRangeMin !== undefined &&
+          route.gradeRangeMax !== undefined &&
+          gradeRangesOverlap(
+            route.gradeRangeMin,
+            route.gradeRangeMax,
+            selectedGrade.min,
+            selectedGrade.max
+          )
+        )) &&
         (styleFilter === "all" || route.styleTags.includes(styleFilter)) &&
-        (tierFilter === "all" || route.editorialTier === tierFilter) &&
         (sectorFilter === "all" || route.sectorName === sectorFilter) &&
         (personalFilter === "all" || personalStatus === personalFilter) &&
         (!normalizedQuery || searchable.includes(normalizedQuery))
@@ -193,7 +258,7 @@ export function RouteIndex({
             (dnaMatches.get(second.id)?.score ?? -1) -
               (dnaMatches.get(first.id)?.score ?? -1) ||
             pickRank(first) - pickRank(second) ||
-            second.completenessScore - first.completenessScore
+            compareRouteDifficulty(first, second)
           );
         case "easy-hard":
           return compareRouteDifficulty(first, second);
@@ -203,15 +268,9 @@ export function RouteIndex({
           return compareRouteDifficulty(second, first);
         case "name":
           return first.name.localeCompare(second.name);
-        case "complete":
-          return (
-            second.completenessScore - first.completenessScore ||
-            first.name.localeCompare(second.name)
-          );
         default:
           return (
             pickRank(first) - pickRank(second) ||
-            second.completenessScore - first.completenessScore ||
             compareRouteDifficulty(first, second)
           );
       }
@@ -226,10 +285,10 @@ export function RouteIndex({
     personalFilter,
     query,
     routes,
+    selectedGrade,
     sectorFilter,
     sortBy,
     styleFilter,
-    tierFilter,
     typeFilter
   ]);
 
@@ -243,21 +302,22 @@ export function RouteIndex({
     sectorFilter,
     sortBy,
     styleFilter,
-    tierFilter,
     typeFilter
   ]);
 
   const visibleRoutes = filteredRoutes.slice(0, visibleCount);
-  const pickCount = routes.filter((route) => route.editorialTier === "pick").length;
-  const reviewedPickCount = routes.filter(
-    (route) =>
-      route.editorialTier === "pick" &&
-      ["reviewed", "published"].includes(route.editorialStatus)
-  ).length;
-  const importedCount = routes.filter((route) => route.isImported).length;
   const personalRoutes = savedRoutes.filter(
     (record) => record.destination_slug === destinationSlug
   );
+  const activeFilterCount = [
+    query.trim() ? query : "",
+    typeFilter !== "all" ? typeFilter : "",
+    difficultyFilter !== "all" ? difficultyFilter : "",
+    gradeFilter !== "all" ? gradeFilter : "",
+    styleFilter !== "all" ? styleFilter : "",
+    sectorFilter !== "all" ? sectorFilter : "",
+    personalFilter !== "all" ? personalFilter : ""
+  ].filter(Boolean).length;
 
   function clearFilters() {
     setQuery("");
@@ -265,7 +325,6 @@ export function RouteIndex({
     setDifficultyFilter("all");
     setGradeFilter("all");
     setStyleFilter("all");
-    setTierFilter("all");
     setPersonalFilter("all");
     setSectorFilter("all");
     setSortBy(dnaScores ? "dna-match" : "recommended");
@@ -283,11 +342,6 @@ export function RouteIndex({
           </h3>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-charcoal/62">
             <span>{routes.length} {isZh ? "条路线" : "routes"}</span>
-            <span>{pickCount} {isZh ? "条精选候选" : "pick candidates"}</span>
-            <span>{reviewedPickCount} {isZh ? "条已审核精选" : "reviewed picks"}</span>
-            {importedCount > 0 && (
-              <span>{importedCount} {isZh ? "条导入索引" : "imported indexes"}</span>
-            )}
             {user && (
               <span>{personalRoutes.length} {isZh ? "条个人记录" : "personal saves"}</span>
             )}
@@ -296,8 +350,8 @@ export function RouteIndex({
             dnaScores ? (
               <p className="mt-4 inline-flex border-l-2 border-terracotta pl-3 text-sm font-semibold text-brandforest">
                 {isZh
-                  ? "已按你的 Climbing DNA 优先排列。匹配只代表偏好，不代表能力或安全判断。"
-                  : "Prioritized for your Climbing DNA. Match scores describe preference, not ability or safety."}
+                  ? "已按你的 Climbing DNA 偏好匹配优先排列。分数只代表偏好，不代表能力或安全判断。"
+                  : "Prioritized by your Climbing DNA preference match. Scores describe preference, not ability or safety."}
               </p>
             ) : (
               <Link className="text-link mt-4 inline-flex" href="/climbing-dna">
@@ -307,12 +361,12 @@ export function RouteIndex({
           )}
         </div>
 
-        <div className="flex items-center gap-3">
-          <strong className="text-sm text-brandforest">
+        <div className="flex flex-wrap items-center gap-3">
+          <strong aria-live="polite" className="text-sm text-brandforest">
             {filteredRoutes.length} {isZh ? "条结果" : "results"}
           </strong>
           <button
-            className="border border-brandforest/20 px-3 py-2 text-xs font-semibold text-brandforest transition hover:border-brandforest/45 hover:bg-brandforest/5"
+            className="border border-brandforest/20 px-3 py-2 text-xs font-semibold text-brandforest transition hover:border-brandforest/45 hover:bg-brandforest/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             onClick={clearFilters}
             type="button"
           >
@@ -321,7 +375,32 @@ export function RouteIndex({
         </div>
       </div>
 
-      <div className="mt-7 grid gap-3 border-y border-brandforest/12 py-5 sm:grid-cols-2 lg:grid-cols-4">
+      <button
+        aria-controls="route-explorer-filters"
+        aria-expanded={isFiltersOpen}
+        className="mt-7 flex w-full items-center justify-between border-y border-brandforest/15 py-4 text-left text-sm font-semibold text-brandforest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-inset md:hidden"
+        onClick={() => setIsFiltersOpen((isOpen) => !isOpen)}
+        type="button"
+      >
+        <span>
+          {isZh ? "筛选与排序" : "Filters and sort"}
+          {activeFilterCount > 0 && (
+            <span className="ml-2 inline-flex min-w-6 justify-center rounded-full bg-terracotta px-2 py-0.5 text-xs text-cream">
+              {activeFilterCount}
+            </span>
+          )}
+        </span>
+        <span aria-hidden="true" className="text-lg leading-none">
+          {isFiltersOpen ? "−" : "+"}
+        </span>
+      </button>
+
+      <div
+        className={`gap-3 border-b border-brandforest/12 py-5 sm:grid-cols-2 md:mt-7 md:grid md:border-y lg:grid-cols-4 ${
+          isFiltersOpen ? "grid" : "hidden"
+        }`}
+        id="route-explorer-filters"
+      >
         <label className="sm:col-span-2" htmlFor="route-explorer-search">
           <span className="route-filter-label">{isZh ? "搜索" : "Search"}</span>
           <input
@@ -349,55 +428,52 @@ export function RouteIndex({
           value={sortBy}
         >
           {dnaScores && (
-            <option value="dna-match">{isZh ? "最适合我的 DNA" : "Best DNA match"}</option>
+            <option value="dna-match">{isZh ? "最高 DNA 偏好匹配" : "Best DNA preference match"}</option>
           )}
-          <option value="recommended">{isZh ? "推荐优先" : "Recommended"}</option>
+          <option value="recommended">{isZh ? "默认顺序" : "Browse order"}</option>
           <option value="easy-hard">{isZh ? "难度：易到难" : "Difficulty: easy to hard"}</option>
           <option value="hard-easy">{isZh ? "难度：难到易" : "Difficulty: hard to easy"}</option>
-          <option value="complete">{isZh ? "资料最完整" : "Most complete"}</option>
           <option value="name">{isZh ? "按名称" : "Name"}</option>
         </FilterSelect>
-        <FilterSelect
-          id="route-explorer-difficulty"
-          label={isZh ? "难度分组" : "Difficulty band"}
-          onChange={(value) =>
-            setDifficultyFilter(value as "all" | RouteDifficultyBand)
-          }
-          value={difficultyFilter}
-        >
-          <option value="all">{isZh ? "全部难度" : "All difficulty bands"}</option>
-          {(Object.keys(bandLabels) as RouteDifficultyBand[]).map((band) => (
-            <option key={band} value={band}>{bandLabels[band][locale]}</option>
-          ))}
-        </FilterSelect>
-        <FilterSelect
-          id="route-explorer-grade"
-          label={isZh ? "精确等级" : "Exact grade"}
-          onChange={setGradeFilter}
-          value={gradeFilter}
-        >
-          <option value="all">{isZh ? "全部等级" : "All grades"}</option>
-          {gradeOptions.map((grade) => <option key={grade} value={grade}>{grade}</option>)}
-        </FilterSelect>
-        <FilterSelect
-          id="route-explorer-tier"
-          label={isZh ? "内容层级" : "Content tier"}
-          onChange={(value) => setTierFilter(value as "all" | "pick" | "index")}
-          value={tierFilter}
-        >
-          <option value="all">{isZh ? "全部路线" : "All routes"}</option>
-          <option value="pick">{isZh ? "精选与候选" : "Picks and candidates"}</option>
-          <option value="index">{isZh ? "路线索引" : "Route index"}</option>
-        </FilterSelect>
-        <FilterSelect
-          id="route-explorer-sector"
-          label={isZh ? "区域" : "Sector"}
-          onChange={setSectorFilter}
-          value={sectorFilter}
-        >
-          <option value="all">{isZh ? "全部区域" : "All sectors"}</option>
-          {sectors.map((sector) => <option key={sector} value={sector}>{sector}</option>)}
-        </FilterSelect>
+        {availableDifficultyBands.length > 0 && (
+          <FilterSelect
+            id="route-explorer-difficulty"
+            label={isZh ? "难度分组" : "Difficulty band"}
+            onChange={(value) =>
+              setDifficultyFilter(value as "all" | RouteDifficultyBand)
+            }
+            value={difficultyFilter}
+          >
+            <option value="all">{isZh ? "全部难度" : "All difficulty bands"}</option>
+            {availableDifficultyBands.map((band) => (
+              <option key={band} value={band}>{bandLabels[band][locale]}</option>
+            ))}
+          </FilterSelect>
+        )}
+        {gradeOptions.length > 0 && primaryGradeSystem && (
+          <FilterSelect
+            id="route-explorer-grade"
+            label={`${isZh ? "等级范围" : "Grade range"} · ${gradeSystemLabels[primaryGradeSystem] ?? primaryGradeSystem}`}
+            onChange={setGradeFilter}
+            value={gradeFilter}
+          >
+            <option value="all">{isZh ? "全部可比较等级" : "All comparable grades"}</option>
+            {gradeOptions.map((grade) => (
+              <option key={grade.value} value={grade.value}>{grade.label}</option>
+            ))}
+          </FilterSelect>
+        )}
+        {sectors.length > 0 && (
+          <FilterSelect
+            id="route-explorer-sector"
+            label={isZh ? "区域" : "Sector"}
+            onChange={setSectorFilter}
+            value={sectorFilter}
+          >
+            <option value="all">{isZh ? "全部区域" : "All sectors"}</option>
+            {sectors.map((sector) => <option key={sector} value={sector}>{sector}</option>)}
+          </FilterSelect>
+        )}
         {styles.length > 0 && (
           <FilterSelect
             id="route-explorer-style"
@@ -429,13 +505,9 @@ export function RouteIndex({
         {visibleRoutes.map((route) => {
           const savedStatus = getSavedStatus(destinationSlug, route.id);
           const dnaMatch = dnaMatches.get(route.id);
-          const reviewedPick =
-            route.editorialTier === "pick" &&
-            ["reviewed", "published"].includes(route.editorialStatus);
-
           return (
             <Link
-              className="group min-h-60 bg-cream p-5 transition-colors hover:bg-white"
+              className="group min-h-60 bg-cream p-5 transition-colors hover:bg-white focus-visible:relative focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-terracotta"
               href={`/destinations/${destinationSlug}/routes/${route.id}`}
               key={route.id}
             >
@@ -448,9 +520,6 @@ export function RouteIndex({
                     {route.climbingType}
                   </span>
                 </div>
-                <span className="text-xs font-semibold text-charcoal/45">
-                  {route.completenessScore}%
-                </span>
               </div>
 
               <h4 className="display-serif mt-5 text-2xl font-medium leading-tight text-brandforest group-hover:text-terracotta">
@@ -464,10 +533,10 @@ export function RouteIndex({
                 <div className="mt-4 border-t border-brandforest/10 pt-4">
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                     <strong className="text-sm text-terracotta">
-                      {dnaMatch.score}% {isZh ? "DNA 匹配" : "DNA match"}
+                      {dnaMatch.score}% {isZh ? "DNA 偏好匹配" : "DNA preference match"}
                     </strong>
                     <span className="text-xs font-semibold text-charcoal/48">
-                      {isZh ? "契合" : "Strong fit"}: {dnaMatch.alignedDimensions
+                      {isZh ? "偏好契合点" : "Aligned preferences"}: {dnaMatch.alignedDimensions
                         .map((dimension) => getDnaDimensionLabel(dimension, locale))
                         .join(" · ")}
                     </span>
@@ -475,19 +544,17 @@ export function RouteIndex({
                   <p className="mt-2 line-clamp-2 text-xs leading-5 text-charcoal/52">
                     {getLocalizedDnaText(dnaMatch.reasons[0], locale)}
                   </p>
+                  <p className="mt-2 text-[11px] font-semibold text-charcoal/42">
+                    {routeProfileBasis(route, isZh)}
+                  </p>
                 </div>
               )}
 
               <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold text-charcoal/52">
-                <span>
-                  {reviewedPick
-                    ? isZh ? "ClimbAtlas 精选" : "ClimbAtlas pick"
-                    : route.editorialTier === "pick"
-                      ? isZh ? "精选候选" : "pick candidate"
-                      : isZh ? "路线索引" : "route index"}
-                </span>
+                {route.isPublishedPick && (
+                  <span>{isZh ? "ClimbAtlas 精选" : "ClimbAtlas pick"}</span>
+                )}
                 <span>{route.sourceCount} {isZh ? "个来源" : "sources"}</span>
-                <span>{linkLabel(route, isZh)}</span>
                 {route.sectorName && <span>{route.sectorName}</span>}
                 {savedStatus && (
                   <span className="text-terracotta">
@@ -507,7 +574,16 @@ export function RouteIndex({
           <p className="display-serif text-2xl text-brandforest">
             {isZh ? "没有找到匹配路线" : "No routes match this view"}
           </p>
-          <button className="text-link mt-3" onClick={clearFilters} type="button">
+          <p className="mx-auto mt-3 max-w-lg text-sm leading-6 text-charcoal/58">
+            {isZh
+              ? "可以扩大难度或等级范围，也可以清除筛选后重新选择。"
+              : "Try a broader difficulty or grade range, or clear the filters and start again."}
+          </p>
+          <button
+            className="text-link mt-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+            onClick={clearFilters}
+            type="button"
+          >
             {isZh ? "清除筛选" : "Clear filters"}
           </button>
         </div>
@@ -516,7 +592,7 @@ export function RouteIndex({
       {visibleRoutes.length < filteredRoutes.length && (
         <div className="mt-7 flex justify-center">
           <button
-            className="border border-brandforest bg-brandforest px-5 py-3 text-sm font-semibold text-cream transition hover:bg-terracotta"
+            className="border border-brandforest bg-brandforest px-5 py-3 text-sm font-semibold text-cream transition hover:bg-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             onClick={() => setVisibleCount((count) => count + pageSize)}
             type="button"
           >

@@ -1,15 +1,17 @@
 "use client";
 
-import { getDestinationDescription } from "@/data/localizedContent";
+import { getLocalizedText } from "@/data/localizedContent";
 import { useLanguage } from "@/components/LanguageProvider";
-import type { Destination } from "@/types/destination";
+import type { LocalizedText } from "@/types/destination";
 
 export function LocalizedDestinationDescription({
-  destination
+  description,
+  localizedDescription
 }: {
-  destination: Destination;
+  description: string;
+  localizedDescription?: LocalizedText;
 }) {
   const { locale } = useLanguage();
 
-  return <>{getDestinationDescription(destination, locale)}</>;
+  return <>{getLocalizedText(localizedDescription, locale, description)}</>;
 }

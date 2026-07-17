@@ -42,122 +42,122 @@ export const destinationLocalizedContent: Record<
 > = {
   "yosemite-usa": {
     description: {
-      en: "Yosemite is the big-wall daydream with granite teeth. Come here when you want history, patience, and a route choice that feels bigger than the number.",
-      zh: "优胜美地像一本花岗岩大墙传说集。适合想要历史感、耐心和一点大目标气场的日子，不只是看难度数字。"
+      en: "Yosemite is indexed here through granite trad, multi-pitch, and bouldering routes. Compare original grades, route length, sources, and preference matches before narrowing the list.",
+      zh: "ClimbAtlas 收录了优胜美地的花岗岩传统攀、多段路线和抱石。你可以先比较原始难度、路线长度、来源和偏好匹配，再缩小选择范围。"
     }
   },
   "red-river-gorge-usa": {
     description: {
-      en: "Red River Gorge is steep sandstone with a friendly pump timer. Pick it when you want movement, endurance, and a day that makes forearms negotiate politely.",
-      zh: "红河峡谷是陡峭砂岩和前臂泵感的快乐实验室。想练耐力、节奏和连续动作时，它会很懂你。"
+      en: "Red River Gorge is represented by sandstone sport and trad routes. Use the route explorer to compare grades, sectors, source links, and the routes that align with your stated preferences.",
+      zh: "红河峡谷在这里以砂岩运动攀和传统攀路线为主。可在线路探索器中比较难度、岩区、来源链接，以及与个人偏好更契合的路线。"
     }
   },
   "squamish-canada": {
     description: {
-      en: "Squamish brings granite variety: cracks, slabs, big features, and forest-town energy. It is great when you want a route with texture and a story.",
-      zh: "斯阔米什的花岗岩很会变花样：裂缝、板壁、大特征和森林小镇气质都有。适合想要路线有质感、有故事的日子。"
+      en: "Squamish has granite routes across trad, bouldering, multi-pitch, and sport categories in the ClimbAtlas catalog. Filter by type and grade, then check the source trail for each option.",
+      zh: "ClimbAtlas 收录了斯阔米什的花岗岩传统攀、抱石、多段和运动攀路线。可先按类型与难度筛选，再查看每条路线的来源记录。"
     }
   },
   "fontainebleau-france": {
     description: {
-      en: "Fontainebleau is a sandstone puzzle garden. Choose it when you want footwork, body position, and the humbling joy of being outsmarted by a boulder.",
-      zh: "枫丹白露像一座砂岩谜题花园。适合练脚法、身体位置，也适合接受一块石头比你更聪明这个事实。"
+      en: "Fontainebleau is a sandstone bouldering destination in the catalog. Compare original grades, sectors, and available sources, then use preference matching as one input to your shortlist.",
+      zh: "枫丹白露在目录中属于砂岩抱石目的地。可比较原始难度、岩区和现有来源，并把偏好匹配作为缩小清单的参考之一。"
     }
   },
   "kalymnos-greece": {
     description: {
-      en: "Kalymnos is sunny limestone with sea air and tufa imagination. It fits days when you want flow, endurance, and a little vacation brain in the best way.",
-      zh: "卡林诺斯是阳光、海风和灰岩 tufas 的组合。适合想爬得流动一点、耐力一点，还带点假期脑袋的日子。"
+      en: "Kalymnos is listed as a limestone sport-climbing destination. Browse its routes by grade and sector, then open the cited resources for current route information and local guidance.",
+      zh: "卡林诺斯在目录中属于石灰岩运动攀目的地。可按难度和岩区浏览路线，再通过引用的外部资料查看最新线路信息与当地指引。"
     }
   },
   "joshua-tree-usa": {
     description: {
-      en: "Joshua Tree is desert granite with attitude: short approaches in spirit, big lessons in movement. Pick it when you want style, friction, and a little sun-baked honesty.",
-      zh: "约书亚树是很有脾气的沙漠花岗岩：看起来短小，动作课却很扎实。适合想练风格、摩擦和一点被太阳晒过的诚实。"
+      en: "Joshua Tree is represented by monzogranite trad and bouldering routes. Compare the recorded grade, type, length, and sources without treating the catalog as a guidebook.",
+      zh: "约书亚树在这里收录了二长花岗岩传统攀和抱石路线。可比较已记录的难度、类型、长度与来源，但目录不能替代路书。"
     }
   },
   "smith-rock-usa": {
     description: {
-      en: "Smith Rock feels like sport-climbing history with desert edges. It suits days when you want technical movement, commitment, and routes that do not flatter sloppy footwork.",
-      zh: "Smith Rock 像一段带沙漠边缘感的运动攀历史。适合想练技术动作、投入度，以及不被路线纵容脚法的一天。"
+      en: "Smith Rock includes tuff sport, trad, and multi-pitch routes in the catalog. Use type, grade, and source filters to compare options before continuing to external route resources.",
+      zh: "ClimbAtlas 收录了 Smith Rock 的凝灰岩运动攀、传统攀和多段路线。可按类型、难度和来源比较，再前往外部线路资料。"
     }
   },
   "el-potrero-chico-mexico": {
     description: {
-      en: "El Potrero Chico is limestone adventure in big friendly walls. Choose it when you want exposure, teamwork, and a route day that feels like a vertical road trip.",
-      zh: "El Potrero Chico 是大块灰岩墙上的冒险感。适合想要暴露感、队伍配合，以及像垂直公路旅行一样的路线日。"
+      en: "El Potrero Chico is indexed through limestone sport and multi-pitch routes. Compare route length, grade, and sources here, and use current external resources for detailed planning.",
+      zh: "El Potrero Chico 在这里以石灰岩运动攀和多段路线为主。可先比较路线长度、难度和来源，详细计划则以最新外部资料为准。"
     }
   },
   "chamonix-france": {
     description: {
-      en: "Chamonix is alpine climbing with a capital A. Come here when route choice depends on weather, headspace, and whether your ambition packed a warm jacket.",
-      zh: "霞慕尼是大写的阿尔卑斯攀登。适合那些选线要看天气、心态，以及你的野心有没有带保暖层的日子。"
+      en: "Chamonix is represented by granite trad, multi-pitch, and sport routes. ClimbAtlas helps compare recorded facts and sources; current conditions and mountain decisions require up-to-date local information.",
+      zh: "霞慕尼在目录中包含花岗岩传统攀、多段和运动攀路线。ClimbAtlas 用于比较已记录信息与来源；实时条件和山地决策仍需参考最新当地资料。"
     }
   },
   "ceuse-france": {
     description: {
-      en: "Ceüse is high limestone with a serious sport-climbing halo. Pick it when you want blue-sky endurance, finger discipline, and a route list that quietly raises the stakes.",
-      zh: "Ceüse 是带光环的高处灰岩运动攀。适合想要蓝天耐力、手指纪律，以及一份会悄悄提高赌注的路线清单。"
+      en: "Ceuse is listed as a limestone sport-climbing destination. Compare original grades, route records, and cited resources, then build a shortlist that fits your preferences.",
+      zh: "Ceuse 在目录中属于石灰岩运动攀目的地。可比较原始难度、路线记录和引用资料，再建立符合个人偏好的候选清单。"
     }
   },
   "dolomites-italy": {
     description: {
-      en: "The Dolomites are limestone cathedrals with alpine history in the walls. Choose them when you want exposure, old stories, and a route day that feels carved into the sky.",
-      zh: "多洛米蒂像一组石灰岩大教堂，墙里刻着阿尔卑斯历史。适合想要暴露感、老故事，以及像被刻进天空里的路线日。"
+      en: "The Dolomites catalog includes trad, multi-pitch, and sport routes on dolomite limestone. UIAA grades remain in their original form, with sources and external resources shown alongside them.",
+      zh: "多洛米蒂目录包含白云质石灰岩上的传统攀、多段和运动攀路线。UIAA 难度保留原始写法，并同时展示来源与外部资料。"
     }
   },
   "frankenjura-germany": {
     description: {
-      en: "Frankenjura is pocketed limestone with compact power and deep sport-climbing DNA. Pick it when you want fingers, precision, and routes that waste no space.",
-      zh: "弗兰肯尤拉是满布洞点的灰岩，短小、强力、运动攀基因很深。适合想练手指、精准和不浪费空间的路线。"
+      en: "Frankenjura is represented as a limestone sport-climbing destination. Use the route explorer to compare recorded grades, sectors, source links, and preference matches.",
+      zh: "弗兰肯尤拉在目录中属于石灰岩运动攀目的地。可在线路探索器中比较已记录难度、岩区、来源链接和偏好匹配。"
     }
   },
   "siurana-spain": {
     description: {
-      en: "Siurana is steep Spanish limestone with a proud sport-climbing voice. Come here when you want endurance, history, and a route list that speaks in serious projects.",
-      zh: "休拉纳是很有姿态的西班牙陡峭灰岩。适合想要耐力、历史感，以及一份说话很像认真项目的路线清单。"
+      en: "Siurana is listed as a limestone sport-climbing destination. Filter the catalog by grade and route facts, then verify the details through the linked sources.",
+      zh: "休拉纳在目录中属于石灰岩运动攀目的地。可按难度和路线信息筛选，并通过外部来源核对详细资料。"
     }
   },
   "margalef-spain": {
     description: {
-      en: "Margalef is pockety conglomerate with playful brutality. Choose it when you want powerful sport climbing, finger puzzles, and routes that look friendly until they start counting.",
-      zh: "马尔加莱夫是满是洞点的砾岩，带一点好玩的残酷。适合想要强力运动攀、手指谜题，以及看起来友好但会开始算账的路线。"
+      en: "Margalef is represented by conglomerate sport routes. Compare the catalog's original grades, sectors, and source trails before choosing which external route pages to open.",
+      zh: "马尔加莱夫在这里以砾岩运动攀路线为主。可先比较目录中的原始难度、岩区和来源记录，再选择要打开的外部线路页面。"
     }
   },
   "yangshuo-china": {
     description: {
-      en: "Yangshuo is karst limestone with river scenery and relaxed climbing energy. Pick it when you want movement, travel mood, and a route day that feels bright without being empty.",
-      zh: "阳朔是喀斯特灰岩、江景和轻松攀岩气质的组合。适合想要动作、旅行感，以及明亮但不空洞的路线日。"
+      en: "Yangshuo is indexed through limestone sport and multi-pitch routes. Compare grade, route length, and source coverage here, then consult current external information for trip decisions.",
+      zh: "阳朔在这里收录了石灰岩运动攀和多段路线。可比较难度、路线长度和来源覆盖，出行决策则需继续参考最新外部资料。"
     }
   },
   "liming-china": {
     description: {
-      en: "Liming is sandstone crack country with adventure in the seams. Choose it when you want trad judgment, body craft, and routes that feel more like conversations than workouts.",
-      zh: "黎明是砂岩裂缝的世界，冒险感藏在岩缝里。适合想练传统攀判断、身体技术，以及像对话而不只是训练的路线。"
+      en: "Liming is represented by sandstone trad and multi-pitch routes. Use ClimbAtlas to compare recorded facts and sources, while leaving detailed climbing information to current external resources.",
+      zh: "黎明在目录中包含砂岩传统攀和多段路线。ClimbAtlas 用于比较已记录信息与来源，具体攀登资料仍以最新外部资源为准。"
     }
   },
   "long-dong-taiwan": {
     description: {
-      en: "Long Dong is seaside sandstone with ocean air and route-choice honesty. Pick it when you want movement, exposure, and a climbing day that listens to the coast.",
-      zh: "龙洞是海边砂岩、海风和诚实选线的组合。适合想要动作、暴露感，以及会听海岸说话的攀岩日。"
+      en: "Long Dong is listed with sandstone trad and sport routes. Compare route type, grade, sector, and sources here, then check current local information before making plans.",
+      zh: "龙洞在目录中包含砂岩传统攀和运动攀路线。可比较路线类型、难度、岩区与来源，制定计划前仍需查看最新当地信息。"
     }
   },
   "railay-tonsai-thailand": {
     description: {
-      en: "Railay and Tonsai are tropical limestone with beach-day mischief and steep-route seriousness. Choose them when you want flow, heat, sea cliffs, and a little vacation chaos.",
-      zh: "Railay 和 Tonsai 是热带灰岩、海滩玩心和陡线认真感的混合。适合想要流动、热度、海崖和一点假期混乱的人。"
+      en: "Railay and Tonsai are represented by limestone sport and multi-pitch routes. Compare route facts and source links here, and rely on current local resources for detailed planning.",
+      zh: "Railay 和 Tonsai 在目录中以石灰岩运动攀和多段路线为主。可在这里比较路线信息与来源链接，详细计划则以最新当地资料为准。"
     }
   },
   "grampians-australia": {
     description: {
-      en: "The Grampians are sandstone with wild space, cave power, and source-check honesty. Pick them when you want style variety and a route list that admits what still needs verification.",
-      zh: "Grampians 是砂岩、野性空间、洞穴力量和来源诚实感的组合。适合想要风格变化，也接受有些路线仍需补强核验的人。"
+      en: "The Grampians catalog includes sandstone sport, trad, and bouldering routes. Original Australian and V-scale grades stay visible so unlike systems are not presented as exact conversions.",
+      zh: "Grampians 目录包含砂岩运动攀、传统攀和抱石路线。澳洲难度与 V-scale 保留原始写法，避免把不同体系显示成精确换算。"
     }
   },
   "rocklands-south-africa": {
     description: {
-      en: "Rocklands is orange sandstone bouldering with winter light and big-name gravity. Choose it when you want power, history, skin management, and problems that make short climbs feel enormous.",
-      zh: "Rocklands 是橙色砂岩抱石、冬日光线和大名字重量的组合。适合想要力量、历史、皮肤管理，以及让短线路变得巨大的抱石。"
+      en: "Rocklands is listed as a sandstone bouldering destination. Compare original grades, sectors, source records, and preference matches before opening the available external resources.",
+      zh: "Rocklands 在目录中属于砂岩抱石目的地。可先比较原始难度、岩区、来源记录和偏好匹配，再打开现有外部资料。"
     }
   }
 };

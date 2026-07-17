@@ -1,58 +1,26 @@
-import fs from "node:fs";
+import process from "node:process";
+import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { loadRouteProject } from "./routes/load-route-project.mjs";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const projectRoot = path.resolve(__dirname, "..");
-const csvPath = path.join(projectRoot, "src", "data", "route-metadata.csv");
-const timeoutMs = 12000;
-const concurrency = 8;
+const timeoutMs = Number(process.env.CLIMBATLAS_LINK_TIMEOUT_MS ?? 12000);
+const concurrency = Number(process.env.CLIMBATLAS_LINK_CONCURRENCY ?? 8);
+const allowInconclusive = process.argv.includes("--allow-inconclusive");
+const summaryOnly = process.argv.includes("--summary-only");
 
-function parseCsvLine(line) {
-  const values = [];
-  let current = "";
-  let inQuotes = false;
-
-  for (let index = 0; index < line.length; index += 1) {
-    const character = line[index];
-    const nextCharacter = line[index + 1];
-
-    if (character === '"') {
-      if (inQuotes && nextCharacter === '"') {
-        current += '"';
-        index += 1;
-      } else {
-        inQuotes = !inQuotes;
-      }
-    } else if (character === "," && !inQuotes) {
-      values.push(current);
-      current = "";
-    } else {
-      current += character;
-    }
-  }
-
-  values.push(current);
-  return values;
+function readArgValue(flag) {
+  const index = process.argv.indexOf(flag);
+  return index >= 0 ? process.argv[index + 1] : undefined;
 }
 
-function parseCsv(text) {
-  const lines = text
-    .replace(/^\uFEFF/, "")
-    .split(/\r?\n/)
-    .filter((line) => line.trim().length > 0);
-  const headers = parseCsvLine(lines[0]);
+const outputPath = readArgValue("--output");
 
-  return lines.slice(1).map((line, index) => {
-    const values = parseCsvLine(line);
-    const row = { __line: index + 2 };
-
-    headers.forEach((header, headerIndex) => {
-      row[header] = values[headerIndex]?.trim() ?? "";
-    });
-
-    return row;
-  });
+function isHttpUrl(url) {
+  try {
+    return ["http:", "https:"].includes(new URL(url).protocol);
+  } catch {
+    return false;
+  }
 }
 
 async function checkUrl(url) {
@@ -62,7 +30,7 @@ async function checkUrl(url) {
   try {
     const response = await fetch(url, {
       headers: {
-        "User-Agent": "ClimbAtlas-Link-Audit/1.0",
+        "User-Agent": "ClimbAtlas-Link-Audit/2.0",
         Range: "bytes=0-0"
       },
       redirect: "follow",
@@ -75,7 +43,7 @@ async function checkUrl(url) {
       return { category: "ok", status: response.status, url };
     }
 
-    if ([401, 403, 429].includes(response.status)) {
+    if ([401, 402, 403, 429].includes(response.status)) {
       return { category: "blocked", status: response.status, url };
     }
 
@@ -114,29 +82,60 @@ async function mapWithConcurrency(values, worker) {
   return results;
 }
 
-const rows = parseCsv(fs.readFileSync(csvPath, "utf8")).filter(
-  (row) => row.publicationStatus === "published"
-);
+function addUsage(urlUsage, invalidUrls, url, usage) {
+  if (!isHttpUrl(url)) {
+    invalidUrls.push({ url, usage });
+    return;
+  }
+
+  if (!urlUsage.has(url)) {
+    urlUsage.set(url, []);
+  }
+
+  urlUsage.get(url).push(usage);
+}
+
+const { publicRoutesModule } = loadRouteProject();
+const publicRoutes = publicRoutesModule.getPublicRouteRecords();
 const urlUsage = new Map();
+const invalidUrls = [];
 
-for (const row of rows) {
-  for (const field of ["sourceUrl", "externalUrl"]) {
-    const url = row[field];
+for (const { destination, route } of publicRoutes) {
+  const key = `${destination.slug}:${route.id}`;
+  const facts = publicRoutesModule.toPublicRouteFacts(route);
 
-    if (!urlUsage.has(url)) {
-      urlUsage.set(url, []);
-    }
+  for (const source of facts.sourceRecords) {
+    addUsage(
+      urlUsage,
+      invalidUrls,
+      source.sourceUrl,
+      `${key} (source: ${source.label})`
+    );
+  }
 
-    urlUsage.get(url).push(
-      `${row.destinationSlug}:${row.routeId} (${field}, line ${row.__line})`
+  for (const resource of facts.externalResources) {
+    addUsage(
+      urlUsage,
+      invalidUrls,
+      resource.url,
+      `${key} (external resource: ${resource.title})`
     );
   }
 }
 
 const urls = Array.from(urlUsage.keys());
 console.log(
-  `Checking ${urls.length} unique URLs used by ${rows.length} published metadata records...`
+  `Checking ${urls.length} unique URLs used by ${publicRoutes.length} public routes...`
 );
+
+if (invalidUrls.length > 0) {
+  console.log(`\nINVALID (${invalidUrls.length})`);
+  for (const entry of invalidUrls) {
+    console.log(`- ${entry.url || "[empty URL]"}`);
+    console.log(`  - ${entry.usage}`);
+  }
+}
+
 const results = await mapWithConcurrency(urls, checkUrl);
 const grouped = results.reduce((groups, result) => {
   groups[result.category] = [...(groups[result.category] ?? []), result];
@@ -152,6 +151,10 @@ for (const category of ["broken", "blocked", "unknown"]) {
 
   console.log(`\n${category.toUpperCase()} (${entries.length})`);
 
+  if (summaryOnly) {
+    continue;
+  }
+
   for (const entry of entries) {
     const detail = entry.status ?? entry.error ?? "no status";
     console.log(`- [${detail}] ${entry.url}`);
@@ -164,13 +167,76 @@ for (const category of ["broken", "blocked", "unknown"]) {
   }
 }
 
+const counts = {
+  ok: (grouped.ok ?? []).length,
+  blocked: (grouped.blocked ?? []).length,
+  unknown: (grouped.unknown ?? []).length,
+  broken: (grouped.broken ?? []).length,
+  invalid: invalidUrls.length
+};
+
+const hostSummary = results.reduce((summary, result) => {
+  const hostname = new URL(result.url).hostname;
+  const hostCounts = summary[hostname] ?? {
+    ok: 0,
+    blocked: 0,
+    unknown: 0,
+    broken: 0
+  };
+  hostCounts[result.category] += 1;
+  summary[hostname] = hostCounts;
+  return summary;
+}, {});
+
+console.log("\nBy host:");
+for (const [hostname, hostCounts] of Object.entries(hostSummary).sort(
+  ([left], [right]) => left.localeCompare(right)
+)) {
+  console.log(
+    `- ${hostname}: ${hostCounts.ok} ok, ${hostCounts.blocked} blocked, ` +
+      `${hostCounts.unknown} unknown, ${hostCounts.broken} broken`
+  );
+}
+
 console.log(
-  `\nSummary: ${(grouped.ok ?? []).length} ok, ` +
-    `${(grouped.blocked ?? []).length} blocked, ` +
-    `${(grouped.unknown ?? []).length} unknown, ` +
-    `${(grouped.broken ?? []).length} broken.`
+  `\nSummary: ${counts.ok} ok, ${counts.blocked} blocked, ` +
+    `${counts.unknown} unknown, ${counts.broken} broken, ${counts.invalid} invalid.`
 );
 
-if ((grouped.broken ?? []).length > 0) {
+if (outputPath) {
+  const resolvedOutputPath = path.resolve(outputPath);
+  mkdirSync(path.dirname(resolvedOutputPath), { recursive: true });
+  writeFileSync(
+    resolvedOutputPath,
+    `${JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        publicRouteCount: publicRoutes.length,
+        uniqueUrlCount: urls.length,
+        counts,
+        hostSummary,
+        invalidUrls,
+        results: results.map((result) => ({
+          ...result,
+          usages: urlUsage.get(result.url) ?? []
+        }))
+      },
+      null,
+      2
+    )}\n`
+  );
+  console.log(`Report written to ${resolvedOutputPath}`);
+}
+
+if (counts.broken > 0 || counts.invalid > 0) {
   process.exitCode = 1;
+} else if (
+  counts.ok + counts.blocked === 0 &&
+  counts.unknown > 0 &&
+  !allowInconclusive
+) {
+  console.error(
+    "Link audit was inconclusive: no URL could be reached. Check network access or rerun with --allow-inconclusive."
+  );
+  process.exitCode = 2;
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type KeyboardEvent } from "react";
 import {
   getRouteBestFor,
   getRouteDecisionHint as getLocalizedRouteDecisionHint,
@@ -11,7 +11,7 @@ import {
 } from "@/data/localizedContent";
 import { useLanguage } from "@/components/LanguageProvider";
 import { getUiText } from "@/lib/uiText";
-import type { ExternalLinkStatus, RouteHighlight } from "@/types/destination";
+import type { ExternalResource, RouteHighlight } from "@/types/destination";
 import {
   getRouteDecisionHint as getRouteFinderDecisionHint,
   getRoutePersonalityTags
@@ -21,21 +21,14 @@ type RouteHighlightCardProps = {
   route: RouteHighlight;
 };
 
-type RouteTab = "overview" | "photos" | "practice" | "story" | "community";
+type RouteTab = "overview" | "photos" | "practice" | "story";
 
-const tabs: Array<{ id: RouteTab; label: { en: string; zh: string } }> = [
+const tabDefinitions: Array<{ id: RouteTab; label: { en: string; zh: string } }> = [
   { id: "overview", label: { en: "Overview", zh: "概览" } },
   { id: "photos", label: { en: "Photos", zh: "照片" } },
   { id: "practice", label: { en: "Practice", zh: "练习" } },
-  { id: "story", label: { en: "Story / Links", zh: "故事 / 链接" } },
-  { id: "community", label: { en: "Community", zh: "社区" } }
+  { id: "story", label: { en: "Story / Links", zh: "故事 / 链接" } }
 ];
-
-const trustStyles = {
-  high: "border-forest/25 bg-forest/10 text-forest",
-  medium: "border-sunlit/45 bg-sunlit/20 text-bark",
-  low: "border-ridge/35 bg-white/55 text-bark/65"
-};
 
 const imageTypeLabels = {
   en: {
@@ -47,35 +40,6 @@ const imageTypeLabels = {
     route: "精确路线照片",
     "area-context": "区域环境照片，不是精确路线",
     "destination-context": "目的地环境照片"
-  }
-};
-
-const linkStatusStyles: Record<ExternalLinkStatus, string> = {
-  "route-specific": "border-forest/25 bg-forest/10 text-forest",
-  "guidebook-specific": "border-sunlit/45 bg-sunlit/20 text-bark",
-  "area-only": "border-ridge/25 bg-white/55 text-bark/60",
-  "needs-upgrade": "border-red-900/20 bg-red-900/10 text-red-950"
-};
-
-const linkStatusLabels: Record<
-  ExternalLinkStatus,
-  { en: string; zh: string }
-> = {
-  "route-specific": {
-    en: "Exact route page",
-    zh: "精确线路页"
-  },
-  "guidebook-specific": {
-    en: "Guidebook resource",
-    zh: "路书资源"
-  },
-  "area-only": {
-    en: "Area fallback",
-    zh: "区域备用"
-  },
-  "needs-upgrade": {
-    en: "Needs exact link",
-    zh: "待补精确链接"
   }
 };
 
@@ -95,10 +59,48 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
   const editorialTips = getRouteEditorialTips(route, locale);
   const historicalNote =
     route.historicalNotes?.[locale] ?? route.historicalNotes?.en;
+  const publicExternalResources = (route.externalResources ?? []).filter(
+    (resource) => resource.linkStatus !== "needs-upgrade"
+  );
   const hasStoryContent =
     Boolean(historicalNote) ||
     Boolean(route.notableAscents?.length) ||
-    Boolean(route.externalResources?.length);
+    publicExternalResources.length > 0;
+  const hasStoryNarrative =
+    Boolean(historicalNote) || Boolean(route.notableAscents?.length);
+  const availableTabs = tabDefinitions.filter((tab) => {
+    if (tab.id === "photos") return route.images.length > 0;
+    if (tab.id === "practice") {
+      return practiceFocus.length > 0 || editorialTips.length > 0;
+    }
+    if (tab.id === "story") return hasStoryContent;
+    return true;
+  });
+
+  function focusTab(tab: RouteTab) {
+    setActiveTab(tab);
+    requestAnimationFrame(() => {
+      document.getElementById(`route-tab-${route.id}-${tab}`)?.focus();
+    });
+  }
+
+  function handleTabKeyDown(
+    event: KeyboardEvent<HTMLButtonElement>,
+    currentTab: RouteTab
+  ) {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+      return;
+    }
+
+    event.preventDefault();
+    const currentIndex = availableTabs.findIndex((tab) => tab.id === currentTab);
+    if (event.key === "Home") return focusTab(availableTabs[0].id);
+    if (event.key === "End") return focusTab(availableTabs.at(-1)!.id);
+    const direction = event.key === "ArrowRight" ? 1 : -1;
+    const nextIndex =
+      (currentIndex + direction + availableTabs.length) % availableTabs.length;
+    focusTab(availableTabs[nextIndex].id);
+  }
 
   return (
     <article
@@ -119,11 +121,6 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
           <span className="rounded-full border border-forest/25 bg-forest/10 px-3 py-1 text-xs font-black text-forest">
             {t.sourceCount(sourceCount)}
           </span>
-          {sourceCount === 1 && (
-            <span className="rounded-full border border-ridge/35 bg-white/60 px-3 py-1 text-xs font-black text-bark/60">
-              {locale === "zh" ? "单一来源" : "single-source"}
-            </span>
-          )}
         </div>
 
         <h3 className="mt-4 text-3xl font-black text-bark">{route.name}</h3>
@@ -140,26 +137,55 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
         </div>
       </div>
 
-      <div className="border-b border-ridge/25 bg-white/35 px-4 pt-4">
-        <div className="flex gap-2 overflow-x-auto">
-          {tabs.map((tab) => (
+      {availableTabs.length > 1 && (
+        <div className="border-b border-ridge/25 bg-white/35 px-4 pt-4">
+          <div
+            aria-label={locale === "zh" ? "路线详情" : "Route details"}
+            className="flex gap-2 overflow-x-auto"
+            role="tablist"
+          >
+          {availableTabs.map((tab) => (
             <button
+              aria-controls={`route-panel-${route.id}-${tab.id}`}
+              aria-selected={activeTab === tab.id}
               className={`shrink-0 rounded-t-md border border-b-0 px-4 py-2 text-sm font-black transition ${
                 activeTab === tab.id
                   ? "border-ridge/35 bg-parchment text-bark"
                   : "border-transparent bg-transparent text-bark/55 hover:text-bark"
-              }`}
+              } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-inset`}
+              id={`route-tab-${route.id}-${tab.id}`}
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
+              onKeyDown={(event) => handleTabKeyDown(event, tab.id)}
+              role="tab"
+              tabIndex={activeTab === tab.id ? 0 : -1}
               type="button"
             >
               {tab.label[locale]}
             </button>
           ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      <div className="p-5 sm:p-6">
+      <div
+        aria-label={
+          availableTabs.length === 1
+            ? locale === "zh"
+              ? "路线概览"
+              : "Route overview"
+            : undefined
+        }
+        aria-labelledby={
+          availableTabs.length > 1
+            ? `route-tab-${route.id}-${activeTab}`
+            : undefined
+        }
+        className="p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-inset sm:p-6"
+        id={`route-panel-${route.id}-${activeTab}`}
+        role={availableTabs.length > 1 ? "tabpanel" : "region"}
+        tabIndex={availableTabs.length > 1 ? 0 : undefined}
+      >
         {activeTab === "overview" && (
           <div className="grid gap-5 lg:grid-cols-[1fr_18rem]">
             <div>
@@ -190,20 +216,15 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
 
             <div className="lg:col-span-2">
               <h4 className="text-xs font-black uppercase tracking-[0.18em] text-ridge">
-                {t.sourcePack}
+                {locale === "zh" ? "来源" : "Sources"}
               </h4>
-              {sourceCount === 1 && (
-                <p className="mt-2 rounded-md border border-ridge/30 bg-white/50 p-3 text-xs font-bold leading-5 text-bark/65">
-                  {t.singleSource}
-                </p>
-              )}
               <div className="mt-3 grid gap-3">
                 {route.sources.map((source) => (
                   <div
                     className="rounded-md border border-ridge/25 bg-white/45 p-4"
                     key={`${source.sourceUrl}-${source.sourceLabel}`}
                   >
-                    <div className="flex flex-wrap items-center gap-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
                       <a
                         className="text-sm font-black text-forest underline decoration-forest/40 underline-offset-4"
                         href={source.sourceUrl}
@@ -212,24 +233,10 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                       >
                         {source.sourceLabel}
                       </a>
-                      <span
-                        className={`rounded-full border px-2 py-1 text-[11px] font-black uppercase ${trustStyles[source.trustLevel]}`}
-                      >
-                        {source.trustLevel} trust
-                      </span>
-                      <span className="rounded-full border border-ridge/25 bg-parchment/70 px-2 py-1 text-[11px] font-bold text-bark/65">
-                        {source.type}
+                      <span className="text-xs font-bold text-bark/55">
+                        {locale === "zh" ? "检查日期" : "Checked"}: {source.lastChecked}
                       </span>
                     </div>
-                    <p className="mt-2 text-xs font-bold leading-5 text-bark/65">
-                      {locale === "zh" ? "验证内容" : "Verifies"}:{" "}
-                      {source.verifies.join(", ")}.{" "}
-                      {locale === "zh" ? "最后检查" : "Last checked"}:{" "}
-                      {source.lastChecked}.
-                    </p>
-                    <p className="mt-1 text-xs leading-5 text-bark/60">
-                      {source.notes}
-                    </p>
                   </div>
                 ))}
               </div>
@@ -237,10 +244,8 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
           </div>
         )}
 
-        {activeTab === "photos" && (
-          <div>
-            {route.images.length > 0 ? (
-              <div className="grid gap-4 md:grid-cols-2">
+        {activeTab === "photos" && route.images.length > 0 && (
+          <div className="grid gap-4 md:grid-cols-2">
                 {route.images.map((image) => (
                   <figure
                     className="overflow-hidden rounded-md border border-ridge/25 bg-parchment"
@@ -270,14 +275,6 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                     </figcaption>
                   </figure>
                 ))}
-              </div>
-            ) : (
-              <div className="flex min-h-56 items-center justify-center rounded-md border border-dashed border-ridge/50 bg-parchment/70 p-5 text-center">
-                <p className="text-sm font-bold leading-6 text-bark/70">
-                  {t.routePhotosNeeded}
-                </p>
-              </div>
-            )}
           </div>
         )}
 
@@ -312,9 +309,16 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
           </div>
         )}
 
-        {activeTab === "story" && (
-          <div className="grid gap-5 lg:grid-cols-[1fr_18rem]">
-            <div className="space-y-4">
+        {activeTab === "story" && hasStoryContent && (
+          <div
+            className={`grid gap-5 ${
+              hasStoryNarrative && publicExternalResources.length > 0
+                ? "lg:grid-cols-[1fr_18rem]"
+                : ""
+            }`}
+          >
+            {hasStoryNarrative && (
+              <div className="space-y-4">
               {historicalNote && (
                 <section className="rounded-md border border-ridge/25 bg-parchment/65 p-4">
                   <h4 className="text-xs font-black uppercase tracking-[0.18em] text-ridge">
@@ -359,18 +363,11 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                 </section>
               )}
 
-              {!hasStoryContent && (
-                <div className="rounded-md border border-dashed border-ridge/45 bg-white/35 p-5">
-                  <p className="text-sm font-bold leading-6 text-bark/70">
-                    {locale === "zh"
-                      ? "这条路线还没有加入可核验的历史或人物记录。ClimbAtlas 宁愿留白，也不编故事。"
-                      : "No verified story notes have been added for this route yet. ClimbAtlas leaves the space blank instead of inventing lore."}
-                  </p>
-                </div>
-              )}
-            </div>
+              </div>
+            )}
 
-            <aside className="rounded-md border border-ridge/25 bg-parchment/70 p-4">
+            {publicExternalResources.length > 0 && (
+              <aside className="rounded-md border border-ridge/25 bg-parchment/70 p-4">
               <h4 className="text-xs font-black uppercase tracking-[0.18em] text-ridge">
                 {locale === "zh" ? "外部资料" : "External resources"}
               </h4>
@@ -380,9 +377,8 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                   : "These links leave ClimbAtlas. We point outward without copying beta, topos, guidebook text, or user comments."}
               </p>
 
-              {route.externalResources && route.externalResources.length > 0 ? (
                 <div className="mt-4 grid gap-3">
-                  {route.externalResources.map((resource) => (
+                  {publicExternalResources.map((resource) => (
                     <a
                       className="rounded-md border border-ridge/25 bg-white/45 p-3 transition hover:border-forest/35 hover:bg-white/70"
                       href={resource.url}
@@ -392,19 +388,8 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                     >
                       <span className="flex flex-wrap items-center gap-2">
                         <span className="text-[11px] font-black uppercase text-ridge">
-                          {resource.type}
+                          {getResourceLabel(resource, locale === "zh")}
                         </span>
-                        {resource.linkStatus && (
-                          <span
-                            className={`rounded-full border px-2 py-1 text-[10px] font-black uppercase ${linkStatusStyles[resource.linkStatus]}`}
-                          >
-                            {
-                              linkStatusLabels[resource.linkStatus][
-                                locale
-                              ]
-                            }
-                          </span>
-                        )}
                       </span>
                       <span className="mt-1 block text-sm font-black text-forest underline decoration-forest/35 underline-offset-4">
                         {resource.title}
@@ -416,38 +401,27 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
                     </a>
                   ))}
                 </div>
-              ) : (
-                <p className="mt-4 rounded-md border border-dashed border-ridge/35 bg-white/35 p-3 text-xs font-bold leading-5 text-bark/60">
-                  {locale === "zh"
-                    ? "还没有加入可靠外链。"
-                    : "No vetted external links yet."}
-                </p>
-              )}
-            </aside>
-          </div>
-        )}
-
-        {activeTab === "community" && (
-          <div className="grid gap-4 md:grid-cols-[1fr_18rem]">
-            <div className="rounded-md border border-dashed border-ridge/45 bg-white/35 p-5">
-              <h4 className="text-xs font-black uppercase tracking-[0.18em] text-ridge">
-                {t.communityNotes}
-              </h4>
-              <p className="mt-2 text-sm leading-6 text-bark/70">
-                {t.communityComingSoon}
-              </p>
-            </div>
-            <div className="rounded-md border border-ridge/25 bg-parchment/70 p-5">
-              <p className="text-sm font-black text-bark">
-                {t.futureReviewSpace}
-              </p>
-              <p className="mt-2 text-sm leading-6 text-bark/70">
-                {t.futureReviewBody}
-              </p>
-            </div>
+              </aside>
+            )}
           </div>
         )}
       </div>
     </article>
   );
+}
+
+function getResourceLabel(resource: ExternalResource, isZh: boolean) {
+  if (resource.linkStatus === "route-specific") {
+    return isZh ? "线路页面" : "Route page";
+  }
+
+  if (resource.linkStatus === "guidebook-specific") {
+    return isZh ? "路书或专题资料" : "Guidebook or feature";
+  }
+
+  if (resource.linkStatus === "area-only") {
+    return isZh ? "区域资料" : "Area resource";
+  }
+
+  return isZh ? "外部资料" : "External resource";
 }

@@ -10,11 +10,18 @@
     "routes:generate": "node scripts/route-metadata.mjs",
     "routes:validate-schema": "node scripts/validate-route-schema.mjs",
     "routes:validate": "node scripts/routes/validate-routes.mjs",
+    "routes:validate-public": "node scripts/routes/validate-public-routes.mjs",
     "routes:audit": "node scripts/routes/audit-routes.mjs",
     "routes:dna-validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/routes/validate-route-dna.mjs",
+    "grades:validate": "node scripts/routes/validate-grade-parser.mjs",
+    "copy:validate": "node scripts/validate-public-copy.mjs",
     "routes:import-openbeta-poc": "node scripts/routes/import-openbeta-poc.mjs",
     "routes:verify-links": "node scripts/verify-route-links.mjs",
-    "dna:validate": "node scripts/validate-climbing-dna.mjs"
+    "smoke:production": "node scripts/smoke-production.mjs",
+    "production:validate": "node scripts/validate-production.mjs",
+    "production:validate:links": "node scripts/validate-production.mjs --with-links",
+    "dna:validate": "node scripts/validate-climbing-dna.mjs",
+    "scores:validate-public": "node scripts/validate-public-scores.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

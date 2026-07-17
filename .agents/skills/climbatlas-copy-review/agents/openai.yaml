@@ -1,0 +1,4 @@
+interface:
+  display_name: "ClimbAtlas Copy Review"
+  short_description: "Audit ClimbAtlas copy without automatic rewrites"
+  default_prompt: "Use $climbatlas-copy-review to audit this ClimbAtlas copy and return the structured editorial report."
