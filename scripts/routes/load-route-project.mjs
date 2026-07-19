@@ -60,6 +60,12 @@ export function loadRouteProject(root = process.cwd()) {
     gradeParserModule: require(
       path.join(root, "src", "lib", "routes", "parse-route-grade.ts")
     ),
+    gradeFilterOptionsModule: require(
+      path.join(root, "src", "lib", "routes", "grade-filter-options.ts")
+    ),
+    formattersModule: require(
+      path.join(root, "src", "lib", "formatters.ts")
+    ),
     auditModule: require(
       path.join(root, "src", "lib", "routes", "audit-routes.ts")
     ),

@@ -40,7 +40,9 @@ const internalPublicPatterns = [
   /source-backed route index/i,
   /route directory and quiz/i,
   /路线目录和小测试/u,
-  /路线小测试/u
+  /路线小测试/u,
+  /\bV\d+(?:\.\d+)?\s+(?:starts|begins)\b/i,
+  /V\d+(?:\.\d+)?\s*先做/u
 ];
 
 for (const file of textFiles) {

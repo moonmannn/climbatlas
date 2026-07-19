@@ -1,10 +1,29 @@
 "use client";
 
 import { useLanguage } from "@/components/LanguageProvider";
+import {
+  formatCheckedDate,
+  formatClimbingType,
+  formatGradeSystem,
+  formatMissingValue,
+  formatSourceCount
+} from "@/lib/formatters";
 import type {
   PublicRouteFacts,
-  PublicRouteResource
+  PublicRouteResource,
+  PublicRouteSource
 } from "@/lib/routes/public-routes";
+
+type SourceEntry = {
+  attribution?: string;
+  checkedAt?: string;
+  label: string;
+  license?: string;
+  linkStatus?: PublicRouteResource["linkStatus"];
+  resourceType?: PublicRouteResource["type"];
+  role?: PublicRouteSource["role"];
+  url: string;
+};
 
 export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
   const { locale } = useLanguage();
@@ -18,45 +37,57 @@ export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
     ...route.style.movementTags,
     ...route.style.physicalTags
   ].filter(Boolean) as string[];
-  const publicResources = route.externalResources;
+  const sourceEntries = mergeSourceEntries(route);
+  const accessEntries = sourceEntries.filter(isAccessEntry);
+  const routeEntries = sourceEntries.filter((entry) => !isAccessEntry(entry));
 
   return (
     <article className="border-y border-brandforest/15 py-8">
       <div className="flex flex-wrap items-center gap-2">
         <span className="route-result-badge bg-brandforest text-cream">
-          {isZh ? "路线信息" : "Route facts"}
+          {formatClimbingType(route.climbingType, locale)}
         </span>
-        <span className="route-result-badge border border-brandforest/15 text-brandforest">
-          {route.climbingType}
-        </span>
+        {route.sourceRecords.length > 0 && (
+          <span className="route-result-badge border border-brandforest/15 text-brandforest">
+            {formatSourceCount(route.sourceRecords.length, locale)}
+          </span>
+        )}
       </div>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <section>
           <p className="editorial-kicker text-terracotta">
-            {isZh ? "基础信息" : "Route facts"}
+            {isZh ? "线路事实" : "Route facts"}
           </p>
           <dl className="mt-4 divide-y divide-brandforest/12 border-y border-brandforest/15">
-            <Fact label={isZh ? "原始等级" : "Original grade"} value={route.grade.original} />
+            <Fact label={isZh ? "原始难度" : "Original grade"} value={route.grade.original} />
             <Fact
-              label={isZh ? "主要等级体系" : "Primary grade system"}
-              value={route.grade.primarySystem ?? (isZh ? "无法安全分类" : "Not safely classified")}
+              label={isZh ? "主要难度体系" : "Primary grade system"}
+              value={
+                route.grade.primarySystem
+                  ? formatGradeSystem(route.grade.primarySystem, locale)
+                  : formatMissingValue(locale)
+              }
             />
-            <Fact label={isZh ? "类型" : "Climbing type"} value={route.climbingType} />
+            <Fact
+              label={isZh ? "攀岩类型" : "Climbing type"}
+              value={formatClimbingType(route.climbingType, locale)}
+            />
             <Fact
               label={isZh ? "长度" : "Length"}
-              value={route.lengthOriginal ?? (isZh ? "来源未提供" : "Not provided by source")}
+              value={route.lengthOriginal ?? formatMissingValue(locale)}
             />
-            <Fact
-              label={isZh ? "区域" : "Sector"}
-              value={route.sectorName ?? route.areaName ?? (isZh ? "来源未提供" : "Not provided")}
-            />
+            {route.sectorName ? (
+              <Fact label={isZh ? "分区" : "Sector"} value={route.sectorName} />
+            ) : route.areaName ? (
+              <Fact label={isZh ? "区域" : "Area"} value={route.areaName} />
+            ) : null}
           </dl>
 
           {equivalentGrades.length > 0 && (
             <div className="mt-6">
               <h3 className="route-filter-label">
-                {isZh ? "来源中的其他等级" : "Other source grades"}
+                {isZh ? "来源中的其他难度" : "Other source grades"}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {equivalentGrades.map(([system, grade]) => (
@@ -64,7 +95,7 @@ export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
                     className="route-result-badge border border-brandforest/15 text-brandforest"
                     key={system}
                   >
-                    {system}: {grade}
+                    {formatGradeSystem(system as Parameters<typeof formatGradeSystem>[0], locale)}: {grade}
                   </span>
                 ))}
               </div>
@@ -74,7 +105,7 @@ export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
           {(route.grade.aidGrade || route.grade.commitmentGrade) && (
             <details className="mt-6 border-y border-brandforest/12 py-4">
               <summary className="cursor-pointer text-sm font-semibold text-brandforest">
-                {isZh ? "更多等级信息" : "Additional grade context"}
+                {isZh ? "其他难度信息" : "Additional grade context"}
               </summary>
               <dl className="mt-3 divide-y divide-brandforest/10">
                 {route.grade.commitmentGrade && (
@@ -85,7 +116,7 @@ export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
                 )}
                 {route.grade.aidGrade && (
                   <Fact
-                    label={isZh ? "人工攀登等级" : "Aid grade"}
+                    label={isZh ? "人工攀登难度" : "Aid grade"}
                     value={route.grade.aidGrade}
                   />
                 )}
@@ -95,11 +126,16 @@ export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
 
           {styleTags.length > 0 && (
             <div className="mt-6">
-              <h3 className="route-filter-label">{isZh ? "已记录特征" : "Recorded characteristics"}</h3>
+              <h3 className="route-filter-label">
+                {isZh ? "已记录特征" : "Recorded characteristics"}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {styleTags.map((tag) => (
-                  <span className="route-result-badge border border-brandforest/15 text-brandforest" key={tag}>
-                    {tag}
+                  <span
+                    className="route-result-badge border border-brandforest/15 text-brandforest"
+                    key={tag}
+                  >
+                    {tag.replaceAll("-", " ")}
                   </span>
                 ))}
               </div>
@@ -109,93 +145,148 @@ export function RouteRecordCard({ route }: { route: PublicRouteFacts }) {
 
         <section>
           <p className="editorial-kicker text-terracotta">
-            {isZh ? "来源与下一步" : "Sources and next step"}
+            {isZh ? "来源与外部资料" : "Sources and external resources"}
           </p>
           <h2 className="display-serif mt-3 text-3xl font-medium text-brandforest">
-            {isZh ? "从原始资料继续查看" : "Continue with the original source"}
+            {isZh ? "核对线路资料" : "Check the route sources"}
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-charcoal/62">
             {isZh
-              ? "本页整理可追溯的路线信息和来源链接，不复制 beta、topo、接近路线、保护信息、评论、评分或图片。"
-              : "This page organizes traceable route facts and source links without copying beta, topos, approach notes, protection details, comments, ratings, or photos."}
+              ? "这里区分单条线路资料与目的地访问资料。ClimbAtlas 只做信息整理和导流，不复制 beta、topo、接近路线、保护信息、评论、评分或图片。"
+              : "Route-specific references are separated from destination access information. ClimbAtlas organizes traceable links without copying beta, topos, approach notes, protection details, comments, ratings, or photos."}
           </p>
 
-          {publicResources.length > 0 ? (
-            <div className="mt-6 grid gap-px overflow-hidden border border-brandforest/15 bg-brandforest/15 sm:grid-cols-2">
-              {publicResources.map((resource) => (
-                <a
-                  className="bg-cream p-5 transition-colors hover:bg-white"
-                  href={resource.url}
-                  key={`${resource.url}-${resource.title}`}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <span className="route-filter-label">
-                    {getResourceLabel(resource.linkStatus, isZh)}
-                  </span>
-                  <strong className="text-link mt-2 block">{resource.title}</strong>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <p className="mt-6 border-y border-brandforest/15 py-4 text-sm leading-6 text-charcoal/58">
-              {isZh
-                ? "目前没有可用的外部线路资料。"
-                : "No external route resource is available yet."}
-            </p>
-          )}
+          <SourceSection
+            entries={routeEntries}
+            emptyText={isZh ? "目前没有可用的单条线路资料。" : "No route-specific resource is available yet."}
+            heading={isZh ? "线路来源" : "Route sources"}
+            isZh={isZh}
+            locale={locale}
+          />
 
-          <div className="mt-8">
-            <h3 className="route-filter-label">{isZh ? "来源" : "Sources"}</h3>
-            <div className="mt-3 divide-y divide-brandforest/12 border-y border-brandforest/15">
-              {route.sourceRecords.map((source) => (
-                <div className="py-5" key={`${source.sourceUrl}-${source.label}`}>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <a className="text-link" href={source.sourceUrl} rel="noreferrer" target="_blank">
-                      {source.label}
-                    </a>
-                    {source.license && (
-                      <span className="text-xs font-semibold text-charcoal/48">
-                        {source.license}
-                      </span>
-                    )}
-                  </div>
-                  {(source.attribution || source.checkedAt) && (
-                    <p className="mt-2 text-sm leading-6 text-charcoal/58">
-                      {source.attribution}
-                      {source.attribution && source.checkedAt ? " · " : ""}
-                      {source.checkedAt
-                        ? `${isZh ? "检查日期" : "Checked"}: ${source.checkedAt}`
-                        : ""}
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
+          {accessEntries.length > 0 && (
+            <SourceSection
+              entries={accessEntries}
+              heading={isZh ? "当地访问与区域资料" : "Access and local information"}
+              isZh={isZh}
+              locale={locale}
+            />
+          )}
         </section>
       </div>
     </article>
   );
 }
 
+function SourceSection({
+  emptyText,
+  entries,
+  heading,
+  isZh,
+  locale
+}: {
+  emptyText?: string;
+  entries: SourceEntry[];
+  heading: string;
+  isZh: boolean;
+  locale: "en" | "zh";
+}) {
+  return (
+    <section className="mt-8">
+      <h3 className="route-filter-label">{heading}</h3>
+      {entries.length > 0 ? (
+        <div className="mt-3 divide-y divide-brandforest/12 border-y border-brandforest/15">
+          {entries.map((entry) => (
+            <div className="py-5" key={entry.url}>
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  className="text-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+                  href={entry.url}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {entry.label}
+                </a>
+                <span className="text-xs font-semibold text-charcoal/48">
+                  {getResourceLabel(entry.linkStatus, entry.resourceType, isZh)}
+                </span>
+                {entry.license && (
+                  <span className="text-xs font-semibold text-charcoal/48">
+                    {entry.license}
+                  </span>
+                )}
+              </div>
+              {(entry.attribution || entry.checkedAt) && (
+                <p className="mt-2 text-sm leading-6 text-charcoal/58">
+                  {entry.attribution}
+                  {entry.attribution && entry.checkedAt ? " · " : ""}
+                  {entry.checkedAt
+                    ? `${isZh ? "检查日期" : "Checked"}: ${formatCheckedDate(entry.checkedAt, locale)}`
+                    : ""}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      ) : emptyText ? (
+        <p className="mt-3 border-y border-brandforest/15 py-4 text-sm leading-6 text-charcoal/58">
+          {emptyText}
+        </p>
+      ) : null}
+    </section>
+  );
+}
+
+function mergeSourceEntries(route: PublicRouteFacts) {
+  const entries = new Map<string, SourceEntry>();
+
+  for (const source of route.sourceRecords) {
+    entries.set(normalizeUrl(source.sourceUrl), {
+      attribution: source.attribution,
+      checkedAt: source.checkedAt,
+      label: source.label,
+      license: source.license,
+      role: source.role,
+      url: source.sourceUrl
+    });
+  }
+
+  for (const resource of route.externalResources) {
+    const key = normalizeUrl(resource.url);
+    const existing = entries.get(key);
+    entries.set(key, {
+      ...existing,
+      label: resource.title || existing?.label || resource.url,
+      linkStatus: resource.linkStatus,
+      resourceType: resource.type,
+      url: resource.url
+    });
+  }
+
+  return Array.from(entries.values());
+}
+
+function isAccessEntry(entry: SourceEntry) {
+  return (
+    entry.linkStatus === "area-only" ||
+    entry.resourceType === "official" ||
+    (entry.role === "access" && entry.linkStatus !== "route-specific")
+  );
+}
+
+function normalizeUrl(url: string) {
+  return url.trim().replace(/\/$/, "").toLowerCase();
+}
+
 function getResourceLabel(
   status: PublicRouteResource["linkStatus"],
+  type: PublicRouteResource["type"] | undefined,
   isZh: boolean
 ) {
-  if (status === "route-specific") {
-    return isZh ? "线路页面" : "Route page";
-  }
-
-  if (status === "guidebook-specific") {
-    return isZh ? "路书或专题资料" : "Guidebook or feature";
-  }
-
-  if (status === "area-only") {
-    return isZh ? "区域资料" : "Area resource";
-  }
-
-  return isZh ? "外部资料" : "External resource";
+  if (status === "route-specific") return isZh ? "单条线路页" : "Exact route page";
+  if (status === "guidebook-specific") return isZh ? "路书或专题资料" : "Guidebook resource";
+  if (status === "area-only" || type === "official") return isZh ? "访问或区域资料" : "Access or area resource";
+  return isZh ? "参考来源" : "Reference source";
 }
 
 function Fact({ label, value }: { label: string; value: string }) {

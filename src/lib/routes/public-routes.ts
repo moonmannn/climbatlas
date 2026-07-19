@@ -1,6 +1,8 @@
 import type {
+  ExternalResourceType,
   ExternalLinkStatus,
-  LocalizedText
+  LocalizedText,
+  SourceType
 } from "@/types/destination";
 import type {
   GradeSystem,
@@ -39,11 +41,13 @@ export type PublicRouteSource = {
   label: string;
   license?: string;
   sourceUrl: string;
+  role: "route" | "access";
 };
 
 export type PublicRouteResource = {
   linkStatus?: ExternalLinkStatus;
   title: string;
+  type: ExternalResourceType;
   url: string;
 };
 
@@ -194,6 +198,7 @@ export function toPublicRouteFacts(route: RouteRecord): PublicRouteFacts {
       .map((resource) => ({
         linkStatus: resource.linkStatus,
         title: resource.title,
+        type: resource.type,
         url: resource.url
       })),
     grade: {
@@ -212,10 +217,15 @@ export function toPublicRouteFacts(route: RouteRecord): PublicRouteFacts {
       checkedAt: source.checkedAt,
       label: source.label,
       license: source.license,
+      role: publicSourceRole(source.sourceType),
       sourceUrl: source.sourceUrl
     })),
     style: route.style
   };
+}
+
+function publicSourceRole(sourceType: SourceType): PublicRouteSource["role"] {
+  return sourceType === "official" ? "access" : "route";
 }
 
 function buildPublicRouteSearchText(

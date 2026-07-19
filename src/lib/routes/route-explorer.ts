@@ -60,6 +60,7 @@ export function toRouteExplorerItem(route: RouteRecord): RouteExplorerItem {
     difficultyBands: parsedGrade.filterBands,
     difficultyRank: difficulty?.rank,
     climbingType: route.climbingType,
+    lengthOriginal: route.lengthOriginal,
     sectorName: route.sectorName,
     styleTags,
     isPublishedPick: hasPublishedEditorial,

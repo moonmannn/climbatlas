@@ -10,6 +10,10 @@ import {
   getRouteSummary
 } from "@/data/localizedContent";
 import { useLanguage } from "@/components/LanguageProvider";
+import {
+  formatClimbingType,
+  formatSourceCount
+} from "@/lib/formatters";
 import { getUiText } from "@/lib/uiText";
 import type { ExternalResource, RouteHighlight } from "@/types/destination";
 import {
@@ -110,7 +114,7 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
       <div className="border-b border-ridge/25 bg-parchment/70 p-5 sm:p-6">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-forest px-3 py-1 text-xs font-black uppercase tracking-wide text-parchment">
-            {route.type}
+            {formatClimbingType(route.type, locale)}
           </span>
           <span className="rounded-full border border-ridge/35 bg-white/60 px-3 py-1 text-xs font-black text-bark">
             {route.grade}
@@ -118,9 +122,11 @@ export function RouteHighlightCard({ route }: RouteHighlightCardProps) {
           <span className="rounded-full border border-ridge/35 bg-white/60 px-3 py-1 text-xs font-black text-bark">
             {route.length}
           </span>
-          <span className="rounded-full border border-forest/25 bg-forest/10 px-3 py-1 text-xs font-black text-forest">
-            {t.sourceCount(sourceCount)}
-          </span>
+          {sourceCount > 0 && (
+            <span className="rounded-full border border-forest/25 bg-forest/10 px-3 py-1 text-xs font-black text-forest">
+              {formatSourceCount(sourceCount, locale)}
+            </span>
+          )}
         </div>
 
         <h3 className="mt-4 text-3xl font-black text-bark">{route.name}</h3>

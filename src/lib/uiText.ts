@@ -1,4 +1,10 @@
-import type { ClimbingType, Locale, Season } from "@/types/destination";
+import type { Locale, Season } from "@/types/destination";
+import {
+  formatClimbingType,
+  formatSourceCount
+} from "@/lib/formatters";
+
+export { formatClimbingType } from "@/lib/formatters";
 
 export const uiText = {
   en: {
@@ -66,8 +72,7 @@ export const uiText = {
     destinationsVisible: (count: number) => `${count} destinations visible`,
     destinationCount: (visible: number, total: number) =>
       `${visible} of ${total} destinations`,
-    sourceCount: (count: number) =>
-      `${count} ${count === 1 ? "source" : "sources"}`,
+    sourceCount: (count: number) => formatSourceCount(count, "en"),
     approachLevel: {
       welcoming: "Welcoming",
       experienced: "Experienced"
@@ -162,7 +167,7 @@ export const uiText = {
     destinationsVisible: (count: number) => `${count} 个目的地可见`,
     destinationCount: (visible: number, total: number) =>
       `${visible} / ${total} 个目的地`,
-    sourceCount: (count: number) => `${count} 个来源`,
+    sourceCount: (count: number) => formatSourceCount(count, "zh"),
     approachLevel: {
       welcoming: "比较友好",
       experienced: "更适合有经验者"
@@ -194,27 +199,6 @@ export const uiText = {
 
 export function getUiText(locale: Locale) {
   return uiText[locale];
-}
-
-export function formatClimbingType(type: "all" | ClimbingType, locale: Locale) {
-  const labels: Record<Locale, Record<"all" | ClimbingType, string>> = {
-    en: {
-      all: "All types",
-      sport: "sport",
-      trad: "trad",
-      boulder: "boulder",
-      "multi-pitch": "multi-pitch"
-    },
-    zh: {
-      all: "全部类型",
-      sport: "运动攀",
-      trad: "传统攀",
-      boulder: "抱石",
-      "multi-pitch": "多段"
-    }
-  };
-
-  return labels[locale][type];
 }
 
 export function formatSeason(season: "all" | Season, locale: Locale) {

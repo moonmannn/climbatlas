@@ -24,6 +24,7 @@ export type RouteExplorerItem = {
   difficultyBands: RouteDifficultyBand[];
   difficultyRank?: number;
   climbingType: RouteClimbingType;
+  lengthOriginal?: string;
   sectorName?: string;
   styleTags: string[];
   isPublishedPick: boolean;

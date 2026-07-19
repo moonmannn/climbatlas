@@ -101,8 +101,8 @@ export function UserRouteControls({
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-bark/70">
             {isZh
-              ? "这些记录只属于你自己。V3 先做私人想爬、已爬和笔记，不开放公开评价。"
-              : "These records are private to you. V3 starts with personal want-to-climb, climbed, and notes instead of public reviews."}
+              ? "这些记录只属于你自己，不会显示在公开评价中。"
+              : "These records are private to you and do not appear in public reviews."}
           </p>
         </div>
         <div className="rounded-md border border-ridge/25 bg-parchment/70 px-3 py-2 text-xs font-black text-bark/65">

@@ -15,12 +15,12 @@ const popularDestinationGuides: Record<
 > = {
   "yosemite-usa": {
     history: {
-      en: "Yosemite climbing grew from adventurous wall craft into a global stage for free climbing, big-wall systems, and bouldering culture. Its routes often feel like chapters in the same long granite book.",
-      zh: "优胜美地的攀岩历史，从早期大墙探险逐渐发展成自由攀、大墙系统和抱石文化的世界舞台。这里的路线常常像同一本花岗岩长篇里的不同章节。"
+      en: "Yosemite climbing grew from adventurous wall craft into a global stage for free climbing, big-wall systems, and bouldering culture. Big walls, free-climbing testpieces, and influential boulders all share that historical context.",
+      zh: "优胜美地的攀岩历史，从早期大墙探险逐渐发展成自由攀、大墙系统和抱石文化的重要舞台。大墙、自由攀经典线和具有影响力的抱石共同构成了这里的历史背景。"
     },
     atmosphere: {
-      "en": "Expect grandeur with homework. The Valley can feel magical, crowded, grounding, and oddly practical all at once.",
-      "zh": "这里很壮观，但也很需要做功课。山谷可以同时显得神奇、拥挤、让人保持清醒，而且非常现实。"
+      "en": "The Valley can feel memorable and crowded at the same time. Weather, access, and day-to-day logistics still shape what makes sense to climb.",
+      "zh": "山谷既令人难忘，也可能十分拥挤。天气、开放情况和当天的行程安排，都会影响什么路线更适合。"
     },
     classicThemes: {
       en: [

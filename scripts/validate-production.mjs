@@ -13,6 +13,8 @@ const steps = [
     args: ["run", "routes:audit", "--", "--no-write"]
   },
   { label: "Grade parser", args: ["run", "grades:validate"] },
+  { label: "Public formatters", args: ["run", "formatters:validate"] },
+  { label: "Production UI", args: ["run", "ui:validate"] },
   { label: "Public copy", args: ["run", "copy:validate"] },
   { label: "Climbing DNA", args: ["run", "dna:validate"] },
   { label: "Route DNA", args: ["run", "routes:dna-validate"] },

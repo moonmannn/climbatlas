@@ -8,6 +8,8 @@ import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
 import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
 import { getDestinationLocalizedContent } from "@/data/localizedContent";
+import { formatGradeSystem } from "@/lib/formatters";
+import { buildDifficultySystemSummaries } from "@/lib/routes/grade-filter-options";
 import { getPublicRoutesForDestination } from "@/lib/routes/public-routes";
 import { toRouteExplorerItem } from "@/lib/routes/route-explorer";
 
@@ -48,6 +50,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   const localizedDescription = getDestinationLocalizedContent(destination)?.description;
   const explorerRoutes = getPublicRoutesForDestination(destination.slug)
     .map((item) => toRouteExplorerItem(item.route));
+  const difficultySummaries = buildDifficultySystemSummaries(explorerRoutes);
   return (
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
       <SiteHeader />
@@ -148,7 +151,42 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                 <LocalizedText en="Difficulty" zh="难度" />
               </dt>
               <dd className="mt-2 text-xl font-black">
-                {destination.difficultyRange}
+                {difficultySummaries.length > 0 ? (
+                  <div className="space-y-2">
+                    {difficultySummaries.map((summary) => {
+                      const gradeRange = summary.minLabel === summary.maxLabel
+                        ? summary.minLabel
+                        : `${summary.minLabel}–${summary.maxLabel}`;
+                      return (
+                        <div key={summary.system}>
+                          <span className="block text-xs font-bold text-bark/55">
+                            <LocalizedText
+                              en={formatGradeSystem(summary.system, "en")}
+                              zh={formatGradeSystem(summary.system, "zh")}
+                            />
+                          </span>
+                          <span>{gradeRange}</span>
+                          {summary.minLabel === summary.maxLabel && (
+                            <span className="mt-1 block text-[11px] font-semibold leading-4 text-bark/50">
+                              <LocalizedText
+                                en="Only this grade is currently represented in the public index."
+                                zh="当前公开索引在这一难度体系中只收录了这个难度。"
+                              />
+                            </span>
+                          )}
+                        </div>
+                      );
+                    })}
+                    <span className="block text-[11px] font-semibold leading-4 text-bark/50">
+                      <LocalizedText
+                        en="Based on routes currently visible in ClimbAtlas."
+                        zh="根据 ClimbAtlas 当前公开可见的路线统计。"
+                      />
+                    </span>
+                  </div>
+                ) : (
+                  <LocalizedText en="Information unavailable" zh="暂无信息" />
+                )}
               </dd>
             </div>
 
@@ -268,9 +306,9 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                 <h3 className="text-xs font-black uppercase tracking-[0.18em] text-forest">
                   <LocalizedText en="First-visit route picking" zh="第一次来怎么选" />
                 </h3>
-                <div className="mt-3 flex flex-wrap gap-2">
+                <ul className="mt-3 flex list-none flex-wrap gap-2 p-0">
                   {(guideContent.firstVisitTips.en ?? []).map((item, index) => (
-                    <span
+                    <li
                       className="rounded-md border border-forest/20 bg-white/55 px-3 py-2 text-xs font-black text-bark/70"
                       key={item}
                     >
@@ -278,9 +316,9 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                         en={item}
                         zh={guideContent.firstVisitTips.zh?.[index] ?? item}
                       />
-                    </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
 
               {destination.externalResources &&
