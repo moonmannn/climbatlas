@@ -2,6 +2,7 @@ import type { RouteRecord } from "@/types/route";
 import { buildRouteDnaSnapshot } from "@/lib/routes/route-dna";
 import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
 import { hasPublishedRouteEditorial } from "@/lib/routes/public-routes";
+import { countPublicRouteSources } from "@/lib/routes/presentation/route-detail-view-model";
 import type {
   RouteDifficultyBand,
   RouteExplorerItem
@@ -65,7 +66,7 @@ export function toRouteExplorerItem(route: RouteRecord): RouteExplorerItem {
     styleTags,
     isPublishedPick: hasPublishedEditorial,
     summary: hasPublishedEditorial ? route.editorial.summary : undefined,
-    sourceCount: route.sourceRecords.length,
+    sourceCount: countPublicRouteSources(route),
     dnaSnapshot: buildRouteDnaSnapshot(route, difficultyBand)
   };
 }

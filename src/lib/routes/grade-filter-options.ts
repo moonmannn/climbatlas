@@ -12,6 +12,13 @@ export type GradeFilterOption = {
 export type GradeFilterSet = {
   primarySystem?: GradeSystem;
   options: GradeFilterOption[];
+  groups: GradeFilterGroup[];
+};
+
+export type GradeFilterGroup = {
+  system: GradeSystem;
+  options: GradeFilterOption[];
+  routeCount: number;
 };
 
 export type DifficultySystemSummary = {
@@ -35,11 +42,25 @@ export function buildGradeFilterSet(routes: RouteExplorerItem[]): GradeFilterSet
       secondCount - firstCount || firstSystem.localeCompare(secondSystem)
   )[0]?.[0];
 
-  if (!primarySystem) return { options: [] };
+  const groups = Array.from(counts.entries())
+    .map(([system, routeCount]) => ({
+      system,
+      options: buildOptionsForSystem(routes, system),
+      routeCount
+    }))
+    .filter((group) => group.options.length > 0)
+    .sort(
+      (first, second) =>
+        second.routeCount - first.routeCount ||
+        first.system.localeCompare(second.system)
+    );
+
+  if (!primarySystem) return { options: [], groups: [] };
 
   return {
     primarySystem,
-    options: buildOptionsForSystem(routes, primarySystem)
+    options: buildOptionsForSystem(routes, primarySystem),
+    groups
   };
 }
 
@@ -106,10 +127,10 @@ function buildOptionsForSystem(
   const options = new Map<string, GradeFilterOption>();
   for (const route of routes) {
     if (!isComparableRoute(route) || route.gradeSystem !== system) continue;
-    const value = `${system}:${route.gradeRangeMin}:${route.gradeRangeMax}`;
-    if (!options.has(value)) {
-      options.set(value, {
-        value,
+    const optionKey = `${system}:${route.gradeRangeMin}:${route.gradeRangeMax}`;
+    if (!options.has(optionKey)) {
+      options.set(optionKey, {
+        value: route.gradeDisplay,
         label: route.gradeDisplay,
         system,
         min: route.gradeRangeMin!,

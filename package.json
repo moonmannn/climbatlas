@@ -11,6 +11,7 @@
     "routes:validate-schema": "node scripts/validate-route-schema.mjs",
     "routes:validate": "node scripts/routes/validate-routes.mjs",
     "routes:validate-public": "node scripts/routes/validate-public-routes.mjs",
+    "routes:validate-view-models": "node scripts/routes/validate-route-view-models.mjs",
     "routes:audit": "node scripts/routes/audit-routes.mjs",
     "routes:dna-validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/routes/validate-route-dna.mjs",
     "grades:validate": "node scripts/routes/validate-grade-parser.mjs",

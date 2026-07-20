@@ -59,8 +59,8 @@ const popularDestinationGuides: Record<
   },
   "red-river-gorge-usa": {
     history: {
-      en: "Red River Gorge became a modern sport-climbing magnet through steep sandstone, dense route development, and strong access culture. Its hard routes are famous, but the real personality is pump with a grin.",
-      zh: "红河峡谷凭借陡峭砂岩、密集开发和强烈的准入文化，成为现代运动攀热门地。这里硬线很出名，但真正的性格是带着笑意的泵感。"
+      en: "Red River Gorge became a modern sport-climbing destination through steep sandstone, dense route development, and a strong access culture. Its harder routes are well known, while the wider catalog also gives climbers many sectors and grades to compare.",
+      zh: "红河峡谷凭借陡峭砂岩、密集的路线开发和成熟的准入文化，成为现代运动攀热门地。这里的高难线路广为人知，同时也有多个岩区和不同难度可供比较。"
     },
     atmosphere: {
       "en": "Friendly woods, steep walls, and plenty of forearm negotiation. It is a good place to learn how endurance and tactics work together.",
@@ -151,8 +151,8 @@ const popularDestinationGuides: Record<
       "zh": "在抱石垫让抱石看起来现代之前，枫丹白露早就在塑造抱石文化。这里的经典线既是动作谜题，也是历史切片，也会很温柔地提醒你别太自信。"
     },
     atmosphere: {
-      en: "A forest full of small problems with large opinions. The grades matter, but the body-position lesson usually speaks first.",
-      zh: "一片充满小问题和大主见的森林。难度当然重要，但身体位置的课程通常先开口。"
+      en: "A sandstone forest where short problems can demand precise body positioning. Grades help organize the options, but movement style is just as useful when choosing.",
+      zh: "这片砂岩森林里的短线路往往很考验精确的身体位置。难度可以帮助整理选择，但挑线路时，动作风格同样值得关注。"
     },
     classicThemes: {
       en: [

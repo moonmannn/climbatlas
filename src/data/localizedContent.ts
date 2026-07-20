@@ -42,8 +42,8 @@ export const destinationLocalizedContent: Record<
 > = {
   "yosemite-usa": {
     description: {
-      en: "Yosemite is indexed here through granite trad, multi-pitch, and bouldering routes. Compare original grades, route length, sources, and preference matches before narrowing the list.",
-      zh: "ClimbAtlas 收录了优胜美地的花岗岩传统攀、多段路线和抱石。你可以先比较原始难度、路线长度、来源和偏好匹配，再缩小选择范围。"
+      en: "Yosemite brings granite trad, multi-pitch, and bouldering into one destination, from short classics to major wall objectives. Use ClimbAtlas to compare route type, original grade, length, and sources before building a shortlist.",
+      zh: "优胜美地把花岗岩传统攀、多段路线和抱石集中在同一个目的地，从短小经典到大墙目标都有。你可以在 ClimbAtlas 比较路线类型、原始难度、长度和来源，再建立自己的候选清单。"
     }
   },
   "red-river-gorge-usa": {

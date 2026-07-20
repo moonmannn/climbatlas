@@ -141,7 +141,7 @@ for (const snapshot of rawSnapshots) {
         destinationId: snapshot.scope.destinationId,
         externalId: rawRoute.uuid,
         name: rawRoute.name,
-        reason: "Missing usable name or grade."
+        reason: "Missing usable route identity."
       });
       continue;
     }

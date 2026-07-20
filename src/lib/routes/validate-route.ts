@@ -275,10 +275,10 @@ function validateEntry(
 
   if (!entry.grade.original.trim()) {
     addIssue(issues, entry, {
-      severity: "error",
+      severity: "warning",
       code: "grade-original-missing",
       field: "grade.original",
-      message: "Original grade must be preserved."
+      message: "Original grade is unavailable; keep the route and omit the public grade fact."
     });
   }
 

@@ -1,0 +1,465 @@
+{
+  "schemaVersion": "rendering-consistency-rc3",
+  "generatedAt": "2026-07-19T04:51:22.349Z",
+  "paths": {
+    "legacyInput": "Destination.routes / RouteHighlight",
+    "legacyAdapter": "src/lib/routes/adapters/legacy-route-adapter.ts",
+    "openBetaInput": "OpenBeta raw route and canonical review snapshot",
+    "openBetaAdapter": "src/lib/routes/adapters/openbeta-route-adapter.ts",
+    "canonicalRecord": "src/types/route.ts#RouteRecord",
+    "viewModelBuilder": "src/lib/routes/presentation/route-detail-view-model.ts",
+    "currentPublicRoutePage": "src/app/destinations/[slug]/routes/[routeId]/page.tsx"
+  },
+  "summary": {
+    "destinations": 20,
+    "catalogEntries": 1171,
+    "routeRecords": 1107,
+    "areaIndexes": 64,
+    "publicRoutesBefore": 1107,
+    "viewModelsBuilt": 1107,
+    "legacyRouteRecords": 888,
+    "canonicalSnapshotRouteRecords": 219,
+    "routesWithPublishedEditorial": 0,
+    "routesWithFactsOnly": 1107,
+    "missingSources": 0,
+    "unparseableGrades": 35,
+    "duplicateSourcesRemoved": 1,
+    "duplicateResourcesRemoved": 294,
+    "invalidMedia": 0,
+    "viewModelFailures": 0,
+    "dataConflicts": 2
+  },
+  "parity": {
+    "legacyRoutesChecked": 888,
+    "optionalFactsAccepted": true,
+    "criticalIdentityRejected": true,
+    "sourcePurposeDedupePassed": true,
+    "conflictPriorityFixturePassed": true,
+    "mediaSeparationPassed": true,
+    "builderLegacyFieldCheckPassed": true,
+    "oldPublicRendererStillPresent": true
+  },
+  "destinations": [
+    {
+      "destinationId": "yosemite-usa",
+      "destinationName": "Yosemite",
+      "before": 128,
+      "after": 128,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "red-river-gorge-usa",
+      "destinationName": "Red River Gorge",
+      "before": 140,
+      "after": 140,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "joshua-tree-usa",
+      "destinationName": "Joshua Tree",
+      "before": 42,
+      "after": 42,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "smith-rock-usa",
+      "destinationName": "Smith Rock",
+      "before": 109,
+      "after": 109,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "squamish-canada",
+      "destinationName": "Squamish",
+      "before": 64,
+      "after": 64,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "el-potrero-chico-mexico",
+      "destinationName": "El Potrero Chico",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "fontainebleau-france",
+      "destinationName": "Fontainebleau",
+      "before": 56,
+      "after": 56,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "chamonix-france",
+      "destinationName": "Chamonix",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "ceuse-france",
+      "destinationName": "Ceuse",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "kalymnos-greece",
+      "destinationName": "Kalymnos",
+      "before": 48,
+      "after": 48,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "dolomites-italy",
+      "destinationName": "Dolomites",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "frankenjura-germany",
+      "destinationName": "Frankenjura",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "siurana-spain",
+      "destinationName": "Siurana",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "margalef-spain",
+      "destinationName": "Margalef",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "yangshuo-china",
+      "destinationName": "Yangshuo",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "liming-china",
+      "destinationName": "Liming",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "long-dong-taiwan",
+      "destinationName": "Long Dong",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "railay-tonsai-thailand",
+      "destinationName": "Railay / Tonsai",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "grampians-australia",
+      "destinationName": "Grampians",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    },
+    {
+      "destinationId": "rocklands-south-africa",
+      "destinationName": "Rocklands",
+      "before": 40,
+      "after": 40,
+      "delta": 0,
+      "failedRouteIds": []
+    }
+  ],
+  "viewModelFailures": [],
+  "dataConflicts": [
+    {
+      "status": "unresolved-duplicate-candidate",
+      "reason": "Separate route records cannot be merged without source-level review.",
+      "confidence": "low",
+      "score": 65,
+      "reasons": [
+        "same name after removing generic route/line suffixes"
+      ],
+      "first": {
+        "destinationId": "railay-tonsai-thailand",
+        "id": "wee-s-present-wall-route-line-railay-tonsai",
+        "name": "Wee's Present Wall route line",
+        "grade": "6a-7a metadata"
+      },
+      "second": {
+        "destinationId": "railay-tonsai-thailand",
+        "id": "wee-present-wall-line-railay",
+        "name": "Wee's Present Wall line",
+        "grade": "6a-7c metadata"
+      },
+      "conflictingFields": [
+        {
+          "field": "originalGrade",
+          "firstValue": "6a-7a metadata",
+          "secondValue": "6a-7c metadata"
+        },
+        {
+          "field": "lengthOriginal",
+          "firstValue": "Single pitch metadata",
+          "secondValue": "single-pitch limestone metadata"
+        }
+      ]
+    },
+    {
+      "status": "unresolved-duplicate-candidate",
+      "reason": "Separate route records cannot be merged without source-level review.",
+      "confidence": "low",
+      "score": 65,
+      "reasons": [
+        "same name after removing generic route/line suffixes"
+      ],
+      "first": {
+        "destinationId": "yosemite-usa",
+        "id": "steck-salathe-route-sentinel-rock",
+        "name": "Steck-Salathe Route",
+        "grade": "V 5.10a/b"
+      },
+      "second": {
+        "destinationId": "yosemite-usa",
+        "id": "steck-salathe-yosemite",
+        "name": "Steck-Salathe",
+        "grade": "5.10-",
+        "sectorName": "Sentinel Rock"
+      },
+      "conflictingFields": [
+        {
+          "field": "originalGrade",
+          "firstValue": "V 5.10a/b",
+          "secondValue": "5.10-"
+        },
+        {
+          "field": "sectorName",
+          "secondValue": "Sentinel Rock"
+        },
+        {
+          "field": "lengthOriginal",
+          "firstValue": "16 pitches, about 1,500 ft",
+          "secondValue": "long multi-pitch"
+        }
+      ]
+    }
+  ],
+  "invalidMedia": [],
+  "missingSources": [],
+  "unparseableGrades": [
+    {
+      "routeKey": "squamish-canada:grand-wall-squamish",
+      "originalGrade": "Historic multi-pitch route",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "squamish-canada:banana-peel-squamish",
+      "originalGrade": "Moderate multi-pitch",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "squamish-canada:split-pillar-squamish",
+      "originalGrade": "Grand Wall feature",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:midi-plan-traverse-chamonix",
+      "originalGrade": "Alpine traverse",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:gouter-route-mont-blanc",
+      "originalGrade": "Classic normal route",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:grands-mulets-route-mont-blanc",
+      "originalGrade": "Historic Mont Blanc route",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:aiguilles-grises-route-mont-blanc",
+      "originalGrade": "Italian normal route",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:miage-bionnassay-mont-blanc-crossing",
+      "originalGrade": "Three-day alpine crossing",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:mallory-porter-aiguille-du-midi",
+      "originalGrade": "alpine north-face route",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "chamonix-france:peuterey-integral-chamonix",
+      "originalGrade": "major alpine ridge metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:bundaleer-route-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:rosea-route-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:summerday-valley-line-grampians",
+      "originalGrade": "beginner to moderate metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:gallery-route-line-grampians",
+      "originalGrade": "sport metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:kindergarten-route-line-grampians",
+      "originalGrade": "easy to moderate metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:citadel-route-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:fortress-route-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:red-rocks-route-line-grampians",
+      "originalGrade": "moderate metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:victoria-range-line-grampians",
+      "originalGrade": "boulder and route metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:andersens-route-line-grampians",
+      "originalGrade": "boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:stapylton-bouldering-line-grampians",
+      "originalGrade": "boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:northern-grampians-sport-line",
+      "originalGrade": "sport metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:sandstone-pocket-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:orange-wall-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:cave-traverse-line-grampians",
+      "originalGrade": "hard boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:sandbag-classic-line-grampians",
+      "originalGrade": "traditional metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:halls-gap-route-line-grampians",
+      "originalGrade": "moderate metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:hollow-mountain-warmup-line-grampians",
+      "originalGrade": "boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:taipan-project-line-grampians",
+      "originalGrade": "hard sport metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:watchtower-route-line-grampians",
+      "originalGrade": "moderate to hard metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "grampians-australia:southern-sandstone-line-grampians",
+      "originalGrade": "mixed metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "rocklands-south-africa:rubiks-cube-rocklands",
+      "originalGrade": "classic boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "rocklands-south-africa:orange-plasma-rocklands",
+      "originalGrade": "classic boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "rocklands-south-africa:ceder-rouge-rocklands",
+      "originalGrade": "classic boulder metadata",
+      "system": "unknown"
+    },
+    {
+      "routeKey": "rocklands-south-africa:cattle-rustler-rocklands",
+      "originalGrade": "classic boulder metadata",
+      "system": "unknown"
+    }
+  ],
+  "nextPublicComponents": [
+    "src/app/destinations/[slug]/routes/[routeId]/page.tsx",
+    "src/components/RouteHighlightCard.tsx",
+    "src/components/RouteRecordCard.tsx",
+    "src/components/RouteIndex.tsx",
+    "src/app/destinations/[slug]/page.tsx",
+    "src/components/DestinationDnaMatch.tsx"
+  ]
+}

@@ -31,7 +31,7 @@ for (const { destination, entry } of catalogEntries) {
   if (entry.sourceRecords.length === 0) errors.push(`Missing sources: ${key}`);
 
   if (entry.kind === "route") {
-    if (!entry.grade.original.trim()) errors.push(`Missing original grade: ${key}`);
+    if (!entry.grade.original.trim()) warnings.push(`Missing original grade: ${key}`);
     if (!entry.lengthOriginal?.trim()) {
       const message = `Missing original length: ${key}`;
       if (entry.legacy) errors.push(message);

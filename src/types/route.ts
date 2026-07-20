@@ -123,6 +123,8 @@ export type RouteSourceProvider =
   | "climbatlas"
   | "other";
 
+export type RouteSourcePurpose = "route" | "access" | "area" | "media";
+
 export type RouteSourceRecord = {
   provider: RouteSourceProvider;
   label: string;
@@ -136,6 +138,11 @@ export type RouteSourceRecord = {
   trustLevel: SourceTrustLevel;
   verifiedFields: string[];
   notes?: string;
+  /**
+   * Internal classification used before a source reaches presentation code.
+   * Older snapshots may omit it and are classified conservatively by adapters.
+   */
+  purpose?: RouteSourcePurpose;
 };
 
 export type RouteVerificationStatus =
@@ -160,7 +167,56 @@ export type RouteEditorial = {
   whyItStandsOut?: LocalizedText;
   bestForText?: LocalizedText;
   thingsToConsider?: LocalizedText[];
+  practiceFocus?: LocalizedText[];
+  decisionHint?: LocalizedText;
+  personalityTags?: string[];
+  historicalNotes?: LocalizedText;
+  notableAscents?: RouteEditorialNotableAscent[];
   legacyStatus?: RouteStatus;
+};
+
+export type RouteEditorialNotableAscent = {
+  climber: string;
+  note: LocalizedText;
+  sourceLabel: string;
+  sourceUrl: string;
+};
+
+export type RouteMediaRecord = {
+  src: string;
+  alt: string;
+  caption: string;
+  credit: string;
+  license: string;
+  sourceUrl: string;
+  kind: "route" | "area-context" | "destination-context";
+};
+
+export type RouteFactField =
+  | "name"
+  | "originalGrade"
+  | "gradeSystem"
+  | "climbingType"
+  | "sectorName"
+  | "lengthOriginal"
+  | "pitches";
+
+export type RouteFactConflictCandidate = {
+  sourceKey: string;
+  sourcePriority: number;
+  value: string | number;
+};
+
+export type RouteFactConflict = {
+  field: RouteFactField;
+  selected: RouteFactConflictCandidate;
+  candidates: RouteFactConflictCandidate[];
+  resolution: "source-priority";
+};
+
+export type RouteNormalizationMetadata = {
+  adapter: "legacy-route" | "openbeta" | "canonical-snapshot";
+  factConflicts: RouteFactConflict[];
 };
 
 export type RouteDnaDimension =
@@ -200,10 +256,12 @@ export type RouteRecord = {
   sourceRecords: RouteSourceRecord[];
   verification: RouteVerification;
   externalResources: ExternalResource[];
+  media?: RouteMediaRecord[];
+  normalization?: RouteNormalizationMetadata;
   createdAt?: string;
   updatedAt?: string;
-  // Temporary bridge for existing cards during RC-1/RC-2.
-  // Imported routes do not have a legacy display card.
+  // Temporary bridge retained until the RC-4 public renderer cutover.
+  // The ViewModel builder is forbidden from reading this field.
   legacy?: RouteHighlight;
 };
 

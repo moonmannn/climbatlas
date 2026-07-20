@@ -66,6 +66,19 @@ export function getAllRouteCatalogEntries(): RouteCatalogEntryWithDestination[] 
     const destinationsById = new Map(
       destinations.map((destination) => [destination.slug, destination])
     );
+    const missingImportedDestinations = importedOpenBetaRoutes.filter(
+      (route) => !destinationsById.has(route.destinationId)
+    );
+
+    if (missingImportedDestinations.length > 0) {
+      const routeKeys = missingImportedDestinations
+        .map((route) => `${route.destinationId}:${route.id}`)
+        .join(", ");
+      throw new Error(
+        `Imported routes reference missing destinations: ${routeKeys}`
+      );
+    }
+
     const importedEntries = importedOpenBetaRoutes.flatMap((route) => {
       const destination = destinationsById.get(route.destinationId);
       return destination ? [{ destination, entry: route }] : [];

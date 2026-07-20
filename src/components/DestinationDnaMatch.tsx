@@ -15,7 +15,7 @@ const ui = {
     eyebrow: "DNA preference match",
     title: "How well does this place fit you?",
     emptyBody:
-      "Discover how this destination matches your climbing style, travel preferences, and ideal crag atmosphere.",
+      "Complete Climbing DNA to see how this destination matches your preferred movement, atmosphere, commitment, and travel style.",
     cta: "Discover My Climbing DNA",
     yourMatch: "Your DNA preference match",
     why: "Why you match",
@@ -28,7 +28,7 @@ const ui = {
   zh: {
     eyebrow: "DNA 偏好匹配",
     title: "这个地方与你有多匹配？",
-    emptyBody: "看看这个目的地与你的攀岩风格、旅行偏好和理想岩场氛围有多契合。",
+    emptyBody: "完成 Climbing DNA 测试，看看这个目的地与你偏好的动作风格、岩场氛围、投入程度和旅行方式有多契合。",
     cta: "发现我的攀岩 DNA",
     yourMatch: "你的 DNA 偏好匹配",
     why: "为什么匹配",
@@ -53,12 +53,10 @@ export function DestinationDnaMatch({
 }) {
   const { locale } = useLanguage();
   const [scores, setScores] = useState<DnaVector | null>(null);
-  const [loaded, setLoaded] = useState(false);
   const text = ui[locale];
 
   useEffect(() => {
     setScores(loadDnaProfile()?.scores ?? null);
-    setLoaded(true);
   }, []);
 
   const match = useMemo<DnaDestinationMatch | null>(() => {
@@ -80,9 +78,7 @@ export function DestinationDnaMatch({
           </h2>
         </div>
 
-        {!loaded ? (
-          <div className="h-40 animate-pulse bg-sand/20" />
-        ) : match ? (
+        {match ? (
           <div>
             <div className="flex flex-wrap items-end justify-between gap-5 border-b border-brandforest/12 pb-6">
               <div>

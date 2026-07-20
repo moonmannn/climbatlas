@@ -1,18 +1,16 @@
 import { notFound, redirect } from "next/navigation";
 import { LocalizedText } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
-import { RouteHighlightCard } from "@/components/RouteHighlightCard";
-import { RouteRecordCard } from "@/components/RouteRecordCard";
+import { LocalizedRouteDetailView } from "@/components/RouteDetailView";
 import { RouteDnaMatchPanel } from "@/components/RouteDnaMatchPanel";
 import { UserRouteControls } from "@/components/UserRouteControls";
 import { getDestinationBySlug } from "@/data/destinations";
 import { getRouteAliasParams, resolveRouteId } from "@/lib/routeAliases";
 import {
   findPublicRouteWithDestination,
-  getPublicRouteRecords,
-  hasPublishedRouteEditorial,
-  toPublicRouteFacts
+  getPublicRouteRecords
 } from "@/lib/routes/public-routes";
+import { buildRouteDetailViewModel } from "@/lib/routes/presentation/route-detail-view-model";
 import { buildRouteDnaSnapshot } from "@/lib/routes/route-dna";
 import { getRouteDifficulty } from "@/lib/routes/route-explorer";
 
@@ -64,10 +62,10 @@ export default async function RoutePage({ params }: RoutePageProps) {
   }
 
   const entry = item.route;
-  const legacyRoute = entry.legacy;
-  const hasPublishedEditorial =
-    hasPublishedRouteEditorial(entry) && legacyRoute?.status !== "metadata";
-  const publicRouteFacts = toPublicRouteFacts(entry);
+  const routeViewModels = {
+    en: buildRouteDetailViewModel(entry, { locale: "en", destination }),
+    zh: buildRouteDetailViewModel(entry, { locale: "zh", destination })
+  };
   const routeDnaSnapshot = buildRouteDnaSnapshot(
     entry,
     getRouteDifficulty(entry)?.band ?? "unknown"
@@ -105,11 +103,7 @@ export default async function RoutePage({ params }: RoutePageProps) {
               routeName={entry.name}
               snapshot={routeDnaSnapshot}
             />
-            {legacyRoute && hasPublishedEditorial ? (
-              <RouteHighlightCard route={legacyRoute} />
-            ) : (
-              <RouteRecordCard route={publicRouteFacts} />
-            )}
+            <LocalizedRouteDetailView viewModels={routeViewModels} />
           </div>
         </section>
       </div>

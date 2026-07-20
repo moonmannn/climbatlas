@@ -8,10 +8,11 @@ import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
 import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
 import { getDestinationLocalizedContent } from "@/data/localizedContent";
-import { formatGradeSystem } from "@/lib/formatters";
+import { formatClimbingType, formatGradeSystem } from "@/lib/formatters";
 import { buildDifficultySystemSummaries } from "@/lib/routes/grade-filter-options";
 import { getPublicRoutesForDestination } from "@/lib/routes/public-routes";
 import { toRouteExplorerItem } from "@/lib/routes/route-explorer";
+import type { ExternalResourceType } from "@/types/destination";
 
 type DestinationPageProps = {
   params: Promise<{
@@ -88,7 +89,10 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                     className="rounded-full bg-forest px-3 py-1 text-sm font-bold text-parchment"
                     key={type}
                   >
-                    {type}
+                    <LocalizedText
+                      en={formatClimbingType(type, "en")}
+                      zh={formatClimbingType(type, "zh")}
+                    />
                   </span>
                 ))}
                 {destination.bestSeasons.map((season) => (
@@ -104,7 +108,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
 
             <div className="rounded-md border border-ridge/30 bg-white/50 p-5">
               <p className="text-xs font-black uppercase tracking-[0.2em] text-ridge">
-                <LocalizedText en="Approach" zh="适合程度" />
+                <LocalizedText en="Experience fit" zh="经验参考" />
               </p>
               <p className="mt-3 text-2xl font-black text-forest">
                 {destination.beginnerFriendly ? (
@@ -337,7 +341,10 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                           target="_blank"
                         >
                           <span className="text-[11px] font-black uppercase text-ridge">
-                            {resource.type}
+                            <LocalizedText
+                              en={destinationResourceTypeLabel(resource.type).en}
+                              zh={destinationResourceTypeLabel(resource.type).zh}
+                            />
                           </span>
                           <span className="mt-1 block text-sm font-black text-forest underline decoration-forest/35 underline-offset-4">
                             {resource.title}
@@ -388,4 +395,16 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
       </div>
     </main>
   );
+}
+
+function destinationResourceTypeLabel(type: ExternalResourceType) {
+  const labels: Record<ExternalResourceType, { en: string; zh: string }> = {
+    official: { en: "Official information", zh: "官方信息" },
+    "history/article": { en: "History and context", zh: "历史与背景" },
+    "route-database": { en: "Route database", zh: "线路数据库" },
+    "guidebook/resource": { en: "Guidebook resource", zh: "路书资源" },
+    "video/beta": { en: "External video", zh: "外部视频" }
+  };
+
+  return labels[type];
 }

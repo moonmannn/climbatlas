@@ -80,6 +80,26 @@ export function loadRouteProject(root = process.cwd()) {
     ),
     importMergeModule: require(
       path.join(root, "src", "lib", "routes", "import", "merge-route-import.ts")
+    ),
+    routeDetailViewModelModule: require(
+      path.join(
+        root,
+        "src",
+        "lib",
+        "routes",
+        "presentation",
+        "route-detail-view-model.ts"
+      )
+    ),
+    routeFactResolutionModule: require(
+      path.join(
+        root,
+        "src",
+        "lib",
+        "routes",
+        "adapters",
+        "route-fact-resolution.ts"
+      )
     )
   };
 }

@@ -18,11 +18,13 @@ import {
 import { getRouteDnaMatch } from "@/lib/routes/route-dna";
 import {
   buildGradeFilterSet,
+  type GradeFilterGroup,
   routeMatchesGradeOption
 } from "@/lib/routes/grade-filter-options";
 import { compareRouteDifficulty } from "@/lib/routes/route-explorer";
 import type { SavedRouteStatus } from "@/lib/supabaseClient";
 import type { DnaVector } from "@/types/climbingDna";
+import type { GradeSystem } from "@/types/route";
 import type { RouteDifficultyBand, RouteExplorerItem } from "@/types/route-explorer";
 
 type RouteIndexProps = {
@@ -37,6 +39,11 @@ type SortOption =
   | "easy-hard"
   | "hard-easy"
   | "name";
+
+type GradeFilterState = {
+  system?: GradeSystem;
+  selectedGrades: string[];
+};
 
 const pageSize = 24;
 const difficultyBandOrder: RouteDifficultyBand[] = [
@@ -90,7 +97,9 @@ export function RouteIndex({
   const [difficultyFilter, setDifficultyFilter] = useState<
     "all" | RouteDifficultyBand
   >("all");
-  const [gradeFilter, setGradeFilter] = useState("all");
+  const [gradeFilter, setGradeFilter] = useState<GradeFilterState>({
+    selectedGrades: []
+  });
   const [styleFilter, setStyleFilter] = useState("all");
   const [personalFilter, setPersonalFilter] = useState<
     "all" | SavedRouteStatus
@@ -99,9 +108,9 @@ export function RouteIndex({
   const [sortBy, setSortBy] = useState<SortOption>("recommended");
   const [visibleCount, setVisibleCount] = useState(pageSize);
   const [dnaScores, setDnaScores] = useState<DnaVector | null>(null);
-  const [dnaLoaded, setDnaLoaded] = useState(false);
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const filterToggleRef = useRef<HTMLButtonElement>(null);
+  const urlFiltersInitializedRef = useRef(false);
 
   useEffect(() => {
     const profile = loadDnaProfile();
@@ -109,7 +118,6 @@ export function RouteIndex({
       setDnaScores(profile.scores);
       setSortBy((current) => current === "recommended" ? "dna-match" : current);
     }
-    setDnaLoaded(true);
   }, []);
 
   const types = useMemo(
@@ -137,11 +145,48 @@ export function RouteIndex({
   );
   const gradeFilterSet = useMemo(() => buildGradeFilterSet(routes), [routes]);
   const primaryGradeSystem = gradeFilterSet.primarySystem;
-  const gradeOptions = gradeFilterSet.options;
-  const selectedGrade = useMemo(
-    () => gradeOptions.find((option) => option.value === gradeFilter),
-    [gradeFilter, gradeOptions]
+  const activeGradeSystem = gradeFilter.system ?? primaryGradeSystem;
+  const activeGradeGroup = gradeFilterSet.groups.find(
+    (group) => group.system === activeGradeSystem
   );
+  const selectedGradeOptions = useMemo(
+    () =>
+      (activeGradeGroup?.options ?? []).filter((option) =>
+        gradeFilter.selectedGrades.includes(option.value)
+      ),
+    [activeGradeGroup, gradeFilter.selectedGrades]
+  );
+
+  useEffect(() => {
+    function restoreFiltersFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const requestedType = params.get("type");
+      setTypeFilter(
+        requestedType && types.some((type) => type === requestedType)
+          ? requestedType
+          : "all"
+      );
+
+      const requestedSystem = params.get("gradeSystem") as GradeSystem | null;
+      const group = gradeFilterSet.groups.find(
+        (candidate) => candidate.system === requestedSystem
+      );
+      const requestedGrades = (params.get("grades") ?? "")
+        .split(",")
+        .map((value) => value.trim())
+        .filter(Boolean);
+      const validGrades = new Set(group?.options.map((option) => option.value));
+      setGradeFilter({
+        system: group?.system ?? primaryGradeSystem,
+        selectedGrades: requestedGrades.filter((grade) => validGrades.has(grade))
+      });
+    }
+
+    restoreFiltersFromUrl();
+    urlFiltersInitializedRef.current = true;
+    window.addEventListener("popstate", restoreFiltersFromUrl);
+    return () => window.removeEventListener("popstate", restoreFiltersFromUrl);
+  }, [gradeFilterSet.groups, primaryGradeSystem, types]);
   const dnaMatches = useMemo(
     () =>
       new Map(
@@ -175,10 +220,10 @@ export function RouteIndex({
         (typeFilter === "all" || route.climbingType === typeFilter) &&
         (difficultyFilter === "all" ||
           route.difficultyBands.includes(difficultyFilter)) &&
-        (gradeFilter === "all" || Boolean(
-          selectedGrade &&
-          routeMatchesGradeOption(route, selectedGrade)
-        )) &&
+        (selectedGradeOptions.length === 0 ||
+          selectedGradeOptions.some((grade) =>
+            routeMatchesGradeOption(route, grade)
+          )) &&
         (styleFilter === "all" || route.styleTags.includes(styleFilter)) &&
         (sectorFilter === "all" || route.sectorName === sectorFilter) &&
         (personalFilter === "all" || personalStatus === personalFilter) &&
@@ -215,12 +260,12 @@ export function RouteIndex({
     dnaMatches,
     difficultyFilter,
     getSavedStatus,
-    gradeFilter,
+    gradeFilter.selectedGrades,
     locale,
     personalFilter,
     query,
     routes,
-    selectedGrade,
+    selectedGradeOptions,
     sectorFilter,
     sortBy,
     styleFilter,
@@ -231,7 +276,7 @@ export function RouteIndex({
     setVisibleCount(pageSize);
   }, [
     difficultyFilter,
-    gradeFilter,
+    gradeFilter.selectedGrades,
     personalFilter,
     query,
     sectorFilter,
@@ -248,7 +293,7 @@ export function RouteIndex({
     query.trim() ? query : "",
     typeFilter !== "all" ? typeFilter : "",
     difficultyFilter !== "all" ? difficultyFilter : "",
-    gradeFilter !== "all" ? gradeFilter : "",
+    gradeFilter.selectedGrades.length > 0 ? gradeFilter.selectedGrades : "",
     styleFilter !== "all" ? styleFilter : "",
     sectorFilter !== "all" ? sectorFilter : "",
     personalFilter !== "all" ? personalFilter : ""
@@ -258,11 +303,73 @@ export function RouteIndex({
     setQuery("");
     setTypeFilter("all");
     setDifficultyFilter("all");
-    setGradeFilter("all");
+    const nextGradeFilter = {
+      system: primaryGradeSystem,
+      selectedGrades: []
+    };
+    setGradeFilter(nextGradeFilter);
     setStyleFilter("all");
     setPersonalFilter("all");
     setSectorFilter("all");
     setSortBy(dnaScores ? "dna-match" : "recommended");
+    writeRouteFilterUrl("all", nextGradeFilter);
+  }
+
+  function writeRouteFilterUrl(
+    nextType: string,
+    nextGradeFilter: GradeFilterState
+  ) {
+    if (!urlFiltersInitializedRef.current) return;
+    const url = new URL(window.location.href);
+    if (nextType === "all") url.searchParams.delete("type");
+    else url.searchParams.set("type", nextType);
+
+    if (nextGradeFilter.system && nextGradeFilter.selectedGrades.length > 0) {
+      url.searchParams.set("gradeSystem", nextGradeFilter.system);
+      url.searchParams.set("grades", nextGradeFilter.selectedGrades.join(","));
+    } else {
+      url.searchParams.delete("gradeSystem");
+      url.searchParams.delete("grades");
+    }
+    window.history.pushState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  }
+
+  function updateTypeFilter(value: string) {
+    setTypeFilter(value);
+    writeRouteFilterUrl(value, gradeFilter);
+  }
+
+  function updateGradeSystem(system: GradeSystem) {
+    const nextGradeFilter = { system, selectedGrades: [] };
+    setGradeFilter(nextGradeFilter);
+    writeRouteFilterUrl(typeFilter, nextGradeFilter);
+  }
+
+  function toggleGrade(value: string) {
+    const selectedGrades = gradeFilter.selectedGrades.includes(value)
+      ? gradeFilter.selectedGrades.filter((grade) => grade !== value)
+      : [...gradeFilter.selectedGrades, value];
+    const nextGradeFilter = {
+      system: activeGradeSystem,
+      selectedGrades
+    };
+    setGradeFilter(nextGradeFilter);
+    writeRouteFilterUrl(typeFilter, nextGradeFilter);
+  }
+
+  function toggleGradeFamily(values: string[]) {
+    const allSelected = values.every((value) =>
+      gradeFilter.selectedGrades.includes(value)
+    );
+    const selectedGrades = allSelected
+      ? gradeFilter.selectedGrades.filter((value) => !values.includes(value))
+      : Array.from(new Set([...gradeFilter.selectedGrades, ...values]));
+    const nextGradeFilter = {
+      system: activeGradeSystem,
+      selectedGrades
+    };
+    setGradeFilter(nextGradeFilter);
+    writeRouteFilterUrl(typeFilter, nextGradeFilter);
   }
 
   function openFilters() {
@@ -293,8 +400,7 @@ export function RouteIndex({
               <span>{personalRoutes.length} {isZh ? "条个人记录" : "personal saves"}</span>
             )}
           </div>
-          {dnaLoaded && (
-            dnaScores ? (
+          {dnaScores ? (
               <p className="mt-4 inline-flex border-l-2 border-terracotta pl-3 text-sm font-semibold text-brandforest">
                 {isZh
                   ? "已按你的 Climbing DNA 偏好匹配优先排列。分数只代表偏好，不代表能力或安全判断。"
@@ -304,8 +410,7 @@ export function RouteIndex({
               <Link className="text-link mt-4 inline-flex" href="/climbing-dna">
                 {isZh ? "完成 DNA 测试，个性化路线顺序" : "Take the DNA quiz to personalize route order"} →
               </Link>
-            )
-          )}
+            )}
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
@@ -363,7 +468,7 @@ export function RouteIndex({
         <FilterSelect
           id="route-explorer-type"
           label={isZh ? "类型" : "Type"}
-          onChange={setTypeFilter}
+          onChange={updateTypeFilter}
           value={typeFilter}
         >
           <option value="all">{isZh ? "全部类型" : "All types"}</option>
@@ -402,24 +507,17 @@ export function RouteIndex({
             ))}
           </FilterSelect>
         )}
-        {gradeOptions.length > 0 && primaryGradeSystem && (
-          <FilterSelect
-            id="route-explorer-grade"
-            label={`${isZh ? "等级范围" : "Grade range"} · ${formatGradeSystem(primaryGradeSystem, locale)}`}
-            onChange={setGradeFilter}
-            value={gradeFilter}
-          >
-            <option value="all">{isZh ? "全部可比较等级" : "All comparable grades"}</option>
-            {gradeOptions.map((grade) => (
-              <option
-                aria-label={`${grade.label}, ${formatGradeSystem(grade.system, locale)}`}
-                key={grade.value}
-                value={grade.value}
-              >
-                {grade.label}
-              </option>
-            ))}
-          </FilterSelect>
+        {gradeFilterSet.groups.length > 0 && activeGradeGroup && (
+          <GradeFilterControls
+            activeGroup={activeGradeGroup}
+            groups={gradeFilterSet.groups}
+            isZh={isZh}
+            locale={locale}
+            onGradeFamilyToggle={toggleGradeFamily}
+            onGradeSystemChange={updateGradeSystem}
+            onGradeToggle={toggleGrade}
+            selectedGrades={gradeFilter.selectedGrades}
+          />
         )}
         {sectors.length > 0 && (
           <FilterSelect
@@ -607,5 +705,140 @@ function FilterSelect({
         {children}
       </select>
     </label>
+  );
+}
+
+function GradeFilterControls({
+  activeGroup,
+  groups,
+  isZh,
+  locale,
+  onGradeFamilyToggle,
+  onGradeSystemChange,
+  onGradeToggle,
+  selectedGrades
+}: {
+  activeGroup: GradeFilterGroup;
+  groups: GradeFilterGroup[];
+  isZh: boolean;
+  locale: "en" | "zh";
+  onGradeFamilyToggle: (values: string[]) => void;
+  onGradeSystemChange: (system: GradeSystem) => void;
+  onGradeToggle: (value: string) => void;
+  selectedGrades: string[];
+}) {
+  const families = buildGradeFamilies(activeGroup);
+
+  return (
+    <div className="sm:col-span-2 lg:col-span-4">
+      <fieldset>
+        <legend className="route-filter-label">
+          {isZh ? "难度体系" : "Grade system"}
+        </legend>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {groups.map((group) => {
+            const inputId = `grade-system-${group.system}`;
+            return (
+              <label
+                className={`cursor-pointer border px-3 py-2 text-xs font-semibold transition ${
+                  group.system === activeGroup.system
+                    ? "border-brandforest bg-brandforest text-cream"
+                    : "border-brandforest/20 text-brandforest hover:border-brandforest/45"
+                }`}
+                htmlFor={inputId}
+                key={group.system}
+              >
+                <input
+                  checked={group.system === activeGroup.system}
+                  className="sr-only"
+                  id={inputId}
+                  name="route-grade-system"
+                  onChange={() => onGradeSystemChange(group.system)}
+                  type="radio"
+                  value={group.system}
+                />
+                {formatGradeSystem(group.system, locale)} ({group.routeCount})
+              </label>
+            );
+          })}
+        </div>
+      </fieldset>
+
+      <fieldset className="mt-4 border-t border-brandforest/10 pt-4">
+        <legend className="route-filter-label">
+          {isZh
+            ? `选择等级 · ${formatGradeSystem(activeGroup.system, locale)}`
+            : `Choose grades · ${formatGradeSystem(activeGroup.system, locale)}`}
+        </legend>
+        {families.length > 0 && (
+          <div className="mt-3 flex flex-wrap gap-2" aria-label={isZh ? "快速选择等级组" : "Grade family shortcuts"}>
+            {families.map((family) => {
+              const allSelected = family.values.every((value) =>
+                selectedGrades.includes(value)
+              );
+              return (
+                <button
+                  aria-pressed={allSelected}
+                  className={`border px-3 py-1.5 text-xs font-semibold ${
+                    allSelected
+                      ? "border-terracotta bg-terracotta text-cream"
+                      : "border-terracotta/30 text-terracotta"
+                  }`}
+                  key={family.label}
+                  onClick={() => onGradeFamilyToggle(family.values)}
+                  type="button"
+                >
+                  {family.label} {isZh ? "全部" : "all"}
+                </button>
+              );
+            })}
+          </div>
+        )}
+        <div className="mt-3 flex flex-wrap gap-2">
+          {activeGroup.options.map((grade, index) => {
+            const checked = selectedGrades.includes(grade.value);
+            const inputId = `route-grade-${activeGroup.system}-${index}`;
+            const accessibleName = `${grade.label}, ${formatGradeSystem(grade.system, locale)}`;
+            return (
+              <label
+                className={`cursor-pointer border px-3 py-2 text-xs font-semibold transition ${
+                  checked
+                    ? "border-brandforest bg-brandforest text-cream"
+                    : "border-brandforest/20 text-brandforest hover:border-brandforest/45"
+                }`}
+                htmlFor={inputId}
+                key={`${grade.system}-${grade.min}-${grade.max}-${grade.label}`}
+              >
+                <input
+                  aria-label={accessibleName}
+                  checked={checked}
+                  className="sr-only"
+                  id={inputId}
+                  onChange={() => onGradeToggle(grade.value)}
+                  type="checkbox"
+                  value={grade.value}
+                />
+                <span aria-hidden="true">{grade.label}</span>
+              </label>
+            );
+          })}
+        </div>
+      </fieldset>
+    </div>
+  );
+}
+
+function buildGradeFamilies(group: GradeFilterGroup) {
+  if (group.system !== "yds") return [];
+  const families = new Map<string, string[]>();
+  for (const option of group.options) {
+    const family = option.label.match(/^(5\.\d{1,2})/)?.[1];
+    if (!family) continue;
+    const values = families.get(family) ?? [];
+    values.push(option.value);
+    families.set(family, values);
+  }
+  return Array.from(families, ([label, values]) => ({ label, values })).filter(
+    (family) => family.values.length > 1
   );
 }

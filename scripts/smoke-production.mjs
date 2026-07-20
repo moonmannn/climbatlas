@@ -5,7 +5,10 @@ import { loadRouteProject } from "./routes/load-route-project.mjs";
 
 const root = process.cwd();
 const port = Number(process.env.CLIMBATLAS_SMOKE_PORT ?? 3200);
-const baseUrl = `http://127.0.0.1:${port}`;
+const remoteBaseUrl = readArgument("--base-url");
+const baseUrl = remoteBaseUrl
+  ? remoteBaseUrl.replace(/\/$/, "")
+  : `http://127.0.0.1:${port}`;
 const nextBin = path.join(root, "node_modules", "next", "dist", "bin", "next");
 const { destinationsModule, publicRoutesModule } = loadRouteProject(root);
 const publicRoutes = publicRoutesModule.getPublicRouteRecords();
@@ -42,26 +45,29 @@ const forbiddenPublicText = [
   "needs upgrade",
   "imported index",
   "editorial draft",
-  "metadata-only"
+  "metadata-only",
+  "source-backed"
 ];
 let serverOutput = "";
 
-const server = spawn(process.execPath, [nextBin, "start", "-p", String(port)], {
-  cwd: root,
-  env: process.env,
-  stdio: ["ignore", "pipe", "pipe"],
-  windowsHide: true
-});
+const server = remoteBaseUrl
+  ? undefined
+  : spawn(process.execPath, [nextBin, "start", "-p", String(port)], {
+      cwd: root,
+      env: process.env,
+      stdio: ["ignore", "pipe", "pipe"],
+      windowsHide: true
+    });
 
-server.stdout.on("data", (chunk) => {
+server?.stdout.on("data", (chunk) => {
   serverOutput += chunk.toString();
 });
-server.stderr.on("data", (chunk) => {
+server?.stderr.on("data", (chunk) => {
   serverOutput += chunk.toString();
 });
 
 try {
-  await waitForServer();
+  if (server) await waitForServer();
 
   for (const target of targets) {
     const response = await fetchWithTimeout(`${baseUrl}${target.path}`);
@@ -91,12 +97,12 @@ try {
   }
 
   console.log(
-    `Production smoke passed: ${targets.length} pages checked ` +
+    `${remoteBaseUrl ? "Deployment" : "Production"} smoke passed: ${targets.length} pages checked ` +
       `(${destinationsModule.destinations.length} destinations, ` +
-      `${representativeRoutes.length} representative routes).`
+      `${representativeRoutes.length} representative routes) at ${baseUrl}.`
   );
 } finally {
-  server.kill();
+  server?.kill();
 }
 
 async function waitForServer() {
@@ -116,6 +122,14 @@ async function waitForServer() {
   }
 
   throw new Error(`Production server did not become ready.\n${serverOutput}`);
+}
+
+function readArgument(name) {
+  const index = process.argv.indexOf(name);
+  if (index === -1) return undefined;
+  const value = process.argv[index + 1]?.trim();
+  if (!value) throw new Error(`${name} requires a value.`);
+  return value;
 }
 
 async function fetchWithTimeout(url, timeoutMs = 10000) {
