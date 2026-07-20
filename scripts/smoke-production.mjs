@@ -9,6 +9,9 @@ const remoteBaseUrl = readArgument("--base-url");
 const baseUrl = remoteBaseUrl
   ? remoteBaseUrl.replace(/\/$/, "")
   : `http://127.0.0.1:${port}`;
+const requestTimeoutMs = Number(
+  process.env.CLIMBATLAS_SMOKE_TIMEOUT_MS ?? (remoteBaseUrl ? 30000 : 10000)
+);
 const nextBin = path.join(root, "node_modules", "next", "dist", "bin", "next");
 const { destinationsModule, publicRoutesModule } = loadRouteProject(root);
 const publicRoutes = publicRoutesModule.getPublicRouteRecords();
@@ -70,7 +73,15 @@ try {
   if (server) await waitForServer();
 
   for (const target of targets) {
-    const response = await fetchWithTimeout(`${baseUrl}${target.path}`);
+    const targetUrl = `${baseUrl}${target.path}`;
+    let response;
+    try {
+      response = await fetchWithTimeout(targetUrl, requestTimeoutMs);
+    } catch (error) {
+      throw new Error(
+        `${target.path} could not be fetched from ${baseUrl}: ${error instanceof Error ? error.message : String(error)}`
+      );
+    }
     if (!response.ok) {
       throw new Error(`${target.path} returned HTTP ${response.status}.`);
     }
