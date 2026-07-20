@@ -45,8 +45,7 @@ const committingRoute = route({
   climbingType: "multi-pitch",
   grade: { original: "5.12a", system: "yds", detectedSystems: ["yds"] },
   lengthMeters: 220,
-  lengthOriginal: "220 m",
-  pitches: 7
+  pitchCount: 7
 });
 const comfortableRoute = route({
   id: "comfortable-route",

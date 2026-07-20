@@ -39,6 +39,11 @@ export const gradeSystems = [
 export type GradeSystem = (typeof gradeSystems)[number];
 
 export type RouteGradeParseStatus = "parsed" | "partial" | "unparsed";
+export type GradeComparisonStatus =
+  | "comparable"
+  | "historical"
+  | "proposed"
+  | "ambiguous";
 export type RouteGradeFilterBand =
   | "intro"
   | "intermediate"
@@ -48,6 +53,7 @@ export type RouteGradeFilterBand =
 
 export type ParsedRouteGrade = {
   original: string;
+  comparisonStatus: GradeComparisonStatus;
   detectedSystems: GradeSystem[];
   primarySystem?: GradeSystem;
   primaryDisplay?: string;
@@ -123,7 +129,13 @@ export type RouteSourceProvider =
   | "climbatlas"
   | "other";
 
-export type RouteSourcePurpose = "route" | "access" | "area" | "media";
+export type RouteSourcePurpose =
+  | "route-reference"
+  | "access"
+  | "destination-context"
+  | "history"
+  | "media"
+  | "unknown";
 
 export type RouteSourceRecord = {
   provider: RouteSourceProvider;
@@ -138,11 +150,7 @@ export type RouteSourceRecord = {
   trustLevel: SourceTrustLevel;
   verifiedFields: string[];
   notes?: string;
-  /**
-   * Internal classification used before a source reaches presentation code.
-   * Older snapshots may omit it and are classified conservatively by adapters.
-   */
-  purpose?: RouteSourcePurpose;
+  purpose: RouteSourcePurpose;
 };
 
 export type RouteVerificationStatus =
@@ -192,14 +200,27 @@ export type RouteMediaRecord = {
   kind: "route" | "area-context" | "destination-context";
 };
 
+export const routeFormats = [
+  "boulder-problem",
+  "single-pitch",
+  "multi-pitch",
+  "big-wall",
+  "alpine-objective"
+] as const;
+
+export type RouteFormat = (typeof routeFormats)[number];
+export type RouteFactQualifier = "approximate";
+
 export type RouteFactField =
   | "name"
   | "originalGrade"
   | "gradeSystem"
   | "climbingType"
   | "sectorName"
-  | "lengthOriginal"
-  | "pitches";
+  | "lengthMeters"
+  | "lengthFeet"
+  | "pitchCount"
+  | "routeFormat";
 
 export type RouteFactConflictCandidate = {
   sourceKey: string;
@@ -217,6 +238,11 @@ export type RouteFactConflict = {
 export type RouteNormalizationMetadata = {
   adapter: "legacy-route" | "openbeta" | "canonical-snapshot";
   factConflicts: RouteFactConflict[];
+  omittedLegacyFacts?: Array<{
+    field: "length" | "source-purpose";
+    rawValue: string;
+    reason: string;
+  }>;
 };
 
 export type RouteDnaDimension =
@@ -246,9 +272,12 @@ export type RouteRecord = {
   cragName?: string;
   climbingType: RouteClimbingType;
   grade: RouteGrade;
-  lengthOriginal?: string;
   lengthMeters?: number;
-  pitches?: number;
+  lengthFeet?: number;
+  lengthQualifier?: RouteFactQualifier;
+  pitchCount?: number;
+  pitchQualifier?: RouteFactQualifier;
+  routeFormat?: RouteFormat;
   style: RouteStyleProfile;
   experienceTags: RouteExperienceTag[];
   editorial: RouteEditorial;

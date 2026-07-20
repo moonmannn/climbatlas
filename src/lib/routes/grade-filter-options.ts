@@ -114,6 +114,7 @@ export function routeMatchesGradeOption(
 
 function isComparableRoute(route: RouteExplorerItem) {
   return (
+    route.gradeComparisonStatus === "comparable" &&
     route.gradeRangeMin !== undefined &&
     route.gradeRangeMax !== undefined &&
     !excludedComparableSystems.has(route.gradeSystem)

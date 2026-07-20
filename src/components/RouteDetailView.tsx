@@ -77,6 +77,9 @@ export function RouteDetailView({
             {facts.pitchesLabel && (
               <Fact label={isZh ? "段数" : "Pitches"} value={facts.pitchesLabel} />
             )}
+            {facts.routeFormatLabel && (
+              <Fact label={isZh ? "线路形式" : "Route format"} value={facts.routeFormatLabel} />
+            )}
             {identity.sectorName ? (
               <Fact label={isZh ? "分区" : "Sector"} value={identity.sectorName} />
             ) : identity.areaName ? (
@@ -110,12 +113,6 @@ export function RouteDetailView({
           <h2 className="display-serif mt-3 text-3xl font-medium text-brandforest">
             {isZh ? "核对线路资料" : "Check the route sources"}
           </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-6 text-charcoal/62">
-            {isZh
-              ? "线路事实来源与当地访问资料会分开显示。ClimbAtlas 只整理可追溯链接；具体 beta 与当地指引请查看原始资料。"
-              : "Route facts are separated from local access information. ClimbAtlas organizes traceable links; consult the original resources for beta and local guidance."}
-          </p>
-
           <SourceSection
             emptyText={isZh ? "目前没有可用的单条线路来源。" : "No route-specific source is available yet."}
             entries={viewModel.routeSources}
@@ -126,6 +123,17 @@ export function RouteDetailView({
               entries={viewModel.accessSources}
               heading={isZh ? "访问与当地信息" : "Access information"}
             />
+          )}
+          {viewModel.contextSources.length > 0 && (
+            <details className="mt-8 border-y border-brandforest/15 py-4">
+              <summary className="cursor-pointer text-sm font-semibold text-brandforest">
+                {isZh ? "背景参考" : "Context references"}
+              </summary>
+              <SourceSection
+                entries={viewModel.contextSources}
+                heading={isZh ? "目的地与历史背景" : "Destination and historical context"}
+              />
+            </details>
           )}
           <ResourceSection
             heading={isZh ? "线路外部资料" : "Route resources"}
@@ -139,6 +147,16 @@ export function RouteDetailView({
             heading={isZh ? "补充阅读" : "Further reading"}
             resources={supplementalResources}
           />
+          <details className="mt-8 border-y border-brandforest/15 py-4">
+            <summary className="cursor-pointer text-sm font-semibold text-brandforest">
+              {isZh ? "来源说明" : "Source policy"}
+            </summary>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-charcoal/62">
+              {isZh
+                ? "线路事实、通行资料和背景参考按用途分开显示。ClimbAtlas 不复制外部 beta、topo、保护说明、进出场信息、评论或评分；出行前请查看最新原始资料。"
+                : "Route references, access information, and context are grouped by purpose. ClimbAtlas does not reproduce external beta, topos, protection details, approaches, descents, comments, or ratings; check current original resources before a trip."}
+            </p>
+          </details>
         </section>
       </div>
 

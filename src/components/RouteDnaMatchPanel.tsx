@@ -17,7 +17,7 @@ const inputLabels = {
     climbingType: "climbing type",
     originalGrade: "original grade",
     lengthMeters: "recorded length",
-    pitches: "pitch count",
+    pitchCount: "pitch count",
     controlledTags: "recorded route characteristics",
     dnaProfile: "reviewed route profile"
   },
@@ -25,7 +25,7 @@ const inputLabels = {
     climbingType: "攀岩类型",
     originalGrade: "原始等级",
     lengthMeters: "记录长度",
-    pitches: "段数",
+    pitchCount: "段数",
     controlledTags: "已记录的线路特征",
     dnaProfile: "已审核的线路画像"
   }

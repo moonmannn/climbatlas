@@ -12,6 +12,7 @@ const {
   publicRoutesModule,
   routeDetailViewModelModule,
   routeFactResolutionModule,
+  routeFactNormalizationModule,
   routesModule
 } = loadRouteProject(root);
 
@@ -21,6 +22,7 @@ const {
   RouteViewModelBuildError
 } = routeDetailViewModelModule;
 const { resolveRouteFactCandidates } = routeFactResolutionModule;
+const { normalizeLegacyRouteFacts } = routeFactNormalizationModule;
 const destinations = destinationsModule.destinations;
 const destinationById = new Map(
   destinations.map((destination) => [destination.slug, destination])
@@ -35,6 +37,7 @@ const audit = auditModule.buildRouteAuditReport(
 
 const failures = [];
 const invalidMedia = [];
+const unknownSources = [];
 let duplicateSourcesRemoved = 0;
 let duplicateResourcesRemoved = 0;
 const afterCounts = new Map();
@@ -58,6 +61,12 @@ for (const { destination, route } of publicRoutes) {
       ...english.diagnostics.invalidMedia.map((issue) => ({
         routeKey: `${destination.slug}:${route.id}`,
         ...issue
+      }))
+    );
+    unknownSources.push(
+      ...english.diagnostics.unknownSources.map((source) => ({
+        routeKey: `${destination.slug}:${route.id}`,
+        ...source
       }))
     );
     afterCounts.set(destination.slug, (afterCounts.get(destination.slug) ?? 0) + 1);
@@ -111,7 +120,13 @@ for (const { destination, route } of publicRoutes) {
   assert.equal(route.destinationId, destination.slug);
   assert.equal(route.grade.original, legacy.grade);
   assert.equal(route.climbingType, legacy.type);
-  assert.equal(route.lengthOriginal, legacy.length?.trim() || undefined);
+  const expectedFacts = normalizeLegacyRouteFacts({ rawLength: legacy.length });
+  assert.equal(route.lengthMeters, expectedFacts.lengthMeters);
+  assert.equal(route.lengthFeet, expectedFacts.lengthFeet);
+  assert.equal(route.lengthQualifier, expectedFacts.lengthQualifier);
+  assert.equal(route.pitchCount, expectedFacts.pitchCount);
+  assert.equal(route.pitchQualifier, expectedFacts.pitchQualifier);
+  assert.equal(route.routeFormat, expectedFacts.routeFormat);
   assert.equal(route.sectorName, legacy.sector?.trim() || undefined);
   assert.equal((route.media ?? []).length, legacy.images.length);
   assert.equal(route.editorial.summary?.en, legacy.summary);
@@ -139,11 +154,16 @@ const optionalFactsRoute = {
     rangeMax: undefined,
     sortValue: undefined,
     filterBands: [],
+    comparisonStatus: "ambiguous",
     parseStatus: "unparsed"
   },
   sectorName: undefined,
-  lengthOriginal: undefined,
-  pitches: undefined,
+  lengthMeters: undefined,
+  lengthFeet: undefined,
+  lengthQualifier: undefined,
+  pitchCount: undefined,
+  pitchQualifier: undefined,
+  routeFormat: undefined,
   media: undefined
 };
 const optionalFactsViewModel = buildRouteDetailViewModel(optionalFactsRoute, {
@@ -211,14 +231,14 @@ const sourceDedupeRoute = {
       ...sample.route.sourceRecords[0],
       provider: "other",
       externalId: undefined,
-      purpose: "route",
+      purpose: "route-reference",
       sourceUrl: "https://www.example.com/route/123/?utm_source=test"
     },
     {
       ...sample.route.sourceRecords[0],
       provider: "other",
       externalId: undefined,
-      purpose: "route",
+      purpose: "route-reference",
       sourceUrl: "https://example.com/route/123"
     },
     {
@@ -344,7 +364,10 @@ const duplicateDataConflicts = audit.duplicateCandidates.map((candidate) => {
     ["originalGrade", first?.grade.original, second?.grade.original],
     ["climbingType", first?.climbingType, second?.climbingType],
     ["sectorName", first?.sectorName, second?.sectorName],
-    ["lengthOriginal", first?.lengthOriginal, second?.lengthOriginal]
+    ["lengthMeters", first?.lengthMeters, second?.lengthMeters],
+    ["lengthFeet", first?.lengthFeet, second?.lengthFeet],
+    ["pitchCount", first?.pitchCount, second?.pitchCount],
+    ["routeFormat", first?.routeFormat, second?.routeFormat]
   ]
     .filter(
       ([, firstValue, secondValue]) =>
@@ -386,9 +409,75 @@ const missingSources = allRoutes
 const publishedEditorial = publicRoutes.filter(({ route }) =>
   publicRoutesModule.hasPublishedRouteEditorial(route)
 ).length;
+const omittedLegacyFacts = allRoutes.flatMap(({ route }) =>
+  (route.normalization?.omittedLegacyFacts ?? []).map((fact) => ({
+    routeKey: `${route.destinationId}:${route.id}`,
+    ...fact
+  }))
+);
+const nonStandardGrades = allRoutes
+  .filter(({ route }) => route.grade.comparisonStatus !== "comparable")
+  .map(({ route }) => ({
+    routeKey: `${route.destinationId}:${route.id}`,
+    originalGrade: route.grade.original,
+    comparisonStatus: route.grade.comparisonStatus
+  }));
+const sourcePurposeCounts = Object.fromEntries(
+  Array.from(
+    allRoutes
+      .flatMap(({ route }) => route.sourceRecords)
+      .reduce((counts, source) => {
+        counts.set(source.purpose, (counts.get(source.purpose) ?? 0) + 1);
+        return counts;
+      }, new Map())
+      .entries()
+  ).sort(([first], [second]) => first.localeCompare(second))
+);
+const legacySourceCount = publicRoutes.reduce(
+  (count, { route }) => count + (route.legacy?.sources.length ?? 0),
+  0
+);
+
+function routeFixture(destinationId, routeId) {
+  const item = publicRoutes.find(
+    ({ route }) => route.destinationId === destinationId && route.id === routeId
+  );
+  assert.ok(item, `Missing regression fixture ${destinationId}:${routeId}.`);
+  return {
+    route: item.route,
+    viewModel: buildRouteDetailViewModel(item.route, {
+      destination: item.destination,
+      locale: "en"
+    })
+  };
+}
+
+const pizzaView = routeFixture(
+  "yosemite-usa",
+  "openbeta-e7223b43-229e-59a7-a89f-2e058391634c"
+);
+assert.equal(pizzaView.viewModel.facts.lengthLabel, undefined);
+const boomstick = routeFixture("squamish-canada", "boomstick-squamish");
+assert.equal(boomstick.viewModel.facts.lengthLabel, undefined);
+const marieRose = routeFixture(
+  "fontainebleau-france",
+  "la-marie-rose-fontainebleau"
+);
+assert.equal(marieRose.viewModel.facts.lengthLabel, undefined);
+assert.ok(
+  marieRose.viewModel.contextSources.some(
+    (source) => source.purpose === "destination-context" || source.purpose === "history"
+  ),
+  "La Marie-Rose area/history references must remain outside route sources."
+);
+const bishopsTerrace = routeFixture(
+  "yosemite-usa",
+  "bishops-terrace-yosemite"
+);
+assert.equal(bishopsTerrace.viewModel.facts.pitchesLabel, "1 pitch");
 
 const report = {
-  schemaVersion: "rendering-consistency-rc6",
+  schemaVersion: "rendering-stabilization-rc5.1-rc6",
   generatedAt: new Date().toISOString(),
   paths: {
     legacyInput: "Destination.routes / RouteHighlight",
@@ -418,6 +507,19 @@ const report = {
     duplicateSourcesRemoved,
     duplicateResourcesRemoved,
     invalidMedia: invalidMedia.length,
+    unknownSources: unknownSources.length,
+    legacyLengthValues: publicRoutes.filter(({ route }) => route.legacy?.length?.trim()).length,
+    structuredLengths: publicRoutes.filter(
+      ({ route }) => route.lengthMeters !== undefined || route.lengthFeet !== undefined
+    ).length,
+    structuredPitchCounts: publicRoutes.filter(
+      ({ route }) => route.pitchCount !== undefined
+    ).length,
+    structuredRouteFormats: publicRoutes.filter(
+      ({ route }) => route.routeFormat !== undefined
+    ).length,
+    omittedLegacyFacts: omittedLegacyFacts.length,
+    nonStandardGrades: nonStandardGrades.length,
     viewModelFailures: failures.length,
     dataConflicts:
       adapterFactConflicts.length + duplicateDataConflicts.length
@@ -427,6 +529,8 @@ const report = {
     optionalFactsAccepted: true,
     criticalIdentityRejected: true,
     sourcePurposeDedupePassed: true,
+    sourcePurposeIsAdapterOwned: true,
+    freeTextLengthRemovedFromPublicModel: true,
     conflictPriorityFixturePassed: true,
     mediaSeparationPassed: true,
     builderLegacyFieldCheckPassed: true,
@@ -449,9 +553,21 @@ const report = {
     }
   },
   destinations: destinationCounts,
+  factMigration: {
+    omittedLegacyFacts,
+    nonStandardGrades
+  },
+  sourcePurposeMigration: {
+    before: {
+      unclassifiedLegacySources: legacySourceCount
+    },
+    after: sourcePurposeCounts,
+    unknownSources
+  },
   viewModelFailures: failures,
   dataConflicts: [...adapterFactConflicts, ...duplicateDataConflicts],
   invalidMedia,
+  unknownSources,
   missingSources,
   unparseableGrades,
   nextPublicComponents: [
@@ -471,7 +587,7 @@ if (outputArgumentIndex >= 0 && !outputArgument) {
 }
 const outputPath = outputArgument
   ? path.resolve(root, outputArgument)
-  : path.join(root, "outputs", "route-rendering-consistency-rc3.json");
+  : path.join(root, "outputs", "route-rendering-stabilization-rc5-1.json");
 if (!process.argv.includes("--no-write")) {
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
@@ -484,7 +600,7 @@ assert.equal(
   "Public route counts must be conserved for every destination."
 );
 
-console.log("Route rendering consistency RC-6 validation passed.");
+console.log("Route rendering stabilization RC-5.1 / RC-6 validation passed.");
 console.log(`Public routes before: ${publicRoutes.length}`);
 console.log(`ViewModels built: ${publicRoutes.length - failures.length}`);
 console.log(`Legacy parity checked: ${legacyParityChecked}`);
@@ -493,6 +609,8 @@ console.log(`ViewModel failures: ${failures.length}`);
 console.log(`Data conflicts reported: ${report.summary.dataConflicts}`);
 console.log(`Unparseable grades reported: ${unparseableGrades.length}`);
 console.log(`Invalid media reported: ${invalidMedia.length}`);
+console.log(`Unknown sources withheld: ${unknownSources.length}`);
+console.log(`Legacy fact values omitted from public facts: ${omittedLegacyFacts.length}`);
 console.log(
   process.argv.includes("--no-write")
     ? "Report: not written (--no-write)"

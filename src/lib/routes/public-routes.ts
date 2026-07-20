@@ -1,12 +1,14 @@
 import type {
   ExternalResourceType,
   ExternalLinkStatus,
-  LocalizedText,
-  SourceType
+  LocalizedText
 } from "@/types/destination";
 import type {
   GradeSystem,
   RouteClimbingType,
+  RouteFactQualifier,
+  RouteFormat,
+  RouteSourcePurpose,
   RouteStyleProfile,
   RouteRecord
 } from "@/types/route";
@@ -41,7 +43,7 @@ export type PublicRouteSource = {
   label: string;
   license?: string;
   sourceUrl: string;
-  role: "route" | "access";
+  role: Exclude<RouteSourcePurpose, "media" | "unknown">;
 };
 
 export type PublicRouteResource = {
@@ -63,7 +65,12 @@ export type PublicRouteFacts = {
     primarySystem?: GradeSystem;
   };
   id: string;
-  lengthOriginal?: string;
+  lengthMeters?: number;
+  lengthFeet?: number;
+  lengthQualifier?: RouteFactQualifier;
+  pitchCount?: number;
+  pitchQualifier?: RouteFactQualifier;
+  routeFormat?: RouteFormat;
   name: string;
   sectorName?: string;
   sourceRecords: PublicRouteSource[];
@@ -209,23 +216,32 @@ export function toPublicRouteFacts(route: RouteRecord): PublicRouteFacts {
       primarySystem: parsedGrade.primarySystem
     },
     id: route.id,
-    lengthOriginal: route.lengthOriginal,
+    lengthMeters: route.lengthMeters,
+    lengthFeet: route.lengthFeet,
+    lengthQualifier: route.lengthQualifier,
+    pitchCount: route.pitchCount,
+    pitchQualifier: route.pitchQualifier,
+    routeFormat: route.routeFormat,
     name: route.name,
     sectorName: route.sectorName,
-    sourceRecords: route.sourceRecords.map((source) => ({
-      attribution: source.attribution,
-      checkedAt: source.checkedAt,
-      label: source.label,
-      license: source.license,
-      role: publicSourceRole(source.sourceType),
-      sourceUrl: source.sourceUrl
-    })),
+    sourceRecords: route.sourceRecords
+      .filter(
+        (
+          source
+        ): source is typeof source & {
+          purpose: PublicRouteSource["role"];
+        } => source.purpose !== "media" && source.purpose !== "unknown"
+      )
+      .map((source) => ({
+        attribution: source.attribution,
+        checkedAt: source.checkedAt,
+        label: source.label,
+        license: source.license,
+        role: source.purpose,
+        sourceUrl: source.sourceUrl
+      })),
     style: route.style
   };
-}
-
-function publicSourceRole(sourceType: SourceType): PublicRouteSource["role"] {
-  return sourceType === "official" ? "access" : "route";
 }
 
 function buildPublicRouteSearchText(

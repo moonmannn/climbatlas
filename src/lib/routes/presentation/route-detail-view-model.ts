@@ -13,6 +13,7 @@ import type {
 import type {
   GradeSystem,
   RouteMediaRecord,
+  RouteFormat,
   RouteRecord,
   RouteSourcePurpose,
   RouteSourceRecord
@@ -23,7 +24,7 @@ export type PublicSourceViewModel = {
   checkedAtLabel?: string;
   label: string;
   license?: string;
-  purpose: "route" | "access";
+  purpose: Exclude<RouteSourcePurpose, "media" | "unknown">;
   url: string;
 };
 
@@ -63,6 +64,7 @@ export type RouteDetailViewModel = {
     climbingTypeLabel: string;
     lengthLabel?: string;
     pitchesLabel?: string;
+    routeFormatLabel?: string;
   };
   badges: {
     isPublishedPick: boolean;
@@ -70,6 +72,7 @@ export type RouteDetailViewModel = {
   };
   routeSources: PublicSourceViewModel[];
   accessSources: PublicSourceViewModel[];
+  contextSources: PublicSourceViewModel[];
   externalResources: ExternalResourceViewModel[];
   publishedEditorial?: {
     summary?: string;
@@ -97,6 +100,7 @@ export type RouteDetailBuildDiagnostics = {
   duplicateResourcesRemoved: number;
   duplicateSourcesRemoved: number;
   invalidMedia: Array<{ reason: string; src?: string }>;
+  unknownSources: Array<{ label: string; url: string }>;
 };
 
 export class RouteViewModelBuildError extends Error {
@@ -128,7 +132,7 @@ export function buildRouteDetailViewModel(
 
 export function countPublicRouteSources(route: RouteRecord) {
   return buildSources(route.sourceRecords, "en").sources.filter(
-    (source) => source.purpose === "route"
+    (source) => source.purpose === "route-reference"
   ).length;
 }
 
@@ -193,23 +197,28 @@ export function inspectRouteDetailViewModelBuild(
         equivalentGradeLabels:
           equivalentGradeLabels.length > 0 ? equivalentGradeLabels : undefined,
         climbingTypeLabel: formatClimbingType(route.climbingType, locale),
-        lengthLabel: cleanOptional(route.lengthOriginal),
-        pitchesLabel:
-          route.pitches === undefined
-            ? undefined
-            : locale === "zh"
-              ? `${route.pitches} 段`
-              : `${route.pitches} ${route.pitches === 1 ? "pitch" : "pitches"}`
+        lengthLabel: formatLength(route, locale),
+        pitchesLabel: formatPitches(route, locale),
+        routeFormatLabel: formatRouteFormat(
+          route.routeFormat,
+          route.climbingType,
+          locale
+        )
       },
       badges: {
         isPublishedPick,
         verificationLabel: verificationLabel(route, locale)
       },
       routeSources: sourceResult.sources.filter(
-        (source) => source.purpose === "route"
+        (source) => source.purpose === "route-reference"
       ),
       accessSources: sourceResult.sources.filter(
         (source) => source.purpose === "access"
+      ),
+      contextSources: sourceResult.sources.filter(
+        (source) =>
+          source.purpose === "destination-context" ||
+          source.purpose === "history"
       ),
       externalResources: resourceResult.resources,
       publishedEditorial,
@@ -224,7 +233,8 @@ export function inspectRouteDetailViewModelBuild(
     diagnostics: {
       duplicateResourcesRemoved: resourceResult.duplicatesRemoved,
       duplicateSourcesRemoved: sourceResult.duplicatesRemoved,
-      invalidMedia: mediaResult.invalidMedia
+      invalidMedia: mediaResult.invalidMedia,
+      unknownSources: sourceResult.unknownSources
     }
   };
 }
@@ -263,6 +273,63 @@ function cleanOptional(value: string | undefined) {
   return value?.trim() || undefined;
 }
 
+function factNumber(value: number, locale: Locale) {
+  return new Intl.NumberFormat(locale === "zh" ? "zh-CN" : "en-US", {
+    maximumFractionDigits: 1
+  }).format(value);
+}
+
+function formatLength(route: RouteRecord, locale: Locale) {
+  const values = [
+    route.lengthMeters === undefined
+      ? undefined
+      : `${factNumber(route.lengthMeters, locale)} m`,
+    route.lengthFeet === undefined
+      ? undefined
+      : `${factNumber(route.lengthFeet, locale)} ft`
+  ].filter((value): value is string => Boolean(value));
+
+  if (values.length === 0) return undefined;
+  const prefix = route.lengthQualifier === "approximate"
+    ? locale === "zh" ? "约 " : "about "
+    : "";
+  return `${prefix}${values.join(" · ")}`;
+}
+
+function formatPitches(route: RouteRecord, locale: Locale) {
+  if (route.pitchCount === undefined) return undefined;
+  const prefix = route.pitchQualifier === "approximate"
+    ? locale === "zh" ? "约 " : "about "
+    : "";
+  return locale === "zh"
+    ? `${prefix}${factNumber(route.pitchCount, locale)} 段`
+    : `${prefix}${factNumber(route.pitchCount, locale)} ${route.pitchCount === 1 ? "pitch" : "pitches"}`;
+}
+
+function formatRouteFormat(
+  routeFormat: RouteFormat | undefined,
+  climbingType: RouteRecord["climbingType"],
+  locale: Locale
+) {
+  if (!routeFormat) return undefined;
+  if (
+    (routeFormat === "boulder-problem" && climbingType === "boulder") ||
+    (routeFormat === "multi-pitch" && climbingType === "multi-pitch") ||
+    (routeFormat === "alpine-objective" && climbingType === "alpine")
+  ) {
+    return undefined;
+  }
+
+  const labels: Record<RouteFormat, { en: string; zh: string }> = {
+    "boulder-problem": { en: "Boulder problem", zh: "抱石线路" },
+    "single-pitch": { en: "Single pitch", zh: "单段线路" },
+    "multi-pitch": { en: "Multi-pitch", zh: "多段线路" },
+    "big-wall": { en: "Big wall", zh: "大岩壁线路" },
+    "alpine-objective": { en: "Alpine objective", zh: "高山线路" }
+  };
+  return labels[routeFormat][locale];
+}
+
 function localized(value: LocalizedText | undefined, locale: Locale) {
   return value?.[locale]?.trim() || value?.en?.trim() || value?.zh?.trim();
 }
@@ -297,24 +364,6 @@ function buildPublishedEditorial(route: RouteRecord, locale: Locale) {
   };
 }
 
-function inferSourcePurpose(source: RouteSourceRecord): RouteSourcePurpose {
-  if (source.purpose) return source.purpose;
-  const fields = source.verifiedFields.map((field) => field.toLowerCase());
-  const hasRouteFact = fields.some((field) =>
-    /(?:^|\b)(?:name|grade|length|type|sector|route|first ascent|history)(?:\b|$)/.test(
-      field
-    )
-  );
-
-  if (fields.some((field) => field.includes("image license"))) return "media";
-  if (hasRouteFact) return "route";
-  if (fields.some((field) => field.includes("access"))) return "access";
-  if (fields.some((field) => /area|destination|local context/.test(field))) {
-    return "area";
-  }
-  return source.sourceType === "official" ? "access" : "route";
-}
-
 export function canonicalizePublicUrl(value: string) {
   try {
     const url = new URL(value.trim());
@@ -331,11 +380,7 @@ export function canonicalizePublicUrl(value: string) {
   }
 }
 
-function publicPurpose(purpose: RouteSourcePurpose): "route" | "access" {
-  return purpose === "route" ? "route" : "access";
-}
-
-function sourceKey(source: RouteSourceRecord, purpose: "route" | "access") {
+function sourceKey(source: RouteSourceRecord, purpose: RouteSourcePurpose) {
   return source.externalId
     ? `${purpose}:id:${source.provider}:${source.externalId}`
     : `${purpose}:url:${canonicalizePublicUrl(source.sourceUrl)}`;
@@ -347,13 +392,17 @@ function buildSources(sourceRecords: RouteSourceRecord[], locale: Locale) {
     { priority: number; source: PublicSourceViewModel }
   >();
   let duplicatesRemoved = 0;
+  const unknownSources: Array<{ label: string; url: string }> = [];
 
   for (const record of sourceRecords) {
-    const inferredPurpose = inferSourcePurpose(record);
-    if (inferredPurpose === "media") continue;
-    const purpose = publicPurpose(inferredPurpose);
+    if (record.purpose === "media") continue;
+    if (record.purpose === "unknown") {
+      unknownSources.push({ label: record.label, url: record.sourceUrl });
+      continue;
+    }
+    const purpose = record.purpose;
     const key = sourceKey(record, purpose);
-    const priority = sourceDisplayPriority(record, inferredPurpose);
+    const priority = sourceDisplayPriority(record, purpose);
     const candidate = {
       attribution: cleanOptional(record.attribution),
       checkedAtLabel: record.checkedAt
@@ -388,7 +437,8 @@ function buildSources(sourceRecords: RouteSourceRecord[], locale: Locale) {
           `${source.purpose}:url:${canonicalizePublicUrl(source.url)}`
       )
     ),
-    duplicatesRemoved
+    duplicatesRemoved,
+    unknownSources
   };
 }
 
@@ -396,11 +446,16 @@ function sourceDisplayPriority(
   source: RouteSourceRecord,
   purpose: RouteSourcePurpose
 ) {
-  const purposePriority = { route: 400, access: 300, area: 200, media: 100 }[
-    purpose
-  ];
+  const purposePriority: Record<RouteSourcePurpose, number> = {
+    "route-reference": 500,
+    access: 400,
+    "destination-context": 300,
+    history: 200,
+    media: 100,
+    unknown: 0
+  };
   const trustPriority = { high: 30, medium: 20, low: 10 }[source.trustLevel];
-  return purposePriority + trustPriority;
+  return purposePriority[purpose] + trustPriority;
 }
 
 function resourcePurpose(
@@ -426,7 +481,8 @@ function buildResources(
     if (resource.linkStatus === "needs-upgrade") continue;
     const purpose = resourcePurpose(resource.type, resource.linkStatus);
     const canonicalUrl = canonicalizePublicUrl(resource.url);
-    const sourcePurpose = purpose === "access" ? "access" : "route";
+    const sourcePurpose =
+      purpose === "access" ? "access" : "route-reference";
     const sourceDuplicateKey = `${sourcePurpose}:url:${canonicalUrl}`;
 
     if (purpose !== "supplemental" && sourceKeys.has(sourceDuplicateKey)) {

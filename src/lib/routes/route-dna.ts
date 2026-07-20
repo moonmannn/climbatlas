@@ -173,7 +173,7 @@ function applyLengthRules(
   considerations: RouteDnaEvidence[]
 ) {
   const longByLength = (route.lengthMeters ?? 0) >= 100;
-  const longByPitches = (route.pitches ?? 0) >= 5;
+  const longByPitches = (route.pitchCount ?? 0) >= 5;
   if (!longByLength && !longByPitches) return;
 
   addAdjustment(vector, { adventure: 9, comfort: -6 });
@@ -221,8 +221,8 @@ export function buildRouteDnaSnapshot(route: RouteRecord, difficultyBand: RouteD
     inputs.push("originalGrade");
     applyDifficultyRules(difficultyBand, vector, evidence, considerations);
   }
-  if (route.lengthMeters || route.pitches) {
-    inputs.push(route.pitches ? "pitches" : "lengthMeters");
+  if (route.lengthMeters || route.pitchCount) {
+    inputs.push(route.pitchCount ? "pitchCount" : "lengthMeters");
     applyLengthRules(route, vector, evidence, considerations);
   }
 

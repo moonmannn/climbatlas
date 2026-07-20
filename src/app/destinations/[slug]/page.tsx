@@ -156,40 +156,44 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
               </dt>
               <dd className="mt-2 text-xl font-black">
                 {difficultySummaries.length > 0 ? (
-                  <div className="space-y-2">
+                  <dl className="space-y-2" data-difficulty-summary="true">
                     {difficultySummaries.map((summary) => {
                       const gradeRange = summary.minLabel === summary.maxLabel
                         ? summary.minLabel
                         : `${summary.minLabel}–${summary.maxLabel}`;
                       return (
-                        <div key={summary.system}>
-                          <span className="block text-xs font-bold text-bark/55">
+                        <div className="grid gap-1" key={summary.system}>
+                          <dt className="text-xs font-bold text-bark/55">
                             <LocalizedText
                               en={formatGradeSystem(summary.system, "en")}
                               zh={formatGradeSystem(summary.system, "zh")}
-                            />
-                          </span>
-                          <span>{gradeRange}</span>
-                          {summary.minLabel === summary.maxLabel && (
-                            <span className="mt-1 block text-[11px] font-semibold leading-4 text-bark/50">
-                              <LocalizedText
-                                en="Only this grade is currently represented in the public index."
-                                zh="当前公开索引在这一难度体系中只收录了这个难度。"
-                              />
-                            </span>
-                          )}
+                            />:{" "}
+                          </dt>
+                          <dd>
+                            {gradeRange}
+                            {summary.minLabel === summary.maxLabel && (
+                              <span className="mt-1 block text-[11px] font-semibold leading-4 text-bark/50">
+                                <LocalizedText
+                                  en="Only this grade is currently represented in the public index."
+                                  zh="当前公开索引在这一难度体系中只收录了这个难度。"
+                                />
+                              </span>
+                            )}
+                          </dd>
                         </div>
                       );
                     })}
-                    <span className="block text-[11px] font-semibold leading-4 text-bark/50">
+                  </dl>
+                ) : (
+                  <LocalizedText en="Information unavailable" zh="暂无信息" />
+                )}
+                {difficultySummaries.length > 0 && (
+                  <span className="mt-2 block text-[11px] font-semibold leading-4 text-bark/50">
                       <LocalizedText
                         en="Based on routes currently visible in ClimbAtlas."
                         zh="根据 ClimbAtlas 当前公开可见的路线统计。"
                       />
-                    </span>
-                  </div>
-                ) : (
-                  <LocalizedText en="Information unavailable" zh="暂无信息" />
+                  </span>
                 )}
               </dd>
             </div>

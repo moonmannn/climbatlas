@@ -1,4 +1,6 @@
 import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
+import { normalizeLegacyRouteFacts } from "@/lib/routes/adapters/normalize-route-facts";
+import { classifyRouteSourcePurpose } from "@/lib/routes/adapters/normalize-route-source";
 import type {
   LocalizedText,
   RouteHighlight,
@@ -10,7 +12,6 @@ import type {
   RouteEditorial,
   RouteGrade,
   RouteSourceProvider,
-  RouteSourcePurpose,
   RouteSourceRecord,
   RouteVerification
 } from "@/types/route";
@@ -56,25 +57,8 @@ function sourceProvider(source: RouteSource): RouteSourceProvider {
   return "other";
 }
 
-function sourcePurpose(source: RouteSource): RouteSourcePurpose {
-  const fields = source.verifies.map((field) => field.trim().toLowerCase());
-  const hasRouteFact = fields.some((field) =>
-    /(?:^|\b)(?:name|grade|length|type|sector|route|first ascent|history)(?:\b|$)/.test(
-      field
-    )
-  );
-
-  if (fields.some((field) => field.includes("image license"))) return "media";
-  if (hasRouteFact) return "route";
-  if (fields.some((field) => field.includes("access"))) return "access";
-  if (fields.some((field) => /area|destination|local context/.test(field))) {
-    return "area";
-  }
-  return source.type === "official" ? "access" : "route";
-}
-
 function adaptSource(source: RouteSource): RouteSourceRecord {
-  return {
+  const record = {
     provider: sourceProvider(source),
     label: source.sourceLabel,
     sourceUrl: source.sourceUrl,
@@ -82,8 +66,11 @@ function adaptSource(source: RouteSource): RouteSourceRecord {
     sourceType: source.type,
     trustLevel: source.trustLevel,
     verifiedFields: [...source.verifies],
-    notes: source.notes,
-    purpose: sourcePurpose(source)
+    notes: source.notes
+  };
+  return {
+    ...record,
+    purpose: classifyRouteSourcePurpose(record)
   };
 }
 
@@ -191,6 +178,7 @@ export function adaptLegacyRoute(
   }
 
   const climbingType: RouteClimbingType = route.type;
+  const facts = normalizeLegacyRouteFacts({ rawLength: route.length });
 
   return {
     kind: "route",
@@ -198,7 +186,12 @@ export function adaptLegacyRoute(
     sectorName: route.sector?.trim() || undefined,
     climbingType,
     grade: createRouteGrade(route.grade?.trim() ?? "", destinationId, climbingType),
-    lengthOriginal: route.length?.trim() || undefined,
+    lengthMeters: facts.lengthMeters,
+    lengthFeet: facts.lengthFeet,
+    lengthQualifier: facts.lengthQualifier,
+    pitchCount: facts.pitchCount,
+    pitchQualifier: facts.pitchQualifier,
+    routeFormat: facts.routeFormat,
     style: {
       terrainTags: [],
       movementTags: [],
@@ -217,7 +210,8 @@ export function adaptLegacyRoute(
     })),
     normalization: {
       adapter: "legacy-route",
-      factConflicts: []
+      factConflicts: [],
+      omittedLegacyFacts: facts.omittedLegacyFacts
     }
   };
 }

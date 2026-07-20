@@ -116,8 +116,11 @@ function buildFieldCompletion(routes: RouteRecord[]) {
       routes.filter((route) => route.climbingType).length,
       total
     ),
-    originalLength: completion(
-      routes.filter((route) => route.lengthOriginal?.trim()).length,
+    structuredLength: completion(
+      routes.filter(
+        (route) =>
+          route.lengthMeters !== undefined || route.lengthFeet !== undefined
+      ).length,
       total
     ),
     lengthMeters: completion(
@@ -125,7 +128,7 @@ function buildFieldCompletion(routes: RouteRecord[]) {
       total
     ),
     pitches: completion(
-      routes.filter((route) => route.pitches !== undefined).length,
+      routes.filter((route) => route.pitchCount !== undefined).length,
       total
     ),
     controlledStyle: completion(routes.filter(hasControlledStyle).length, total),

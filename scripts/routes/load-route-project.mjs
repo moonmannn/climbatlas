@@ -100,6 +100,16 @@ export function loadRouteProject(root = process.cwd()) {
         "adapters",
         "route-fact-resolution.ts"
       )
+    ),
+    routeFactNormalizationModule: require(
+      path.join(
+        root,
+        "src",
+        "lib",
+        "routes",
+        "adapters",
+        "normalize-route-facts.ts"
+      )
     )
   };
 }

@@ -35,6 +35,7 @@ function routeType(type: OpenBetaRawClimbType): RouteClimbingType {
 function unknownGrade(): RouteGrade {
   return {
     original: "",
+    comparisonStatus: "ambiguous",
     detectedSystems: [],
     filterBands: [],
     parseStatus: "unparsed",
@@ -104,7 +105,6 @@ export function adaptOpenBetaRoute(
     cragName: raw.areaName,
     climbingType,
     grade,
-    lengthOriginal: lengthMeters ? `${lengthMeters} m` : undefined,
     lengthMeters,
     style: {
       terrainTags: [],
@@ -136,7 +136,7 @@ export function adaptOpenBetaRoute(
           "sectorName"
         ],
         notes: "Imported from an OpenBeta metadata snapshot; descriptions and user content are excluded. The external ID preserves record-level provenance.",
-        purpose: "route"
+        purpose: "route-reference"
       }
     ],
     verification: {

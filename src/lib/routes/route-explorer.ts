@@ -22,7 +22,13 @@ export function getRouteDifficulty(route: RouteRecord) {
     route.destinationId,
     route.climbingType
   );
-  if (parsed.sortValue === undefined || !parsed.filterBand) return undefined;
+  if (
+    parsed.comparisonStatus !== "comparable" ||
+    parsed.sortValue === undefined ||
+    !parsed.filterBand
+  ) {
+    return undefined;
+  }
   return {
     rank: parsed.sortValue,
     band: parsed.filterBand,
@@ -55,13 +61,19 @@ export function toRouteExplorerItem(route: RouteRecord): RouteExplorerItem {
     gradeDisplay: parsedGrade.primaryDisplay ?? route.grade.original.replace(/\bmetadata\b/gi, "").trim(),
     gradeSystem: parsedGrade.primarySystem ?? route.grade.system,
     gradeParseStatus: parsedGrade.parseStatus,
+    gradeComparisonStatus: parsedGrade.comparisonStatus,
     gradeRangeMin: parsedGrade.rangeMin,
     gradeRangeMax: parsedGrade.rangeMax,
     difficultyBand,
     difficultyBands: parsedGrade.filterBands,
     difficultyRank: difficulty?.rank,
     climbingType: route.climbingType,
-    lengthOriginal: route.lengthOriginal,
+    lengthMeters: route.lengthMeters,
+    lengthFeet: route.lengthFeet,
+    lengthQualifier: route.lengthQualifier,
+    pitchCount: route.pitchCount,
+    pitchQualifier: route.pitchQualifier,
+    routeFormat: route.routeFormat,
     sectorName: route.sectorName,
     styleTags,
     isPublishedPick: hasPublishedEditorial,

@@ -25,10 +25,12 @@ const trustWeight = {
 } as const;
 
 const purposeWeight: Record<RouteSourcePurpose, number> = {
-  route: 400,
-  access: 300,
-  area: 200,
-  media: 100
+  "route-reference": 500,
+  access: 400,
+  "destination-context": 300,
+  history: 200,
+  media: 100,
+  unknown: 0
 };
 
 export function routeSourcePriority(

@@ -19,9 +19,21 @@ requirePattern(routeIndex, /filterToggleRef\.current\?\.focus\(\)/, "Closing mob
 requirePattern(routeIndex, /dnaMatch\s*&&/, "Route DNA match must remain conditional on a real profile result");
 requirePattern(routeIndex, /type="checkbox"/, "Grade choices must use independent semantic checkbox controls");
 requirePattern(routeIndex, /type="radio"/, "Grade systems must use a semantic radio group");
+requirePattern(routeIndex, /<fieldset>[\s\S]*<legend[\s\S]*type="radio"/, "Grade systems must use fieldset and legend semantics");
+requirePattern(routeIndex, /data-grade-option-list[\s\S]*<li[\s\S]*type="checkbox"/, "Grade choices must render as semantic list items");
+requirePattern(routeIndex, /data-grade-separator/, "Grade choices must include a text-extraction boundary");
 requirePattern(routeIndex, /gradeSystem/, "Grade filter state must be shareable in the URL");
+requirePattern(
+  routeIndex,
+  /nextGradeFilter\.system !== primaryGradeSystem \|\| sortedGrades\.length > 0/,
+  "A non-default grade system must survive refresh even before grades are selected"
+);
+requirePattern(routeIndex, /popstate/, "Browser navigation must restore URL-backed Grade filters");
+rejectPattern(routeIndex, /lengthOriginal/, "Route cards must not render legacy free-text length values");
 requirePattern(routeDetail, /identity\.sectorName\s*\?/, "Missing sectors must be hidden instead of rendered as a database placeholder");
 requirePattern(routeDetail, /Access information/, "General access information must be separate from route sources");
+requirePattern(routeDetail, /Context references/, "Destination and history references must be separate from route sources");
+requirePattern(routeDetail, /Source policy/, "Detailed source boundaries must live in the collapsible source policy");
 requirePattern(routeDetail, /resource\.linkStatusLabel/, "Route-specific external links must render their public precision label");
 rejectPattern(routeDetail, />Source<\/a>/, "Route media source links must be localized");
 requirePattern(routePage, /LocalizedRouteDetailView/, "All route pages must use the unified public renderer");
@@ -31,6 +43,8 @@ rejectPattern(destinationDna, /animate-pulse|\[loaded, setLoaded\]/, "DNA empty 
 rejectPattern(userControls, /\bV\d+(?:\.\d+)?\b/, "Public account copy must not expose implementation version labels");
 rejectPattern(destinationPage, /\{resource\.type\}/, "Destination resources must not expose raw resource enums");
 rejectPattern(destinationPage, /en="Approach"\s+zh="适合程度"/, "Experience fit must not be labeled as route approach");
+requirePattern(destinationPage, /<dl[^>]*data-difficulty-summary/, "Difficulty summaries must use semantic description lists");
+requirePattern(routePage, /Review recorded facts and traceable sources/, "Route pages must use the concise shared source introduction");
 
 if (issues.length > 0) {
   console.error("Production UI validation failed:");

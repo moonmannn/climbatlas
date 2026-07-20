@@ -293,6 +293,21 @@ function commitmentGrade(text: string, primary?: GradeCandidate) {
   return text.match(/^\s*(XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)\b/i)?.[1]?.toUpperCase();
 }
 
+function comparisonStatus(
+  text: string,
+  primary: GradeCandidate | undefined
+) {
+  if (/\bproposed\b/i.test(text)) return "proposed" as const;
+  if (
+    primary?.system === "font" &&
+    (/\b(?:historic|historical)\b/i.test(text) ||
+      /\bFont\s*[3-9](?![abcABC+])/i.test(text))
+  ) {
+    return "historical" as const;
+  }
+  return primary ? ("comparable" as const) : ("ambiguous" as const);
+}
+
 export function gradeRangesOverlap(
   firstMin: number,
   firstMax: number,
@@ -322,10 +337,12 @@ export function parseRouteGrade(
   const primary = pickPrimaryCandidate(candidates, destinationId, climbingType);
   const detectedSystems = unique(candidates.map((candidate) => candidate.system));
   const aidGrade = candidates.find((candidate) => candidate.system === "aid")?.display;
+  const gradeComparisonStatus = comparisonStatus(text, primary);
 
   if (!primary) {
     return {
       original,
+      comparisonStatus: gradeComparisonStatus,
       detectedSystems,
       filterBands: ["unknown"],
       aidGrade,
@@ -333,9 +350,24 @@ export function parseRouteGrade(
     };
   }
 
+  if (gradeComparisonStatus !== "comparable") {
+    return {
+      original,
+      comparisonStatus: gradeComparisonStatus,
+      detectedSystems,
+      primarySystem: primary.system,
+      primaryDisplay: primary.display,
+      filterBands: ["unknown"],
+      aidGrade,
+      commitmentGrade: commitmentGrade(text, primary),
+      parseStatus: detectedSystems.length > 1 ? "partial" : "parsed"
+    };
+  }
+
   const filterBands = bandsFor(primary.system, primary.min, primary.max);
   return {
     original,
+    comparisonStatus: gradeComparisonStatus,
     detectedSystems,
     primarySystem: primary.system,
     primaryDisplay: primary.display,

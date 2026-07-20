@@ -1,6 +1,7 @@
 import { destinations } from "@/data/destinations";
 import openBetaPocSnapshot from "@/data/routes/imports/openbeta-poc.json";
 import { migrateLegacyRoute } from "@/lib/routes/migrate-legacy-route";
+import { adaptCanonicalRouteRecord } from "@/lib/routes/adapters/canonical-route-adapter";
 import type { Destination, RouteHighlight } from "@/types/destination";
 import type { RouteImportSnapshot } from "@/types/route-import";
 import {
@@ -79,7 +80,8 @@ export function getAllRouteCatalogEntries(): RouteCatalogEntryWithDestination[] 
       );
     }
 
-    const importedEntries = importedOpenBetaRoutes.flatMap((route) => {
+    const importedEntries = importedOpenBetaRoutes.flatMap((snapshotRoute) => {
+      const route = adaptCanonicalRouteRecord(snapshotRoute);
       const destination = destinationsById.get(route.destinationId);
       return destination ? [{ destination, entry: route }] : [];
     });

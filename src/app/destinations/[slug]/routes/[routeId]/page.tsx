@@ -87,8 +87,8 @@ export default async function RoutePage({ params }: RoutePageProps) {
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-charcoal/65">
               <LocalizedText
-                en="Compare the recorded route facts, source trail, and available external resources. Consult current external resources for beta and local guidance when available."
-                zh="在这里比较已记录的路线信息、来源和外部资料。如有可用资料，最新 beta 与当地指引仍请以外部来源为准。"
+                en="Review recorded facts and traceable sources. Use current external resources for beta, access, and local guidance."
+                zh="查看已记录的线路事实与可追溯来源；具体 beta、通行信息和当地安排请以最新外部资料为准。"
               />
             </p>
           </div>

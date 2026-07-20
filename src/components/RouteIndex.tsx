@@ -69,6 +69,37 @@ function routeSummary(route: RouteExplorerItem, locale: "en" | "zh") {
   return route.summary?.[locale] ?? route.summary?.en;
 }
 
+function formatRouteFactSummary(
+  route: RouteExplorerItem,
+  locale: "en" | "zh"
+) {
+  const values: string[] = [];
+  const number = (value: number) =>
+    new Intl.NumberFormat(locale === "zh" ? "zh-CN" : "en-US", {
+      maximumFractionDigits: 1
+    }).format(value);
+  const approximateLength = route.lengthQualifier === "approximate"
+    ? locale === "zh" ? "约 " : "about "
+    : "";
+  const lengths = [
+    route.lengthMeters === undefined ? undefined : `${number(route.lengthMeters)} m`,
+    route.lengthFeet === undefined ? undefined : `${number(route.lengthFeet)} ft`
+  ].filter((value): value is string => Boolean(value));
+
+  if (lengths.length > 0) values.push(`${approximateLength}${lengths.join(" / ")}`);
+  if (route.pitchCount !== undefined) {
+    const approximatePitch = route.pitchQualifier === "approximate"
+      ? locale === "zh" ? "约 " : "about "
+      : "";
+    values.push(
+      locale === "zh"
+        ? `${approximatePitch}${number(route.pitchCount)} 段`
+        : `${approximatePitch}${number(route.pitchCount)} ${route.pitchCount === 1 ? "pitch" : "pitches"}`
+    );
+  }
+  return values;
+}
+
 function pickRank(route: RouteExplorerItem) {
   return route.isPublishedPick ? 0 : 1;
 }
@@ -176,9 +207,15 @@ export function RouteIndex({
         .map((value) => value.trim())
         .filter(Boolean);
       const validGrades = new Set(group?.options.map((option) => option.value));
+      const selectedGrades = (group?.options ?? [])
+        .map((option) => option.value)
+        .filter(
+          (grade) =>
+            requestedGrades.includes(grade) && validGrades.has(grade)
+        );
       setGradeFilter({
         system: group?.system ?? primaryGradeSystem,
-        selectedGrades: requestedGrades.filter((grade) => validGrades.has(grade))
+        selectedGrades
       });
     }
 
@@ -324,9 +361,24 @@ export function RouteIndex({
     if (nextType === "all") url.searchParams.delete("type");
     else url.searchParams.set("type", nextType);
 
-    if (nextGradeFilter.system && nextGradeFilter.selectedGrades.length > 0) {
+    const gradeGroup = gradeFilterSet.groups.find(
+      (group) => group.system === nextGradeFilter.system
+    );
+    const selectedGradeSet = new Set(nextGradeFilter.selectedGrades);
+    const sortedGrades = (gradeGroup?.options ?? [])
+      .map((option) => option.value)
+      .filter((grade) => selectedGradeSet.has(grade));
+
+    const shouldPersistGradeSystem =
+      nextGradeFilter.system !== primaryGradeSystem || sortedGrades.length > 0;
+
+    if (nextGradeFilter.system && shouldPersistGradeSystem) {
       url.searchParams.set("gradeSystem", nextGradeFilter.system);
-      url.searchParams.set("grades", nextGradeFilter.selectedGrades.join(","));
+      if (sortedGrades.length > 0) {
+        url.searchParams.set("grades", sortedGrades.join(","));
+      } else {
+        url.searchParams.delete("grades");
+      }
     } else {
       url.searchParams.delete("gradeSystem");
       url.searchParams.delete("grades");
@@ -346,9 +398,13 @@ export function RouteIndex({
   }
 
   function toggleGrade(value: string) {
-    const selectedGrades = gradeFilter.selectedGrades.includes(value)
+    const unsortedGrades = gradeFilter.selectedGrades.includes(value)
       ? gradeFilter.selectedGrades.filter((grade) => grade !== value)
       : [...gradeFilter.selectedGrades, value];
+    const selectedGradeSet = new Set(unsortedGrades);
+    const selectedGrades = (activeGradeGroup?.options ?? [])
+      .map((option) => option.value)
+      .filter((grade) => selectedGradeSet.has(grade));
     const nextGradeFilter = {
       system: activeGradeSystem,
       selectedGrades
@@ -361,9 +417,13 @@ export function RouteIndex({
     const allSelected = values.every((value) =>
       gradeFilter.selectedGrades.includes(value)
     );
-    const selectedGrades = allSelected
+    const unsortedGrades = allSelected
       ? gradeFilter.selectedGrades.filter((value) => !values.includes(value))
       : Array.from(new Set([...gradeFilter.selectedGrades, ...values]));
+    const selectedGradeSet = new Set(unsortedGrades);
+    const selectedGrades = (activeGradeGroup?.options ?? [])
+      .map((option) => option.value)
+      .filter((grade) => selectedGradeSet.has(grade));
     const nextGradeFilter = {
       system: activeGradeSystem,
       selectedGrades
@@ -595,7 +655,11 @@ export function RouteIndex({
               )}
 
               <p className="mt-3 text-xs font-semibold text-charcoal/52">
-                {[route.gradeDisplay, formatClimbingType(route.climbingType, locale), route.lengthOriginal]
+                {[
+                  route.gradeDisplay,
+                  formatClimbingType(route.climbingType, locale),
+                  ...formatRouteFactSummary(route, locale)
+                ]
                   .filter(Boolean)
                   .join(" · ")}
               </p>
@@ -735,33 +799,37 @@ function GradeFilterControls({
         <legend className="route-filter-label">
           {isZh ? "难度体系" : "Grade system"}
         </legend>
-        <div className="mt-2 flex flex-wrap gap-2">
+        <ul className="mt-2 flex list-none flex-wrap gap-2 p-0">
           {groups.map((group) => {
             const inputId = `grade-system-${group.system}`;
             return (
-              <label
-                className={`cursor-pointer border px-3 py-2 text-xs font-semibold transition ${
-                  group.system === activeGroup.system
-                    ? "border-brandforest bg-brandforest text-cream"
-                    : "border-brandforest/20 text-brandforest hover:border-brandforest/45"
-                }`}
-                htmlFor={inputId}
-                key={group.system}
-              >
-                <input
-                  checked={group.system === activeGroup.system}
-                  className="sr-only"
-                  id={inputId}
-                  name="route-grade-system"
-                  onChange={() => onGradeSystemChange(group.system)}
-                  type="radio"
-                  value={group.system}
-                />
-                {formatGradeSystem(group.system, locale)} ({group.routeCount})
-              </label>
+              <li key={group.system}>
+                <label
+                  className={`cursor-pointer border px-3 py-2 text-xs font-semibold transition ${
+                    group.system === activeGroup.system
+                      ? "border-brandforest bg-brandforest text-cream"
+                      : "border-brandforest/20 text-brandforest hover:border-brandforest/45"
+                  }`}
+                  htmlFor={inputId}
+                >
+                  <input
+                    aria-label={`${formatGradeSystem(group.system, locale)}, ${group.routeCount} ${isZh ? "条路线" : "routes"}`}
+                    checked={group.system === activeGroup.system}
+                    className="sr-only"
+                    id={inputId}
+                    name="route-grade-system"
+                    onChange={() => onGradeSystemChange(group.system)}
+                    type="radio"
+                    value={group.system}
+                  />
+                  <span aria-hidden="true">
+                    {formatGradeSystem(group.system, locale)} ({group.routeCount})
+                  </span>
+                </label>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </fieldset>
 
       <fieldset className="mt-4 border-t border-brandforest/10 pt-4">
@@ -794,35 +862,51 @@ function GradeFilterControls({
             })}
           </div>
         )}
-        <div className="mt-3 flex flex-wrap gap-2">
+        <ul
+          className="mt-3 flex list-none flex-wrap gap-2 p-0"
+          data-grade-option-list={activeGroup.system}
+        >
           {activeGroup.options.map((grade, index) => {
             const checked = selectedGrades.includes(grade.value);
             const inputId = `route-grade-${activeGroup.system}-${index}`;
             const accessibleName = `${grade.label}, ${formatGradeSystem(grade.system, locale)}`;
             return (
-              <label
-                className={`cursor-pointer border px-3 py-2 text-xs font-semibold transition ${
-                  checked
-                    ? "border-brandforest bg-brandforest text-cream"
-                    : "border-brandforest/20 text-brandforest hover:border-brandforest/45"
-                }`}
-                htmlFor={inputId}
+              <li
+                data-grade-option={grade.value}
                 key={`${grade.system}-${grade.min}-${grade.max}-${grade.label}`}
               >
-                <input
-                  aria-label={accessibleName}
-                  checked={checked}
-                  className="sr-only"
-                  id={inputId}
-                  onChange={() => onGradeToggle(grade.value)}
-                  type="checkbox"
-                  value={grade.value}
-                />
-                <span aria-hidden="true">{grade.label}</span>
-              </label>
+                <label
+                  className={`cursor-pointer border px-3 py-2 text-xs font-semibold transition ${
+                    checked
+                      ? "border-brandforest bg-brandforest text-cream"
+                      : "border-brandforest/20 text-brandforest hover:border-brandforest/45"
+                  }`}
+                  htmlFor={inputId}
+                >
+                  <input
+                    aria-label={accessibleName}
+                    checked={checked}
+                    className="sr-only"
+                    id={inputId}
+                    onChange={() => onGradeToggle(grade.value)}
+                    type="checkbox"
+                    value={grade.value}
+                  />
+                  <span aria-hidden="true">{grade.label}</span>
+                </label>
+                {index < activeGroup.options.length - 1 && (
+                  <span
+                    aria-hidden="true"
+                    className="sr-only"
+                    data-grade-separator="true"
+                  >
+                    ;{" "}
+                  </span>
+                )}
+              </li>
             );
           })}
-        </div>
+        </ul>
       </fieldset>
     </div>
   );

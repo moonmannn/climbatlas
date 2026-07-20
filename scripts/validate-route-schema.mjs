@@ -11,6 +11,14 @@ const importedEntries = catalogEntries.filter(({ entry }) => !entry.legacy);
 const errors = [];
 const warnings = [];
 const keys = new Set();
+const sourcePurposes = new Set([
+  "route-reference",
+  "access",
+  "destination-context",
+  "history",
+  "media",
+  "unknown"
+]);
 
 if (legacyEntries.length !== migratedEntries.length) {
   errors.push(
@@ -29,13 +37,24 @@ for (const { destination, entry } of catalogEntries) {
     errors.push(`Destination mismatch: ${key}`);
   }
   if (entry.sourceRecords.length === 0) errors.push(`Missing sources: ${key}`);
+  for (const source of entry.sourceRecords) {
+    if (!sourcePurposes.has(source.purpose)) {
+      errors.push(`Invalid source purpose for ${key}: ${source.purpose ?? "missing"}`);
+    } else if (source.purpose === "unknown") {
+      warnings.push(`Unknown source purpose: ${key} (${source.label})`);
+    }
+  }
 
   if (entry.kind === "route") {
     if (!entry.grade.original.trim()) warnings.push(`Missing original grade: ${key}`);
-    if (!entry.lengthOriginal?.trim()) {
-      const message = `Missing original length: ${key}`;
-      if (entry.legacy) errors.push(message);
-      else warnings.push(message);
+    for (const [field, value] of [
+      ["lengthMeters", entry.lengthMeters],
+      ["lengthFeet", entry.lengthFeet],
+      ["pitchCount", entry.pitchCount]
+    ]) {
+      if (value !== undefined && (!Number.isFinite(value) || value <= 0)) {
+        errors.push(`Invalid ${field}: ${key}`);
+      }
     }
   }
 }

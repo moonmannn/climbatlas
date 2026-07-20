@@ -59,6 +59,30 @@ function validateSource(
   issues: RouteValidationIssue[]
 ) {
   const field = `sourceRecords[${sourceIndex}]`;
+  const validPurposes = new Set([
+    "route-reference",
+    "access",
+    "destination-context",
+    "history",
+    "media",
+    "unknown"
+  ]);
+
+  if (!validPurposes.has(source.purpose)) {
+    addIssue(issues, entry, {
+      severity: "error",
+      code: "source-purpose-invalid",
+      field,
+      message: "Source purpose must be assigned by an adapter."
+    });
+  } else if (source.purpose === "unknown") {
+    addIssue(issues, entry, {
+      severity: "warning",
+      code: "source-purpose-unknown",
+      field,
+      message: "Unknown-purpose sources are withheld from public source modules."
+    });
+  }
 
   if (!source.label.trim()) {
     addIssue(issues, entry, {
@@ -315,7 +339,7 @@ function validateEntry(
     entry.climbingType
   );
   if (
-    parsedGrade.parseStatus !== "unparsed" &&
+    parsedGrade.comparisonStatus === "comparable" &&
     (
       parsedGrade.rangeMin === undefined ||
       parsedGrade.rangeMax === undefined ||
@@ -344,12 +368,16 @@ function validateEntry(
     });
   }
 
-  if (!entry.lengthOriginal?.trim()) {
+  if (
+    [entry.lengthMeters, entry.lengthFeet, entry.pitchCount].some(
+      (value) => value !== undefined && (!Number.isFinite(value) || value <= 0)
+    )
+  ) {
     addIssue(issues, entry, {
-      severity: "warning",
-      code: "length-original-missing",
-      field: "lengthOriginal",
-      message: "Original length wording is missing."
+      severity: "error",
+      code: "invalid-structured-route-fact",
+      field: "lengthMeters",
+      message: "Structured length and pitch facts must be positive numbers."
     });
   }
 

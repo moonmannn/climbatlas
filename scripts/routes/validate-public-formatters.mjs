@@ -74,6 +74,17 @@ expect(summaries.find((item) => item.system === "yds")?.maxLabel, "5.11", "YDS s
 expect(summaries.find((item) => item.system === "v-scale")?.minLabel, "V4", "V summary minimum");
 expect(summaries.find((item) => item.system === "v-scale")?.maxLabel, "V8", "V summary maximum");
 
+const nonStandardFilterSet = buildGradeFilterSet([
+  routeItem("Historic Font 7 problem", "fontainebleau-france", "boulder"),
+  routeItem("8C+ / 9A proposed", "fontainebleau-france", "boulder"),
+  routeItem("7A+", "fontainebleau-france", "boulder")
+]);
+expect(
+  nonStandardFilterSet.options.map((option) => option.label).join("|"),
+  "7A+",
+  "Historical and proposed Font grades stay out of standard filter options"
+);
+
 if (issues.length > 0) {
   console.error("Public formatter validation failed:");
   console.error(issues.map((issue) => `- ${issue}`).join("\n"));
@@ -92,6 +103,7 @@ function routeItem(grade, destinationId, climbingType) {
     gradeDisplay: parsed.primaryDisplay ?? grade,
     gradeSystem: parsed.primarySystem ?? "unknown",
     gradeParseStatus: parsed.parseStatus,
+    gradeComparisonStatus: parsed.comparisonStatus,
     gradeRangeMin: parsed.rangeMin,
     gradeRangeMax: parsed.rangeMax,
     difficultyBand: parsed.filterBand ?? "unknown",

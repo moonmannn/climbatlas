@@ -98,6 +98,14 @@ try {
       throw new Error(`${target.path} is missing Route Explorer filters.`);
     }
 
+    if (target.kind === "destination") {
+      assertDestinationHtml(target.path, html);
+    }
+
+    if (target.kind === "route") {
+      assertRouteHtml(target.path, html);
+    }
+
     const normalizedHtml = html.toLowerCase();
     const leakedText = forbiddenPublicText.find((text) =>
       normalizedHtml.includes(text)
@@ -133,6 +141,41 @@ async function waitForServer() {
   }
 
   throw new Error(`Production server did not become ready.\n${serverOutput}`);
+}
+
+function assertDestinationHtml(pathname, html) {
+  const required = [
+    "Complete Climbing DNA to see how this destination matches your preferred movement, atmosphere, commitment, and travel style.",
+    "Discover My Climbing DNA",
+    'href="/climbing-dna"',
+    "data-grade-option-list=",
+    "data-grade-option=",
+    "data-grade-separator=",
+    "data-difficulty-summary="
+  ];
+  for (const marker of required) {
+    if (!html.includes(marker)) {
+      throw new Error(`${pathname} is missing no-JavaScript marker: ${marker}`);
+    }
+  }
+  if (!/<fieldset>[\s\S]*?<legend[^>]*>[\s\S]*?Grade system[\s\S]*?type="radio"/.test(html)) {
+    throw new Error(`${pathname} is missing the semantic Grade System radio group.`);
+  }
+  if (!/<ul[^>]*data-grade-option-list[^>]*>[\s\S]*?<li[^>]*data-grade-option[^>]*>[\s\S]*?type="checkbox"/.test(html)) {
+    throw new Error(`${pathname} is missing semantic Grade checkbox list items.`);
+  }
+}
+
+function assertRouteHtml(pathname, html) {
+  if (!html.includes("Review recorded facts and traceable sources.")) {
+    throw new Error(`${pathname} is missing the concise route source introduction.`);
+  }
+  if (!html.includes("Source policy")) {
+    throw new Error(`${pathname} is missing the collapsible Source policy.`);
+  }
+  if (/<dt[^>]*>Length<\/dt>[\s\S]{0,300}?Information unavailable/i.test(html)) {
+    throw new Error(`${pathname} renders an unavailable placeholder as Length.`);
+  }
 }
 
 function readArgument(name) {

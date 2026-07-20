@@ -1,9 +1,12 @@
 import type { LocalizedText } from "@/types/destination";
 import type {
   GradeSystem,
+  GradeComparisonStatus,
   RouteClimbingType,
   RouteGradeFilterBand,
-  RouteGradeParseStatus
+  RouteGradeParseStatus,
+  RouteFactQualifier,
+  RouteFormat
 } from "@/types/route";
 import type { RouteDnaSnapshot } from "@/types/route-dna";
 
@@ -18,13 +21,19 @@ export type RouteExplorerItem = {
   gradeDisplay: string;
   gradeSystem: GradeSystem;
   gradeParseStatus: RouteGradeParseStatus;
+  gradeComparisonStatus: GradeComparisonStatus;
   gradeRangeMin?: number;
   gradeRangeMax?: number;
   difficultyBand: RouteDifficultyBand;
   difficultyBands: RouteDifficultyBand[];
   difficultyRank?: number;
   climbingType: RouteClimbingType;
-  lengthOriginal?: string;
+  lengthMeters?: number;
+  lengthFeet?: number;
+  lengthQualifier?: RouteFactQualifier;
+  pitchCount?: number;
+  pitchQualifier?: RouteFactQualifier;
+  routeFormat?: RouteFormat;
   sectorName?: string;
   styleTags: string[];
   isPublishedPick: boolean;

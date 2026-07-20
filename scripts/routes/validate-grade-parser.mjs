@@ -40,6 +40,9 @@ for (const sample of cases) {
   if (parsed.primarySystem !== sample.system) {
     issues.push(`${sample.grade}: expected ${sample.system}, received ${parsed.primarySystem ?? "none"}`);
   }
+  if (parsed.comparisonStatus !== "comparable") {
+    issues.push(`${sample.grade}: expected comparable, received ${parsed.comparisonStatus}`);
+  }
   if (parsed.rangeMin === undefined || !approximatelyEqual(parsed.rangeMin, sample.min)) {
     issues.push(`${sample.grade}: expected min ${sample.min}, received ${parsed.rangeMin ?? "none"}`);
   }
@@ -65,6 +68,43 @@ const unknown = parseRouteGrade(
 if (unknown.parseStatus !== "unparsed" || unknown.primarySystem) {
   issues.push("Unparseable text must remain unparsed without an invented system");
 }
+if (unknown.comparisonStatus !== "ambiguous" || unknown.sortValue !== undefined) {
+  issues.push("Unparseable text must remain ambiguous and non-comparable");
+}
+
+const nonComparableCases = [
+  {
+    grade: "Historic Font 7 problem",
+    destination: "fontainebleau-france",
+    type: "boulder",
+    status: "historical",
+    system: "font"
+  },
+  {
+    grade: "8C+ / 9A proposed",
+    destination: "fontainebleau-france",
+    type: "boulder",
+    status: "proposed",
+    system: "font"
+  }
+];
+
+for (const sample of nonComparableCases) {
+  const parsed = parseRouteGrade(sample.grade, sample.destination, sample.type);
+  if (parsed.comparisonStatus !== sample.status) {
+    issues.push(`${sample.grade}: expected ${sample.status}, received ${parsed.comparisonStatus}`);
+  }
+  if (parsed.primarySystem !== sample.system) {
+    issues.push(`${sample.grade}: expected ${sample.system}, received ${parsed.primarySystem ?? "none"}`);
+  }
+  if (
+    parsed.rangeMin !== undefined ||
+    parsed.rangeMax !== undefined ||
+    parsed.sortValue !== undefined
+  ) {
+    issues.push(`${sample.grade}: non-standard grade received comparable values`);
+  }
+}
 
 if (!gradeRangesOverlap(9, 12, 10, 10) || gradeRangesOverlap(9, 12, 13, 13)) {
   issues.push("Grade range overlap must include contained grades and exclude separated grades");
@@ -72,6 +112,7 @@ if (!gradeRangesOverlap(9, 12, 10, 10) || gradeRangesOverlap(9, 12, 13, 13)) {
 
 const catalogRoutes = routesModule.getAllRouteRecordsWithDestinations();
 let unparsedCount = 0;
+let nonComparableCount = 0;
 for (const { route } of catalogRoutes) {
   const parsed = parseRouteGrade(
     route.grade.original,
@@ -81,17 +122,27 @@ for (const { route } of catalogRoutes) {
   if (parsed.original !== route.grade.original) {
     issues.push(`${route.destinationId}:${route.id}: parser changed the original grade`);
   }
+  if (parsed.comparisonStatus !== "comparable") {
+    nonComparableCount += 1;
+    if (
+      parsed.rangeMin !== undefined ||
+      parsed.rangeMax !== undefined ||
+      parsed.sortValue !== undefined
+    ) {
+      issues.push(`${route.destinationId}:${route.id}: non-comparable grade received comparable values`);
+    }
+  }
   if (parsed.parseStatus === "unparsed") {
     unparsedCount += 1;
     if (parsed.primarySystem || parsed.sortValue !== undefined) {
       issues.push(`${route.destinationId}:${route.id}: unparsed grade received comparable values`);
     }
-  } else if (
+  } else if (parsed.comparisonStatus === "comparable" && (
     !parsed.primarySystem ||
     parsed.rangeMin === undefined ||
     parsed.rangeMax === undefined ||
     parsed.sortValue === undefined
-  ) {
+  )) {
     issues.push(`${route.destinationId}:${route.id}: parsed grade is missing comparable values`);
   }
 }
@@ -103,6 +154,7 @@ if (issues.length > 0) {
 } else {
   console.log(
     `Route grade parser valid: ${cases.length} regression cases, ` +
-      `${catalogRoutes.length} catalog routes, ${unparsedCount} safely left unparsed.`
+      `${nonComparableCases.length} non-comparable cases, ${catalogRoutes.length} catalog routes, ` +
+      `${unparsedCount} safely left unparsed and ${nonComparableCount} excluded from comparison.`
   );
 }
