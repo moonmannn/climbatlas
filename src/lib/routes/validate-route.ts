@@ -68,6 +68,15 @@ function validateSource(
     "unknown"
   ]);
 
+  if (!source.id.trim()) {
+    addIssue(issues, entry, {
+      severity: "error",
+      code: "source-id-missing",
+      field,
+      message: "Every normalized source requires a stable ID."
+    });
+  }
+
   if (!validPurposes.has(source.purpose)) {
     addIssue(issues, entry, {
       severity: "error",
@@ -245,6 +254,18 @@ function validateEntry(
   entry.sourceRecords.forEach((source, index) =>
     validateSource(entry, source, index, issues)
   );
+  const sourceIds = new Set<string>();
+  entry.sourceRecords.forEach((source, index) => {
+    if (sourceIds.has(source.id)) {
+      addIssue(issues, entry, {
+        severity: "error",
+        code: "source-id-duplicate",
+        field: `sourceRecords[${index}].id`,
+        message: `Duplicate source ID on one route: ${source.id}`
+      });
+    }
+    sourceIds.add(source.id);
+  });
   validateExternalLinks(entry, issues);
 
   if (entry.verification.status === "verified") {

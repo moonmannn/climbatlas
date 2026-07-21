@@ -1,5 +1,8 @@
 import { normalizeLegacyRouteFacts } from "@/lib/routes/adapters/normalize-route-facts";
-import { normalizeRouteSource } from "@/lib/routes/adapters/normalize-route-source";
+import {
+  dedupeNormalizedRouteSources,
+  normalizeRouteSource
+} from "@/lib/routes/adapters/normalize-route-source";
 import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
 import type {
   RouteFactQualifier,
@@ -9,7 +12,8 @@ import type {
   RouteSourceRecord
 } from "@/types/route";
 
-type SnapshotSourceRecord = Omit<RouteSourceRecord, "purpose"> & {
+type SnapshotSourceRecord = Omit<RouteSourceRecord, "id" | "purpose"> & {
+  id?: string;
   purpose?: RouteSourcePurpose | "route" | "area";
 };
 
@@ -78,7 +82,9 @@ export function adaptCanonicalRouteRecord(input: unknown): RouteRecord {
     pitchCount: facts.pitchCount,
     pitchQualifier: facts.pitchQualifier,
     routeFormat: facts.routeFormat,
-    sourceRecords: sourceRecords.map(normalizeRouteSource),
+    sourceRecords: dedupeNormalizedRouteSources(
+      sourceRecords.map(normalizeRouteSource)
+    ),
     normalization: {
       adapter: "canonical-snapshot",
       factConflicts: normalization?.factConflicts ?? [],

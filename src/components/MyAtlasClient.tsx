@@ -10,6 +10,10 @@ import { useUserProfile } from "@/components/UserProfileProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
 import { routeRecordKey } from "@/lib/routeAliases";
 import {
+  formatClimbingType,
+  formatDestinationFact
+} from "@/lib/formatters";
+import {
   getPublicRouteSummaries,
   type PublicRouteSummary
 } from "@/lib/routes/public-routes";
@@ -203,14 +207,14 @@ export function MyAtlasClient({ variant = "page" }: MyAtlasClientProps) {
                     }
                   />
                   {(profile?.preferred_styles ?? []).map((style) => (
-                    <ProfilePill key={style} label={style} />
+                    <ProfilePill key={style} label={formatClimbingType(style, locale)} />
                   ))}
                 </div>
               </div>
               <div className="rounded-md border border-parchment/20 bg-parchment/10 p-4 text-sm font-bold leading-6 text-parchment/80">
                 <p>{user?.email ?? (isZh ? "未登录" : "Not signed in")}</p>
                 <p className="mt-1 text-xs uppercase tracking-[0.16em] text-sunlit">
-                  {isZh ? "Private only" : "Private only"}
+                  {isZh ? "仅自己可见" : "Private only"}
                 </p>
               </div>
             </div>
@@ -568,12 +572,12 @@ function RouteCard({
           {item.route.grade}
         </span>
         <span className="rounded-full border border-ridge/25 bg-white/55 px-2 py-1 text-[11px] font-black text-bark/65">
-          {item.route.climbingType}
+          {formatClimbingType(item.route.climbingType, locale)}
         </span>
       </div>
       <h3 className="mt-3 text-lg font-black text-bark">{item.route.name}</h3>
       <p className="mt-1 text-sm font-bold text-forest">
-        {item.destination.name} / {item.destination.country}
+        {item.destination.name} / {formatDestinationFact(item.destination.country, locale)}
       </p>
       {getLocalizedSummary(item.route, locale) && (
         <p className="mt-2 line-clamp-2 text-sm leading-6 text-bark/70">

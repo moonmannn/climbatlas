@@ -7,6 +7,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getDestinationDnaMatches } from "@/lib/climbingDna";
 import { loadDnaProfile } from "@/lib/climbingDnaStorage";
+import { formatDestinationFact } from "@/lib/formatters";
 import type { Destination } from "@/types/destination";
 import type { DnaVector } from "@/types/climbingDna";
 
@@ -158,8 +159,8 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
     <main className="min-h-screen bg-cream text-charcoal">
       <SiteHeader />
 
-      <section className="px-5 py-[72px] sm:px-8 lg:px-12 lg:py-[120px]">
-        <div className="mx-auto grid max-w-[1440px] gap-14 lg:grid-cols-[42fr_58fr] lg:items-center">
+      <section className="px-5 py-[72px] sm:px-8 lg:px-12 lg:py-12">
+        <div className="mx-auto grid max-w-[1440px] gap-14 lg:grid-cols-[42fr_58fr] lg:items-start">
           <div className="max-w-xl">
             <p className="editorial-kicker text-terracotta">{text.eyebrow}</p>
             <h1 className="display-serif mt-6 text-[52px] font-medium leading-[0.95] text-brandforest sm:text-7xl lg:text-[88px]">{text.title}</h1>
@@ -171,8 +172,15 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
           </div>
 
           <figure className="art-plate mx-auto w-full max-w-[680px] lg:mx-0 lg:ml-auto">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-sand/30">
-              <img alt={locale === "zh" ? "森林与花岗岩的原创户外版画" : "Original outdoor print of forest granite"} className="h-full w-full object-cover" src="/images/editorial/forest-granite-plate.png" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-sand/30 lg:h-[calc(100svh-10.5rem)] lg:min-h-[500px] lg:max-h-[650px] lg:aspect-auto">
+              <img
+                alt={locale === "zh" ? "森林与花岗岩的原创户外版画" : "Original outdoor print of forest granite"}
+                className="h-full w-full object-cover"
+                decoding="async"
+                fetchPriority="high"
+                loading="eager"
+                src="/images/editorial/forest-granite-plate.webp"
+              />
             </div>
             <figcaption className="mt-4 flex flex-wrap items-center justify-between gap-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-charcoal/55">
               <span>{text.plate}</span><span>{text.plateNumber} / {text.plateName}</span>
@@ -191,7 +199,7 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
           <div className="grid grid-cols-2 gap-4">
             {choiceImages.map((image) => (
               <div className="overflow-hidden rounded-lg border border-cream/15" key={image.src}>
-                <img alt={image.alt[locale]} className="aspect-[4/3] h-full w-full object-cover opacity-90" src={image.src} />
+                <img alt={image.alt[locale]} className="aspect-[4/3] h-full w-full object-cover opacity-90" decoding="async" loading="lazy" src={image.src} />
               </div>
             ))}
           </div>
@@ -206,7 +214,7 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
             {text.choices.map((choice, index) => (
               <Link className="artwork-card group" href="/climbing-dna" key={choice}>
                 <div className="aspect-[4/5] overflow-hidden rounded-lg bg-sand/30">
-                  <img alt={choiceImages[index].alt[locale]} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={choiceImages[index].src} />
+                  <img alt={choiceImages[index].alt[locale]} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" decoding="async" loading="lazy" src={choiceImages[index].src} />
                 </div>
                 <h3 className="display-serif mt-5 text-2xl font-medium text-brandforest">{choice}</h3>
                 <p className="mt-2 text-sm text-charcoal/58">{text.choiceNotes[index]}</p>
@@ -235,10 +243,10 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
               return (
               <Link className="destination-card group" href={`/destinations/${destination.slug}`} key={destination.slug}>
                 <div className="aspect-[4/3] overflow-hidden rounded-lg bg-sky/20">
-                  <img alt={destination.image?.alt ?? destination.name} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" src={destination.image?.src ?? choiceImages[index].src} />
+                  <img alt={destination.image?.alt ?? destination.name} className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.015]" decoding="async" loading="lazy" src={destination.image?.src ?? choiceImages[index].src} />
                 </div>
                 <div className="pt-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">{destination.country}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">{formatDestinationFact(destination.country, locale)}</p>
                   <div className="mt-2 flex items-end justify-between gap-4">
                     <h3 className="display-serif text-3xl font-medium text-brandforest">{destination.name}</h3>
                     {match ? (
@@ -247,7 +255,7 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
                       </span>
                     ) : (
                       <span className="max-w-32 text-right text-sm font-semibold text-charcoal/55">
-                        {destination.rockType} · {destination.routeCount} {text.routes}
+                        {formatDestinationFact(destination.rockType, locale)} · {destination.routeCount} {text.routes}
                       </span>
                     )}
                   </div>

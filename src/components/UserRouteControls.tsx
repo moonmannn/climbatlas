@@ -16,6 +16,7 @@ type UserRouteControlsProps = {
   destinationName: string;
   destinationSlug: string;
   route: RouteIdentity;
+  variant?: "default" | "compact";
 };
 
 const statusLabels: Record<SavedRouteStatus, { en: string; zh: string }> = {
@@ -32,7 +33,8 @@ const statusLabels: Record<SavedRouteStatus, { en: string; zh: string }> = {
 export function UserRouteControls({
   destinationName,
   destinationSlug,
-  route
+  route,
+  variant = "default"
 }: UserRouteControlsProps) {
   const { locale } = useLanguage();
   const { isConfigured, user } = useSupabaseAuth();
@@ -50,6 +52,7 @@ export function UserRouteControls({
   const currentStatus = getSavedStatus(destinationSlug, route.id);
   const savedNote = getNote(destinationSlug, route.id);
   const hasNoteChange = noteDraft.trim() !== savedNote.trim();
+  const isCompact = variant === "compact";
 
   useEffect(() => {
     setNoteDraft(savedNote);
@@ -90,22 +93,22 @@ export function UserRouteControls({
   }
 
   return (
-    <section className="mb-5 rounded-lg border border-forest/20 bg-forest/10 p-4">
+    <section className={`border-y border-forest/20 bg-forest/5 ${isCompact ? "py-4" : "mb-5 rounded-lg p-4"}`}>
       <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.18em] text-forest">
             {isZh ? "个人路线本" : "Personal route notebook"}
           </p>
-          <h2 className="mt-1 text-2xl font-black text-bark">
+          <h2 className={`${isCompact ? "mt-1 text-lg" : "mt-1 text-2xl"} font-black text-bark`}>
             {isZh ? "把这条线放进你的计划" : "Save this route to your atlas"}
           </h2>
-          <p className="mt-2 max-w-2xl text-sm leading-6 text-bark/70">
+          <p className={`${isCompact ? "sr-only" : "mt-2 max-w-2xl text-sm leading-6 text-bark/70"}`}>
             {isZh
               ? "这些记录只属于你自己，不会显示在公开评价中。"
               : "These records are private to you and do not appear in public reviews."}
           </p>
         </div>
-        <div className="rounded-md border border-ridge/25 bg-parchment/70 px-3 py-2 text-xs font-black text-bark/65">
+        <div className={isCompact ? "sr-only" : "rounded-md border border-ridge/25 bg-parchment/70 px-3 py-2 text-xs font-black text-bark/65"}>
           {destinationName} / {route.name}
         </div>
       </div>
@@ -129,7 +132,84 @@ export function UserRouteControls({
         </div>
       )}
 
-      {user && (
+      {user && (isCompact ? (
+        <div className="mt-4">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="mr-1 text-xs font-semibold text-bark/58">
+              {isZh ? "状态" : "Status"}:
+            </span>
+            {(["want-to-climb", "climbed"] as SavedRouteStatus[]).map(
+              (status) => (
+                <button
+                  aria-pressed={currentStatus === status}
+                  className={`rounded-md border px-3 py-2 text-sm font-black transition ${
+                    currentStatus === status
+                      ? "border-forest bg-forest text-parchment"
+                      : "border-ridge/25 bg-white/60 text-bark hover:border-forest/35"
+                  }`}
+                  disabled={isLoading}
+                  key={status}
+                  onClick={() => void handleStatus(status)}
+                  type="button"
+                >
+                  {statusLabels[status][locale]}
+                </button>
+              )
+            )}
+            {currentStatus && (
+              <button
+                className="rounded-md border border-ridge/25 bg-white/40 px-3 py-2 text-sm font-black text-bark/60"
+                disabled={isLoading}
+                onClick={() => void handleStatus(null)}
+                type="button"
+              >
+                {isZh ? "移除" : "Remove"}
+              </button>
+            )}
+          </div>
+
+          <details className="mt-3 border-t border-forest/15 pt-3">
+            <summary className="cursor-pointer text-sm font-semibold text-forest">
+              {isZh ? "私人笔记" : "Private note"}
+              {savedNote ? (isZh ? " · 已保存" : " · saved") : ""}
+            </summary>
+            <textarea
+              className="mt-3 min-h-24 w-full rounded-md border border-ridge/25 bg-white/70 px-3 py-3 text-sm font-bold leading-6 text-bark outline-none transition focus:border-forest"
+              id={`note-${route.id}`}
+              onChange={(event) => setNoteDraft(event.target.value)}
+              placeholder={
+                isZh
+                  ? "只给自己看的路线想法、训练目标，或下次要确认的事项。"
+                  : "Private thoughts, training goals, or things to confirm next time."
+              }
+              value={noteDraft}
+            />
+            <div className="mt-2 flex flex-wrap gap-2">
+              <button
+                className="rounded-md bg-bark px-4 py-2 text-sm font-black text-parchment disabled:bg-bark/45"
+                disabled={isLoading || !hasNoteChange}
+                onClick={() => void handleNoteSave()}
+                type="button"
+              >
+                {isZh ? "保存笔记" : "Save note"}
+              </button>
+              {(savedNote || noteDraft) && (
+                <button
+                  className="rounded-md border border-ridge/25 bg-white/45 px-4 py-2 text-sm font-black text-bark/65"
+                  disabled={isLoading}
+                  onClick={() => {
+                    setNoteDraft("");
+                    void handleNoteSave("");
+                  }}
+                  type="button"
+                >
+                  {isZh ? "清空" : "Clear"}
+                </button>
+              )}
+            </div>
+          </details>
+        </div>
+      ) : (
         <div className="mt-4 grid gap-4 lg:grid-cols-[18rem_1fr]">
           <div className="grid gap-2">
             <div className="rounded-md border border-ridge/25 bg-parchment/70 p-3 text-xs font-black leading-5 text-bark/65">
@@ -210,7 +290,7 @@ export function UserRouteControls({
             </div>
           </div>
         </div>
-      )}
+      ))}
 
       {(message || error) && (
         <p className="mt-4 rounded-md border border-ridge/25 bg-parchment/70 p-3 text-xs font-bold leading-5 text-bark/70">

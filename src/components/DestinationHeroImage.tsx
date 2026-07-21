@@ -5,9 +5,9 @@ import { useLanguage } from "@/components/LanguageProvider";
 import type { ImageAsset } from "@/types/destination";
 
 const fallbackImages = [
-  "/images/editorial/forest-granite-plate.png",
-  "/images/editorial/seaside-limestone-plate.png",
-  "/images/editorial/climbatlas-discovery-hero.png"
+  "/images/editorial/forest-granite-plate.webp",
+  "/images/editorial/seaside-limestone-plate.webp",
+  "/images/editorial/climbatlas-discovery-hero.webp"
 ];
 
 function getFallback(slug: string) {
@@ -26,6 +26,9 @@ export function DestinationHeroImage({ image, slug }: { image?: ImageAsset; slug
         <img
           alt={useFallback ? (locale === "zh" ? "ClimbAtlas 原创户外艺术图版" : "Original ClimbAtlas outdoor art plate") : image.alt}
           className="h-full w-full object-cover"
+          decoding="async"
+          fetchPriority="high"
+          loading="eager"
           onError={() => setFailed(true)}
           src={useFallback ? getFallback(slug) : image.src}
         />

@@ -110,6 +110,15 @@ export function loadRouteProject(root = process.cwd()) {
         "adapters",
         "normalize-route-facts.ts"
       )
+    ),
+    routeExperienceModule: require(
+      path.join(root, "src", "data", "route-experiences", "index.ts")
+    ),
+    routeCleanupModule: require(
+      path.join(root, "src", "data", "route-catalog-cleanup.ts")
+    ),
+    routeAliasesModule: require(
+      path.join(root, "src", "lib", "routeAliases.ts")
     )
   };
 }

@@ -1,4 +1,5 @@
 import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
+import { normalizeRouteSource } from "@/lib/routes/adapters/normalize-route-source";
 import type {
   OpenBetaRawClimbType,
   OpenBetaRawGrade,
@@ -117,7 +118,7 @@ export function adaptOpenBetaRoute(
       status: "draft"
     },
     sourceRecords: [
-      {
+      normalizeRouteSource({
         provider: "openbeta",
         label: "OpenBeta route metadata snapshot",
         sourceUrl,
@@ -137,7 +138,7 @@ export function adaptOpenBetaRoute(
         ],
         notes: "Imported from an OpenBeta metadata snapshot; descriptions and user content are excluded. The external ID preserves record-level provenance.",
         purpose: "route-reference"
-      }
+      })
     ],
     verification: {
       status: "source-backed",

@@ -19,6 +19,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (storedLocale === "en" || storedLocale === "zh") setLocaleState(storedLocale);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.lang = locale === "zh" ? "zh-CN" : "en";
+  }, [locale]);
+
   const value = useMemo<LanguageContextValue>(() => ({
     locale,
     setLocale(nextLocale) {

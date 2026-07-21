@@ -82,11 +82,23 @@ export const routeTerrainTags = [
   "face",
   "corner",
   "chimney",
-  "arete"
+  "arete",
+  "flake",
+  "pockets",
+  "tufa"
 ] as const;
 export type RouteTerrainTag = (typeof routeTerrainTags)[number];
 
-export const routeMovementTags = ["technical", "compression", "stemming"] as const;
+export const routeMovementTags = [
+  "technical",
+  "powerful",
+  "endurance",
+  "compression",
+  "stemming",
+  "precise-footwork",
+  "route-reading",
+  "balance"
+] as const;
 export type RouteMovementTag = (typeof routeMovementTags)[number];
 
 export const routePhysicalTags = ["power", "endurance", "sustained"] as const;
@@ -114,7 +126,104 @@ export const routeExperienceTags = [
 ] as const;
 export type RouteExperienceTag = (typeof routeExperienceTags)[number];
 
-export type AttributeOrigin = "source" | "editorial" | "inferred";
+export type AttributeOrigin =
+  | "source"
+  | "editorial"
+  | "inferred"
+  | "community";
+
+/**
+ * Every public experience claim carries its provenance with it. Source-backed
+ * values point at stable IDs on the same route; inferred values name the
+ * structured inputs used to create them.
+ */
+export type RouteEvidenceValue<T> = {
+  value: T;
+  origin: AttributeOrigin;
+  sourceIds?: string[];
+  checkedAt?: string;
+  inferredFrom?: string[];
+};
+
+export const routeDifficultyShapes = [
+  "single-crux",
+  "sustained",
+  "progressive",
+  "variable"
+] as const;
+export type RouteDifficultyShape = (typeof routeDifficultyShapes)[number];
+
+export const routeChallengeDemands = [
+  "technique",
+  "power",
+  "power-endurance",
+  "endurance",
+  "route-reading",
+  "footwork",
+  "crack-technique",
+  "compression",
+  "balance",
+  "head-game"
+] as const;
+export type RouteChallengeDemand = (typeof routeChallengeDemands)[number];
+
+export const routeCruxPatterns = [
+  "distinct-crux",
+  "multiple-cruxes",
+  "sustained",
+  "no-single-crux"
+] as const;
+export type RouteCruxPattern = (typeof routeCruxPatterns)[number];
+
+export const routeIntensityLevels = ["low", "moderate", "high"] as const;
+export type RouteIntensityLevel = (typeof routeIntensityLevels)[number];
+
+export const routeAspects = [
+  "north",
+  "northeast",
+  "east",
+  "southeast",
+  "south",
+  "southwest",
+  "west",
+  "northwest"
+] as const;
+export type RouteAspect = (typeof routeAspects)[number];
+
+export const routeSunWindows = [
+  "morning-sun",
+  "afternoon-sun",
+  "all-day-sun",
+  "mostly-shaded",
+  "variable"
+] as const;
+export type RouteSunWindow = (typeof routeSunWindows)[number];
+
+export type RouteExperienceProfile = {
+  character: {
+    wallAngle: RouteEvidenceValue<RouteWallAngle>;
+    terrain: RouteEvidenceValue<RouteTerrainTag[]>;
+    movementTendency: RouteEvidenceValue<RouteMovementTag[]>;
+    difficultyShape: RouteEvidenceValue<RouteDifficultyShape>;
+  };
+  challenge: {
+    primaryDemand: RouteEvidenceValue<RouteChallengeDemand>;
+    secondaryDemand?: RouteEvidenceValue<RouteChallengeDemand>;
+    cruxPattern?: RouteEvidenceValue<RouteCruxPattern>;
+    sustainedness?: RouteEvidenceValue<RouteIntensityLevel>;
+    exposure?: RouteEvidenceValue<RouteIntensityLevel>;
+    commitment?: RouteEvidenceValue<RouteIntensityLevel>;
+  };
+  logistics?: {
+    approachMinutes?: RouteEvidenceValue<{
+      min: number;
+      max?: number;
+      qualifier?: RouteFactQualifier;
+    }>;
+    aspect?: RouteEvidenceValue<RouteAspect>;
+    sun?: RouteEvidenceValue<RouteSunWindow>;
+  };
+};
 
 export type RouteSourceProvider =
   | "openbeta"
@@ -138,6 +247,7 @@ export type RouteSourcePurpose =
   | "unknown";
 
 export type RouteSourceRecord = {
+  id: string;
   provider: RouteSourceProvider;
   label: string;
   sourceUrl: string;
@@ -282,6 +392,7 @@ export type RouteRecord = {
   experienceTags: RouteExperienceTag[];
   editorial: RouteEditorial;
   dnaProfile?: RouteDnaProfile;
+  experience?: RouteExperienceProfile;
   sourceRecords: RouteSourceRecord[];
   verification: RouteVerification;
   externalResources: ExternalResource[];

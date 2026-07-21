@@ -25,7 +25,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Ceuse",
           sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -67,7 +67,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Ceuse",
           sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -109,7 +109,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Ceuse",
           sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -151,7 +151,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Ceuse",
           sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -193,7 +193,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Ceuse",
           sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -235,7 +235,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Ceuse",
           sourceUrl: "https://en.wikipedia.org/wiki/C%C3%A9%C3%BCse",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -279,7 +279,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chamonix official visitor resource",
           sourceUrl: "https://www.chamonix.com/",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -321,7 +321,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chamonix official visitor resource",
           sourceUrl: "https://www.chamonix.com/",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -363,7 +363,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chamonix official visitor resource",
           sourceUrl: "https://www.chamonix.com/",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -405,7 +405,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chamonix official visitor resource",
           sourceUrl: "https://www.chamonix.com/",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -449,7 +449,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Dolomites",
           sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -491,7 +491,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Dolomites",
           sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -533,7 +533,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Dolomites",
           sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -575,7 +575,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Dolomites",
           sourceUrl: "https://en.wikipedia.org/wiki/Dolomites",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -619,7 +619,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Potrero Chico",
           sourceUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -661,7 +661,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Potrero Chico",
           sourceUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -703,7 +703,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Potrero Chico",
           sourceUrl: "https://en.wikipedia.org/wiki/Potrero_Chico",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -747,7 +747,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Fontainebleau routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/france/fontainebleau",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -789,7 +789,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: La Baleine",
           sourceUrl: "https://bleau.info/canon/462.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -831,7 +831,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: La Mouche",
           sourceUrl: "https://bleau.info/beauvais/88.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -873,7 +873,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Hip Hop",
           sourceUrl: "https://bleau.info/cailles/1154.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -915,7 +915,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Graviton",
           sourceUrl: "https://bleau.info/sabots/782.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -957,7 +957,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Magic Bus",
           sourceUrl: "https://bleau.info/y/686.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -999,7 +999,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Pendu",
           sourceUrl: "https://bleau.info/pendu/938.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1041,7 +1041,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Bilboquet",
           sourceUrl: "https://bleau.info/envers/5116.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1083,7 +1083,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: El Poussah",
           sourceUrl: "https://bleau.info/isatis/551.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1125,7 +1125,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Sphinx",
           sourceUrl: "https://bleau.info/canon/18892.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1167,7 +1167,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: La Balance",
           sourceUrl: "https://bleau.info/cuvier/274.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1209,7 +1209,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Bleau.info: Le Plafond",
           sourceUrl: "https://bleau.info/jouanne/389.html",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1251,7 +1251,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Cortomaltèse",
           sourceUrl: "https://www.mountainproject.com/route/119450273/cortomaltese",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1293,7 +1293,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Beatle juice",
           sourceUrl: "https://www.mountainproject.com/route/113316770/beatle-juice",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1335,7 +1335,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Jet Set",
           sourceUrl: "https://www.mountainproject.com/route/202584579/jet-set",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1377,7 +1377,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Sur Prises",
           sourceUrl: "https://www.mountainproject.com/route/200680724/sur-prises",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1419,7 +1419,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rainbow Rocket",
           sourceUrl: "https://www.mountainproject.com/route/123838667/rainbow-rocket",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1461,7 +1461,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Big Dragon",
           sourceUrl: "https://www.mountainproject.com/route/200569222/big-dragon",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1505,7 +1505,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Frankenjura",
           sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1547,7 +1547,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Frankenjura",
           sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1589,7 +1589,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Frankenjura",
           sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1631,7 +1631,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Frankenjura",
           sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1673,7 +1673,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Frankenjura",
           sourceUrl: "https://en.wikipedia.org/wiki/Frankenjura",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1717,7 +1717,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Parks Victoria: Grampians National Park",
           sourceUrl: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "high" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1759,7 +1759,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Parks Victoria: Grampians National Park",
           sourceUrl: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "high" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1801,7 +1801,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Parks Victoria: Grampians National Park",
           sourceUrl: "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "high" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1845,7 +1845,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Touch and Go",
           sourceUrl: "https://www.mountainproject.com/route/105722359/touch-and-go",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1887,7 +1887,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Sexy Grandma",
           sourceUrl: "https://www.mountainproject.com/route/105723454/sexy-grandma",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1929,7 +1929,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Joshua Tree",
           sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -1971,7 +1971,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Joshua Tree",
           sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2013,7 +2013,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Joshua Tree",
           sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2055,7 +2055,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Joshua Tree",
           sourceUrl: "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2099,7 +2099,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2141,7 +2141,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Daniboy",
           sourceUrl: "https://www.mountainproject.com/route/107801184/daniboy",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2183,7 +2183,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2225,7 +2225,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2267,7 +2267,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2309,7 +2309,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2351,7 +2351,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Aroma",
           sourceUrl: "https://www.mountainproject.com/route/126081245/aroma",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2393,7 +2393,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Bye Bye Doc",
           sourceUrl: "https://www.mountainproject.com/route/107623918/bye-bye-doc",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2435,7 +2435,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Styx",
           sourceUrl: "https://www.mountainproject.com/route/108421050/styx",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2477,7 +2477,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Kalymnos routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/greece/kalymnos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2519,7 +2519,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Priapos",
           sourceUrl: "https://www.mountainproject.com/route/107179233/priapos",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2561,7 +2561,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Wings for Life",
           sourceUrl: "https://www.mountainproject.com/route/107867694/wings-for-life",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2603,7 +2603,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: DNA",
           sourceUrl: "https://www.mountainproject.com/route/106804759/dna",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2645,7 +2645,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Fun de Chichunne",
           sourceUrl: "https://www.mountainproject.com/route/107804615/fun-de-chichunne",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2687,7 +2687,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Kerveros",
           sourceUrl: "https://www.mountainproject.com/route/106924634/kerveros",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2729,7 +2729,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Aegialis",
           sourceUrl: "https://www.mountainproject.com/route/106804781/aegialis",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2771,7 +2771,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Tufa King Pumped",
           sourceUrl: "https://www.mountainproject.com/route/107335878/tufa-king-pumped",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2813,7 +2813,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Island in the Sun",
           sourceUrl: "https://www.mountainproject.com/route/107942813/island-in-the-sun",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2855,7 +2855,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Happy Girlfriend",
           sourceUrl: "https://www.mountainproject.com/route/107136770/happy-girlfriend",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2899,7 +2899,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chinese Wikipedia: Long Dong climbing area",
           sourceUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2941,7 +2941,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chinese Wikipedia: Long Dong climbing area",
           sourceUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -2983,7 +2983,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Chinese Wikipedia: Long Dong climbing area",
           sourceUrl: "https://zh.wikipedia.org/wiki/%E9%BE%8D%E6%B4%9E%E6%94%80%E5%B2%A9%E5%A0%B4",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3027,7 +3027,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Margalef",
           sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3069,7 +3069,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Margalef",
           sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3111,7 +3111,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Margalef",
           sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3153,7 +3153,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Margalef",
           sourceUrl: "https://en.wikipedia.org/wiki/Margalef",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3197,7 +3197,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Railay Beach",
           sourceUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3239,7 +3239,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Railay Beach",
           sourceUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3281,7 +3281,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Railay Beach",
           sourceUrl: "https://en.wikipedia.org/wiki/Railay_Beach",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3325,7 +3325,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Stunning the Hog",
           sourceUrl: "https://www.mountainproject.com/route/106146849/stunning-the-hog",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3367,7 +3367,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Table of Colors",
           sourceUrl: "https://www.mountainproject.com/route/106304964/table-of-colors",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3409,7 +3409,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mercy, the Huff",
           sourceUrl: "https://www.mountainproject.com/route/106045269/mercy-the-huff",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3451,7 +3451,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3493,7 +3493,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Ale-8-One",
           sourceUrl: "https://www.mountainproject.com/route/106445478/ale-8-one",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3535,7 +3535,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Nagypapa",
           sourceUrl: "https://www.mountainproject.com/route/106053937/nagypapa",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3577,7 +3577,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Ro Shampo",
           sourceUrl: "https://www.mountainproject.com/route/105860759/ro-shampo",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3619,7 +3619,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3661,7 +3661,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Oompa",
           sourceUrl: "https://www.mountainproject.com/route/106782060/oompa",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3703,7 +3703,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Snozzberries",
           sourceUrl: "https://www.mountainproject.com/route/108411358/snozzberries",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3745,7 +3745,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3787,7 +3787,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Breakfast Burrito",
           sourceUrl: "https://www.mountainproject.com/route/106081922/breakfast-burrito",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3829,7 +3829,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Boltergeist",
           sourceUrl: "https://www.mountainproject.com/route/106580228/boltergeist",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3871,7 +3871,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Air Ride Equipped",
           sourceUrl: "https://www.mountainproject.com/route/106586504/air-ride-equipped",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3913,7 +3913,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Tissue Tiger",
           sourceUrl: "https://www.mountainproject.com/route/105870261/tissue-tiger",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3955,7 +3955,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Chainsaw Massacre",
           sourceUrl: "https://www.mountainproject.com/route/106153682/chainsaw-massacre",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -3997,7 +3997,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Paradise Lost",
           sourceUrl: "https://www.mountainproject.com/route/106575827/paradise-lost",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4039,7 +4039,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4081,7 +4081,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project Red River Gorge routes",
           sourceUrl: "https://www.mountainproject.com/area/105841134/red-river-gorge",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4123,7 +4123,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Amarillo Sunset",
           sourceUrl: "https://www.mountainproject.com/route/106286394/amarillo-sunset",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4165,7 +4165,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Banshee",
           sourceUrl: "https://www.mountainproject.com/route/106333612/banshee",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4207,7 +4207,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Johnny B. Good",
           sourceUrl: "https://www.mountainproject.com/route/106154626/johnny-b-good",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4249,7 +4249,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Cell Block Six",
           sourceUrl: "https://www.mountainproject.com/route/106586323/cell-block-six",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4291,7 +4291,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Convicted",
           sourceUrl: "https://www.mountainproject.com/route/106598931/convicted",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4333,7 +4333,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Hippocrite",
           sourceUrl: "https://www.mountainproject.com/route/106126244/hippocrite",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4375,7 +4375,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rat Stew",
           sourceUrl: "https://www.mountainproject.com/route/106061906/rat-stew",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4417,7 +4417,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mona Lisa Overdrive",
           sourceUrl: "https://www.mountainproject.com/route/106925375/mona-lisa-overdrive",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4459,7 +4459,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Team Wilson",
           sourceUrl: "https://www.mountainproject.com/route/106916504/team-wilson",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4501,7 +4501,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: King Me",
           sourceUrl: "https://www.mountainproject.com/route/105964688/king-me",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4543,7 +4543,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Black Gold",
           sourceUrl: "https://www.mountainproject.com/route/106975129/black-gold",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4585,7 +4585,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Return of Darth Moll",
           sourceUrl: "https://www.mountainproject.com/route/107285945/return-of-darth-moll",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4627,7 +4627,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Flour Power",
           sourceUrl: "https://www.mountainproject.com/route/106969206/flour-power",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4669,7 +4669,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Creep Show",
           sourceUrl: "https://www.mountainproject.com/route/105889540/creep-show",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4711,7 +4711,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Check Your Grip",
           sourceUrl: "https://www.mountainproject.com/route/106081909/check-your-grip",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4753,7 +4753,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Where Lizards Dare",
           sourceUrl: "https://www.mountainproject.com/route/105919793/where-lizards-dare",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4795,7 +4795,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Iniquity",
           sourceUrl: "https://www.mountainproject.com/route/106586316/iniquity",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4837,7 +4837,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Kampsight",
           sourceUrl: "https://www.mountainproject.com/route/105882851/kampsight",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4879,7 +4879,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Fire and Brimstone",
           sourceUrl: "https://www.mountainproject.com/route/106081931/fire-and-brimstone",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4921,7 +4921,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Manifest Destiny",
           sourceUrl: "https://www.mountainproject.com/route/106316623/manifest-destiny",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -4963,7 +4963,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Windy Corner",
           sourceUrl: "https://www.mountainproject.com/route/106166699/windy-corner",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5005,7 +5005,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Belly of the Beast",
           sourceUrl: "https://www.mountainproject.com/route/106782221/belly-of-the-beast",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5047,7 +5047,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: The Return of Chris Snyder",
           sourceUrl: "https://www.mountainproject.com/route/106020821/the-return-of-chris-snyder",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5091,7 +5091,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Siurana",
           sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5133,7 +5133,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Siurana",
           sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5175,7 +5175,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Siurana",
           sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5217,7 +5217,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Siurana",
           sourceUrl: "https://en.wikipedia.org/wiki/Siurana_(Tarragona)",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5261,7 +5261,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Smith Rock State Park",
           sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5303,7 +5303,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Smith Rock State Park",
           sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5345,7 +5345,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Smith Rock State Park",
           sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5387,7 +5387,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Smith Rock State Park",
           sourceUrl: "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5431,7 +5431,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Crime of the Century",
           sourceUrl: "https://www.mountainproject.com/route/105842838/crime-of-the-century",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5473,7 +5473,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Merci Me",
           sourceUrl: "https://www.mountainproject.com/route/106527466/merci-me",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5515,7 +5515,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Minor Threat",
           sourceUrl: "https://www.mountainproject.com/route/111998633/minor-threat",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5557,7 +5557,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Squamish routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5599,7 +5599,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "TheCrag Squamish routes",
           sourceUrl: "https://www.thecrag.com/en/climbing/canada/squamish",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5641,7 +5641,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Angel's Crest",
           sourceUrl: "https://www.mountainproject.com/route/105847203/angels-crest",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5683,7 +5683,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: The Ultimate Everything",
           sourceUrl: "https://www.mountainproject.com/route/106480430/the-ultimate-everything",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5725,7 +5725,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Flying Circus",
           sourceUrl: "https://www.mountainproject.com/route/105845816/flying-circus",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5767,7 +5767,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Neat and Cool",
           sourceUrl: "https://www.mountainproject.com/route/105910806/neat-and-cool",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5809,7 +5809,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mosquito",
           sourceUrl: "https://www.mountainproject.com/route/105842817/mosquito",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5851,7 +5851,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Klahanie Crack",
           sourceUrl: "https://www.mountainproject.com/route/105947052/klahanie-crack",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5893,7 +5893,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Quarryman",
           sourceUrl: "https://www.mountainproject.com/route/105857742/quarryman",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5935,7 +5935,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Penny Lane",
           sourceUrl: "https://www.mountainproject.com/route/105842825/penny-lane",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -5977,7 +5977,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Bullethead East",
           sourceUrl: "https://www.mountainproject.com/route/107237875/bullethead-east",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6019,7 +6019,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Skywalker",
           sourceUrl: "https://www.mountainproject.com/route/107198282/skywalker",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6061,7 +6061,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Star Chek",
           sourceUrl: "https://www.mountainproject.com/route/107104796/star-chek",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6103,7 +6103,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Apron Strings",
           sourceUrl: "https://www.mountainproject.com/route/105886110/apron-strings",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6145,7 +6145,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: St. Vitus' Dance",
           sourceUrl: "https://www.mountainproject.com/route/105843781/st-vitus-dance",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6187,7 +6187,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Diedre",
           sourceUrl: "https://www.mountainproject.com/route/105857666/diedre",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6229,7 +6229,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rambles",
           sourceUrl: "https://www.mountainproject.com/route/107577227/rambles",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6271,7 +6271,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Boomstick Crack",
           sourceUrl: "https://www.mountainproject.com/route/106188277/boomstick-crack",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6313,7 +6313,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: The Zip",
           sourceUrl: "https://www.mountainproject.com/route/105941644/the-zip",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6355,7 +6355,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Laughing Crack",
           sourceUrl: "https://www.mountainproject.com/route/105959460/laughing-crack",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6397,7 +6397,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Birds of Prey",
           sourceUrl: "https://www.mountainproject.com/route/105844620/birds-of-prey",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6439,7 +6439,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rock On",
           sourceUrl: "https://www.mountainproject.com/route/105910904/rock-on",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6481,7 +6481,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Crescent Crack (closed)",
           sourceUrl: "https://www.mountainproject.com/route/107224616/crescent-crack-closed",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6523,7 +6523,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Jabberwocky",
           sourceUrl: "https://www.mountainproject.com/route/106170451/jabberwocky",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6565,7 +6565,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: High Mountain Woody",
           sourceUrl: "https://www.mountainproject.com/route/105934194/high-mountain-woody",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6607,7 +6607,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Seasoned in the Sun",
           sourceUrl: "https://www.mountainproject.com/route/105979707/seasoned-in-the-sun",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6649,7 +6649,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Tantalus Wall",
           sourceUrl: "https://www.mountainproject.com/route/105880812/tantalus-wall",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6691,7 +6691,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Sunblessed",
           sourceUrl: "https://www.mountainproject.com/route/105918391/sunblessed",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6733,7 +6733,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Burgers and Fries",
           sourceUrl: "https://www.mountainproject.com/route/105957572/burgers-and-fries",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6775,7 +6775,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Kangaroo Corner",
           sourceUrl: "https://www.mountainproject.com/route/105808602/kangaroo-corner",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6817,7 +6817,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Overly Hanging Out",
           sourceUrl: "https://www.mountainproject.com/route/106530275/overly-hanging-out",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6859,7 +6859,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Papoose One",
           sourceUrl: "https://www.mountainproject.com/route/107256764/papoose-one",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6901,7 +6901,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Rainy Day Dream Away",
           sourceUrl: "https://www.mountainproject.com/route/105842909/rainy-day-dream-away",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6943,7 +6943,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Slot Machine",
           sourceUrl: "https://www.mountainproject.com/route/105842934/slot-machine",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -6985,7 +6985,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Smoke Bluff Connection",
           sourceUrl: "https://www.mountainproject.com/route/106173601/smoke-bluff-connection",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7029,7 +7029,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Yangshuo County",
           sourceUrl: "https://en.wikipedia.org/wiki/Yangshuo_County",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7071,7 +7071,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Yangshuo County",
           sourceUrl: "https://en.wikipedia.org/wiki/Yangshuo_County",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7113,7 +7113,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Yangshuo County",
           sourceUrl: "https://en.wikipedia.org/wiki/Yangshuo_County",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "low" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7157,7 +7157,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Freerider",
           sourceUrl: "https://www.mountainproject.com/route/106261545/freerider",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7199,7 +7199,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Wikipedia: Separate Reality",
           sourceUrl: "https://en.wikipedia.org/wiki/Separate_Reality_(climb)",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7241,7 +7241,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Cosmic Debris",
           sourceUrl: "https://www.mountainproject.com/route/106416910/cosmic-debris",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7283,7 +7283,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Book of Hate",
           sourceUrl: "https://www.mountainproject.com/route/114315261/book-of-hate",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7325,7 +7325,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Drive By Shooting",
           sourceUrl: "https://www.mountainproject.com/route/106690707/drive-by-shooting",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7367,7 +7367,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Outer Limits",
           sourceUrl: "https://www.mountainproject.com/route/105874465/outer-limits",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7409,7 +7409,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Catchy",
           sourceUrl: "https://www.mountainproject.com/route/105939236/catchy",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7451,7 +7451,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Reed's Pinnacle Direct Route",
           sourceUrl: "https://www.mountainproject.com/route/105865301/reeds-pinnacle-direct-route",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7493,7 +7493,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Central Pillar of Frenzy",
           sourceUrl: "https://www.mountainproject.com/route/105862930/central-pillar-of-frenzy",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7535,7 +7535,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Regular Route (Higher Cathedral Spire)",
           sourceUrl: "https://www.mountainproject.com/route/105956387/regular-route-higher-cathedral-spire",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7577,7 +7577,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Lost Arrow Tip",
           sourceUrl: "https://www.mountainproject.com/route/105912192/lost-arrow-tip",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7619,7 +7619,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Muir Wall",
           sourceUrl: "https://www.mountainproject.com/route/105924815/muir-wall",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7661,7 +7661,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Crimson Cringe",
           sourceUrl: "https://www.mountainproject.com/route/106351823/crimson-cringe",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7703,7 +7703,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Arrowhead Arête",
           sourceUrl: "https://www.mountainproject.com/route/106269845/arrowhead-arete",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7745,7 +7745,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Salathé Wall",
           sourceUrl: "https://www.mountainproject.com/route/106154042/salathe-wall",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7787,7 +7787,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Lurking Fear",
           sourceUrl: "https://www.mountainproject.com/route/106110258/lurking-fear",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7829,7 +7829,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Zodiac",
           sourceUrl: "https://www.mountainproject.com/route/106152347/zodiac",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7871,7 +7871,7 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         {
           sourceLabel: "Mountain Project: Mescalito",
           sourceUrl: "https://www.mountainproject.com/route/105996954/mescalito",
-          lastChecked: "2026-07-10",
+          lastChecked: "2026-07-21",
           type: "route-database-metadata" as const,
           trustLevel: "medium" as const,
           verifies: ["name", "grade", "type", "sector"],
@@ -7893,48 +7893,6 @@ export const metadataRoutesByDestination: Record<string, RouteHighlight[]> = {
         }
       ],
       communityStatus: "coming-soon" as const
-    },
-    {
-      id: "steck-salathe-yosemite",
-      name: "Steck-Salathe",
-      grade: "5.10-",
-      type: "multi-pitch" as const,
-      length: "long multi-pitch",
-      sector: "Sentinel Rock",
-      status: "metadata" as const,
-      metadataKind: "route" as const,
-      style: "multi-pitch metadata entry for Sentinel Rock.",
-      summary: "Metadata-only route index entry with outbound sources. ClimbAtlas does not publish beta for this line.",
-      practiceFocus: ["source check", "route selection", "local update"],
-      bestFor: "Climbers building a destination shortlist before opening current external resources.",
-      personalityTags: ["Metadata index", "External links", "No beta"],
-      decisionHint: "Use this entry to decide whether to research the route further in current external resources.",
-      sources: [
-        {
-          sourceLabel: "Mountain Project: Steck-Salathe",
-          sourceUrl: "https://www.mountainproject.com/route/105862873/steck-salathe",
-          lastChecked: "2026-07-10",
-          type: "route-database-metadata" as const,
-          trustLevel: "medium" as const,
-          verifies: ["name", "grade", "type", "sector"],
-          notes: "Metadata and outbound reference only; no route text ratings comments beta or photos are copied."
-        }
-      ],
-      images: [],
-      editorialTips: [],
-      externalResources: [
-        {
-          title: "Mountain Project: Steck-Salathe",
-          url: "https://www.mountainproject.com/route/105862873/steck-salathe",
-          type: "route-database" as const,
-          linkStatus: "route-specific" as const,
-          description: {
-            en: "External resource for current route research. ClimbAtlas does not copy beta, comments, ratings, or photos.",
-            zh: "外部资料入口，用于查看最新线路信息。ClimbAtlas 不复制 beta、评论、评分或图片。"
-          }
-        }
-      ],
-      communityStatus: "coming-soon" as const
     }
   ]
 };
@@ -7945,5 +7903,6 @@ export const metadataRouteAliases: Record<string, string> = {
   "yosemite-usa:central-pillar-frenzy-yosemite": "central-pillar-of-frenzy-yosemite",
   "squamish-canada:angel-crest-squamish": "angels-crest-squamish",
   "kalymnos-greece:priapos-kalymnos": "priapios-kalymnos",
-  "yosemite-usa:salathe-wall-yosemite": "salathe-wall-el-capitan"
+  "yosemite-usa:salathe-wall-yosemite": "salathe-wall-el-capitan",
+  "yosemite-usa:steck-salathe-yosemite": "steck-salathe-route-sentinel-rock"
 };

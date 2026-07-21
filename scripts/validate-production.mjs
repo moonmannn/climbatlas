@@ -9,6 +9,18 @@ const steps = [
   { label: "Route catalog", args: ["run", "routes:validate"] },
   { label: "Public route parity", args: ["run", "routes:validate-public"] },
   {
+    label: "Route ViewModels",
+    args: ["run", "routes:validate-view-models", "--", "--no-write"]
+  },
+  {
+    label: "Route Experience Layer",
+    args: ["run", "routes:validate-experience"]
+  },
+  {
+    label: "Legacy route cleanup",
+    args: ["run", "routes:validate-cleanup", "--", "--no-write"]
+  },
+  {
     label: "Route audit (read-only)",
     args: ["run", "routes:audit", "--", "--no-write"]
   },

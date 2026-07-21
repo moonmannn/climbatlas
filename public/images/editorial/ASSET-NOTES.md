@@ -7,3 +7,9 @@
 - Intended use: ClimbAtlas discovery homepage and Climbing DNA introduction.
 - Reference images were used only for broad editorial color and illustration language. The generated geography and composition are original.
 - Required alt text should describe it as an original fictional climbing landscape.
+
+## Web delivery
+
+- The three original PNG plates are retained as source assets.
+- Pages serve the matching `.webp` files generated at quality 82.
+- The homepage plate is loaded eagerly; below-the-fold artwork is lazy-loaded.

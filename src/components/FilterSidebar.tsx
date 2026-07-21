@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
+import { formatDestinationFact } from "@/lib/formatters";
 import { formatClimbingType, formatSeason, getUiText } from "@/lib/uiText";
 import type { ClimbingType, Season } from "@/types/destination";
 
@@ -188,7 +189,7 @@ export function FilterSidebar({
             <option value="all">{t.allRockTypes}</option>
             {rockTypes.map((rockType) => (
               <option key={rockType} value={rockType}>
-                {rockType}
+                {formatDestinationFact(rockType, locale)}
               </option>
             ))}
           </select>

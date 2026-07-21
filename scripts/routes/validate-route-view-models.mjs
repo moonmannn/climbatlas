@@ -11,6 +11,8 @@ const {
   destinationsModule,
   publicRoutesModule,
   routeDetailViewModelModule,
+  routeExperienceModule,
+  routeCleanupModule,
   routeFactResolutionModule,
   routeFactNormalizationModule,
   routesModule
@@ -30,6 +32,13 @@ const destinationById = new Map(
 const publicRoutes = publicRoutesModule.getPublicRouteRecords();
 const allRoutes = routesModule.getAllRouteRecordsWithDestinations();
 const allEntries = routesModule.getAllRouteCatalogEntries().map(({ entry }) => entry);
+const routeExperienceByKey = routeExperienceModule.routeExperienceByKey;
+const cleanupFactConflicts = routeCleanupModule.routeCatalogCleanupConflicts.map(
+  (conflict) => ({
+    ...conflict,
+    status: "resolved-by-source-priority"
+  })
+);
 const audit = auditModule.buildRouteAuditReport(
   allEntries,
   new Map(destinations.map((destination) => [destination.slug, destination.name]))
@@ -128,13 +137,35 @@ for (const { destination, route } of publicRoutes) {
   assert.equal(route.pitchQualifier, expectedFacts.pitchQualifier);
   assert.equal(route.routeFormat, expectedFacts.routeFormat);
   assert.equal(route.sectorName, legacy.sector?.trim() || undefined);
-  assert.equal((route.media ?? []).length, legacy.images.length);
-  assert.equal(route.editorial.summary?.en, legacy.summary);
-  assert.equal(route.editorial.whyItStandsOut?.en, legacy.style);
-  assert.deepEqual(
-    route.editorial.practiceFocus?.map((item) => item.en),
-    legacy.practiceFocus
-  );
+  const overlay = routeExperienceByKey.get(`${destination.slug}:${route.id}`);
+  if (overlay) {
+    assert.equal(route.editorial.tier, "pick");
+    assert.equal(route.editorial.status, "published");
+    assert.equal(route.editorial.summary?.en, overlay.editorial.summary.en);
+    assert.equal(
+      route.editorial.whyItStandsOut?.en,
+      overlay.editorial.whyItStandsOut.en
+    );
+    assert.deepEqual(route.experience, overlay.experience);
+    for (const source of overlay.sources) {
+      assert.ok(
+        route.sourceRecords.some((item) => item.id === source.id),
+        `Missing experience source ${source.id} on ${destination.slug}:${route.id}.`
+      );
+    }
+    assert.ok(
+      (route.media ?? []).length >= legacy.images.length,
+      `Experience migration removed legacy media from ${destination.slug}:${route.id}.`
+    );
+  } else {
+    assert.equal((route.media ?? []).length, legacy.images.length);
+    assert.equal(route.editorial.summary?.en, legacy.summary);
+    assert.equal(route.editorial.whyItStandsOut?.en, legacy.style);
+    assert.deepEqual(
+      route.editorial.practiceFocus?.map((item) => item.en),
+      legacy.practiceFocus
+    );
+  }
 }
 
 const sample = publicRoutes[0];
@@ -522,7 +553,9 @@ const report = {
     nonStandardGrades: nonStandardGrades.length,
     viewModelFailures: failures.length,
     dataConflicts:
-      adapterFactConflicts.length + duplicateDataConflicts.length
+      adapterFactConflicts.length +
+      duplicateDataConflicts.length +
+      cleanupFactConflicts.length
   },
   parity: {
     legacyRoutesChecked: legacyParityChecked,
@@ -565,7 +598,11 @@ const report = {
     unknownSources
   },
   viewModelFailures: failures,
-  dataConflicts: [...adapterFactConflicts, ...duplicateDataConflicts],
+  dataConflicts: [
+    ...adapterFactConflicts,
+    ...duplicateDataConflicts,
+    ...cleanupFactConflicts
+  ],
   invalidMedia,
   unknownSources,
   missingSources,

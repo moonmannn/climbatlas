@@ -5,12 +5,20 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
 import { DestinationHeroImage } from "@/components/DestinationHeroImage";
 import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
+import { DestinationPicks } from "@/components/DestinationPicks";
 import { RouteIndex } from "@/components/RouteIndex";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
 import { getDestinationLocalizedContent } from "@/data/localizedContent";
-import { formatClimbingType, formatGradeSystem } from "@/lib/formatters";
+import {
+  formatClimbingType,
+  formatDestinationFact,
+  formatGradeSystem
+} from "@/lib/formatters";
 import { buildDifficultySystemSummaries } from "@/lib/routes/grade-filter-options";
-import { getPublicRoutesForDestination } from "@/lib/routes/public-routes";
+import {
+  getPublicRoutesForDestination,
+  getPublishedPicksForDestination
+} from "@/lib/routes/public-routes";
 import { toRouteExplorerItem } from "@/lib/routes/route-explorer";
 import type { ExternalResourceType } from "@/types/destination";
 
@@ -51,6 +59,8 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   const localizedDescription = getDestinationLocalizedContent(destination)?.description;
   const explorerRoutes = getPublicRoutesForDestination(destination.slug)
     .map((item) => toRouteExplorerItem(item.route));
+  const publishedPicks = getPublishedPicksForDestination(destination.slug)
+    .map((item) => toRouteExplorerItem(item.route));
   const difficultySummaries = buildDifficultySystemSummaries(explorerRoutes);
   return (
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
@@ -60,7 +70,12 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
         <section className="grid gap-10 border-y border-brandforest/15 py-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div>
             <Link className="text-link" href="/explore"><LocalizedText en="Back to map" zh="返回地图" /> →</Link>
-            <p className="editorial-kicker mt-10 text-terracotta">{destination.country}</p>
+            <p className="editorial-kicker mt-10 text-terracotta">
+              <LocalizedText
+                en={destination.country}
+                zh={formatDestinationFact(destination.country, "zh")}
+              />
+            </p>
             <h1 className="display-serif mt-4 text-5xl font-medium leading-[1.02] text-brandforest sm:text-7xl">{destination.name}</h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-charcoal/68">
               <LocalizedDestinationDescription
@@ -73,7 +88,21 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
 
         </section>
 
-        <section className="mt-12 overflow-hidden border-y border-brandforest/15 bg-cream">
+        <nav
+          aria-label="Destination sections"
+          className="sticky top-16 z-20 mt-4 flex gap-5 overflow-x-auto border-y border-brandforest/15 bg-cream/95 px-1 py-4 text-sm font-semibold text-brandforest backdrop-blur"
+        >
+          <a href="#overview"><LocalizedText en="Overview" zh="概览" /></a>
+          {publishedPicks.length > 0 && (
+            <a href="#picks"><LocalizedText en="Picks" zh="精选" /></a>
+          )}
+          <a href="#all-routes"><LocalizedText en="All routes" zh="全部线路" /></a>
+          {guideContent && (
+            <a href="#field-guide"><LocalizedText en="Field guide" zh="旅行手记" /></a>
+          )}
+        </nav>
+
+        <section className="mt-8 flex flex-col overflow-hidden border-y border-brandforest/15 bg-cream" id="overview">
           <div className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_18rem]">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.2em] text-forest">
@@ -100,7 +129,10 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                     className="rounded-full border border-ridge/35 bg-white/50 px-3 py-1 text-sm font-bold text-bark"
                     key={season}
                   >
-                    {season}
+                    <LocalizedText
+                      en={season}
+                      zh={formatDestinationFact(season, "zh")}
+                    />
                   </span>
                 ))}
               </div>
@@ -138,7 +170,12 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
               <dt className="text-xs font-black uppercase tracking-wide text-bark/55">
                 <LocalizedText en="Rock" zh="岩石" />
               </dt>
-              <dd className="mt-2 text-xl font-black">{destination.rockType}</dd>
+              <dd className="mt-2 text-xl font-black">
+                <LocalizedText
+                  en={destination.rockType}
+                  zh={formatDestinationFact(destination.rockType, "zh")}
+                />
+              </dd>
             </div>
 
             <div className="rounded-md border border-ridge/25 bg-white/45 p-4">
@@ -146,7 +183,12 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                 <LocalizedText en="Season" zh="季节" />
               </dt>
               <dd className="mt-2 text-xl font-black">
-                {destination.bestSeasons.join(", ")}
+                <LocalizedText
+                  en={destination.bestSeasons.join(", ")}
+                  zh={destination.bestSeasons
+                    .map((season) => formatDestinationFact(season, "zh"))
+                    .join("、")}
+                />
               </dd>
             </div>
 
@@ -208,8 +250,42 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             </div>
           </dl>
 
+          <div className="order-2">
+            <DestinationDnaMatch
+              destinationName={destination.name}
+              destinationSlug={destination.slug}
+            />
+          </div>
+
+          <div className="order-3">
+            <DestinationPicks
+              destinationName={destination.name}
+              destinationSlug={destination.slug}
+              routes={publishedPicks}
+            />
+          </div>
+
+          <section className="order-4 border-t border-ridge/30 px-6 py-8 sm:px-8" id="all-routes">
+            {explorerRoutes.length > 0 ? (
+              <RouteIndex
+                destinationName={destination.name}
+                destinationSlug={destination.slug}
+                routes={explorerRoutes}
+              />
+            ) : (
+              <div className="border-y border-dashed border-ridge/45 py-10">
+                <p className="text-sm font-bold leading-6 text-bark/70">
+                  <LocalizedText
+                    en="No routes are available for this destination yet."
+                    zh="这个目的地暂时还没有可浏览的线路。"
+                  />
+                </p>
+              </div>
+            )}
+          </section>
+
           {galleryImages.length > 0 && (
-            <section className="border-t border-ridge/30 p-6 sm:p-8">
+            <section className="order-6 border-t border-ridge/30 p-6 sm:p-8">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.2em] text-forest">
@@ -236,6 +312,8 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                     <img
                       alt={image.alt}
                       className="h-64 w-full object-cover"
+                      decoding="async"
+                      loading="lazy"
                       src={image.src}
                     />
                     <figcaption className="space-y-1 p-3 text-xs leading-5 text-bark/70">
@@ -265,7 +343,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           )}
 
           {guideContent && (
-            <section className="border-t border-ridge/30 p-6 sm:p-8">
+            <section className="order-5 border-t border-ridge/30 p-6 sm:p-8" id="field-guide">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.2em] text-forest">
@@ -371,29 +449,6 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             </section>
           )}
 
-          <DestinationDnaMatch
-            destinationName={destination.name}
-            destinationSlug={destination.slug}
-          />
-
-          <section className="border-t border-ridge/30 px-6 py-8 sm:px-8">
-            {explorerRoutes.length > 0 ? (
-              <RouteIndex
-                destinationName={destination.name}
-                destinationSlug={destination.slug}
-                routes={explorerRoutes}
-              />
-            ) : (
-              <div className="border-y border-dashed border-ridge/45 py-10">
-                <p className="text-sm font-bold leading-6 text-bark/70">
-                  <LocalizedText
-                    en="No routes are available for this destination yet."
-                    zh="这个目的地暂时还没有可浏览的线路。"
-                  />
-                </p>
-              </div>
-            )}
-          </section>
         </section>
       </div>
       </div>

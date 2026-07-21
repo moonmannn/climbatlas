@@ -1,9 +1,11 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 import { formatSourceCount } from "@/lib/formatters";
 import type {
   ExternalResourceViewModel,
+  PublicEvidenceViewModel,
   PublicMediaViewModel,
   PublicSourceViewModel,
   RouteDetailViewModel
@@ -12,24 +14,41 @@ import type { Locale } from "@/types/destination";
 
 type LocalizedRouteDetailViewProps = {
   viewModels: Record<Locale, RouteDetailViewModel>;
+  dnaPanel?: ReactNode;
+  savePanel?: ReactNode;
 };
 
 export function LocalizedRouteDetailView({
-  viewModels
+  viewModels,
+  dnaPanel,
+  savePanel
 }: LocalizedRouteDetailViewProps) {
   const { locale } = useLanguage();
-  return <RouteDetailView viewModel={viewModels[locale]} />;
+  return (
+    <RouteDetailView
+      dnaPanel={dnaPanel}
+      savePanel={savePanel}
+      viewModel={viewModels[locale]}
+    />
+  );
 }
 
-// This public component deliberately accepts only the normalized presentation model.
+// Public route UI receives presentation data only. It never reads raw adapters.
 export function RouteDetailView({
+  dnaPanel,
+  savePanel,
   viewModel
 }: {
+  dnaPanel?: ReactNode;
+  savePanel?: ReactNode;
   viewModel: RouteDetailViewModel;
 }) {
   const { locale } = useLanguage();
   const isZh = locale === "zh";
-  const { facts, identity, publishedEditorial } = viewModel;
+  const { experience, facts, identity, publishedEditorial } = viewModel;
+  const exactImages = viewModel.media?.routeImages ?? [];
+  const contextImages = viewModel.media?.contextImages ?? [];
+  const heroImage = exactImages[0];
   const routeResources = viewModel.externalResources.filter(
     (resource) => resource.purpose === "route"
   );
@@ -41,230 +60,276 @@ export function RouteDetailView({
   );
 
   return (
-    <article className="border-y border-brandforest/15 py-8">
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="route-result-badge bg-brandforest text-cream">
-          {facts.climbingTypeLabel}
-        </span>
-        {viewModel.routeSources.length > 0 && (
-          <span className="route-result-badge border border-brandforest/15 text-brandforest">
-            {formatSourceCount(viewModel.routeSources.length, locale)}
-          </span>
-        )}
-        {viewModel.badges.verificationLabel && (
-          <span className="route-result-badge border border-terracotta/30 text-terracotta">
-            {viewModel.badges.verificationLabel}
-          </span>
-        )}
-      </div>
-
-      <div className="mt-8 grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <section aria-labelledby="route-facts-heading">
-          <p className="editorial-kicker text-terracotta" id="route-facts-heading">
-            {isZh ? "线路事实" : "Route facts"}
-          </p>
-          <dl className="mt-4 divide-y divide-brandforest/12 border-y border-brandforest/15">
-            {facts.originalGrade && (
-              <Fact label={isZh ? "原始难度" : "Original grade"} value={facts.originalGrade} />
-            )}
-            {facts.gradeSystemLabel && (
-              <Fact label={isZh ? "难度体系" : "Grade system"} value={facts.gradeSystemLabel} />
-            )}
-            <Fact label={isZh ? "攀岩类型" : "Climbing type"} value={facts.climbingTypeLabel} />
-            {facts.lengthLabel && (
-              <Fact label={isZh ? "长度" : "Length"} value={facts.lengthLabel} />
-            )}
-            {facts.pitchesLabel && (
-              <Fact label={isZh ? "段数" : "Pitches"} value={facts.pitchesLabel} />
-            )}
-            {facts.routeFormatLabel && (
-              <Fact label={isZh ? "线路形式" : "Route format"} value={facts.routeFormatLabel} />
-            )}
-            {identity.sectorName ? (
-              <Fact label={isZh ? "分区" : "Sector"} value={identity.sectorName} />
-            ) : identity.areaName ? (
-              <Fact label={isZh ? "区域" : "Area"} value={identity.areaName} />
-            ) : null}
-          </dl>
-
-          {facts.equivalentGradeLabels && facts.equivalentGradeLabels.length > 0 && (
-            <div className="mt-6">
-              <h3 className="route-filter-label">
-                {isZh ? "来源中的其他难度" : "Other source grades"}
-              </h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {facts.equivalentGradeLabels.map((label) => (
-                  <span
-                    className="route-result-badge border border-brandforest/15 text-brandforest"
-                    key={label}
-                  >
-                    {label}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-        </section>
-
-        <section aria-labelledby="route-sources-heading">
-          <p className="editorial-kicker text-terracotta" id="route-sources-heading">
-            {isZh ? "来源与外部资料" : "Sources and external resources"}
-          </p>
-          <h2 className="display-serif mt-3 text-3xl font-medium text-brandforest">
-            {isZh ? "核对线路资料" : "Check the route sources"}
-          </h2>
-          <SourceSection
-            emptyText={isZh ? "目前没有可用的单条线路来源。" : "No route-specific source is available yet."}
-            entries={viewModel.routeSources}
-            heading={isZh ? "线路来源" : "Route sources"}
-          />
-          {viewModel.accessSources.length > 0 && (
-            <SourceSection
-              entries={viewModel.accessSources}
-              heading={isZh ? "访问与当地信息" : "Access information"}
-            />
-          )}
-          {viewModel.contextSources.length > 0 && (
-            <details className="mt-8 border-y border-brandforest/15 py-4">
-              <summary className="cursor-pointer text-sm font-semibold text-brandforest">
-                {isZh ? "背景参考" : "Context references"}
-              </summary>
-              <SourceSection
-                entries={viewModel.contextSources}
-                heading={isZh ? "目的地与历史背景" : "Destination and historical context"}
-              />
-            </details>
-          )}
-          <ResourceSection
-            heading={isZh ? "线路外部资料" : "Route resources"}
-            resources={routeResources}
-          />
-          <ResourceSection
-            heading={isZh ? "访问与区域资料" : "Access and area resources"}
-            resources={accessResources}
-          />
-          <ResourceSection
-            heading={isZh ? "补充阅读" : "Further reading"}
-            resources={supplementalResources}
-          />
-          <details className="mt-8 border-y border-brandforest/15 py-4">
-            <summary className="cursor-pointer text-sm font-semibold text-brandforest">
-              {isZh ? "来源说明" : "Source policy"}
-            </summary>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-charcoal/62">
-              {isZh
-                ? "线路事实、通行资料和背景参考按用途分开显示。ClimbAtlas 不复制外部 beta、topo、保护说明、进出场信息、评论或评分；出行前请查看最新原始资料。"
-                : "Route references, access information, and context are grouped by purpose. ClimbAtlas does not reproduce external beta, topos, protection details, approaches, descents, comments, or ratings; check current original resources before a trip."}
+    <article className="route-experience-page">
+      <header className="border-b border-brandforest/15 pb-9">
+        <div className={heroImage ? "grid gap-8 lg:grid-cols-[1fr_0.82fr] lg:items-end" : "max-w-4xl"}>
+          <div>
+            <p className="editorial-kicker text-terracotta">
+              {identity.destinationName}
             </p>
-          </details>
-        </section>
-      </div>
+            <h1 className="display-serif mt-3 text-5xl font-medium leading-[0.98] text-brandforest sm:text-6xl">
+              {identity.name}
+            </h1>
+            <div className="mt-5 flex flex-wrap items-center gap-2">
+              <span className="route-result-badge bg-brandforest text-cream">
+                {facts.climbingTypeLabel}
+              </span>
+              {viewModel.badges.isPublishedPick && (
+                <span className="route-result-badge border border-terracotta/35 text-terracotta">
+                  {isZh ? "ClimbAtlas 精选" : "ClimbAtlas Pick"}
+                </span>
+              )}
+              {viewModel.routeSources.length > 0 && (
+                <span className="route-result-badge border border-brandforest/15 text-brandforest">
+                  {formatSourceCount(viewModel.routeSources.length, locale)}
+                </span>
+              )}
+            </div>
+            <p className="mt-5 max-w-2xl text-sm leading-6 text-charcoal/62">
+              {isZh
+                ? "查看已记录的事实与可追溯来源；具体 beta、通行信息和当地安排请以最新外部资料为准。"
+                : "Review recorded facts and traceable sources. Use current external resources for beta, access, and local guidance."}
+            </p>
+          </div>
 
-      {publishedEditorial && (
-        <EditorialSection editorial={publishedEditorial} isZh={isZh} />
+          {heroImage && (
+            <figure className="overflow-hidden border border-brandforest/15 bg-white/45">
+              <img
+                alt={heroImage.alt}
+                className="aspect-[4/3] w-full object-cover"
+                fetchPriority="high"
+                src={heroImage.src}
+              />
+              <MediaCaption image={heroImage} isZh={isZh} />
+            </figure>
+          )}
+        </div>
+
+        <dl className="mt-8 grid border-y border-brandforest/15 sm:grid-cols-2 lg:grid-cols-4">
+          {facts.originalGrade && (
+            <Fact label={isZh ? "原始难度" : "Original grade"} value={facts.originalGrade} />
+          )}
+          {facts.gradeSystemLabel && (
+            <Fact label={isZh ? "难度体系" : "Grade system"} value={facts.gradeSystemLabel} />
+          )}
+          <Fact label={isZh ? "攀岩类型" : "Climbing type"} value={facts.climbingTypeLabel} />
+          {facts.lengthLabel && <Fact label={isZh ? "长度" : "Length"} value={facts.lengthLabel} />}
+          {facts.pitchesLabel && <Fact label={isZh ? "段数" : "Pitches"} value={facts.pitchesLabel} />}
+          {facts.routeFormatLabel && <Fact label={isZh ? "线路形式" : "Route format"} value={facts.routeFormatLabel} />}
+          {identity.sectorName ? (
+            <Fact label={isZh ? "分区" : "Sector"} value={identity.sectorName} />
+          ) : identity.areaName ? (
+            <Fact label={isZh ? "区域" : "Area"} value={identity.areaName} />
+          ) : null}
+        </dl>
+
+        {facts.equivalentGradeLabels?.length ? (
+          <div className="mt-5 flex flex-wrap gap-2">
+            {facts.equivalentGradeLabels.map((label) => (
+              <span className="route-result-badge border border-brandforest/15 text-brandforest" key={label}>
+                {label}
+              </span>
+            ))}
+          </div>
+        ) : null}
+      </header>
+
+      {savePanel && <div className="mt-7">{savePanel}</div>}
+
+      {publishedEditorial && experience && (
+        <>
+          <section className="route-experience-section" id="what-to-expect">
+            <SectionHeading
+              eyebrow={isZh ? "线路体验" : "Route experience"}
+              title={isZh ? "你可以期待什么" : "What to expect"}
+            />
+            <div className="mt-7 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+              <div>
+                <h3 className="route-filter-label">{isZh ? "为什么值得考虑" : "Why consider it"}</h3>
+                <p className="mt-3 text-base leading-7 text-charcoal/68">
+                  {publishedEditorial.whyItStandsOut ?? publishedEditorial.summary}
+                </p>
+                {publishedEditorial.bestFor && (
+                  <div className="mt-6 border-l-2 border-terracotta/55 pl-4">
+                    <h3 className="route-filter-label">{isZh ? "更适合" : "Best for"}</h3>
+                    <p className="mt-2 text-sm leading-6 text-charcoal/65">{publishedEditorial.bestFor}</p>
+                  </div>
+                )}
+              </div>
+              <EvidenceGrid
+                entries={[
+                  [isZh ? "岩壁角度" : "Wall angle", experience.whatToExpect.wallAngle],
+                  [isZh ? "主要地形" : "Terrain", experience.whatToExpect.terrain],
+                  [isZh ? "动作倾向" : "Movement tendency", experience.whatToExpect.movementTendency],
+                  [isZh ? "难度形态" : "Difficulty shape", experience.whatToExpect.difficultyShape]
+                ]}
+                isZh={isZh}
+              />
+            </div>
+          </section>
+
+          <section className="route-experience-section" id="challenge-profile">
+            <SectionHeading
+              eyebrow={isZh ? "选择参考" : "Decision support"}
+              title={isZh ? "挑战画像" : "Challenge profile"}
+            />
+            <EvidenceGrid
+              entries={[
+                [isZh ? "主要需求" : "Primary demand", experience.challenge.primaryDemand],
+                [isZh ? "次要需求" : "Secondary demand", experience.challenge.secondaryDemand],
+                [isZh ? "难点模式" : "Crux pattern", experience.challenge.cruxPattern],
+                [isZh ? "持续性" : "Sustainedness", experience.challenge.sustainedness],
+                [isZh ? "暴露感" : "Exposure", experience.challenge.exposure],
+                [isZh ? "投入度" : "Commitment", experience.challenge.commitment]
+              ]}
+              isZh={isZh}
+            />
+            {publishedEditorial.thingsToConsider?.length ? (
+              <div className="mt-8 border-y border-brandforest/12 py-6">
+                <h3 className="route-filter-label">{isZh ? "选择前可以想一想" : "Things to consider"}</h3>
+                <ul className="mt-4 grid gap-3 md:grid-cols-2">
+                  {publishedEditorial.thingsToConsider.map((item) => (
+                    <li className="border-l-2 border-sky/70 pl-3 text-sm leading-6 text-charcoal/65" key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </section>
+
+          {dnaPanel}
+
+          {experience.logistics && (
+            <section className="route-experience-section" id="logistics">
+              <SectionHeading
+                eyebrow={isZh ? "低风险事实" : "Low-risk facts"}
+                title={isZh ? "行程信息" : "Logistics"}
+              />
+              <EvidenceGrid
+                entries={[
+                  [isZh ? "接近时间" : "Approach time", experience.logistics.approach],
+                  [isZh ? "朝向" : "Aspect", experience.logistics.aspect],
+                  [isZh ? "日照" : "Sun", experience.logistics.sun]
+                ]}
+                isZh={isZh}
+              />
+              <p className="mt-5 max-w-3xl text-xs leading-5 text-charcoal/50">
+                {isZh
+                  ? "这里不提供绳长、装备、保护或下降建议。出发前请核对最新官方或当地资料。"
+                  : "This section does not provide rope, equipment, protection, or descent advice. Check current official or local resources before setting out."}
+              </p>
+            </section>
+          )}
+        </>
       )}
 
-      {viewModel.media && (
+      {(exactImages.length > 1 || contextImages.length > 0) && (
         <MediaSection
-          contextImages={viewModel.media.contextImages}
+          contextImages={contextImages}
           isZh={isZh}
-          routeImages={viewModel.media.routeImages}
+          routeImages={exactImages.slice(1)}
         />
       )}
+
+      <section className="route-experience-section" id="sources">
+        <SectionHeading
+          eyebrow={isZh ? "可追溯资料" : "Traceable references"}
+          title={isZh ? "来源与外部资料" : "Sources and external resources"}
+        />
+        <SourceSection
+          emptyText={isZh ? "目前没有可用的单条线路来源。" : "No route-specific source is available yet."}
+          entries={viewModel.routeSources}
+          heading={isZh ? "线路来源" : "Route sources"}
+        />
+        {viewModel.accessSources.length > 0 && (
+          <SourceSection entries={viewModel.accessSources} heading={isZh ? "通行与当地信息" : "Access and local information"} />
+        )}
+        <ResourceSection heading={isZh ? "线路外部资料" : "Route resources"} resources={routeResources} />
+        <ResourceSection heading={isZh ? "通行与区域资料" : "Access and area resources"} resources={accessResources} />
+        <ResourceSection heading={isZh ? "继续阅读" : "Further reading"} resources={supplementalResources} />
+        {viewModel.contextSources.length > 0 && (
+          <details className="mt-8 border-y border-brandforest/15 py-4">
+            <summary className="cursor-pointer text-sm font-semibold text-brandforest">
+              {isZh ? "背景参考" : "Context references"}
+            </summary>
+            <SourceSection entries={viewModel.contextSources} heading={isZh ? "目的地与历史背景" : "Destination and historical context"} />
+          </details>
+        )}
+        <details className="mt-8 border-y border-brandforest/15 py-4">
+          <summary className="cursor-pointer text-sm font-semibold text-brandforest">
+            {isZh ? "来源说明" : "Source policy"}
+          </summary>
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-charcoal/62">
+            {isZh
+              ? "来源事实、ClimbAtlas 编辑判断和基于结构化数据的推断会分开标示。我们不复制外部 beta、topo、保护说明、进出场信息、评论或评分。"
+              : "Facts from cited references, ClimbAtlas editorial judgment, and attributes derived from recorded data are labeled separately. We do not reproduce external beta, topos, protection details, approaches, descents, comments, or ratings."}
+          </p>
+        </details>
+      </section>
     </article>
   );
 }
 
-function EditorialSection({
-  editorial,
-  isZh
-}: {
-  editorial: NonNullable<RouteDetailViewModel["publishedEditorial"]>;
-  isZh: boolean;
-}) {
-  const hasDecisionNotes = Boolean(
-    editorial.bestFor || editorial.decisionHint || editorial.thingsToConsider?.length
-  );
-
+function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
-    <section className="mt-10 border-t border-brandforest/15 pt-8">
-      <p className="editorial-kicker text-terracotta">
-        {isZh ? "ClimbAtlas 编辑精选" : "ClimbAtlas editorial pick"}
-      </p>
-      {(editorial.summary || editorial.whyItStandsOut) && (
-        <div className="mt-5 grid gap-6 md:grid-cols-2">
-          {editorial.summary && (
-            <EditorialBlock
-              heading={isZh ? "概览" : "Overview"}
-              text={editorial.summary}
-            />
-          )}
-          {editorial.whyItStandsOut && (
-            <EditorialBlock
-              heading={isZh ? "为什么值得留意" : "Why it stands out"}
-              text={editorial.whyItStandsOut}
-            />
-          )}
-        </div>
-      )}
-
-      {hasDecisionNotes && (
-        <div className="mt-7 grid gap-6 border-y border-brandforest/12 py-6 md:grid-cols-2">
-          {(editorial.bestFor || editorial.decisionHint) && (
-            <div>
-              <h3 className="route-filter-label">{isZh ? "选择参考" : "Choosing this route"}</h3>
-              {editorial.bestFor && <p className="mt-3 text-sm leading-6 text-charcoal/65">{editorial.bestFor}</p>}
-              {editorial.decisionHint && <p className="mt-3 text-sm font-semibold leading-6 text-brandforest">{editorial.decisionHint}</p>}
-            </div>
-          )}
-          {editorial.thingsToConsider && editorial.thingsToConsider.length > 0 && (
-            <div>
-              <h3 className="route-filter-label">{isZh ? "值得考虑" : "Things to consider"}</h3>
-              <ul className="mt-3 space-y-2 text-sm leading-6 text-charcoal/65">
-                {editorial.thingsToConsider.map((item) => (
-                  <li className="border-l-2 border-terracotta/45 pl-3" key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-      )}
-
-      {(editorial.practiceFocus?.length || editorial.personalityTags?.length) && (
-        <div className="mt-6 flex flex-wrap gap-2">
-          {[...(editorial.practiceFocus ?? []), ...(editorial.personalityTags ?? [])].map((tag) => (
-            <span className="route-result-badge border border-brandforest/15 text-brandforest" key={tag}>{tag}</span>
-          ))}
-        </div>
-      )}
-
-      {(editorial.historicalNote || editorial.notableAscents?.length) && (
-        <div className="mt-8 border-t border-brandforest/12 pt-6">
-          <h3 className="route-filter-label">{isZh ? "历史与攀登记录" : "History and notable ascents"}</h3>
-          {editorial.historicalNote && <p className="mt-3 text-sm leading-7 text-charcoal/65">{editorial.historicalNote}</p>}
-          {editorial.notableAscents && (
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-charcoal/65">
-              {editorial.notableAscents.map((ascent) => (
-                <li key={`${ascent.climber}-${ascent.sourceUrl}`}>
-                  <strong className="text-brandforest">{ascent.climber}</strong>
-                  {ascent.note ? ` · ${ascent.note}` : ""}
-                  {" · "}
-                  <a className="text-link" href={ascent.sourceUrl} rel="noreferrer" target="_blank">{ascent.sourceLabel}</a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
-    </section>
+    <div>
+      <p className="editorial-kicker text-terracotta">{eyebrow}</p>
+      <h2 className="display-serif mt-2 text-3xl font-medium text-brandforest sm:text-4xl">{title}</h2>
+    </div>
   );
 }
 
-function EditorialBlock({ heading, text }: { heading: string; text: string }) {
+function EvidenceGrid({
+  entries,
+  isZh
+}: {
+  entries: Array<[string, PublicEvidenceViewModel | undefined]>;
+  isZh: boolean;
+}) {
+  const visible = entries.filter(
+    (entry): entry is [string, PublicEvidenceViewModel] => Boolean(entry[1])
+  );
+  if (!visible.length) return null;
   return (
-    <div>
-      <h3 className="route-filter-label">{heading}</h3>
-      <p className="mt-3 text-base leading-7 text-charcoal/65">{text}</p>
+    <dl className="mt-7 grid border-y border-brandforest/15 sm:grid-cols-2">
+      {visible.map(([label, evidence]) => (
+        <div className="border-b border-brandforest/10 py-5 sm:px-5 sm:odd:border-r" key={label}>
+          <dt className="route-filter-label">{label}</dt>
+          <dd className="mt-2 text-base font-semibold text-brandforest">{evidence.value}</dd>
+          <EvidenceMeta evidence={evidence} isZh={isZh} />
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+function EvidenceMeta({ evidence, isZh }: { evidence: PublicEvidenceViewModel; isZh: boolean }) {
+  return (
+    <div className="mt-3 text-xs leading-5 text-charcoal/50">
+      <span className="font-semibold text-terracotta">{evidence.originLabel}</span>
+      {evidence.checkedAtLabel ? ` · ${evidence.checkedAtLabel}` : ""}
+      {evidence.inferenceLabel && <span className="block">{evidence.inferenceLabel}</span>}
+      {evidence.sources.length > 0 && (
+        <span className="mt-1 block">
+          {isZh ? "依据：" : "Evidence: "}
+          {evidence.sources.map((source, index) => (
+            <span key={source.id}>
+              {index > 0 ? ", " : ""}
+              <a className="text-link" href={source.url} rel="noreferrer" target="_blank">{source.label}</a>
+            </span>
+          ))}
+        </span>
+      )}
+    </div>
+  );
+}
+
+function Fact({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="border-b border-brandforest/10 py-4 sm:px-5 sm:odd:border-r lg:border-b-0 lg:border-r">
+      <dt className="text-xs font-semibold text-charcoal/48">{label}</dt>
+      <dd className="mt-1 font-semibold text-brandforest">{value}</dd>
     </div>
   );
 }
@@ -302,13 +367,7 @@ function SourceSection({
   );
 }
 
-function ResourceSection({
-  heading,
-  resources
-}: {
-  heading: string;
-  resources: ExternalResourceViewModel[];
-}) {
+function ResourceSection({ heading, resources }: { heading: string; resources: ExternalResourceViewModel[] }) {
   if (resources.length === 0) return null;
   return (
     <section className="mt-8">
@@ -337,50 +396,24 @@ function MediaSection({
   isZh: boolean;
   routeImages: PublicMediaViewModel[];
 }) {
-  if (routeImages.length === 0 && contextImages.length === 0) return null;
   return (
-    <section className="mt-10 border-t border-brandforest/15 pt-8">
-      <p className="editorial-kicker text-terracotta">{isZh ? "图片与授权" : "Photos and licenses"}</p>
-      {routeImages.length > 0 && (
-        <MediaGrid
-          heading={isZh ? "具体线路照片" : "Exact route photos"}
-          images={routeImages}
-          sourceLabel={isZh ? "图片来源" : "Image source"}
-        />
-      )}
-      {contextImages.length > 0 && (
-        <MediaGrid
-          heading={isZh ? "区域背景照片（不是具体线路）" : "Area context photos (not the exact route)"}
-          images={contextImages}
-          sourceLabel={isZh ? "图片来源" : "Image source"}
-        />
-      )}
+    <section className="route-experience-section" id="photos">
+      <SectionHeading eyebrow={isZh ? "授权媒体" : "Licensed media"} title={isZh ? "图片" : "Photos"} />
+      {routeImages.length > 0 && <MediaGrid heading={isZh ? "具体线路照片" : "Exact route photos"} images={routeImages} isZh={isZh} />}
+      {contextImages.length > 0 && <MediaGrid heading={isZh ? "区域背景（不是这条具体线路）" : "Area context — not this route"} images={contextImages} isZh={isZh} />}
     </section>
   );
 }
 
-function MediaGrid({
-  heading,
-  images,
-  sourceLabel
-}: {
-  heading: string;
-  images: PublicMediaViewModel[];
-  sourceLabel: string;
-}) {
+function MediaGrid({ heading, images, isZh }: { heading: string; images: PublicMediaViewModel[]; isZh: boolean }) {
   return (
-    <div className="mt-6">
+    <div className="mt-7">
       <h3 className="route-filter-label">{heading}</h3>
       <div className="mt-3 grid gap-5 sm:grid-cols-2">
         {images.map((image) => (
           <figure className="overflow-hidden border border-brandforest/15 bg-white/45" key={`${image.kind}-${image.src}`}>
-            {/* External open-license images keep their original source metadata below. */}
             <img alt={image.alt} className="aspect-[4/3] w-full object-cover" loading="lazy" src={image.src} />
-            <figcaption className="p-4 text-xs leading-5 text-charcoal/58">
-              {image.caption && <span className="block text-sm text-charcoal/68">{image.caption}</span>}
-              <span className="mt-2 block">{image.attribution} · {image.license}</span>
-              <a className="text-link mt-2 inline-flex" href={image.sourceUrl} rel="noreferrer" target="_blank">{sourceLabel}</a>
-            </figcaption>
+            <MediaCaption image={image} isZh={isZh} />
           </figure>
         ))}
       </div>
@@ -388,11 +421,14 @@ function MediaGrid({
   );
 }
 
-function Fact({ label, value }: { label: string; value: string }) {
+function MediaCaption({ image, isZh }: { image: PublicMediaViewModel; isZh: boolean }) {
   return (
-    <div className="grid grid-cols-[8rem_1fr] gap-4 py-3 text-sm">
-      <dt className="font-semibold text-charcoal/48">{label}</dt>
-      <dd className="font-semibold text-brandforest">{value}</dd>
-    </div>
+    <figcaption className="p-4 text-xs leading-5 text-charcoal/58">
+      {image.caption && <span className="block text-sm text-charcoal/68">{image.caption}</span>}
+      <span className="mt-2 block">{image.attribution} · {image.license}</span>
+      <a className="text-link mt-2 inline-flex" href={image.sourceUrl} rel="noreferrer" target="_blank">
+        {isZh ? "图片来源" : "Image source"}
+      </a>
+    </figcaption>
   );
 }

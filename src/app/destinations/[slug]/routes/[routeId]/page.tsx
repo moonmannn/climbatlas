@@ -1,11 +1,15 @@
 import { notFound, redirect } from "next/navigation";
-import { LocalizedText } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedRouteDetailView } from "@/components/RouteDetailView";
 import { RouteDnaMatchPanel } from "@/components/RouteDnaMatchPanel";
 import { UserRouteControls } from "@/components/UserRouteControls";
 import { getDestinationBySlug } from "@/data/destinations";
-import { getRouteAliasParams, resolveRouteId } from "@/lib/routeAliases";
+import {
+  getRetiredRouteHref,
+  getRetiredRouteParams,
+  getRouteAliasParams,
+  resolveRouteId
+} from "@/lib/routeAliases";
 import {
   findPublicRouteWithDestination,
   getPublicRouteRecords
@@ -27,10 +31,18 @@ export function generateStaticParams() {
     routeId: route.id
   }));
   const aliasParams = getRouteAliasParams().filter(({ slug, routeId }) =>
-    findPublicRouteWithDestination(slug, resolveRouteId(slug, routeId))
+    findPublicRouteWithDestination(slug, resolveRouteId(slug, routeId)) ||
+    getRetiredRouteHref(slug, resolveRouteId(slug, routeId))
   );
 
-  return [...routeParams, ...aliasParams];
+  const paramsByKey = new Map(
+    [...routeParams, ...aliasParams, ...getRetiredRouteParams()].map((item) => [
+      `${item.slug}:${item.routeId}`,
+      item
+    ])
+  );
+
+  return Array.from(paramsByKey.values());
 }
 
 export async function generateMetadata({ params }: RoutePageProps) {
@@ -50,6 +62,13 @@ export default async function RoutePage({ params }: RoutePageProps) {
   const { slug, routeId } = await params;
   const destination = getDestinationBySlug(slug);
   const canonicalRouteId = resolveRouteId(slug, routeId);
+  const retiredHref =
+    getRetiredRouteHref(slug, canonicalRouteId) ??
+    getRetiredRouteHref(slug, routeId);
+
+  if (retiredHref) {
+    redirect(retiredHref);
+  }
 
   if (canonicalRouteId !== routeId) {
     redirect(`/destinations/${slug}/routes/${canonicalRouteId}`);
@@ -75,38 +94,23 @@ export default async function RoutePage({ params }: RoutePageProps) {
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
       <SiteHeader />
       <div className="mx-auto max-w-[1100px] px-5 py-[72px] sm:px-8 lg:px-12 lg:py-20">
-
-      <div>
-        <section className="mt-5 overflow-hidden border-y border-brandforest/15 bg-cream">
-          <div className="border-b border-brandforest/15 px-0 py-10 text-charcoal">
-            <p className="editorial-kicker text-terracotta">
-              {destination.name} / {destination.country}
-            </p>
-            <h1 className="display-serif mt-3 text-5xl font-medium leading-tight text-brandforest sm:text-6xl">
-              {entry.name}
-            </h1>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-charcoal/65">
-              <LocalizedText
-                en="Review recorded facts and traceable sources. Use current external resources for beta, access, and local guidance."
-                zh="查看已记录的线路事实与可追溯来源；具体 beta、通行信息和当地安排请以最新外部资料为准。"
-              />
-            </p>
-          </div>
-
-          <div className="p-5 sm:p-6">
-            <UserRouteControls
-              destinationName={destination.name}
-              destinationSlug={destination.slug}
-              route={{ id: entry.id, name: entry.name }}
-            />
+        <LocalizedRouteDetailView
+          dnaPanel={
             <RouteDnaMatchPanel
               routeName={entry.name}
               snapshot={routeDnaSnapshot}
             />
-            <LocalizedRouteDetailView viewModels={routeViewModels} />
-          </div>
-        </section>
-      </div>
+          }
+          savePanel={
+            <UserRouteControls
+              destinationName={destination.name}
+              destinationSlug={destination.slug}
+              route={{ id: entry.id, name: entry.name }}
+              variant="compact"
+            />
+          }
+          viewModels={routeViewModels}
+        />
       </div>
     </main>
   );

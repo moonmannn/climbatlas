@@ -1,6 +1,10 @@
 import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
 import { normalizeLegacyRouteFacts } from "@/lib/routes/adapters/normalize-route-facts";
 import { classifyRouteSourcePurpose } from "@/lib/routes/adapters/normalize-route-source";
+import {
+  dedupeNormalizedRouteSources,
+  normalizeRouteSource
+} from "@/lib/routes/adapters/normalize-route-source";
 import type {
   LocalizedText,
   RouteHighlight,
@@ -68,10 +72,10 @@ function adaptSource(source: RouteSource): RouteSourceRecord {
     verifiedFields: [...source.verifies],
     notes: source.notes
   };
-  return {
+  return normalizeRouteSource({
     ...record,
-    purpose: classifyRouteSourcePurpose(record)
-  };
+    purpose: source.purpose ?? classifyRouteSourcePurpose(record)
+  });
 }
 
 function latestCheckedAt(sources: RouteSourceRecord[]) {
@@ -122,7 +126,9 @@ function adaptEditorial(route: RouteHighlight): RouteEditorial {
   const localized = route.localizedContent;
 
   return {
-    tier: legacyStatus === "metadata" ? "index" : "pick",
+    // Legacy highlight copy is retained for audits, but it is never published
+    // until an explicit Route Experience overlay promotes the route.
+    tier: "index",
     status: "needs-review",
     summary: localizedValue(route.summary, localized?.summary?.zh),
     whyItStandsOut: localizedValue(route.style, localized?.style?.zh),
@@ -155,7 +161,7 @@ export function adaptLegacyRoute(
   destinationId: string,
   route: RouteHighlight
 ): RouteCatalogEntry {
-  const sourceRecords = route.sources.map(adaptSource);
+  const sourceRecords = dedupeNormalizedRouteSources(route.sources.map(adaptSource));
   const verification = createVerification(sourceRecords);
   const shared = {
     id: route.id,

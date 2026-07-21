@@ -214,9 +214,18 @@ function extractAustralian(text: string, destinationId: string, candidates: Grad
 
 function extractAlpine(text: string, candidates: GradeCandidate[]) {
   const values: Record<string, number> = { F: 1, PD: 2, AD: 3, D: 4, TD: 5, ED: 6 };
-  const match = text.match(/\b(PD|AD|TD|ED|D|F)([+-])?\b/);
+  const match = text.match(/\b(PD|AD|TD|ED(?:[1-4])?|D|F)([+-])?\b/);
   if (!match) return;
-  addCandidate(candidates, "alpine", match[0], values[match[1]] + signedOffset(match[2]));
+  const base = match[1].startsWith("ED") ? "ED" : match[1];
+  const edSubdivision = match[1].startsWith("ED")
+    ? Number(match[1].slice(2) || 0) / 10
+    : 0;
+  addCandidate(
+    candidates,
+    "alpine",
+    match[0],
+    values[base] + edSubdivision + signedOffset(match[2])
+  );
 }
 
 function extractAidAndIce(text: string, candidates: GradeCandidate[]) {

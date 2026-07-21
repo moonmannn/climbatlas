@@ -13,6 +13,7 @@ import { loadDnaProfile } from "@/lib/climbingDnaStorage";
 import {
   formatClimbingType,
   formatGradeSystem,
+  formatRouteStyleTag,
   formatSourceCount
 } from "@/lib/formatters";
 import { getRouteDnaMatch } from "@/lib/routes/route-dna";
@@ -598,7 +599,11 @@ export function RouteIndex({
             value={styleFilter}
           >
             <option value="all">{isZh ? "全部风格" : "All styles"}</option>
-            {styles.map((style) => <option key={style} value={style}>{style}</option>)}
+            {styles.map((style) => (
+              <option key={style} value={style}>
+                {formatRouteStyleTag(style, locale)}
+              </option>
+            ))}
           </FilterSelect>
         )}
         {user && (

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { destinations } from "@/data/destinations";
 import {
   getDestinationSearchText
@@ -14,6 +14,7 @@ import {
 } from "@/components/FilterSidebar";
 import { useLanguage } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
+import { formatDestinationFact } from "@/lib/formatters";
 import {
   getDestinationRouteCount,
   getPublicRouteSummaries
@@ -44,6 +45,11 @@ export function ExploreClient() {
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const publicRoutes = useMemo(() => getPublicRouteSummaries(), []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("search") === "1") setIsFilterOpen(true);
+  }, []);
 
   const rockTypes = useMemo(() => {
     return Array.from(
@@ -85,7 +91,7 @@ export function ExploreClient() {
       })
       .map((destination) => ({
         href: `/destinations/${destination.slug}`,
-        meta: `${destination.country} - ${destination.rockType}`,
+        meta: `${formatDestinationFact(destination.country, locale)} - ${formatDestinationFact(destination.rockType, locale)}`,
         title: destination.name
       }));
 
@@ -101,7 +107,7 @@ export function ExploreClient() {
       destinations: destinationMatches.slice(0, 6),
       routes: routeMatches.slice(0, 6)
     };
-  }, [filters.searchQuery, publicRoutes]);
+  }, [filters.searchQuery, locale, publicRoutes]);
 
   const stats = useMemo(() => {
     const countries = new Set(destinations.map((destination) => destination.country));
@@ -196,6 +202,8 @@ export function ExploreClient() {
                     <img
                       alt={destination.images[0].alt}
                       className="h-14 w-20 rounded object-cover"
+                      decoding="async"
+                      loading="lazy"
                       src={destination.images[0].src}
                     />
                   ) : (
@@ -209,7 +217,7 @@ export function ExploreClient() {
                       {destination.name}
                     </p>
                     <p className="mt-1 truncate text-xs font-bold text-bark/58">
-                      {destination.country} / {destination.rockType}
+                      {formatDestinationFact(destination.country, locale)} / {formatDestinationFact(destination.rockType, locale)}
                     </p>
                   </div>
 

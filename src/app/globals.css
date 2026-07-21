@@ -680,3 +680,21 @@ main > section {
   font-weight: 700;
   line-height: 1;
 }
+
+.route-experience-page {
+  color: var(--ca-charcoal);
+}
+
+.route-experience-section {
+  border-top: 1px solid rgb(16 56 46 / 15%);
+  margin-top: 56px;
+  padding-top: 48px;
+  scroll-margin-top: 96px;
+}
+
+@media (max-width: 767px) {
+  .route-experience-section {
+    margin-top: 40px;
+    padding-top: 36px;
+  }
+}

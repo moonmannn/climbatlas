@@ -11,12 +11,23 @@ import type {
   LocalizedText
 } from "@/types/destination";
 import type {
+  AttributeOrigin,
   GradeSystem,
+  RouteChallengeDemand,
+  RouteCruxPattern,
+  RouteDifficultyShape,
+  RouteEvidenceValue,
+  RouteIntensityLevel,
   RouteMediaRecord,
   RouteFormat,
+  RouteMovementTag,
   RouteRecord,
+  RouteSourceRecord,
   RouteSourcePurpose,
-  RouteSourceRecord
+  RouteSunWindow,
+  RouteTerrainTag,
+  RouteWallAngle,
+  RouteAspect
 } from "@/types/route";
 
 export type PublicSourceViewModel = {
@@ -45,6 +56,41 @@ export type PublicMediaViewModel = {
   license: string;
   sourceUrl: string;
   src: string;
+};
+
+export type PublicEvidenceViewModel = {
+  value: string;
+  origin: AttributeOrigin;
+  originLabel: string;
+  checkedAtLabel?: string;
+  sources: Array<{
+    id: string;
+    label: string;
+    url: string;
+  }>;
+  inferenceLabel?: string;
+};
+
+export type RouteExperienceViewModel = {
+  whatToExpect: {
+    wallAngle: PublicEvidenceViewModel;
+    terrain: PublicEvidenceViewModel;
+    movementTendency: PublicEvidenceViewModel;
+    difficultyShape: PublicEvidenceViewModel;
+  };
+  challenge: {
+    primaryDemand: PublicEvidenceViewModel;
+    secondaryDemand?: PublicEvidenceViewModel;
+    cruxPattern?: PublicEvidenceViewModel;
+    sustainedness?: PublicEvidenceViewModel;
+    exposure?: PublicEvidenceViewModel;
+    commitment?: PublicEvidenceViewModel;
+  };
+  logistics?: {
+    approach?: PublicEvidenceViewModel;
+    aspect?: PublicEvidenceViewModel;
+    sun?: PublicEvidenceViewModel;
+  };
 };
 
 export type RouteDetailViewModel = {
@@ -90,6 +136,7 @@ export type RouteDetailViewModel = {
       sourceUrl: string;
     }>;
   };
+  experience?: RouteExperienceViewModel;
   media?: {
     routeImages: PublicMediaViewModel[];
     contextImages: PublicMediaViewModel[];
@@ -176,6 +223,9 @@ export function inspectRouteDetailViewModelBuild(
   const publishedEditorial = isPublishedPick
     ? buildPublishedEditorial(route, locale)
     : undefined;
+  const experience = isPublishedPick && route.experience
+    ? buildExperience(route, locale)
+    : undefined;
 
   return {
     viewModel: {
@@ -222,6 +272,7 @@ export function inspectRouteDetailViewModelBuild(
       ),
       externalResources: resourceResult.resources,
       publishedEditorial,
+      experience,
       media:
         mediaResult.routeImages.length || mediaResult.contextImages.length
           ? {
@@ -362,6 +413,176 @@ function buildPublishedEditorial(route: RouteRecord, locale: Locale) {
     historicalNote: localized(editorial.historicalNotes, locale),
     notableAscents: notableAscents.length ? notableAscents : undefined
   };
+}
+
+const experienceLabels = {
+  wallAngle: {
+    slab: { en: "Slab", zh: "低角度板壁" },
+    vertical: { en: "Vertical", zh: "垂直岩壁" },
+    overhang: { en: "Overhanging", zh: "仰角岩壁" },
+    roof: { en: "Roof", zh: "屋檐地形" }
+  } satisfies Record<RouteWallAngle, Record<Locale, string>>,
+  terrain: {
+    crack: { en: "Crack", zh: "裂缝" },
+    face: { en: "Face", zh: "岩面" },
+    corner: { en: "Corner", zh: "内角" },
+    chimney: { en: "Chimney", zh: "烟囱" },
+    arete: { en: "Arete", zh: "棱线" },
+    flake: { en: "Flake", zh: "岩片" },
+    pockets: { en: "Pockets", zh: "孔洞" },
+    tufa: { en: "Tufa", zh: "石柱" }
+  } satisfies Record<RouteTerrainTag, Record<Locale, string>>,
+  movement: {
+    technical: { en: "Technical", zh: "技术型" },
+    powerful: { en: "Powerful", zh: "力量型" },
+    endurance: { en: "Endurance", zh: "耐力型" },
+    compression: { en: "Compression", zh: "夹抱" },
+    stemming: { en: "Stemming", zh: "对撑" },
+    "precise-footwork": { en: "Precise footwork", zh: "精准脚法" },
+    "route-reading": { en: "Route reading", zh: "线路阅读" },
+    balance: { en: "Balance", zh: "平衡" }
+  } satisfies Record<RouteMovementTag, Record<Locale, string>>,
+  difficultyShape: {
+    "single-crux": { en: "A distinct crux", zh: "单一明确难点" },
+    sustained: { en: "Sustained", zh: "持续型难度" },
+    progressive: { en: "Builds progressively", zh: "难度逐步增加" },
+    variable: { en: "Variable", zh: "难度起伏明显" }
+  } satisfies Record<RouteDifficultyShape, Record<Locale, string>>,
+  demand: {
+    technique: { en: "Technique", zh: "技术" },
+    power: { en: "Power", zh: "力量" },
+    "power-endurance": { en: "Power endurance", zh: "力量耐力" },
+    endurance: { en: "Endurance", zh: "耐力" },
+    "route-reading": { en: "Route reading", zh: "线路阅读" },
+    footwork: { en: "Footwork", zh: "脚法" },
+    "crack-technique": { en: "Crack technique", zh: "裂缝技术" },
+    compression: { en: "Compression", zh: "夹抱" },
+    balance: { en: "Balance", zh: "平衡" },
+    "head-game": { en: "Mental composure", zh: "心理稳定" }
+  } satisfies Record<RouteChallengeDemand, Record<Locale, string>>,
+  crux: {
+    "distinct-crux": { en: "A distinct crux", zh: "单一明确难点" },
+    "multiple-cruxes": { en: "Several crux sections", zh: "多个难点段落" },
+    sustained: { en: "Sustained difficulty", zh: "持续难度" },
+    "no-single-crux": { en: "No single defining crux", zh: "没有单一决定性难点" }
+  } satisfies Record<RouteCruxPattern, Record<Locale, string>>,
+  intensity: {
+    low: { en: "Low", zh: "较低" },
+    moderate: { en: "Moderate", zh: "中等" },
+    high: { en: "High", zh: "较高" }
+  } satisfies Record<RouteIntensityLevel, Record<Locale, string>>,
+  aspect: {
+    north: { en: "North", zh: "北向" },
+    northeast: { en: "Northeast", zh: "东北向" },
+    east: { en: "East", zh: "东向" },
+    southeast: { en: "Southeast", zh: "东南向" },
+    south: { en: "South", zh: "南向" },
+    southwest: { en: "Southwest", zh: "西南向" },
+    west: { en: "West", zh: "西向" },
+    northwest: { en: "Northwest", zh: "西北向" }
+  } satisfies Record<RouteAspect, Record<Locale, string>>,
+  sun: {
+    "morning-sun": { en: "Morning sun", zh: "上午日照" },
+    "afternoon-sun": { en: "Afternoon sun", zh: "下午日照" },
+    "all-day-sun": { en: "Sun for much of the day", zh: "大部分时间有日照" },
+    "mostly-shaded": { en: "Mostly shaded", zh: "大部分时间背阴" },
+    variable: { en: "Variable", zh: "日照随时段变化" }
+  } satisfies Record<RouteSunWindow, Record<Locale, string>>
+};
+
+function evidenceOriginLabel(origin: AttributeOrigin, locale: Locale) {
+  const labels: Record<AttributeOrigin, Record<Locale, string>> = {
+    source: { en: "From cited references", zh: "参考已引用资料" },
+    editorial: { en: "ClimbAtlas editorial", zh: "ClimbAtlas 编辑判断" },
+    inferred: { en: "Derived from recorded attributes", zh: "由已记录属性推导" },
+    community: { en: "Community reported", zh: "社区反馈" }
+  };
+  return labels[origin][locale];
+}
+
+function buildEvidence<T>(
+  evidence: RouteEvidenceValue<T>,
+  route: RouteRecord,
+  locale: Locale,
+  formatValue: (value: T) => string
+) {
+  const sourceById = new Map(
+    route.sourceRecords.map((source) => [source.id, source])
+  );
+  return {
+    value: formatValue(evidence.value),
+    origin: evidence.origin,
+    originLabel: evidenceOriginLabel(evidence.origin, locale),
+    checkedAtLabel: evidence.checkedAt
+      ? formatCheckedDate(evidence.checkedAt, locale)
+      : undefined,
+    sources: (evidence.sourceIds ?? []).flatMap((sourceId) => {
+      const source = sourceById.get(sourceId);
+      return source
+        ? [{ id: source.id, label: source.label, url: source.sourceUrl }]
+        : [];
+    }),
+    inferenceLabel: evidence.inferredFrom?.length
+      ? `${locale === "zh" ? "依据" : "Based on"}: ${evidence.inferredFrom.join(", ")}`
+      : undefined
+  } satisfies PublicEvidenceViewModel;
+}
+
+function buildExperience(route: RouteRecord, locale: Locale) {
+  const experience = route.experience;
+  if (!experience) return undefined;
+  const join = <T,>(
+    values: T[],
+    labels: Record<string, Record<Locale, string>>
+  ) => values.map((value) => labels[String(value)][locale]).join(locale === "zh" ? "、" : " · ");
+  const character = experience.character;
+  const challenge = experience.challenge;
+  const logistics = experience.logistics;
+
+  return {
+    whatToExpect: {
+      wallAngle: buildEvidence(character.wallAngle, route, locale, (value) => experienceLabels.wallAngle[value][locale]),
+      terrain: buildEvidence(character.terrain, route, locale, (value) => join(value, experienceLabels.terrain)),
+      movementTendency: buildEvidence(character.movementTendency, route, locale, (value) => join(value, experienceLabels.movement)),
+      difficultyShape: buildEvidence(character.difficultyShape, route, locale, (value) => experienceLabels.difficultyShape[value][locale])
+    },
+    challenge: {
+      primaryDemand: buildEvidence(challenge.primaryDemand, route, locale, (value) => experienceLabels.demand[value][locale]),
+      secondaryDemand: challenge.secondaryDemand
+        ? buildEvidence(challenge.secondaryDemand, route, locale, (value) => experienceLabels.demand[value][locale])
+        : undefined,
+      cruxPattern: challenge.cruxPattern
+        ? buildEvidence(challenge.cruxPattern, route, locale, (value) => experienceLabels.crux[value][locale])
+        : undefined,
+      sustainedness: challenge.sustainedness
+        ? buildEvidence(challenge.sustainedness, route, locale, (value) => experienceLabels.intensity[value][locale])
+        : undefined,
+      exposure: challenge.exposure
+        ? buildEvidence(challenge.exposure, route, locale, (value) => experienceLabels.intensity[value][locale])
+        : undefined,
+      commitment: challenge.commitment
+        ? buildEvidence(challenge.commitment, route, locale, (value) => experienceLabels.intensity[value][locale])
+        : undefined
+    },
+    logistics: logistics && (logistics.approachMinutes || logistics.aspect || logistics.sun)
+      ? {
+          approach: logistics.approachMinutes
+            ? buildEvidence(logistics.approachMinutes, route, locale, (value) => {
+                const range = value.max && value.max !== value.min
+                  ? `${value.min}–${value.max}`
+                  : String(value.min);
+                return locale === "zh" ? `约 ${range} 分钟` : `about ${range} min`;
+              })
+            : undefined,
+          aspect: logistics.aspect
+            ? buildEvidence(logistics.aspect, route, locale, (value) => experienceLabels.aspect[value][locale])
+            : undefined,
+          sun: logistics.sun
+            ? buildEvidence(logistics.sun, route, locale, (value) => experienceLabels.sun[value][locale])
+            : undefined
+        }
+      : undefined
+  } satisfies RouteExperienceViewModel;
 }
 
 export function canonicalizePublicUrl(value: string) {

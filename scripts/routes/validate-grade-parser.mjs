@@ -31,7 +31,8 @@ const cases = [
   { grade: "V 5.9 C2", destination: "yosemite-usa", type: "trad", system: "yds", min: 9, max: 9, aid: "C2", commitment: "V" },
   { grade: "VI 5.13b/c free / C2 aid", destination: "yosemite-usa", type: "multi-pitch", system: "yds", min: 13.25, max: 13.5, aid: "C2", commitment: "VI" },
   { grade: "33 / 5.14b", destination: "grampians-australia", type: "trad", system: "australian", min: 33, max: 33 },
-  { grade: "AD / ridge", destination: "chamonix-france", type: "alpine", system: "alpine", min: 3, max: 3 }
+  { grade: "AD / ridge", destination: "chamonix-france", type: "alpine", system: "alpine", min: 3, max: 3 },
+  { grade: "ED1", destination: "chamonix-france", type: "alpine", system: "alpine", min: 6.1, max: 6.1 }
 ];
 
 for (const sample of cases) {

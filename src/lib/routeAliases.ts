@@ -1,4 +1,14 @@
 import { metadataRouteAliases } from "@/data/generatedRouteMetadata";
+import {
+  cleanupRouteAliases,
+  getCleanupRetiredRouteParams,
+  getCleanupRetirementHref
+} from "@/data/route-catalog-cleanup";
+
+const routeAliases = {
+  ...metadataRouteAliases,
+  ...cleanupRouteAliases
+};
 
 export function resolveRouteId(destinationSlug: string, routeId: string) {
   let currentId = routeId;
@@ -6,7 +16,7 @@ export function resolveRouteId(destinationSlug: string, routeId: string) {
 
   while (!visited.has(currentId)) {
     visited.add(currentId);
-    const nextId = metadataRouteAliases[`${destinationSlug}:${currentId}`];
+    const nextId = routeAliases[`${destinationSlug}:${currentId}`];
 
     if (!nextId) {
       break;
@@ -27,7 +37,7 @@ export function getRouteIdsForStorage(
   routeId: string
 ) {
   const canonicalId = resolveRouteId(destinationSlug, routeId);
-  const aliasIds = Object.entries(metadataRouteAliases)
+  const aliasIds = Object.entries(routeAliases)
     .filter(([key, targetId]) => {
       const separatorIndex = key.indexOf(":");
       return (
@@ -41,7 +51,7 @@ export function getRouteIdsForStorage(
 }
 
 export function getRouteAliasParams() {
-  return Object.keys(metadataRouteAliases).map((key) => {
+  return Object.keys(routeAliases).map((key) => {
     const separatorIndex = key.indexOf(":");
 
     return {
@@ -49,4 +59,12 @@ export function getRouteAliasParams() {
       routeId: key.slice(separatorIndex + 1)
     };
   });
+}
+
+export function getRetiredRouteHref(destinationSlug: string, routeId: string) {
+  return getCleanupRetirementHref(destinationSlug, routeId);
+}
+
+export function getRetiredRouteParams() {
+  return getCleanupRetiredRouteParams();
 }

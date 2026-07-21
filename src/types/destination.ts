@@ -25,6 +25,13 @@ export type RouteSource = {
   trustLevel: SourceTrustLevel;
   verifies: string[];
   notes: string;
+  purpose?:
+    | "route-reference"
+    | "access"
+    | "destination-context"
+    | "history"
+    | "media"
+    | "unknown";
 };
 
 export type ImageAsset = {

@@ -1,7 +1,10 @@
 import { destinations } from "@/data/destinations";
+import { applyRouteCatalogCleanup } from "@/data/route-catalog-cleanup";
 import openBetaPocSnapshot from "@/data/routes/imports/openbeta-poc.json";
 import { migrateLegacyRoute } from "@/lib/routes/migrate-legacy-route";
 import { adaptCanonicalRouteRecord } from "@/lib/routes/adapters/canonical-route-adapter";
+import { routeExperienceByKey } from "@/data/route-experiences";
+import { applyRouteExperience } from "@/lib/routes/apply-route-experience";
 import type { Destination, RouteHighlight } from "@/types/destination";
 import type { RouteImportSnapshot } from "@/types/route-import";
 import {
@@ -39,10 +42,10 @@ const importedOpenBetaRoutes = (
 
 export function getAllRoutesWithDestinations(): RouteWithDestination[] {
   return destinations.flatMap((destination) =>
-    (destination.routes ?? []).map((route) => ({
-      destination,
-      route
-    }))
+    (destination.routes ?? []).flatMap((route) => {
+      const resolved = applyRouteCatalogCleanup(destination.slug, route);
+      return resolved.route ? [{ destination, route: resolved.route }] : [];
+    })
   );
 }
 
@@ -59,10 +62,21 @@ export function findRouteWithDestination(
 export function getAllRouteCatalogEntries(): RouteCatalogEntryWithDestination[] {
   if (!routeCatalogCache) {
     const legacyEntries = destinations.flatMap((destination) =>
-      (destination.routes ?? []).map((route) => ({
-        destination,
-        entry: migrateLegacyRoute(destination.slug, route)
-      }))
+      (destination.routes ?? []).flatMap((route) => {
+        const resolved = applyRouteCatalogCleanup(destination.slug, route);
+        if (!resolved.route) return [];
+
+        const entry = migrateLegacyRoute(destination.slug, resolved.route);
+        const overlay = routeExperienceByKey.get(
+          `${destination.slug}:${entry.id}`
+        );
+        return [{
+          destination,
+          entry: isRouteRecord(entry)
+            ? applyRouteExperience(entry, overlay)
+            : entry
+        }];
+      })
     );
     const destinationsById = new Map(
       destinations.map((destination) => [destination.slug, destination])
@@ -81,7 +95,13 @@ export function getAllRouteCatalogEntries(): RouteCatalogEntryWithDestination[] 
     }
 
     const importedEntries = importedOpenBetaRoutes.flatMap((snapshotRoute) => {
-      const route = adaptCanonicalRouteRecord(snapshotRoute);
+      const normalizedRoute = adaptCanonicalRouteRecord(snapshotRoute);
+      const route = applyRouteExperience(
+        normalizedRoute,
+        routeExperienceByKey.get(
+          `${normalizedRoute.destinationId}:${normalizedRoute.id}`
+        )
+      );
       const destination = destinationsById.get(route.destinationId);
       return destination ? [{ destination, entry: route }] : [];
     });

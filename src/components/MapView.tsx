@@ -12,6 +12,7 @@ import {
   useMapEvents
 } from "react-leaflet";
 import { useLanguage } from "@/components/LanguageProvider";
+import { formatDestinationFact } from "@/lib/formatters";
 import {
   formatBeginnerStatus,
   formatClimbingType,
@@ -204,7 +205,7 @@ export function MapView({
                   <article className="w-72 space-y-4 p-1 text-bark">
                     <div className="border-b border-ridge/20 pb-3">
                       <p className="text-xs font-bold uppercase tracking-[0.18em] text-forest">
-                        {destination.country}
+                        {formatDestinationFact(destination.country, locale)}
                       </p>
                       <h2 className="mt-1 text-2xl font-black leading-tight">
                         {destination.name}
@@ -228,7 +229,9 @@ export function MapView({
                     <dl className="grid gap-2 text-sm">
                       <div className="flex justify-between gap-4 rounded-md bg-parchment/70 px-3 py-2">
                         <dt className="font-bold text-bark/65">{t.rock}</dt>
-                        <dd className="text-right font-semibold">{destination.rockType}</dd>
+                        <dd className="text-right font-semibold">
+                          {formatDestinationFact(destination.rockType, locale)}
+                        </dd>
                       </div>
                       <div className="flex justify-between gap-4 rounded-md bg-parchment/70 px-3 py-2">
                         <dt className="font-bold text-bark/65">{t.season}</dt>
