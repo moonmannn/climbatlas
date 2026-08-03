@@ -192,7 +192,10 @@ The simplest deployment path is Vercel:
 5. Optional Supabase setup:
    - Add `NEXT_PUBLIC_SUPABASE_URL`.
    - Add `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
-   - Run `supabase/schema.sql` in the Supabase SQL editor before testing saved routes.
+   - For a new project, run `supabase/schema.sql` in the Supabase SQL editor.
+   - For an existing ClimbAtlas Supabase project, run `supabase/migrations/20260803_private_my_atlas.sql` after the earlier migrations.
+   - Then run `supabase/migrations/20260803_private_my_atlas_11_logs.sql` to enable the private climbing journal.
+   - Add `http://localhost:3000` and the production domain to the Supabase Auth redirect URLs.
 6. Deploy, open the Vercel preview URL, and repeat the Beta launch checks above.
 
 ## Content boundaries
@@ -217,7 +220,22 @@ Metadata routes are meant to help users choose what to research next. Full route
 - No public comments or ratings
 - No real community tips until there are real users and moderation rules
 
-V3 adds private saved routes and notes, but public community features remain intentionally closed until moderation rules are clear.
+My Atlas is private-only. It synchronizes Want to climb, Climbed, private climbing logs, private notes, saved destinations, profile preferences, and Climbing DNA after sign-in. Public profiles and community features remain intentionally closed until moderation rules are clear.
+
+## Private My Atlas
+
+Supabase stores user behavior only; route and destination content remains in the repository.
+
+- `profiles` stores private profile preferences.
+- `saved_routes` stores Want to climb and Climbed status.
+- `route_notes` stores private route notes.
+- `saved_destinations` stores favorite destinations.
+- `climbing_dna_profiles` stores completed Climbing DNA answers for cross-device sync.
+- `climbing_logs` stores multiple private completed or attempted sessions for each route.
+- Row-level security restricts every record to its signed-in owner.
+- My Atlas can export a JSON copy or clear its private content. Clearing My Atlas does not delete the Supabase Auth account.
+
+Run `npm run atlas:validate` after changing account, privacy, or My Atlas code.
 
 ## Important files
 
@@ -230,7 +248,11 @@ V3 adds private saved routes and notes, but public community features remain int
 - `src/components/RouteHighlightCard.tsx` renders capability-based editorial route content.
 - `src/components/RouteRecordCard.tsx` renders the shared public route facts and source view.
 - `src/components/UserRouteControls.tsx` renders saved-route and note controls.
-- `src/components/MyAtlasClient.tsx` renders the private route notebook.
+- `src/components/UserDestinationControl.tsx` saves destinations to the private atlas.
+- `src/components/UserAtlasProvider.tsx` synchronizes destination saves and Climbing DNA.
+- `src/components/UserClimbingLogsProvider.tsx` synchronizes private route sessions and keeps completed route status consistent.
+- `src/components/ClimbingLogForm.tsx` renders the reusable private climbing log editor.
+- `src/components/MyAtlasClient.tsx` renders the private profile, route notebook, places, DNA, and privacy controls.
 - `src/data/destinations.ts` stores destination data and highlight routes.
 - `src/data/route-metadata.csv` stores metadata route rows.
 - `scripts/route-metadata.mjs` validates and generates metadata route data.
@@ -244,4 +266,4 @@ V3 adds private saved routes and notes, but public community features remain int
 
 ## Beginner note
 
-This version intentionally keeps route content local. Supabase is only for accounts, saved-route status, and private notes.
+This version intentionally keeps route content local. Supabase is only for accounts, saved-route status, private logs, saved destinations, Climbing DNA, and private notes.

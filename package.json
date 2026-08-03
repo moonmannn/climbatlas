@@ -26,7 +26,8 @@
     "production:validate": "node scripts/validate-production.mjs",
     "production:validate:links": "node scripts/validate-production.mjs --with-links",
     "dna:validate": "node scripts/validate-climbing-dna.mjs",
-    "scores:validate-public": "node scripts/validate-public-scores.mjs"
+    "scores:validate-public": "node scripts/validate-public-scores.mjs",
+    "atlas:validate": "node scripts/validate-private-atlas.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

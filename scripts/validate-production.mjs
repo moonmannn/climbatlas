@@ -31,6 +31,7 @@ const steps = [
   { label: "Climbing DNA", args: ["run", "dna:validate"] },
   { label: "Route DNA", args: ["run", "routes:dna-validate"] },
   { label: "Public score labels", args: ["run", "scores:validate-public"] },
+  { label: "Private My Atlas", args: ["run", "atlas:validate"] },
   ...(includeLinks
     ? [{ label: "Public route links", args: ["run", "routes:verify-links"] }]
     : []),

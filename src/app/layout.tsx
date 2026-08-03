@@ -3,6 +3,8 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 import { SupabaseProvider } from "@/components/SupabaseProvider";
 import { UserProfileProvider } from "@/components/UserProfileProvider";
 import { UserRoutesProvider } from "@/components/UserRoutesProvider";
+import { UserAtlasProvider } from "@/components/UserAtlasProvider";
+import { UserClimbingLogsProvider } from "@/components/UserClimbingLogsProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +23,11 @@ export default function RootLayout({
         <LanguageProvider>
           <SupabaseProvider>
             <UserProfileProvider>
-              <UserRoutesProvider>{children}</UserRoutesProvider>
+              <UserRoutesProvider>
+                <UserClimbingLogsProvider>
+                  <UserAtlasProvider>{children}</UserAtlasProvider>
+                </UserClimbingLogsProvider>
+              </UserRoutesProvider>
             </UserProfileProvider>
           </SupabaseProvider>
         </LanguageProvider>

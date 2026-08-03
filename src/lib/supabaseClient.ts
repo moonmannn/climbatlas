@@ -41,6 +41,46 @@ export type RouteNoteRecord = {
   updated_at?: string;
 };
 
+export type SavedDestinationRecord = {
+  user_id: string;
+  destination_slug: string;
+  created_at?: string;
+  updated_at?: string;
+};
+
+export type ClimbingDnaProfileRecord = {
+  user_id: string;
+  answers: Record<string, string>;
+  schema_version: 2;
+  created_at?: string;
+  updated_at?: string;
+};
+
+export type ClimbingLogResult = "completed" | "attempted";
+
+export type ClimbingCompletionStyle =
+  | "onsight"
+  | "flash"
+  | "redpoint"
+  | "send"
+  | "repeat"
+  | "top-rope"
+  | "unspecified";
+
+export type ClimbingLogRecord = {
+  id: string;
+  user_id: string;
+  destination_slug: string;
+  route_id: string;
+  session_date: string;
+  result: ClimbingLogResult;
+  completion_style: ClimbingCompletionStyle | null;
+  attempt_count: number | null;
+  note: string | null;
+  created_at?: string;
+  updated_at?: string;
+};
+
 let browserClient: SupabaseClient | null = null;
 
 export function isSupabaseConfigured() {

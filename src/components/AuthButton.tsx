@@ -36,8 +36,8 @@ export function AuthButton({ tone = "light" }: { tone?: "light" | "dark" }) {
           <p className="editorial-kicker text-terracotta">{isZh ? "个人路线本" : "Personal route notebook"}</p>
           <p className="mt-3 text-sm leading-6 text-charcoal/68">
             {isConfigured
-              ? isZh ? "输入邮箱，我们会发送登录链接。登录后可以保存想爬、已爬路线和私人笔记。" : "Enter your email and we will send a magic sign-in link. After signing in, you can save routes and private notes."
-              : isZh ? "Supabase 环境变量尚未配置。网站仍可正常浏览，但路线收藏暂不可用。" : "Supabase env variables are not configured yet. Browsing still works, but saved routes are disabled."}
+              ? isZh ? "输入邮箱，我们会发送登录链接。登录后可跨设备同步路线、目的地、Climbing DNA 和私人笔记。" : "Enter your email and we will send a magic sign-in link. After signing in, routes, destinations, Climbing DNA, and private notes sync across devices."
+              : isZh ? "Supabase 环境变量尚未配置。网站仍可正常浏览，但私人同步暂不可用。" : "Supabase env variables are not configured yet. Browsing still works, but private sync is disabled."}
           </p>
 
           {isConfigured ? (

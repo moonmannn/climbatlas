@@ -7,6 +7,7 @@ import { DestinationHeroImage } from "@/components/DestinationHeroImage";
 import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
 import { DestinationPicks } from "@/components/DestinationPicks";
 import { RouteIndex } from "@/components/RouteIndex";
+import { UserDestinationControl } from "@/components/UserDestinationControl";
 import { destinations, getDestinationBySlug } from "@/data/destinations";
 import { getDestinationLocalizedContent } from "@/data/localizedContent";
 import {
@@ -83,6 +84,10 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                 localizedDescription={localizedDescription}
               />
             </p>
+            <UserDestinationControl
+              destinationName={destination.name}
+              destinationSlug={destination.slug}
+            />
           </div>
           <DestinationHeroImage image={heroImage} slug={destination.slug} />
 

@@ -5,6 +5,7 @@ import { AuthButton } from "@/components/AuthButton";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useSupabaseAuth } from "@/components/SupabaseProvider";
 import { useUserRoutes } from "@/components/UserRoutesProvider";
+import { RouteClimbingLogPanel } from "@/components/RouteClimbingLogPanel";
 import type { SavedRouteStatus } from "@/lib/supabaseClient";
 
 type RouteIdentity = {
@@ -291,6 +292,13 @@ export function UserRouteControls({
           </div>
         </div>
       ))}
+
+      {user ? (
+        <RouteClimbingLogPanel
+          destinationSlug={destinationSlug}
+          routeId={route.id}
+        />
+      ) : null}
 
       {(message || error) && (
         <p className="mt-4 rounded-md border border-ridge/25 bg-parchment/70 p-3 text-xs font-bold leading-5 text-bark/70">
