@@ -58,7 +58,9 @@ function translateAuthMessage(message: string | null, isZh: boolean) {
   if (!message || !isZh) return message;
   const knownMessages: Record<string, string> = {
     "Check your email for the sign-in link.": "请查看邮箱里的登录链接。",
-    "Supabase is not configured yet.": "Supabase 尚未配置。"
+    "Supabase is not configured yet.": "Supabase 尚未配置。",
+    "We could not reach the account service. Please try again later or contact ClimbAtlas support.":
+      "暂时无法连接账户服务，请稍后重试或联系 ClimbAtlas。"
   };
   return knownMessages[message] ?? message;
 }

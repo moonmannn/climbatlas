@@ -63,19 +63,25 @@ export function SupabaseProvider({ children }: { children: ReactNode }) {
         }
 
         setMessage(null);
-        const { error } = await supabase.auth.signInWithOtp({
-          email,
-          options: {
-            emailRedirectTo: window.location.href
+        try {
+          const { error } = await supabase.auth.signInWithOtp({
+            email,
+            options: {
+              emailRedirectTo: window.location.href
+            }
+          });
+
+          if (error) {
+            setMessage(error.message);
+            return;
           }
-        });
 
-        if (error) {
-          setMessage(error.message);
-          return;
+          setMessage("Check your email for the sign-in link.");
+        } catch {
+          setMessage(
+            "We could not reach the account service. Please try again later or contact ClimbAtlas support."
+          );
         }
-
-        setMessage("Check your email for the sign-in link.");
       },
       async signOut() {
         if (!supabase) {
