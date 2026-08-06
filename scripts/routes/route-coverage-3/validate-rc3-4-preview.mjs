@@ -179,6 +179,7 @@ for (const destinationSlug of destinationSlugs) {
 }
 
 const httpResults = [];
+const aliasHttpResults = [];
 if (baseUrl) {
   for (const sample of samples) {
     const response = await fetch(`${baseUrl}${sample.path}`, {
@@ -222,6 +223,13 @@ if (baseUrl) {
       merge.canonicalRouteId,
       `${aliasPath} disagrees with the catalog alias map.`
     );
+    aliasHttpResults.push({
+      aliasPath,
+      status: response.status,
+      location: response.headers.get("location"),
+      expectedLocation,
+      passed: true
+    });
   }
 }
 
@@ -238,9 +246,18 @@ const report = {
         checked: httpResults.length,
         passed: httpResults.length,
         failed: 0,
-        aliasRedirectsChecked: Math.min(10, snapshot.sourceMerges.length)
+        aliasRedirectsChecked: aliasHttpResults.length,
+        results: httpResults,
+        aliasResults: aliasHttpResults
       }
-    : { checked: 0, passed: 0, failed: 0, aliasRedirectsChecked: 0 }
+    : {
+        checked: 0,
+        passed: 0,
+        failed: 0,
+        aliasRedirectsChecked: 0,
+        results: [],
+        aliasResults: []
+      }
 };
 const outputDirectory = path.join(root, "docs", "reports", batchId);
 mkdirSync(outputDirectory, { recursive: true });

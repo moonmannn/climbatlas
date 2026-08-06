@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "batchId": "route-coverage-3-batch-1",
-  "generatedAt": "2026-08-06T07:32:05.872Z",
+  "generatedAt": "2026-08-06T07:41:31.240Z",
   "baseUrl": "http://localhost:3100",
   "totalSamples": 80,
   "destinationReports": [
@@ -1061,6 +1061,640 @@
     "checked": 80,
     "passed": 80,
     "failed": 0,
-    "aliasRedirectsChecked": 10
+    "aliasRedirectsChecked": 10,
+    "results": [
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-0abe98a8-479b-5005-8c57-2c1fba568075",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-2597d3c8-fd47-5ffd-a7c9-263ded61e9b4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-05db8881-1c4d-5934-8541-4649706b4628",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-30cb8c0d-027f-56df-b0f6-d175a44a3475",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-02ffe75d-6da9-5f3a-b3fe-d6e94384c6b2",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-f3eaef89-0105-551d-9246-bb0b91e8abb9",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-00836e77-9766-51c6-af88-581416a63169",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-04eb5356-da36-5652-bf72-50bdd1169249",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-259438cd-c261-5bf9-91f5-d4c5cb78c8f3",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-0226fb48-d57c-58e7-9729-0d70002b801e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-002f09f8-a68c-5586-88c3-871b49cde552",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-004275c9-7249-5612-afeb-790041ea9566",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-01d843b8-dd23-5d78-a034-4dd483128268",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-08498eb7-e27a-5fce-b040-4266b981898d",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-07bb9b4c-1213-50dd-9f85-cee75a16aa17",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-002c183d-c697-52d8-b165-f83d4b41588b",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-6a8c05cc-79a5-5ef4-bb40-b18c0f9f595a",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-190d313a-be92-529a-9cae-e4a6bd1d199a",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-03647ebd-3c2e-5f4b-9e28-629bd47811cb",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/joshua-tree-usa/routes/openbeta-0b8c36e9-d4c9-5abc-ad71-70675be0ae5f",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-0be18b78-d814-41bd-9ec8-bcfd6605c8aa",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-0eeb97e3-ddb2-4fea-a840-1063a37146fb",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-0eb4c2d9-30fe-461f-a3e5-05b676095227",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-159a7221-4d2b-4265-9e85-8a17811aaf9d",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-027391b9-50fa-4705-a18c-7282344d0173",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-77fc88ca-b09a-4889-8e4a-2fee69020ef4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-19f8f122-b5b4-4034-beb1-c72fcf4c8af8",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-814be08e-ec20-4011-9bde-85c8460ff7b5",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-1c4ddb08-6876-4997-b0d5-0f18fdbec9ff",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-7a74bb4b-3e6a-435a-abb1-0d8924467fba",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-7042ea52-3b6c-4a55-ae8f-ce7fb4e8035c",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-1d8f1242-4420-4b91-a721-17ab8792f7f7",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-3b462161-730f-43bc-8e5f-58f2ebc2f376",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-3e072480-ef14-4f3b-8df3-495b6fbdf1d7",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-1794ce26-43db-4a0e-bd48-a65fd174b218",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-0fd36e17-bb67-4b57-9adf-ee629b044a9c",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-0a15c633-0c79-44a5-870d-1325a7cd0e91",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-800e19fc-4c7f-4d47-82ac-95566e1f2045",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-0aa6d4fa-df3e-413c-90c5-07a6b3a1964f",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/squamish-canada/routes/openbeta-29936758-71a6-4ddd-8fc6-1c396a34fef1",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-b832dda1-b0ce-59c7-b82a-57eade95f7df",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-00158122-1e0a-5d75-b9df-89086538c646",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-03a39aaf-62d0-500c-8389-801acaceb05a",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-05089959-2099-5d01-b68e-aec70952076f",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-02dfe63a-0f60-568b-bc99-7359a9116ee1",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-365caad8-f35e-5543-a06b-871cb516d70c",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-0b58eb19-a23c-536c-a069-54e9d64487e7",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-8309eb31-9550-59d6-aed6-dd4a2e11e6c2",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-bb02a97b-b7d3-595f-9c0c-cd458341989d",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-4469205d-f840-5fd2-b988-b6043ec510ca",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-d278eb3f-d8db-50ea-99a4-6f56298cf834",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-29ee254c-39b3-544a-ad9d-447d73641437",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-323f6e9c-e983-5ef7-b2c8-adbcece11f70",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-157e3037-b56d-58b7-af1f-014a7a40d8e7",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-03d79da0-77d1-551b-965d-26afb3f4547b",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-5dba697b-930d-54e0-a22b-9d3d51ea6487",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-01ab5368-5a2c-5fc1-b652-2067b67fea06",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-0b382d8c-ffd9-5785-bbf3-69ea0bacf7d5",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-30788d04-1aae-565f-a152-08ca6f08bec4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-87a088cb-a471-5f55-98de-5070ea6c3ade",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-034cafb2-cba6-5825-a5e0-9199d934f783",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-c96f13fa-7ed0-521a-9d38-ad94f860f1a4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-42e1e574-39b3-5b56-980e-dda240aaad42",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-0b439079-c0ed-504b-9d0f-52a9a04f5307",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-23da8112-8a16-56f3-9d3c-8901e7bf9b7e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-00340e8b-75b1-5ff0-bc53-42f8fdeb46a4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-01db047e-40c6-5c4c-9a4a-4ea24c415e56",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-01a5c401-39f2-51ec-b386-360c6f5d76db",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-03e7d7d5-62d1-5c1f-8b06-30b7623900eb",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-4f525999-c231-5e9e-a531-712bcf9ab8a1",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-074de0d5-a36d-537c-a1fe-c38ca4cc4bd2",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-102d4fe6-bc16-5c8e-a20b-6201d384c4a2",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-767fa5dc-85c0-5759-87bf-89c111d7b79f",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-65a36d9f-2f38-59db-bb1b-369a9354d401",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-364c79a8-6155-5409-ae4f-8003e29b22aa",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-01084af8-debe-5b90-a625-305ea7c82bce",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-0a5a48fc-15cb-5391-ba1b-b04eb396dbfb",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-002f39d4-7161-566a-a7cb-6fd4b1ffdd3b",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-06577731-3915-43fb-a764-693f1ef7cf85",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-00e557db-84fe-5535-87c3-6c5a5841754e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      }
+    ],
+    "aliasResults": [
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-e668fc75-0c90-5472-bba8-b8f74c6e504e",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/bird-of-fire-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/bird-of-fire-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-4334ac3e-5306-5ecd-aeeb-d82c4e34807d",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/clean-and-jerk-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/clean-and-jerk-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-6d8fff9f-3ec0-5540-b022-f26db249e9ef",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/dappled-mare-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/dappled-mare-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-87d70fb2-7c5b-5068-9655-cf09e7db4c1c",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/equinox-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/equinox-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-bf419782-b0bb-56a6-88db-8bda5bd372c2",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/gunsmoke-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/gunsmoke-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-a4a63435-a38c-5b20-8416-553beec7256f",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/heart-and-sole-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/heart-and-sole-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-f4848e4f-6701-567f-80d6-64c860f6bc2d",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/illusion-dweller-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/illusion-dweller-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-53e9fa83-4b0b-553b-b50d-12abfa4a09e9",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/mental-physics-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/mental-physics-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-a048da00-1431-51ed-8bd0-e9292961b920",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/overhang-bypass-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/overhang-bypass-joshua-tree",
+        "passed": true
+      },
+      {
+        "aliasPath": "/destinations/joshua-tree-usa/routes/openbeta-49c5ccce-7f44-54c4-90f0-cb8c80f8ace4",
+        "status": 307,
+        "location": "/destinations/joshua-tree-usa/routes/planet-x-joshua-tree",
+        "expectedLocation": "/destinations/joshua-tree-usa/routes/planet-x-joshua-tree",
+        "passed": true
+      }
+    ]
   }
 }

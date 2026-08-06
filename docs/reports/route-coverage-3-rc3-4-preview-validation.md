@@ -74,7 +74,7 @@ Two Joshua Tree/Squamish navigations and eight Bishop navigations initially expo
 - An authenticated browser session loaded and checked the actual Preview application successfully.
 - Preview protection was not weakened and no bypass secret or browser cookie was inspected.
 
-This leaves one environment-specific limitation: the exact protected Preview URL did not receive an anonymous no-JavaScript HTML audit. The compiled artifact's server HTML was validated locally, while the deployed artifact was validated through the authenticated browser.
+The protected Preview URL cannot receive an anonymous no-JavaScript audit without a bypass token. RC3-4 therefore uses the approved combined evidence model: the compiled artifact's server HTML is validated locally, while the deployed artifact is validated through the authenticated protected browser.
 
 ## Build And Validation
 
@@ -95,10 +95,10 @@ This leaves one environment-specific limitation: the exact protected Preview URL
 
 ## RC3-4 Status
 
-RC3-4 is **conditionally passed** for product behavior and catalog integrity. Before RC3-5 Production release, choose one of these release-gate options:
+RC3-4 is **passed using the combined evidence model**:
 
-1. Run the anonymous no-JavaScript check with an approved Vercel protection bypass token.
-2. Temporarily expose a dedicated Preview deployment, run the check, then restore protection.
-3. Explicitly accept the local raw-HTML validation plus authenticated deployed-browser validation as equivalent evidence for this batch.
+1. Local production artifact: 80 raw HTML pages and 10 redirects passed.
+2. Protected Vercel Preview: 80 routes and the required interaction checks passed in an authenticated browser.
+3. No bypass token, browser cookie inspection, or protection-setting change was used.
 
-Production must remain unchanged until this final gate is accepted.
+Machine evidence is stored in `rc3-4-local-html-validation.json` and `rc3-4-protected-preview-browser.json`. Production remains unchanged and still requires the separate RC3-5 release decision.

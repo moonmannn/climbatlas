@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "batchId": "route-coverage-3-batch-1",
-  "generatedAt": "2026-08-06T07:32:35.601Z",
+  "generatedAt": "2026-08-06T08:13:06.708Z",
   "baseUrl": null,
   "totalSamples": 80,
   "destinationReports": [
@@ -1061,6 +1061,8 @@
     "checked": 0,
     "passed": 0,
     "failed": 0,
-    "aliasRedirectsChecked": 0
+    "aliasRedirectsChecked": 0,
+    "results": [],
+    "aliasResults": []
   }
 }
