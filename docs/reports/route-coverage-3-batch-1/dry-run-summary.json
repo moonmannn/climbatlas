@@ -1,0 +1,55 @@
+{
+  "auditGeneratedAt": "2026-08-06T06:08:23.568Z",
+  "batchId": "route-coverage-3-batch-1",
+  "importerVersion": "rc3-parquet-importer/1.0.0",
+  "source": {
+    "release": "v2026-08-02",
+    "sha256": "6a655481a39727beb568e6365b159d9bbf371fbc8d83985c505ef1dec3c8e728",
+    "shaMatches": true,
+    "rowCount": 231865,
+    "rowCountMatches": true,
+    "schemaSha256": "ce457a5fe56d4ad69f17db5a12ca83f8982d4a289a11c34d6d2a7f23561783d8",
+    "schemaMatches": true
+  },
+  "baseline": {
+    "destinations": 20,
+    "publicRoutes": 1074,
+    "publishedPicks": 40
+  },
+  "preview": {
+    "selectedRoutes": 394,
+    "projectedDestinations": 22,
+    "projectedPublicRoutes": 1468,
+    "publishedPicks": 40,
+    "exactRouteLinkCoverage": 1
+  },
+  "identity": {
+    "proposedMerges": 41,
+    "quarantinedConflicts": 130,
+    "unresolvedConflicts": 0,
+    "identityRecords": 435
+  },
+  "qualityGates": {
+    "sourceSnapshotShaMatches": true,
+    "sourceRowCountMatches": true,
+    "schemaFingerprintMatches": true,
+    "routeConversionFailures": 0,
+    "unresolvedIdentityConflicts": 0,
+    "brokenSelectedExactLinks": 0,
+    "selectedSourceCoverage": 1,
+    "selectedExactRouteLinkCoverage": 1,
+    "majorGradeSystemFailures": [],
+    "publishedPicksRemain40": true,
+    "destinationTargetsReached": true,
+    "productionMyAtlasReferenceAudit": "pass",
+    "productionMyAtlasReferenceAuditCheckedAt": "2026-08-06T01:08:02.5717358-04:00"
+  },
+  "idempotency": {
+    "comparedWithPreviousDryRun": true,
+    "imported": 0,
+    "updated": 0,
+    "removed": 0,
+    "semanticSha256": "b43047bbd1a3549cc5c24b1f908d7f1110417afe97f4e0ef60bad2341b4eb087"
+  },
+  "runtimeMs": 2215
+}

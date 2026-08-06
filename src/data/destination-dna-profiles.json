@@ -538,5 +538,59 @@
         "风景发现"
       ]
     }
+  },
+  {
+    "destinationSlug": "bishop-area-usa",
+    "vector": {
+      "exploration": 90,
+      "performance": 82,
+      "adventure": 76,
+      "social": 68,
+      "comfort": 52,
+      "flow": 80
+    },
+    "summary": {
+      "en": "A broad Eastern Sierra destination for exploring distinct bouldering and roped-climbing areas.",
+      "zh": "覆盖多个独立子区域的东内华达山脉目的地，可分别探索抱石与绳攀。"
+    },
+    "traits": {
+      "en": [
+        "mixed climbing formats",
+        "distinct subareas",
+        "Eastern Sierra travel"
+      ],
+      "zh": [
+        "多种攀岩形式",
+        "多个独立子区域",
+        "东内华达山脉行程"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "red-rock-canyon-usa",
+    "vector": {
+      "exploration": 86,
+      "performance": 82,
+      "adventure": 88,
+      "social": 70,
+      "comfort": 48,
+      "flow": 78
+    },
+    "summary": {
+      "en": "A sandstone destination with bouldering, sport, trad, and multi-pitch choices across separate canyons and crags.",
+      "zh": "分布在不同峡谷与岩区的砂岩目的地，包含抱石、运动攀、传统攀和多段线路。"
+    },
+    "traits": {
+      "en": [
+        "multiple climbing formats",
+        "canyon exploration",
+        "desert travel"
+      ],
+      "zh": [
+        "多种攀岩形式",
+        "峡谷探索",
+        "沙漠行程"
+      ]
+    }
   }
 ]

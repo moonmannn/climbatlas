@@ -90,8 +90,25 @@ export function adaptOpenBetaRoute(
 
   const grade = routeGrade(raw.grades, climbingType, destinationId);
   const id = `openbeta-${raw.uuid.toLowerCase()}`;
-  const sourceUrl = "https://github.com/OpenBeta/openbeta-graphql";
+  const sourceUrl =
+    raw.finalResolvedUrl ??
+    raw.sourceUrl ??
+    "https://github.com/OpenBeta/openbeta-graphql";
   const lengthMeters = raw.length > 0 ? raw.length : undefined;
+  const normalizedHierarchy = raw.normalizedHierarchy;
+  const sectorName = normalizedHierarchy
+    ? normalizedHierarchy.sectorName
+    : raw.areaName;
+  const hasExactRouteLink = ["valid", "redirected"].includes(
+    raw.linkStatus ?? "unverified"
+  );
+  const verifiedFields = [
+    "name",
+    "climbingType",
+    ...(grade.original ? ["grade"] : []),
+    ...(lengthMeters ? ["lengthMeters"] : []),
+    ...(sectorName ? ["sectorName"] : [])
+  ];
 
   return {
     kind: "route",
@@ -99,11 +116,17 @@ export function adaptOpenBetaRoute(
     slug: id,
     name,
     destinationId,
-    areaId: raw.areaUuid,
-    areaName: raw.pathTokens.at(-2),
-    sectorId: raw.areaUuid,
-    sectorName: raw.areaName,
-    cragName: raw.areaName,
+    areaId: normalizedHierarchy?.areaId ?? raw.areaUuid,
+    areaName:
+      normalizedHierarchy?.areaName ??
+      raw.sourceHierarchy?.area ??
+      raw.pathTokens.at(-2),
+    sectorId: normalizedHierarchy ? normalizedHierarchy.sectorId : raw.areaUuid,
+    sectorName,
+    cragName:
+      normalizedHierarchy?.cragName ?? raw.sourceHierarchy?.crag ?? raw.areaName,
+    sourceHierarchy: raw.sourceHierarchy,
+    normalizedHierarchy,
     climbingType,
     grade,
     lengthMeters,
@@ -123,19 +146,14 @@ export function adaptOpenBetaRoute(
         label: "OpenBeta route metadata snapshot",
         sourceUrl,
         externalId: raw.uuid,
+        sourceRelease: raw.sourceRelease,
         attribution: "OpenBeta contributors",
         license: "CC0-1.0",
         importedAt: checkedAt,
         checkedAt,
         sourceType: "route-database-metadata",
         trustLevel: "medium",
-        verifiedFields: [
-          "name",
-          "grade",
-          "climbingType",
-          "lengthMeters",
-          "sectorName"
-        ],
+        verifiedFields,
         notes: "Imported from an OpenBeta metadata snapshot; descriptions and user content are excluded. The external ID preserves record-level provenance.",
         purpose: "route-reference"
       })
@@ -145,7 +163,20 @@ export function adaptOpenBetaRoute(
       checkedAt,
       notes: "OpenBeta CC0 metadata; not independently field-verified by ClimbAtlas."
     },
-    externalResources: [],
+    externalResources: hasExactRouteLink
+      ? [
+          {
+            title: "OpenBeta route page",
+            url: sourceUrl,
+            type: "route-database",
+            linkStatus: "route-specific",
+            description: {
+              en: "Open the exact OpenBeta route page for current source information.",
+              zh: "前往对应的 OpenBeta 线路页面查看当前来源信息。"
+            }
+          }
+        ]
+      : [],
     media: [],
     normalization: {
       adapter: "openbeta",

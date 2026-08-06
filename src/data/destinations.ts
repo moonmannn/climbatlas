@@ -10865,6 +10865,86 @@ export const destinations: Destination[] = [
       ...popularRouteAdditions["rocklands-south-africa"],
       ...v6PopularRouteAdditions["rocklands-south-africa"]
     ]
+  },
+  {
+    slug: "bishop-area-usa",
+    name: "Bishop Area",
+    country: "USA",
+    latitude: 37.3614,
+    longitude: -118.3997,
+    climbingTypes: ["boulder", "sport", "trad"],
+    rockType: "Granite and volcanic tuff",
+    bestSeasons: ["Fall", "Winter", "Spring"],
+    difficultyRange: "V Scale and YDS routes indexed",
+    beginnerFriendly: true,
+    description:
+      "An Eastern Sierra climbing hub with bouldering and roped climbing represented across distinct subareas. Use Route Explorer to separate V Scale and YDS routes by area and type.",
+    localizedContent: {
+      description: {
+        en: "An Eastern Sierra climbing hub with bouldering and roped climbing represented across distinct subareas. Use Route Explorer to separate V Scale and YDS routes by area and type.",
+        zh: "Bishop Area 是东内华达山脉的一处综合攀岩目的地，多个独立子区域包含抱石和绳攀线路。可在路线目录中按区域、类型，并分别使用 V Scale 与 YDS 难度系统筛选。"
+      }
+    },
+    externalResources: [
+      {
+        title: "Bishop Area Climbers Coalition: plan your trip",
+        url: "https://bishopclimbers.org/plan-your-trip",
+        type: "official",
+        description: {
+          en: "Current local planning and seasonal context from the Bishop Area Climbers Coalition. Check it again before travelling.",
+          zh: "Bishop Area Climbers Coalition 提供的当地行程与季节信息。出发前请再次核对最新内容。"
+        }
+      },
+      {
+        title: "Bishop Area Climbers Coalition: climbing areas",
+        url: "https://bishopclimbers.org/bouldering-areas",
+        type: "official",
+        description: {
+          en: "Local stewardship information for Bishop-area bouldering locations and current visitor considerations.",
+          zh: "当地组织提供的 Bishop 抱石区域维护信息与当前访客注意事项。"
+        }
+      }
+    ]
+  },
+  {
+    slug: "red-rock-canyon-usa",
+    name: "Red Rock Canyon",
+    country: "USA",
+    latitude: 36.135,
+    longitude: -115.427,
+    climbingTypes: ["boulder", "sport", "trad", "multi-pitch"],
+    rockType: "Sandstone",
+    bestSeasons: ["Fall", "Winter", "Spring"],
+    difficultyRange: "YDS and V Scale routes indexed",
+    beginnerFriendly: true,
+    description:
+      "A sandstone climbing destination west of Las Vegas with bouldering, sport, trad, and multi-pitch routes across distinct canyons and crags. Use Route Explorer to narrow the index by type, grade, and area.",
+    localizedContent: {
+      description: {
+        en: "A sandstone climbing destination west of Las Vegas with bouldering, sport, trad, and multi-pitch routes across distinct canyons and crags. Use Route Explorer to narrow the index by type, grade, and area.",
+        zh: "Red Rock Canyon 位于拉斯维加斯以西，多个峡谷和岩区包含抱石、运动攀、传统攀与多段线路。可在路线目录中按类型、难度和区域继续筛选。"
+      }
+    },
+    externalResources: [
+      {
+        title: "BLM: Red Rock Canyon National Conservation Area",
+        url: "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon",
+        type: "official",
+        description: {
+          en: "Official BLM visitor information, including current entry and management notices. Check it before travelling.",
+          zh: "BLM 官方访客信息，包括当前入园与管理通知。出发前请核对最新内容。"
+        }
+      },
+      {
+        title: "BLM: Red Rock Canyon climbing inventory",
+        url: "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon/management-and-planning/climbing",
+        type: "official",
+        description: {
+          en: "Official climbing-management context for Red Rock Canyon; this is not a route beta source.",
+          zh: "Red Rock Canyon 的官方攀岩管理资料；该页面不是具体线路 beta 来源。"
+        }
+      }
+    ]
   }
 ];
 

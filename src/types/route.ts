@@ -252,6 +252,7 @@ export type RouteSourceRecord = {
   label: string;
   sourceUrl: string;
   externalId?: string;
+  sourceRelease?: string;
   attribution?: string;
   license?: string;
   importedAt?: string;
@@ -261,6 +262,23 @@ export type RouteSourceRecord = {
   verifiedFields: string[];
   notes?: string;
   purpose: RouteSourcePurpose;
+};
+
+export type RouteSourceHierarchy = {
+  country?: string;
+  stateProvince?: string;
+  region?: string;
+  area?: string;
+  crag?: string;
+};
+
+export type RouteNormalizedHierarchy = {
+  destinationId: string;
+  areaId?: string;
+  areaName?: string;
+  sectorId?: string;
+  sectorName?: string;
+  cragName?: string;
 };
 
 export type RouteVerificationStatus =
@@ -380,6 +398,8 @@ export type RouteRecord = {
   areaName?: string;
   sectorName?: string;
   cragName?: string;
+  sourceHierarchy?: RouteSourceHierarchy;
+  normalizedHierarchy?: RouteNormalizedHierarchy;
   climbingType: RouteClimbingType;
   grade: RouteGrade;
   lengthMeters?: number;

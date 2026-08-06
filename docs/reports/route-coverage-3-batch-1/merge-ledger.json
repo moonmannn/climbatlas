@@ -1,0 +1,374 @@
+{
+  "batchId": "route-coverage-3-batch-1",
+  "merges": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "a4a63435-a38c-5b20-8416-553beec7256f",
+      "sourceRouteId": "openbeta-a4a63435-a38c-5b20-8416-553beec7256f",
+      "canonicalRouteId": "heart-and-sole-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "f5998213-abf4-546f-955a-98cf34ee981c",
+      "sourceRouteId": "openbeta-f5998213-abf4-546f-955a-98cf34ee981c",
+      "canonicalRouteId": "stichter-quits-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "8c428fbb-f29e-5353-847d-3c70c7ff3fb7",
+      "sourceRouteId": "openbeta-8c428fbb-f29e-5353-847d-3c70c7ff3fb7",
+      "canonicalRouteId": "popes-crack-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "ca803a90-d838-54f7-8682-8d18b196d387",
+      "sourceRouteId": "openbeta-ca803a90-d838-54f7-8682-8d18b196d387",
+      "canonicalRouteId": "the-chief-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "253f0bbe-2299-5d04-8987-84b3a53adc4c",
+      "sourceRouteId": "openbeta-253f0bbe-2299-5d04-8987-84b3a53adc4c",
+      "canonicalRouteId": "walk-on-the-wild-side-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "6d8fff9f-3ec0-5540-b022-f26db249e9ef",
+      "sourceRouteId": "openbeta-6d8fff9f-3ec0-5540-b022-f26db249e9ef",
+      "canonicalRouteId": "dappled-mare-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "99343a39-8918-5b86-8bc0-3d6aa85de0a0",
+      "sourceRouteId": "openbeta-99343a39-8918-5b86-8bc0-3d6aa85de0a0",
+      "canonicalRouteId": "western-saga-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "f4848e4f-6701-567f-80d6-64c860f6bc2d",
+      "sourceRouteId": "openbeta-f4848e4f-6701-567f-80d6-64c860f6bc2d",
+      "canonicalRouteId": "illusion-dweller-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "4334ac3e-5306-5ecd-aeeb-d82c4e34807d",
+      "sourceRouteId": "openbeta-4334ac3e-5306-5ecd-aeeb-d82c4e34807d",
+      "canonicalRouteId": "clean-and-jerk-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "fe205dfc-ccf2-5ea6-bb65-ade7f91655c5",
+      "sourceRouteId": "openbeta-fe205dfc-ccf2-5ea6-bb65-ade7f91655c5",
+      "canonicalRouteId": "tossed-green-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "e668fc75-0c90-5472-bba8-b8f74c6e504e",
+      "sourceRouteId": "openbeta-e668fc75-0c90-5472-bba8-b8f74c6e504e",
+      "canonicalRouteId": "bird-of-fire-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "96ef64a1-c767-5d10-895b-99ea62d9dfa8",
+      "sourceRouteId": "openbeta-96ef64a1-c767-5d10-895b-99ea62d9dfa8",
+      "canonicalRouteId": "room-to-shroom-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "87d70fb2-7c5b-5068-9655-cf09e7db4c1c",
+      "sourceRouteId": "openbeta-87d70fb2-7c5b-5068-9655-cf09e7db4c1c",
+      "canonicalRouteId": "equinox-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "a048da00-1431-51ed-8bd0-e9292961b920",
+      "sourceRouteId": "openbeta-a048da00-1431-51ed-8bd0-e9292961b920",
+      "canonicalRouteId": "overhang-bypass-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "c661fd9c-3228-57dd-b6c9-935b46132ce0",
+      "sourceRouteId": "openbeta-c661fd9c-3228-57dd-b6c9-935b46132ce0",
+      "canonicalRouteId": "the-flake-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "53e9fa83-4b0b-553b-b50d-12abfa4a09e9",
+      "sourceRouteId": "openbeta-53e9fa83-4b0b-553b-b50d-12abfa4a09e9",
+      "canonicalRouteId": "mental-physics-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "857f9fe2-3872-5e1f-b60f-4025d27a0298",
+      "sourceRouteId": "openbeta-857f9fe2-3872-5e1f-b60f-4025d27a0298",
+      "canonicalRouteId": "toe-jam-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "5a476bc9-ebdc-5b97-a7fb-5bf4f7d87916",
+      "sourceRouteId": "openbeta-5a476bc9-ebdc-5b97-a7fb-5bf4f7d87916",
+      "canonicalRouteId": "the-flue-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "735063ea-2a5b-5ad0-ab8b-b0685a3b4a00",
+      "sourceRouteId": "openbeta-735063ea-2a5b-5ad0-ab8b-b0685a3b4a00",
+      "canonicalRouteId": "so-high-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "49c5ccce-7f44-54c4-90f0-cb8c80f8ace4",
+      "sourceRouteId": "openbeta-49c5ccce-7f44-54c4-90f0-cb8c80f8ace4",
+      "canonicalRouteId": "planet-x-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "sourceExternalId": "bf419782-b0bb-56a6-88db-8bda5bd372c2",
+      "sourceRouteId": "openbeta-bf419782-b0bb-56a6-88db-8bda5bd372c2",
+      "canonicalRouteId": "gunsmoke-joshua-tree",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "49933ddd-42a5-4a49-9a79-0cbccc90673a",
+      "sourceRouteId": "openbeta-49933ddd-42a5-4a49-9a79-0cbccc90673a",
+      "canonicalRouteId": "birds-of-prey-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "68850add-b23b-4996-9d98-0e5a378419d5",
+      "sourceRouteId": "openbeta-68850add-b23b-4996-9d98-0e5a378419d5",
+      "canonicalRouteId": "klahanie-crack-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "d8740780-c758-46fc-9c0d-9da1e2c0abbd",
+      "sourceRouteId": "openbeta-d8740780-c758-46fc-9c0d-9da1e2c0abbd",
+      "canonicalRouteId": "skywalker-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "0500c1a0-78ad-4d10-9ae0-20049b7eb9f2",
+      "sourceRouteId": "openbeta-0500c1a0-78ad-4d10-9ae0-20049b7eb9f2",
+      "canonicalRouteId": "neat-and-cool-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "acfc117b-d87e-4530-88ab-1cf6bb241a47",
+      "sourceRouteId": "openbeta-acfc117b-d87e-4530-88ab-1cf6bb241a47",
+      "canonicalRouteId": "flying-circus-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "cf299c4d-eb1c-45aa-82a7-aaf0dcc4365e",
+      "sourceRouteId": "openbeta-cf299c4d-eb1c-45aa-82a7-aaf0dcc4365e",
+      "canonicalRouteId": "penny-lane-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "f60fd030-ed11-482c-8609-b24b77b49500",
+      "sourceRouteId": "openbeta-f60fd030-ed11-482c-8609-b24b77b49500",
+      "canonicalRouteId": "partners-in-crime-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "19f66a5e-9dcc-4c32-a859-b5fa25643d3e",
+      "sourceRouteId": "openbeta-19f66a5e-9dcc-4c32-a859-b5fa25643d3e",
+      "canonicalRouteId": "diedre-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "31317a27-42c9-4620-a9f0-b487c19c807b",
+      "sourceRouteId": "openbeta-31317a27-42c9-4620-a9f0-b487c19c807b",
+      "canonicalRouteId": "rock-on-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "32ff93c3-1a10-4423-bd7a-85769d7422ee",
+      "sourceRouteId": "openbeta-32ff93c3-1a10-4423-bd7a-85769d7422ee",
+      "canonicalRouteId": "snake-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "34843d54-9bd5-4207-aa29-b056234dbc33",
+      "sourceRouteId": "openbeta-34843d54-9bd5-4207-aa29-b056234dbc33",
+      "canonicalRouteId": "st-vitus-dance-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "90220a92-bb35-4f28-b3fe-ff8a008d56fe",
+      "sourceRouteId": "openbeta-90220a92-bb35-4f28-b3fe-ff8a008d56fe",
+      "canonicalRouteId": "vector-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "cc1cb6a7-3434-4b1b-bd6b-1351098ec1da",
+      "sourceRouteId": "openbeta-cc1cb6a7-3434-4b1b-bd6b-1351098ec1da",
+      "canonicalRouteId": "sparrow-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "ec33dc36-e2ed-4b04-9784-7cccd45c1ff7",
+      "sourceRouteId": "openbeta-ec33dc36-e2ed-4b04-9784-7cccd45c1ff7",
+      "canonicalRouteId": "calculus-crack-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "4b1bfaeb-32d0-4ed9-9342-f18fba779167",
+      "sourceRouteId": "openbeta-4b1bfaeb-32d0-4ed9-9342-f18fba779167",
+      "canonicalRouteId": "a-pitch-in-time-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "89059a13-7af4-4cc8-83bc-8201d89085cd",
+      "sourceRouteId": "openbeta-89059a13-7af4-4cc8-83bc-8201d89085cd",
+      "canonicalRouteId": "freeway-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "43dcb689-8819-46d6-a38f-65ed0b4581d9",
+      "sourceRouteId": "openbeta-43dcb689-8819-46d6-a38f-65ed0b4581d9",
+      "canonicalRouteId": "rutabaga-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "b012348e-fec3-4cbb-9689-62094e6483d2",
+      "sourceRouteId": "openbeta-b012348e-fec3-4cbb-9689-62094e6483d2",
+      "canonicalRouteId": "apron-strings-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "bad7e588-48ba-48c2-b88b-e0667e3fa798",
+      "sourceRouteId": "openbeta-bad7e588-48ba-48c2-b88b-e0667e3fa798",
+      "canonicalRouteId": "exasperator-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "sourceExternalId": "72f82536-eca5-4563-9ec3-6d54f5d8c130",
+      "sourceRouteId": "openbeta-72f82536-eca5-4563-9ec3-6d54f5d8c130",
+      "canonicalRouteId": "borderline-squamish",
+      "reason": "same OpenBeta external ID",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    }
+  ]
+}

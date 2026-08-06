@@ -1,0 +1,133 @@
+{
+  "batchId": "route-coverage-3-batch-1",
+  "importerVersion": "rc3-parquet-importer/1.0.0",
+  "sourceProvider": "openbeta",
+  "sourceRelease": "v2026-08-02",
+  "sourceAssetUrl": "https://github.com/OpenBeta/parquet-exporter/releases/download/v2026-08-02/openbeta-climbs.parquet",
+  "sourceSha256": "6a655481a39727beb568e6365b159d9bbf371fbc8d83985c505ef1dec3c8e728",
+  "sourceSchemaSha256": "ce457a5fe56d4ad69f17db5a12ca83f8982d4a289a11c34d6d2a7f23561783d8",
+  "sourceCommitSha": "a5674424209294a69c5c86b247a78e3590927055",
+  "sourceRowCount": 231865,
+  "sourceCheckedAt": "2026-08-05",
+  "destinationScopes": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Joshua Tree National Park"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-joshua-tree-1"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "acceptedPathTuples": [
+        {
+          "country": "Canada",
+          "stateProvince": "British Columbia",
+          "region": "Squamish"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "region": "Sea to Sky (Squamish to Whistler)"
+        },
+        {
+          "region": "Sea to Sky (North of Whistler)"
+        },
+        {
+          "region": "Vancouver"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-squamish-1"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Sierra Eastside",
+          "area": "Bishop Area"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mammoth Lakes Area"
+        },
+        {
+          "area": "Lone Pine Area"
+        },
+        {
+          "area": "June Lake Area"
+        },
+        {
+          "area": "Lee Vining Canyon / Tioga Road"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-bishop-area-1"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Nevada",
+          "region": "Southern Nevada",
+          "area": "Red Rocks"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mount Charleston"
+        },
+        {
+          "area": "Mount Potosi"
+        },
+        {
+          "area": "Keyhole Canyon"
+        },
+        {
+          "area": "La Madre Range"
+        },
+        {
+          "area": "Valley of Fire"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-red-rock-canyon-1"
+    }
+  ],
+  "destinationTargets": {
+    "joshua-tree-usa": {
+      "minimum": 140,
+      "target": 150,
+      "maximum": 160
+    },
+    "squamish-canada": {
+      "minimum": 140,
+      "target": 150,
+      "maximum": 160
+    },
+    "bishop-area-usa": {
+      "minimum": 90,
+      "target": 100,
+      "maximum": 110
+    },
+    "red-rock-canyon-usa": {
+      "minimum": 90,
+      "target": 100,
+      "maximum": 110
+    }
+  }
+}

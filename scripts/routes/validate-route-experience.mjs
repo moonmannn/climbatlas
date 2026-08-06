@@ -1,9 +1,25 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import process from "node:process";
 
 import { loadRouteProject } from "./load-route-project.mjs";
 
-const EXPECTED_PUBLIC_ROUTES = 1074;
+const reviewedBaseline = 1074;
+const routeCoverage3Snapshot = JSON.parse(
+  fs.readFileSync(
+    path.join(
+      process.cwd(),
+      "src",
+      "data",
+      "routes",
+      "imports",
+      "route-coverage-3-batch-1.json"
+    ),
+    "utf8"
+  )
+);
+const EXPECTED_PUBLIC_ROUTES = reviewedBaseline + routeCoverage3Snapshot.routes.length;
 const EXPECTED_PICKS = 40;
 const EXPECTED_PICKS_PER_DESTINATION = 8;
 const TARGET_DESTINATIONS = [

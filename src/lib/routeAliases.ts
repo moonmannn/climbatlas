@@ -1,4 +1,5 @@
 import { metadataRouteAliases } from "@/data/generatedRouteMetadata";
+import { routeCoverage3RouteAliases } from "@/data/routes/route-coverage-3-batch-1";
 import {
   cleanupRouteAliases,
   getCleanupRetiredRouteParams,
@@ -7,7 +8,8 @@ import {
 
 const routeAliases = {
   ...metadataRouteAliases,
-  ...cleanupRouteAliases
+  ...cleanupRouteAliases,
+  ...routeCoverage3RouteAliases
 };
 
 export function resolveRouteId(destinationSlug: string, routeId: string) {

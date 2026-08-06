@@ -1,0 +1,3602 @@
+{
+  "batchId": "route-coverage-3-batch-1",
+  "rejected": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6b85015e-7440-5936-9373-d6104262dda1",
+      "name": "Sand Witch",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "c91ba04c-e47e-59fa-bcdf-80610f35e132",
+      "name": "Hurricane Hugo",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "1a6b17fd-460e-5a29-96cf-a7bc86310016",
+      "name": "Ancestral Puebloans",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "59396780-13be-59bc-bf17-d62b8f4759e4",
+      "name": "Master & Servant",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "ec2c861c-b9b5-534b-9753-0276d3e46efc",
+      "name": "Cameltoe Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "88754f36-e50c-5cc9-915d-7aca75772027",
+      "name": "Black Plague",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "7bbbced4-a672-567b-8ec4-52330443fbb9",
+      "name": "Hartman",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b550f88d-5f24-59cd-b30c-303d6737113c",
+      "name": "Barkhorn",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "f59f29af-d44e-5dfc-9456-40131dee8536",
+      "name": "Rawl",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6be01779-77b2-54f3-9d36-4d9f98e6f272",
+      "name": "Roxy's Rock",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "7ce826ed-afbd-5569-acf7-6668ecdc0fd9",
+      "name": "Jesus Saw You Take It",
+      "stage": "before-normalization",
+      "reason": "no supported climbing type in source row"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "66d733b9-5e99-53af-be8a-ea132fee3645",
+      "name": "When You're A Jet",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2f521025-1690-5005-88bf-bd866e3e4b4f",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "105de2b4-c2a5-528b-b2dc-b0c30dd73a5f",
+      "name": "Icy, But Not Too Dicey",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "88b9e18e-e45f-507f-8321-3ce635781b6e",
+      "name": "Potato Head",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e520abf2-939b-5133-8fed-674f3a911df4",
+      "name": "Margo's Cargo",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "3fa7557f-0fa7-5ed9-ae39-4ac1fdf0b1fe",
+      "name": "The Rabbit Hole",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "33de5e08-6837-5b19-8d92-78147d80742a",
+      "name": "Tiny Applicator",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "1e80f3ee-9af4-53f3-a813-a7d4276ec9b8",
+      "name": "Hueco Wall",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "233c4f2b-315c-5a40-a1e5-7dd9570eb087",
+      "name": "Que?",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b1abf45d-1198-5c38-a96e-1a6d16a6ae6c",
+      "name": "Nerd's Rump",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "56bc03d0-e9fb-59e5-9cb8-81f69d549cf4",
+      "name": "Prime Time",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "1c41a723-49e4-57fd-a709-86e29114c953",
+      "name": "Filet 'o Finger",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "9e5d127b-7ccf-5c64-a903-9f82883434ae",
+      "name": "Trashman Roof",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2521e786-0ef6-50a6-a857-bb80ec0b6c1c",
+      "name": "Hellhound",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "c583dae9-a760-5033-8117-355a203ad32d",
+      "name": "Hellgramite",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2730e146-ae55-5096-973d-45a26f1c8ee3",
+      "name": "Bacon Flake",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "dae8fa56-4db4-5872-9652-dfe1fc5b805f",
+      "name": "Life and Limb",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "d763ed19-3c2b-5e2e-bb98-00238b86067a",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "281a79ec-e312-5646-bdf2-a9ca25e56779",
+      "name": "Middle Hand of Darkness",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "963ddb9a-24fa-5760-a082-925799418250",
+      "name": "Uncle Fester's Poodle Fart",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "07316300-f202-54df-9077-ba4a2b984938",
+      "name": "US Maritime Commission",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "62788d2c-8cf0-5036-afc3-a627bdceb1c7",
+      "name": "Smears of the Past",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "96e9f59b-67a6-5bf0-8e75-f98a3bf34dfb",
+      "name": "Past Perfect",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "35f95fe3-3bcb-5d8d-8741-b4f5b141bf64",
+      "name": "Bad Czech Girl",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "7b30acbe-9b82-5f6f-80e7-df076a0b8223",
+      "name": "Seismo",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "10152dc6-55cf-5aff-b60c-ed02bb8a18ff",
+      "name": "Deadpan",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "256c0c08-6cb5-5e61-9aae-7b83c28612d4",
+      "name": "Noah",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "3286fdf4-e5c7-5aa7-9a2b-974b44458ad1",
+      "name": "Jelly Shoes",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "37b464ff-56d3-566e-8294-18d36ea7c289",
+      "name": "Comedy Club",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "4cc62f6b-1a24-53ff-be13-c4d3365474d4",
+      "name": "Jello Shots",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "68a2e070-fe76-55d8-9bf6-53651826f9bb",
+      "name": "Cho",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "71bb053e-5ffa-57c8-85e0-28de6f3964bf",
+      "name": "Chaplin",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "74b95a8b-7792-501e-992d-bd25802d2745",
+      "name": "Jelly Belly",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "89f150d3-6082-5786-91ba-4ee07d6eedfb",
+      "name": "Seinfeld",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "959d552f-0207-540e-8e00-b0620cb90307",
+      "name": "Comedic Timing",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "9a78d8e8-95c2-564a-96bb-3ad5e15c5cc4",
+      "name": "Diller",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "a28b344a-ec8f-5dfb-8486-c381a11461fd",
+      "name": "Stand Up",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b070fe05-03c9-5644-b7f5-ba941e581cde",
+      "name": "Rickles",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "dad6e598-6b53-55b9-9791-4bedde245635",
+      "name": "Gleason",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e3dc0668-9c8a-5cf5-af7a-d3f6fd3d8ac4",
+      "name": "Sykes",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e7354633-5692-538a-9d5f-e61de13b1516",
+      "name": "Jello Salad",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "fefdb427-ad36-51b7-9d4d-1d59efee1f73",
+      "name": "Improv",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6d111e8f-02e9-5cb9-82ce-3fa897f0f4e6",
+      "name": "Bonny's Boo-Boo",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "102d886b-65f1-57d6-b0a7-796dbf29dd79",
+      "name": "Short Flake",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b2bc6717-1d25-5558-995e-7939f3bb7ce5",
+      "name": "Mind Meld",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "5b6e8d44-8d2d-5124-acf6-626a1e6cc7eb",
+      "name": "Naming It",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "34b81026-df45-51c9-ab0d-67d83b7939a9",
+      "name": "Unknown",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "ee21ab14-5ec2-5cda-9196-8f91368176d8",
+      "name": "Unknown route 2",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "508dae14-1141-5af8-833c-a0b41c1b0491",
+      "name": "Felix Brown",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "5dc953f4-4c73-56e1-affe-80f2a1f69d52",
+      "name": "Unknown corner to face",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "12eb8546-e652-50df-986f-773d710f8da8",
+      "name": "Summit or Plummet",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2b4d5fda-7c4d-502e-a889-48bce7728d44",
+      "name": "Split Shift",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "4799f311-1a62-5f92-a3f8-f2cfab538f75",
+      "name": "Light Touch",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "4f0de6e2-4589-5343-93cb-d74ada083696",
+      "name": "Two Dopes on Pork",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "684280c1-ebea-5956-b574-7cedce84c4ba",
+      "name": "Glide or Slide",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "692632a2-957a-5730-b5c0-6a30eede5562",
+      "name": "Thrash or Crash",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "7bc69dfc-548c-5f28-8b97-ed04982a2302",
+      "name": "Dangling Particibles",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "9023f72b-fbec-576b-bca1-24e2013f94c5",
+      "name": "Misplaced Modifiers",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "925170bf-fa45-5633-8a7f-4ea9bb9230a8",
+      "name": "Three Dorks on Dope",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "9d210b90-bf3e-584b-be16-66c683cdbd40",
+      "name": "Gipfel",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "a7de7778-9683-5df8-b126-903db3dd51c9",
+      "name": "Misplaced Priorities",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "ad8ba873-35f7-5a15-8b88-0bb827e030f9",
+      "name": "Three Friends and a Baby",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "bcbefb53-c5ab-5983-9912-18fc06b9fe9b",
+      "name": "Grip or Slip",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "ce5337c1-f9de-5d44-a303-df6fa70baaa0",
+      "name": "Gailurrera",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e2186d76-87d7-5ff2-b1dc-4d3a054e7081",
+      "name": "Samiti",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e2319cd1-0074-5c4f-8e6d-67de1dc42d97",
+      "name": "Top or Flop",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "f74e8951-e35c-513e-8e60-3a4971981369",
+      "name": "Cumbre",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "f94f7ece-4c37-579d-a3d8-724a34c64263",
+      "name": "Split Infinitive",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "39538444-b77d-5e23-809e-7ee01db0ffb6",
+      "name": "Goodman's Cracker",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "36ee86b4-3477-5f28-9dad-9cb8059c7c73",
+      "name": "Climb of the Sentry",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "de9930e1-ebe2-5721-9906-95f6c2c719ff",
+      "name": "Todd Gordon Memorial Chossy Pile of Radness  (aka The Big Todd)",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "08e8f52e-d60e-5262-8177-bee4f37a5ce7",
+      "name": "Tastes Like Chicken",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "0ba02845-8f88-5263-873e-c790737e4a40",
+      "name": "Easy Peasy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "46e4e18d-2d68-5f42-9f11-e8b45a6f3fb9",
+      "name": "Poppa Spider",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e24e7798-00f6-5026-b6a6-045951f92be5",
+      "name": "Antonio’s Variation",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "a062fc93-0b39-58ab-901b-1ca3924a8833",
+      "name": "Super Spy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e696501c-3b77-5c50-81de-479b2ac89df9",
+      "name": "Secret Agent Man",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "d58a00ea-7020-55ff-abba-bb946f831fd6",
+      "name": "Ella-vation",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "5c08b530-f0f1-5672-b349-169b9b6b77a3",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b4131ab9-2af6-5f60-ac7c-bc654f6d8991",
+      "name": "Candelabra",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "d1d53a38-fe37-52cb-8307-4d95cf07e765",
+      "name": "Tennis Shoe Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "792e94ad-26ad-560b-a51b-9b70f4f8560c",
+      "name": "The Far Side",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "53d7bbd5-d3f0-5603-88e3-de37894053a9",
+      "name": "The Maneater",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "108fbb1a-8736-585c-b51b-82d4a8ff77f1",
+      "name": "Spam and Bean",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6a9e7f1b-76da-5da8-b829-f86536f806d7",
+      "name": "Goeb's Goes Gecko",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "3b188d0b-57b3-539d-a2b8-e1f0a67efc83",
+      "name": "Ligamentor Seconds in Vans",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "96693a37-d2a0-5f32-847b-876af330a631",
+      "name": "Hodgepodge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "bf2584af-3c10-58b9-9946-9e8d541ea4dc",
+      "name": "Lazy Rhymer",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "8a1a1c77-901e-5e1d-96ed-9dd262a7161a",
+      "name": "If It's Brown, Flush It",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "aa7e45b7-a86f-58d4-8e0e-1cd70044bd08",
+      "name": "Kalishnakov Culture",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "409eecd4-9b35-5ea6-a800-ffd9274b7e6d",
+      "name": "Lockn00b Monster",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "20efba8d-2e27-56a9-8e39-01a781cfdd38",
+      "name": "redacted n00bs...",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6d71e136-6ac3-5760-ac10-29a9ee390092",
+      "name": "99 Moves But a Palm Ain't One",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "051011cb-1481-5381-96d3-f757074f50e9",
+      "name": "Animalargos",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "1258c321-46fd-5d5a-9557-af80c40c17cd",
+      "name": "Animalitos",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "7bbdafa2-31d8-598e-8953-3fbd4c14082d",
+      "name": "Seam of the Crop",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "ee510363-6ba2-509f-babc-7b201c42ba7e",
+      "name": "Tapeworm Direct",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "8e8a0ac5-2910-5761-ac4b-59169fdee9f7",
+      "name": "I Touch The Future",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2c54573a-da79-5d46-9f7f-3093a7d4c8b0",
+      "name": "Throbbing Gristle",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "e58e8a6e-3dbf-52f7-945f-99fa50259b8d",
+      "name": "Bandfire",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "9bccf2e6-536e-5b26-bbad-0ec7b6e534d8",
+      "name": "Eve's Serpent",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6cb9a501-234e-517c-aa64-ddf491fc963c",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "dcda5697-d659-54fb-8561-04e9f15fdfe2",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "42d99d27-3427-5edd-918c-65007dec0f76",
+      "name": "Flakey Friends",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "c84bda8e-ac05-548a-ba0b-ad443b78996b",
+      "name": "Goof Proof Roof",
+      "stage": "before-normalization",
+      "reason": "no supported climbing type in source row"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "dfa6e8b8-33fa-5228-a343-a527af19aaf2",
+      "name": "Follow The Yellow Chalked Holds",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6dcc45cc-a218-53e3-98c5-20e5cffedbda",
+      "name": "Divine Wind",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "9f38e14a-cba1-5d7f-80eb-15652ceed0ad",
+      "name": "Mystic Knights of the Sea",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "973e765b-6652-5363-9174-7f8671ebc1c1",
+      "name": "Chop the Wood",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2c9339ef-c4f4-51b8-97f1-9abf39896868",
+      "name": "Hand in My Pocket and the Other One Giving Ya the FU sign",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "5ef0fb16-a3e5-5748-ba3f-a8a1e8614f68",
+      "name": "Chicks for Chicken",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "7cb27042-bd9b-543b-99cb-d227a1f2fb47",
+      "name": "Chicks with Attitudes",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "a7d60985-6c33-59d1-982a-99e76ff96212",
+      "name": "A Crack To Nowhere",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "09f29ce0-6294-5f7f-a0d9-cc69ebecbca4",
+      "name": "Cross Fire",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "41aa816d-d1c6-528b-bfca-a56e07a43132",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "42a16da3-8636-558f-83d8-3efad8894b65",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "1c711642-f635-5b59-9856-a6c1652ea35e",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "959fc664-913c-5cb8-836b-3e995b4a401a",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "bb3040cf-10dc-559f-b07f-5818f6edef37",
+      "name": "Hobbit Roof",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "6d88f970-6204-51bd-be1c-db8e5eaf863b",
+      "name": "Route 499",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "0f5c7ab6-302a-5a8e-97d9-3e892a9eff72",
+      "name": "Obvious var.",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b3ff067a-e6a5-506f-b0ea-2ab9bf380861",
+      "name": "Obvious Route",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "defbe4cd-90f1-5b0d-a784-1bcc110191ad",
+      "name": "Crack Route",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "c8826846-10d6-5adb-b00a-a68196d16b74",
+      "name": "Dihedron",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "2f37f3a2-11cd-52f2-9207-aba4a726b236",
+      "name": "Soup Rhymes with Poop",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "95dd349a-78b4-56c7-bf48-fb1cfe1e1165",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "358399ca-7696-5d53-9f8e-ed575621db72",
+      "name": "Finger Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "c29d3013-9165-52ab-8665-0a36752ff442",
+      "name": "Fat Man's Folly",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "60f8e6b4-6d4e-595e-b181-0fc612d02997",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "b70be522-aa53-59c5-ae4c-8a04a3e4580a",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "58e8947f-3d81-5e0a-9592-9fc9f59c184e",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "212a8525-88c9-5c6b-8a2c-bc801a907409",
+      "name": "Whipping on a Can of Beans",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "00668799-96f6-55d2-9efa-2ed24d7b2471",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "1cc5f9b1-f692-5335-b70d-ea23088a966b",
+      "name": "Hemmingway Block",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "externalId": "a3a17ebb-b235-5f37-b201-62852f7b3bac",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "08087169-b51e-4bc5-891c-0db83aebd631",
+      "name": "Whanu",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9e43d81b-72a1-43d2-bcb8-f7c4fc375155",
+      "name": "Lost Horizon",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "cdd18b4b-9e7d-49f5-ba21-046d200e5d4a",
+      "name": "Heads I Win, Tails You Lose",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "a5173dd4-4ab1-4bc1-b97a-9934a14cfd58",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "5c7e36a9-d77e-42a9-8557-a8e14fc17ea5",
+      "name": "Tantalus Wall",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "db882756-4c50-4e94-a371-6155d72c6c5e",
+      "name": "Midnight Run",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "2669f13d-3f51-48d5-b54b-cd0c5467def7",
+      "name": "Ya Gonna Do Something or Just Stand There and Bleed",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "c8077975-718b-4751-8c5b-667c158c9bc5",
+      "name": "Stone Cold",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "eff9eb86-bc23-40da-b59d-97e0a2c6f7fb",
+      "name": "I Love the Smell of Nuprin in the Mornin",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "fc2962c2-95ad-4989-901d-d1ea83b9a2ac",
+      "name": "With Friends Like That Who Needs Enemas",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "8f7e4a58-4d8c-4e5a-803a-e7caed052153",
+      "name": "Outdoor Millennial Hipsters",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "d3a7f1d0-2005-4d7d-b6db-394934e596f9",
+      "name": "Allright for Me",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "3d168526-41a1-465d-bfa1-6589e5ffdf3b",
+      "name": "Veils of Illusion",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "5de150f3-6f30-47c1-bcb3-2286cc594b3e",
+      "name": "Holy Grail",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "ebc621fc-cfb6-4dfa-983b-e5f2312247df",
+      "name": "Fathers and Sons",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "ed7dd15e-0bac-450f-a659-d3fea596d410",
+      "name": "Up From the Bog",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "41c0ccd5-c7f1-4bad-a4a4-ecd106e53ad7",
+      "name": "In the Doghouse",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "990e7060-469d-4ee9-a481-069f05675ae0",
+      "name": "It's a Potpourri!",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "e03b1acf-ef62-4c21-ac6a-f72d3bbf34bc",
+      "name": "The Dirty Sanchez",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "0d62277f-c0c6-4060-8943-e01ffdcae53b",
+      "name": "The Shaman",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "1411e465-19e9-45ce-8e0f-a86fd8382a10",
+      "name": "Stairway",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "4ab0d22f-a029-495e-8ae7-d8f40cca0c0c",
+      "name": "Flat Battery",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "52f9b589-0013-4ce7-9f24-675a70fdd80d",
+      "name": "Power Smart",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "71215a0e-1e20-44f3-9bc3-34274c73670a",
+      "name": "Jump Start",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "979f1298-7b57-434d-a6db-9a9c1a3d4d27",
+      "name": "Heavy Charge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "a95920b0-984f-4473-b22a-afee45ddfacc",
+      "name": "Little Spark",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "cf84650f-bd56-4e50-ae89-619094ab5a2d",
+      "name": "Magnet",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "4be0b3ce-f8d7-4b0f-8245-5963c4106ddb",
+      "name": "Zeasi",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "73c0dbc5-d847-401a-a35f-ce99b040ecbd",
+      "name": "Road Rash",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "76d24d7a-1264-46b2-8e45-de3a81cf8942",
+      "name": "Collet  a Day",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "b050f4b4-581d-42f1-8819-672793224d0c",
+      "name": "Nostalgia Aint What it Used to be",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "d590e71f-56c0-4f07-a5e4-cf9193d89621",
+      "name": "Poster Boy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "2a81bb8b-2151-46ad-8f9e-750ff3c2f601",
+      "name": "Go Ask Alice",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "7775354a-6fdb-42c7-b975-b5589224bf7d",
+      "name": "The End of Amerika",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "ef36a334-3f72-48d7-83dd-bda58be410b9",
+      "name": "Restless",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "d840c50c-57bb-4001-a503-c57c711f777d",
+      "name": "Man of Leisure",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "bd48fca9-1e9b-4e1c-be24-c9439950ead9",
+      "name": "Pamplemousse",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "49b9e4a5-6269-4a70-8b6e-cee17c2230fc",
+      "name": "Local Boys Do Good",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "0b876ddf-c21b-4c43-99b0-d5dd2feb7257",
+      "name": "The Copilot - West Ridge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "a3a7d721-e3e6-4f6b-aefd-3f51afbbf522",
+      "name": "West Buttress",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "afb96c2d-ce49-48ef-ad62-d76eb0a6fffb",
+      "name": "East Face",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "07302673-a2b7-49ab-8c9d-170edccecd2a",
+      "name": "7 - Climb On",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "313aa92c-b62c-417e-b1e2-8615132bb9b4",
+      "name": "17 - Lovebolt",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "390f3141-18f7-4ec0-abca-59dc352b1dcf",
+      "name": "5 - Come Back",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "5ff2d592-500a-40d4-ad5e-12713c5e92be",
+      "name": "18 - Wired",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6661012a-8a81-4c31-93ef-0b75d8b50dc0",
+      "name": "22 - Dragons and Aliens",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "97defd6f-a9ae-4d3e-ae4f-dd66f1a4ab71",
+      "name": "16 - Teoland",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "e8ef761d-3e04-4f04-8220-796c5468542b",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "12d125d7-5b05-4218-9139-f42a6309322a",
+      "name": "Mr. Dressup",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "1e3a1943-17fe-40ea-b0a9-56f6abb65cad",
+      "name": "Last Moves",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "23392f51-3efe-427b-b5f6-4a608ff7660e",
+      "name": "Burgers and Fries",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "2363d9b7-e4dc-4ec9-b904-904e3f6c6aae",
+      "name": "Three Cool Kats",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "3baa3a14-b60c-43d9-90cd-36154d8b4928",
+      "name": "Sweet and Sour",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "44b4132b-dce4-4216-a055-d4bc47be6a05",
+      "name": "Genetically Superior Neighbor",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "5f1c0547-8175-401e-9422-df343004709e",
+      "name": "Catch You",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6ab198df-de75-4848-9b8f-5866c8d778cf",
+      "name": "Predator",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6d902afd-123b-41e3-8268-808e6fac60b9",
+      "name": "Move It On Over",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "70a3162c-af83-4009-a00f-9a589505a5c7",
+      "name": "The Asshole of November",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "7a2d8b0e-8587-48a5-9688-dcf5c0d40aad",
+      "name": "Switchback",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9cc1a500-844e-400c-a4ba-c67ff4f82078",
+      "name": "False Friends",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "a1ad141e-8540-4ae3-83bf-499505bd311f",
+      "name": "Who Needs Bolts",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "d1f4a4d2-b7ce-40e0-9825-022ba0e6295a",
+      "name": "Short and Sweet",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "e83398bf-34f2-4d0f-9f72-ae2c69f9fa41",
+      "name": "Pine Cones",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "ead49586-c95c-46af-9b5f-27dcb3531788",
+      "name": "A Foot in the Gravy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "55578f3b-24e0-45f2-8710-d460b7e65b83",
+      "name": "Way of the Wife",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "2dcb5d30-4fdf-4e9e-ab4d-83d008fff05c",
+      "name": "Ramp-o-Rama",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "34408c45-dc66-41f7-93f5-c807dbbb463d",
+      "name": "Unknown Finger Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "58dc093f-0c97-4766-9e28-e73f5a71d24f",
+      "name": "Payanoia",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "41896b10-eb16-42f8-bce0-9b3d31083787",
+      "name": "Fatty Bolger",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "4a216561-da91-4481-adda-3fa9d3eab767",
+      "name": "The Leading Edge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "591c683a-c9cf-4ce5-a354-ec6b884bdba1",
+      "name": "Bumper",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "952d9550-977c-4671-8593-091e4bd70551",
+      "name": "Where's Roxie",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "801aed7e-0608-4cfe-85c3-fdd60139e74d",
+      "name": "Dog-Legging",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9dc30f2a-5d9f-4858-9476-1e006aad0e32",
+      "name": "Fern Gully",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "e884ed70-e928-4210-bd64-02ae482e2417",
+      "name": "Christa's Revenge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "af045cf9-6e88-4ce9-adf5-7eed1309175b",
+      "name": "Fun",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "c602e93f-b68e-409f-aee0-87fa1b16a071",
+      "name": "Funtastic",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "330f9866-2aff-4584-8bd5-deae62aed95a",
+      "name": "Blockheads",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "686daa04-bfc0-42c0-9eb6-fe6875e2a190",
+      "name": "Made of Clay",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "af4f88e4-b020-454d-8f48-610b64e810a0",
+      "name": "Unknown Rotue",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "24fce22e-8433-4cf5-9dff-b4553d385234",
+      "name": "Splat",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "70996ddf-49e8-482f-9bfd-5e9a0cff8caf",
+      "name": "The Gift",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "7605c351-3119-4617-bf25-6d0391dc9a55",
+      "name": "Severe and Unique Disciplines",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "7e2740fb-bdc3-4176-bbaf-cbe0f07f3aed",
+      "name": "Beware the frieds of starch",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "8bda259a-f934-475b-b948-1ea5d9b0f57f",
+      "name": "Issy's Rock",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "a4ee07da-1bf8-4485-ad05-193b437b310d",
+      "name": "Miner Matters",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "a69b0bb6-fd60-4c52-8c29-577031b160de",
+      "name": "Run Like a Thief",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "c99b4d36-ad0d-4297-af19-a08e5d1f743f",
+      "name": "Step 'n Stump",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "da095385-022c-43a7-a1a5-1b7fd2467b3e",
+      "name": "Lord of the Drink",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "1de05c09-f79d-4832-b015-0b5871b65418",
+      "name": "Gang of Foreplay",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "e09ce87f-fe58-4037-9c13-d8750eb6c1eb",
+      "name": "The Kip",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "10b3beb5-b1eb-4d8b-bdf9-ef8cd8bf0350",
+      "name": "It's a Roller",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "c5afd885-9309-40ab-b6a4-f3679b75b485",
+      "name": "Netsky",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "4bc4b957-5098-489b-bf09-429c1d17ed64",
+      "name": "There You Go Andy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "4ebb76ca-95f1-412c-93ac-73cb4fba0911",
+      "name": "Corner Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "58c15eb5-046f-40f4-abe3-a47af2f65806",
+      "name": "Fear of Flying",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "8a27cc97-2167-40b5-982b-e02aeef00478",
+      "name": "The Edge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "90207ede-a825-454c-a4a1-d06fa8ae3038",
+      "name": "Tree Beard",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "952f2a4d-e569-46fd-9486-758b852f99f7",
+      "name": "Gollum's Impromptu Sacrifice",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "33f5497d-c6e6-486d-ae59-2da89ffc08bb",
+      "name": "Octopus Garden in the Shade",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "62cfd3d1-a122-44a8-8b70-08f08f8e981b",
+      "name": "Pipe Dream",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "81225b5c-6b48-4250-b456-67651ed9dc72",
+      "name": "Leonissisation",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "014ce4f9-6301-4f90-8cc0-46d0dcef8614",
+      "name": "Keystone Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "3607a44e-eb9c-4b5f-829a-c3e798c4ebb2",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6d89ebb1-4c7e-4b4b-8e61-c551cdb437bc",
+      "name": "Power Windows",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9cef6d2b-bb3d-473e-adc0-c477922d9afb",
+      "name": "Drain Evader",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "0631c86c-0274-4a37-8df9-13b8193d84f0",
+      "name": "People of Size",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "63f81ff7-d504-4659-b3fe-4ea485425ed6",
+      "name": "Environmentally Friendly",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "334f6147-a400-416c-82f3-06a836936925",
+      "name": "Little Feat",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "47774e43-ecbf-40cb-92eb-e3e7d1087f50",
+      "name": "Digital Dexterity",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "67c7f365-18b7-4f3a-a6ae-bc5f813ca1fc",
+      "name": "Weiner in the Bun",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "ee0f7146-bb19-457c-b88d-1dd46c2046a0",
+      "name": "Captain Hornblower",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "911859da-1a7b-43fe-ba0a-86290d45c4db",
+      "name": "Coronary Bypass",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "f2f4a0e1-e84b-44e7-a85d-9e562de15d5e",
+      "name": "Thorax Complaint",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6683d823-05de-4161-9033-8fbbfc613114",
+      "name": "Ridge Runner",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "1a1ce423-b18d-4743-9398-40785f069a7c",
+      "name": "Grani",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "5fc6d12d-619e-495f-bf5b-fd32b25c19ef",
+      "name": "Runestone Pinnacle Left",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6f8d3549-b8d4-4b55-b2ec-877da68ec861",
+      "name": "Moai",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "6cc2331b-9202-4274-9ef3-0a2d86e2d643",
+      "name": "The Constant Gardener",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "3584d4dd-1710-4177-8fff-9f966c45d449",
+      "name": "Sphinx'ter Quits",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9e58125b-0fe3-4de5-8595-e46baac0b922",
+      "name": "Sole Proprietorship",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "bb2fe5a5-6101-4480-97ce-81f1c9f38c02",
+      "name": "Olsen Creek Slabs",
+      "stage": "before-normalization",
+      "reason": "no supported climbing type in source row"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9bee9f2b-fde9-4319-b68f-9780e263d386",
+      "name": "U-Wall Drool",
+      "stage": "before-normalization",
+      "reason": "no supported climbing type in source row"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "27b4c086-f69e-400e-ae9c-ef3272a54a98",
+      "name": "Does My Butt Look Good in This Crack?",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "534ebcb2-2d4e-4f7c-9ae7-66dfc9ce3543",
+      "name": "Code Red",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9e66c90c-6ecd-4cd7-b089-9e3d246b5d9e",
+      "name": "Scratch My Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "0eae2a26-5c20-4dbc-ad38-309c2285fccf",
+      "name": "Nintendo 64",
+      "stage": "before-normalization",
+      "reason": "no supported climbing type in source row"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "349839f9-e8cf-4832-a154-ed035437e3b5",
+      "name": "One Scoop with Delicious Dimples",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "3cbf99f7-2410-4d0c-b49b-c6a38f6f296f",
+      "name": "Dessert Dike",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "4ccae283-feec-4229-a4eb-765d27a22dc4",
+      "name": "Over The Rainbow",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "f8bdeb3d-a217-4077-ba57-bac1ef19192e",
+      "name": "Dora's Delight",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "07fe919c-d45d-46ae-95b9-cf4f4011ea9e",
+      "name": "North Star",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "d8e623a7-61ab-4771-8681-bcbfcb28fca3",
+      "name": "Bad Religion",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "9396dfd0-5a66-4729-be9c-307bf9a75418",
+      "name": "Ladies First",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "d4f27807-fb16-44bc-938d-4c01778d323e",
+      "name": "Welfare Daze",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "cd1f82e2-3b01-4048-bac2-115ffa579f84",
+      "name": "The Daily Planet",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "externalId": "cecd196d-047d-47da-aabb-37114fac7c7b",
+      "name": "Message from the Stars",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "cc1f42fc-377a-58fe-a26b-62f5fff81f41",
+      "name": "Balls Deep",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "ef847031-ee04-5efa-bb5f-1776c6062387",
+      "name": "Swan Song",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3209ca39-f888-5cc8-b9d1-b14bced18731",
+      "name": "Moment of Zen",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3d753c75-f7b8-5f0b-a019-1af7a0d07980",
+      "name": "Workingman's Arete",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "f7d78dc1-414c-59d3-946c-2d1a1eb230f2",
+      "name": "It's the Same Look! Variation",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5561919e-b3ed-5486-a595-dcb5ae89ba34",
+      "name": "Our Little Secret",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "77d05b8c-ae23-56df-ad3c-c2f8462ae19c",
+      "name": "StrikeSlip",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "25bf375e-6b81-5650-92d6-634fc1720e56",
+      "name": "Nakin",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "610c1926-d801-5c7d-96c5-1bdeb8b7acfc",
+      "name": "Rewritten",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "f344a0ee-c019-5790-a822-190057fda2c7",
+      "name": "Bonus Features",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8554fc99-ed93-57f0-9469-1af9ef5abde0",
+      "name": "Land Before Time",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "895eb1fb-5a3f-5e07-b070-24888bf866a8",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "187e6b23-ecf5-514b-8da8-8151278f5a00",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5fd5ed85-632d-5cb9-ba50-c16aba8cd787",
+      "name": "Twitch  (easy start)",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "170f1ca0-a3aa-583e-94c4-4985950856ab",
+      "name": "Tiramisu",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "ca3cbb7a-d1a5-5f3e-a96a-80e8569b2054",
+      "name": "Twice Baked",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8d8f5661-38ab-5ce9-afbe-d8e827d3da4d",
+      "name": "John Fischer Memorial Route",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "9083956a-e37e-57d5-aa1c-cf2564469c1a",
+      "name": "Your Mother Was a Hamster",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "4ab6992c-4df2-5dbf-9aa9-d193b1680aab",
+      "name": "Flying Lizard aka Flying Grasshopper",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c60f54f7-08a4-54ba-8f28-4208e25f4c92",
+      "name": "Lizard Warrior",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "e66ff189-5868-556c-8b3e-d336952a1e75",
+      "name": "Dream of Wild Lizards",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "0c139a6b-187a-508e-a223-db1df640076f",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "307c51c0-4adb-5b0b-99bc-26e39f29b907",
+      "name": "ORG Annex",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "ee9c6fd4-5d8a-59c4-bedf-0789407b3af7",
+      "name": "Vertical Limit!",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "489fa5f5-3efa-577b-ad5d-765ecfceaa50",
+      "name": "Capuchin Swing",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "d40aa68d-d7e1-5034-95fc-534ee07fef76",
+      "name": "Hindsight",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "147dd577-8b21-58b3-b967-0019ec1e36e9",
+      "name": "Sole Neuropathy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "60f0829e-f1a7-5932-8752-c9be166ab3a9",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "dd1a3473-0b4e-58e1-9d52-df64102c3ae0",
+      "name": "Buddha Boy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "e9958e8c-b952-5de5-bcd3-f18383180006",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "0222a323-172a-5209-ab08-8a96f71f0fe5",
+      "name": "BaaBylon",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "13c0d3b8-d0f3-5b05-a8fd-3352955305f0",
+      "name": "Ram It",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "1c98c1dd-4b3b-586b-837a-8641f6366eee",
+      "name": "Well Trimmed Bush",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "40a17ea4-af75-53cf-90a5-11970074f046",
+      "name": "Lamb Dunk",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8510b2c2-c86c-5d5b-bbe6-b99afe452166",
+      "name": "Lambasted",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "91895b34-11b8-59fb-88ff-e7169e42b8f0",
+      "name": "Mantler Left",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "9dfd8077-4e7c-52b9-985c-367bf4e54331",
+      "name": "Mantler Right",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "cb81afa7-16cc-5112-820b-d1c5d76bd55b",
+      "name": "Sugar Lump",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c5922107-da24-5660-ba5c-8dc5ef7f38f4",
+      "name": "Hole In The Wall",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "1f7649df-d359-55fc-880b-2f1a2439d20a",
+      "name": "Silence of the Poodles",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "67136fc5-5a52-5d7c-9024-cb0a8a9d70a8",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "93092b1d-af43-5d8e-b2a9-c130788ba919",
+      "name": "Oceanside",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "cf9e6bb3-3ad9-54cc-84b8-d49716b843fb",
+      "name": "One Holer",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "1b6fff0c-620f-5e9e-a3f8-d70cf33c91ff",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "0c643ee4-b336-5c18-b5a4-d9f124532473",
+      "name": "Center Court",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "91a30f0a-036d-538f-831b-2a734a894726",
+      "name": "Health Club",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "7d46d50e-83fa-512a-8002-fb252d423e8e",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "48d9e504-6df0-51e7-9989-52da5fe5c527",
+      "name": "Bloody Pawprints",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "a8605078-f6c2-55aa-87a4-6067cd143421",
+      "name": "Hip Pockets",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "aa23bf88-ccd9-5871-b640-f41a14321add",
+      "name": "Hagar'n'hilti",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "094d49f5-e150-550f-a416-46e0d8018b7c",
+      "name": "Unnamed",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "0fa3b199-3ebf-5109-a4fe-278acc283c67",
+      "name": "Boz Boz Slab",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "32d4f5f4-826a-56d3-b97f-835d34a62227",
+      "name": "Neil Slab",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3952101d-2901-5680-a2a1-17305d1b55c5",
+      "name": "Ice Troll",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "47373ed5-b2a2-5862-b678-d7dac234d9c1",
+      "name": "Yoda",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "4c2f286f-4c6c-5661-9e5c-bec8a464ffd8",
+      "name": "Lean On Me (Sit)",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5630a61f-852c-513f-9102-6d52e8dff2ab",
+      "name": "Jah Pull Up",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5a0d071e-dabe-5efe-8c19-726f57168085",
+      "name": "Ether",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "6f353af5-9f6b-5381-8c10-c9401d224790",
+      "name": "Just Keep Swimming",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "721e0837-d157-5e35-8556-afe9c5b532e4",
+      "name": "The Deciever (High Stand)",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "88101a2f-2f7b-5e0f-83af-22a8f4213729",
+      "name": "Heavenly War Path",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "9a201c41-0600-5b9b-adf9-07da0c48c0cb",
+      "name": "Bros and Cons",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "9de0aa36-93e2-54a5-8278-7c6eeb8cb8cc",
+      "name": "Hibbity Dibbity",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "aa5e4e1b-3be9-5e66-a531-ade6ca224fd5",
+      "name": "Time Crunch",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "aad3f48e-527e-563d-a277-136cd25e329c",
+      "name": "The Deciever",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "b535e139-8031-5b83-ae8e-db1d1c24b3fc",
+      "name": "Pepper Jelly",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c3147641-9dee-5f2e-a71e-226783148e6d",
+      "name": "Long Dong Silva",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "d7cf0079-a77e-5fe0-be60-fa3e3981835b",
+      "name": "Lean On Me",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "db08b299-6e1d-5339-bfe1-7b6bdff5c097",
+      "name": "Groove Train",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "e7da8056-400f-5229-8239-cae6bb320fd3",
+      "name": "Prince Albert",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "f35a90fa-fe9e-54ad-8e2c-d8f327a48c01",
+      "name": "The Crown",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "fa03cda7-8712-57dc-8605-f4cd8b6eacd4",
+      "name": "Indigo",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "fd129c97-0b15-5b3a-ad10-908903606e8a",
+      "name": "Obi Wan",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "fdad2017-ae4e-51b5-bc27-e8f5ea35d365",
+      "name": "Illmatic",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c6714ec2-529d-500b-80b0-2620fef6a40b",
+      "name": "Honky Special",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3219418f-0aa1-5bac-ae16-ef52bb4a1859",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "21a80ca1-e583-5ac9-b475-f1751a679ca7",
+      "name": "Center Birdie Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "243bf737-50e2-5a69-b45b-b42b551d1c14",
+      "name": "Left Birdie Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "ecbabdfe-57a4-501f-b28b-39b5bf3e2f16",
+      "name": "Right Birdie Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3c252765-fd31-544f-aa6e-4a51e1492616",
+      "name": "Milkylala - The Rocketship",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "1ede5551-c601-5987-85a5-b73094c746f2",
+      "name": "The Weary Leader",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "717e3579-0256-5557-8484-6ab7c8d71594",
+      "name": "For Shits And Giggles - MOG Tower",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "fda824df-b383-57d9-9e2d-ec6ae93e469b",
+      "name": "East Buttress - Super Grey Pinnacle",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "661e53b3-6b26-58ab-9506-89b48f53b7b4",
+      "name": "Don't Be Late",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "6da58f36-880d-599e-b4eb-99afc2ac6b3e",
+      "name": "Chick Dead, Dog Killed It",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "b17d9458-8a9f-588d-8f63-acdb52b64766",
+      "name": "Lower Echelon Paranoia",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c017d33c-0b6d-588a-9076-9b7b879280ec",
+      "name": "Jungle",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "09248075-96c0-50f7-87fd-cfa8f697afe7",
+      "name": "Smokestack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "7816bdcb-0130-504d-bbf9-4613a94e253f",
+      "name": "Adam's Rib",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8193a0e2-f20c-5943-8073-60ebaa6bfe68",
+      "name": "Direct North Ridge",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8fe5e12c-25ef-5771-bd1f-f86574efcba2",
+      "name": "Fire On The Mountain",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "b193aa4f-17ed-53fa-b0c5-aeece27ce25b",
+      "name": "God's Grace",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c0a77c0e-c768-5414-b591-fece9bd7078a",
+      "name": "December's Children",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "f0558efd-3f34-507f-9c49-00d42a6f35e9",
+      "name": "Forbidden Fruit",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8265e726-d571-592b-a7ab-567aea0d8420",
+      "name": "Bush the Imbecile - Tranquility Wall",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "11459880-367c-5ac7-9d6c-88a0e8bce9c6",
+      "name": "Stormy Petrel",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5faa5561-d693-5871-a282-dba9f7b46231",
+      "name": "Fault Line",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "118682e5-6154-584e-a3d6-f4d0e6c25ac8",
+      "name": "Chicken Delight",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "a126af0c-97a2-59f7-a7f0-b74c4f0917b1",
+      "name": "Knob Job",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "379e3a02-b51b-54db-b95c-26d80201356d",
+      "name": "Violet Green",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "fd709741-d041-5574-b27f-b9c92a1ae7b5",
+      "name": "Chicken of the Sea (aka North Ridge)",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "00508c44-5f29-5247-ad04-0d0f97eced20",
+      "name": "Fred Flintstone",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "d0dc6f4d-2b52-5c27-a9b3-2b874bb4e175",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "9d6b9785-bc64-5d29-8d46-1b2bd6c3681a",
+      "name": "Iron Woman Traverse",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "cb7afb66-eb92-511e-a389-4c71c7d565e5",
+      "name": "West Face",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5a97a4e0-243e-5a3b-bbb6-352fad7364c7",
+      "name": "The Pit",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "a4b2cf08-89c0-5953-833a-6f5ad63c3f5f",
+      "name": "Left Y Crack",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3f2db0e4-13b5-5489-936e-31a46927e0c1",
+      "name": "Little Fluffy Clouds",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "65e62c31-e52d-5bc3-832e-f813104a654d",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "8b6b8f72-f8ef-5884-bf43-ec60a6e965c9",
+      "name": "Unknown",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "b0887421-6c4f-5cbc-b2df-86d631fd90db",
+      "name": "Cracked Arete",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "bdadd1e7-c94f-519a-a390-bc2f135d0026",
+      "name": "Cracked",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "59ce1662-2d61-573d-bb4a-4d59bd6dd423",
+      "name": "West Arete",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "bdbc7485-5a3b-5fed-9199-9fd723670ce7",
+      "name": "Tang",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3cb5e687-2f99-5563-ae48-6d300d71e711",
+      "name": "Unknown",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c172d9d1-f52f-5af4-b77c-723e4ed27fd5",
+      "name": "The Mustache Ride",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "7f7e9f09-5abe-5ff1-8805-073a29dfb380",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "04c92c82-c830-5257-953f-d96d457610a8",
+      "name": "Southwest Face",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "2022c595-47e5-55b5-a98c-4dbc2f14f585",
+      "name": "West Arete",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "735a2d83-b883-5604-8657-dbcebafc53e6",
+      "name": "Popes Roof",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "19466b03-4c3f-593a-9fc2-8d267cd693fd",
+      "name": "Southwest Arete",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "495bfbc4-1dd7-53ab-a227-929944df3288",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "017f721b-44e6-5e39-83ba-646b1145af74",
+      "name": "An Art of Leisure",
+      "stage": "exact-link-validation",
+      "reason": "exact OpenBeta route link is unverified",
+      "sourceUrl": "https://openbeta.io/climb/017f721b-44e6-5e39-83ba-646b1145af74/an-art-of-leisure",
+      "httpStatus": 500
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a9f37e67-be8b-5178-a4d1-68fb5d2e0290",
+      "name": "Slabotomy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "e1da2990-f91b-5216-908a-7f019ae852b3",
+      "name": "Tickled Rib",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "75379e13-7ecf-556d-b721-e16bf71c84f4",
+      "name": "Left of Disco",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f4451094-a458-5710-a8f4-d88d5281d1d4",
+      "name": "This Ain't No Disco",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "9bea6466-f248-5a6c-849b-5b8fee5df279",
+      "name": "Miss Conception",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "16a29a1c-e352-5239-b35e-7d51ce66f140",
+      "name": "Mushroom People",
+      "stage": "before-normalization",
+      "reason": "no supported climbing type in source row"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "7016d8c3-89c7-5556-b58e-f5efbfd8b5c9",
+      "name": "Zen and the Art of Web Spinning",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f3c886ea-c67c-584c-a8fb-de3b86c40e6b",
+      "name": "Cut Away",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "fe16f356-d47d-516f-99eb-c7c7e4f41e31",
+      "name": "Arachnoworld",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "37196839-e880-5ff1-98f9-21e0842b8b40",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f21c8c62-8392-571b-b0be-44dc44e0942d",
+      "name": "Cold Blue Steel",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "46216e76-7d6b-5bc6-9dc9-f9b05719adc3",
+      "name": "Sandstone Sandwich",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "8d0f35cb-d2c9-58ab-96a6-761fec81ef7c",
+      "name": "Dogma",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "60d5976f-e0f3-57b6-af5e-e2ce7861bb08",
+      "name": "Vegabondage",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "cecdd29a-0319-512f-ab2d-adb878e44dc2",
+      "name": "Bad Blood",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "46687dc2-ddd5-5477-a320-8b23e97cad42",
+      "name": "All the Right Moves",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "52c7deca-4592-5570-93ba-944cdff9af78",
+      "name": "Prince of Darkness",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "b3e26df6-65d7-5fb5-9db5-b3819ab8f049",
+      "name": "Yellow Brick Road",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "344f6f02-f2da-57c2-961c-e353fedfb045",
+      "name": "Five-Thirteen Ex",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "72f31590-9c6d-50d2-96d4-9d798db54668",
+      "name": "A Route No One Has Ever Survived",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "89909dd4-5099-5641-8ba8-2ac074e473ad",
+      "name": "Left Flacing Flake",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "7fbd2807-05aa-561c-9e12-c64af9652ef1",
+      "name": "Dookie",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "2dccb3b3-bf75-5413-8912-ca0b991cb8df",
+      "name": "Black Warm-up",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "b169d49f-cb0b-5401-afce-df3809c8288c",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "fd70c4db-307a-53d0-b418-5fba6aa2d646",
+      "name": "West Face Left",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f7be9b56-71c3-545b-b045-6b0b7de8943d",
+      "name": "Hang loose",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "19afff15-d60f-5232-ad1f-dc98e8531eb0",
+      "name": "From Soup to Nuts",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "347b8242-a590-5139-8f08-b80455cd239a",
+      "name": "Valentine's Day",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "541db686-7d32-56a3-8285-ed14f227e548",
+      "name": "Crackers for my Soup",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "543768f5-a6d2-5583-87ca-e0e92e1cfd9e",
+      "name": "Not So Moderate",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "817ff873-fb7b-5c52-bd05-4db1a5e505cc",
+      "name": "Is It Soup Yet",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "c0e905f2-e69c-598b-8688-d7a0d9ca63dd",
+      "name": "Ace of Hearts",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "cf4dcd58-6ae8-52e4-8643-6f4a056cb17c",
+      "name": "Soupy Sales",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "0f7b638d-a994-568b-a235-54f324ca2ef8",
+      "name": "Aliens Have Landed",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "2bf88a6d-468d-504d-a687-59b5cb341ddb",
+      "name": "Knock the Bottom Out of It",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a0c3197b-57a8-5575-ba36-f4986200f4e2",
+      "name": "Jonnold Arete",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "332506c2-7fcf-5f6b-8855-79586fd930e0",
+      "name": "Skullduggery",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "23c87d04-a5d0-57bf-977d-5010ae5394e7",
+      "name": "Head Gear",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "8b53bba5-6fd5-5520-9fd8-e02e9cb04e21",
+      "name": "Baby Teeth",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "8e5c7ba7-35cd-5ec7-b155-01febf5d20cc",
+      "name": "Blind Faith (this ain't Eldo)",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a2d0b656-ab7d-5aa9-8a41-ef80bd27c9f3",
+      "name": "Unnamed 5.6",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "4fe002d7-8e75-5154-ad4c-5fe8948c5c5d",
+      "name": "Blackstone",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "9bc36d6d-4d46-5a4f-96a5-e737e58e6a97",
+      "name": "Thing 2",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a72886f0-b21a-586a-9f6e-a10baa6ca4c2",
+      "name": "Thing 1",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "5b1aea4d-46fb-55c9-88e3-ba51daa96083",
+      "name": "Caliban",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "3a4e7a8e-9995-55ac-a1e7-424ffb6ad6f3",
+      "name": "Mamma got wanked",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "e9c1734d-ef5d-528c-adee-870e4b5e2428",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "103b495f-70fa-5da2-b755-d95a5f01c032",
+      "name": "Woofers",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "cf48f320-a472-50c5-b62c-6e66684a7f4e",
+      "name": "Winger",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "20aabafa-ec35-529c-9c46-a3749df4544d",
+      "name": "All American Breakfast",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "5288b9c5-5f0a-524a-ae13-2bb142779460",
+      "name": "Side of Mixed Fruit",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "c9c1f0a8-57b4-553b-ae7e-bc5779dfdba7",
+      "name": "Side of Hashbrowns",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "3923f12f-c761-5615-a062-d312cef685bd",
+      "name": "Save It For A Rainy Day",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "5d459900-ddc9-5a43-9a6b-55822ebfc3c6",
+      "name": "Thong",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "7eb42887-1c06-533e-abeb-08a8e1ebb4b2",
+      "name": "Victoria's Secret",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "8941dd79-13ce-5e5e-bf20-0a81d63dd874",
+      "name": "Panty Line",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a18f27ee-d06e-56df-a4b1-0c91cb517495",
+      "name": "Edible Panties",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "c97dfa78-bfeb-53ec-ab9d-5ca610974b72",
+      "name": "Cover My Buttress",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "d45a91d5-7cdf-5745-8cad-22df4d4a1fb7",
+      "name": "Diamond Dance",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "c961a94c-939d-5c3e-8795-877a10476925",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a525d96c-69ac-57b1-99f0-36b5301c5d28",
+      "name": "When the Blood Burns",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "fd3f37a5-b1be-5106-99ed-726e28b54a6e",
+      "name": "The Play's the Thing",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "1ff234e5-e97f-584f-8aec-4629a6373a1a",
+      "name": "Cocaine Hotline",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "833e5d97-081b-574d-922b-a732449cc1f5",
+      "name": "Free Base",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "94a680d3-9df7-5b79-a632-7da7a24f9018",
+      "name": "Snow Blind",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "a6b99ad5-7223-5029-8776-565f224a40b5",
+      "name": "Eight Ball",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "e75c85c8-03a7-50c6-aec9-6e99fe3bf853",
+      "name": "Reach the Beach",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "0b141eea-3c54-513f-b0e8-da36c32a9759",
+      "name": "Big Top",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "6f3b149b-a83b-5ae1-bbe6-4357d9bfdbb5",
+      "name": "Crowd Pleaser",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "79f3ca41-ece6-5ba0-ba1a-c0591009825b",
+      "name": "Unknown 5.9+",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "b3985ac9-9f9e-5800-9147-221a274cd128",
+      "name": "Elephant Man",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f42f5ddc-8513-59cc-ba1b-db78b72d5140",
+      "name": "Main Attraction",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "58114742-de8a-5125-9098-2a3f78b2069c",
+      "name": "All that, Jazz",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "ebbf2b1b-3c09-5037-9f58-396a7e2401f7",
+      "name": "Tres Hombres",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "73dde70d-1f9c-566c-95b3-5bf608ee272e",
+      "name": "Speed Racer",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "1ea01caf-d290-56bd-b95b-f8f718043f7b",
+      "name": "Dolphin Safe",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "9da31ec0-b7b1-5c5a-96d5-e19a53d19c61",
+      "name": "Albacore Man",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "c78f00b0-7a41-5bcf-900e-a4d30d12910f",
+      "name": "Walk The Plank",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "fafabc27-59f5-5e3a-9ea8-9d352ac823b7",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "3ccd9811-0c11-5dfe-9e8e-c19ca1924b2e",
+      "name": "Tier of Titans",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "6a52c344-1853-5c1a-b93e-d441f91067fe",
+      "name": "Flame Ranger",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "ba4d3a98-7e1e-57d7-a9e5-d78d875086d4",
+      "name": "Cut Loose",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "422390d5-9c0e-5f1d-9372-d38709b1dd29",
+      "name": "Blonde Dwarf",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "5d6feb08-b9ff-5b86-b85d-a88bb9e31711",
+      "name": "Electric Koolaid",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "6eec5774-b4fd-57d9-a8b6-7b2bc63f9e18",
+      "name": "Ken Queasy",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "5864ac06-d2fb-5cf5-8e20-ce526d99380e",
+      "name": "Fear & Loathing II",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "dd934f05-5ea8-5315-abb3-4d1e5fcdab30",
+      "name": "Gonzo Dogs",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "11508cfa-b359-5e8e-ae78-ad7b6a9ba5f4",
+      "name": "Team Tough 11a",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "d5971e20-fdb2-5a2b-b599-5374695df5c8",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "1ac6dc4e-ca2c-5079-a30c-599d5717aad0",
+      "name": "Slam Dancin' With The Amish",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "05b6523a-9742-57ca-b337-0e8de0b1257a",
+      "name": "Yodritch",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "5e7d93c6-0d7a-5304-8960-6cd838c40672",
+      "name": "Vile Pile",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "268cb408-adec-56ad-8f44-c723612214a0",
+      "name": "White Slab",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "4095bc71-8678-5e3b-8e78-5d64c3940aef",
+      "name": "Don't Come Line",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "505d2143-5cc2-58c8-ba45-ab84d593b008",
+      "name": "Five Card Stud",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "ff75b4c3-2039-5bee-b30b-8fcb652a128e",
+      "name": "Black Streak",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "251b8797-d332-5b12-ab45-94c9742b7460",
+      "name": "Poundcake",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "825b9f48-70ac-5df7-a85e-502996426c26",
+      "name": "First Born",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f9f8b5d1-c4e3-5307-8938-7c3613aa127f",
+      "name": "The Wallow",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "9a668a3c-07d5-52ba-b7c4-71c0c408e945",
+      "name": "[Redacted]",
+      "stage": "before-normalization",
+      "reason": "missing or redacted route name"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "2a97dfe3-0ab0-52e9-bf32-7abc870f98a5",
+      "name": "Acid Jacks",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "f3bda0c5-20d7-5ef7-812d-755250d168df",
+      "name": "Hundred-Foot Stick Clip",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "b65d2ec3-2e38-5d4e-a0fe-00ce80270a17",
+      "name": "Just in Case",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "b185c901-2f74-5abb-bdf8-cdaf09eb2b9a",
+      "name": "Bad Day at Black Rocks",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "dc281a32-787e-523d-b534-b44e0db26f3c",
+      "name": "Mister Freeze's Face",
+      "stage": "before-normalization",
+      "reason": "multiple source climbing types cannot be losslessly represented"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "b6210146-81f9-576b-9eba-49fec6088b25",
+      "name": "Pink Hammer, Dicks Out",
+      "stage": "exact-link-validation",
+      "reason": "exact OpenBeta route link is unverified",
+      "sourceUrl": "https://openbeta.io/climb/b6210146-81f9-576b-9eba-49fec6088b25/pink-hammer-dicks-out",
+      "httpStatus": 500
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "d626b610-3b28-59fe-8d77-468858f134dd",
+      "name": "Grape Nuts",
+      "stage": "exact-link-validation",
+      "reason": "exact OpenBeta route link is unverified",
+      "sourceUrl": "https://openbeta.io/climb/d626b610-3b28-59fe-8d77-468858f134dd/grape-nuts",
+      "httpStatus": 500
+    }
+  ]
+}

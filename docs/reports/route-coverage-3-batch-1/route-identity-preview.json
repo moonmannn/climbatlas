@@ -1,0 +1,4995 @@
+{
+  "batchId": "route-coverage-3-batch-1",
+  "records": [
+    {
+      "canonicalRouteId": "openbeta-0011a2a4-b8b1-5277-9dce-ce7361d6aecf",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0011a2a4-b8b1-5277-9dce-ce7361d6aecf"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00158122-1e0a-5d75-b9df-89086538c646",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00158122-1e0a-5d75-b9df-89086538c646"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-009519de-cc1a-55d7-a24f-db6aeb840ddd",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "009519de-cc1a-55d7-a24f-db6aeb840ddd"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00d1511a-87df-52d3-b04b-6e6fdffbd723",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00d1511a-87df-52d3-b04b-6e6fdffbd723"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00d48ed7-ab2b-5ac3-a44b-d9173be8a0e4",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00d48ed7-ab2b-5ac3-a44b-d9173be8a0e4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01503d73-8b20-5d12-9fd9-e6e0e8f712e1",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01503d73-8b20-5d12-9fd9-e6e0e8f712e1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0161d6c1-83af-5dc0-b6cc-ecd1264e765b",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0161d6c1-83af-5dc0-b6cc-ecd1264e765b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01ab5368-5a2c-5fc1-b652-2067b67fea06",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01ab5368-5a2c-5fc1-b652-2067b67fea06"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01e89683-3ae2-5ac4-8b7e-f5f841c159a3",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01e89683-3ae2-5ac4-8b7e-f5f841c159a3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0229130c-cf35-5610-bf91-05aeb14c5fdb",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0229130c-cf35-5610-bf91-05aeb14c5fdb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-022ee42e-1b95-5805-9397-b7d23f18d99c",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "022ee42e-1b95-5805-9397-b7d23f18d99c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02c3f8f2-5529-5cb9-8e34-871562003bd3",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02c3f8f2-5529-5cb9-8e34-871562003bd3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02dfe63a-0f60-568b-bc99-7359a9116ee1",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02dfe63a-0f60-568b-bc99-7359a9116ee1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-035fe920-5c5f-5bdc-95a3-e61d651f76c1",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "035fe920-5c5f-5bdc-95a3-e61d651f76c1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03738d56-f91c-537c-a8c1-a22967e02ff8",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03738d56-f91c-537c-a8c1-a22967e02ff8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03a39aaf-62d0-500c-8389-801acaceb05a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03a39aaf-62d0-500c-8389-801acaceb05a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03cfbea7-83b8-5e62-a090-aeb4aba63b1a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03cfbea7-83b8-5e62-a090-aeb4aba63b1a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03d79da0-77d1-551b-965d-26afb3f4547b",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03d79da0-77d1-551b-965d-26afb3f4547b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04000704-db73-514f-8040-bf097a990670",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04000704-db73-514f-8040-bf097a990670"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-045379d3-b6f6-5779-b7fb-ca7c67fc8b8c",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "045379d3-b6f6-5779-b7fb-ca7c67fc8b8c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04b0c160-f127-5c11-8fcc-79e87734a9e0",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04b0c160-f127-5c11-8fcc-79e87734a9e0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04dce02d-b901-5725-a92b-44c27689d74a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04dce02d-b901-5725-a92b-44c27689d74a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05089959-2099-5d01-b68e-aec70952076f",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05089959-2099-5d01-b68e-aec70952076f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05ff24fc-8af4-5314-955d-851f34810df1",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05ff24fc-8af4-5314-955d-851f34810df1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-06994c2b-2d68-5b56-8cb3-db089c2703ec",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "06994c2b-2d68-5b56-8cb3-db089c2703ec"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-06c5d71b-0324-5701-819a-61c0276aef35",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "06c5d71b-0324-5701-819a-61c0276aef35"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-079d7336-48bd-54de-820c-597d718ba9b2",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "079d7336-48bd-54de-820c-597d718ba9b2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-07b10922-2ddf-580f-9e93-7eda800f6bc8",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "07b10922-2ddf-580f-9e93-7eda800f6bc8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-08170f0f-c96e-5911-8d55-34a8097430c4",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "08170f0f-c96e-5911-8d55-34a8097430c4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-095d7c60-fe0a-5406-a201-bbd1a8f9f971",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "095d7c60-fe0a-5406-a201-bbd1a8f9f971"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a405394-e6e8-55e3-823b-33e202e5adf7",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a405394-e6e8-55e3-823b-33e202e5adf7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a5d2895-1f31-52ff-a79d-1d3149ba2ee8",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a5d2895-1f31-52ff-a79d-1d3149ba2ee8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0b382d8c-ffd9-5785-bbf3-69ea0bacf7d5",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0b382d8c-ffd9-5785-bbf3-69ea0bacf7d5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0b58eb19-a23c-536c-a069-54e9d64487e7",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0b58eb19-a23c-536c-a069-54e9d64487e7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0db10cf4-b85d-5fe5-8e38-216d78472101",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0db10cf4-b85d-5fe5-8e38-216d78472101"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0dd3e77f-1a6f-59df-b96c-47bbf1d95760",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0dd3e77f-1a6f-59df-b96c-47bbf1d95760"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0eb5f056-cf61-5194-a310-1da9f7c1c488",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0eb5f056-cf61-5194-a310-1da9f7c1c488"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0fc9dead-57e9-55cc-83c0-77ccf933910b",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0fc9dead-57e9-55cc-83c0-77ccf933910b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0fd33e3b-29d6-53f6-8dd2-51a63b56cf3f",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0fd33e3b-29d6-53f6-8dd2-51a63b56cf3f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-112b9d46-1f41-5e95-aa1b-101c6de52a38",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "112b9d46-1f41-5e95-aa1b-101c6de52a38"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-113a5ce0-f0c7-56c7-ba48-b0920567f9e0",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "113a5ce0-f0c7-56c7-ba48-b0920567f9e0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-14195436-a60a-559b-9ce2-8d8f0e5b5713",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "14195436-a60a-559b-9ce2-8d8f0e5b5713"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-149f2aa7-44a8-5543-9158-4193490c62a2",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "149f2aa7-44a8-5543-9158-4193490c62a2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-155d0fd9-822b-5aed-bebf-b74e73371278",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "155d0fd9-822b-5aed-bebf-b74e73371278"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-157e3037-b56d-58b7-af1f-014a7a40d8e7",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "157e3037-b56d-58b7-af1f-014a7a40d8e7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-168104f5-5b7b-52ad-903d-1757941dc1ab",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "168104f5-5b7b-52ad-903d-1757941dc1ab"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1728e2cd-bb73-5163-a7fd-b26898f54d8a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1728e2cd-bb73-5163-a7fd-b26898f54d8a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1b34fc6f-7cfe-52e6-8761-42045f1190a7",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1b34fc6f-7cfe-52e6-8761-42045f1190a7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1dfe4a42-9080-58cb-8928-07bc4970910a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1dfe4a42-9080-58cb-8928-07bc4970910a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2002f22d-393b-5d5f-8d49-5df85e5f83c8",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2002f22d-393b-5d5f-8d49-5df85e5f83c8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-20873701-e130-5c60-ab14-886bcd730dba",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "20873701-e130-5c60-ab14-886bcd730dba"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-20a65a18-7eb9-5096-9abd-049ec8207885",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "20a65a18-7eb9-5096-9abd-049ec8207885"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-29ee254c-39b3-544a-ad9d-447d73641437",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "29ee254c-39b3-544a-ad9d-447d73641437"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-30788d04-1aae-565f-a152-08ca6f08bec4",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "30788d04-1aae-565f-a152-08ca6f08bec4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-323f6e9c-e983-5ef7-b2c8-adbcece11f70",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "323f6e9c-e983-5ef7-b2c8-adbcece11f70"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-35cefca4-4e4c-5553-bdcc-5f0a9aea6847",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "35cefca4-4e4c-5553-bdcc-5f0a9aea6847"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-365caad8-f35e-5543-a06b-871cb516d70c",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "365caad8-f35e-5543-a06b-871cb516d70c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-37a69115-e3c5-51bd-9f99-23f94a128095",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "37a69115-e3c5-51bd-9f99-23f94a128095"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-37fc831b-6c22-5d29-8699-d4b40a448be7",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "37fc831b-6c22-5d29-8699-d4b40a448be7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3acc85bd-264a-5a2e-b15a-c2dd34efbe5c",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3acc85bd-264a-5a2e-b15a-c2dd34efbe5c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3dc2a334-42b0-5e73-96a9-8513bc2b10d0",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3dc2a334-42b0-5e73-96a9-8513bc2b10d0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4469205d-f840-5fd2-b988-b6043ec510ca",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4469205d-f840-5fd2-b988-b6043ec510ca"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-470d4b3f-22f5-59dd-a1d5-89abf797b86c",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "470d4b3f-22f5-59dd-a1d5-89abf797b86c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-472de999-ca26-56b3-992c-37ec83157c5a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "472de999-ca26-56b3-992c-37ec83157c5a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4ca46e88-0abb-5955-afe9-a50af40fa8ef",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4ca46e88-0abb-5955-afe9-a50af40fa8ef"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4e0a7f48-7487-555b-8759-926298e74d4a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4e0a7f48-7487-555b-8759-926298e74d4a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4fcd4340-ce7a-5079-a216-aea2331ecdc2",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4fcd4340-ce7a-5079-a216-aea2331ecdc2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5192c4af-eb7d-571d-92bb-7dbe5b36f8d8",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5192c4af-eb7d-571d-92bb-7dbe5b36f8d8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-565dee74-8103-5734-9165-145a35927042",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "565dee74-8103-5734-9165-145a35927042"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-57dac3be-dc9a-559e-aab5-9f21aae8b1ad",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "57dac3be-dc9a-559e-aab5-9f21aae8b1ad"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5dba697b-930d-54e0-a22b-9d3d51ea6487",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5dba697b-930d-54e0-a22b-9d3d51ea6487"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-666c5669-84e2-56de-b616-e8c978c4f7c2",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "666c5669-84e2-56de-b616-e8c978c4f7c2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-68c603b2-43a0-5f85-bf98-d73077ed0b02",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "68c603b2-43a0-5f85-bf98-d73077ed0b02"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-76a51293-9e44-5cb0-a275-d86a95165dcc",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "76a51293-9e44-5cb0-a275-d86a95165dcc"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7c369915-51db-5a84-9623-ee0b81178cc5",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7c369915-51db-5a84-9623-ee0b81178cc5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-80c1317b-a8f3-5573-a00c-27965f2c8d6f",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "80c1317b-a8f3-5573-a00c-27965f2c8d6f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-8309eb31-9550-59d6-aed6-dd4a2e11e6c2",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "8309eb31-9550-59d6-aed6-dd4a2e11e6c2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-85f79997-24e9-58e1-9e18-e26071fbe79e",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "85f79997-24e9-58e1-9e18-e26071fbe79e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-87a088cb-a471-5f55-98de-5070ea6c3ade",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "87a088cb-a471-5f55-98de-5070ea6c3ade"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-94e074d4-a824-5384-bec6-6905ec4b2c12",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "94e074d4-a824-5384-bec6-6905ec4b2c12"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-a1ccdc50-e1e7-5a8c-9e56-11ebaaf28b6b",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a1ccdc50-e1e7-5a8c-9e56-11ebaaf28b6b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-a97e9280-a941-5110-a82e-ba35abd20c07",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a97e9280-a941-5110-a82e-ba35abd20c07"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-b1061dc1-fcb8-5441-851d-a26260eab3af",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "b1061dc1-fcb8-5441-851d-a26260eab3af"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-b5d43e12-7ce2-51a5-aa68-efc8e63f7299",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "b5d43e12-7ce2-51a5-aa68-efc8e63f7299"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-b752e4ec-e31b-572c-8202-b2393274a75f",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "b752e4ec-e31b-572c-8202-b2393274a75f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-b832dda1-b0ce-59c7-b82a-57eade95f7df",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "b832dda1-b0ce-59c7-b82a-57eade95f7df"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-b8484472-efb2-5543-955f-d96f24fd8456",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "b8484472-efb2-5543-955f-d96f24fd8456"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-ba56f4af-3d98-59ba-be84-afe17d277616",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "ba56f4af-3d98-59ba-be84-afe17d277616"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-bb02a97b-b7d3-595f-9c0c-cd458341989d",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "bb02a97b-b7d3-595f-9c0c-cd458341989d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d0d76ef7-c496-56b2-9df8-d77cb2d97b35",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d0d76ef7-c496-56b2-9df8-d77cb2d97b35"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d278eb3f-d8db-50ea-99a4-6f56298cf834",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d278eb3f-d8db-50ea-99a4-6f56298cf834"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d4a29b4b-6525-5acf-97bb-e986a77ff915",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d4a29b4b-6525-5acf-97bb-e986a77ff915"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d4d027d8-c7a6-5421-aeac-9861b63f0b30",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d4d027d8-c7a6-5421-aeac-9861b63f0b30"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d6c4ad60-3ad9-5561-ae69-64e54c303c26",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d6c4ad60-3ad9-5561-ae69-64e54c303c26"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d72e6d80-d63f-5635-8320-d2b19880bf35",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d72e6d80-d63f-5635-8320-d2b19880bf35"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-dfd51e2c-cdb2-512f-aa3f-0b7173d9f866",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "dfd51e2c-cdb2-512f-aa3f-0b7173d9f866"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-e0fc02a7-7b6b-5946-a574-d187efd000cf",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "e0fc02a7-7b6b-5946-a574-d187efd000cf"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-ec712008-7053-552b-bdba-fed84ff9c2c5",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "ec712008-7053-552b-bdba-fed84ff9c2c5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-f2527290-7b72-5132-9a3c-bb59710a100a",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f2527290-7b72-5132-9a3c-bb59710a100a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-fa7f7ebc-609a-5099-8c84-170399989035",
+      "destinationSlug": "bishop-area-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "fa7f7ebc-609a-5099-8c84-170399989035"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "bird-of-fire-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "e668fc75-0c90-5472-bba8-b8f74c6e504e"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-e668fc75-0c90-5472-bba8-b8f74c6e504e"
+      ],
+      "mergedRouteIds": [
+        "openbeta-e668fc75-0c90-5472-bba8-b8f74c6e504e"
+      ]
+    },
+    {
+      "canonicalRouteId": "clean-and-jerk-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4334ac3e-5306-5ecd-aeeb-d82c4e34807d"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-4334ac3e-5306-5ecd-aeeb-d82c4e34807d"
+      ],
+      "mergedRouteIds": [
+        "openbeta-4334ac3e-5306-5ecd-aeeb-d82c4e34807d"
+      ]
+    },
+    {
+      "canonicalRouteId": "dappled-mare-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6d8fff9f-3ec0-5540-b022-f26db249e9ef"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-6d8fff9f-3ec0-5540-b022-f26db249e9ef"
+      ],
+      "mergedRouteIds": [
+        "openbeta-6d8fff9f-3ec0-5540-b022-f26db249e9ef"
+      ]
+    },
+    {
+      "canonicalRouteId": "equinox-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "87d70fb2-7c5b-5068-9655-cf09e7db4c1c"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-87d70fb2-7c5b-5068-9655-cf09e7db4c1c"
+      ],
+      "mergedRouteIds": [
+        "openbeta-87d70fb2-7c5b-5068-9655-cf09e7db4c1c"
+      ]
+    },
+    {
+      "canonicalRouteId": "gunsmoke-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "bf419782-b0bb-56a6-88db-8bda5bd372c2"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-bf419782-b0bb-56a6-88db-8bda5bd372c2"
+      ],
+      "mergedRouteIds": [
+        "openbeta-bf419782-b0bb-56a6-88db-8bda5bd372c2"
+      ]
+    },
+    {
+      "canonicalRouteId": "heart-and-sole-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a4a63435-a38c-5b20-8416-553beec7256f"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-a4a63435-a38c-5b20-8416-553beec7256f"
+      ],
+      "mergedRouteIds": [
+        "openbeta-a4a63435-a38c-5b20-8416-553beec7256f"
+      ]
+    },
+    {
+      "canonicalRouteId": "illusion-dweller-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f4848e4f-6701-567f-80d6-64c860f6bc2d"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-f4848e4f-6701-567f-80d6-64c860f6bc2d"
+      ],
+      "mergedRouteIds": [
+        "openbeta-f4848e4f-6701-567f-80d6-64c860f6bc2d"
+      ]
+    },
+    {
+      "canonicalRouteId": "mental-physics-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "53e9fa83-4b0b-553b-b50d-12abfa4a09e9"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-53e9fa83-4b0b-553b-b50d-12abfa4a09e9"
+      ],
+      "mergedRouteIds": [
+        "openbeta-53e9fa83-4b0b-553b-b50d-12abfa4a09e9"
+      ]
+    },
+    {
+      "canonicalRouteId": "openbeta-00212579-f2f6-5072-971d-638e8f76aed6",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00212579-f2f6-5072-971d-638e8f76aed6"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00261f85-87d8-5981-b294-8e11866b573d",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00261f85-87d8-5981-b294-8e11866b573d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-002c183d-c697-52d8-b165-f83d4b41588b",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "002c183d-c697-52d8-b165-f83d4b41588b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-002f09f8-a68c-5586-88c3-871b49cde552",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "002f09f8-a68c-5586-88c3-871b49cde552"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0031798c-35b8-5014-809e-b3426f31fdd6",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0031798c-35b8-5014-809e-b3426f31fdd6"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0041fa9b-67ac-5dba-bcf0-7a922bcab7d3",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0041fa9b-67ac-5dba-bcf0-7a922bcab7d3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-004275c9-7249-5612-afeb-790041ea9566",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "004275c9-7249-5612-afeb-790041ea9566"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0049851b-6903-52d7-a998-acd3387e8183",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0049851b-6903-52d7-a998-acd3387e8183"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-005c3b68-7ff4-57b0-a6b5-62188d8c897a",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "005c3b68-7ff4-57b0-a6b5-62188d8c897a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00836e77-9766-51c6-af88-581416a63169",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00836e77-9766-51c6-af88-581416a63169"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-009368f5-ec4f-5d0d-8ad3-a8904bde57cf",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "009368f5-ec4f-5d0d-8ad3-a8904bde57cf"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00963fbd-13c7-56d1-b583-c67ce3fc7dc7",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00963fbd-13c7-56d1-b583-c67ce3fc7dc7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0099ea90-599f-5843-bd98-42b4c1daf8e7",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0099ea90-599f-5843-bd98-42b4c1daf8e7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00a42ccd-77cf-5a9c-94d4-4fe8878b8904",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00a42ccd-77cf-5a9c-94d4-4fe8878b8904"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00d52bff-7bda-52f2-b873-6546e7dbc303",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00d52bff-7bda-52f2-b873-6546e7dbc303"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00e0c590-c753-55ff-a61c-ad4d88681645",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00e0c590-c753-55ff-a61c-ad4d88681645"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00e58948-c5a3-58c5-93d3-933ed3992166",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00e58948-c5a3-58c5-93d3-933ed3992166"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01353545-d214-54df-b54a-3ed2a06528bd",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01353545-d214-54df-b54a-3ed2a06528bd"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01aacea6-9f37-5122-bb04-5a766c806134",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01aacea6-9f37-5122-bb04-5a766c806134"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01d843b8-dd23-5d78-a034-4dd483128268",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01d843b8-dd23-5d78-a034-4dd483128268"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01e5542a-60c7-5637-87d5-bc3bb207390d",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01e5542a-60c7-5637-87d5-bc3bb207390d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01efd6b8-f1a9-5c82-bf51-f4b0777bd82b",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01efd6b8-f1a9-5c82-bf51-f4b0777bd82b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-020af03b-7f97-59be-89e8-7a4725b04e5b",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "020af03b-7f97-59be-89e8-7a4725b04e5b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-020b93c3-d975-5cab-8fbd-d03739a666e7",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "020b93c3-d975-5cab-8fbd-d03739a666e7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0226fb48-d57c-58e7-9729-0d70002b801e",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0226fb48-d57c-58e7-9729-0d70002b801e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-028feb46-2732-5f17-8851-e72e2b23679c",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "028feb46-2732-5f17-8851-e72e2b23679c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-029fba06-9680-5680-92b3-2f69822f869b",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "029fba06-9680-5680-92b3-2f69822f869b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02ffe75d-6da9-5f3a-b3fe-d6e94384c6b2",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02ffe75d-6da9-5f3a-b3fe-d6e94384c6b2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03647ebd-3c2e-5f4b-9e28-629bd47811cb",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03647ebd-3c2e-5f4b-9e28-629bd47811cb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03740593-fa0f-5b67-93ac-f63a611020b4",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03740593-fa0f-5b67-93ac-f63a611020b4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04d631be-d47b-5a64-8b70-6bc20791bab6",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04d631be-d47b-5a64-8b70-6bc20791bab6"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04eb5356-da36-5652-bf72-50bdd1169249",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04eb5356-da36-5652-bf72-50bdd1169249"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-051190a5-b1f9-57ac-a1bd-637461deece4",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "051190a5-b1f9-57ac-a1bd-637461deece4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05acd2b0-7da4-548e-b541-7ef372a64f33",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05acd2b0-7da4-548e-b541-7ef372a64f33"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05cfc7d1-347e-5ee5-8785-e02264a3a894",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05cfc7d1-347e-5ee5-8785-e02264a3a894"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05db8881-1c4d-5934-8541-4649706b4628",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05db8881-1c4d-5934-8541-4649706b4628"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-07137449-4f6f-52fd-8083-c5a224265214",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "07137449-4f6f-52fd-8083-c5a224265214"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-073256ba-c4f9-589c-9099-f3aff4ce15d5",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "073256ba-c4f9-589c-9099-f3aff4ce15d5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-07603358-c08e-517d-a162-d9a08399e3eb",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "07603358-c08e-517d-a162-d9a08399e3eb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-07bb9b4c-1213-50dd-9f85-cee75a16aa17",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "07bb9b4c-1213-50dd-9f85-cee75a16aa17"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-08498eb7-e27a-5fce-b040-4266b981898d",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "08498eb7-e27a-5fce-b040-4266b981898d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-09775893-a0c6-5ffe-ad97-f3c5faed6ef8",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "09775893-a0c6-5ffe-ad97-f3c5faed6ef8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-09829db6-49e6-5ba7-855b-d47abb2746e0",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "09829db6-49e6-5ba7-855b-d47abb2746e0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-09b33c9a-1d8c-5cc4-a8dd-a5a5c745e7c3",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "09b33c9a-1d8c-5cc4-a8dd-a5a5c745e7c3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a6fe916-26c9-5eb0-a794-4438ce91386c",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a6fe916-26c9-5eb0-a794-4438ce91386c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a7b621f-1e28-5635-b348-c2805dbab59d",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a7b621f-1e28-5635-b348-c2805dbab59d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0abe98a8-479b-5005-8c57-2c1fba568075",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0abe98a8-479b-5005-8c57-2c1fba568075"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0af5c70a-58ba-5cfd-8435-731c5a643558",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0af5c70a-58ba-5cfd-8435-731c5a643558"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0b1c32f9-8b29-5a89-a50e-5bcbcc80eb24",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0b1c32f9-8b29-5a89-a50e-5bcbcc80eb24"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0b8c36e9-d4c9-5abc-ad71-70675be0ae5f",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0b8c36e9-d4c9-5abc-ad71-70675be0ae5f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0c23a9ba-57bf-53cb-a47c-e34f93852660",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0c23a9ba-57bf-53cb-a47c-e34f93852660"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0c9589cd-3cd9-5ba6-be01-9bf2b0f8ed04",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0c9589cd-3cd9-5ba6-be01-9bf2b0f8ed04"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0d2a5aa6-cd8f-528a-bedf-b549f2cf0e41",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0d2a5aa6-cd8f-528a-bedf-b549f2cf0e41"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0d679428-8e63-5954-bfad-e94796268b73",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0d679428-8e63-5954-bfad-e94796268b73"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0d6c26c2-32f7-5a33-b58d-09402cfdd326",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0d6c26c2-32f7-5a33-b58d-09402cfdd326"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0fcd91e0-3dfa-5a38-88c9-f531d4001841",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0fcd91e0-3dfa-5a38-88c9-f531d4001841"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0fe4e7b4-3847-575c-b1b2-c89c294e1d4b",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0fe4e7b4-3847-575c-b1b2-c89c294e1d4b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-10976f36-e1e3-5560-818a-49094390f732",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "10976f36-e1e3-5560-818a-49094390f732"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-10afc041-f519-5304-970d-c38362b47794",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "10afc041-f519-5304-970d-c38362b47794"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-11aabee5-9483-58c4-bad8-8368b082b75f",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "11aabee5-9483-58c4-bad8-8368b082b75f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1375913e-5e49-5187-88c9-9f5fc4c854c4",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1375913e-5e49-5187-88c9-9f5fc4c854c4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-157fee2b-fb70-52e5-86bb-f59e47320e7d",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "157fee2b-fb70-52e5-86bb-f59e47320e7d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-190d313a-be92-529a-9cae-e4a6bd1d199a",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "190d313a-be92-529a-9cae-e4a6bd1d199a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-19103dc8-b521-5972-982a-11086f1dfec3",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "19103dc8-b521-5972-982a-11086f1dfec3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1994b310-b8b0-5e4b-abdc-7340394bb9ae",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1994b310-b8b0-5e4b-abdc-7340394bb9ae"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1e312f24-e315-5cf8-bb36-1605c543183e",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1e312f24-e315-5cf8-bb36-1605c543183e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-23594f08-aa19-5995-b984-425467470374",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "23594f08-aa19-5995-b984-425467470374"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-259438cd-c261-5bf9-91f5-d4c5cb78c8f3",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "259438cd-c261-5bf9-91f5-d4c5cb78c8f3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2597d3c8-fd47-5ffd-a7c9-263ded61e9b4",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2597d3c8-fd47-5ffd-a7c9-263ded61e9b4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-260d9379-3987-524e-8e50-6e30af33c22e",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "260d9379-3987-524e-8e50-6e30af33c22e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-262f0a84-d6cf-543c-8989-5fd6c18ee739",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "262f0a84-d6cf-543c-8989-5fd6c18ee739"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-278b44c7-d452-57ec-aef3-c38b3677bc5c",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "278b44c7-d452-57ec-aef3-c38b3677bc5c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2874f563-bd0e-5c02-bdf5-f47579532dc8",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2874f563-bd0e-5c02-bdf5-f47579532dc8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-291ff01c-0569-54a7-9471-03f490608553",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "291ff01c-0569-54a7-9471-03f490608553"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-29292f7e-9390-5875-8e6e-50e49c5c9700",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "29292f7e-9390-5875-8e6e-50e49c5c9700"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2aa6f3b1-b129-5cf7-b108-db7afb7b46f5",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2aa6f3b1-b129-5cf7-b108-db7afb7b46f5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2b3d18ba-070b-51e8-bfd9-809da55cc38c",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2b3d18ba-070b-51e8-bfd9-809da55cc38c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-30cb8c0d-027f-56df-b0f6-d175a44a3475",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "30cb8c0d-027f-56df-b0f6-d175a44a3475"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-312bb7cb-08cb-547d-989c-d1fad0ba5d57",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "312bb7cb-08cb-547d-989c-d1fad0ba5d57"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-31573ed0-2a4a-56ba-8164-2a0e5eacd3fd",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "31573ed0-2a4a-56ba-8164-2a0e5eacd3fd"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-319e0a69-8333-5f55-ad06-96dafad00ec7",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "319e0a69-8333-5f55-ad06-96dafad00ec7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-31aa77dc-55be-5807-87dc-ef1829e439b9",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "31aa77dc-55be-5807-87dc-ef1829e439b9"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-361a92d7-ef32-59c3-9962-2af036a00ebe",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "361a92d7-ef32-59c3-9962-2af036a00ebe"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3848f302-6e7b-5601-acc1-1208ee0b1cc5",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3848f302-6e7b-5601-acc1-1208ee0b1cc5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3a7b7ba0-d72c-5fcf-b89e-c2dc88a404ed",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3a7b7ba0-d72c-5fcf-b89e-c2dc88a404ed"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3f8fb7f0-7b30-5748-93f5-9217685bc124",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3f8fb7f0-7b30-5748-93f5-9217685bc124"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-475f67ce-adf1-5784-ae7c-7c1a61b537fa",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "475f67ce-adf1-5784-ae7c-7c1a61b537fa"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-48a7a381-aaaa-5b45-9c6b-7c68007865d5",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "48a7a381-aaaa-5b45-9c6b-7c68007865d5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4a1ded26-a3e6-50b4-b8b6-201d0dfacdd5",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4a1ded26-a3e6-50b4-b8b6-201d0dfacdd5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4f03cb56-a6cf-55f6-8b96-ba54b84090e9",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4f03cb56-a6cf-55f6-8b96-ba54b84090e9"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4fef3f84-969a-568a-896e-8585d66a8c9d",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4fef3f84-969a-568a-896e-8585d66a8c9d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5174d784-b118-5b22-adbd-249e08636a51",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5174d784-b118-5b22-adbd-249e08636a51"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-63c9bd8c-8a59-53f0-b377-76946adb47a9",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "63c9bd8c-8a59-53f0-b377-76946adb47a9"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-6a8c05cc-79a5-5ef4-bb40-b18c0f9f595a",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6a8c05cc-79a5-5ef4-bb40-b18c0f9f595a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-6ac3e44e-cd54-5c9e-8208-3c2ea6924b42",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6ac3e44e-cd54-5c9e-8208-3c2ea6924b42"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-6d898ac3-e7b8-5ec9-9eac-ccb311e27736",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6d898ac3-e7b8-5ec9-9eac-ccb311e27736"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-8759d68d-611c-5171-8bfa-9a6a1895c867",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "8759d68d-611c-5171-8bfa-9a6a1895c867"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-9fdd826a-75d3-5e34-a565-8d308c3ea904",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "9fdd826a-75d3-5e34-a565-8d308c3ea904"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-bd8ebc75-a87e-5cf1-b63b-d84e114867fa",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "bd8ebc75-a87e-5cf1-b63b-d84e114867fa"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-bfe46e8c-4f8c-5558-92f1-9d21dd73b6f1",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "bfe46e8c-4f8c-5558-92f1-9d21dd73b6f1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-c04c7e81-9a32-5634-8c7b-de253f57e254",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "c04c7e81-9a32-5634-8c7b-de253f57e254"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d95b5df6-a7ac-5ca3-aa6e-43a99efd871e",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d95b5df6-a7ac-5ca3-aa6e-43a99efd871e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-da9cbc88-2824-568c-8635-b7e88e4e3563",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "da9cbc88-2824-568c-8635-b7e88e4e3563"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-e4730166-2219-5a01-a916-0e82a88fd058",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "e4730166-2219-5a01-a916-0e82a88fd058"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-e99317ed-6afd-52f4-88f1-d7aee66fd390",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "e99317ed-6afd-52f4-88f1-d7aee66fd390"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-eb875b07-4591-5de8-955c-53e77cc2eb75",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "eb875b07-4591-5de8-955c-53e77cc2eb75"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-f3eaef89-0105-551d-9246-bb0b91e8abb9",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f3eaef89-0105-551d-9246-bb0b91e8abb9"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-f4fb52f9-7158-56d1-8ee7-e7f63bc6e17f",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f4fb52f9-7158-56d1-8ee7-e7f63bc6e17f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "overhang-bypass-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a048da00-1431-51ed-8bd0-e9292961b920"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-a048da00-1431-51ed-8bd0-e9292961b920"
+      ],
+      "mergedRouteIds": [
+        "openbeta-a048da00-1431-51ed-8bd0-e9292961b920"
+      ]
+    },
+    {
+      "canonicalRouteId": "planet-x-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "49c5ccce-7f44-54c4-90f0-cb8c80f8ace4"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-49c5ccce-7f44-54c4-90f0-cb8c80f8ace4"
+      ],
+      "mergedRouteIds": [
+        "openbeta-49c5ccce-7f44-54c4-90f0-cb8c80f8ace4"
+      ]
+    },
+    {
+      "canonicalRouteId": "popes-crack-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "8c428fbb-f29e-5353-847d-3c70c7ff3fb7"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-8c428fbb-f29e-5353-847d-3c70c7ff3fb7"
+      ],
+      "mergedRouteIds": [
+        "openbeta-8c428fbb-f29e-5353-847d-3c70c7ff3fb7"
+      ]
+    },
+    {
+      "canonicalRouteId": "room-to-shroom-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "96ef64a1-c767-5d10-895b-99ea62d9dfa8"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-96ef64a1-c767-5d10-895b-99ea62d9dfa8"
+      ],
+      "mergedRouteIds": [
+        "openbeta-96ef64a1-c767-5d10-895b-99ea62d9dfa8"
+      ]
+    },
+    {
+      "canonicalRouteId": "so-high-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "735063ea-2a5b-5ad0-ab8b-b0685a3b4a00"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-735063ea-2a5b-5ad0-ab8b-b0685a3b4a00"
+      ],
+      "mergedRouteIds": [
+        "openbeta-735063ea-2a5b-5ad0-ab8b-b0685a3b4a00"
+      ]
+    },
+    {
+      "canonicalRouteId": "stichter-quits-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f5998213-abf4-546f-955a-98cf34ee981c"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-f5998213-abf4-546f-955a-98cf34ee981c"
+      ],
+      "mergedRouteIds": [
+        "openbeta-f5998213-abf4-546f-955a-98cf34ee981c"
+      ]
+    },
+    {
+      "canonicalRouteId": "the-chief-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "ca803a90-d838-54f7-8682-8d18b196d387"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-ca803a90-d838-54f7-8682-8d18b196d387"
+      ],
+      "mergedRouteIds": [
+        "openbeta-ca803a90-d838-54f7-8682-8d18b196d387"
+      ]
+    },
+    {
+      "canonicalRouteId": "the-flake-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "c661fd9c-3228-57dd-b6c9-935b46132ce0"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-c661fd9c-3228-57dd-b6c9-935b46132ce0"
+      ],
+      "mergedRouteIds": [
+        "openbeta-c661fd9c-3228-57dd-b6c9-935b46132ce0"
+      ]
+    },
+    {
+      "canonicalRouteId": "the-flue-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5a476bc9-ebdc-5b97-a7fb-5bf4f7d87916"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-5a476bc9-ebdc-5b97-a7fb-5bf4f7d87916"
+      ],
+      "mergedRouteIds": [
+        "openbeta-5a476bc9-ebdc-5b97-a7fb-5bf4f7d87916"
+      ]
+    },
+    {
+      "canonicalRouteId": "toe-jam-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "857f9fe2-3872-5e1f-b60f-4025d27a0298"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-857f9fe2-3872-5e1f-b60f-4025d27a0298"
+      ],
+      "mergedRouteIds": [
+        "openbeta-857f9fe2-3872-5e1f-b60f-4025d27a0298"
+      ]
+    },
+    {
+      "canonicalRouteId": "tossed-green-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "fe205dfc-ccf2-5ea6-bb65-ade7f91655c5"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-fe205dfc-ccf2-5ea6-bb65-ade7f91655c5"
+      ],
+      "mergedRouteIds": [
+        "openbeta-fe205dfc-ccf2-5ea6-bb65-ade7f91655c5"
+      ]
+    },
+    {
+      "canonicalRouteId": "walk-on-the-wild-side-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "253f0bbe-2299-5d04-8987-84b3a53adc4c"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-253f0bbe-2299-5d04-8987-84b3a53adc4c"
+      ],
+      "mergedRouteIds": [
+        "openbeta-253f0bbe-2299-5d04-8987-84b3a53adc4c"
+      ]
+    },
+    {
+      "canonicalRouteId": "western-saga-joshua-tree",
+      "destinationSlug": "joshua-tree-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "99343a39-8918-5b86-8bc0-3d6aa85de0a0"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-99343a39-8918-5b86-8bc0-3d6aa85de0a0"
+      ],
+      "mergedRouteIds": [
+        "openbeta-99343a39-8918-5b86-8bc0-3d6aa85de0a0"
+      ]
+    },
+    {
+      "canonicalRouteId": "openbeta-00028fef-e617-587a-b800-ba5743821792",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00028fef-e617-587a-b800-ba5743821792"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-002566a1-43ef-56cc-8144-123973532d0c",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "002566a1-43ef-56cc-8144-123973532d0c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-002f39d4-7161-566a-a7cb-6fd4b1ffdd3b",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "002f39d4-7161-566a-a7cb-6fd4b1ffdd3b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00340e8b-75b1-5ff0-bc53-42f8fdeb46a4",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00340e8b-75b1-5ff0-bc53-42f8fdeb46a4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-009c7c71-1549-5305-a915-f0d0150d2801",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "009c7c71-1549-5305-a915-f0d0150d2801"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00ab07e8-6866-5d1d-96b4-9d989bb3f8b7",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00ab07e8-6866-5d1d-96b4-9d989bb3f8b7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00e557db-84fe-5535-87c3-6c5a5841754e",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00e557db-84fe-5535-87c3-6c5a5841754e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01084af8-debe-5b90-a625-305ea7c82bce",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01084af8-debe-5b90-a625-305ea7c82bce"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0186f328-c099-5a01-8e9e-3dd0a0f23b62",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0186f328-c099-5a01-8e9e-3dd0a0f23b62"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01a5c401-39f2-51ec-b386-360c6f5d76db",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01a5c401-39f2-51ec-b386-360c6f5d76db"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01b19a87-fac7-5bb7-a023-2f5f23be4be0",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01b19a87-fac7-5bb7-a023-2f5f23be4be0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-01db047e-40c6-5c4c-9a4a-4ea24c415e56",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "01db047e-40c6-5c4c-9a4a-4ea24c415e56"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-020d18c6-4d92-5a69-a1b6-e460010580b8",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "020d18c6-4d92-5a69-a1b6-e460010580b8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02420aca-e84e-5793-9089-86f3f3f6d5b3",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02420aca-e84e-5793-9089-86f3f3f6d5b3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-028af0e7-0961-5ee1-a713-b04bf6136e87",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "028af0e7-0961-5ee1-a713-b04bf6136e87"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02c663f2-c009-523e-a02b-62a858eca7f9",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02c663f2-c009-523e-a02b-62a858eca7f9"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02c8b22b-ff4f-58ae-83c3-556c0e3e2225",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02c8b22b-ff4f-58ae-83c3-556c0e3e2225"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-02dc4125-bdcf-5014-8368-fb9e93ed7baa",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "02dc4125-bdcf-5014-8368-fb9e93ed7baa"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-033ce0d1-9894-5f46-8f16-8afe36ee9fbb",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "033ce0d1-9894-5f46-8f16-8afe36ee9fbb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-034cafb2-cba6-5825-a5e0-9199d934f783",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "034cafb2-cba6-5825-a5e0-9199d934f783"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-03e7d7d5-62d1-5c1f-8b06-30b7623900eb",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "03e7d7d5-62d1-5c1f-8b06-30b7623900eb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04d4675f-35cc-53ce-87fe-46afe7e77cfa",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04d4675f-35cc-53ce-87fe-46afe7e77cfa"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-054bec74-f164-5537-b7a0-3f480b8d426e",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "054bec74-f164-5537-b7a0-3f480b8d426e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-055f1133-ae04-59f7-9f73-030916f54f46",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "055f1133-ae04-59f7-9f73-030916f54f46"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-058b1e86-2e69-5c0b-bef3-27f38d5f197c",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "058b1e86-2e69-5c0b-bef3-27f38d5f197c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05fc732c-f5ab-53f7-991c-5d7a9b175308",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05fc732c-f5ab-53f7-991c-5d7a9b175308"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0623ed7a-548e-5587-9509-0a533ccb86a2",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0623ed7a-548e-5587-9509-0a533ccb86a2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-06577731-3915-43fb-a764-693f1ef7cf85",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "06577731-3915-43fb-a764-693f1ef7cf85"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-072dbec4-5a7d-590a-a848-0abd11ca534b",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "072dbec4-5a7d-590a-a848-0abd11ca534b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-074de0d5-a36d-537c-a1fe-c38ca4cc4bd2",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "074de0d5-a36d-537c-a1fe-c38ca4cc4bd2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-07f688d6-9051-5052-a204-526431e2fbfd",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "07f688d6-9051-5052-a204-526431e2fbfd"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-08a2c09d-055c-55a7-b25f-4a7d1b34c635",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "08a2c09d-055c-55a7-b25f-4a7d1b34c635"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0901ea4c-bea0-5ba8-a913-2db656bd8014",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0901ea4c-bea0-5ba8-a913-2db656bd8014"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-09f8ac65-53e3-584b-a4e4-a64b3f095c76",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "09f8ac65-53e3-584b-a4e4-a64b3f095c76"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a1701ee-16f4-5cdf-b37f-2fc2a1a5c652",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a1701ee-16f4-5cdf-b37f-2fc2a1a5c652"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a5a48fc-15cb-5391-ba1b-b04eb396dbfb",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a5a48fc-15cb-5391-ba1b-b04eb396dbfb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0b439079-c0ed-504b-9d0f-52a9a04f5307",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0b439079-c0ed-504b-9d0f-52a9a04f5307"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0e4ba30f-36db-53f2-aa8d-5df44cdcd310",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0e4ba30f-36db-53f2-aa8d-5df44cdcd310"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0f1e835f-19b4-56ce-baad-9650c5cb9fd0",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0f1e835f-19b4-56ce-baad-9650c5cb9fd0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0f67be81-0330-5362-9b7a-896dbac64ec0",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0f67be81-0330-5362-9b7a-896dbac64ec0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0fadf8dd-b8ca-5cf1-8d32-82368c27fc6b",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0fadf8dd-b8ca-5cf1-8d32-82368c27fc6b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-102d4fe6-bc16-5c8e-a20b-6201d384c4a2",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "102d4fe6-bc16-5c8e-a20b-6201d384c4a2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-11a788de-9831-54a3-a7c5-4bb263878696",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "11a788de-9831-54a3-a7c5-4bb263878696"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1297e42d-f942-567b-80b1-1b47916c6072",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1297e42d-f942-567b-80b1-1b47916c6072"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-12bdbcf8-a77a-51fb-9bff-2abb3ee055df",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "12bdbcf8-a77a-51fb-9bff-2abb3ee055df"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-13b9d3ca-6b18-5eeb-a53a-55263e1baf91",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "13b9d3ca-6b18-5eeb-a53a-55263e1baf91"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-13c3837d-032b-5e16-a171-9d0a2cd7357e",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "13c3837d-032b-5e16-a171-9d0a2cd7357e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1540115d-fab6-54d0-9484-fa06d71d9814",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1540115d-fab6-54d0-9484-fa06d71d9814"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1572d1a9-3e1e-5d29-9d3b-861a0d5eda63",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1572d1a9-3e1e-5d29-9d3b-861a0d5eda63"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-15d879a0-27cf-5dde-bb8b-bc290216179d",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "15d879a0-27cf-5dde-bb8b-bc290216179d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-175a4876-8d70-5ab4-a6f7-e62a279dd5ac",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "175a4876-8d70-5ab4-a6f7-e62a279dd5ac"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-195767cb-931f-52f6-bf79-348eb615eeeb",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "195767cb-931f-52f6-bf79-348eb615eeeb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1afd99df-d0af-5492-acb3-421e89ef6fd3",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1afd99df-d0af-5492-acb3-421e89ef6fd3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-209c8b46-a17b-5bca-9d2e-7ebd6b47e1e0",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "209c8b46-a17b-5bca-9d2e-7ebd6b47e1e0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-217064d1-4fe6-50fe-b0c9-38020dc1f1c5",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "217064d1-4fe6-50fe-b0c9-38020dc1f1c5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-227f10ed-b37c-53b7-950d-e22d4164c2d3",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "227f10ed-b37c-53b7-950d-e22d4164c2d3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-23aaf75b-34f0-533d-aaf5-c938a7a4e58d",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "23aaf75b-34f0-533d-aaf5-c938a7a4e58d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-23da8112-8a16-56f3-9d3c-8901e7bf9b7e",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "23da8112-8a16-56f3-9d3c-8901e7bf9b7e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2ac666cc-30db-55be-a457-6a08a2d21605",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2ac666cc-30db-55be-a457-6a08a2d21605"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2c7bdddf-20f4-5680-aa0e-07d3b87462c8",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2c7bdddf-20f4-5680-aa0e-07d3b87462c8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2e8e2b8d-1d37-51c3-a49b-78806677b95f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2e8e2b8d-1d37-51c3-a49b-78806677b95f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2f040b91-3815-58bb-96c1-db785f552bb6",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2f040b91-3815-58bb-96c1-db785f552bb6"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2fb7fc18-b569-52e9-9846-c9b5fb175f4f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2fb7fc18-b569-52e9-9846-c9b5fb175f4f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3198606c-4dd6-5c22-8be6-176af1e132a4",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3198606c-4dd6-5c22-8be6-176af1e132a4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-34bd5569-64cc-5ed2-846a-9229f38e338f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "34bd5569-64cc-5ed2-846a-9229f38e338f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-364c79a8-6155-5409-ae4f-8003e29b22aa",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "364c79a8-6155-5409-ae4f-8003e29b22aa"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3a1e322b-721b-5480-91ed-161294218d85",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3a1e322b-721b-5480-91ed-161294218d85"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3b5736aa-44d9-5c0f-88d9-1418a50fef06",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3b5736aa-44d9-5c0f-88d9-1418a50fef06"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-42e1e574-39b3-5b56-980e-dda240aaad42",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "42e1e574-39b3-5b56-980e-dda240aaad42"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-44434676-210e-5928-b4b0-430cbe869328",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "44434676-210e-5928-b4b0-430cbe869328"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-453afa7f-7a29-58a5-94f0-a441d425b22e",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "453afa7f-7a29-58a5-94f0-a441d425b22e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-47d03b3c-1c6b-50db-882d-a198fdee0994",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "47d03b3c-1c6b-50db-882d-a198fdee0994"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4a68bee2-9311-5912-a269-4fc17f906d49",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4a68bee2-9311-5912-a269-4fc17f906d49"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4b667280-2db6-5b9f-89f6-cbe64be59026",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4b667280-2db6-5b9f-89f6-cbe64be59026"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4e790aa1-9be9-5af5-809b-cdb46835cffb",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4e790aa1-9be9-5af5-809b-cdb46835cffb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4f525999-c231-5e9e-a531-712bcf9ab8a1",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4f525999-c231-5e9e-a531-712bcf9ab8a1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-50383603-e5b9-5bf7-8092-ad1d30234839",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "50383603-e5b9-5bf7-8092-ad1d30234839"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-51700265-3697-515d-8aef-96ce3f22cda7",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "51700265-3697-515d-8aef-96ce3f22cda7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-52ba43e2-2406-563a-9c84-a7f53f137185",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "52ba43e2-2406-563a-9c84-a7f53f137185"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5390145b-a53e-5bac-9638-c57a52d32f04",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5390145b-a53e-5bac-9638-c57a52d32f04"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-58ca333f-2f14-5f60-a98c-b6d81a73a9f1",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "58ca333f-2f14-5f60-a98c-b6d81a73a9f1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-65a36d9f-2f38-59db-bb1b-369a9354d401",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "65a36d9f-2f38-59db-bb1b-369a9354d401"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-65fa0da0-9e89-5a2e-973b-9858ececda5f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "65fa0da0-9e89-5a2e-973b-9858ececda5f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-68e9a557-a1f3-5eaf-bad4-3f7251b79c1f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "68e9a557-a1f3-5eaf-bad4-3f7251b79c1f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-69b17f71-1f2d-5ffe-8a68-b5c384edfa1b",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "69b17f71-1f2d-5ffe-8a68-b5c384edfa1b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-6eb3727c-7863-521f-b758-c17c4d379b21",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6eb3727c-7863-521f-b758-c17c4d379b21"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-70ec8bba-2d81-5efc-aae1-cb32e1169b6a",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "70ec8bba-2d81-5efc-aae1-cb32e1169b6a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-767fa5dc-85c0-5759-87bf-89c111d7b79f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "767fa5dc-85c0-5759-87bf-89c111d7b79f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-78ea0be9-f6a2-545e-9a67-db5ca566cbc8",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "78ea0be9-f6a2-545e-9a67-db5ca566cbc8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-81ae4bfd-e191-5349-8a13-bea44c97beee",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "81ae4bfd-e191-5349-8a13-bea44c97beee"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-85662c78-a4a3-5d02-89c6-fc5ea574f5d9",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "85662c78-a4a3-5d02-89c6-fc5ea574f5d9"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-8779acdc-f6e0-5844-b90f-82611d4e6d94",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "8779acdc-f6e0-5844-b90f-82611d4e6d94"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-9e5bddf0-eeb5-5ab0-8a76-e8924b6bb10a",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "9e5bddf0-eeb5-5ab0-8a76-e8924b6bb10a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-a70e9009-d094-5d22-aba4-9d05232a6568",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a70e9009-d094-5d22-aba4-9d05232a6568"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-a82ef0ee-8c3b-5fdc-aee7-e1fcf14ba27f",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a82ef0ee-8c3b-5fdc-aee7-e1fcf14ba27f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-c0c113ab-a331-52bb-afca-2c5e1ea2f8f7",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "c0c113ab-a331-52bb-afca-2c5e1ea2f8f7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-c96f13fa-7ed0-521a-9d38-ad94f860f1a4",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "c96f13fa-7ed0-521a-9d38-ad94f860f1a4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d49ae4bc-9803-598e-908f-c20e113ad261",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d49ae4bc-9803-598e-908f-c20e113ad261"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-eb3a01e3-6d26-58b2-b723-6edb20bc08e6",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "eb3a01e3-6d26-58b2-b723-6edb20bc08e6"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-f7f9a5a8-4905-5c0f-857b-c5e6bb25c002",
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f7f9a5a8-4905-5c0f-857b-c5e6bb25c002"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "a-pitch-in-time-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4b1bfaeb-32d0-4ed9-9342-f18fba779167"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-4b1bfaeb-32d0-4ed9-9342-f18fba779167"
+      ],
+      "mergedRouteIds": [
+        "openbeta-4b1bfaeb-32d0-4ed9-9342-f18fba779167"
+      ]
+    },
+    {
+      "canonicalRouteId": "apron-strings-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "b012348e-fec3-4cbb-9689-62094e6483d2"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-b012348e-fec3-4cbb-9689-62094e6483d2"
+      ],
+      "mergedRouteIds": [
+        "openbeta-b012348e-fec3-4cbb-9689-62094e6483d2"
+      ]
+    },
+    {
+      "canonicalRouteId": "birds-of-prey-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "49933ddd-42a5-4a49-9a79-0cbccc90673a"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-49933ddd-42a5-4a49-9a79-0cbccc90673a"
+      ],
+      "mergedRouteIds": [
+        "openbeta-49933ddd-42a5-4a49-9a79-0cbccc90673a"
+      ]
+    },
+    {
+      "canonicalRouteId": "borderline-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "72f82536-eca5-4563-9ec3-6d54f5d8c130"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-72f82536-eca5-4563-9ec3-6d54f5d8c130"
+      ],
+      "mergedRouteIds": [
+        "openbeta-72f82536-eca5-4563-9ec3-6d54f5d8c130"
+      ]
+    },
+    {
+      "canonicalRouteId": "calculus-crack-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "ec33dc36-e2ed-4b04-9784-7cccd45c1ff7"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-ec33dc36-e2ed-4b04-9784-7cccd45c1ff7"
+      ],
+      "mergedRouteIds": [
+        "openbeta-ec33dc36-e2ed-4b04-9784-7cccd45c1ff7"
+      ]
+    },
+    {
+      "canonicalRouteId": "diedre-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "19f66a5e-9dcc-4c32-a859-b5fa25643d3e"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-19f66a5e-9dcc-4c32-a859-b5fa25643d3e"
+      ],
+      "mergedRouteIds": [
+        "openbeta-19f66a5e-9dcc-4c32-a859-b5fa25643d3e"
+      ]
+    },
+    {
+      "canonicalRouteId": "exasperator-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "bad7e588-48ba-48c2-b88b-e0667e3fa798"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-bad7e588-48ba-48c2-b88b-e0667e3fa798"
+      ],
+      "mergedRouteIds": [
+        "openbeta-bad7e588-48ba-48c2-b88b-e0667e3fa798"
+      ]
+    },
+    {
+      "canonicalRouteId": "flying-circus-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "acfc117b-d87e-4530-88ab-1cf6bb241a47"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-acfc117b-d87e-4530-88ab-1cf6bb241a47"
+      ],
+      "mergedRouteIds": [
+        "openbeta-acfc117b-d87e-4530-88ab-1cf6bb241a47"
+      ]
+    },
+    {
+      "canonicalRouteId": "freeway-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "89059a13-7af4-4cc8-83bc-8201d89085cd"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-89059a13-7af4-4cc8-83bc-8201d89085cd"
+      ],
+      "mergedRouteIds": [
+        "openbeta-89059a13-7af4-4cc8-83bc-8201d89085cd"
+      ]
+    },
+    {
+      "canonicalRouteId": "klahanie-crack-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "68850add-b23b-4996-9d98-0e5a378419d5"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-68850add-b23b-4996-9d98-0e5a378419d5"
+      ],
+      "mergedRouteIds": [
+        "openbeta-68850add-b23b-4996-9d98-0e5a378419d5"
+      ]
+    },
+    {
+      "canonicalRouteId": "neat-and-cool-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0500c1a0-78ad-4d10-9ae0-20049b7eb9f2"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-0500c1a0-78ad-4d10-9ae0-20049b7eb9f2"
+      ],
+      "mergedRouteIds": [
+        "openbeta-0500c1a0-78ad-4d10-9ae0-20049b7eb9f2"
+      ]
+    },
+    {
+      "canonicalRouteId": "openbeta-0044bdb1-18c3-4edf-a431-d9aeb272ffe5",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0044bdb1-18c3-4edf-a431-d9aeb272ffe5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00c29058-dc45-4638-9867-93172b48bee5",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00c29058-dc45-4638-9867-93172b48bee5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-00e7fbeb-1bd6-4698-8316-5125687b07ba",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "00e7fbeb-1bd6-4698-8316-5125687b07ba"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0124397c-363d-4bf8-b4c1-aa76e5958bc7",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0124397c-363d-4bf8-b4c1-aa76e5958bc7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-018b61ae-5b6d-43bb-bcda-81223fc339b2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "018b61ae-5b6d-43bb-bcda-81223fc339b2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0271f1be-1956-4ea5-a225-6c57717ecdb1",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0271f1be-1956-4ea5-a225-6c57717ecdb1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-027391b9-50fa-4705-a18c-7282344d0173",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "027391b9-50fa-4705-a18c-7282344d0173"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0414d828-c3ea-4d4c-aee9-4d0d301daeea",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0414d828-c3ea-4d4c-aee9-4d0d301daeea"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-04e59a35-0da4-4ea2-ba4e-f965658cb66d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "04e59a35-0da4-4ea2-ba4e-f965658cb66d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-05a19752-2393-442c-bd2d-5aaf900d475b",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "05a19752-2393-442c-bd2d-5aaf900d475b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0601ef83-15b8-40f7-84ee-3c29271455c4",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0601ef83-15b8-40f7-84ee-3c29271455c4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-06f3f2d1-d8b1-4b72-876b-426f1e3b1a9f",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "06f3f2d1-d8b1-4b72-876b-426f1e3b1a9f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0753dacd-1e4c-4a71-92ef-d5cbf248af56",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0753dacd-1e4c-4a71-92ef-d5cbf248af56"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0794ead3-57bc-4678-8e09-e335eff3cdec",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0794ead3-57bc-4678-8e09-e335eff3cdec"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-07d8fe50-6bfa-41e4-9bbe-6cb43085ffd2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "07d8fe50-6bfa-41e4-9bbe-6cb43085ffd2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-08a20adb-0492-4ff0-bc83-4af2195547a1",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "08a20adb-0492-4ff0-bc83-4af2195547a1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-08ab77ab-2e67-43cd-8bf9-015d1e3a6612",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "08ab77ab-2e67-43cd-8bf9-015d1e3a6612"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0a15c633-0c79-44a5-870d-1325a7cd0e91",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0a15c633-0c79-44a5-870d-1325a7cd0e91"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0aa6d4fa-df3e-413c-90c5-07a6b3a1964f",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0aa6d4fa-df3e-413c-90c5-07a6b3a1964f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0be18b78-d814-41bd-9ec8-bcfd6605c8aa",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0be18b78-d814-41bd-9ec8-bcfd6605c8aa"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0bffcb4e-a38d-492c-a0d8-147308d5cec2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0bffcb4e-a38d-492c-a0d8-147308d5cec2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0e20637f-dc22-4bdc-862d-af2baa995e0a",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0e20637f-dc22-4bdc-862d-af2baa995e0a"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0e3259cc-d2e4-4d24-aebd-628b1e851598",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0e3259cc-d2e4-4d24-aebd-628b1e851598"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0eb4c2d9-30fe-461f-a3e5-05b676095227",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0eb4c2d9-30fe-461f-a3e5-05b676095227"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0eeb97e3-ddb2-4fea-a840-1063a37146fb",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0eeb97e3-ddb2-4fea-a840-1063a37146fb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-0fd36e17-bb67-4b57-9adf-ee629b044a9c",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "0fd36e17-bb67-4b57-9adf-ee629b044a9c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-104517db-8d53-4374-bcb1-8e157a12f93d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "104517db-8d53-4374-bcb1-8e157a12f93d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-15428460-af61-43f8-90f7-b6bfcd8fe6b8",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "15428460-af61-43f8-90f7-b6bfcd8fe6b8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-159a7221-4d2b-4265-9e85-8a17811aaf9d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "159a7221-4d2b-4265-9e85-8a17811aaf9d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-164783df-b68c-4719-a32a-d64fc8a99eef",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "164783df-b68c-4719-a32a-d64fc8a99eef"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1794ce26-43db-4a0e-bd48-a65fd174b218",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1794ce26-43db-4a0e-bd48-a65fd174b218"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-18dd4138-063c-4cc9-abd9-fe2a081f44fd",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "18dd4138-063c-4cc9-abd9-fe2a081f44fd"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-19f8f122-b5b4-4034-beb1-c72fcf4c8af8",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "19f8f122-b5b4-4034-beb1-c72fcf4c8af8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1b4e15ff-0104-4161-b4d6-31c7974c072e",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1b4e15ff-0104-4161-b4d6-31c7974c072e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1c4ddb08-6876-4997-b0d5-0f18fdbec9ff",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1c4ddb08-6876-4997-b0d5-0f18fdbec9ff"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1d8f1242-4420-4b91-a721-17ab8792f7f7",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1d8f1242-4420-4b91-a721-17ab8792f7f7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-1f153925-0c2c-4643-ac5e-e19f39383c8d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "1f153925-0c2c-4643-ac5e-e19f39383c8d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-207844ee-b8a7-465d-b5e2-99a3daa21dc2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "207844ee-b8a7-465d-b5e2-99a3daa21dc2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-21eb3eae-a497-480e-a12e-e816614807a6",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "21eb3eae-a497-480e-a12e-e816614807a6"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-25734797-d02c-4ba2-a4ab-5d2652728118",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "25734797-d02c-4ba2-a4ab-5d2652728118"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2685dbfa-ed73-4033-9d0d-d0a7b454088b",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2685dbfa-ed73-4033-9d0d-d0a7b454088b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-29936758-71a6-4ddd-8fc6-1c396a34fef1",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "29936758-71a6-4ddd-8fc6-1c396a34fef1"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-29d23b0e-0c2d-474a-8db1-567ad6f812fb",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "29d23b0e-0c2d-474a-8db1-567ad6f812fb"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2a0c27c9-a048-419d-902a-12f9f4b8a96d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2a0c27c9-a048-419d-902a-12f9f4b8a96d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2b251fbc-ce97-4d6e-89db-f893bc73d970",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2b251fbc-ce97-4d6e-89db-f893bc73d970"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2b3f0677-65d5-4f74-87aa-25fa2aa78cfd",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2b3f0677-65d5-4f74-87aa-25fa2aa78cfd"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-2d554c02-2cf9-44a9-b0f2-b5645a8e85f8",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "2d554c02-2cf9-44a9-b0f2-b5645a8e85f8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-30f2f288-ae38-453d-afad-908a9dbb522d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "30f2f288-ae38-453d-afad-908a9dbb522d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-383a943f-4489-4e96-b457-8a66448a99de",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "383a943f-4489-4e96-b457-8a66448a99de"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3b462161-730f-43bc-8e5f-58f2ebc2f376",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3b462161-730f-43bc-8e5f-58f2ebc2f376"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3d79715d-8215-4aae-a3d9-1a01b5c33322",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3d79715d-8215-4aae-a3d9-1a01b5c33322"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3e072480-ef14-4f3b-8df3-495b6fbdf1d7",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3e072480-ef14-4f3b-8df3-495b6fbdf1d7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-3edca3db-6ca1-4189-9574-5476e6c2f2d0",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "3edca3db-6ca1-4189-9574-5476e6c2f2d0"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4425f19c-636f-490d-a5a1-23b9ce9f723b",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4425f19c-636f-490d-a5a1-23b9ce9f723b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-467b74fa-f9fa-4983-9492-fe4e6c5c6b1f",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "467b74fa-f9fa-4983-9492-fe4e6c5c6b1f"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-47f2126e-09c8-40cc-b3db-eddaad78c259",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "47f2126e-09c8-40cc-b3db-eddaad78c259"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4bc6c1ba-0cb0-492d-84f9-52bd1ebe9b1e",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4bc6c1ba-0cb0-492d-84f9-52bd1ebe9b1e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-4f7c4709-3da2-410f-aeb8-006d08c40ea3",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "4f7c4709-3da2-410f-aeb8-006d08c40ea3"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5090608d-713a-48b8-873e-d524258da795",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5090608d-713a-48b8-873e-d524258da795"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-56a6eb1f-5dc4-4b93-bb41-a3e224b86c61",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "56a6eb1f-5dc4-4b93-bb41-a3e224b86c61"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5acbcc8e-31e5-4708-a7c8-c53839364a87",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5acbcc8e-31e5-4708-a7c8-c53839364a87"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-5f015427-135f-457f-ad20-93b83ce3c38d",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "5f015427-135f-457f-ad20-93b83ce3c38d"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-64e0e444-5535-4da7-aceb-6d12640c8193",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "64e0e444-5535-4da7-aceb-6d12640c8193"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-657e3728-05d2-4c1c-b35a-e9797674a66c",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "657e3728-05d2-4c1c-b35a-e9797674a66c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-6d3b9cee-5d94-4040-b04e-64d8a8b5d57e",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6d3b9cee-5d94-4040-b04e-64d8a8b5d57e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-6e32e7a5-dfda-4391-9678-18ce58bf91e2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "6e32e7a5-dfda-4391-9678-18ce58bf91e2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7042ea52-3b6c-4a55-ae8f-ce7fb4e8035c",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7042ea52-3b6c-4a55-ae8f-ce7fb4e8035c"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-733190a0-e676-48e8-bdff-21992f56e8c2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "733190a0-e676-48e8-bdff-21992f56e8c2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-758135c1-2eae-4605-bb46-fedaeb3e6097",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "758135c1-2eae-4605-bb46-fedaeb3e6097"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7584872a-2bb4-4daa-a636-fd590d02f4b4",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7584872a-2bb4-4daa-a636-fd590d02f4b4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-77fc88ca-b09a-4889-8e4a-2fee69020ef4",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "77fc88ca-b09a-4889-8e4a-2fee69020ef4"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7a460bf2-70ae-4f82-8675-ad01da025b9b",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7a460bf2-70ae-4f82-8675-ad01da025b9b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7a74bb4b-3e6a-435a-abb1-0d8924467fba",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7a74bb4b-3e6a-435a-abb1-0d8924467fba"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7d895911-3fe3-48e5-9f52-d21c0ede99a2",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7d895911-3fe3-48e5-9f52-d21c0ede99a2"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-7fad6b30-3fcd-4557-aef4-0697603d3d23",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "7fad6b30-3fcd-4557-aef4-0697603d3d23"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-800e19fc-4c7f-4d47-82ac-95566e1f2045",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "800e19fc-4c7f-4d47-82ac-95566e1f2045"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-814be08e-ec20-4011-9bde-85c8460ff7b5",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "814be08e-ec20-4011-9bde-85c8460ff7b5"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-9352cb3a-76bf-4b15-b1e6-6cf8fb101102",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "9352cb3a-76bf-4b15-b1e6-6cf8fb101102"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-a491367e-6bbd-4c26-b5c7-d75c5c29e47b",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "a491367e-6bbd-4c26-b5c7-d75c5c29e47b"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-af640763-2168-410b-b284-1c632bd9327e",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "af640763-2168-410b-b284-1c632bd9327e"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-be4f87ea-a13c-456c-bd2c-07ed4c43fb21",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "be4f87ea-a13c-456c-bd2c-07ed4c43fb21"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-bff68923-2d6f-4c0d-aa01-b545939c11da",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "bff68923-2d6f-4c0d-aa01-b545939c11da"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-c3c65541-78f5-42dd-bcb8-d2d9273fa424",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "c3c65541-78f5-42dd-bcb8-d2d9273fa424"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-d3ddd1ae-3548-4c71-92ce-7673cf6654a8",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d3ddd1ae-3548-4c71-92ce-7673cf6654a8"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-e1e34b71-6409-42c3-9372-7cd46db4d865",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "e1e34b71-6409-42c3-9372-7cd46db4d865"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "openbeta-fa1689ba-5310-4892-b1db-10e1448789b7",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "fa1689ba-5310-4892-b1db-10e1448789b7"
+        }
+      ],
+      "slugAliases": []
+    },
+    {
+      "canonicalRouteId": "partners-in-crime-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "f60fd030-ed11-482c-8609-b24b77b49500"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-f60fd030-ed11-482c-8609-b24b77b49500"
+      ],
+      "mergedRouteIds": [
+        "openbeta-f60fd030-ed11-482c-8609-b24b77b49500"
+      ]
+    },
+    {
+      "canonicalRouteId": "penny-lane-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "cf299c4d-eb1c-45aa-82a7-aaf0dcc4365e"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-cf299c4d-eb1c-45aa-82a7-aaf0dcc4365e"
+      ],
+      "mergedRouteIds": [
+        "openbeta-cf299c4d-eb1c-45aa-82a7-aaf0dcc4365e"
+      ]
+    },
+    {
+      "canonicalRouteId": "rock-on-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "31317a27-42c9-4620-a9f0-b487c19c807b"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-31317a27-42c9-4620-a9f0-b487c19c807b"
+      ],
+      "mergedRouteIds": [
+        "openbeta-31317a27-42c9-4620-a9f0-b487c19c807b"
+      ]
+    },
+    {
+      "canonicalRouteId": "rutabaga-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "43dcb689-8819-46d6-a38f-65ed0b4581d9"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-43dcb689-8819-46d6-a38f-65ed0b4581d9"
+      ],
+      "mergedRouteIds": [
+        "openbeta-43dcb689-8819-46d6-a38f-65ed0b4581d9"
+      ]
+    },
+    {
+      "canonicalRouteId": "skywalker-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "d8740780-c758-46fc-9c0d-9da1e2c0abbd"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-d8740780-c758-46fc-9c0d-9da1e2c0abbd"
+      ],
+      "mergedRouteIds": [
+        "openbeta-d8740780-c758-46fc-9c0d-9da1e2c0abbd"
+      ]
+    },
+    {
+      "canonicalRouteId": "snake-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "32ff93c3-1a10-4423-bd7a-85769d7422ee"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-32ff93c3-1a10-4423-bd7a-85769d7422ee"
+      ],
+      "mergedRouteIds": [
+        "openbeta-32ff93c3-1a10-4423-bd7a-85769d7422ee"
+      ]
+    },
+    {
+      "canonicalRouteId": "sparrow-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "cc1cb6a7-3434-4b1b-bd6b-1351098ec1da"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-cc1cb6a7-3434-4b1b-bd6b-1351098ec1da"
+      ],
+      "mergedRouteIds": [
+        "openbeta-cc1cb6a7-3434-4b1b-bd6b-1351098ec1da"
+      ]
+    },
+    {
+      "canonicalRouteId": "st-vitus-dance-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "34843d54-9bd5-4207-aa29-b056234dbc33"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-34843d54-9bd5-4207-aa29-b056234dbc33"
+      ],
+      "mergedRouteIds": [
+        "openbeta-34843d54-9bd5-4207-aa29-b056234dbc33"
+      ]
+    },
+    {
+      "canonicalRouteId": "vector-squamish",
+      "destinationSlug": "squamish-canada",
+      "sourceIdentities": [
+        {
+          "provider": "openbeta",
+          "externalId": "90220a92-bb35-4f28-b3fe-ff8a008d56fe"
+        }
+      ],
+      "slugAliases": [
+        "openbeta-90220a92-bb35-4f28-b3fe-ff8a008d56fe"
+      ],
+      "mergedRouteIds": [
+        "openbeta-90220a92-bb35-4f28-b3fe-ff8a008d56fe"
+      ]
+    }
+  ]
+}

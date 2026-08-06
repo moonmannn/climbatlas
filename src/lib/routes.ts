@@ -1,8 +1,13 @@
 import { destinations } from "@/data/destinations";
 import { applyRouteCatalogCleanup } from "@/data/route-catalog-cleanup";
 import openBetaPocSnapshot from "@/data/routes/imports/openbeta-poc.json";
+import { routeCoverage3BatchSnapshot } from "@/data/routes/route-coverage-3-batch-1";
 import { migrateLegacyRoute } from "@/lib/routes/migrate-legacy-route";
 import { adaptCanonicalRouteRecord } from "@/lib/routes/adapters/canonical-route-adapter";
+import {
+  dedupeNormalizedRouteSources,
+  normalizeRouteSource
+} from "@/lib/routes/adapters/normalize-route-source";
 import { routeExperienceByKey } from "@/data/route-experiences";
 import { applyRouteExperience } from "@/lib/routes/apply-route-experience";
 import type { Destination, RouteHighlight } from "@/types/destination";
@@ -39,6 +44,45 @@ let routeCatalogCache: RouteCatalogEntryWithDestination[] | undefined;
 const importedOpenBetaRoutes = (
   openBetaPocSnapshot as unknown as RouteImportSnapshot
 ).routes;
+const importedRouteCoverage3Routes = routeCoverage3BatchSnapshot.routes;
+const importedRoutes = [
+  ...importedOpenBetaRoutes,
+  ...importedRouteCoverage3Routes
+];
+const routeCoverage3SourceMerges = new Map(
+  routeCoverage3BatchSnapshot.sourceMerges.map((merge) => [
+    `${merge.destinationSlug}:${merge.canonicalRouteId}`,
+    merge
+  ])
+);
+
+function applyRouteCoverage3SourceMerge(route: RouteRecord): RouteRecord {
+  const merge = routeCoverage3SourceMerges.get(
+    `${route.destinationId}:${route.id}`
+  );
+
+  if (!merge) return route;
+
+  const externalResources = [
+    ...route.externalResources,
+    ...merge.externalResources
+  ].filter(
+    (resource, index, resources) =>
+      resources.findIndex(
+        (candidate) =>
+          candidate.url === resource.url && candidate.type === resource.type
+      ) === index
+  );
+
+  return {
+    ...route,
+    sourceRecords: dedupeNormalizedRouteSources([
+      ...route.sourceRecords,
+      ...merge.sourceRecords.map(normalizeRouteSource)
+    ]),
+    externalResources
+  };
+}
 
 export function getAllRoutesWithDestinations(): RouteWithDestination[] {
   return destinations.flatMap((destination) =>
@@ -67,21 +111,24 @@ export function getAllRouteCatalogEntries(): RouteCatalogEntryWithDestination[] 
         if (!resolved.route) return [];
 
         const entry = migrateLegacyRoute(destination.slug, resolved.route);
+        const mergedEntry = isRouteRecord(entry)
+          ? applyRouteCoverage3SourceMerge(entry)
+          : entry;
         const overlay = routeExperienceByKey.get(
-          `${destination.slug}:${entry.id}`
+          `${destination.slug}:${mergedEntry.id}`
         );
         return [{
           destination,
-          entry: isRouteRecord(entry)
-            ? applyRouteExperience(entry, overlay)
-            : entry
+          entry: isRouteRecord(mergedEntry)
+            ? applyRouteExperience(mergedEntry, overlay)
+            : mergedEntry
         }];
       })
     );
     const destinationsById = new Map(
       destinations.map((destination) => [destination.slug, destination])
     );
-    const missingImportedDestinations = importedOpenBetaRoutes.filter(
+    const missingImportedDestinations = importedRoutes.filter(
       (route) => !destinationsById.has(route.destinationId)
     );
 
@@ -94,8 +141,10 @@ export function getAllRouteCatalogEntries(): RouteCatalogEntryWithDestination[] 
       );
     }
 
-    const importedEntries = importedOpenBetaRoutes.flatMap((snapshotRoute) => {
-      const normalizedRoute = adaptCanonicalRouteRecord(snapshotRoute);
+    const importedEntries = importedRoutes.flatMap((snapshotRoute) => {
+      const normalizedRoute = applyRouteCoverage3SourceMerge(
+        adaptCanonicalRouteRecord(snapshotRoute)
+      );
       const route = applyRouteExperience(
         normalizedRoute,
         routeExperienceByKey.get(

@@ -1,0 +1,374 @@
+{
+  "batchId": "route-coverage-3-batch-1",
+  "changes": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "heart-and-sole-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "a4a63435-a38c-5b20-8416-553beec7256f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "stichter-quits-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "f5998213-abf4-546f-955a-98cf34ee981c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "popes-crack-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "8c428fbb-f29e-5353-847d-3c70c7ff3fb7",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "the-chief-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "ca803a90-d838-54f7-8682-8d18b196d387",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "walk-on-the-wild-side-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "253f0bbe-2299-5d04-8987-84b3a53adc4c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "dappled-mare-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "6d8fff9f-3ec0-5540-b022-f26db249e9ef",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "western-saga-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "99343a39-8918-5b86-8bc0-3d6aa85de0a0",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "illusion-dweller-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "f4848e4f-6701-567f-80d6-64c860f6bc2d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "clean-and-jerk-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "4334ac3e-5306-5ecd-aeeb-d82c4e34807d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "tossed-green-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "fe205dfc-ccf2-5ea6-bb65-ade7f91655c5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "bird-of-fire-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "e668fc75-0c90-5472-bba8-b8f74c6e504e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "room-to-shroom-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "96ef64a1-c767-5d10-895b-99ea62d9dfa8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "equinox-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "87d70fb2-7c5b-5068-9655-cf09e7db4c1c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "overhang-bypass-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "a048da00-1431-51ed-8bd0-e9292961b920",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "the-flake-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "c661fd9c-3228-57dd-b6c9-935b46132ce0",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "mental-physics-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "53e9fa83-4b0b-553b-b50d-12abfa4a09e9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "toe-jam-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "857f9fe2-3872-5e1f-b60f-4025d27a0298",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "the-flue-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "5a476bc9-ebdc-5b97-a7fb-5bf4f7d87916",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "so-high-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "735063ea-2a5b-5ad0-ab8b-b0685a3b4a00",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "planet-x-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "49c5ccce-7f44-54c4-90f0-cb8c80f8ace4",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "canonicalRouteId": "gunsmoke-joshua-tree",
+      "provider": "openbeta",
+      "externalId": "bf419782-b0bb-56a6-88db-8bda5bd372c2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "birds-of-prey-squamish",
+      "provider": "openbeta",
+      "externalId": "49933ddd-42a5-4a49-9a79-0cbccc90673a",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "klahanie-crack-squamish",
+      "provider": "openbeta",
+      "externalId": "68850add-b23b-4996-9d98-0e5a378419d5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "skywalker-squamish",
+      "provider": "openbeta",
+      "externalId": "d8740780-c758-46fc-9c0d-9da1e2c0abbd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "neat-and-cool-squamish",
+      "provider": "openbeta",
+      "externalId": "0500c1a0-78ad-4d10-9ae0-20049b7eb9f2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "flying-circus-squamish",
+      "provider": "openbeta",
+      "externalId": "acfc117b-d87e-4530-88ab-1cf6bb241a47",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "penny-lane-squamish",
+      "provider": "openbeta",
+      "externalId": "cf299c4d-eb1c-45aa-82a7-aaf0dcc4365e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "partners-in-crime-squamish",
+      "provider": "openbeta",
+      "externalId": "f60fd030-ed11-482c-8609-b24b77b49500",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "diedre-squamish",
+      "provider": "openbeta",
+      "externalId": "19f66a5e-9dcc-4c32-a859-b5fa25643d3e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "rock-on-squamish",
+      "provider": "openbeta",
+      "externalId": "31317a27-42c9-4620-a9f0-b487c19c807b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "snake-squamish",
+      "provider": "openbeta",
+      "externalId": "32ff93c3-1a10-4423-bd7a-85769d7422ee",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "st-vitus-dance-squamish",
+      "provider": "openbeta",
+      "externalId": "34843d54-9bd5-4207-aa29-b056234dbc33",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "vector-squamish",
+      "provider": "openbeta",
+      "externalId": "90220a92-bb35-4f28-b3fe-ff8a008d56fe",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "sparrow-squamish",
+      "provider": "openbeta",
+      "externalId": "cc1cb6a7-3434-4b1b-bd6b-1351098ec1da",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "calculus-crack-squamish",
+      "provider": "openbeta",
+      "externalId": "ec33dc36-e2ed-4b04-9784-7cccd45c1ff7",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "a-pitch-in-time-squamish",
+      "provider": "openbeta",
+      "externalId": "4b1bfaeb-32d0-4ed9-9342-f18fba779167",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "freeway-squamish",
+      "provider": "openbeta",
+      "externalId": "89059a13-7af4-4cc8-83bc-8201d89085cd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "rutabaga-squamish",
+      "provider": "openbeta",
+      "externalId": "43dcb689-8819-46d6-a38f-65ed0b4581d9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "apron-strings-squamish",
+      "provider": "openbeta",
+      "externalId": "b012348e-fec3-4cbb-9689-62094e6483d2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "exasperator-squamish",
+      "provider": "openbeta",
+      "externalId": "bad7e588-48ba-48c2-b88b-e0667e3fa798",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "canonicalRouteId": "borderline-squamish",
+      "provider": "openbeta",
+      "externalId": "72f82536-eca5-4563-9ec3-6d54f5d8c130",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    }
+  ]
+}

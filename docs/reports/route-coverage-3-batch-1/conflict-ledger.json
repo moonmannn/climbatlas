@@ -1,0 +1,5583 @@
+{
+  "batchId": "route-coverage-3-batch-1",
+  "unresolved": 0,
+  "conflicts": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "764ff23f-160b-5075-9e7a-ed8143b2e6c6",
+          "name": "Unknown",
+          "grade": "5.10+",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Central Joshua Tree",
+            "crag": "Echo Rock Area"
+          }
+        },
+        {
+          "externalId": "68098f9a-156a-5b35-b380-5165f7c40d16",
+          "name": "Unknown",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Central Joshua Tree",
+            "crag": "Echo Rock Area"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "0e628cf5-b1ef-50f1-bfaf-d33529878933",
+          "name": "Through the Looking Glass",
+          "grade": "5.10-",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Wonderland of Rocks",
+            "crag": "Wonderland North"
+          }
+        },
+        {
+          "externalId": "5e68cd83-26d7-5532-83ff-4f05a41d7733",
+          "name": "Through the Looking Glass",
+          "grade": "5.8+",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Wonderland of Rocks",
+            "crag": "Wonderland North"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6adda825-0b1c-5ca2-afdf-ab1c579356d7",
+          "name": "Unknown",
+          "grade": "5.10-",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Wonderland of Rocks",
+            "crag": "Wonderland North"
+          }
+        },
+        {
+          "externalId": "1d0cb095-b4f9-597c-a747-616e6dc9a97e",
+          "name": "Unknown",
+          "grade": "5.6",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Wonderland of Rocks",
+            "crag": "Wonderland North"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "1a5fb313-e301-5fbf-aee1-e4c28380cb18",
+          "name": "Unknown",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Central Joshua Tree",
+            "crag": "Sheep Pass Area"
+          }
+        },
+        {
+          "externalId": "a011cbb2-1f43-55e7-8671-e180f017af6c",
+          "name": "Unknown",
+          "grade": "5.8-",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Central Joshua Tree",
+            "crag": "Sheep Pass Area"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "74bd19a3-b726-550c-847d-da55f665b752",
+          "name": "Chesire For President",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Central Joshua Tree",
+            "crag": "Sheep Pass Area"
+          }
+        },
+        {
+          "externalId": "0cf21675-eee1-5448-8a75-39aa2762e16a",
+          "name": "Chesire For President",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Central Joshua Tree",
+            "crag": "Sheep Pass Area"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "cb34f13b-2588-5943-a6cc-79f848438d69",
+          "name": "Short but Sweet",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Hidden Valley Area",
+            "crag": "Real Hidden Valley"
+          }
+        },
+        {
+          "externalId": "be62906c-cf21-5d69-949b-2b742702498a",
+          "name": "Short But Sweet",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Hidden Valley Area",
+            "crag": "Real Hidden Valley"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "e7fb0666-9acf-5725-a1cf-b680d5fec0bc",
+          "name": "Chili Dog",
+          "grade": "5.6",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Lost Horse Area",
+            "crag": "Dairy Queen Wall"
+          }
+        },
+        {
+          "externalId": "db877b6a-0d81-553e-8a96-8536228ee6e6",
+          "name": "Chili Dog",
+          "grade": "5.10a",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Lost Horse Area",
+            "crag": "Dairy Queen Wall"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "2c59766f-b6d8-5ea5-aa68-38824fe51e44",
+          "name": "Buttress Buttress Golly",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        },
+        {
+          "externalId": "2c59766f-b6d8-5ea5-aa68-38824fe51e44",
+          "name": "Buttress Buttress Golly",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "4a123ff9-981a-54d9-834f-5ea9ca3b9253",
+          "name": "Bury the Pickle",
+          "grade": "5.10-",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        },
+        {
+          "externalId": "4a123ff9-981a-54d9-834f-5ea9ca3b9253",
+          "name": "Bury the Pickle",
+          "grade": "5.10-",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "ce4271e9-72a3-5f7f-8fbc-e22efdfb372d",
+          "name": "The Black Eel",
+          "grade": "5.9+",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        },
+        {
+          "externalId": "ce4271e9-72a3-5f7f-8fbc-e22efdfb372d",
+          "name": "The Black Eel",
+          "grade": "5.9+",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "db77abdb-8188-5cdd-99a3-7ea926ea3b4e",
+          "name": "Eat Me Volume 23",
+          "grade": "5.10-",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        },
+        {
+          "externalId": "db77abdb-8188-5cdd-99a3-7ea926ea3b4e",
+          "name": "Eat Me Volume 23",
+          "grade": "5.10-",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Queen Valley Area",
+            "crag": "Geology Tour Road"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "567a51b7-ff31-5b6e-9b87-55bb3bda9ddd",
+          "name": "Northwest Chimney",
+          "grade": "5.2",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Hidden Valley Area",
+            "crag": "Hidden Valley Campground"
+          }
+        },
+        {
+          "externalId": "859166b5-4085-55ed-907e-7f5d4ff4a982",
+          "name": "Northwest Chimney",
+          "grade": "5.4",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "Hidden Valley Area",
+            "crag": "Hidden Valley Campground"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "2f980830-b88d-5448-9c9f-21e4dfb3c728",
+          "name": "Problem B",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "b0f84a24-c50d-5473-8e40-f2dca906e1d6",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "9bfb0064-e81f-5a77-9da2-fbf3a424fa43",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "922e3a4c-20fd-5074-858e-57be94903812",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "4d232a69-2c37-5e80-9d39-d0cf50fb15d9",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "4ddf106f-3f03-5204-8c0a-ddad3559e03d",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d2ebd54b-a946-560c-a644-77180687def9",
+          "name": "Unnamed",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "c6a4e28a-ebe4-55fa-a2ce-a35ab16db53d",
+          "name": "Unnamed",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "1f859650-343e-56c2-9385-0dd37978b4a1",
+          "name": "Unnamed",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "b27be266-c710-5b49-8c50-c2874f8af3e1",
+          "name": "Unnamed",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        },
+        {
+          "externalId": "41ea4243-1ee3-54ee-921a-f56ee9a70014",
+          "name": "Unnamed",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Quail Springs Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "8fec9eec-7277-5503-a898-3cff24b058bd",
+          "name": "Problem A",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "e8c2dc12-c062-587a-95c1-c1e77e44f421",
+          "name": "Problem A",
+          "grade": "V4+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "08a7ff00-c28f-5e37-b25a-0af297215aa2",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "0059e6ff-c349-5122-afb2-d588c4525bb9",
+          "name": "Problem B",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "b354e2fb-37f0-53ab-a1e8-0576f1fbb5da",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "ed74da34-3fd3-5dfd-b064-7961127ab7aa",
+          "name": "West Face",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "06f7becb-04c3-58a0-948e-a4cbf83b26c2",
+          "name": "West Face",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5ee6063d-8622-5069-9da9-553c34f68a7a",
+          "name": "South Corner",
+          "grade": "V3+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "9f3f0d33-29e8-54e2-abeb-58238e2a5094",
+          "name": "South Corner",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a46d4ef2-1e72-562c-94f4-8af1f9f7ac88",
+          "name": "East Corner",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "5e069b79-55fb-57a7-b82b-73ad39501218",
+          "name": "East Corner",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d62cba8f-88b8-5bb4-919f-e9f5e4d35b36",
+          "name": "West Corner",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "2a289eef-3454-59c3-bd6d-661d1bbc3b0b",
+          "name": "West Corner",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "4d57ebc8-72ae-5cbe-a4c1-e63b27cd9573",
+          "name": "Unnamed V1",
+          "grade": "V1-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "a17bb9a3-1248-5ecc-bccb-0c2605470140",
+          "name": "Unnamed V1",
+          "grade": "V1-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "9fcc98dc-070e-52ee-a76b-d2f6b90a1582",
+          "name": "Unnamed V1",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5d053681-ce61-5ba2-8452-598cbee9a91d",
+          "name": "Unnamed V3",
+          "grade": "V2-3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "ed0a5b10-aeb2-5b4c-adb9-e9c17dfbc7e5",
+          "name": "Unnamed V3",
+          "grade": "V3-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6628c611-37c2-5f07-ad90-b388d8f82b05",
+          "name": "Unnamed Crack",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "d828221c-56f5-50c3-b69e-bf3d912231fa",
+          "name": "Unnamed Crack",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "e94c8e7d-553a-5af3-afbd-9bff21de0596",
+          "name": "Unnamed Crack",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "84d21b60-e93f-5f86-a425-1c06b52c8fcb",
+          "name": "Descent Route",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "093551e2-6aa4-527b-b7e5-113ec364d141",
+          "name": "Descent Route",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "0677a685-4a49-51e9-947e-8b3cd3232b58",
+          "name": "Descent Route",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "ecf6f4aa-2692-5a1a-abe8-f07d4a82edfa",
+          "name": "Descent Route",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "20e16edb-8bc2-52e3-9ec8-0c763efe9ff9",
+          "name": "Descent Route",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "897158b8-355b-5673-aa10-33d14c57b60c",
+          "name": "Right Arete",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "1af3c982-b2a5-5bb3-a044-edbf1e9931ed",
+          "name": "Right Arete",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "0271ccd6-d7bc-5dae-9157-a54def8da729",
+          "name": "South Face",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "b1788076-d7ea-5ec3-9a41-5511e355eb85",
+          "name": "South Face",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "95ded568-b029-5e2c-b122-0c07f33e4e6e",
+          "name": "Unnamed V0",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "bb3097ab-19fd-53dc-95b7-4a4c9799bd2b",
+          "name": "Unnamed V0",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "abb5b1a6-ba01-5d1f-a8e1-60a51130500b",
+          "name": "Unnamed",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "f0ed1d9b-dec9-5022-97b7-ab9309e2794a",
+          "name": "Unnamed",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "2cda5856-9ff0-5217-ace5-e1d13dcc6ee5",
+          "name": "Unnamed",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "35eccb14-482d-56f4-b2f5-58a0fdc08c00",
+          "name": "Unnamed",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "4ac7e17c-6853-57e1-9060-e9fd278be67b",
+          "name": "Unnamed",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "f475862e-7380-556e-8c8b-90e0e22464e7",
+          "name": "Unnamed",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "6d40e5ce-e904-560b-b111-56710e8a17fd",
+          "name": "Unnamed",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "285fe47e-99f2-527e-955d-d3fa217c3fa1",
+          "name": "Unnamed",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "23dc100c-62ba-526e-add6-9ee94d519762",
+          "name": "Unnamed",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "3238f146-f690-52b6-8fc8-687f81d04a7d",
+          "name": "Unnamed",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "7fbe3ade-04cf-58fa-9e90-8903a4216be4",
+          "name": "Unnamed",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "a42fecf8-0b13-5b20-906a-91fc4d0620bb",
+          "name": "Unnamed",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "b5a337aa-4278-5a93-b044-46c22501a08f",
+          "name": "Unnamed",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "d02a0a9e-0c7d-564f-9528-6cdf86976a9e",
+          "name": "Unnamed",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "e1298286-e757-5147-870e-e142ae608c64",
+          "name": "Hensel Face",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "e17443cc-44f1-5e96-bad3-3a23e08aa604",
+          "name": "Hensel Face",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Hidden Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "3c2e4c4b-c5a5-5446-8603-959ca8b78b5c",
+          "name": "Corner Problem",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        },
+        {
+          "externalId": "fcb3e629-64c0-58d3-881c-974f006af8be",
+          "name": "Corner Problem",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Central Joshua Tree Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "7668fb20-475a-5396-903b-acaa111f60a9",
+          "name": "Unknown",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Lost Horse Bouldering"
+          }
+        },
+        {
+          "externalId": "e015ac09-c000-50df-ae95-77c802933853",
+          "name": "Unknown",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Lost Horse Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "273a2910-4e4a-5bb3-8c4e-67b848c5d185",
+          "name": "Unnamed",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "75a7dc31-37ec-5e15-9346-132f454d2b21",
+          "name": "Unnamed",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "bfd7866d-5cca-568c-92a3-f47db0df6636",
+          "name": "Unnamed",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "89d2f7b7-695f-59b8-a761-a2d3871c4224",
+          "name": "Unnamed .8",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        },
+        {
+          "externalId": "29d2cced-e541-5fdd-ab33-061152b77e8d",
+          "name": "Unnamed .8",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Joshua Tree National Park",
+            "area": "*Joshua Tree Bouldering*",
+            "crag": "Queen Valley Area Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "f348d737-24e7-581b-95a0-b641f7f6e291",
+      "sourceName": "Touch and Go",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Central Joshua Tree",
+        "crag": "Echo Rock Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "touch-and-go-joshua-tree-metadata",
+          "name": "Touch and Go",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sectorName": "Echo Rock"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "3a5dce79-8b77-5f28-907d-5e20fc452b78",
+      "sourceName": "Planet X",
+      "sourceGrade": "5.8",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Central Joshua Tree",
+        "crag": "Sheep Pass Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "planet-x-joshua-tree",
+          "name": "Planet X",
+          "grade": "V6",
+          "climbingType": "boulder"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "51c8f5a9-6c31-5a57-86ba-f9e52b649c01",
+      "sourceName": "Right On",
+      "sourceGrade": "5.6",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Central Joshua Tree",
+        "crag": "Sheep Pass Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "right-on-joshua-tree",
+          "name": "Right On",
+          "grade": "5.5 metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "f39ba59b-c1e2-5dba-8e50-c3c1029f6124",
+      "sourceName": "Tumbling Rainbow",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Real Hidden Valley"
+      },
+      "existingCandidates": [
+        {
+          "id": "tumbling-rainbow-joshua-tree",
+          "name": "Tumbling Rainbow",
+          "grade": "5.10a metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "d8d732e2-e3dd-56c2-9d8b-3e9ef439cbac",
+      "sourceName": "Satanic Mechanic",
+      "sourceGrade": "5.12b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Real Hidden Valley"
+      },
+      "existingCandidates": [
+        {
+          "id": "satanic-mechanic-joshua-tree",
+          "name": "Satanic Mechanic",
+          "grade": "5.9 metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "ec4a92da-f77d-54cd-b7f6-86ea42ad7931",
+      "sourceName": "Sail Away",
+      "sourceGrade": "5.8-",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Real Hidden Valley"
+      },
+      "existingCandidates": [
+        {
+          "id": "sail-away-joshua-tree",
+          "name": "Sail Away",
+          "grade": "5.8",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "55b723c0-6068-5f51-987e-d3d712509975",
+      "sourceName": "Coarse and Buggy",
+      "sourceGrade": "5.11a/b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Roadside Rocks"
+      },
+      "existingCandidates": [
+        {
+          "id": "coarse-and-buggy-joshua-tree",
+          "name": "Coarse and Buggy",
+          "grade": "5.11a metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "4434dc61-b0cd-5316-acdb-6ab5ce610b40",
+      "sourceName": "Rubicon",
+      "sourceGrade": "5.10c",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Pinto Basin",
+        "crag": "Split Rocks"
+      },
+      "existingCandidates": [
+        {
+          "id": "rubicon-joshua-tree",
+          "name": "Rubicon",
+          "grade": "5.10a metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a787c7ef-4e2b-536b-aba8-636fb5b9f22c",
+      "sourceName": "The Eye",
+      "sourceGrade": "5.4",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Hidden Valley Campground"
+      },
+      "existingCandidates": [
+        {
+          "id": "the-eye-joshua-tree",
+          "name": "The Eye",
+          "grade": "5.3 metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "3c282cb0-f6c4-5097-a4e3-07861b539df5",
+      "sourceName": "Geronimo",
+      "sourceGrade": "5.7",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Hidden Valley Campground"
+      },
+      "existingCandidates": [
+        {
+          "id": "geronimo-joshua-tree",
+          "name": "Geronimo",
+          "grade": "5.6 metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "91f1c4bb-28e9-5b79-b6a2-bab4f6ba02dd",
+      "sourceName": "Sexy Grandma",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Hidden Valley Campground"
+      },
+      "existingCandidates": [
+        {
+          "id": "sexy-grandma-joshua-tree-metadata",
+          "name": "Sexy Grandma",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sectorName": "Hidden Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "97e9ac3d-6e4c-5451-be7f-fd0d13140ded",
+      "sourceName": "Double Cross",
+      "sourceGrade": "5.7+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Hidden Valley Campground"
+      },
+      "existingCandidates": [
+        {
+          "id": "double-cross-joshua-tree",
+          "name": "Double Cross",
+          "grade": "5.7",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "f6278d2e-8b01-5c7f-8f48-b0a81acdaba8",
+      "sourceName": "Dogleg",
+      "sourceGrade": "5.8+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "Hidden Valley Area",
+        "crag": "Hidden Valley Campground"
+      },
+      "existingCandidates": [
+        {
+          "id": "dogleg-joshua-tree",
+          "name": "Dogleg",
+          "grade": "5.8 metadata",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "90d4417a-7d9e-5371-9d7d-1fc13e2588cd",
+      "sourceName": "White Rastafarian",
+      "sourceGrade": "V2",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Joshua Tree National Park",
+        "area": "*Joshua Tree Bouldering*",
+        "crag": "Hidden Valley Area Bouldering"
+      },
+      "existingCandidates": [
+        {
+          "id": "white-rastafarian-joshua-tree",
+          "name": "White Rastafarian",
+          "grade": "V3",
+          "climbingType": "boulder"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "09921687-fc0c-4139-a59f-895645650c9a",
+          "name": "Long Time No See",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "Canada",
+            "stateProvince": "British Columbia",
+            "region": "Squamish",
+            "area": "Stawamus Chief",
+            "crag": "The Apron"
+          }
+        },
+        {
+          "externalId": "b68d3ed7-a1b5-4602-ba2e-418780f58981",
+          "name": "Long Time No See",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "Canada",
+            "stateProvince": "British Columbia",
+            "region": "Squamish",
+            "area": "Stawamus Chief",
+            "crag": "The Apron"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "3c2c9b07-b8e9-4a19-a508-b1b2e7a3d95f",
+      "sourceName": "The Ultimate Everything",
+      "sourceGrade": "5.10-",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Echelon Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "ultimate-everything-squamish",
+          "name": "The Ultimate Everything",
+          "grade": "5.10b",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a2ca63c0-50f4-4380-b640-1a8136a31bf0",
+      "sourceName": "Crescent Crack",
+      "sourceGrade": "5.10d",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Malamute",
+        "crag": "Lower (CLOSED)"
+      },
+      "existingCandidates": [
+        {
+          "id": "crescent-crack-squamish",
+          "name": "Crescent Crack",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "aa187857-0a38-433f-b814-d85e4e1c683d",
+      "sourceName": "Overly Hanging Out",
+      "sourceGrade": "5.11-",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Malamute",
+        "crag": "Overly Hanging Out"
+      },
+      "existingCandidates": [
+        {
+          "id": "overly-hanging-out-squamish",
+          "name": "Overly Hanging Out",
+          "grade": "5.11b",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "d7000f36-354d-4af6-8951-cb1bb93db7f5",
+      "sourceName": "High Mountain Woody",
+      "sourceGrade": "5.8+",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Malamute",
+        "crag": "Starr Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "high-mountain-woody-squamish",
+          "name": "High Mountain Woody",
+          "grade": "5.8+",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "867d95b3-cd7f-4d8f-a4e0-b9025ff0b225",
+      "sourceName": "Papoose One",
+      "sourceGrade": "5.10b",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Shannon Falls",
+        "crag": "The Papoose"
+      },
+      "existingCandidates": [
+        {
+          "id": "papoose-one-squamish",
+          "name": "Papoose One",
+          "grade": "5.10b",
+          "climbingType": "multi-pitch",
+          "sectorName": "Papoose"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "594fab29-7e7e-401a-bcc5-4936de2ca230",
+      "sourceName": "Kangaroo Corner",
+      "sourceGrade": "5.11a",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Neat and Cool"
+      },
+      "existingCandidates": [
+        {
+          "id": "kangaroo-corner-squamish",
+          "name": "Kangaroo Corner",
+          "grade": "5.11a",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "174d97cc-b365-48e5-99ea-2fdb036a0c15",
+      "sourceName": "Crime of the Century",
+      "sourceGrade": "5.11b/c",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Penny Lane"
+      },
+      "existingCandidates": [
+        {
+          "id": "crime-of-the-century-squamish",
+          "name": "Crime of the Century",
+          "grade": "5.11c",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "31ad8680-f563-4293-bfe7-416ee8f50748",
+      "sourceName": "Quarryman",
+      "sourceGrade": "5.8",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Penny Lane"
+      },
+      "existingCandidates": [
+        {
+          "id": "quarryman-squamish",
+          "name": "Quarryman",
+          "grade": "5.8",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "afcac2c0-83d8-4b20-8c34-93af414aabbb",
+      "sourceName": "Smoke Bluff Connection",
+      "sourceGrade": "5.10a",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "smoke-bluff-connection-squamish",
+          "name": "Smoke Bluff Connection",
+          "grade": "5.10-",
+          "climbingType": "multi-pitch",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "bf07f6ad-0bce-45ee-92e4-26e062361769",
+      "sourceName": "Laughing Crack",
+      "sourceGrade": "5.7",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "laughing-crack-squamish",
+          "name": "Laughing Crack",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "bfe1c694-5ec2-41c0-834f-ed3355b619b8",
+      "sourceName": "Mosquito",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "mosquito-squamish",
+          "name": "Mosquito",
+          "grade": "5.8",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "d9675edc-f5f8-43ea-b667-5e77ef396f67",
+      "sourceName": "Jabberwocky",
+      "sourceGrade": "5.10b",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "jabberwocky-squamish",
+          "name": "Jabberwocky",
+          "grade": "5.10c",
+          "climbingType": "trad",
+          "sectorName": "Squamish"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "c111919d-17a2-401c-ae67-42b9a261e564",
+      "sourceName": "The Zip",
+      "sourceGrade": "5.10a",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "The Smoke Bluffs",
+        "crag": "The Zip"
+      },
+      "existingCandidates": [
+        {
+          "id": "the-zip-squamish",
+          "name": "The Zip",
+          "grade": "5.10a",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a87a23a6-02c1-4083-82d7-3808657ee0cf",
+      "sourceName": "Boomstick Crack",
+      "sourceGrade": "5.6",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Apron"
+      },
+      "existingCandidates": [
+        {
+          "id": "boomstick-crack-squamish",
+          "name": "Boomstick Crack",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sectorName": "Squamish"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "c9bbe4b5-de5d-4344-9052-ba2845231ad8",
+      "sourceName": "Banana Peel",
+      "sourceGrade": "5.7",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Apron"
+      },
+      "existingCandidates": [
+        {
+          "id": "banana-peel-squamish",
+          "name": "Banana Peel",
+          "grade": "5.7",
+          "climbingType": "multi-pitch",
+          "sectorName": "South Apron"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "ffe0acd8-4310-4ea0-85e9-629ee735613e",
+      "sourceName": "Slot Machine",
+      "sourceGrade": "5.8+",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Bulletheads"
+      },
+      "existingCandidates": [
+        {
+          "id": "slot-machine-squamish",
+          "name": "Slot Machine",
+          "grade": "5.8+",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "83846fe9-c693-4eb7-aca8-9df05a8460d3",
+      "sourceName": "Bullethead East",
+      "sourceGrade": "5.10c",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Bulletheads"
+      },
+      "existingCandidates": [
+        {
+          "id": "bullethead-east-squamish",
+          "name": "Bullethead East",
+          "grade": "5.10a",
+          "climbingType": "trad",
+          "sectorName": "The Chief"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "1e8c4b38-5d8f-4baa-b7a0-b4f06d437c17",
+      "sourceName": "Rainy Day Dream Away",
+      "sourceGrade": "5.10c",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Bulletheads"
+      },
+      "existingCandidates": [
+        {
+          "id": "rainy-day-dream-away-squamish",
+          "name": "Rainy Day Dream Away",
+          "grade": "5.10c",
+          "climbingType": "trad",
+          "sectorName": "Squamish"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "8332c99f-bf8a-492b-85d7-be9b0cad0bf0",
+      "sourceName": "Cobra Crack",
+      "sourceGrade": "5.14",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Cirque of the Uncrackables"
+      },
+      "existingCandidates": [
+        {
+          "id": "cobra-crack-squamish",
+          "name": "Cobra Crack",
+          "grade": "5.14b",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "cf4059bd-6ab1-41a5-9513-6b74f59771ff",
+      "sourceName": "Europa",
+      "sourceGrade": "5.8",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Dihedrals"
+      },
+      "existingCandidates": [
+        {
+          "id": "europa-squamish",
+          "name": "Europa",
+          "grade": "5.11c",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "055ab831-e9f5-4a26-b7eb-5d5b9bd7881e",
+      "sourceName": "University Wall",
+      "sourceGrade": "5.12-",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "university-wall-squamish",
+          "name": "University Wall",
+          "grade": "5.12a",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "3e6b95ff-82f2-483f-ad57-1b43a17ecc79",
+      "sourceName": "The Grand Wall",
+      "sourceGrade": "5.11a",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "grand-wall-squamish",
+          "name": "The Grand Wall",
+          "grade": "5.11a",
+          "climbingType": "multi-pitch",
+          "sectorName": "The Chief"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e943146d-04dc-42bd-95b4-a9c4db2816e8",
+      "sourceName": "The Shadow",
+      "sourceGrade": "5.13-",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "the-shadow-squamish",
+          "name": "The Shadow",
+          "grade": "5.13a",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "20176c50-02c3-4341-94db-7f56c54f3540",
+      "sourceName": "Seasoned in the Sun",
+      "sourceGrade": "5.10-",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Base Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "seasoned-in-the-sun-squamish",
+          "name": "Seasoned in the Sun",
+          "grade": "5.10-",
+          "climbingType": "multi-pitch",
+          "sectorName": "The Chief"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "4ef9d8e2-e7c9-4afb-8541-a31cba7a7b2d",
+      "sourceName": "Merci Me",
+      "sourceGrade": "5.8",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Base Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "merci-me-squamish",
+          "name": "Merci Me",
+          "grade": "5.13a",
+          "climbingType": "sport",
+          "sectorName": "Squamish"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "3f7a5a5e-532a-4daa-9ef9-21e90c3203ac",
+      "sourceName": "Minor Threat",
+      "sourceGrade": "v6",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Boulders"
+      },
+      "existingCandidates": [
+        {
+          "id": "minor-threat-squamish",
+          "name": "Minor Threat",
+          "grade": "5.11c",
+          "climbingType": "sport",
+          "sectorName": "Squamish"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "0362b4de-8ca6-40c2-8903-6f394845fa28",
+      "sourceName": "Snake",
+      "sourceGrade": "v1",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "Grand Wall Boulders"
+      },
+      "existingCandidates": [
+        {
+          "id": "snake-squamish",
+          "name": "Snake",
+          "grade": "5.9",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "424747a9-386d-409f-b1d7-3547609cf823",
+      "sourceName": "Angel's Crest",
+      "sourceGrade": "5.10b",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Sheriff's Badge"
+      },
+      "existingCandidates": [
+        {
+          "id": "angels-crest-squamish",
+          "name": "Angel's Crest",
+          "grade": "5.10c",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "4786b1d2-3410-4f5d-8744-d5d6f71e21d1",
+      "sourceName": "Sunblessed",
+      "sourceGrade": "5.10b",
+      "sourceHierarchy": {
+        "country": "Canada",
+        "stateProvince": "British Columbia",
+        "region": "Squamish",
+        "area": "Stawamus Chief",
+        "crag": "The Solarium"
+      },
+      "existingCandidates": [
+        {
+          "id": "sunblessed-squamish",
+          "name": "Sunblessed",
+          "grade": "5.10b PG13",
+          "climbingType": "trad",
+          "sectorName": "Smoke Bluffs"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a158794d-7606-5bad-8853-16985a6f7757",
+          "name": "Unnamed",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "South Lake"
+          }
+        },
+        {
+          "externalId": "bbc5df43-f802-50f3-a8e9-7e293d311c4d",
+          "name": "Unnamed",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "South Lake"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5aa06285-0749-57ca-84e4-167882d1a9ff",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "e8a082c3-edbf-5761-bd5a-b4e6e07ba0a4",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "978cd9fe-05d6-56f3-bcd2-50ef86ee1e8b",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "b5e2d897-f3b2-5e4a-a790-243ab9e669f1",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "4d145708-cb9d-5555-a7ae-cbcb5bda5d84",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "8d64e084-d5f1-5df6-a886-2b4b54a4d306",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "bf11b6f6-c0fd-5ef8-adfd-f2ffa451abf3",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "45495463-9786-518c-8927-362ff03a8ca5",
+          "name": "Problem A",
+          "grade": "V1-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "3a3e8f76-a27c-5482-845c-36a1c3c01c06",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "111a9f21-ff3a-5697-866a-2b3ccf71c97c",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "7845ab4c-5138-5036-bf87-540c1de88c4d",
+          "name": "Problem A",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "cc00d770-26a0-54b7-b407-9f7cfc772781",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "3398c4f7-10e5-51fa-9764-4233140449c6",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "460080a2-ba9b-5dd0-938c-c0e01ee6a84b",
+          "name": "Problem A",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "b4e8ef94-5d1b-5e19-bebd-54d0f00c0789",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "accd4f1e-b285-5ad1-b266-2fb3c427602d",
+          "name": "Problem B",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "9b83f145-093b-5ada-b729-66427c4722ae",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "efab2f79-8532-5d71-a337-5879c69f32c1",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "66d94fca-e492-51b5-b727-8d61891479dd",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "055fd80b-2d6f-5d14-b7d0-384915a6d12e",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "bc10c03b-f9e1-5219-b361-8a8cf0e3d2b9",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "12a031fe-518e-5c13-bd6f-ca3488d38a19",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "f7ea5d47-cd17-58dd-bc04-5d41c958262f",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "0dcb0761-8762-5253-985c-ba9560420da8",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d5d7e752-cbb2-5c16-9da9-222581d757fe",
+          "name": "Problem C",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "acf12df3-6d2f-5912-80f3-7622f7b05f8b",
+          "name": "Problem C",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "70464244-4767-517c-80a9-cb0adcf95a66",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "43a3b70d-1c5e-5cf7-80fc-b371dba414c8",
+          "name": "Unknown",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "36971fe3-8f61-5278-a20c-f887e2be40af",
+          "name": "unknown",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "069f6ff3-0a4e-5ffc-9233-749e1cc6c5bb",
+          "name": "Problem A",
+          "grade": "V1-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8324964d-0369-537a-be92-75e58f1a9f30",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "72480c49-952c-50cf-ab2a-94be4d173211",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "5d8fe859-0a81-5ece-8b4a-23c2381be699",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "130ff9ae-3193-5702-82fb-916038274b5b",
+          "name": "Problem A",
+          "grade": "V2+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "eff20573-958b-56c8-9a8a-3c0ceb60a488",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "d25f8d6e-2fb6-51c2-8a50-c68311c9015c",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "56848c33-df6a-5abf-b461-968e1b638eb2",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "680459e7-08be-5743-b915-742cd0ded274",
+          "name": "Problem A",
+          "grade": "V3+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "865c2423-e5cd-5783-9bbd-7cd02b239d02",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8cf9dea3-efcf-59d6-aa19-0eff6d8e6ced",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2e1be4cb-c693-5c98-8fd1-831d4ad81cfd",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "e4d33c78-45f6-57b8-b145-fc028926e213",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "e8f37482-aa88-5252-95f7-adb7ca168f7c",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "088cd1c6-a99c-54ed-976f-d1846cbade02",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "aa696c2a-39da-50d6-93d9-dacaa35f77ef",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "482ef86a-eee1-5a1f-83d0-eb6456f492f3",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "a1455e0e-ea36-520d-b79a-19b8add102cc",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6bc3078c-352e-5e17-96f8-69a6c49ac775",
+          "name": "Problem A",
+          "grade": "V4+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "82da5e6c-c0d9-52a5-a508-e2f841bcc8ec",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2053db21-a2b8-5863-8784-e1efb53fc6d8",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8157e413-572c-5fcd-aa89-9976f88d077e",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "01dff814-d763-5c45-9b82-c92caa3c362c",
+          "name": "Problem A",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2ec56417-db8b-5cda-83b1-8b6dff8b0149",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "90786d23-7a29-5cf7-b60b-46fb00e165c6",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "9b6d525d-bd02-5638-afcb-745b468a48e4",
+          "name": "Problem A",
+          "grade": "V3+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8765677f-bc0f-5fc1-abbf-671cd8ad9530",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "7fe225b2-9ed5-5fec-835c-2531d167872d",
+          "name": "Problem A",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "25513137-a82d-5736-b977-00a3b24c3210",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "1f875f51-aad1-54b2-bf14-8b62521fc965",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "882153eb-320c-5f10-8045-a7533f05b624",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6cf3b28e-7a61-54e5-97fe-ccd9c5dc6094",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "226de143-c79b-5232-a6b5-1fb9db5e42c8",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "c5313bbf-0d26-5f8b-bbcf-4b8decfea63a",
+          "name": "Unknown",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "3577dd78-a676-57d3-b69c-6e4007aaaee9",
+          "name": "Unknown",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "7695638f-9e36-5af3-bdd1-978f238ca297",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "3592ba65-45f6-5f7e-83dc-946c51351897",
+          "name": "Problem B",
+          "grade": "V7",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "0eb880e6-8a03-545d-ad86-17b63a0d45be",
+          "name": "Problem B",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "303ebc32-3094-5f18-ae57-6a14d9352005",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "fd7d8c48-c98d-50fa-a50a-d97512b611d5",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "1d119955-3dad-5349-8a4b-90a845d0226b",
+          "name": "Problem B",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "c6b44c45-2a22-5924-9349-6d7659f17221",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "ba9cb9f8-e22b-5f45-9d4d-68b9b9df8fed",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "b223b19b-bfeb-5b83-8068-021a0c290f21",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a83691bf-365c-5975-bda5-0096931de112",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6d0b6574-0886-5168-8989-0a004cf58575",
+          "name": "Problem C",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "923a4f5d-1923-5602-87f9-207bcf12adff",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "1d0db154-7f22-544b-b83c-f5ffe03af2c5",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2bcdfc15-bfc2-5dbb-8c3f-f0dfb5d3a43b",
+          "name": "Problem C",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "a4d15c65-29f5-5fff-8c05-2a179fe1d21e",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "190ba7b5-66d1-52c6-8532-bfb4c812afae",
+          "name": "Kipper Snapper",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "54d1a9c9-80bf-5216-a0a0-c84c8a6fdd0a",
+          "name": "Kipper Snapper",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "dc77f445-8615-584c-aa24-b46e26920357",
+          "name": "Perulmutters pleasure",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "65757884-eb98-57c3-aa53-39c249b98e04",
+          "name": "Perulmutters pleasure",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "b1a2a012-7462-5ac3-a410-3583ed4fcc43",
+          "name": "Maximum Relaxum",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "5bd14596-3fa6-57e7-9d86-fdac9ff2a9e2",
+          "name": "Maximum Relaxum",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "383104e1-9df4-5a73-8bd8-83d571111b18",
+          "name": "Unnamed",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6531c5cd-313b-5624-98e0-9271c5ed545a",
+          "name": "Unnamed",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "15cfe970-588f-53eb-afe2-074bd7c37638",
+          "name": "Unnamed 1",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "81a7a3f5-b700-5781-94b7-e5b30e6bed88",
+          "name": "Unnamed 1",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "4eecf3fd-74da-578c-b5c4-ab7637f53028",
+          "name": "Unnamed",
+          "grade": "V7",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "f6e47158-0d22-58ae-b067-a8d6cc978a38",
+          "name": "Unnamed",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "2f0f9f5a-10ba-5f9f-864f-661708cf87ed",
+          "name": "Unnamed",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "acc406ca-6fd3-5190-a1a5-7cf948aae472",
+          "name": "Unnamed",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "74aa096e-f954-551c-9cd7-0c5091cc6779",
+          "name": "Regular Route",
+          "grade": "5.6",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "a499dac5-e440-5a6e-8962-c64be405415a",
+          "name": "Regular Route",
+          "grade": "5.5",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "218ab76e-3f98-542c-beb5-22de8599427d",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "ea1b2f78-0164-5bbd-b956-c51a2f0d51cd",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "bbf1eefe-b1e2-56be-bc35-961148b67d97",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "1b669de9-302e-52d7-8bce-b6490c46006b",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "0d21fde9-23f0-5e22-99d1-e67eb07f82bf",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "f67cf583-6cfc-5c92-8b39-5204379d5c39",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "5c0f7f9b-a4ab-5fec-818f-2583d444ff2c",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "5f5cfa2a-6817-5c52-a3e7-5bfb3dc8701e",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "508cbc3f-4251-566f-ba03-7c4be03c4fd2",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5c1f6167-0bca-5c19-a436-7b085f06d2b6",
+          "name": "Problem C",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "b5521d8b-0a38-5a12-856b-1159c2931446",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "c25991f1-5e73-567b-8524-a250fd165ddd",
+          "name": "Problem C",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "25caecc4-7a56-5a99-8fad-2ff9a5a83048",
+          "name": "Problem C",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "f0bffeda-4f7e-58e4-bb0d-37c227b43561",
+          "name": "Problem C",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "7bc062b9-f628-585f-b123-9305102f3463",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6b5fcfcd-fdde-5462-b70c-b44d0cb8f404",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "d48976c5-b5c3-52c4-90f5-3c7f70384704",
+          "name": "Problem B",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "bab69efa-0b4d-5211-a522-0d18fd0b983e",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "c6b4ba2c-9218-5f64-b53c-fd38ee261f68",
+          "name": "Problem B",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "2fa8303b-4f54-5772-bd80-3d6d157bb3fc",
+          "name": "Problem B",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "5c46d0d4-70e0-5cd3-8929-9fb05c6e367e",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "cb5f47be-badb-5e12-a03f-a10ebcfdc41b",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "db390616-8926-5592-ba46-3473a01054d2",
+          "name": "Unnamed V0",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "93612019-022f-59ef-8539-40729660fa4d",
+          "name": "Unnamed V0",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "1898cb9e-7a35-53e8-b4ca-011f83c8b470",
+          "name": "Problem E",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "fd375b33-18d4-5840-b400-8261be1cc840",
+          "name": "Problem E",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "bcc225dd-004c-5b92-9ddd-3f35f6da24e6",
+          "name": "Problem E",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "cf21bd81-e424-503e-8e34-e8595caad549",
+          "name": "Problem D",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "293115c1-7965-56ee-bc3d-84b6bb291851",
+          "name": "Problem D",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "d5291724-ecd0-5ab1-9af4-b9f64e15d9e8",
+          "name": "problem D",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5a0a32b6-f6e8-5e78-97d9-10de927e80b0",
+          "name": "Unnamed Arete",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "39367db4-60ff-5d41-bee2-0836fdb5d771",
+          "name": "Unnamed Arete",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "2b6df48c-127f-5e07-9584-88d6218e1ab9",
+          "name": "Rail Problem",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "158aa7d6-7b15-5e8c-bc20-de4048475f9a",
+          "name": "Rail Problem",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "79374c43-354a-515e-b7ca-f9f3fb141766",
+          "name": "Problem F",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "41295542-b06a-57a7-80ff-32519fe2cd54",
+          "name": "Problem F",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "9bdd82f0-88ae-5418-aaff-6fa786b84cf8",
+          "name": "Unnamed V4",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "7c1308d5-9b9f-5197-b104-dedada457b9a",
+          "name": "Unnamed V4",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "b7b7a9d7-9d07-53d7-b118-03b1f030af43",
+          "name": "Unnamed V3",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "ebdfa38a-be9c-5f60-a756-6291aa8837aa",
+          "name": "Unnamed V3",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "e62b7816-9bb1-51ab-8538-5fc0670fca0a",
+          "name": "Unnamed V2",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "284f9492-8ff4-52fa-9f6c-09a92c472657",
+          "name": "Unnamed V2",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "22aa6d66-711e-53db-b72b-dd4015b072fe",
+          "name": "Unnamed V2",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "01ff1465-3b2f-5f9f-8573-00702c11ab8e",
+          "name": "There Is No Party (Left Variation)",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "2e19eb7e-7c8d-5700-abfa-b7c13717607b",
+          "name": "There is no Party Left (variation)",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "ab397a52-d9ef-5bd4-9a16-cc3dba9d29c5",
+          "name": "Unnamed VB",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "4299d1f0-cf14-59d2-9b7f-c4ed82ff0bac",
+          "name": "Unnamed VB",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "499f0ee8-f61e-5260-8707-184e09d9a92a",
+          "name": "Backside Right",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "fd1826ba-cec7-5a02-9579-4fc60491421a",
+          "name": "Backside Right",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "513ef916-83ca-5e0c-902d-8b5a84900d12",
+          "name": "Right",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "730516cf-c114-527e-b050-14c764f37c50",
+          "name": "right",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "71e111c0-7bb9-4800-9109-24872c559748",
+          "name": "Right",
+          "grade": "v3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "72eef2b9-bbdf-575f-9f5a-daefcfa1e189",
+          "name": "Center Face",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "5099af09-dadb-56e6-b254-8c45076f4030",
+          "name": "Center Face",
+          "grade": "V2-3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "41e83a19-6c0e-5168-8ba1-746f97f1859c",
+          "name": "Center",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "0baab520-1fbe-5a6d-8952-608fe1eb02a8",
+          "name": "Center",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "33a7a7d1-b408-5bf5-a2ca-e15b57b41c0a",
+          "name": "Center",
+          "grade": "V6-7",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "f81d8a47-b454-5cb7-841d-d5e7b7a7e99c",
+          "name": "Arête Right",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "718a9834-4a51-5cab-9d1d-6041533126e0",
+          "name": "Arete Right",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "18e499c0-097b-507e-98ac-21493c7fa8de",
+          "name": "arete right",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "efe5da55-ce9d-527b-82c3-86946d22e946",
+          "name": "Campus problem",
+          "grade": "V5-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "8758534a-cd06-5e82-918e-d6633d8732d4",
+          "name": "Campus Problem",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5ee13f08-c688-5c6f-8bb5-5a76078824d3",
+          "name": "Hoist the Colors",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "cb71669c-9d40-5568-95d6-9b38799fa82b",
+          "name": "Hoist the Colors",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "8312b0c5-0dba-5d6b-aea5-2521100d9632",
+          "name": "Left",
+          "grade": "V2-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "c84142f5-3c46-58b8-9cef-b0a6411f9186",
+          "name": "left",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "e9f92f41-48bb-5cae-8af7-78965e80b3e2",
+          "name": "Left",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "7e878fc2-2416-5973-99ee-89e5b4732d39",
+          "name": "Left",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "e2fa52d4-a2b0-520a-a206-3303336ceff7",
+          "name": "left",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "06400114-2a9d-4a86-a701-7577472053ce",
+          "name": "Left",
+          "grade": "",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "35ac8321-ab86-4dae-9b41-17072368262b",
+          "name": "Left",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "fc7bf555-b413-5c59-a6e7-925824d8047c",
+          "name": "Crack",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "5c66d4f2-0e2c-58fb-9711-3850b714b8f9",
+          "name": "Crack",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6607b384-ab84-5aa9-a853-89c414f40b35",
+          "name": "Left Arête",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "46a91974-6639-53d0-9c8a-c15e9a12fc68",
+          "name": "Left Arête",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "047e6735-cd9f-5e73-96cd-660ae5866edb",
+          "name": "Left Arête",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "7875ca36-4f81-45be-b02c-768f0a8323dd",
+          "name": "Left Arete",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "be0753dc-7ff0-51ed-9f21-6d6e827b8180",
+          "name": "Backside Left",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "50bcb06a-58bd-568a-a75c-15e595d36c53",
+          "name": "Backside Left",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "11d3470c-dc59-541b-b3a8-841f2fb27d97",
+          "name": "Arete Left",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "148e4cd3-d184-5403-b774-626e6020f397",
+          "name": "arete left",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "1df78a46-4722-55de-a445-565c5c3004e6",
+          "name": "Left Face",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "f3dbe7a0-deaa-5fb4-8ff1-b133e1423c22",
+          "name": "Left Face",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "08f7592b-d3c4-5c01-b049-97ecb4761a70",
+          "name": "Left Left",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "b2c871de-7446-5c8b-aef7-f1138f36f9c2",
+          "name": "Left left",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "0f3c6ab6-230d-5109-9a29-3bc004337bb0",
+          "name": "Blunt Arete",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "331c1f48-118d-5c41-af23-f275a065d698",
+          "name": "Blunt Arête",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "17caae28-391f-5884-85a6-1126e34add28",
+          "name": "Right face",
+          "grade": "V2-3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "35e41ef2-6f74-4f4d-beff-2653c3bc8ad0",
+          "name": "Right Face",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "36573c14-8c49-5797-9a23-8d7b9871c2ac",
+          "name": "Right Arete",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "a8ab60bb-36ab-5442-b87c-06e2a7e56b25",
+          "name": "Right Arête",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "4d22517b-530e-5d7a-bb14-0d93414c904e",
+          "name": "Right Arete",
+          "grade": "V2-3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a59ce027-d91c-5125-b7be-ce3cc323d194",
+          "name": "Arête",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "3e7680e1-6deb-4b24-94cf-e61a24785d67",
+          "name": "Arete",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "2e4584e0-2ec9-58e9-a85d-6f9b86403e96",
+          "name": "Front",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "d775959b-da88-4a77-b63f-94736ce22d1e",
+          "name": "Front",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6d7d22ec-857d-521a-8b04-fd2813db7da9",
+          "name": "East Face",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "f13563de-4f20-5432-8306-1352d621891e",
+          "name": "East Face",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Red Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "04d921dd-f7b6-59fd-b6ce-ea0416ebbcba",
+          "name": "Number 5",
+          "grade": "5.12b",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Sandstone Quarry"
+          }
+        },
+        {
+          "externalId": "1a0b49c0-5616-5b66-86dc-754f68866890",
+          "name": "Number .5",
+          "grade": "5.12c",
+          "climbingType": "sport",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Nevada",
+            "region": "Southern Nevada",
+            "area": "Red Rocks",
+            "crag": "Sandstone Quarry"
+          }
+        }
+      ]
+    }
+  ]
+}

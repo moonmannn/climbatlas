@@ -29,7 +29,25 @@ const PREVIOUS_PUBLIC_COUNTS = {
 };
 
 const PREVIOUS_PUBLIC_TOTAL = 1107;
-const EXPECTED_PUBLIC_TOTAL = 1074;
+const REVIEWED_CLEANUP_TOTAL = 1074;
+const routeCoverage3Snapshot = JSON.parse(
+  fs.readFileSync(
+    path.join(
+      process.cwd(),
+      "src",
+      "data",
+      "routes",
+      "imports",
+      "route-coverage-3-batch-1.json"
+    ),
+    "utf8"
+  )
+);
+const importedCounts = routeCoverage3Snapshot.routes.reduce((counts, route) => {
+  counts[route.destinationId] = (counts[route.destinationId] ?? 0) + 1;
+  return counts;
+}, {});
+const EXPECTED_PUBLIC_TOTAL = REVIEWED_CLEANUP_TOTAL + routeCoverage3Snapshot.routes.length;
 const EXPECTED_PICKS = 40;
 
 const {
@@ -73,7 +91,7 @@ assert.equal(
 );
 assert.equal(
   PREVIOUS_PUBLIC_TOTAL - removalRules.length,
-  EXPECTED_PUBLIC_TOTAL,
+  REVIEWED_CLEANUP_TOTAL,
   "Every public route reduction must have one removal-ledger entry."
 );
 assert.equal(
@@ -95,17 +113,13 @@ const currentCounts = publicRoutes.reduce((counts, { destination }) => {
 }, new Map());
 
 const destinationMigration = destinations.map((destination) => {
-  const before = PREVIOUS_PUBLIC_COUNTS[destination.slug];
-  assert.notEqual(
-    before,
-    undefined,
-    `Missing approved baseline for ${destination.slug}.`
-  );
+  const before = PREVIOUS_PUBLIC_COUNTS[destination.slug] ?? 0;
   const removed = removalsByDestination.get(destination.slug) ?? 0;
+  const imported = importedCounts[destination.slug] ?? 0;
   const after = currentCounts.get(destination.slug) ?? 0;
   assert.equal(
     after,
-    before - removed,
+    before - removed + imported,
     `${destination.slug} route count changed without a matching ledger entry.`
   );
 
@@ -114,6 +128,7 @@ const destinationMigration = destinations.map((destination) => {
     destinationName: destination.name,
     before,
     removed,
+    imported,
     after,
     delta: after - before
   };
@@ -259,6 +274,8 @@ const report = {
   generatedAt: new Date().toISOString(),
   summary: {
     previousPublicRoutes: PREVIOUS_PUBLIC_TOTAL,
+    reviewedCleanupRoutes: REVIEWED_CLEANUP_TOTAL,
+    importedRouteCoverage3Routes: routeCoverage3Snapshot.routes.length,
     currentPublicRoutes: publicRoutes.length,
     explainedReduction: removalRules.length,
     catalogEntries: entries.length,
@@ -320,7 +337,7 @@ const report = {
 
 function markdownTable(rows) {
   return rows.map((row) =>
-    `| ${row.destinationName} | ${row.before} | ${row.removed} | ${row.after} | ${row.delta} |`
+    `| ${row.destinationName} | ${row.before} | ${row.removed} | ${row.imported} | ${row.after} | ${row.delta} |`
   ).join("\n");
 }
 
@@ -385,8 +402,9 @@ function conflictTable(rows) {
 
 const markdown = `# Legacy Route Index Cleanup\n\n` +
   `Generated: ${report.generatedAt}\n\n` +
-  `The reviewed public baseline changed from **${PREVIOUS_PUBLIC_TOTAL}** to **${publicRoutes.length}** routes. ` +
-  `All ${removalRules.length} removals are listed in the JSON migration ledger. Published Picks remain at **${publishedPicks.length}**.\n\n` +
+  `The legacy cleanup changed the reviewed public baseline from **${PREVIOUS_PUBLIC_TOTAL}** to **${REVIEWED_CLEANUP_TOTAL}** routes. ` +
+  `Route Coverage 3.0 then added **${routeCoverage3Snapshot.routes.length}** reviewed Indexed Routes, producing **${publicRoutes.length}** current public routes. ` +
+  `All ${removalRules.length} cleanup removals are listed in the JSON migration ledger. Published Picks remain at **${publishedPicks.length}**.\n\n` +
   `## Validation\n\n` +
   `- Duplicate candidates: ${audit.duplicateCandidates.length}\n` +
   `- Invalid public grades: ${invalidGrades.length}\n` +
@@ -395,8 +413,8 @@ const markdown = `# Legacy Route Index Cleanup\n\n` +
   `- Unresolved reviewed area/route identities: ${areaResolutionFailures.length}\n` +
   `- Recorded source conflicts: ${conflicts.length}\n\n` +
   `## Destination Counts\n\n` +
-  `| Destination | Before | Removed | After | Delta |\n` +
-  `| --- | ---: | ---: | ---: | ---: |\n` +
+  `| Destination | Before | Removed | RC3 imported | After | Delta |\n` +
+  `| --- | ---: | ---: | ---: | ---: | ---: |\n` +
   `${markdownTable(destinationMigration)}\n\n` +
   `## Removal Ledger\n\n` +
   `Every reduction from the previous public baseline appears below. Area indexes remain in the catalog but no longer render as routes. Aliases and hidden records no longer count as public routes.\n\n` +

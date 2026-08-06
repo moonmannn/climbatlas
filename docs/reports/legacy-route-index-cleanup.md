@@ -1,8 +1,8 @@
 # Legacy Route Index Cleanup
 
-Generated: 2026-07-21T10:53:56.678Z
+Generated: 2026-08-06T06:20:21.414Z
 
-The reviewed public baseline changed from **1107** to **1074** routes. All 33 removals are listed in the JSON migration ledger. Published Picks remain at **40**.
+The legacy cleanup changed the reviewed public baseline from **1107** to **1074** routes. Route Coverage 3.0 then added **394** reviewed Indexed Routes, producing **1468** current public routes. All 33 cleanup removals are listed in the JSON migration ledger. Published Picks remain at **40**.
 
 ## Validation
 
@@ -15,28 +15,30 @@ The reviewed public baseline changed from **1107** to **1074** routes. All 33 re
 
 ## Destination Counts
 
-| Destination | Before | Removed | After | Delta |
-| --- | ---: | ---: | ---: | ---: |
-| Yosemite | 128 | 1 | 127 | -1 |
-| Red River Gorge | 140 | 0 | 140 | 0 |
-| Joshua Tree | 42 | 0 | 42 | 0 |
-| Smith Rock | 109 | 0 | 109 | 0 |
-| Squamish | 64 | 0 | 64 | 0 |
-| El Potrero Chico | 40 | 0 | 40 | 0 |
-| Fontainebleau | 56 | 0 | 56 | 0 |
-| Chamonix | 40 | 0 | 40 | 0 |
-| Ceuse | 40 | 0 | 40 | 0 |
-| Kalymnos | 48 | 0 | 48 | 0 |
-| Dolomites | 40 | 0 | 40 | 0 |
-| Frankenjura | 40 | 0 | 40 | 0 |
-| Siurana | 40 | 0 | 40 | 0 |
-| Margalef | 40 | 0 | 40 | 0 |
-| Yangshuo | 40 | 0 | 40 | 0 |
-| Liming | 40 | 9 | 31 | -9 |
-| Long Dong | 40 | 0 | 40 | 0 |
-| Railay / Tonsai | 40 | 2 | 38 | -2 |
-| Grampians | 40 | 21 | 19 | -21 |
-| Rocklands | 40 | 0 | 40 | 0 |
+| Destination | Before | Removed | RC3 imported | After | Delta |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Yosemite | 128 | 1 | 0 | 127 | -1 |
+| Red River Gorge | 140 | 0 | 0 | 140 | 0 |
+| Joshua Tree | 42 | 0 | 108 | 150 | 108 |
+| Smith Rock | 109 | 0 | 0 | 109 | 0 |
+| Squamish | 64 | 0 | 86 | 150 | 86 |
+| El Potrero Chico | 40 | 0 | 0 | 40 | 0 |
+| Fontainebleau | 56 | 0 | 0 | 56 | 0 |
+| Chamonix | 40 | 0 | 0 | 40 | 0 |
+| Ceuse | 40 | 0 | 0 | 40 | 0 |
+| Kalymnos | 48 | 0 | 0 | 48 | 0 |
+| Dolomites | 40 | 0 | 0 | 40 | 0 |
+| Frankenjura | 40 | 0 | 0 | 40 | 0 |
+| Siurana | 40 | 0 | 0 | 40 | 0 |
+| Margalef | 40 | 0 | 0 | 40 | 0 |
+| Yangshuo | 40 | 0 | 0 | 40 | 0 |
+| Liming | 40 | 9 | 0 | 31 | -9 |
+| Long Dong | 40 | 0 | 0 | 40 | 0 |
+| Railay / Tonsai | 40 | 2 | 0 | 38 | -2 |
+| Grampians | 40 | 21 | 0 | 19 | -21 |
+| Rocklands | 40 | 0 | 0 | 40 | 0 |
+| Bishop Area | 0 | 0 | 100 | 100 | 100 |
+| Red Rock Canyon | 0 | 0 | 100 | 100 | 100 |
 
 ## Removal Ledger
 

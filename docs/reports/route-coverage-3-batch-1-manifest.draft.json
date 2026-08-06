@@ -1,0 +1,127 @@
+{
+  "manifestStatus": "draft-blocked",
+  "batchId": "route-coverage-3-batch-1",
+  "importerVersion": "rc3-parquet-importer/0.1.0-draft",
+  "sourceProvider": "openbeta",
+  "sourceRelease": "v2026-08-02",
+  "sourceAssetUrl": "https://github.com/OpenBeta/parquet-exporter/releases/download/v2026-08-02/openbeta-climbs.parquet",
+  "sourceSha256": null,
+  "sourceSchemaSha256": "8c69c81b2c1d82f91e19f155fc5ce63976c6452b1238658bb4bada17f4d680d4",
+  "sourceCommitSha": "a5674424209294a69c5c86b247a78e3590927055",
+  "sourceRowCount": 231865,
+  "sourceCheckedAt": "2026-08-05",
+  "destinationScopes": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Joshua Tree National Park"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-joshua-tree-draft-1",
+      "reviewStatus": "pending-parquet-path-audit"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "acceptedPathTuples": [
+        {
+          "country": "Canada",
+          "stateProvince": "British Columbia",
+          "region": "Squamish"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-squamish-draft-1",
+      "reviewStatus": "pending-parquet-path-audit"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Sierra Eastside",
+          "area": "Bishop Area"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mammoth"
+        },
+        {
+          "area": "Alabama Hills"
+        },
+        {
+          "area": "Whitney Portal"
+        },
+        {
+          "area": "Rock Creek"
+        },
+        {
+          "area": "Lee Vining"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-bishop-area-draft-1",
+      "reviewStatus": "pending-parquet-path-and-product-boundary-audit"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Nevada",
+          "region": "Southern Nevada",
+          "area": "Red Rocks"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mt Charleston"
+        },
+        {
+          "area": "Valley of Fire"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc3-b1-red-rock-canyon-draft-1",
+      "reviewStatus": "pending-parquet-path-and-product-boundary-audit"
+    }
+  ],
+  "destinationTargets": {
+    "joshua-tree-usa": {
+      "minimum": 140,
+      "target": 150,
+      "maximum": 160
+    },
+    "squamish-canada": {
+      "minimum": 140,
+      "target": 150,
+      "maximum": 160
+    },
+    "bishop-area-usa": {
+      "minimum": 90,
+      "target": 100,
+      "maximum": 110
+    },
+    "red-rock-canyon-usa": {
+      "minimum": 90,
+      "target": 100,
+      "maximum": 110
+    }
+  },
+  "releaseBlockers": [
+    "The Parquet asset SHA-256 has not been independently calculated in this workspace.",
+    "Accepted and excluded path tuples have not yet been enumerated from the locked Parquet snapshot.",
+    "Production My Atlas route references have not been audited with an authenticated administrative query."
+  ]
+}
