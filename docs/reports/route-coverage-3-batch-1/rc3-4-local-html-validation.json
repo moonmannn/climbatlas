@@ -1,0 +1,1066 @@
+{
+  "schemaVersion": 1,
+  "batchId": "route-coverage-3-batch-1",
+  "generatedAt": "2026-08-06T07:32:05.872Z",
+  "baseUrl": "http://localhost:3100",
+  "totalSamples": 80,
+  "destinationReports": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "candidateCount": 108,
+      "sampleCount": 20,
+      "representedAreas": [
+        "*Joshua Tree Bouldering*",
+        "Central Joshua Tree"
+      ],
+      "representedSectors": [
+        "Barker Dam Area",
+        "Central Joshua Tree Bouldering",
+        "Echo Rock Area",
+        "Hidden Valley Area Bouldering",
+        "Lost Horse Bouldering",
+        "Queen Valley Area Bouldering",
+        "Sheep Pass Area"
+      ],
+      "representedTypes": [
+        "boulder",
+        "sport",
+        "top-rope",
+        "trad"
+      ],
+      "representedGradeSystems": [
+        "v-scale",
+        "yds"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "candidateCount": 86,
+      "sampleCount": 20,
+      "representedAreas": [
+        "Alice Lake",
+        "Coho Park",
+        "Comic Rocks",
+        "Covid Crag",
+        "Gondola Area",
+        "Gonzales Creek",
+        "Highlander",
+        "Mamquam FSR"
+      ],
+      "representedSectors": [
+        "Art Exhibit",
+        "Fantastic Mr. Fox Boulders",
+        "Gonzales Creek Wall",
+        "Isengard",
+        "Main Face",
+        "Mycology Rock",
+        "Parkland",
+        "Roadside Slab",
+        "Rufus Wall",
+        "Ultraviolet Cliff"
+      ],
+      "representedTypes": [
+        "boulder",
+        "sport",
+        "trad"
+      ],
+      "representedGradeSystems": [
+        "v-scale",
+        "yds"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "candidateCount": 100,
+      "sampleCount": 20,
+      "representedAreas": [
+        "Bitterbrush Campground",
+        "Buttermilk Country",
+        "Cardinal Pinnacle",
+        "Druid Stones",
+        "Elderberry Canyon"
+      ],
+      "representedSectors": [],
+      "representedTypes": [
+        "boulder",
+        "sport",
+        "top-rope",
+        "trad"
+      ],
+      "representedGradeSystems": [
+        "v-scale",
+        "yds"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "candidateCount": 100,
+      "sampleCount": 20,
+      "representedAreas": [
+        "Black Velvet Canyon",
+        "Calico Basin",
+        "Calico Peaks",
+        "First Creek Canyon",
+        "First Pullout (Calico I)"
+      ],
+      "representedSectors": [],
+      "representedTypes": [
+        "boulder",
+        "sport",
+        "top-rope",
+        "trad"
+      ],
+      "representedGradeSystems": [
+        "v-scale",
+        "yds"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-0abe98a8-479b-5005-8c57-2c1fba568075",
+      "name": "Mouse in the House",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-0abe98a8-479b-5005-8c57-2c1fba568075",
+      "originalGrade": "V6",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Central Joshua Tree Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/0abe98a8-479b-5005-8c57-2c1fba568075/mouse-in-the-house"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-2597d3c8-fd47-5ffd-a7c9-263ded61e9b4",
+      "name": "The Love Machine",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-2597d3c8-fd47-5ffd-a7c9-263ded61e9b4",
+      "originalGrade": "V10",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Central Joshua Tree Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/2597d3c8-fd47-5ffd-a7c9-263ded61e9b4/the-love-machine"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-05db8881-1c4d-5934-8541-4649706b4628",
+      "name": "Mighty Dog",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-05db8881-1c4d-5934-8541-4649706b4628",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Hidden Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/05db8881-1c4d-5934-8541-4649706b4628/mighty-dog"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-30cb8c0d-027f-56df-b0f6-d175a44a3475",
+      "name": "So High (sit)",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-30cb8c0d-027f-56df-b0f6-d175a44a3475",
+      "originalGrade": "V11",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Hidden Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/30cb8c0d-027f-56df-b0f6-d175a44a3475/so-high-sit"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-02ffe75d-6da9-5f3a-b3fe-d6e94384c6b2",
+      "name": "Kirkatron",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-02ffe75d-6da9-5f3a-b3fe-d6e94384c6b2",
+      "originalGrade": "V5",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Hidden Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/02ffe75d-6da9-5f3a-b3fe-d6e94384c6b2/kirkatron"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-f3eaef89-0105-551d-9246-bb0b91e8abb9",
+      "name": "Pinhead",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-f3eaef89-0105-551d-9246-bb0b91e8abb9",
+      "originalGrade": "5.8+",
+      "gradeSystem": "yds",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Hidden Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/f3eaef89-0105-551d-9246-bb0b91e8abb9/pinhead"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-00836e77-9766-51c6-af88-581416a63169",
+      "name": "The Laying of Hands",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-00836e77-9766-51c6-af88-581416a63169",
+      "originalGrade": "V0",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Lost Horse Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/00836e77-9766-51c6-af88-581416a63169/the-laying-of-hands"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-04eb5356-da36-5652-bf72-50bdd1169249",
+      "name": "Pinched Loaf",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-04eb5356-da36-5652-bf72-50bdd1169249",
+      "originalGrade": "V6",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Queen Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/04eb5356-da36-5652-bf72-50bdd1169249/pinched-loaf"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-259438cd-c261-5bf9-91f5-d4c5cb78c8f3",
+      "name": "Roasted and Raw",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-259438cd-c261-5bf9-91f5-d4c5cb78c8f3",
+      "originalGrade": "V12",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Queen Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/259438cd-c261-5bf9-91f5-d4c5cb78c8f3/roasted-and-raw"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-0226fb48-d57c-58e7-9729-0d70002b801e",
+      "name": "The Dark Crystal",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-0226fb48-d57c-58e7-9729-0d70002b801e",
+      "originalGrade": "V4",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Queen Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/0226fb48-d57c-58e7-9729-0d70002b801e/the-dark-crystal"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-002f09f8-a68c-5586-88c3-871b49cde552",
+      "name": "V1 Center",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-002f09f8-a68c-5586-88c3-871b49cde552",
+      "originalGrade": "V1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "*Joshua Tree Bouldering*",
+      "sectorName": "Queen Valley Area Bouldering",
+      "exactSourceUrl": "https://openbeta.io/climb/002f09f8-a68c-5586-88c3-871b49cde552/v1-center"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-004275c9-7249-5612-afeb-790041ea9566",
+      "name": "Soft Cell",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-004275c9-7249-5612-afeb-790041ea9566",
+      "originalGrade": "5.10d",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Barker Dam Area",
+      "exactSourceUrl": "https://openbeta.io/climb/004275c9-7249-5612-afeb-790041ea9566/soft-cell"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-01d843b8-dd23-5d78-a034-4dd483128268",
+      "name": "Nickelodea (aka Burke on Auto)",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-01d843b8-dd23-5d78-a034-4dd483128268",
+      "originalGrade": "5.10b/c",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Echo Rock Area",
+      "exactSourceUrl": "https://openbeta.io/climb/01d843b8-dd23-5d78-a034-4dd483128268/nickelodea-aka-burke-on-auto"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-08498eb7-e27a-5fce-b040-4266b981898d",
+      "name": "Proof of Life",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-08498eb7-e27a-5fce-b040-4266b981898d",
+      "originalGrade": "5.7",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Echo Rock Area",
+      "exactSourceUrl": "https://openbeta.io/climb/08498eb7-e27a-5fce-b040-4266b981898d/proof-of-life"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-07bb9b4c-1213-50dd-9f85-cee75a16aa17",
+      "name": "The Hurricane Crack",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-07bb9b4c-1213-50dd-9f85-cee75a16aa17",
+      "originalGrade": "5.13c",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Echo Rock Area",
+      "exactSourceUrl": "https://openbeta.io/climb/07bb9b4c-1213-50dd-9f85-cee75a16aa17/the-hurricane-crack"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-002c183d-c697-52d8-b165-f83d4b41588b",
+      "name": "Nuts are for Men Without Balls",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-002c183d-c697-52d8-b165-f83d4b41588b",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Echo Rock Area",
+      "exactSourceUrl": "https://openbeta.io/climb/002c183d-c697-52d8-b165-f83d4b41588b/nuts-are-for-men-without-balls"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-6a8c05cc-79a5-5ef4-bb40-b18c0f9f595a",
+      "name": "John Cena",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-6a8c05cc-79a5-5ef4-bb40-b18c0f9f595a",
+      "originalGrade": "V0",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Sheep Pass Area",
+      "exactSourceUrl": "https://openbeta.io/climb/6a8c05cc-79a5-5ef4-bb40-b18c0f9f595a/john-cena"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-190d313a-be92-529a-9cae-e4a6bd1d199a",
+      "name": "Red Bull",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-190d313a-be92-529a-9cae-e4a6bd1d199a",
+      "originalGrade": "5.11b",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Sheep Pass Area",
+      "exactSourceUrl": "https://openbeta.io/climb/190d313a-be92-529a-9cae-e4a6bd1d199a/red-bull"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-03647ebd-3c2e-5f4b-9e28-629bd47811cb",
+      "name": "Blinds Man Bluff",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-03647ebd-3c2e-5f4b-9e28-629bd47811cb",
+      "originalGrade": "5.13a",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Sheep Pass Area",
+      "exactSourceUrl": "https://openbeta.io/climb/03647ebd-3c2e-5f4b-9e28-629bd47811cb/blinds-man-bluff"
+    },
+    {
+      "destinationSlug": "joshua-tree-usa",
+      "routeId": "openbeta-0b8c36e9-d4c9-5abc-ad71-70675be0ae5f",
+      "name": "Mr. Wizard",
+      "path": "/destinations/joshua-tree-usa/routes/openbeta-0b8c36e9-d4c9-5abc-ad71-70675be0ae5f",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "Central Joshua Tree",
+      "sectorName": "Sheep Pass Area",
+      "exactSourceUrl": "https://openbeta.io/climb/0b8c36e9-d4c9-5abc-ad71-70675be0ae5f/mr-wizard"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-0be18b78-d814-41bd-9ec8-bcfd6605c8aa",
+      "name": "Playing with Fire",
+      "path": "/destinations/squamish-canada/routes/openbeta-0be18b78-d814-41bd-9ec8-bcfd6605c8aa",
+      "originalGrade": "5.12+",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Alice Lake",
+      "sectorName": "Art Exhibit",
+      "exactSourceUrl": "https://openbeta.io/climb/0be18b78-d814-41bd-9ec8-bcfd6605c8aa/playing-with-fire"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-0eeb97e3-ddb2-4fea-a840-1063a37146fb",
+      "name": "Fatal Fantasies",
+      "path": "/destinations/squamish-canada/routes/openbeta-0eeb97e3-ddb2-4fea-a840-1063a37146fb",
+      "originalGrade": "5.10+",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Alice Lake",
+      "sectorName": "Art Exhibit",
+      "exactSourceUrl": "https://openbeta.io/climb/0eeb97e3-ddb2-4fea-a840-1063a37146fb/fatal-fantasies"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-0eb4c2d9-30fe-461f-a3e5-05b676095227",
+      "name": "Mycotopia direct",
+      "path": "/destinations/squamish-canada/routes/openbeta-0eb4c2d9-30fe-461f-a3e5-05b676095227",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Alice Lake",
+      "sectorName": "Mycology Rock",
+      "exactSourceUrl": "https://openbeta.io/climb/0eb4c2d9-30fe-461f-a3e5-05b676095227/mycotopia-direct"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-159a7221-4d2b-4265-9e85-8a17811aaf9d",
+      "name": "Mycotopia",
+      "path": "/destinations/squamish-canada/routes/openbeta-159a7221-4d2b-4265-9e85-8a17811aaf9d",
+      "originalGrade": "5.10b",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Alice Lake",
+      "sectorName": "Mycology Rock",
+      "exactSourceUrl": "https://openbeta.io/climb/159a7221-4d2b-4265-9e85-8a17811aaf9d/mycotopia"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-027391b9-50fa-4705-a18c-7282344d0173",
+      "name": "Ministry of Sound",
+      "path": "/destinations/squamish-canada/routes/openbeta-027391b9-50fa-4705-a18c-7282344d0173",
+      "originalGrade": "v1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Coho Park",
+      "exactSourceUrl": "https://openbeta.io/climb/027391b9-50fa-4705-a18c-7282344d0173/ministry-of-sound"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-77fc88ca-b09a-4889-8e4a-2fee69020ef4",
+      "name": "Peanuts",
+      "path": "/destinations/squamish-canada/routes/openbeta-77fc88ca-b09a-4889-8e4a-2fee69020ef4",
+      "originalGrade": "5.10c",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Comic Rocks",
+      "sectorName": "Main Face",
+      "exactSourceUrl": "https://openbeta.io/climb/77fc88ca-b09a-4889-8e4a-2fee69020ef4/peanuts"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-19f8f122-b5b4-4034-beb1-c72fcf4c8af8",
+      "name": "Faith",
+      "path": "/destinations/squamish-canada/routes/openbeta-19f8f122-b5b4-4034-beb1-c72fcf4c8af8",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Comic Rocks",
+      "sectorName": "Roadside Slab",
+      "exactSourceUrl": "https://openbeta.io/climb/19f8f122-b5b4-4034-beb1-c72fcf4c8af8/faith"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-814be08e-ec20-4011-9bde-85c8460ff7b5",
+      "name": "Rufus",
+      "path": "/destinations/squamish-canada/routes/openbeta-814be08e-ec20-4011-9bde-85c8460ff7b5",
+      "originalGrade": "5.11d",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Comic Rocks",
+      "sectorName": "Rufus Wall",
+      "exactSourceUrl": "https://openbeta.io/climb/814be08e-ec20-4011-9bde-85c8460ff7b5/rufus"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-1c4ddb08-6876-4997-b0d5-0f18fdbec9ff",
+      "name": "Lost Art of Trash Talk",
+      "path": "/destinations/squamish-canada/routes/openbeta-1c4ddb08-6876-4997-b0d5-0f18fdbec9ff",
+      "originalGrade": "5.13+",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Comic Rocks",
+      "sectorName": "Rufus Wall",
+      "exactSourceUrl": "https://openbeta.io/climb/1c4ddb08-6876-4997-b0d5-0f18fdbec9ff/lost-art-of-trash-talk"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-7a74bb4b-3e6a-435a-abb1-0d8924467fba",
+      "name": "Unnamed 5.9",
+      "path": "/destinations/squamish-canada/routes/openbeta-7a74bb4b-3e6a-435a-abb1-0d8924467fba",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Covid Crag",
+      "exactSourceUrl": "https://openbeta.io/climb/7a74bb4b-3e6a-435a-abb1-0d8924467fba/unnamed-59"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-7042ea52-3b6c-4a55-ae8f-ce7fb4e8035c",
+      "name": "Unnamed 5.8",
+      "path": "/destinations/squamish-canada/routes/openbeta-7042ea52-3b6c-4a55-ae8f-ce7fb4e8035c",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Covid Crag",
+      "exactSourceUrl": "https://openbeta.io/climb/7042ea52-3b6c-4a55-ae8f-ce7fb4e8035c/unnamed-58"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-1d8f1242-4420-4b91-a721-17ab8792f7f7",
+      "name": "Thugs to Pooftas",
+      "path": "/destinations/squamish-canada/routes/openbeta-1d8f1242-4420-4b91-a721-17ab8792f7f7",
+      "originalGrade": "5.11a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Gondola Area",
+      "sectorName": "Ultraviolet Cliff",
+      "exactSourceUrl": "https://openbeta.io/climb/1d8f1242-4420-4b91-a721-17ab8792f7f7/thugs-to-pooftas"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-3b462161-730f-43bc-8e5f-58f2ebc2f376",
+      "name": "Nancy's",
+      "path": "/destinations/squamish-canada/routes/openbeta-3b462161-730f-43bc-8e5f-58f2ebc2f376",
+      "originalGrade": "5.10a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Gondola Area",
+      "sectorName": "Ultraviolet Cliff",
+      "exactSourceUrl": "https://openbeta.io/climb/3b462161-730f-43bc-8e5f-58f2ebc2f376/nancys"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-3e072480-ef14-4f3b-8df3-495b6fbdf1d7",
+      "name": "Fantastic Mr. Fox",
+      "path": "/destinations/squamish-canada/routes/openbeta-3e072480-ef14-4f3b-8df3-495b6fbdf1d7",
+      "originalGrade": "v7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Gonzales Creek",
+      "sectorName": "Fantastic Mr. Fox Boulders",
+      "exactSourceUrl": "https://openbeta.io/climb/3e072480-ef14-4f3b-8df3-495b6fbdf1d7/fantastic-mr-fox"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-1794ce26-43db-4a0e-bd48-a65fd174b218",
+      "name": "The Game of Life",
+      "path": "/destinations/squamish-canada/routes/openbeta-1794ce26-43db-4a0e-bd48-a65fd174b218",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Gonzales Creek",
+      "sectorName": "Gonzales Creek Wall",
+      "exactSourceUrl": "https://openbeta.io/climb/1794ce26-43db-4a0e-bd48-a65fd174b218/the-game-of-life"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-0fd36e17-bb67-4b57-9adf-ee629b044a9c",
+      "name": "March of the Ents",
+      "path": "/destinations/squamish-canada/routes/openbeta-0fd36e17-bb67-4b57-9adf-ee629b044a9c",
+      "originalGrade": "5.12b",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Gonzales Creek",
+      "sectorName": "Isengard",
+      "exactSourceUrl": "https://openbeta.io/climb/0fd36e17-bb67-4b57-9adf-ee629b044a9c/march-of-the-ents"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-0a15c633-0c79-44a5-870d-1325a7cd0e91",
+      "name": "the Precious",
+      "path": "/destinations/squamish-canada/routes/openbeta-0a15c633-0c79-44a5-870d-1325a7cd0e91",
+      "originalGrade": "5.10c",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Gonzales Creek",
+      "sectorName": "Isengard",
+      "exactSourceUrl": "https://openbeta.io/climb/0a15c633-0c79-44a5-870d-1325a7cd0e91/the-precious"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-800e19fc-4c7f-4d47-82ac-95566e1f2045",
+      "name": "Bloodline",
+      "path": "/destinations/squamish-canada/routes/openbeta-800e19fc-4c7f-4d47-82ac-95566e1f2045",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Highlander",
+      "exactSourceUrl": "https://openbeta.io/climb/800e19fc-4c7f-4d47-82ac-95566e1f2045/bloodline"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-0aa6d4fa-df3e-413c-90c5-07a6b3a1964f",
+      "name": "Crossroads",
+      "path": "/destinations/squamish-canada/routes/openbeta-0aa6d4fa-df3e-413c-90c5-07a6b3a1964f",
+      "originalGrade": "5.10d",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Highlander",
+      "exactSourceUrl": "https://openbeta.io/climb/0aa6d4fa-df3e-413c-90c5-07a6b3a1964f/crossroads"
+    },
+    {
+      "destinationSlug": "squamish-canada",
+      "routeId": "openbeta-29936758-71a6-4ddd-8fc6-1c396a34fef1",
+      "name": "**OPEN PROJECT**",
+      "path": "/destinations/squamish-canada/routes/openbeta-29936758-71a6-4ddd-8fc6-1c396a34fef1",
+      "originalGrade": "5.0",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Mamquam FSR",
+      "sectorName": "Parkland",
+      "exactSourceUrl": "https://openbeta.io/climb/29936758-71a6-4ddd-8fc6-1c396a34fef1/open-project"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-b832dda1-b0ce-59c7-b82a-57eade95f7df",
+      "name": "There's A Thorn In My Ass",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-b832dda1-b0ce-59c7-b82a-57eade95f7df",
+      "originalGrade": "5.1",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Bitterbrush Campground",
+      "exactSourceUrl": "https://openbeta.io/climb/b832dda1-b0ce-59c7-b82a-57eade95f7df/theres-a-thorn-in-my-ass"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-00158122-1e0a-5d75-b9df-89086538c646",
+      "name": "Girls of Whiskey Creek",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-00158122-1e0a-5d75-b9df-89086538c646",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/00158122-1e0a-5d75-b9df-89086538c646/girls-of-whiskey-creek"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-03a39aaf-62d0-500c-8389-801acaceb05a",
+      "name": "A Maze of Death",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-03a39aaf-62d0-500c-8389-801acaceb05a",
+      "originalGrade": "V12",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/03a39aaf-62d0-500c-8389-801acaceb05a/a-maze-of-death"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-05089959-2099-5d01-b68e-aec70952076f",
+      "name": "No Sense, No Reason",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-05089959-2099-5d01-b68e-aec70952076f",
+      "originalGrade": "V4",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/05089959-2099-5d01-b68e-aec70952076f/no-sense-no-reason"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-02dfe63a-0f60-568b-bc99-7359a9116ee1",
+      "name": "Good Morning Sunshine",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-02dfe63a-0f60-568b-bc99-7359a9116ee1",
+      "originalGrade": "V1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/02dfe63a-0f60-568b-bc99-7359a9116ee1/good-morning-sunshine"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-365caad8-f35e-5543-a06b-871cb516d70c",
+      "name": "Abandonment Issues",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-365caad8-f35e-5543-a06b-871cb516d70c",
+      "originalGrade": "5.11a",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/365caad8-f35e-5543-a06b-871cb516d70c/abandonment-issues"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-0b58eb19-a23c-536c-a069-54e9d64487e7",
+      "name": "Because Its There",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-0b58eb19-a23c-536c-a069-54e9d64487e7",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/0b58eb19-a23c-536c-a069-54e9d64487e7/because-its-there"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-8309eb31-9550-59d6-aed6-dd4a2e11e6c2",
+      "name": "Cayenne Pepper",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-8309eb31-9550-59d6-aed6-dd4a2e11e6c2",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/8309eb31-9550-59d6-aed6-dd4a2e11e6c2/cayenne-pepper"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-bb02a97b-b7d3-595f-9c0c-cd458341989d",
+      "name": "Dreamscape",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-bb02a97b-b7d3-595f-9c0c-cd458341989d",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/bb02a97b-b7d3-595f-9c0c-cd458341989d/dreamscape"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-4469205d-f840-5fd2-b988-b6043ec510ca",
+      "name": "Dreamland",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-4469205d-f840-5fd2-b988-b6043ec510ca",
+      "originalGrade": "5.10d",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/4469205d-f840-5fd2-b988-b6043ec510ca/dreamland"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-d278eb3f-d8db-50ea-99a4-6f56298cf834",
+      "name": "Redline",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-d278eb3f-d8db-50ea-99a4-6f56298cf834",
+      "originalGrade": "5.11d",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Cardinal Pinnacle",
+      "exactSourceUrl": "https://openbeta.io/climb/d278eb3f-d8db-50ea-99a4-6f56298cf834/redline"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-29ee254c-39b3-544a-ad9d-447d73641437",
+      "name": "Passeriformes",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-29ee254c-39b3-544a-ad9d-447d73641437",
+      "originalGrade": "5.11a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Cardinal Pinnacle",
+      "exactSourceUrl": "https://openbeta.io/climb/29ee254c-39b3-544a-ad9d-447d73641437/passeriformes"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-323f6e9c-e983-5ef7-b2c8-adbcece11f70",
+      "name": "West Face",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-323f6e9c-e983-5ef7-b2c8-adbcece11f70",
+      "originalGrade": "5.10a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Cardinal Pinnacle",
+      "exactSourceUrl": "https://openbeta.io/climb/323f6e9c-e983-5ef7-b2c8-adbcece11f70/west-face"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-157e3037-b56d-58b7-af1f-014a7a40d8e7",
+      "name": "Regular Route",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-157e3037-b56d-58b7-af1f-014a7a40d8e7",
+      "originalGrade": "5.6",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Cardinal Pinnacle",
+      "exactSourceUrl": "https://openbeta.io/climb/157e3037-b56d-58b7-af1f-014a7a40d8e7/regular-route"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-03d79da0-77d1-551b-965d-26afb3f4547b",
+      "name": "Golden Child",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-03d79da0-77d1-551b-965d-26afb3f4547b",
+      "originalGrade": "V9",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Druid Stones",
+      "exactSourceUrl": "https://openbeta.io/climb/03d79da0-77d1-551b-965d-26afb3f4547b/golden-child"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-5dba697b-930d-54e0-a22b-9d3d51ea6487",
+      "name": "Denton's Remorse",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-5dba697b-930d-54e0-a22b-9d3d51ea6487",
+      "originalGrade": "V10",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Druid Stones",
+      "exactSourceUrl": "https://openbeta.io/climb/5dba697b-930d-54e0-a22b-9d3d51ea6487/dentons-remorse"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-01ab5368-5a2c-5fc1-b652-2067b67fea06",
+      "name": "Pretty in Pink - Left Variation",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-01ab5368-5a2c-5fc1-b652-2067b67fea06",
+      "originalGrade": "V4",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Druid Stones",
+      "exactSourceUrl": "https://openbeta.io/climb/01ab5368-5a2c-5fc1-b652-2067b67fea06/pretty-in-pink-left-variation"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-0b382d8c-ffd9-5785-bbf3-69ea0bacf7d5",
+      "name": "The Ice Shirt",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-0b382d8c-ffd9-5785-bbf3-69ea0bacf7d5",
+      "originalGrade": "V2",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Druid Stones",
+      "exactSourceUrl": "https://openbeta.io/climb/0b382d8c-ffd9-5785-bbf3-69ea0bacf7d5/the-ice-shirt"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-30788d04-1aae-565f-a152-08ca6f08bec4",
+      "name": "Respect Your Elder's Berries",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-30788d04-1aae-565f-a152-08ca6f08bec4",
+      "originalGrade": "5.10+",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Elderberry Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/30788d04-1aae-565f-a152-08ca6f08bec4/respect-your-elders-berries"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-87a088cb-a471-5f55-98de-5070ea6c3ade",
+      "name": "Unkillable",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-87a088cb-a471-5f55-98de-5070ea6c3ade",
+      "originalGrade": "5.12c",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Elderberry Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/87a088cb-a471-5f55-98de-5070ea6c3ade/unkillable"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-034cafb2-cba6-5825-a5e0-9199d934f783",
+      "name": "Stick to the Plot",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-034cafb2-cba6-5825-a5e0-9199d934f783",
+      "originalGrade": "V2",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/034cafb2-cba6-5825-a5e0-9199d934f783/stick-to-the-plot"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-c96f13fa-7ed0-521a-9d38-ad94f860f1a4",
+      "name": "Matzoland",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-c96f13fa-7ed0-521a-9d38-ad94f860f1a4",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/c96f13fa-7ed0-521a-9d38-ad94f860f1a4/matzoland"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-42e1e574-39b3-5b56-980e-dda240aaad42",
+      "name": "Sand Felipe",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-42e1e574-39b3-5b56-980e-dda240aaad42",
+      "originalGrade": "5.10-",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/42e1e574-39b3-5b56-980e-dda240aaad42/sand-felipe"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-0b439079-c0ed-504b-9d0f-52a9a04f5307",
+      "name": "Mustang Corner",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-0b439079-c0ed-504b-9d0f-52a9a04f5307",
+      "originalGrade": "5.11d",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/0b439079-c0ed-504b-9d0f-52a9a04f5307/mustang-corner"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-23da8112-8a16-56f3-9d3c-8901e7bf9b7e",
+      "name": "The Shuffle",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-23da8112-8a16-56f3-9d3c-8901e7bf9b7e",
+      "originalGrade": "5.13a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/23da8112-8a16-56f3-9d3c-8901e7bf9b7e/the-shuffle"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-00340e8b-75b1-5ff0-bc53-42f8fdeb46a4",
+      "name": "Unikitty",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-00340e8b-75b1-5ff0-bc53-42f8fdeb46a4",
+      "originalGrade": "5.11a",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Calico Basin",
+      "exactSourceUrl": "https://openbeta.io/climb/00340e8b-75b1-5ff0-bc53-42f8fdeb46a4/unikitty"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-01db047e-40c6-5c4c-9a4a-4ea24c415e56",
+      "name": "Hook Line and Sinker",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-01db047e-40c6-5c4c-9a4a-4ea24c415e56",
+      "originalGrade": "5.13a/b",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Calico Basin",
+      "exactSourceUrl": "https://openbeta.io/climb/01db047e-40c6-5c4c-9a4a-4ea24c415e56/hook-line-and-sinker"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-01a5c401-39f2-51ec-b386-360c6f5d76db",
+      "name": "Wayward Son",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-01a5c401-39f2-51ec-b386-360c6f5d76db",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Calico Basin",
+      "exactSourceUrl": "https://openbeta.io/climb/01a5c401-39f2-51ec-b386-360c6f5d76db/wayward-son"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-03e7d7d5-62d1-5c1f-8b06-30b7623900eb",
+      "name": "A Man in Every Pot",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-03e7d7d5-62d1-5c1f-8b06-30b7623900eb",
+      "originalGrade": "5.8+",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "Calico Basin",
+      "exactSourceUrl": "https://openbeta.io/climb/03e7d7d5-62d1-5c1f-8b06-30b7623900eb/a-man-in-every-pot"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-4f525999-c231-5e9e-a531-712bcf9ab8a1",
+      "name": "Roman Meil",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-4f525999-c231-5e9e-a531-712bcf9ab8a1",
+      "originalGrade": "5.11b",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "Calico Basin",
+      "exactSourceUrl": "https://openbeta.io/climb/4f525999-c231-5e9e-a531-712bcf9ab8a1/roman-meil"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-074de0d5-a36d-537c-a1fe-c38ca4cc4bd2",
+      "name": "Fly From Soup to Nuts",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-074de0d5-a36d-537c-a1fe-c38ca4cc4bd2",
+      "originalGrade": "5.9+",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "Calico Basin",
+      "exactSourceUrl": "https://openbeta.io/climb/074de0d5-a36d-537c-a1fe-c38ca4cc4bd2/fly-from-soup-to-nuts"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-102d4fe6-bc16-5c8e-a20b-6201d384c4a2",
+      "name": "Red Cap Ridge",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-102d4fe6-bc16-5c8e-a20b-6201d384c4a2",
+      "originalGrade": "5.4",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Calico Peaks",
+      "exactSourceUrl": "https://openbeta.io/climb/102d4fe6-bc16-5c8e-a20b-6201d384c4a2/red-cap-ridge"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-767fa5dc-85c0-5759-87bf-89c111d7b79f",
+      "name": "Frank's Right Foot Stinks",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-767fa5dc-85c0-5759-87bf-89c111d7b79f",
+      "originalGrade": "5.10a",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "First Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/767fa5dc-85c0-5759-87bf-89c111d7b79f/franks-right-foot-stinks"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-65a36d9f-2f38-59db-bb1b-369a9354d401",
+      "name": "Unnamed Top Rope",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-65a36d9f-2f38-59db-bb1b-369a9354d401",
+      "originalGrade": "5.8+",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "First Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/65a36d9f-2f38-59db-bb1b-369a9354d401/unnamed-top-rope"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-364c79a8-6155-5409-ae4f-8003e29b22aa",
+      "name": "Sunny Side Girl",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-364c79a8-6155-5409-ae4f-8003e29b22aa",
+      "originalGrade": "5.11a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "First Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/364c79a8-6155-5409-ae4f-8003e29b22aa/sunny-side-girl"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-01084af8-debe-5b90-a625-305ea7c82bce",
+      "name": "Relapse Prevention",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-01084af8-debe-5b90-a625-305ea7c82bce",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "First Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/01084af8-debe-5b90-a625-305ea7c82bce/relapse-prevention"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-0a5a48fc-15cb-5391-ba1b-b04eb396dbfb",
+      "name": "Spearmint Rhino",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-0a5a48fc-15cb-5391-ba1b-b04eb396dbfb",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "First Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/0a5a48fc-15cb-5391-ba1b-b04eb396dbfb/spearmint-rhino"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-002f39d4-7161-566a-a7cb-6fd4b1ffdd3b",
+      "name": "Insecure Delusions",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-002f39d4-7161-566a-a7cb-6fd4b1ffdd3b",
+      "originalGrade": "5.12a",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "First Pullout (Calico I)",
+      "exactSourceUrl": "https://openbeta.io/climb/002f39d4-7161-566a-a7cb-6fd4b1ffdd3b/insecure-delusions"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-06577731-3915-43fb-a764-693f1ef7cf85",
+      "name": "Climbing on Broken Choss",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-06577731-3915-43fb-a764-693f1ef7cf85",
+      "originalGrade": "5.10b",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "First Pullout (Calico I)",
+      "exactSourceUrl": "https://openbeta.io/climb/06577731-3915-43fb-a764-693f1ef7cf85/climbing-on-broken-choss"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-00e557db-84fe-5535-87c3-6c5a5841754e",
+      "name": "Reverse Osmosis",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-00e557db-84fe-5535-87c3-6c5a5841754e",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "sport",
+      "areaName": "First Pullout (Calico I)",
+      "exactSourceUrl": "https://openbeta.io/climb/00e557db-84fe-5535-87c3-6c5a5841754e/reverse-osmosis"
+    }
+  ],
+  "httpValidation": {
+    "checked": 80,
+    "passed": 80,
+    "failed": 0,
+    "aliasRedirectsChecked": 10
+  }
+}

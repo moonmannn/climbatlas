@@ -19,6 +19,15 @@ const baseUrl =
   baseUrlArgument >= 0
     ? process.argv[baseUrlArgument + 1]?.replace(/\/$/, "")
     : undefined;
+const reportNameArgument = process.argv.indexOf("--report-name");
+const reportName =
+  reportNameArgument >= 0
+    ? process.argv[reportNameArgument + 1]
+    : "rc3-4-preview-samples.json";
+
+if (!reportName || !/^[a-z0-9][a-z0-9.-]*\.json$/i.test(reportName)) {
+  throw new Error("--report-name must be a simple JSON filename.");
+}
 
 function readJson(file) {
   return JSON.parse(readFileSync(file, "utf8"));
@@ -236,7 +245,7 @@ const report = {
 const outputDirectory = path.join(root, "docs", "reports", batchId);
 mkdirSync(outputDirectory, { recursive: true });
 writeFileSync(
-  path.join(outputDirectory, "rc3-4-preview-samples.json"),
+  path.join(outputDirectory, reportName),
   `${JSON.stringify(report, null, 2)}\n`,
   "utf8"
 );
@@ -246,4 +255,4 @@ console.log(`Sampled routes: ${samples.length}`);
 console.log(`Destinations: ${destinationReports.length}`);
 console.log(`HTTP pages checked: ${httpResults.length}`);
 console.log(`Alias redirects checked: ${report.httpValidation.aliasRedirectsChecked}`);
-console.log(`Report: docs/reports/${batchId}/rc3-4-preview-samples.json`);
+console.log(`Report: docs/reports/${batchId}/${reportName}`);
