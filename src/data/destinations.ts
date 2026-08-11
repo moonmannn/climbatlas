@@ -5486,7 +5486,7 @@ export const destinations: Destination[] = [
         images: [],
         editorialTips: [
           "Hard sport classics often reward repeated calm attempts more than frantic burns.",
-          "Keep source-backed history separate from any personal route plan."
+          "Keep documented route history separate from any personal route plan."
         ],
         communityStatus: "coming-soon"
       },
@@ -10998,10 +10998,10 @@ export const destinations: Destination[] = [
     difficultyRange: "YDS and V Scale routes indexed",
     beginnerFriendly: false,
     description:
-      "A southeast Utah climbing area whose current ClimbAtlas index is centered on traditional crack routes across named Indian Creek walls, with a smaller number of other source-backed records. Use Route Explorer to compare grade and wall, then check current BLM access and raptor-avoidance notices before travelling.",
+      "A southeast Utah climbing area whose current ClimbAtlas index is centered on traditional crack routes across named Indian Creek walls, with a smaller number of other records linked to traceable sources. Use Route Explorer to compare grade and wall, then check current BLM access and raptor-avoidance notices before travelling.",
     localizedContent: {
       description: {
-        en: "A southeast Utah climbing area whose current ClimbAtlas index is centered on traditional crack routes across named Indian Creek walls, with a smaller number of other source-backed records. Use Route Explorer to compare grade and wall, then check current BLM access and raptor-avoidance notices before travelling.",
+        en: "A southeast Utah climbing area whose current ClimbAtlas index is centered on traditional crack routes across named Indian Creek walls, with a smaller number of other records linked to traceable sources. Use Route Explorer to compare grade and wall, then check current BLM access and raptor-avoidance notices before travelling.",
         zh: "这是犹他州东南部的攀岩区域。ClimbAtlas 当前的线路索引以 Indian Creek 各命名岩壁上的传统裂缝线路为主，也包含少量有来源支持的其他线路记录。你可以在线路目录中按难度和岩壁筛选；出发前请查看 BLM 最新的通行与猛禽保护避让通知。"
       }
     },
