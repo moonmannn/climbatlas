@@ -7,11 +7,27 @@ import { loadRouteProject } from "../load-route-project.mjs";
 import { readJson, writeJson } from "./shared.mjs";
 
 const root = process.cwd();
+const manifestArgument = process.argv.indexOf("--manifest");
+const manifestPath =
+  manifestArgument >= 0
+    ? path.resolve(root, process.argv[manifestArgument + 1])
+    : path.join(
+        root,
+        "src",
+        "data",
+        "routes",
+        "manifests",
+        "route-coverage-3-batch-1.json"
+      );
+if (manifestArgument >= 0 && !process.argv[manifestArgument + 1]) {
+  throw new Error("--manifest requires a file path.");
+}
+const manifest = readJson(manifestPath);
 const outputArgument = process.argv.indexOf("--output-dir");
 const outputDirectory =
   outputArgument >= 0
     ? path.resolve(root, process.argv[outputArgument + 1])
-    : path.join(root, "outputs", "route-coverage-3-batch-1");
+    : path.join(root, "outputs", manifest.batchId);
 const requireRemote = process.argv.includes("--require-remote");
 const referenceSnapshotArgument = process.argv.indexOf("--reference-snapshot");
 const referenceSnapshotPath =

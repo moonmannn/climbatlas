@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
+import { destinationDnaProfilesBySlug } from "@/data/destinationDnaProfiles";
 import {
   dnaDimensionLabels,
   getDestinationDnaMatches
@@ -16,6 +17,8 @@ const ui = {
     title: "How well does this place fit you?",
     emptyBody:
       "Complete Climbing DNA to see how this destination matches your preferred movement, atmosphere, commitment, and travel style.",
+    unavailableBody:
+      "This destination does not have an editorially reviewed DNA profile yet. No match percentage is shown until that review is complete.",
     cta: "Discover My Climbing DNA",
     yourMatch: "Your DNA preference match",
     why: "Why you match",
@@ -29,6 +32,7 @@ const ui = {
     eyebrow: "DNA 偏好匹配",
     title: "这个地方与你有多匹配？",
     emptyBody: "完成 Climbing DNA 测试，看看这个目的地与你偏好的动作风格、岩场氛围、投入程度和旅行方式有多契合。",
+    unavailableBody: "这个目的地的 DNA 偏好画像尚未完成编辑审核。在审核完成前，ClimbAtlas 不会显示推测的匹配百分比。",
     cta: "发现我的攀岩 DNA",
     yourMatch: "你的 DNA 偏好匹配",
     why: "为什么匹配",
@@ -54,6 +58,9 @@ export function DestinationDnaMatch({
   const { locale } = useLanguage();
   const [scores, setScores] = useState<DnaVector | null>(null);
   const text = ui[locale];
+  const hasReviewedProfile = Boolean(
+    destinationDnaProfilesBySlug[destinationSlug]
+  );
 
   useEffect(() => {
     setScores(loadDnaProfile()?.scores ?? null);
@@ -124,6 +131,12 @@ export function DestinationDnaMatch({
                 </p>
               </div>
             </div>
+          </div>
+        ) : scores && !hasReviewedProfile ? (
+          <div className="border-l-2 border-terracotta/55 pl-6">
+            <p className="max-w-2xl text-lg leading-8 text-charcoal/65">
+              {text.unavailableBody}
+            </p>
           </div>
         ) : (
           <div className="border-l-2 border-terracotta/55 pl-6">

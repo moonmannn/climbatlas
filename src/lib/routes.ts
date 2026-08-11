@@ -2,6 +2,7 @@ import { destinations } from "@/data/destinations";
 import { applyRouteCatalogCleanup } from "@/data/route-catalog-cleanup";
 import openBetaPocSnapshot from "@/data/routes/imports/openbeta-poc.json";
 import { routeCoverage3BatchSnapshot } from "@/data/routes/route-coverage-3-batch-1";
+import { routeCoverage3Batch2Snapshot } from "@/data/routes/route-coverage-3-batch-2";
 import { migrateLegacyRoute } from "@/lib/routes/migrate-legacy-route";
 import { adaptCanonicalRouteRecord } from "@/lib/routes/adapters/canonical-route-adapter";
 import {
@@ -41,31 +42,63 @@ export type RouteAreaIndexWithDestination = {
 };
 
 let routeCatalogCache: RouteCatalogEntryWithDestination[] | undefined;
+const excludedRouteCoverageBatch =
+  process.env.CLIMBATLAS_EXCLUDE_ROUTE_COVERAGE_BATCH;
+const activeRouteCoverageSnapshots = [
+  routeCoverage3BatchSnapshot,
+  routeCoverage3Batch2Snapshot
+].filter((snapshot) => snapshot.batchId !== excludedRouteCoverageBatch);
 const importedOpenBetaRoutes = (
   openBetaPocSnapshot as unknown as RouteImportSnapshot
 ).routes;
-const importedRouteCoverage3Routes = routeCoverage3BatchSnapshot.routes;
 const importedRoutes = [
   ...importedOpenBetaRoutes,
-  ...importedRouteCoverage3Routes
+  ...activeRouteCoverageSnapshots.flatMap((snapshot) => snapshot.routes)
 ];
-const routeCoverage3SourceMerges = new Map(
-  routeCoverage3BatchSnapshot.sourceMerges.map((merge) => [
-    `${merge.destinationSlug}:${merge.canonicalRouteId}`,
+const routeCoverage3SourceMerges = new Map<string, Array<
+  (typeof routeCoverage3BatchSnapshot.sourceMerges)[number]
+>>();
+
+for (const merge of activeRouteCoverageSnapshots.flatMap(
+  (snapshot) => snapshot.sourceMerges
+)) {
+  const key = `${merge.destinationSlug}:${merge.canonicalRouteId}`;
+  routeCoverage3SourceMerges.set(key, [
+    ...(routeCoverage3SourceMerges.get(key) ?? []),
     merge
-  ])
-);
+  ]);
+}
 
 function applyRouteCoverage3SourceMerge(route: RouteRecord): RouteRecord {
-  const merge = routeCoverage3SourceMerges.get(
+  const merges = routeCoverage3SourceMerges.get(
     `${route.destinationId}:${route.id}`
   );
 
-  if (!merge) return route;
+  if (!merges) return route;
+
+  const normalizedSources = [
+    ...route.sourceRecords,
+    ...merges.flatMap((merge) => merge.sourceRecords)
+  ].map(normalizeRouteSource);
+  const latestSourceByIdentity = new Map<string, (typeof normalizedSources)[number]>();
+  const sourcesWithoutExternalIdentity = [];
+
+  for (const source of normalizedSources) {
+    if (!source.externalId) {
+      sourcesWithoutExternalIdentity.push(source);
+      continue;
+    }
+
+    const key = `${source.provider}:${source.externalId}:${source.purpose}`;
+    const previous = latestSourceByIdentity.get(key);
+    if (!previous || (source.checkedAt ?? "") >= (previous.checkedAt ?? "")) {
+      latestSourceByIdentity.set(key, source);
+    }
+  }
 
   const externalResources = [
     ...route.externalResources,
-    ...merge.externalResources
+    ...merges.flatMap((merge) => merge.externalResources)
   ].filter(
     (resource, index, resources) =>
       resources.findIndex(
@@ -77,8 +110,8 @@ function applyRouteCoverage3SourceMerge(route: RouteRecord): RouteRecord {
   return {
     ...route,
     sourceRecords: dedupeNormalizedRouteSources([
-      ...route.sourceRecords,
-      ...merge.sourceRecords.map(normalizeRouteSource)
+      ...sourcesWithoutExternalIdentity,
+      ...Array.from(latestSourceByIdentity.values())
     ]),
     externalResources
   };

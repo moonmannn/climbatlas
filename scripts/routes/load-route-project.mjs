@@ -50,6 +50,9 @@ export function loadRouteProject(root = process.cwd()) {
 
   return {
     destinationsModule: require(path.join(root, "src", "data", "destinations.ts")),
+    localizedContentModule: require(
+      path.join(root, "src", "data", "localizedContent.ts")
+    ),
     routesModule: require(path.join(root, "src", "lib", "routes.ts")),
     publicRoutesModule: require(
       path.join(root, "src", "lib", "routes", "public-routes.ts")

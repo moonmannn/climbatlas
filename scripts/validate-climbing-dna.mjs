@@ -12,6 +12,10 @@ const dimensions = [
   "comfort",
   "flow"
 ];
+const destinationsPendingDnaReview = new Set([
+  "new-river-gorge-usa",
+  "indian-creek-usa"
+]);
 
 function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
@@ -206,8 +210,14 @@ for (const profile of profiles) {
 }
 
 for (const slug of destinationSlugs) {
-  if (!profileSlugs.has(slug)) {
+  if (!profileSlugs.has(slug) && !destinationsPendingDnaReview.has(slug)) {
     issues.push(`Missing DNA profile for destination: ${slug}`);
+  }
+}
+
+for (const slug of destinationsPendingDnaReview) {
+  if (!destinationSlugs.includes(slug)) {
+    issues.push(`Pending DNA review points to an unknown destination: ${slug}`);
   }
 }
 

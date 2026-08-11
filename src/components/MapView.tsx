@@ -233,14 +233,16 @@ export function MapView({
                           {formatDestinationFact(destination.rockType, locale)}
                         </dd>
                       </div>
-                      <div className="flex justify-between gap-4 rounded-md bg-parchment/70 px-3 py-2">
-                        <dt className="font-bold text-bark/65">{t.season}</dt>
-                        <dd className="text-right font-semibold">
-                          {destination.bestSeasons
-                            .map((season) => formatSeason(season, locale))
-                            .join(", ")}
-                        </dd>
-                      </div>
+                      {destination.bestSeasons.length > 0 ? (
+                        <div className="flex justify-between gap-4 rounded-md bg-parchment/70 px-3 py-2">
+                          <dt className="font-bold text-bark/65">{t.season}</dt>
+                          <dd className="text-right font-semibold">
+                            {destination.bestSeasons
+                              .map((season) => formatSeason(season, locale))
+                              .join(", ")}
+                          </dd>
+                        </div>
+                      ) : null}
                       <div className="flex justify-between gap-4 rounded-md bg-parchment/70 px-3 py-2">
                         <dt className="font-bold text-bark/65">{t.difficulty}</dt>
                         <dd className="text-right font-semibold">

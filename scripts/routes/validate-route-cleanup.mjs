@@ -30,24 +30,33 @@ const PREVIOUS_PUBLIC_COUNTS = {
 
 const PREVIOUS_PUBLIC_TOTAL = 1107;
 const REVIEWED_CLEANUP_TOTAL = 1074;
-const routeCoverage3Snapshot = JSON.parse(
-  fs.readFileSync(
-    path.join(
-      process.cwd(),
-      "src",
-      "data",
-      "routes",
-      "imports",
-      "route-coverage-3-batch-1.json"
-    ),
-    "utf8"
-  )
+const routeCoverageImportsDirectory = path.join(
+  process.cwd(),
+  "src",
+  "data",
+  "routes",
+  "imports"
 );
-const importedCounts = routeCoverage3Snapshot.routes.reduce((counts, route) => {
-  counts[route.destinationId] = (counts[route.destinationId] ?? 0) + 1;
-  return counts;
-}, {});
-const EXPECTED_PUBLIC_TOTAL = REVIEWED_CLEANUP_TOTAL + routeCoverage3Snapshot.routes.length;
+const routeCoverage3Snapshots = fs
+  .readdirSync(routeCoverageImportsDirectory)
+  .filter((file) => /^route-coverage-3-batch-\d+\.json$/.test(file))
+  .sort()
+  .map((file) =>
+    JSON.parse(
+      fs.readFileSync(path.join(routeCoverageImportsDirectory, file), "utf8")
+    )
+  );
+const importedRouteCoverage3Count = routeCoverage3Snapshots.reduce(
+  (total, snapshot) => total + snapshot.routes.length,
+  0
+);
+const importedCounts = routeCoverage3Snapshots
+  .flatMap((snapshot) => snapshot.routes)
+  .reduce((counts, route) => {
+    counts[route.destinationId] = (counts[route.destinationId] ?? 0) + 1;
+    return counts;
+  }, {});
+const EXPECTED_PUBLIC_TOTAL = REVIEWED_CLEANUP_TOTAL + importedRouteCoverage3Count;
 const EXPECTED_PICKS = 40;
 
 const {
@@ -275,7 +284,7 @@ const report = {
   summary: {
     previousPublicRoutes: PREVIOUS_PUBLIC_TOTAL,
     reviewedCleanupRoutes: REVIEWED_CLEANUP_TOTAL,
-    importedRouteCoverage3Routes: routeCoverage3Snapshot.routes.length,
+    importedRouteCoverage3Routes: importedRouteCoverage3Count,
     currentPublicRoutes: publicRoutes.length,
     explainedReduction: removalRules.length,
     catalogEntries: entries.length,
@@ -403,7 +412,7 @@ function conflictTable(rows) {
 const markdown = `# Legacy Route Index Cleanup\n\n` +
   `Generated: ${report.generatedAt}\n\n` +
   `The legacy cleanup changed the reviewed public baseline from **${PREVIOUS_PUBLIC_TOTAL}** to **${REVIEWED_CLEANUP_TOTAL}** routes. ` +
-  `Route Coverage 3.0 then added **${routeCoverage3Snapshot.routes.length}** reviewed Indexed Routes, producing **${publicRoutes.length}** current public routes. ` +
+  `Route Coverage 3.0 then added **${importedRouteCoverage3Count}** reviewed Indexed Routes, producing **${publicRoutes.length}** current public routes. ` +
   `All ${removalRules.length} cleanup removals are listed in the JSON migration ledger. Published Picks remain at **${publishedPicks.length}**.\n\n` +
   `## Validation\n\n` +
   `- Duplicate candidates: ${audit.duplicateCandidates.length}\n` +

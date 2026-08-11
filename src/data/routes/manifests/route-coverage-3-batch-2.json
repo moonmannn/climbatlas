@@ -1,0 +1,117 @@
+{
+  "batchId": "route-coverage-3-batch-2",
+  "importerVersion": "rc3-parquet-importer/1.1.0",
+  "sourceProvider": "openbeta",
+  "sourceRelease": "v2026-08-02",
+  "sourceAssetUrl": "https://github.com/OpenBeta/parquet-exporter/releases/download/v2026-08-02/openbeta-climbs.parquet",
+  "sourceSha256": "6a655481a39727beb568e6365b159d9bbf371fbc8d83985c505ef1dec3c8e728",
+  "sourceSchemaSha256": "ce457a5fe56d4ad69f17db5a12ca83f8982d4a289a11c34d6d2a7f23561783d8",
+  "sourceCommitSha": "a5674424209294a69c5c86b247a78e3590927055",
+  "sourceRowCount": 231865,
+  "sourceCheckedAt": "2026-08-10",
+  "destinationScopes": [
+    {
+      "destinationSlug": "yosemite-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Yosemite National Park"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc31-b2-yosemite-1"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Oregon",
+          "region": "Central Oregon",
+          "area": "Smith Rock"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc31-b2-smith-rock-1"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Kentucky",
+          "region": "Red River Gorge"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc31-b2-red-river-gorge-1"
+    },
+    {
+      "destinationSlug": "new-river-gorge-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "West Virginia",
+          "region": "New River Gorge, The"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "crag": "South Side Crags (CLOSED)"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc31-b2-new-river-gorge-1"
+    },
+    {
+      "destinationSlug": "indian-creek-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Utah",
+          "region": "Southeast Utah",
+          "area": "Indian Creek"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc31-b2-indian-creek-1"
+    }
+  ],
+  "destinationTargets": {
+    "yosemite-usa": {
+      "minimum": 170,
+      "target": 175,
+      "maximum": 185
+    },
+    "smith-rock-usa": {
+      "minimum": 150,
+      "target": 160,
+      "maximum": 170
+    },
+    "red-river-gorge-usa": {
+      "minimum": 170,
+      "target": 180,
+      "maximum": 190
+    },
+    "new-river-gorge-usa": {
+      "minimum": 95,
+      "target": 100,
+      "maximum": 110
+    },
+    "indian-creek-usa": {
+      "minimum": 95,
+      "target": 100,
+      "maximum": 110
+    }
+  }
+}

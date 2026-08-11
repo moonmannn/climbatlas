@@ -127,7 +127,11 @@ for (const { destination, route } of publicRoutes) {
   assert.equal(route.id, legacy.id);
   assert.equal(route.name, legacy.name);
   assert.equal(route.destinationId, destination.slug);
-  assert.equal(route.grade.original, legacy.grade);
+  assert.equal(
+    route.grade.original,
+    legacy.grade.replace(/\s+metadata\s*$/i, "").trim(),
+    "The adapter may remove only the reviewed trailing legacy metadata marker."
+  );
   assert.equal(route.climbingType, legacy.type);
   const expectedFacts = normalizeLegacyRouteFacts({ rawLength: legacy.length });
   assert.equal(route.lengthMeters, expectedFacts.lengthMeters);

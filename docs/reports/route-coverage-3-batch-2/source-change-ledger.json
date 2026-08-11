@@ -1,0 +1,2435 @@
+{
+  "batchId": "route-coverage-3-batch-2",
+  "changes": [
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "oz-yosemite",
+      "provider": "openbeta",
+      "externalId": "3f334400-dbdb-5aa1-8955-8f94c0135fb5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "separate-reality",
+      "provider": "openbeta",
+      "externalId": "03b2c105-1cb7-5896-add3-24f5dbb9d070",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "tales-of-power-yosemite",
+      "provider": "openbeta",
+      "externalId": "8d3cb10a-a7f6-50e8-a6e6-ab3ba74e767b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "outer-limits-yosemite",
+      "provider": "openbeta",
+      "externalId": "58fc5964-d346-5329-afd6-40ba1e8bf005",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "lunatic-fringe-yosemite",
+      "provider": "openbeta",
+      "externalId": "fd6c291f-2ab8-523c-b7df-57947cd8800f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "central-pillar-of-frenzy-yosemite",
+      "provider": "openbeta",
+      "externalId": "e46cf0e4-fbac-5b9e-b11f-b93c34da6659",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-1381d950-b2dc-5b7e-8280-8bc02666216f",
+      "provider": "openbeta",
+      "externalId": "1381d950-b2dc-5b7e-8280-8bc02666216f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-22253f8e-5af5-580b-9322-fe0b1982a89d",
+      "provider": "openbeta",
+      "externalId": "22253f8e-5af5-580b-9322-fe0b1982a89d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-2a9a555b-0459-598e-8424-3e1d3542af6c",
+      "provider": "openbeta",
+      "externalId": "2a9a555b-0459-598e-8424-3e1d3542af6c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-b259e718-5c6d-5548-90ba-92d8d004f634",
+      "provider": "openbeta",
+      "externalId": "b259e718-5c6d-5548-90ba-92d8d004f634",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-db84f93d-76e1-5bd5-95b4-3b6f9ba9e902",
+      "provider": "openbeta",
+      "externalId": "db84f93d-76e1-5bd5-95b4-3b6f9ba9e902",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "the-phoenix-yosemite",
+      "provider": "openbeta",
+      "externalId": "ee6801c5-9776-5d6d-800b-ae1ec4ae2f90",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-2e3fbec4-3e24-5775-a859-84f9d070afde",
+      "provider": "openbeta",
+      "externalId": "2e3fbec4-3e24-5775-a859-84f9d070afde",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "new-dimensions-yosemite",
+      "provider": "openbeta",
+      "externalId": "3b13c248-f885-5e4b-9559-494eb35b95d8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-3edeefb4-bf6a-5ac9-8bb1-3d4887bdc5f2",
+      "provider": "openbeta",
+      "externalId": "3edeefb4-bf6a-5ac9-8bb1-3d4887bdc5f2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-64fa2dd6-f2c9-5e84-a122-cd80be126426",
+      "provider": "openbeta",
+      "externalId": "64fa2dd6-f2c9-5e84-a122-cd80be126426",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-6e5c5b5e-8d55-586e-ae38-179837140be3",
+      "provider": "openbeta",
+      "externalId": "6e5c5b5e-8d55-586e-ae38-179837140be3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-bc511f0d-0378-5b57-9a5f-f8c4d3df97cb",
+      "provider": "openbeta",
+      "externalId": "bc511f0d-0378-5b57-9a5f-f8c4d3df97cb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-d7bc3864-5ecb-57a9-8f40-059b6d8155bb",
+      "provider": "openbeta",
+      "externalId": "d7bc3864-5ecb-57a9-8f40-059b6d8155bb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-df6c746e-62a0-5a0e-b1fe-3c080224f955",
+      "provider": "openbeta",
+      "externalId": "df6c746e-62a0-5a0e-b1fe-3c080224f955",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-ff2132e0-901f-50d9-8562-b1b4260e67fa",
+      "provider": "openbeta",
+      "externalId": "ff2132e0-901f-50d9-8562-b1b4260e67fa",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-0a82ff0b-d15c-570f-9547-622ad728549e",
+      "provider": "openbeta",
+      "externalId": "0a82ff0b-d15c-570f-9547-622ad728549e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-0db62b97-fa1b-567f-ae3b-1b4ba785443e",
+      "provider": "openbeta",
+      "externalId": "0db62b97-fa1b-567f-ae3b-1b4ba785443e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-12adf8ff-4fa9-5aa7-aa08-385b9f707d48",
+      "provider": "openbeta",
+      "externalId": "12adf8ff-4fa9-5aa7-aa08-385b9f707d48",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-18eabee4-01dd-5050-840b-3cdd4bbec5ad",
+      "provider": "openbeta",
+      "externalId": "18eabee4-01dd-5050-840b-3cdd4bbec5ad",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-25652874-6996-5368-86d6-f177f53c62c5",
+      "provider": "openbeta",
+      "externalId": "25652874-6996-5368-86d6-f177f53c62c5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-2630c2d5-f3a5-5f1a-99d3-1b37207ed799",
+      "provider": "openbeta",
+      "externalId": "2630c2d5-f3a5-5f1a-99d3-1b37207ed799",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-2bd47e0d-c55e-5482-b835-41e27baac7e3",
+      "provider": "openbeta",
+      "externalId": "2bd47e0d-c55e-5482-b835-41e27baac7e3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-3127f388-8946-547a-8a08-a936c2c40066",
+      "provider": "openbeta",
+      "externalId": "3127f388-8946-547a-8a08-a936c2c40066",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-3d396157-85a7-50e6-9f51-7feadee193a2",
+      "provider": "openbeta",
+      "externalId": "3d396157-85a7-50e6-9f51-7feadee193a2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-3d80b76e-843f-57a7-8000-2ce45cafb8cb",
+      "provider": "openbeta",
+      "externalId": "3d80b76e-843f-57a7-8000-2ce45cafb8cb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-45ad5efd-2ecc-5e06-978f-ae099d2f6702",
+      "provider": "openbeta",
+      "externalId": "45ad5efd-2ecc-5e06-978f-ae099d2f6702",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-47079020-ed97-58bf-9b45-43871f3ed4e6",
+      "provider": "openbeta",
+      "externalId": "47079020-ed97-58bf-9b45-43871f3ed4e6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-51c9c771-8701-5bd1-99d3-2cf760932687",
+      "provider": "openbeta",
+      "externalId": "51c9c771-8701-5bd1-99d3-2cf760932687",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-5296b48c-4230-53cc-85bd-79f71d847891",
+      "provider": "openbeta",
+      "externalId": "5296b48c-4230-53cc-85bd-79f71d847891",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-5e388f88-64ed-5fd4-bf30-b2fe3ad35a02",
+      "provider": "openbeta",
+      "externalId": "5e388f88-64ed-5fd4-bf30-b2fe3ad35a02",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-76080176-aac7-596b-b132-ef5bd9dedb6c",
+      "provider": "openbeta",
+      "externalId": "76080176-aac7-596b-b132-ef5bd9dedb6c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-8327f667-4cf5-5621-8918-6a656dfd5d0f",
+      "provider": "openbeta",
+      "externalId": "8327f667-4cf5-5621-8918-6a656dfd5d0f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-84d29de9-f139-516f-a953-5abcd6971b8b",
+      "provider": "openbeta",
+      "externalId": "84d29de9-f139-516f-a953-5abcd6971b8b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-88af3a2d-2f82-5582-a063-307ac472458b",
+      "provider": "openbeta",
+      "externalId": "88af3a2d-2f82-5582-a063-307ac472458b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-89172168-c57e-50a4-82c6-a4da20c58ea2",
+      "provider": "openbeta",
+      "externalId": "89172168-c57e-50a4-82c6-a4da20c58ea2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-9437520a-cbc2-58a9-b8e9-e2d685bfd8d9",
+      "provider": "openbeta",
+      "externalId": "9437520a-cbc2-58a9-b8e9-e2d685bfd8d9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-9bdc98d4-13de-5224-8af5-326014fabb0d",
+      "provider": "openbeta",
+      "externalId": "9bdc98d4-13de-5224-8af5-326014fabb0d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-9d1db03c-a2fb-5fd0-9363-42d5872817f7",
+      "provider": "openbeta",
+      "externalId": "9d1db03c-a2fb-5fd0-9363-42d5872817f7",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-a119f33a-67c7-5a7a-b410-7a4ade9cadf2",
+      "provider": "openbeta",
+      "externalId": "a119f33a-67c7-5a7a-b410-7a4ade9cadf2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-b22c5ef5-0138-5aee-837e-33d24c1847ba",
+      "provider": "openbeta",
+      "externalId": "b22c5ef5-0138-5aee-837e-33d24c1847ba",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-b5536302-fbd9-541f-8bad-5d4d43d46569",
+      "provider": "openbeta",
+      "externalId": "b5536302-fbd9-541f-8bad-5d4d43d46569",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-b8968506-2b7d-5d7a-8510-287245e01026",
+      "provider": "openbeta",
+      "externalId": "b8968506-2b7d-5d7a-8510-287245e01026",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-bb59e678-40ed-5a63-a158-b7924932c253",
+      "provider": "openbeta",
+      "externalId": "bb59e678-40ed-5a63-a158-b7924932c253",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-bcac42b0-8225-5d67-92fa-97fca4bb8c68",
+      "provider": "openbeta",
+      "externalId": "bcac42b0-8225-5d67-92fa-97fca4bb8c68",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-be002b7f-9f5f-5614-8ca3-08d4e43a1028",
+      "provider": "openbeta",
+      "externalId": "be002b7f-9f5f-5614-8ca3-08d4e43a1028",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-c0de7a31-25c6-5386-9040-fc0fc2e3cfe2",
+      "provider": "openbeta",
+      "externalId": "c0de7a31-25c6-5386-9040-fc0fc2e3cfe2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-d09bc409-2ef3-571e-829a-816174fb6ba8",
+      "provider": "openbeta",
+      "externalId": "d09bc409-2ef3-571e-829a-816174fb6ba8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-d44f2f20-83fd-561b-a1c5-193d995ab072",
+      "provider": "openbeta",
+      "externalId": "d44f2f20-83fd-561b-a1c5-193d995ab072",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-db58ba38-717a-50c7-b1c1-2616327d4114",
+      "provider": "openbeta",
+      "externalId": "db58ba38-717a-50c7-b1c1-2616327d4114",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-e3c7c6fd-c822-55f0-86d3-7a6ad9ff1a48",
+      "provider": "openbeta",
+      "externalId": "e3c7c6fd-c822-55f0-86d3-7a6ad9ff1a48",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-f20641a8-eb2a-537d-83f0-558f130c5483",
+      "provider": "openbeta",
+      "externalId": "f20641a8-eb2a-537d-83f0-558f130c5483",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-f355c513-9617-574e-b15a-c793dd3e5abd",
+      "provider": "openbeta",
+      "externalId": "f355c513-9617-574e-b15a-c793dd3e5abd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-f5ce5a64-35f4-54d8-a35a-4add5104655e",
+      "provider": "openbeta",
+      "externalId": "f5ce5a64-35f4-54d8-a35a-4add5104655e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "astroman-washington-column",
+      "provider": "openbeta",
+      "externalId": "661964f4-cdf3-5f35-9e02-db252c703baf",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "church-bowl-lieback-yosemite",
+      "provider": "openbeta",
+      "externalId": "f60393dc-6387-5426-9c69-404b5fa327ab",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-385529ab-dfc8-5827-bfa4-946cb1e00b59",
+      "provider": "openbeta",
+      "externalId": "385529ab-dfc8-5827-bfa4-946cb1e00b59",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-4fe2bc01-ca2d-5654-b491-e67059127ac6",
+      "provider": "openbeta",
+      "externalId": "4fe2bc01-ca2d-5654-b491-e67059127ac6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-7aa986e5-fca9-5b8b-8263-0df6100013e3",
+      "provider": "openbeta",
+      "externalId": "7aa986e5-fca9-5b8b-8263-0df6100013e3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-b1c2acf6-966c-57bd-a05b-c8fbefb801bb",
+      "provider": "openbeta",
+      "externalId": "b1c2acf6-966c-57bd-a05b-c8fbefb801bb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-e7223b43-229e-59a7-a89f-2e058391634c",
+      "provider": "openbeta",
+      "externalId": "e7223b43-229e-59a7-a89f-2e058391634c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-e9dee573-9abe-5141-9761-5d514b2dbb75",
+      "provider": "openbeta",
+      "externalId": "e9dee573-9abe-5141-9761-5d514b2dbb75",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "openbeta-ffc8f21d-6c16-587a-8565-e31c89f6dbba",
+      "provider": "openbeta",
+      "externalId": "ffc8f21d-6c16-587a-8565-e31c89f6dbba",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "snake-dike-half-dome",
+      "provider": "openbeta",
+      "externalId": "173d3570-b0f2-5946-865f-b4352452753b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "lazy-bum-yosemite",
+      "provider": "openbeta",
+      "externalId": "228428e4-518d-5e12-91b7-4e134615f3e2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "after-six-yosemite",
+      "provider": "openbeta",
+      "externalId": "9abe7597-8334-5a59-b49d-0ccf2a960f27",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "serenity-crack-yosemite",
+      "provider": "openbeta",
+      "externalId": "b899b536-6d4f-5c91-ac68-12a9b2197a68",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "commitment-yosemite",
+      "provider": "openbeta",
+      "externalId": "e173f3bd-16c0-5a3d-a868-bfb1517a03cd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "canonicalRouteId": "midnight-lightning-camp-4",
+      "provider": "openbeta",
+      "externalId": "563bbaea-b59d-5b2e-90e1-e1339354145d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "moonshine-dihedral-smith-rock",
+      "provider": "openbeta",
+      "externalId": "0561c28c-fdfa-529b-a6b1-05fd95e4cb27",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "darkness-at-noon-smith-rock",
+      "provider": "openbeta",
+      "externalId": "2f89a60a-aff7-5eb3-b192-ee12d8b39a72",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "to-bolt-or-not-to-be-smith-rock",
+      "provider": "openbeta",
+      "externalId": "52107ea0-e785-570e-a6b6-09379c292569",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "lycopodophyta-smith",
+      "provider": "openbeta",
+      "externalId": "6b398cec-edf7-5a9c-bd95-0eb1bb7cd795",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "bunny-face-smith",
+      "provider": "openbeta",
+      "externalId": "70e8bb70-74ea-5c72-b135-413cb048f9b8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "cinnamon-slab-smith",
+      "provider": "openbeta",
+      "externalId": "9d72dd04-3630-5669-aba0-adfd6317e4f5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "latin-lover-smith",
+      "provider": "openbeta",
+      "externalId": "9f012c42-6320-5eb2-b256-32e07176656c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "karate-crack-smith-rock",
+      "provider": "openbeta",
+      "externalId": "b05afdf9-2308-5407-9216-2c9056dc09dc",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "chain-reaction-smith-rock",
+      "provider": "openbeta",
+      "externalId": "e6f9ba15-27e8-5150-9709-14c5a70502a1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-0848b657-da60-587e-8b83-72635145e778",
+      "provider": "openbeta",
+      "externalId": "0848b657-da60-587e-8b83-72635145e778",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-0aadaca8-5667-51af-9a3c-5f77b890c742",
+      "provider": "openbeta",
+      "externalId": "0aadaca8-5667-51af-9a3c-5f77b890c742",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-0fbf4f1e-1553-5752-8659-727b85f8ce29",
+      "provider": "openbeta",
+      "externalId": "0fbf4f1e-1553-5752-8659-727b85f8ce29",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-107dbdce-e2dd-533b-a9ac-c9c9b484da9d",
+      "provider": "openbeta",
+      "externalId": "107dbdce-e2dd-533b-a9ac-c9c9b484da9d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-150f8ea0-dd89-579f-823a-c76530dfecd3",
+      "provider": "openbeta",
+      "externalId": "150f8ea0-dd89-579f-823a-c76530dfecd3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-1e96e2de-12d8-51d2-ad2f-8f32e2f386ce",
+      "provider": "openbeta",
+      "externalId": "1e96e2de-12d8-51d2-ad2f-8f32e2f386ce",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-31178f06-4a9c-5520-beb8-b8e7487e3382",
+      "provider": "openbeta",
+      "externalId": "31178f06-4a9c-5520-beb8-b8e7487e3382",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-3704ab47-6093-567f-8456-24e7f7e03f90",
+      "provider": "openbeta",
+      "externalId": "3704ab47-6093-567f-8456-24e7f7e03f90",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-37c02ba1-7b2a-582e-8abf-e3b65902a28d",
+      "provider": "openbeta",
+      "externalId": "37c02ba1-7b2a-582e-8abf-e3b65902a28d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-3c55121c-ec94-51da-8d94-bfaae1b81686",
+      "provider": "openbeta",
+      "externalId": "3c55121c-ec94-51da-8d94-bfaae1b81686",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-3e62736b-2e45-5f3c-b314-c84a976e7f02",
+      "provider": "openbeta",
+      "externalId": "3e62736b-2e45-5f3c-b314-c84a976e7f02",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-3e8d2fa6-85b8-5a89-aff7-5fa3536b7d13",
+      "provider": "openbeta",
+      "externalId": "3e8d2fa6-85b8-5a89-aff7-5fa3536b7d13",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-42bb9102-8363-555a-9c21-1bc083b0cb46",
+      "provider": "openbeta",
+      "externalId": "42bb9102-8363-555a-9c21-1bc083b0cb46",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-444b214f-bd83-53ac-a8fc-d80d8417b9bb",
+      "provider": "openbeta",
+      "externalId": "444b214f-bd83-53ac-a8fc-d80d8417b9bb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-471f17cb-7aa2-56eb-993e-a36fc06a1811",
+      "provider": "openbeta",
+      "externalId": "471f17cb-7aa2-56eb-993e-a36fc06a1811",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-6876e2fb-2dd1-5c40-8581-da935f583a09",
+      "provider": "openbeta",
+      "externalId": "6876e2fb-2dd1-5c40-8581-da935f583a09",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "churning-in-the-wake-smith",
+      "provider": "openbeta",
+      "externalId": "78b428a3-2676-5bb4-8f46-16981302cbc0",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-811774a1-265f-5d2d-9368-54acb5a8e306",
+      "provider": "openbeta",
+      "externalId": "811774a1-265f-5d2d-9368-54acb5a8e306",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-827ea559-2140-53ee-8c7a-8f84c6f4cb36",
+      "provider": "openbeta",
+      "externalId": "827ea559-2140-53ee-8c7a-8f84c6f4cb36",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-89b10af4-e152-5ff2-96c9-cb70b2f52004",
+      "provider": "openbeta",
+      "externalId": "89b10af4-e152-5ff2-96c9-cb70b2f52004",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-8c7d55b4-c7bb-53fe-844e-020e8be92b45",
+      "provider": "openbeta",
+      "externalId": "8c7d55b4-c7bb-53fe-844e-020e8be92b45",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-95e5c111-f82b-54a5-8590-d2934b3619ae",
+      "provider": "openbeta",
+      "externalId": "95e5c111-f82b-54a5-8590-d2934b3619ae",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-a14fb060-ef9b-50cd-98f2-a63737c25ff5",
+      "provider": "openbeta",
+      "externalId": "a14fb060-ef9b-50cd-98f2-a63737c25ff5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-a5404c15-2834-52a3-be0a-a126036aac06",
+      "provider": "openbeta",
+      "externalId": "a5404c15-2834-52a3-be0a-a126036aac06",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-a6342baa-ec7b-5920-9938-fca69aec600a",
+      "provider": "openbeta",
+      "externalId": "a6342baa-ec7b-5920-9938-fca69aec600a",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-abb0124a-cc20-5d57-b1a3-2a5ed2cde0c9",
+      "provider": "openbeta",
+      "externalId": "abb0124a-cc20-5d57-b1a3-2a5ed2cde0c9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-b480c064-5217-530c-a7ea-cb2bb0d2d677",
+      "provider": "openbeta",
+      "externalId": "b480c064-5217-530c-a7ea-cb2bb0d2d677",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-b5628600-6d71-5849-97a4-ff6353b3ff7f",
+      "provider": "openbeta",
+      "externalId": "b5628600-6d71-5849-97a4-ff6353b3ff7f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-b733a50e-1863-5f6c-bdee-e40d10d2d5b8",
+      "provider": "openbeta",
+      "externalId": "b733a50e-1863-5f6c-bdee-e40d10d2d5b8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-bed9968f-22b8-5e9b-bdd1-2b2ff5562b10",
+      "provider": "openbeta",
+      "externalId": "bed9968f-22b8-5e9b-bdd1-2b2ff5562b10",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-c5227a57-bd8e-507d-aec5-027698ccf6b4",
+      "provider": "openbeta",
+      "externalId": "c5227a57-bd8e-507d-aec5-027698ccf6b4",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "five-gallon-buckets-smith-rock",
+      "provider": "openbeta",
+      "externalId": "ce6a1f4e-6f7c-5c76-a339-8acf1f3e57be",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-e22f8c75-db87-58fe-874b-17ca7f572003",
+      "provider": "openbeta",
+      "externalId": "e22f8c75-db87-58fe-874b-17ca7f572003",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-e4dd65d2-6a20-591e-ae3a-a5b68329fda8",
+      "provider": "openbeta",
+      "externalId": "e4dd65d2-6a20-591e-ae3a-a5b68329fda8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "light-on-the-path-smith",
+      "provider": "openbeta",
+      "externalId": "edbb0353-9c35-5bff-8096-3c8869fe18fe",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-ede718dd-c3b5-5663-ab73-bb8adc09b457",
+      "provider": "openbeta",
+      "externalId": "ede718dd-c3b5-5663-ab73-bb8adc09b457",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-f3fbcdbd-93e0-567f-9910-3d306caf1220",
+      "provider": "openbeta",
+      "externalId": "f3fbcdbd-93e0-567f-9910-3d306caf1220",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-f4ff8868-b2b4-5c01-9a0e-d2554a380ee3",
+      "provider": "openbeta",
+      "externalId": "f4ff8868-b2b4-5c01-9a0e-d2554a380ee3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-f50ca264-a4a0-5715-8d49-8a2379a2c5b5",
+      "provider": "openbeta",
+      "externalId": "f50ca264-a4a0-5715-8d49-8a2379a2c5b5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-f9226042-5a5b-58eb-8bfc-f79547d155f6",
+      "provider": "openbeta",
+      "externalId": "f9226042-5a5b-58eb-8bfc-f79547d155f6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-fa4f6283-589c-5f77-99e1-4b5e3f5a6d30",
+      "provider": "openbeta",
+      "externalId": "fa4f6283-589c-5f77-99e1-4b5e3f5a6d30",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "sunset-slab-smith",
+      "provider": "openbeta",
+      "externalId": "b3627622-79c2-58e6-bff6-287f80d64c5a",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "phoenix-smith",
+      "provider": "openbeta",
+      "externalId": "532608cb-0843-5251-aeff-85f11d46ed95",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "blackened-smith",
+      "provider": "openbeta",
+      "externalId": "25b5d2be-3319-5fdd-a75d-c99b458ea6b7",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "american-nirvana-smith",
+      "provider": "openbeta",
+      "externalId": "4dcf49c8-2dd3-5312-b7ac-649f6f3dc7e1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-022c451e-b9a4-5343-9d34-5acaa81659c8",
+      "provider": "openbeta",
+      "externalId": "022c451e-b9a4-5343-9d34-5acaa81659c8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "white-satin-smith",
+      "provider": "openbeta",
+      "externalId": "0625e783-006f-573b-a7d1-d3a96bd7c48c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-70e66ee1-8dc4-5b6a-92c8-2dff99af6d55",
+      "provider": "openbeta",
+      "externalId": "70e66ee1-8dc4-5b6a-92c8-2dff99af6d55",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "sky-ridge-smith",
+      "provider": "openbeta",
+      "externalId": "9d0290ff-d81d-567c-94dd-a128a7c4dad6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-0a524ab7-4858-51d6-97f7-e37fa83f296d",
+      "provider": "openbeta",
+      "externalId": "0a524ab7-4858-51d6-97f7-e37fa83f296d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-36d48ace-bf03-5e52-bb4d-14440e420f4b",
+      "provider": "openbeta",
+      "externalId": "36d48ace-bf03-5e52-bb4d-14440e420f4b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-38806712-8199-5ae8-aeb1-a59a84dcb777",
+      "provider": "openbeta",
+      "externalId": "38806712-8199-5ae8-aeb1-a59a84dcb777",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-3ab1ab37-9e11-5b49-bb91-b0ee0cd8f17b",
+      "provider": "openbeta",
+      "externalId": "3ab1ab37-9e11-5b49-bb91-b0ee0cd8f17b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "vomit-launch-smith",
+      "provider": "openbeta",
+      "externalId": "6ba05513-4803-52e5-a516-c948b4b940a9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-802cf570-6c60-5cbf-bd4d-cb3690504d0a",
+      "provider": "openbeta",
+      "externalId": "802cf570-6c60-5cbf-bd4d-cb3690504d0a",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-8dcdb32f-ee2e-53b5-9174-11b1e14f7a73",
+      "provider": "openbeta",
+      "externalId": "8dcdb32f-ee2e-53b5-9174-11b1e14f7a73",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-93b6b9e8-df6a-581e-ba2a-9d980d0d7cf2",
+      "provider": "openbeta",
+      "externalId": "93b6b9e8-df6a-581e-ba2a-9d980d0d7cf2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-a1d01a83-a605-56e0-881d-c809d1f00a0b",
+      "provider": "openbeta",
+      "externalId": "a1d01a83-a605-56e0-881d-c809d1f00a0b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-ad238c22-0549-54ce-b262-a0f571703907",
+      "provider": "openbeta",
+      "externalId": "ad238c22-0549-54ce-b262-a0f571703907",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-b170a85b-dfc9-533b-85e7-dff9d1842183",
+      "provider": "openbeta",
+      "externalId": "b170a85b-dfc9-533b-85e7-dff9d1842183",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-b9e2a600-e812-5945-8b52-6fed6d57afe9",
+      "provider": "openbeta",
+      "externalId": "b9e2a600-e812-5945-8b52-6fed6d57afe9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-bacc6182-a5f4-55e6-9f17-2364fa4d3c9e",
+      "provider": "openbeta",
+      "externalId": "bacc6182-a5f4-55e6-9f17-2364fa4d3c9e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-c1390545-31cc-5fed-88dc-5f0c6d55836e",
+      "provider": "openbeta",
+      "externalId": "c1390545-31cc-5fed-88dc-5f0c6d55836e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-cd260ea0-6e7b-57b5-ac35-86e1f2d511d1",
+      "provider": "openbeta",
+      "externalId": "cd260ea0-6e7b-57b5-ac35-86e1f2d511d1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-d3e796ac-c01d-51b6-b7c7-6bf71529cfcd",
+      "provider": "openbeta",
+      "externalId": "d3e796ac-c01d-51b6-b7c7-6bf71529cfcd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-d8369eac-b778-50de-b323-3abe49a0664d",
+      "provider": "openbeta",
+      "externalId": "d8369eac-b778-50de-b323-3abe49a0664d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-e70d655d-8558-5e1e-ab53-764599f35ca2",
+      "provider": "openbeta",
+      "externalId": "e70d655d-8558-5e1e-ab53-764599f35ca2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-eb1d3549-49ab-5ec1-9062-642329479b04",
+      "provider": "openbeta",
+      "externalId": "eb1d3549-49ab-5ec1-9062-642329479b04",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-f0fa17eb-f1b6-5293-bab1-d305d107f182",
+      "provider": "openbeta",
+      "externalId": "f0fa17eb-f1b6-5293-bab1-d305d107f182",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-0a55fe45-d53b-5abb-a75a-83606ec7f38f",
+      "provider": "openbeta",
+      "externalId": "0a55fe45-d53b-5abb-a75a-83606ec7f38f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "phone-call-from-satan-smith",
+      "provider": "openbeta",
+      "externalId": "0cbd3f65-7a89-54e6-8aec-3405985103fa",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-1473090c-ef7c-5a33-86a0-43d609d66348",
+      "provider": "openbeta",
+      "externalId": "1473090c-ef7c-5a33-86a0-43d609d66348",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-26c338e5-3c8e-5050-8718-8bd5c042a0bd",
+      "provider": "openbeta",
+      "externalId": "26c338e5-3c8e-5050-8718-8bd5c042a0bd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-3e233500-993e-5846-a6d2-b7aff986978f",
+      "provider": "openbeta",
+      "externalId": "3e233500-993e-5846-a6d2-b7aff986978f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-494547a3-b68f-5e4d-82bf-667513bf2f9b",
+      "provider": "openbeta",
+      "externalId": "494547a3-b68f-5e4d-82bf-667513bf2f9b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-8a716c8a-4e67-50e4-a5a9-f81621d9ecaf",
+      "provider": "openbeta",
+      "externalId": "8a716c8a-4e67-50e4-a5a9-f81621d9ecaf",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-91580e5d-0ef3-5367-850d-949a991792ab",
+      "provider": "openbeta",
+      "externalId": "91580e5d-0ef3-5367-850d-949a991792ab",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-92ef700a-5b1d-5033-a5d4-751572690170",
+      "provider": "openbeta",
+      "externalId": "92ef700a-5b1d-5033-a5d4-751572690170",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-d6d3ebe2-c973-55a0-b3c5-5ba3b1001d97",
+      "provider": "openbeta",
+      "externalId": "d6d3ebe2-c973-55a0-b3c5-5ba3b1001d97",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "openbeta-dd9fb5b1-1941-594f-a6b0-cf43302f1c0d",
+      "provider": "openbeta",
+      "externalId": "dd9fb5b1-1941-594f-a6b0-cf43302f1c0d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "toxic-smith",
+      "provider": "openbeta",
+      "externalId": "1973a159-3adb-5eff-b54a-e146ea8fe8eb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "canonicalRouteId": "wherever-i-may-roam-smith-rock",
+      "provider": "openbeta",
+      "externalId": "32716df2-fe3a-5934-a080-522e3b6beb4f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "bare-metal-teen-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "4a58ed95-846c-5ba5-9765-1ae0e1f9aa1e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "ro-shampo-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "0cada445-5424-5d78-8f2b-55d85452bed2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "tissue-tiger-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "75d304d0-249f-52da-afcc-b20a4fab66b4",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "table-of-colors-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "47d9f93f-67a0-528a-916a-04203108e0b1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "mercy-the-huff-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "e49aa96d-b79c-5d8d-9a2a-f635f3e3c038",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "twinkie-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "d665ed04-d997-5271-b148-66810308730e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "gods-own-stone-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "13675905-434d-5bbc-a6ba-df586ddc1153",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "golden-boy-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "49767f95-aaa3-5eb8-98f7-8e21610354c1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "lucifer-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "7ada2f9d-a2d8-5f40-936e-7b81d76b1fe0",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "paradise-lost-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "c8c162e1-129c-552f-9182-3893e96581dc",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "the-force-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "0e98f4ab-66b9-5746-a00f-263159f00fdf",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "dogleg-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "164fe5f2-a74f-5bfb-9091-0ac80d7b747f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "no-redemption-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "4a4399c3-3858-5be0-ac94-d5ce09255b35",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "southern-smoke-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "762cc15e-f31e-56e9-b1c1-d963343eb31d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "fifty-words-for-pump-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "7dd146fd-f0fa-546d-bc11-c37cce3a8903",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "ale-8-one-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "4894f9c0-317f-5424-afff-c39ad6a765e8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "convicted-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "5cf12dad-8cfd-5df1-821c-4ca34fb08426",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "tuna-town-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "5e814b4a-8e6a-55f4-9ab7-38a23d28b5be",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "chainsaw-massacre-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "ffe5ce69-8ea8-597c-9798-a8c6e3df1910",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "amarillo-sunset-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "ef19696c-3c43-5142-8280-458b85fe0788",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "kaleidoscope-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "385d1599-5ff7-58ef-930c-dc7ebeb16e5b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "pure-imagination-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "c4991fd7-7e47-5948-a079-097b51398dfb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "transworld-depravity-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "466dc716-bd4b-5e8e-a54d-21a5634193dd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "omaha-beach-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "c7ea50af-86c5-59b7-ab0d-7e7be352fd4c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "the-madness-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "d0f22f1d-54ef-5864-911e-a59a630d58ca",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "snooker-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "8bec07d3-3602-5f7b-88ee-777489468c71",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-14e98e43-7bb3-545e-b0fc-d96819790486",
+      "provider": "openbeta",
+      "externalId": "14e98e43-7bb3-545e-b0fc-d96819790486",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-3012916c-c280-57bb-959e-91bf387b7e8b",
+      "provider": "openbeta",
+      "externalId": "3012916c-c280-57bb-959e-91bf387b7e8b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-30f90426-0a39-58fc-a17f-303bc0aff006",
+      "provider": "openbeta",
+      "externalId": "30f90426-0a39-58fc-a17f-303bc0aff006",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-400237a0-ece3-52fa-a676-9b1cd599dc30",
+      "provider": "openbeta",
+      "externalId": "400237a0-ece3-52fa-a676-9b1cd599dc30",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-43435b7d-9863-55f6-b9a7-724656db3172",
+      "provider": "openbeta",
+      "externalId": "43435b7d-9863-55f6-b9a7-724656db3172",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-09736235-7966-5690-a539-739ad98ab7fe",
+      "provider": "openbeta",
+      "externalId": "09736235-7966-5690-a539-739ad98ab7fe",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-0f852e01-c62b-52a5-9616-30e596185bfd",
+      "provider": "openbeta",
+      "externalId": "0f852e01-c62b-52a5-9616-30e596185bfd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-1c767497-a023-576e-bb66-90684bc93984",
+      "provider": "openbeta",
+      "externalId": "1c767497-a023-576e-bb66-90684bc93984",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-1f47b63c-138b-5724-b8d1-a7a5e02987d6",
+      "provider": "openbeta",
+      "externalId": "1f47b63c-138b-5724-b8d1-a7a5e02987d6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-29b07267-8ea2-5c2c-898c-7ef2da41be51",
+      "provider": "openbeta",
+      "externalId": "29b07267-8ea2-5c2c-898c-7ef2da41be51",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-3bb3442e-8f07-57f6-96d4-d51cde02c3e4",
+      "provider": "openbeta",
+      "externalId": "3bb3442e-8f07-57f6-96d4-d51cde02c3e4",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-4b602aad-ed63-58aa-a503-898151bcaefa",
+      "provider": "openbeta",
+      "externalId": "4b602aad-ed63-58aa-a503-898151bcaefa",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-58d8058c-1ff0-5e61-b6ab-1aad42e4b336",
+      "provider": "openbeta",
+      "externalId": "58d8058c-1ff0-5e61-b6ab-1aad42e4b336",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-5aa5541d-7442-51b7-b10f-5f29b0ce8b0e",
+      "provider": "openbeta",
+      "externalId": "5aa5541d-7442-51b7-b10f-5f29b0ce8b0e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-6d9f3c9b-ebf6-5301-8b57-b09654d2b62c",
+      "provider": "openbeta",
+      "externalId": "6d9f3c9b-ebf6-5301-8b57-b09654d2b62c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-d368dbcb-f3f2-5f57-a17a-386fe84b6aa0",
+      "provider": "openbeta",
+      "externalId": "d368dbcb-f3f2-5f57-a17a-386fe84b6aa0",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-db0b71c5-b9df-530f-8085-5f8fd9154fe5",
+      "provider": "openbeta",
+      "externalId": "db0b71c5-b9df-530f-8085-5f8fd9154fe5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-eb724a33-343f-5cf5-bce3-57bd9fb258f0",
+      "provider": "openbeta",
+      "externalId": "eb724a33-343f-5cf5-bce3-57bd9fb258f0",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-efc16cf4-6dea-565b-a5ac-fba63ce49588",
+      "provider": "openbeta",
+      "externalId": "efc16cf4-6dea-565b-a5ac-fba63ce49588",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-18bcc874-1c59-5852-9cae-9bf53c157e1e",
+      "provider": "openbeta",
+      "externalId": "18bcc874-1c59-5852-9cae-9bf53c157e1e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-6670407e-7c16-5db8-b062-f90f1cc2c492",
+      "provider": "openbeta",
+      "externalId": "6670407e-7c16-5db8-b062-f90f1cc2c492",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-d7c66746-1fb2-5518-b0a1-2793600b86a2",
+      "provider": "openbeta",
+      "externalId": "d7c66746-1fb2-5518-b0a1-2793600b86a2",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-10279b14-eb65-5394-a7e9-23beb09f7e3d",
+      "provider": "openbeta",
+      "externalId": "10279b14-eb65-5394-a7e9-23beb09f7e3d",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-39eb372e-f371-58b0-b8ed-cf76f9b5d99c",
+      "provider": "openbeta",
+      "externalId": "39eb372e-f371-58b0-b8ed-cf76f9b5d99c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-67f45f9f-fa8c-5af4-a897-b33d7fde8c39",
+      "provider": "openbeta",
+      "externalId": "67f45f9f-fa8c-5af4-a897-b33d7fde8c39",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-6e68e5a7-332f-5287-a111-ecc39355a604",
+      "provider": "openbeta",
+      "externalId": "6e68e5a7-332f-5287-a111-ecc39355a604",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-7642f293-5717-5c83-8e68-dcbac45381c6",
+      "provider": "openbeta",
+      "externalId": "7642f293-5717-5c83-8e68-dcbac45381c6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-7b68b0dd-3fba-5f14-a826-f93e4298c924",
+      "provider": "openbeta",
+      "externalId": "7b68b0dd-3fba-5f14-a826-f93e4298c924",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-7dba3898-8f5a-5895-8f57-638f34ef6bb3",
+      "provider": "openbeta",
+      "externalId": "7dba3898-8f5a-5895-8f57-638f34ef6bb3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-a5c4233c-c0ec-5656-932f-400cac2cd11e",
+      "provider": "openbeta",
+      "externalId": "a5c4233c-c0ec-5656-932f-400cac2cd11e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-b5e3940e-aafd-51bd-87e5-cf201bbbb5fe",
+      "provider": "openbeta",
+      "externalId": "b5e3940e-aafd-51bd-87e5-cf201bbbb5fe",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-21d0e5be-0b89-51a2-b3bc-b1134b88e5bc",
+      "provider": "openbeta",
+      "externalId": "21d0e5be-0b89-51a2-b3bc-b1134b88e5bc",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-88eeabf3-32d1-5875-bae8-09de2dbba3be",
+      "provider": "openbeta",
+      "externalId": "88eeabf3-32d1-5875-bae8-09de2dbba3be",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-a92e45d6-f302-560e-a5a5-d7784a1c438c",
+      "provider": "openbeta",
+      "externalId": "a92e45d6-f302-560e-a5a5-d7784a1c438c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-bcaaa4a2-b1c7-5bfa-b170-567fec9796f8",
+      "provider": "openbeta",
+      "externalId": "bcaaa4a2-b1c7-5bfa-b170-567fec9796f8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-d57a7b97-1aa4-5157-a619-c8f42deda04b",
+      "provider": "openbeta",
+      "externalId": "d57a7b97-1aa4-5157-a619-c8f42deda04b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-04df3746-a482-5a82-b83a-54a77455a2d3",
+      "provider": "openbeta",
+      "externalId": "04df3746-a482-5a82-b83a-54a77455a2d3",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-1288a8aa-9677-5e02-be9b-b46d31ea9ec1",
+      "provider": "openbeta",
+      "externalId": "1288a8aa-9677-5e02-be9b-b46d31ea9ec1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-23059d7b-949b-5868-8d73-4094caf649e7",
+      "provider": "openbeta",
+      "externalId": "23059d7b-949b-5868-8d73-4094caf649e7",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-35aa11be-6064-54a7-8523-f050cae862c8",
+      "provider": "openbeta",
+      "externalId": "35aa11be-6064-54a7-8523-f050cae862c8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-55fe4c9e-bcd5-55f2-96bb-9d6cf155ca40",
+      "provider": "openbeta",
+      "externalId": "55fe4c9e-bcd5-55f2-96bb-9d6cf155ca40",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-88e0c342-9796-517a-a2d4-33b457a35f09",
+      "provider": "openbeta",
+      "externalId": "88e0c342-9796-517a-a2d4-33b457a35f09",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-93627f1f-4fa5-5cd3-9f4d-b9724f0d5d9b",
+      "provider": "openbeta",
+      "externalId": "93627f1f-4fa5-5cd3-9f4d-b9724f0d5d9b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-c21146d0-b3e2-5d8f-a853-d4584d0d20a7",
+      "provider": "openbeta",
+      "externalId": "c21146d0-b3e2-5d8f-a853-d4584d0d20a7",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-0da53b03-0b19-5761-a2fb-78e8de238587",
+      "provider": "openbeta",
+      "externalId": "0da53b03-0b19-5761-a2fb-78e8de238587",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-11325074-8a66-58d0-94b7-8b16a4a75306",
+      "provider": "openbeta",
+      "externalId": "11325074-8a66-58d0-94b7-8b16a4a75306",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-203e008e-626f-5cbb-baa2-6408cbba4ffb",
+      "provider": "openbeta",
+      "externalId": "203e008e-626f-5cbb-baa2-6408cbba4ffb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-4d868211-ea27-5d28-868c-ffe2bb0b5953",
+      "provider": "openbeta",
+      "externalId": "4d868211-ea27-5d28-868c-ffe2bb0b5953",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-56f54a40-0664-541e-8940-731adf7e9d83",
+      "provider": "openbeta",
+      "externalId": "56f54a40-0664-541e-8940-731adf7e9d83",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-7848e1a6-2379-5134-9158-a8ab2ab5e2df",
+      "provider": "openbeta",
+      "externalId": "7848e1a6-2379-5134-9158-a8ab2ab5e2df",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-86d637a0-10ed-568d-bb92-2dda3e4f3965",
+      "provider": "openbeta",
+      "externalId": "86d637a0-10ed-568d-bb92-2dda3e4f3965",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-f32e1190-70a3-59d0-8501-d5ae010c54d8",
+      "provider": "openbeta",
+      "externalId": "f32e1190-70a3-59d0-8501-d5ae010c54d8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-23a5102d-fb57-5e4e-a2db-49f0f621df8e",
+      "provider": "openbeta",
+      "externalId": "23a5102d-fb57-5e4e-a2db-49f0f621df8e",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-43601741-a77d-5f40-9348-aa41a1e9cd7b",
+      "provider": "openbeta",
+      "externalId": "43601741-a77d-5f40-9348-aa41a1e9cd7b",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-4844c1bb-642e-5a2c-ba82-a02153d5a09c",
+      "provider": "openbeta",
+      "externalId": "4844c1bb-642e-5a2c-ba82-a02153d5a09c",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-59e95de5-d146-5431-9d43-49b291da49ce",
+      "provider": "openbeta",
+      "externalId": "59e95de5-d146-5431-9d43-49b291da49ce",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-64d28990-026f-5520-8c08-9a5fc31ad2f1",
+      "provider": "openbeta",
+      "externalId": "64d28990-026f-5520-8c08-9a5fc31ad2f1",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-69062239-cbb3-5f05-8c0f-283255cfeb2f",
+      "provider": "openbeta",
+      "externalId": "69062239-cbb3-5f05-8c0f-283255cfeb2f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-72df4ec4-46dc-5652-8e89-f111748d36fd",
+      "provider": "openbeta",
+      "externalId": "72df4ec4-46dc-5652-8e89-f111748d36fd",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-89fd1072-4c9a-59bb-982a-138ec37c06c8",
+      "provider": "openbeta",
+      "externalId": "89fd1072-4c9a-59bb-982a-138ec37c06c8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-a498ef42-ae8d-5d10-ac34-39fc9be9658f",
+      "provider": "openbeta",
+      "externalId": "a498ef42-ae8d-5d10-ac34-39fc9be9658f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-b31c87d2-8374-5a65-a821-b9113fb18565",
+      "provider": "openbeta",
+      "externalId": "b31c87d2-8374-5a65-a821-b9113fb18565",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-f20c58a3-44b5-5182-b672-d4721a17dc17",
+      "provider": "openbeta",
+      "externalId": "f20c58a3-44b5-5182-b672-d4721a17dc17",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-028b3db3-d87e-5e8a-b359-e23689f98629",
+      "provider": "openbeta",
+      "externalId": "028b3db3-d87e-5e8a-b359-e23689f98629",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-36bfe9fd-5a41-52ea-803f-6dae9fa9b8a6",
+      "provider": "openbeta",
+      "externalId": "36bfe9fd-5a41-52ea-803f-6dae9fa9b8a6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-39544db4-b615-5e7d-8340-b5504aced74f",
+      "provider": "openbeta",
+      "externalId": "39544db4-b615-5e7d-8340-b5504aced74f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-421f2765-d896-5596-9920-9c790c815e49",
+      "provider": "openbeta",
+      "externalId": "421f2765-d896-5596-9920-9c790c815e49",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-4ff79808-c82b-532d-9dea-c2e3696b0cf6",
+      "provider": "openbeta",
+      "externalId": "4ff79808-c82b-532d-9dea-c2e3696b0cf6",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-802fcc64-a56a-5ac8-a902-d229bb6c4760",
+      "provider": "openbeta",
+      "externalId": "802fcc64-a56a-5ac8-a902-d229bb6c4760",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-a1db75ec-afa7-5bf0-b674-69d70cea9fdb",
+      "provider": "openbeta",
+      "externalId": "a1db75ec-afa7-5bf0-b674-69d70cea9fdb",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-aeb61708-b07d-5d18-9283-015083fcb2f5",
+      "provider": "openbeta",
+      "externalId": "aeb61708-b07d-5d18-9283-015083fcb2f5",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-dbb32b52-94ea-5069-aca4-341be2652577",
+      "provider": "openbeta",
+      "externalId": "dbb32b52-94ea-5069-aca4-341be2652577",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-fe8c2ef0-6066-5152-967f-c059c005f053",
+      "provider": "openbeta",
+      "externalId": "fe8c2ef0-6066-5152-967f-c059c005f053",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "air-ride-equipped-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "0da292a9-2e7f-548a-9034-51c475408c68",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "magnum-opus-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "9221a434-8a59-545a-82aa-c722b9c342b9",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "banshee-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "e5c0918d-9fda-53dc-bf26-218f43aa126f",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-a669e08d-3eeb-599b-a587-d5d2b7e09677",
+      "provider": "openbeta",
+      "externalId": "a669e08d-3eeb-599b-a587-d5d2b7e09677",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "openbeta-ca15e104-561d-50a8-a822-4e1c43d0a447",
+      "provider": "openbeta",
+      "externalId": "ca15e104-561d-50a8-a822-4e1c43d0a447",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "canonicalRouteId": "jesus-wept-red-river-gorge",
+      "provider": "openbeta",
+      "externalId": "d150f127-7335-59e9-8cde-397dbd28b23a",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    }
+  ]
+}

@@ -25,7 +25,10 @@ export function createRouteGrade(
   destinationId: string,
   climbingType: RouteClimbingType
 ): RouteGrade {
-  const parsed = parseRouteGrade(original, destinationId, climbingType);
+  // "metadata" was an internal marker in older seed records, not part of a
+  // climbing grade. Remove only that exact trailing marker before parsing.
+  const publicOriginal = original.replace(/\s+metadata\s*$/i, "").trim();
+  const parsed = parseRouteGrade(publicOriginal, destinationId, climbingType);
 
   return {
     ...parsed,

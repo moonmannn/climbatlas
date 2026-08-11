@@ -21,15 +21,23 @@ import {
 
 const root = process.cwd();
 const startedAt = performance.now();
-const manifestPath = path.join(
-  root,
-  "src",
-  "data",
-  "routes",
-  "manifests",
-  "route-coverage-3-batch-1.json"
-);
+const manifestArgument = process.argv.indexOf("--manifest");
+const manifestPath =
+  manifestArgument >= 0
+    ? path.resolve(root, process.argv[manifestArgument + 1])
+    : path.join(
+        root,
+        "src",
+        "data",
+        "routes",
+        "manifests",
+        "route-coverage-3-batch-1.json"
+      );
+if (manifestArgument >= 0 && !process.argv[manifestArgument + 1]) {
+  throw new Error("--manifest requires a file path.");
+}
 const manifest = readJson(manifestPath);
+process.env.CLIMBATLAS_EXCLUDE_ROUTE_COVERAGE_BATCH = manifest.batchId;
 const parquetArgument = process.argv.indexOf("--parquet");
 const parquetPath =
   parquetArgument >= 0
@@ -125,6 +133,19 @@ function typePresent(row) {
   return supportedTypeCount(row) > 0;
 }
 
+function isPlaceholderRouteName(name) {
+  const normalized = name.trim().toLowerCase();
+
+  if (new Set(["tbd", "n/a", "no name"]).has(normalized)) {
+    return true;
+  }
+
+  return (
+    /^unknown(?:\s+(?:route|sport route|tr|\d.*))?$/.test(normalized) ||
+    /^unnamed(?:\s+(?:route|\d.*|\(.*\)))?$/.test(normalized)
+  );
+}
+
 function supportedTypeCount(row) {
   return [
     row.is_sport,
@@ -207,12 +228,31 @@ function sourceIdentities(route) {
 }
 
 function duplicateResolution(candidate) {
-  const externalMatch = existingByExternalId.get(candidate.raw.uuid);
+  const externalMatch = existingByExternalId.get(
+    candidate.raw.uuid.toLowerCase()
+  );
   if (externalMatch) {
+    const existingSource = externalMatch.sourceRecords.find(
+      (source) =>
+        source.provider === "openbeta" &&
+        source.externalId?.toLowerCase() === candidate.raw.uuid.toLowerCase()
+    );
+    const incomingSource = candidate.route.sourceRecords.find(
+      (source) => source.provider === "openbeta"
+    );
+    const sourceIsCurrent = Boolean(
+      existingSource &&
+      incomingSource &&
+      existingSource.sourceRelease === manifest.sourceRelease &&
+      existingSource.sourceUrl === incomingSource.sourceUrl
+    );
+
     return {
-      action: "merge-existing",
+      action: sourceIsCurrent ? "source-already-linked" : "merge-existing",
       route: externalMatch,
-      reason: "same OpenBeta external ID"
+      reason: sourceIsCurrent
+        ? "OpenBeta external ID and locked source release are already attached"
+        : "same OpenBeta external ID requires a source-record refresh"
     };
   }
 
@@ -299,9 +339,11 @@ function balancedOrderWithinQualityTier(candidates, destinationSlug) {
 
   for (const candidate of candidates) {
     const hierarchy = candidate.raw.sourceHierarchy;
-    const unit = ["bishop-area-usa", "red-rock-canyon-usa"].includes(
-      destinationSlug
-    )
+    const unit = [
+      "bishop-area-usa",
+      "red-rock-canyon-usa",
+      "indian-creek-usa"
+    ].includes(destinationSlug)
       ? hierarchy?.crag ?? "(missing crag)"
       : hierarchy?.area ?? "(missing area)";
     const gradeSystem = candidate.route.grade.primarySystem ?? "unknown";
@@ -485,7 +527,9 @@ for (const scope of manifest.destinationScopes) {
     let reason;
 
     if (!externalId) reason = "missing OpenBeta route ID";
-    else if (!name || name === "[Redacted]") reason = "missing or redacted route name";
+    else if (!name || name === "[Redacted]" || isPlaceholderRouteName(name)) {
+      reason = "missing, redacted, or placeholder route name";
+    }
     else if (!typePresent(row)) reason = "no supported climbing type in source row";
     else if (supportedTypeCount(row) > 1) {
       reason =
@@ -546,6 +590,7 @@ for (const scope of manifest.destinationScopes) {
 
   const eligible = [];
   let existingDuplicateCount = 0;
+  let alreadyLinkedSourceCount = 0;
   let identityConflictCount = sourceDuplicateIds.size;
 
   for (const candidate of normalized) {
@@ -554,6 +599,12 @@ for (const scope of manifest.destinationScopes) {
 
     if (resolution.action === "eligible") {
       eligible.push(candidate);
+      continue;
+    }
+
+    if (resolution.action === "source-already-linked") {
+      existingDuplicateCount += 1;
+      alreadyLinkedSourceCount += 1;
       continue;
     }
 
@@ -714,6 +765,7 @@ for (const scope of manifest.destinationScopes) {
     ).length,
     validAfterNormalization: normalized.length,
     existingDuplicates: existingDuplicateCount,
+    alreadyLinkedSourceIdentities: alreadyLinkedSourceCount,
     identityConflicts: identityConflictCount,
     eligibleNewRoutes: eligible.length,
     selectedForPreview: selectedRouteRecords.length,
@@ -920,6 +972,10 @@ const summary = {
     publishedPicksRemain40:
       existingPublicRoutes.filter(publicRoutesModule.hasPublishedRouteEditorial)
         .length === 40,
+    destinationMinimumsReached: candidateReports.every((report) => {
+      const minimum = manifest.destinationTargets[report.destinationSlug].minimum;
+      return report.existingPublicRoutes + report.selectedForPreview >= minimum;
+    }),
     destinationTargetsReached: candidateReports.every(
       (report) => report.targetReached
     ),

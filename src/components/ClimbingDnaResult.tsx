@@ -383,9 +383,11 @@ export function ClimbingDnaResult({
                       <p className="mt-3 text-sm leading-6 text-charcoal/62">
                         {localizeFact(destination.rockType, locale)} · {destination.climbingTypes.map((type) => localizeFact(type, locale)).join(" / ")} · {destination.routeCount} {text.routes}
                       </p>
-                      <p className="mt-1 text-sm leading-6 text-charcoal/62">
-                        {text.season}: {destination.bestSeasons.map((season) => localizeFact(season, locale)).join(", ")}
-                      </p>
+                      {destination.bestSeasons.length > 0 ? (
+                        <p className="mt-1 text-sm leading-6 text-charcoal/62">
+                          {text.season}: {destination.bestSeasons.map((season) => localizeFact(season, locale)).join(", ")}
+                        </p>
+                      ) : null}
                       {match.watchDimension ? (
                         <div className="mt-5 border-t border-brandforest/10 pt-4">
                           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-terracotta">{text.consider}</p>

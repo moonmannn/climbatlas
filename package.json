@@ -17,6 +17,7 @@
     "routes:audit": "node scripts/routes/audit-routes.mjs",
     "routes:dna-validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/routes/validate-route-dna.mjs",
     "grades:validate": "node scripts/routes/validate-grade-parser.mjs",
+    "grades:validate-legacy-markers": "node scripts/routes/validate-legacy-grade-markers.mjs",
     "formatters:validate": "node scripts/routes/validate-public-formatters.mjs",
     "ui:validate": "node scripts/validate-production-ui.mjs",
     "copy:validate": "node scripts/validate-public-copy.mjs",

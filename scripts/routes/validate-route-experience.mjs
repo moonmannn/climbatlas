@@ -6,20 +6,27 @@ import process from "node:process";
 import { loadRouteProject } from "./load-route-project.mjs";
 
 const reviewedBaseline = 1074;
-const routeCoverage3Snapshot = JSON.parse(
-  fs.readFileSync(
-    path.join(
-      process.cwd(),
-      "src",
-      "data",
-      "routes",
-      "imports",
-      "route-coverage-3-batch-1.json"
-    ),
-    "utf8"
-  )
+const routeCoverageImportsDirectory = path.join(
+  process.cwd(),
+  "src",
+  "data",
+  "routes",
+  "imports"
 );
-const EXPECTED_PUBLIC_ROUTES = reviewedBaseline + routeCoverage3Snapshot.routes.length;
+const routeCoverage3Snapshots = fs
+  .readdirSync(routeCoverageImportsDirectory)
+  .filter((file) => /^route-coverage-3-batch-\d+\.json$/.test(file))
+  .sort()
+  .map((file) =>
+    JSON.parse(
+      fs.readFileSync(path.join(routeCoverageImportsDirectory, file), "utf8")
+    )
+  );
+const importedRouteCoverage3Count = routeCoverage3Snapshots.reduce(
+  (total, snapshot) => total + snapshot.routes.length,
+  0
+);
+const EXPECTED_PUBLIC_ROUTES = reviewedBaseline + importedRouteCoverage3Count;
 const EXPECTED_PICKS = 40;
 const EXPECTED_PICKS_PER_DESTINATION = 8;
 const TARGET_DESTINATIONS = [

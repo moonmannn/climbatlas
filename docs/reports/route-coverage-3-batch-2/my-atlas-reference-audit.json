@@ -1,0 +1,35 @@
+{
+  "batchId": "route-coverage-3-batch-2",
+  "auditGeneratedAt": "2026-08-11T10:44:16.443Z",
+  "remoteStatus": "completed-via-read-only-aggregate-snapshot",
+  "sourceEvidence": {
+    "projectRef": "yszotgpkmyqfqwicgohh",
+    "checkedAt": "2026-08-11T10:33:21.551629+00:00",
+    "queryMode": "Supabase SQL Editor live read-only aggregate",
+    "containsUserIdentifiers": false,
+    "containsPrivateNotes": false
+  },
+  "staticSummary": {
+    "publicCanonicalRoutes": 1807,
+    "previewCanonicalRoutes": 339,
+    "aliases": 118,
+    "retiredRouteParameters": 30,
+    "areaIndexes": 68,
+    "migrationCoverageWarning": "The historical route-alias SQL predates climbing_logs and must not be reused as the RC3 migration."
+  },
+  "rowCounts": {
+    "saved_routes": 1,
+    "route_notes": 0,
+    "climbing_logs": 0
+  },
+  "totalRouteReferences": 1,
+  "distinctReferenceGroups": 1,
+  "issueCounts": {
+    "aliasMigrationNeeded": 0,
+    "areaIndexReferences": 0,
+    "retiredReferences": 0,
+    "orphanedReferences": 0
+  },
+  "issues": [],
+  "releaseGate": "pass"
+}

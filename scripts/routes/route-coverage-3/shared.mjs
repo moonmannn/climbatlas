@@ -151,7 +151,13 @@ export function mapDestinationHierarchy(destinationSlug, hierarchy) {
   const sourceArea = hierarchy.area;
   const sourceCrag = hierarchy.crag;
 
-  if (["bishop-area-usa", "red-rock-canyon-usa"].includes(destinationSlug)) {
+  if (
+    [
+      "bishop-area-usa",
+      "red-rock-canyon-usa",
+      "indian-creek-usa"
+    ].includes(destinationSlug)
+  ) {
     return {
       destinationId: destinationSlug,
       areaId: sourceCrag
@@ -316,7 +322,8 @@ export async function validateRouteLinks(
 
     if (
       cached?.sourceUrl === sourceUrl &&
-      cached?.canonicalUrlCheckedAt === checkedAt
+      cached?.canonicalUrlCheckedAt === checkedAt &&
+      ["valid", "redirected", "broken"].includes(cached.linkStatus)
     ) {
       results.set(externalId, cached);
     } else {

@@ -10945,6 +10945,77 @@ export const destinations: Destination[] = [
         }
       }
     ]
+  },
+  {
+    slug: "new-river-gorge-usa",
+    name: "New River Gorge",
+    country: "USA",
+    latitude: 38.0707,
+    longitude: -81.0754,
+    climbingTypes: ["sport", "trad", "boulder"],
+    rockType: "Sandstone",
+    bestSeasons: ["Spring", "Fall"],
+    difficultyRange: "YDS and V Scale routes indexed",
+    beginnerFriendly: false,
+    description:
+      "A West Virginia climbing region represented here by sport, trad, and bouldering records across the New River Gorge, Summersville Lake, and Meadow River areas. Use Route Explorer to compare type, grade, and subarea, then check current land-manager and local access information before travelling.",
+    localizedContent: {
+      description: {
+        en: "A West Virginia climbing region represented here by sport, trad, and bouldering records across the New River Gorge, Summersville Lake, and Meadow River areas. Use Route Explorer to compare type, grade, and subarea, then check current land-manager and local access information before travelling.",
+        zh: "这是位于西弗吉尼亚州的攀岩区域。ClimbAtlas 目前收录了 New River Gorge、Summersville Lake 与 Meadow River 一带的运动攀、传统攀和抱石线路。你可以在线路目录中按类型、难度和子区域筛选；出发前请再查看土地管理方和当地组织发布的最新通行信息。"
+      }
+    },
+    externalResources: [
+      {
+        title: "National Park Service: climbing at New River Gorge",
+        url: "https://www.nps.gov/neri/planyourvisit/climbing.htm",
+        type: "official",
+        description: {
+          en: "Official park climbing information and regulations. Check the current page before travelling.",
+          zh: "国家公园管理局发布的攀岩信息与规定。出发前请查看页面中的最新内容。"
+        }
+      },
+      {
+        title: "New River Alliance of Climbers: access updates",
+        url: "https://www.nracofficial.org/access",
+        type: "official",
+        description: {
+          en: "Current local access information across land managers in the New River Gorge region.",
+          zh: "New River Gorge 区域不同土地管理范围内的当地通行信息。"
+        }
+      }
+    ]
+  },
+  {
+    slug: "indian-creek-usa",
+    name: "Indian Creek",
+    country: "USA",
+    latitude: 38.025,
+    longitude: -109.545,
+    climbingTypes: ["trad", "sport", "boulder"],
+    rockType: "Sandstone",
+    bestSeasons: [],
+    difficultyRange: "YDS and V Scale routes indexed",
+    beginnerFriendly: false,
+    description:
+      "A southeast Utah climbing area whose current ClimbAtlas index is centered on traditional crack routes across named Indian Creek walls, with a smaller number of other source-backed records. Use Route Explorer to compare grade and wall, then check current BLM access and raptor-avoidance notices before travelling.",
+    localizedContent: {
+      description: {
+        en: "A southeast Utah climbing area whose current ClimbAtlas index is centered on traditional crack routes across named Indian Creek walls, with a smaller number of other source-backed records. Use Route Explorer to compare grade and wall, then check current BLM access and raptor-avoidance notices before travelling.",
+        zh: "这是犹他州东南部的攀岩区域。ClimbAtlas 当前的线路索引以 Indian Creek 各命名岩壁上的传统裂缝线路为主，也包含少量有来源支持的其他线路记录。你可以在线路目录中按难度和岩壁筛选；出发前请查看 BLM 最新的通行与猛禽保护避让通知。"
+      }
+    },
+    externalResources: [
+      {
+        title: "Bureau of Land Management: Indian Creek",
+        url: "https://www.blm.gov/visit/indian-creek-bears-ears-national-monument",
+        type: "official",
+        description: {
+          en: "Official visitor, climbing, land-care, and seasonal raptor-avoidance information. Check it again before travelling.",
+          zh: "BLM 发布的访客、攀岩、土地保护与季节性猛禽避让信息。出发前请再次核对。"
+        }
+      }
+    ]
   }
 ];
 

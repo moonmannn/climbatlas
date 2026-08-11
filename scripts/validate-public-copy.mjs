@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import { loadRouteProject } from "./routes/load-route-project.mjs";
 
 const root = process.cwd();
 const issues = [];
@@ -68,14 +69,25 @@ for (const file of publicUiFiles) {
   }
 }
 
-const localizedContentPath = path.join(root, "src", "data", "localizedContent.ts");
-const localizedContent = fs.readFileSync(localizedContentPath, "utf8");
-const destinationCopy = localizedContent.split(
-  "export const routeLocalizedContent"
-)[0];
-const destinationDescriptionCount = (
-  destinationCopy.match(/description:\s*\{/g) ?? []
-).length;
+const { destinationsModule, localizedContentModule } = loadRouteProject(root);
+const destinations = destinationsModule.destinations;
+const destinationDescriptions = destinations.flatMap((destination) => {
+  const localized = localizedContentModule.getDestinationLocalizedContent(destination);
+  const en = localized?.description?.en?.trim();
+  const zh = localized?.description?.zh?.trim();
+
+  if (!en) {
+    issues.push(`${destination.slug} is missing an English destination introduction.`);
+  }
+
+  if (!zh) {
+    issues.push(`${destination.slug} is missing a Chinese destination introduction.`);
+  }
+
+  return [en, zh].filter(Boolean);
+});
+const destinationCopy = destinationDescriptions.join("\n");
+const destinationDescriptionCount = destinations.length;
 const destinationPatterns = [
   /\b(?:Pick|Choose) it when\b/i,
   /\bthis card\b/i,
@@ -94,12 +106,6 @@ for (const pattern of destinationPatterns) {
       `src/data/localizedContent.ts:${lineAt(destinationCopy, match.index)} has a destination-copy review trigger: ${match[0]}`
     );
   }
-}
-
-if (destinationDescriptionCount !== 20) {
-  issues.push(
-    `Expected 20 localized destination introductions, found ${destinationDescriptionCount}.`
-  );
 }
 
 if (issues.length > 0) {

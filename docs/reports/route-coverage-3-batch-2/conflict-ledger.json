@@ -1,0 +1,2270 @@
+{
+  "batchId": "route-coverage-3-batch-2",
+  "unresolved": 0,
+  "conflicts": [
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "45c5faa5-2dc9-5e5c-909b-772f7900e83b",
+          "name": "Problem G",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "ad869901-1d7b-58ec-93eb-4b0db12cb5e5",
+          "name": "Problem G",
+          "grade": "V2+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "684f80d7-e21a-518d-b85f-0326348bd5ea",
+          "name": "Problem F",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "961aad54-7ffe-5e78-beda-39d18413d090",
+          "name": "Problem F",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a986f6f5-729f-56e1-a27e-d8c73aaea387",
+          "name": "Problem D",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "64769a8b-f3aa-54be-80c6-9ff55321a73c",
+          "name": "Problem D",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "b148a46f-09b3-5134-a382-5a4736b04de7",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "d3cc4939-15b5-5089-bff1-ec185018f9cd",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d5b36281-3f2a-5293-ad2b-22d71edadc4e",
+          "name": "Problem H",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "87e54467-5fc9-5d5c-b087-b9c8910971c6",
+          "name": "Problem H",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d95abe22-f4b7-58b8-8d96-fb5ab1b18d84",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "16d943c2-4696-5d2f-96f5-59479dcba15c",
+          "name": "Problem B",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "dd7aba2d-87f0-550d-b71e-83df499b9dca",
+          "name": "Problem E",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "25722d0f-99b6-5d21-a8bc-1f4ecbdc0ee0",
+          "name": "Problem E",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "de563923-4693-55e9-a437-65da91e4dafe",
+          "name": "Problem C",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        },
+        {
+          "externalId": "adb419ae-423f-5204-9b99-77ed77a98923",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Tuolumne Meadows",
+            "crag": "* Tuolumne Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a36802d1-9b3e-5f92-810b-55fc46d52ea4",
+          "name": "West Face",
+          "grade": "5.11a",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley South Side"
+          }
+        },
+        {
+          "externalId": "9e5e548b-bb2e-57eb-bb62-e0ed981a5792",
+          "name": "West Face",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley South Side"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "815e3c49-24d0-5185-b362-3cdec9c01add",
+          "name": "Chicken Pie",
+          "grade": "5.7",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Lower Merced River Canyon"
+          }
+        },
+        {
+          "externalId": "7f69e887-787a-56f5-b8e2-f6ce84f2abd9",
+          "name": "Chicken Pie",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Lower Merced River Canyon"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5665633f-fd6f-5f7f-a7c8-2d8cb8980221",
+          "name": "East Buttress",
+          "grade": "5.10c",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley South Side"
+          }
+        },
+        {
+          "externalId": "5db22bb7-3a82-500b-bca1-77fc5163a595",
+          "name": "East Buttress",
+          "grade": "5.10c",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley South Side"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "12c7a183-48cf-5946-a636-911daad0d2f7",
+          "name": "South Face",
+          "grade": "5.9",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley North Side"
+          }
+        },
+        {
+          "externalId": "9e3d1bb5-435d-5de4-90b5-080ec72fe87f",
+          "name": "South Face",
+          "grade": "5.8",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley North Side"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "81601374-5a1b-56bc-b924-cd6a6e019fcf",
+          "name": "West Face",
+          "grade": "5.11c",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley North Side"
+          }
+        },
+        {
+          "externalId": "38143b1d-f69e-5258-8524-14fd8cc96072",
+          "name": "West Face",
+          "grade": "5.10c",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "Valley North Side"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d1286bcf-0b20-5649-abf2-3cbf9851e0a6",
+          "name": "Face",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "6c8ac9c7-e2ff-5d9d-aa9a-bfc32023f6f0",
+          "name": "Face",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "190eeaf5-52e1-564a-a2a2-57c178a6c80c",
+          "name": "Unnamed Arete",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "1f526efe-ae01-5b9e-be14-f0a4df5df5a5",
+          "name": "Unnamed Arete",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "87f545b0-b2a7-5697-888c-2b0c6cda19d3",
+          "name": "Unnamed Arete",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "71ddcb2c-5ab3-51cf-a4da-4fe576066db0",
+          "name": "Unnamed Mantel",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "76816c5d-c6cd-5646-b1eb-20c3e0b91575",
+          "name": "Unnamed Mantel",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "d7a65371-8396-54f5-9690-6b8f0290a470",
+          "name": "Unnamed Mantel",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "98ad047a-d5e7-502f-b061-b4d354b809be",
+          "name": "Unnamed Face",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "27348f38-7e84-5f0c-897b-d71d0f13e50f",
+          "name": "Unnamed Face",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "a0256576-ab6c-5dab-9700-27fa96c151cc",
+          "name": "Unnamed Face",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "f642e97e-2df9-528a-9360-0ee390f01ee0",
+          "name": "Unnamed Face",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "b2d400ea-deb0-5cbf-b295-e71dd398a624",
+          "name": "The Rebirthing",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "8eb5d11f-a74e-5b3d-9fb9-6ed1099ff5a0",
+          "name": "The Rebirthing",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "bc9cf797-5023-54f7-869f-4392ca5559b3",
+          "name": "Unnamed V3",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        },
+        {
+          "externalId": "ed4167ca-e1d1-547b-84c7-5b44d6022eb8",
+          "name": "Unnamed V3",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Yosemite National Park",
+            "area": "Yosemite Valley",
+            "crag": "* Yosemite Valley Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "dab12eaf-7744-5693-a2c5-22f8741652ff",
+      "sourceName": "Lucky Streaks",
+      "sourceGrade": "5.10+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Tuolumne Meadows",
+        "crag": "Fairview Dome"
+      },
+      "existingCandidates": [
+        {
+          "id": "lucky-streaks-yosemite",
+          "name": "Lucky Streaks",
+          "grade": "5.10d",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "8c3c8749-a72d-5e72-bcc7-c9cbe25b2a25",
+      "sourceName": "Sage",
+      "sourceGrade": "5.10a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Tuolumne Meadows",
+        "crag": "May Lake Area"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-2743fa44-836d-567e-9b5e-9e691aa8c588",
+          "name": "Sage",
+          "grade": "5.11a",
+          "climbingType": "sport",
+          "sectorName": "Wilde Pinnacle, The"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "23ddf3ca-08aa-5b3d-8311-c3dff0f4932d",
+      "sourceName": "Drive By Shooting",
+      "sourceGrade": "5.12a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley South Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "drive-by-shooting-yosemite",
+          "name": "Drive By Shooting",
+          "grade": "5.12a",
+          "climbingType": "trad",
+          "sectorName": "Yosemite Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "8d442959-a415-558a-b680-3c44440968b4",
+      "sourceName": "Cosmic Debris",
+      "sourceGrade": "5.13b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley South Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "cosmic-debris-yosemite",
+          "name": "Cosmic Debris",
+          "grade": "5.13b",
+          "climbingType": "trad",
+          "sectorName": "Yosemite Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "214cc286-5ae5-55f5-9d98-92af3234d5cc",
+      "sourceName": "Twilight Zone",
+      "sourceGrade": "5.10+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Lower Merced River Canyon"
+      },
+      "existingCandidates": [
+        {
+          "id": "twilight-zone-yosemite",
+          "name": "Twilight Zone",
+          "grade": "5.10d",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e853a9e2-73be-5d68-a10c-7f89bd9fc0b4",
+      "sourceName": "Catchy",
+      "sourceGrade": "5.10d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Lower Merced River Canyon"
+      },
+      "existingCandidates": [
+        {
+          "id": "catchy-yosemite",
+          "name": "Catchy",
+          "grade": "5.10d",
+          "climbingType": "trad",
+          "sectorName": "Yosemite Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a57089e0-c82a-5fb5-bfb5-aaf11e53adac",
+      "sourceName": "Braille Book",
+      "sourceGrade": "5.8+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley South Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "braille-book-yosemite",
+          "name": "Braille Book",
+          "grade": "5.8",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "f3d6352f-01ee-5f9b-8473-6a7008b1f20d",
+      "sourceName": "Crimson Cringe",
+      "sourceGrade": "5.12b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Lower Merced River Canyon"
+      },
+      "existingCandidates": [
+        {
+          "id": "crimson-cringe-yosemite",
+          "name": "Crimson Cringe",
+          "grade": "5.12a",
+          "climbingType": "trad",
+          "sectorName": "Yosemite Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a9ae8224-495f-56af-a40d-9c36501000be",
+      "sourceName": "Book of Hate",
+      "sourceGrade": "5.13d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Lower Merced River Canyon"
+      },
+      "existingCandidates": [
+        {
+          "id": "book-of-hate-yosemite",
+          "name": "Book of Hate",
+          "grade": "5.13d",
+          "climbingType": "trad",
+          "sectorName": "Yosemite Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "64802590-a9af-52d7-94c3-6030dea82f7a",
+      "sourceName": "Mescalito",
+      "sourceGrade": "5.9+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "mescalito-yosemite",
+          "name": "Mescalito",
+          "grade": "5.9+ A3",
+          "climbingType": "trad",
+          "sectorName": "El Capitan"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "635e41b2-6190-5b33-9284-66c17fd3491c",
+      "sourceName": "Jamcrack",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "jamcrack-yosemite",
+          "name": "Jamcrack",
+          "grade": "5.7",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "9fa1f71c-fe70-5fcd-9b3e-caf8a8d796ef",
+      "sourceName": "Muir Wall",
+      "sourceGrade": "5.10",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "muir-wall-yosemite",
+          "name": "Muir Wall",
+          "grade": "5.13c",
+          "climbingType": "trad",
+          "sectorName": "El Capitan"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a3624f5e-e607-5a3e-9f3e-a8d4ccc68dc0",
+      "sourceName": "The Nose",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "the-nose-el-capitan",
+          "name": "The Nose",
+          "grade": "VI 5.9 C2 / 5.14a free",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "ca9b70a2-8745-505c-9b3a-8964226b564d",
+      "sourceName": "Salathe Wall",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "salathe-wall-el-capitan",
+          "name": "Salathe Wall",
+          "grade": "VI 5.13b/c free / C2 aid",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e081c29f-1925-5e1e-a295-c2b0b00818d3",
+      "sourceName": "Lurking Fear",
+      "sourceGrade": "5.7",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "lurking-fear-yosemite",
+          "name": "Lurking Fear",
+          "grade": "5.7 C2",
+          "climbingType": "trad",
+          "sectorName": "El Capitan"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "617340e9-b1d9-57d1-ab34-5ac33c3c50c2",
+      "sourceName": "Sons of Yesterday",
+      "sourceGrade": "5.10-",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "sons-of-yesterday-yosemite",
+          "name": "Sons of Yesterday",
+          "grade": "5.10a",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "yosemite-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "54a47397-a0dc-5ad5-adf6-b8279b09de69",
+      "sourceName": "Arrowhead Arête",
+      "sourceGrade": "5.8",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Yosemite National Park",
+        "area": "Yosemite Valley",
+        "crag": "Valley North Side"
+      },
+      "existingCandidates": [
+        {
+          "id": "arrowhead-arete-yosemite",
+          "name": "Arrowhead Arête",
+          "grade": "5.9-",
+          "climbingType": "multi-pitch",
+          "sectorName": "Yosemite Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "180f452c-53e9-5f9f-923f-5a314a78830e",
+          "name": "Light My Fire",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Oregon",
+            "region": "Central Oregon",
+            "area": "Smith Rock",
+            "crag": "Smith Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "41f404b8-d360-5772-9b23-f234402b6e96",
+          "name": "Light My Fire",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Oregon",
+            "region": "Central Oregon",
+            "area": "Smith Rock",
+            "crag": "Smith Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "8ea57083-6f8b-5716-8d1c-b241a9de1272",
+          "name": "Fireplace Problem",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Oregon",
+            "region": "Central Oregon",
+            "area": "Smith Rock",
+            "crag": "Smith Rock Bouldering"
+          }
+        },
+        {
+          "externalId": "83f84927-1934-5638-aeef-b5437a1f22e9",
+          "name": "Fireplace Problem",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Oregon",
+            "region": "Central Oregon",
+            "area": "Smith Rock",
+            "crag": "Smith Rock Bouldering"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "322b38f5-5ca8-5397-b058-00fedc5e096e",
+      "sourceName": "Just Do It",
+      "sourceGrade": "5.10-",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Oregon",
+        "region": "Central Oregon",
+        "area": "Smith Rock",
+        "crag": "(zz) Upper Gorge"
+      },
+      "existingCandidates": [
+        {
+          "id": "just-do-it-smith-rock",
+          "name": "Just Do It",
+          "grade": "5.14c",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "92bf502b-a4db-502d-a1f7-9d0773b6daa0",
+      "sourceName": "West Face Variation",
+      "sourceGrade": "5.8",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Oregon",
+        "region": "Central Oregon",
+        "area": "Smith Rock",
+        "crag": "(s) Monkey Face"
+      },
+      "existingCandidates": [
+        {
+          "id": "west-face-variation-smith-rock",
+          "name": "West Face Variation",
+          "grade": "5.9 A1",
+          "climbingType": "multi-pitch"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "352d3f00-8f31-5dcb-bd35-af6a4c5602c9",
+      "sourceName": "Kunza Korner",
+      "sourceGrade": "5.10c",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Oregon",
+        "region": "Central Oregon",
+        "area": "Smith Rock",
+        "crag": "(m) Smith Rock Group"
+      },
+      "existingCandidates": [
+        {
+          "id": "kunza-korner-smith",
+          "name": "Kunza Korner",
+          "grade": "5.10c",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "smith-rock-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "c6272c49-457c-52c6-9f3c-0089314adbba",
+      "sourceName": "Five Easy Pieces",
+      "sourceGrade": "5.13a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Oregon",
+        "region": "Central Oregon",
+        "area": "Smith Rock",
+        "crag": "(a) Picnic Lunch Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "five-easy-pieces-smith",
+          "name": "Five Easy Pieces",
+          "grade": "5.8",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "308987d3-4617-55fe-9c4a-bae9b333aeff",
+      "sourceName": "Windy Corner",
+      "sourceGrade": "5.11b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Natural Bridge Region",
+        "crag": "Torrent Falls"
+      },
+      "existingCandidates": [
+        {
+          "id": "windy-corner-red-river-gorge",
+          "name": "Windy Corner",
+          "grade": "5.11b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "6e1d5162-9b6d-59a2-8fdc-19de786042d5",
+      "sourceName": "The Return of Chris Snyder",
+      "sourceGrade": "5.11d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Natural Bridge Region",
+        "crag": "Graining Fork Nature Preserve (a.k.a. Roadside Crag)"
+      },
+      "existingCandidates": [
+        {
+          "id": "the-return-of-chris-snyder-red-river-gorge",
+          "name": "The Return of Chris Snyder",
+          "grade": "5.11d",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e40249d3-ef43-5b1d-b6fc-18501187b16e",
+      "sourceName": "Strawberry Shortcake",
+      "sourceGrade": "5.7",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Natural Bridge Region",
+        "crag": "Graining Fork Nature Preserve (a.k.a. Roadside Crag)"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-0da53b03-0b19-5761-a2fb-78e8de238587",
+          "name": "Strawberry Shortcake",
+          "grade": "5.11c/d",
+          "climbingType": "sport",
+          "sectorName": "Ladder Horn Wall"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e9a981fd-ff8e-59bb-8843-892fc574947d",
+      "sourceName": "Kampsight",
+      "sourceGrade": "5.9+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Natural Bridge Region",
+        "crag": "Graining Fork Nature Preserve (a.k.a. Roadside Crag)"
+      },
+      "existingCandidates": [
+        {
+          "id": "kampsight-red-river-gorge",
+          "name": "Kampsight",
+          "grade": "5.9+",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "57ad36bd-0a98-526a-98dd-377f9c3a5a6d",
+      "sourceName": "Hippocrite",
+      "sourceGrade": "5.12a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Natural Bridge Region",
+        "crag": "The Zoo"
+      },
+      "existingCandidates": [
+        {
+          "id": "hippocrite-red-river-gorge",
+          "name": "Hippocrite",
+          "grade": "5.12a",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "0c40bccd-5cb0-507a-aa5d-9d18a3d2ed6a",
+      "sourceName": "The Legend",
+      "sourceGrade": "5.13b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Northern Gorge",
+        "crag": "Military Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "the-legend-red-river-gorge",
+          "name": "The Legend",
+          "grade": "5.13a",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "cbcca7f7-1afa-5e80-b75c-3a10c3773da4",
+      "sourceName": "Nagypapa",
+      "sourceGrade": "5.13d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Northern Gorge",
+        "crag": "Military Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "nagypapa-red-river-gorge",
+          "name": "Nagypapa",
+          "grade": "5.12d",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "6e433815-2183-5449-9222-c81701879e8c",
+      "sourceName": "Stunning the Hog",
+      "sourceGrade": "5.12d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Northern Gorge",
+        "crag": "Left Flank"
+      },
+      "existingCandidates": [
+        {
+          "id": "stunning-the-hog-red-river-gorge",
+          "name": "Stunning the Hog",
+          "grade": "5.12d",
+          "climbingType": "sport",
+          "sectorName": "Muir Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "7c4dbef9-49c9-53fd-8607-ef2942dc9ac3",
+      "sourceName": "King Me",
+      "sourceGrade": "5.11b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Northern Gorge",
+        "crag": "Eastern Sky Bridge Ridge"
+      },
+      "existingCandidates": [
+        {
+          "id": "king-me-red-river-gorge",
+          "name": "King Me",
+          "grade": "5.11b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e1141a28-d14e-57bd-a6a4-5c58dbc8ed2c",
+      "sourceName": "Creep Show",
+      "sourceGrade": "5.10d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Northern Gorge",
+        "crag": "Phantasia"
+      },
+      "existingCandidates": [
+        {
+          "id": "creep-show-red-river-gorge",
+          "name": "Creep Show",
+          "grade": "5.10d",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "60fc932a-83b2-59fd-9fc2-593c59387cb0",
+      "sourceName": "Where Lizards Dare",
+      "sourceGrade": "5.10b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Northern Gorge",
+        "crag": "Fortress Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "where-lizards-dare-red-river-gorge",
+          "name": "Where Lizards Dare",
+          "grade": "5.10b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "beef680f-f860-57ba-a71c-fa43a21a9c29",
+      "sourceName": "Mona Lisa Overdrive",
+      "sourceGrade": "5.11b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Solar Collector/Gold Coast"
+      },
+      "existingCandidates": [
+        {
+          "id": "mona-lisa-overdrive-red-river-gorge",
+          "name": "Mona Lisa Overdrive",
+          "grade": "5.11b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "c348a701-1acf-54ea-8c87-d251e209095c",
+      "sourceName": "Black Gold",
+      "sourceGrade": "5.13c",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Solar Collector/Gold Coast"
+      },
+      "existingCandidates": [
+        {
+          "id": "black-gold-red-river-gorge",
+          "name": "Black Gold",
+          "grade": "5.13c",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "886d6122-30d5-5d97-b437-850afe824ea8",
+      "sourceName": "Johnny B. Good",
+      "sourceGrade": "5.11a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "The Gallery"
+      },
+      "existingCandidates": [
+        {
+          "id": "johnny-b-good-red-river-gorge",
+          "name": "Johnny B. Good",
+          "grade": "5.11a",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "cafc4ad6-3ad5-541b-a0d8-bcfe386237b0",
+      "sourceName": "Return of Darth Moll",
+      "sourceGrade": "5.13b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Dark Side, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "return-of-darth-moll-red-river-gorge",
+          "name": "Return of Darth Moll",
+          "grade": "5.13b/c",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "67cb3542-1713-5df7-a033-aa1dff2694ec",
+      "sourceName": "Belly of the Beast",
+      "sourceGrade": "5.12c",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Bronaugh Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "belly-of-the-beast-red-river-gorge",
+          "name": "Belly of the Beast",
+          "grade": "5.12c",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "b092fcb3-93a6-537c-8289-d859de3926f9",
+      "sourceName": "Ultra-perm",
+      "sourceGrade": "5.13d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Bob Marley"
+      },
+      "existingCandidates": [
+        {
+          "id": "ultra-perm-red-river-gorge",
+          "name": "Ultra-Perm",
+          "grade": "5.13b",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "3ce19fa3-6999-5c1f-bec0-055b5f22b9cb",
+      "sourceName": "Team Wilson",
+      "sourceGrade": "5.12d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Bald Rock Fork Recreational Preserve (BRRP)",
+        "crag": "Motherlode, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "team-wilson-red-river-gorge",
+          "name": "Team Wilson",
+          "grade": "5.11c",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "26e839ba-984a-503d-8b80-a6f9d6f60ea5",
+      "sourceName": "Breakfast Burrito",
+      "sourceGrade": "5.10c/d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Drive-By Crag"
+      },
+      "existingCandidates": [
+        {
+          "id": "breakfast-burrito-red-river-gorge",
+          "name": "Breakfast Burrito",
+          "grade": "5.10d",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "41e26fe3-2017-5ec4-a0a7-92b63dee3917",
+      "sourceName": "Check Your Grip",
+      "sourceGrade": "5.12a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Drive-By Crag"
+      },
+      "existingCandidates": [
+        {
+          "id": "check-your-grip-red-river-gorge",
+          "name": "Check Your Grip",
+          "grade": "5.12a",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "9b36a4c4-6a72-56ec-90c3-db4d112382ba",
+      "sourceName": "Fire and Brimstone",
+      "sourceGrade": "5.10d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Drive-By Crag"
+      },
+      "existingCandidates": [
+        {
+          "id": "fire-and-brimstone-red-river-gorge",
+          "name": "Fire and Brimstone",
+          "grade": "5.10d",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "f301834c-02ad-53e0-ab0a-f4010816efe3",
+      "sourceName": "Supercharger",
+      "sourceGrade": "5.14a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Pendergrass-Murray Recreational Preserve (PMRP)",
+        "crag": "Drive-By Crag"
+      },
+      "existingCandidates": [
+        {
+          "id": "supercharger-red-river-gorge",
+          "name": "Supercharger",
+          "grade": "5.12c",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "0aa20da0-a489-5651-8c86-859482d4389c",
+      "sourceName": "Golden Ticket",
+      "sourceGrade": "5.14+",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Bald Rock Fork Recreational Preserve (BRRP)",
+        "crag": "Chocolate Factory"
+      },
+      "existingCandidates": [
+        {
+          "id": "golden-ticket-red-river-gorge",
+          "name": "Golden Ticket",
+          "grade": "8c+ / 5.14c",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "44a03ba8-d8e4-5c52-b5af-3e0a5d6df46e",
+      "sourceName": "Oompa",
+      "sourceGrade": "5.10b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Bald Rock Fork Recreational Preserve (BRRP)",
+        "crag": "Chocolate Factory"
+      },
+      "existingCandidates": [
+        {
+          "id": "oompa-red-river-gorge",
+          "name": "Oompa",
+          "grade": "5.10a",
+          "climbingType": "sport",
+          "sectorName": "Chocolate Factory"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "af364120-d3cd-599e-a0fd-b69831120fa9",
+      "sourceName": "Snozzberries",
+      "sourceGrade": "5.11d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Bald Rock Fork Recreational Preserve (BRRP)",
+        "crag": "Chocolate Factory"
+      },
+      "existingCandidates": [
+        {
+          "id": "snozzberries-red-river-gorge",
+          "name": "Snozzberries",
+          "grade": "5.12a",
+          "climbingType": "sport",
+          "sectorName": "Chocolate Factory"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "36c520be-1748-5110-ad03-72b86161f69b",
+      "sourceName": "Flour Power",
+      "sourceGrade": "5.13b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Bald Rock Fork Recreational Preserve (BRRP)",
+        "crag": "Motherlode, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "flour-power-red-river-gorge",
+          "name": "Flour Power",
+          "grade": "5.13b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "84f7cc81-a9f4-57ba-8845-74bb3234171f",
+      "sourceName": "Thanatopsis",
+      "sourceGrade": "5.14a/b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Bald Rock Fork Recreational Preserve (BRRP)",
+        "crag": "Motherlode, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "thanatopsis-red-river-gorge",
+          "name": "Thanatopsis",
+          "grade": "5.14b",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "7a41bf48-72c7-5555-a7ec-08f6b70cf255",
+      "sourceName": "Manifest Destiny",
+      "sourceGrade": "5.11d",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Solarium, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "manifest-destiny-red-river-gorge",
+          "name": "Manifest Destiny",
+          "grade": "5.11d",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "74705bdc-3902-57ce-8679-f669d204788a",
+      "sourceName": "Rat Stew",
+      "sourceGrade": "5.10a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Bruise Brothers Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "rat-stew-red-river-gorge",
+          "name": "Rat Stew",
+          "grade": "5.10b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "e1174162-0966-514f-8cf4-080ff6ddde2a",
+      "sourceName": "The Offering",
+      "sourceGrade": "5.7",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Bruise Brothers Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-dbb32b52-94ea-5069-aca4-341be2652577",
+          "name": "The Offering",
+          "grade": "5.11b",
+          "climbingType": "sport",
+          "sectorName": "Patterson"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "b015e2ef-4ed1-5aa2-b03e-cf50eabb5e44",
+      "sourceName": "Prometheus Unbound",
+      "sourceGrade": "5.13a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Sanctuary, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "prometheus-unbound-red-river-gorge",
+          "name": "Prometheus Unbound",
+          "grade": "5.12a",
+          "climbingType": "sport"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "a558bd3b-ddcd-524f-a6e8-3915f4df145d",
+      "sourceName": "Iniquity",
+      "sourceGrade": "5.12b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Midnight Surf"
+      },
+      "existingCandidates": [
+        {
+          "id": "iniquity-red-river-gorge",
+          "name": "Iniquity",
+          "grade": "5.12b",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "dcf3106f-e8a2-57bf-8fed-c64c2472da58",
+      "sourceName": "Cell Block Six",
+      "sourceGrade": "5.12c",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Midnight Surf"
+      },
+      "existingCandidates": [
+        {
+          "id": "cell-block-six-red-river-gorge",
+          "name": "Cell Block Six",
+          "grade": "5.12c",
+          "climbingType": "sport",
+          "sectorName": "Red River Gorge"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "eaaf1f3d-fe25-55f6-94bc-560676365118",
+      "sourceName": "Boltergeist",
+      "sourceGrade": "5.10a/b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Muir Valley",
+        "crag": "Hideout, The"
+      },
+      "existingCandidates": [
+        {
+          "id": "boltergeist-red-river-gorge",
+          "name": "Boltergeist",
+          "grade": "5.11b",
+          "climbingType": "sport",
+          "sectorName": "Muir Valley"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "d8ae29f6-f6e5-5f3f-b2d4-146147239dfb",
+      "sourceName": "Peach Fuzz",
+      "sourceGrade": "5.11b",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Miller Fork Recreational Preserve (MFRP)",
+        "crag": "Fruit Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-203e008e-626f-5cbb-baa2-6408cbba4ffb",
+          "name": "Peach Fuzz",
+          "grade": "5.7",
+          "climbingType": "sport",
+          "sectorName": "Ladder Horn Wall"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-river-gorge-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "ec4ba00f-ab68-5734-8117-5482a062f2a8",
+      "sourceName": "First Date",
+      "sourceGrade": "5.9",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Kentucky",
+        "region": "Red River Gorge",
+        "area": "Miller Fork Recreational Preserve (MFRP)",
+        "crag": "Fruit Wall"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-7848e1a6-2379-5134-9158-a8ab2ab5e2df",
+          "name": "First Date",
+          "grade": "5.5",
+          "climbingType": "sport",
+          "sectorName": "Ladder Horn Wall"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "new-river-gorge-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6dccfd63-a470-54b5-bcaf-c4e013072728",
+          "name": "Unnamed Crack",
+          "grade": "5.6",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "West Virginia",
+            "region": "New River Gorge, The",
+            "area": "Summersville (Gauley River) Area",
+            "crag": "Summersville Lake (main)"
+          }
+        },
+        {
+          "externalId": "aa846bb9-5c99-5631-a3d2-a6ba55e2458a",
+          "name": "Unnamed Crack",
+          "grade": "5.9+",
+          "climbingType": "trad",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "West Virginia",
+            "region": "New River Gorge, The",
+            "area": "Summersville (Gauley River) Area",
+            "crag": "Summersville Lake (main)"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -5,8 +5,10 @@ export const routeCoverage3BatchSnapshot =
   snapshot as unknown as RouteCoverageBatchImportSnapshot;
 
 export const routeCoverage3RouteAliases = Object.fromEntries(
-  routeCoverage3BatchSnapshot.sourceMerges.map((merge) => [
-    `${merge.destinationSlug}:${merge.mergedRouteId}`,
-    merge.canonicalRouteId
-  ])
+  routeCoverage3BatchSnapshot.sourceMerges
+    .filter((merge) => merge.mergedRouteId !== merge.canonicalRouteId)
+    .map((merge) => [
+      `${merge.destinationSlug}:${merge.mergedRouteId}`,
+      merge.canonicalRouteId
+    ])
 );

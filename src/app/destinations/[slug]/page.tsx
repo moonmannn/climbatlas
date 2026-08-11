@@ -183,19 +183,21 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
               </dd>
             </div>
 
-            <div className="rounded-md border border-ridge/25 bg-white/45 p-4">
-              <dt className="text-xs font-black uppercase tracking-wide text-bark/55">
-                <LocalizedText en="Season" zh="季节" />
-              </dt>
-              <dd className="mt-2 text-xl font-black">
-                <LocalizedText
-                  en={destination.bestSeasons.join(", ")}
-                  zh={destination.bestSeasons
-                    .map((season) => formatDestinationFact(season, "zh"))
-                    .join("、")}
-                />
-              </dd>
-            </div>
+            {destination.bestSeasons.length > 0 ? (
+              <div className="rounded-md border border-ridge/25 bg-white/45 p-4">
+                <dt className="text-xs font-black uppercase tracking-wide text-bark/55">
+                  <LocalizedText en="Season" zh="季节" />
+                </dt>
+                <dd className="mt-2 text-xl font-black">
+                  <LocalizedText
+                    en={destination.bestSeasons.join(", ")}
+                    zh={destination.bestSeasons
+                      .map((season) => formatDestinationFact(season, "zh"))
+                      .join("、")}
+                  />
+                </dd>
+              </div>
+            ) : null}
 
             <div className="rounded-md border border-ridge/25 bg-white/45 p-4">
               <dt className="text-xs font-black uppercase tracking-wide text-bark/55">

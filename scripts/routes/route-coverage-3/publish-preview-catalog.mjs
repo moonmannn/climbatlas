@@ -2,7 +2,23 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const batchId = "route-coverage-3-batch-1";
+const manifestArgument = process.argv.indexOf("--manifest");
+const manifestPath =
+  manifestArgument >= 0
+    ? path.resolve(root, process.argv[manifestArgument + 1])
+    : path.join(
+        root,
+        "src",
+        "data",
+        "routes",
+        "manifests",
+        "route-coverage-3-batch-1.json"
+      );
+if (manifestArgument >= 0 && !process.argv[manifestArgument + 1]) {
+  throw new Error("--manifest requires a file path.");
+}
+const manifest = readJson(manifestPath);
+const batchId = manifest.batchId;
 const outputDirectory = path.join(root, "outputs", batchId);
 const destinationPath = path.join(
   root,
@@ -21,9 +37,6 @@ function fail(message) {
   throw new Error(`RC3-3 preview catalog blocked: ${message}`);
 }
 
-const manifest = readJson(
-  path.join(root, "src", "data", "routes", "manifests", `${batchId}.json`)
-);
 const summary = readJson(path.join(outputDirectory, "dry-run-summary.json"));
 const routeSnapshot = readJson(
   path.join(outputDirectory, "preview-route-snapshot.json")
@@ -35,7 +48,11 @@ const mergeSnapshot = readJson(
 if (!summary.source.shaMatches || !summary.source.rowCountMatches || !summary.source.schemaMatches) {
   fail("source snapshot identity does not match the locked manifest");
 }
-if (summary.qualityGates.productionMyAtlasReferenceAudit !== "pass") {
+if (
+  !["pass", "pass-after-alias-migration"].includes(
+    summary.qualityGates.productionMyAtlasReferenceAudit
+  )
+) {
   fail("the production My Atlas reference audit has not passed");
 }
 if (summary.qualityGates.unresolvedIdentityConflicts !== 0) {
@@ -52,6 +69,9 @@ if (summary.identity.proposedMerges !== mergeSnapshot.merges.length) {
 }
 if (summary.preview.publishedPicks !== 40) {
   fail("Published Picks changed before preview publication");
+}
+if (!summary.qualityGates.destinationMinimumsReached) {
+  fail("one or more destinations did not reach the reviewed minimum");
 }
 
 const routes = [...routeSnapshot.routes].sort(

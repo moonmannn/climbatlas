@@ -5,7 +5,23 @@ import path from "node:path";
 import { loadRouteProject } from "../load-route-project.mjs";
 
 const root = process.cwd();
-const batchId = "route-coverage-3-batch-1";
+const manifestArgument = process.argv.indexOf("--manifest");
+const manifestPath =
+  manifestArgument >= 0
+    ? path.resolve(root, process.argv[manifestArgument + 1])
+    : path.join(
+        root,
+        "src",
+        "data",
+        "routes",
+        "manifests",
+        "route-coverage-3-batch-1.json"
+      );
+if (manifestArgument >= 0 && !process.argv[manifestArgument + 1]) {
+  throw new Error("--manifest requires a file path.");
+}
+const manifest = readJson(manifestPath);
+const batchId = manifest.batchId;
 
 function readJson(file) {
   return JSON.parse(readFileSync(file, "utf8"));
@@ -24,6 +40,12 @@ const snapshot = readJson(
 const audit = readJson(
   path.join(root, "outputs", batchId, "my-atlas-reference-audit.json")
 );
+const summary = readJson(
+  path.join(root, "outputs", batchId, "dry-run-summary.json")
+);
+const candidateReport = readJson(
+  path.join(root, "outputs", batchId, "candidate-selection-report.json")
+);
 const {
   destinationsModule,
   publicRoutesModule,
@@ -32,12 +54,19 @@ const {
   routeExplorerModule
 } = loadRouteProject();
 
-const expectedCounts = {
-  "joshua-tree-usa": 150,
-  "squamish-canada": 150,
-  "bishop-area-usa": 100,
-  "red-rock-canyon-usa": 100
-};
+const expectedCounts = Object.fromEntries(
+  Object.entries(manifest.destinationTargets).map(([slug, target]) => [
+    slug,
+    target.target
+  ])
+);
+const newDestinationCount = candidateReport.reports.filter(
+  (report) => report.existingPublicRoutes === 0
+).length;
+const expectedDestinationCount =
+  summary.baseline.destinations + newDestinationCount;
+const expectedPublicRouteCount =
+  summary.baseline.publicRoutes + snapshot.routes.length;
 const publicRoutes = publicRoutesModule.getPublicRouteRecords();
 const publicByKey = new Map(
   publicRoutes.map(({ destination, route }) => [
@@ -46,11 +75,30 @@ const publicByKey = new Map(
   ])
 );
 
-assert.equal(destinationsModule.destinations.length, 22, "Preview must contain 22 destinations.");
-assert.equal(publicRoutes.length, 1468, "Preview must contain 1,468 public routes.");
-assert.equal(snapshot.routes.length, 394, "The RC3-3 snapshot must contain 394 new routes.");
-assert.equal(snapshot.sourceMerges.length, 41, "The RC3-3 snapshot must contain 41 source merges.");
-assert.equal(audit.releaseGate, "pass", "Production My Atlas references must pass before preview publication.");
+assert.equal(
+  destinationsModule.destinations.length,
+  expectedDestinationCount,
+  `Preview must contain ${expectedDestinationCount} destinations.`
+);
+assert.equal(
+  publicRoutes.length,
+  expectedPublicRouteCount,
+  `Preview must contain ${expectedPublicRouteCount} public routes.`
+);
+assert.equal(
+  snapshot.routes.length,
+  summary.preview.selectedRoutes,
+  "The Preview snapshot route count must match the dry-run summary."
+);
+assert.equal(
+  snapshot.sourceMerges.length,
+  summary.identity.proposedMerges,
+  "The Preview source-merge count must match the dry-run summary."
+);
+assert.ok(
+  ["pass", "pass-after-alias-migration"].includes(audit.releaseGate),
+  "Production My Atlas references must pass before preview publication."
+);
 assert.equal(audit.issues.length, 0, "Production My Atlas reference audit must have zero issues.");
 
 const publishedPicks = publicRoutes.filter(({ route }) =>
@@ -120,7 +168,7 @@ for (const merge of snapshot.sourceMerges) {
   );
 }
 
-console.log("Route Coverage 3.0 RC3-3 Preview validation passed.");
+console.log(`${batchId} Preview validation passed.`);
 console.log(`Destinations: ${destinationsModule.destinations.length}`);
 console.log(`Public routes: ${publicRoutes.length}`);
 console.log(`New Indexed Routes: ${snapshot.routes.length}`);

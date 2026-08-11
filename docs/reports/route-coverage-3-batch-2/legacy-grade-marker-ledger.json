@@ -1,0 +1,3042 @@
+{
+  "generatedAt": "2026-08-11T02:53:16.719Z",
+  "rule": "Only an exact trailing `metadata` marker is removed from legacy grade strings.",
+  "summary": {
+    "reviewed": 498,
+    "publicMarkersRemoved": 458,
+    "sourceBackedOverrides": 8,
+    "retiredLegacyRecords": 32,
+    "errors": 0
+  },
+  "errors": [],
+  "entries": [
+    {
+      "routeKey": "ceuse-france:ami-caouette-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:ange-en-decomposition-ceuse",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:appat-ceuse",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:berlin-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:blocage-violent-ceuse",
+      "before": "7b+ metadata",
+      "after": "7b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:bourinator-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:carte-blanche-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:carte-vitale-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:couleur-du-vent-ceuse",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:demi-lune-ceuse",
+      "before": "7b metadata",
+      "after": "7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:dolce-vita-ceuse",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:lapin-ou-canard-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:lapinerie-ceuse",
+      "before": "7b metadata",
+      "after": "7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:les-colonnettes-ceuse",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:les-rois-du-petrole-ceuse",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:ma-jolie-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:makach-walou-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:natilik-ceuse",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:petit-tom-ceuse",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:privilege-du-lezard-ceuse",
+      "before": "7b+ metadata",
+      "after": "7b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:privilege-du-serpent-ceuse",
+      "before": "7c+ metadata",
+      "after": "7c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:radote-joli-pepere-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:rat-man-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:sales-gueules-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:super-mickey-ceuse",
+      "before": "7c+ metadata",
+      "after": "7c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:tontons-flingueurs-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:une-arquee-pour-le-criquet-ceuse",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "ceuse-france:vagabond-occident-ceuse",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:aiguille-m-nne-ridge-chamonix",
+      "before": "AD / ridge metadata",
+      "after": "AD / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:aiguille-midi-south-face-chamonix",
+      "before": "6a-6b metadata",
+      "after": "6a-6b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:aiguilles-du-diable-traverse-chamonix",
+      "before": "D+ / traverse metadata",
+      "after": "D+ / traverse",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:arete-du-diable-chamonix",
+      "before": "D+ / ridge metadata",
+      "after": "D+ / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:chapelle-de-la-gliere-chamonix",
+      "before": "6a / alpine rock metadata",
+      "after": "6a / alpine rock",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:chere-couloir-chamonix",
+      "before": "D / ice route metadata",
+      "after": "D / ice route",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:contamine-grisolle-chamonix",
+      "before": "TD / alpine rock metadata",
+      "after": "TD / alpine rock",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:couturier-couloir-chamonix",
+      "before": "D+ / snow-ice metadata",
+      "after": "D+ / snow-ice",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:croz-spur-chamonix",
+      "before": "ED / north-face metadata",
+      "after": "ED / north-face",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:eugster-diagonal-chamonix",
+      "before": "TD / alpine route metadata",
+      "after": "TD / alpine route",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:forbes-arete-chardonnet-chamonix",
+      "before": "AD / ridge metadata",
+      "after": "AD / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:frison-roche-route-chamonix",
+      "before": "D / alpine rock metadata",
+      "after": "D / alpine rock",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:gabarrou-albinoni-chamonix",
+      "before": "TD+ / mixed route metadata",
+      "after": "TD+ / mixed route",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:hirondelles-ridge-chamonix",
+      "before": "D / ridge metadata",
+      "after": "D / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:innominata-ridge-chamonix",
+      "before": "D+ / ridge metadata",
+      "after": "D+ / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:kuffner-arete-chamonix",
+      "before": "D / ridge metadata",
+      "after": "D / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:migot-spur-chardonnet-chamonix",
+      "before": "D / alpine spur metadata",
+      "after": "D / alpine spur",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:modica-noury-chamonix",
+      "before": "TD / ice route metadata",
+      "after": "TD / ice route",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:north-ridge-aiguille-du-midi-chamonix",
+      "before": "AD / ridge metadata",
+      "after": "AD / ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:papillons-ridge-chamonix",
+      "before": "AD / alpine ridge metadata",
+      "after": "AD / alpine ridge",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:peigne-contamine-chamonix",
+      "before": "TD / alpine rock metadata",
+      "after": "TD / alpine rock",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:peuterey-integral-chamonix",
+      "before": "major alpine ridge metadata",
+      "after": "ED1",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Replace descriptive pseudo-grade with a route-specific IFAS grade."
+    },
+    {
+      "routeKey": "chamonix-france:supercouloir-chamonix",
+      "before": "TD+ / mixed route metadata",
+      "after": "TD+ / mixed route",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:swiss-route-les-courtes-chamonix",
+      "before": "TD / north-face metadata",
+      "after": "TD / north-face",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:tournier-spur-chamonix",
+      "before": "D / spur metadata",
+      "after": "D / spur",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:valeria-gully-chamonix",
+      "before": "D / ice route metadata",
+      "after": "D / ice route",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:walker-spur-chamonix",
+      "before": "ED / north-face metadata",
+      "after": "ED / north-face",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "chamonix-france:whymper-couloir-chamonix",
+      "before": "AD+ / snow-ice metadata",
+      "after": "AD+ / snow-ice",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:costantini-apollonio-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:costantini-ghedina-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:delenda-carthago-dolomites",
+      "before": "IX- metadata",
+      "after": "IX-",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:diedro-mayerl-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:eotvos-dimai-dolomites",
+      "before": "V+ metadata",
+      "after": "V+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:moderne-zeiten-dolomites",
+      "before": "VIII- metadata",
+      "after": "VIII-",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:philipp-flamm-dolomites",
+      "before": "VII- metadata",
+      "after": "VII-",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:pilastro-di-rozes-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:schubert-route-dolomites",
+      "before": "VII- metadata",
+      "after": "VII-",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:tempi-moderni-dolomites",
+      "before": "VIII+ metadata",
+      "after": "VIII+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-abram-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-buhl-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-comici-salame-sassolungo-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-degli-scoiattoli-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-delle-guide-dolomites",
+      "before": "V+ metadata",
+      "after": "V+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-delle-trincee-dolomites",
+      "before": "IV metadata",
+      "after": "IV",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-demetz-dolomites",
+      "before": "V metadata",
+      "after": "V",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-dimai-punta-fiames-dolomites",
+      "before": "V+ metadata",
+      "after": "V+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-innerkofler-dolomites",
+      "before": "V+ metadata",
+      "after": "V+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-italia-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-lacedelli-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-mariacher-dolomites",
+      "before": "VII metadata",
+      "after": "VII",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-piaz-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-schober-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-solda-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-tissi-dolomites",
+      "before": "VI metadata",
+      "after": "VI",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:via-trenker-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "dolomites-italy:vinatzer-messner-dolomites",
+      "before": "VI+ metadata",
+      "after": "VI+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:aguja-celo-rey-line-potrero",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:black-cat-bone-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:cactus-pile-line-potrero",
+      "before": "5.7-5.11 metadata",
+      "after": "5.7-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:cat-wall-line-potrero",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:central-scrutinizer-line-potrero",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:dances-with-clams-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:diablo-wall-line-potrero",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:easy-rider-potrero",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:el-toro-frontside-line-potrero",
+      "before": "5.10-5.12+ metadata",
+      "after": "5.10-5.12+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:estrellita-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:estrellita-potrero-chico",
+      "before": "5.10b metadata",
+      "after": "5.10b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:homero-wall-line-potrero",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:la-popa-wall-line-potrero",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:mileski-wall-line-potrero",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:mini-super-wall-line-potrero",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:mota-wall-line-potrero",
+      "before": "5.8-5.13 metadata",
+      "after": "5.8-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:outrage-wall-line-potrero",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:pancho-villa-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:pitch-black-potrero",
+      "before": "5.10d metadata",
+      "after": "5.10d",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:selena-potrero",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:snot-girlz-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:snot-girlz-potrero-chico",
+      "before": "5.10d metadata",
+      "after": "5.10d",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:space-boyz-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:space-boyz-potrero-chico",
+      "before": "5.10d metadata",
+      "after": "5.10d",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:spires-route-line-potrero",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:supernova-context-potrero",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:the-jungle-wall-line-potrero",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:time-wave-zero-context-potrero",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:time-wave-zero-potrero-chico",
+      "before": "5.12a metadata",
+      "after": "5.12a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:treasure-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:treasure-of-the-sierra-madre-potrero-chico",
+      "before": "5.10c metadata",
+      "after": "5.10c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:will-the-wolf-context-potrero",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:will-the-wolf-survive-potrero-chico",
+      "before": "5.12a metadata",
+      "after": "5.12a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:yankee-clipper-context-potrero",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "el-potrero-chico-mexico:yankee-clipper-potrero-chico",
+      "before": "5.12a metadata",
+      "after": "5.12a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:battle-cat-frankenjura",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:becoming-frankenjura",
+      "before": "9a+ metadata",
+      "after": "9a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:burn-4-you-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:chasin-the-trane-frankenjura",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:classified-frankenjura",
+      "before": "9a/9a+ metadata",
+      "after": "9a/9a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:dicker-bert-frankenjura",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:ekel-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:elder-statesman-frankenjura",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:essential-frankenjura",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:fight-club-frankenjura",
+      "before": "9b metadata",
+      "after": "9b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:geocache-frankenjura",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:hitch-hike-the-plane-frankenjura",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:house-of-shock-frankenjura",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:intercooler-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:kamasutra-218-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:last-action-hero-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:matador-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:odd-fellows-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:pantera-frankenjura",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:pornographie-frankenjura",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:raven-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:shangri-la-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:slimline-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:space-invaders-frankenjura",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:stone-love-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:unplugged-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:witchcraft-frankenjura",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "frankenjura-germany:z-trip-frankenjura",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:amniotic-world-grampians",
+      "before": "V9 metadata",
+      "after": "V9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:andersens-route-line-grampians",
+      "before": "boulder metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:bundaleer-route-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:cave-girl-grampians",
+      "before": "8A metadata",
+      "after": "8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:cave-man-grampians",
+      "before": "V9 / 7C metadata",
+      "after": "V9 / 7C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:cave-traverse-line-grampians",
+      "before": "hard boulder metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:citadel-route-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:dead-cant-dance-grampians",
+      "before": "V11 / 8A metadata",
+      "after": "V11 / 8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:fortress-route-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:gallery-route-line-grampians",
+      "before": "sport metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:groove-train-grampians",
+      "before": "33 / 5.14b metadata",
+      "after": "33 / 5.14b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:halls-gap-route-line-grampians",
+      "before": "moderate metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:hollow-mountain-cave-line-grampians",
+      "before": "V6-V15 metadata",
+      "after": "V6-V15",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:hollow-mountain-warmup-line-grampians",
+      "before": "boulder metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:kindergarten-route-line-grampians",
+      "before": "easy to moderate metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:northern-grampians-sport-line",
+      "before": "sport metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:orange-wall-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:punks-in-the-gym-grampians",
+      "before": "32 / 8b+ metadata",
+      "after": "32 / 8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:rave-heart-grampians",
+      "before": "V8 / 7B-7B+ metadata",
+      "after": "V8 / 7B-7B+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:red-rocks-route-line-grampians",
+      "before": "moderate metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:rosea-route-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:sandbag-classic-line-grampians",
+      "before": "traditional metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:sandstone-pocket-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:serpentine-grampians",
+      "before": "29 / 5.13d metadata",
+      "after": "29 / 5.13d",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:shai-hulud-grampians",
+      "before": "8B metadata",
+      "after": "8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:sleepy-hollow-grampians",
+      "before": "V12 / 8A+ metadata",
+      "after": "V12 / 8A+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:southern-sandstone-line-grampians",
+      "before": "mixed metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:stapylton-bouldering-line-grampians",
+      "before": "boulder metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:summerday-valley-line-grampians",
+      "before": "beginner to moderate metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:taipan-project-line-grampians",
+      "before": "hard sport metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:taipan-wall-route-line-grampians",
+      "before": "25-35 metadata",
+      "after": "25-35",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "grampians-australia:victoria-range-line-grampians",
+      "before": "boulder and route metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:watchtower-route-line-grampians",
+      "before": "moderate to hard metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "Generic route-line placeholder without a verifiable single-route or exact area identity."
+    },
+    {
+      "routeKey": "grampians-australia:x-treme-cool-grampians",
+      "before": "V9 metadata",
+      "after": "V9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:bedtime-for-bonzo-joshua-tree",
+      "before": "5.6 metadata",
+      "after": "5.6",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:chimney-cricket-joshua-tree",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:coarse-and-buggy-joshua-tree",
+      "before": "5.11a metadata",
+      "after": "5.11a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:dappled-mare-joshua-tree",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:dogleg-joshua-tree",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:geronimo-joshua-tree",
+      "before": "5.6 metadata",
+      "after": "5.6",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:heart-and-sole-joshua-tree",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:mental-physics-joshua-tree",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:overhang-bypass-joshua-tree",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:popes-crack-joshua-tree",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:right-on-joshua-tree",
+      "before": "5.5 metadata",
+      "after": "5.5",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:room-to-shroom-joshua-tree",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:rubicon-joshua-tree",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:satanic-mechanic-joshua-tree",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:stichter-quits-joshua-tree",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:sublime-joshua-tree",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-chief-joshua-tree",
+      "before": "5.5 metadata",
+      "after": "5.5",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-eye-joshua-tree",
+      "before": "5.3 metadata",
+      "after": "5.3",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-flake-joshua-tree",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-flue-joshua-tree",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-orpheus-joshua-tree",
+      "before": "5.10c metadata",
+      "after": "5.10c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-oxymoron-joshua-tree",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:the-wedge-joshua-tree",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:toe-jam-joshua-tree",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:tossed-green-joshua-tree",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:tumbling-rainbow-joshua-tree",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:walk-on-the-wild-side-joshua-tree",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "joshua-tree-usa:western-saga-joshua-tree",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:aegialis-kalymnos",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:dna-kalymnos",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:fun-de-chichunne-kalymnos",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:joggel-and-toggel-kalymnos",
+      "before": "6c+ metadata",
+      "after": "6c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:monahiki-elia-kalymnos",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:priapios-kalymnos",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:spartacus-kalymnos",
+      "before": "7b metadata",
+      "after": "7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "kalymnos-greece:trella-kalymnos",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:air-china-liming",
+      "before": "5.12 metadata",
+      "after": "5.13c/d",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Replace the generic concept source with an exact route record."
+    },
+    {
+      "routeKey": "liming-china:black-turtle-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:climb-like-a-girl-liming",
+      "before": "5.10 metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "No reliable single-route or clearly related guidebook record was found."
+    },
+    {
+      "routeKey": "liming-china:cloud-ladder-liming",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:cloud-temple-crack-liming",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:dinner-wall-crack-line-liming-v5",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:dinner-wall-route-line-liming",
+      "before": "5.9-5.12 metadata",
+      "after": null,
+      "action": "cleanup-area-index",
+      "reason": "This is a crag containing multiple routes, not one route."
+    },
+    {
+      "routeKey": "liming-china:faraway-corner-liming",
+      "before": "5.10 metadata",
+      "after": "5.10+",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Replace the generic concept source with its exact sector route listing."
+    },
+    {
+      "routeKey": "liming-china:great-arch-crack-line-liming-v5",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:great-arch-route-line-liming",
+      "before": "5.10-5.13 metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "The available Great Arch record belongs to Getu, not Liming."
+    },
+    {
+      "routeKey": "liming-china:guardian-wall-crack-line-liming-v5",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:guardian-wall-route-line-liming",
+      "before": "5.10-5.12 metadata",
+      "after": null,
+      "action": "cleanup-alias",
+      "reason": "Generic wall-line placeholder duplicates The Guardian area index."
+    },
+    {
+      "routeKey": "liming-china:jade-dragon-crack-liming",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:jade-gate-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:japanese-cowboy-liming",
+      "before": "5.10 metadata",
+      "after": "5.12c",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Replace the generic concept source with an exact route record."
+    },
+    {
+      "routeKey": "liming-china:kung-fu-fighter-liming",
+      "before": "5.11 metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "No reliable single-route or clearly related guidebook record was found."
+    },
+    {
+      "routeKey": "liming-china:lightning-crack-liming",
+      "before": "5.11 metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "No reliable single-route or clearly related guidebook record was found."
+    },
+    {
+      "routeKey": "liming-china:middle-kingdom-crack-line-liming",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:moon-gate-crack-line-liming",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:morning-market-crack-liming",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:pillar-of-dreams-liming",
+      "before": "5.12 metadata",
+      "after": null,
+      "action": "cleanup-hidden",
+      "reason": "No reliable single-route or clearly related guidebook record was found."
+    },
+    {
+      "routeKey": "liming-china:pine-crest-crack-line-liming-v5",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:pine-crest-route-line-liming",
+      "before": "5.9-5.12 metadata",
+      "after": null,
+      "action": "cleanup-area-index",
+      "reason": "This is a crag containing multiple routes, not one route."
+    },
+    {
+      "routeKey": "liming-china:prayer-flag-wall-line-liming",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:red-corner-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:red-dragon-crack-liming",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:red-river-gate-liming",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:red-sandstone-corner-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:red-wall-systems-line-liming",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:sky-bridge-liming",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:sleeping-dragon-liming",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:stone-forest-crack-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:stone-lion-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:sunbird-liming",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:tea-horse-road-liming",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:the-guardian-liming",
+      "before": "5.11 metadata",
+      "after": null,
+      "action": "cleanup-area-index",
+      "reason": "This is a cliff containing multiple routes, not one route."
+    },
+    {
+      "routeKey": "liming-china:tiger-crack-liming",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:tiger-leaping-line-liming",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:upper-valley-crack-line-liming",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "liming-china:yak-butter-crack-liming",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:back-door-crack-line-long-dong",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:back-door-route-line-long-dong",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:big-wall-route-line-long-dong",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:big-wall-training-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:clocktower-face-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:clocktower-route-line-long-dong",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:coral-wall-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:dragon-bay-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:dragon-coast-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:dragon-gate-route-line-long-dong",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:dragon-gate-sea-line-long-dong",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:east-sea-line-long-dong",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:first-cave-route-line-long-dong",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:first-cave-sport-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:first-tower-line-long-dong-v5",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:first-tower-route-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:golden-valley-crack-line-long-dong",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:golden-valley-face-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:golden-valley-route-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:grand-auditorium-route-line-long-dong",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:grand-auditorium-wall-line-long-dong",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:harbor-view-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:horizon-face-line-long-dong",
+      "before": "5.9-5.11 metadata",
+      "after": "5.9-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:music-hall-face-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:music-hall-route-line-long-dong",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:north-point-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:ocean-window-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:red-sand-face-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:salt-and-sandstone-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:school-gate-beginner-line-long-dong",
+      "before": "5.6-5.9 metadata",
+      "after": "5.6-5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:school-gate-route-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:school-gate-technical-line-long-dong",
+      "before": "5.9-5.11 metadata",
+      "after": "5.9-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:sea-breeze-line-long-dong",
+      "before": "5.7-5.10 metadata",
+      "after": "5.7-5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:seaside-corner-line-long-dong",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:second-cave-route-line-long-dong",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:second-cave-technical-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:second-tower-line-long-dong-v5",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:second-tower-route-line-long-dong",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:southern-cross-line-long-dong",
+      "before": "5.10-5.12 metadata",
+      "after": "5.10-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "long-dong-taiwan:teapot-line-long-dong",
+      "before": "5.7-5.10 metadata",
+      "after": "5.7-5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:balco-de-les-espases-route-line-margalef",
+      "before": "6c-8b metadata",
+      "after": "6c-8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:bob-esponja-margalef",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:cabane-au-canada-margalef",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:can-dit-gros-route-line-margalef",
+      "before": "7a-8c metadata",
+      "after": "7a-8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:can-pesafigues-route-line-margalef",
+      "before": "6b-8b metadata",
+      "after": "6b-8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:catedral-route-line-margalef",
+      "before": "7b-8c metadata",
+      "after": "7b-8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:chute-de-croupe-margalef",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:doctor-feelgood-margalef",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:el-calvario-route-line-margalef",
+      "before": "7a-8c metadata",
+      "after": "7a-8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:el-fustigador-margalef",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:el-heroe-margalef",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:espadelles-route-line-margalef",
+      "before": "7a-9a metadata",
+      "after": "7a-9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:finestra-de-la-llum-route-line-margalef",
+      "before": "7a-8c metadata",
+      "after": "7a-8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:ingravids-margalef",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:l-espiadimonis-margalef",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:la-ballena-margalef",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:la-bongada-margalef",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:la-ley-indignata-margalef",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:laboratori-route-line-margalef",
+      "before": "8a-9b metadata",
+      "after": "8a-9b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:malasombra-margalef",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:nit-de-bruixes-margalef",
+      "before": "9a+ metadata",
+      "after": "9a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:palestina-margalef",
+      "before": "9a metadata",
+      "after": "9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:raco-de-la-finestra-route-line-margalef",
+      "before": "7a-9a metadata",
+      "after": "7a-9a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:reggae-route-line-margalef",
+      "before": "6c-8b metadata",
+      "after": "6c-8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:sol-solet-margalef",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:tenebres-route-line-margalef",
+      "before": "7c-8c metadata",
+      "after": "7c-8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:transilvania-margalef",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "margalef-spain:vaca-margalef",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:beach-breeze-line-railay",
+      "before": "5.8-6b metadata",
+      "after": "5.8-6b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:coconut-wall-line-railay",
+      "before": "5.9-7a metadata",
+      "after": "5.9-7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:defile-exit-extension-line-railay",
+      "before": "6a-6c metadata",
+      "after": "6a-6c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:defile-exit-railay-tonsai",
+      "before": "6a metadata",
+      "after": "6a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:diamond-cave-line-railay",
+      "before": "5.7-5.12 metadata",
+      "after": "5.7-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:dums-kitchen-route-line-railay-tonsai",
+      "before": "6a-7b metadata",
+      "after": "6a-7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:dums-kitchen-sport-line-railay",
+      "before": "6a-7b metadata",
+      "after": "6a-7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:eagle-wall-line-railay",
+      "before": "6a-7b metadata",
+      "after": "6a-7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:escher-world-route-line-railay-tonsai",
+      "before": "6a-7c metadata",
+      "after": "6a-7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:escher-world-sport-line-railay",
+      "before": "6a-7c metadata",
+      "after": "6a-7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:fire-wall-route-line-railay-tonsai",
+      "before": "6b-8a metadata",
+      "after": "6b-8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:fire-wall-sport-line-railay",
+      "before": "6b-8a metadata",
+      "after": "6b-8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:groove-tube-railay-tonsai",
+      "before": "6a metadata",
+      "after": "6a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:groove-tube-style-line-railay",
+      "before": "6a metadata",
+      "after": "6a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:humanality-multipitch-context-railay",
+      "before": "6b+ metadata",
+      "after": "6b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:humanality-railay-tonsai",
+      "before": "6b+ metadata",
+      "after": "6b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:jungle-groove-line-railay",
+      "before": "6a-7b metadata",
+      "after": "6a-7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:limestone-lantern-line-railay",
+      "before": "6a-7a metadata",
+      "after": "6a-7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:longtail-wall-line-railay",
+      "before": "5.9-7a metadata",
+      "after": "5.9-7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:lord-of-thais-project-line-railay",
+      "before": "7b metadata",
+      "after": "7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:lord-of-the-thais-railay-tonsai",
+      "before": "7b metadata",
+      "after": "7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:make-a-way-railay-tonsai",
+      "before": "6b metadata",
+      "after": "6b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:make-a-way-style-line-railay",
+      "before": "6b metadata",
+      "after": "6b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:mango-wall-line-railay",
+      "before": "6a-7b metadata",
+      "after": "6a-7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:massage-secrets-project-line-railay",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:massage-secrets-railay-tonsai",
+      "before": "7a metadata",
+      "after": "7a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:melting-wall-line-railay",
+      "before": "6b-7c metadata",
+      "after": "6b-7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:monkey-world-line-railay",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:one-two-three-wall-line-railay",
+      "before": "5.6-5.12 metadata",
+      "after": "5.6-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:phra-nang-cave-line-railay",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:sea-stack-line-railay",
+      "before": "6a-7b metadata",
+      "after": "6a-7b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:thaiwand-wall-multipitch-line-railay",
+      "before": "6a-7c metadata",
+      "after": "6a-7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:thaiwand-wall-route-line-railay-tonsai",
+      "before": "6a-7c metadata",
+      "after": "6a-7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:the-king-and-i-railay-tonsai",
+      "before": "6c metadata",
+      "after": "6c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:the-king-and-i-style-line-railay",
+      "before": "6c metadata",
+      "after": "6c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:tide-pool-line-railay",
+      "before": "5.8-6c metadata",
+      "after": "5.8-6c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:tonsai-roof-line-railay",
+      "before": "6c-8a metadata",
+      "after": "6c-8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:tyrolean-wall-line-railay",
+      "before": "6a-7c metadata",
+      "after": "6a-7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:wee-present-wall-line-railay",
+      "before": "6a-7c metadata",
+      "after": null,
+      "action": "cleanup-alias",
+      "reason": "Duplicate wall-level placeholder; resolve to the canonical area index."
+    },
+    {
+      "routeKey": "railay-tonsai-thailand:wee-s-present-wall-route-line-railay-tonsai",
+      "before": "6a-7a metadata",
+      "after": null,
+      "action": "cleanup-area-index",
+      "reason": "This is a cliff containing multiple routes, not one route."
+    },
+    {
+      "routeKey": "rocklands-south-africa:amandla-context-rocklands",
+      "before": "8B+ metadata",
+      "after": "8B+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:amandla-rocklands",
+      "before": "8B+ / V14 metadata",
+      "after": "8B+ / V14",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:black-eagle-context-rocklands",
+      "before": "8C metadata",
+      "after": "8C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:caroline-rocklands",
+      "before": "7C+ metadata",
+      "after": "7C+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:cattle-rustler-rocklands",
+      "before": "classic boulder metadata",
+      "after": "6b",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Verified as a named sport route inside Cattle Rustler Sector."
+    },
+    {
+      "routeKey": "rocklands-south-africa:ceder-rouge-rocklands",
+      "before": "classic boulder metadata",
+      "after": "24 (SA) / 7a",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Verified as Cedar Rouge; retain the legacy ID for saved-route compatibility."
+    },
+    {
+      "routeKey": "rocklands-south-africa:cederberg-sunrise-line-rocklands",
+      "before": "6C-8A metadata",
+      "after": "6C-8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:creaking-heights-rocklands",
+      "before": "8B metadata",
+      "after": "8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:de-pakhuis-line-rocklands",
+      "before": "6A-8B metadata",
+      "after": "6A-8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:field-of-joy-line-rocklands",
+      "before": "6A-8A metadata",
+      "after": "6A-8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:gliding-through-the-waves-like-dolphins-rocklands",
+      "before": "8A metadata",
+      "after": "8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:golden-shadow-context-rocklands",
+      "before": "8B+ metadata",
+      "after": "8B+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:golden-shadow-rocklands",
+      "before": "8B+ / V14 metadata",
+      "after": "8B+ / V14",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:green-mamba-rocklands",
+      "before": "8A metadata",
+      "after": "8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:madiba-rocklands",
+      "before": "8B+ / V14 metadata",
+      "after": "8B+ / V14",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:monkey-wedding-context-rocklands",
+      "before": "8C metadata",
+      "after": "8C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:mooiste-maise-rocklands",
+      "before": "8B+ / V14 metadata",
+      "after": "8B+ / V14",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:oliphants-dawn-rocklands",
+      "before": "8B+ / V14 metadata",
+      "after": "8B+ / V14",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:orange-circuit-line-rocklands",
+      "before": "6A-7C metadata",
+      "after": "6A-7C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:orange-plasma-rocklands",
+      "before": "classic boulder metadata",
+      "after": "6b+",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Verified as a sport route, not a boulder or sector."
+    },
+    {
+      "routeKey": "rocklands-south-africa:red-sand-circuit-rocklands",
+      "before": "6A-8A metadata",
+      "after": "6A-8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:rhino-rocklands",
+      "before": "7B metadata",
+      "after": "7B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:riverbed-line-rocklands",
+      "before": "6C-8B metadata",
+      "after": "6C-8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:roadside-boulders-line-rocklands",
+      "before": "6A-8A metadata",
+      "after": "6A-8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:roof-project-line-rocklands",
+      "before": "7B-8C metadata",
+      "after": "7B-8C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:rubiks-cube-rocklands",
+      "before": "classic boulder metadata",
+      "after": "6a+",
+      "action": "cleanup-source-backed-grade-override",
+      "reason": "Verified as a sport route, not a boulder or sector."
+    },
+    {
+      "routeKey": "rocklands-south-africa:sassies-line-rocklands",
+      "before": "6C-8B metadata",
+      "after": "6C-8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:shosholoza-rocklands",
+      "before": "8A metadata",
+      "after": "8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:skin-smart-mileage-line-rocklands",
+      "before": "6A-7C metadata",
+      "after": "6A-7C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:sky-rocklands",
+      "before": "8B metadata",
+      "after": "8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:slab-and-arete-line-rocklands",
+      "before": "6A-7C metadata",
+      "after": "6A-7C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:tea-with-elmarie-rocklands",
+      "before": "8A metadata",
+      "after": "8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:the-arch-rocklands",
+      "before": "7C metadata",
+      "after": "7C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:the-hatchling-rocklands",
+      "before": "8A metadata",
+      "after": "8A",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:the-pass-project-line-rocklands",
+      "before": "7A-8C metadata",
+      "after": "7A-8C",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:the-quintessential-rocklands",
+      "before": "8B metadata",
+      "after": "8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "rocklands-south-africa:the-vice-rocklands",
+      "before": "8B metadata",
+      "after": "8B",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:a-muerte-siurana",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:bistec-de-biceps-siurana",
+      "before": "7c+ metadata",
+      "after": "7c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:broadway-siurana",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:brutus-siurana",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:cara-que-no-miente-siurana",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:chikane-siurana",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:directa-cornudella-siurana",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:dr-feelgood-siurana",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:el-mon-de-sofia-siurana",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:el-pati-siurana",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:escamarla-siurana",
+      "before": "7c+ metadata",
+      "after": "7c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:espero-primavera-siurana",
+      "before": "7c+ metadata",
+      "after": "7c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:gurungos-siurana",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:herbolari-siurana",
+      "before": "7c metadata",
+      "after": "7c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:la-crema-siurana",
+      "before": "8c metadata",
+      "after": "8c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:les-tenebres-siurana",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:llet-de-llop-siurana",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:marroncita-siurana",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:memorias-de-una-sepia-siurana",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:mishi-siurana",
+      "before": "8a metadata",
+      "after": "8a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:odi-social-siurana",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:pati-noso-siurana",
+      "before": "8c+ metadata",
+      "after": "8c+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:pota-negra-siurana",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:ramadan-siurana",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:rauxa-siurana",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:siuxie-siurana",
+      "before": "8a+ metadata",
+      "after": "8a+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:viagraman-siurana",
+      "before": "8b+ metadata",
+      "after": "8b+",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "siurana-spain:zona-0-siurana",
+      "before": "8b metadata",
+      "after": "8b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:american-nirvana-smith",
+      "before": "5.11c metadata",
+      "after": "5.11c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:bad-man-smith",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:blackened-smith",
+      "before": "5.11c/d metadata",
+      "after": "5.11c/d",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:bloodline-smith",
+      "before": "5.12c metadata",
+      "after": "5.12c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:bunny-face-smith",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:churning-in-the-wake-smith",
+      "before": "5.13a metadata",
+      "after": "5.13a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:cinnamon-slab-smith",
+      "before": "5.6 metadata",
+      "after": "5.6",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:darkness-at-noon-variant-smith",
+      "before": "5.13a metadata",
+      "after": "5.13a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:five-easy-pieces-smith",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:jason-smith",
+      "before": "5.10c metadata",
+      "after": "5.10c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:kunza-korner-smith",
+      "before": "5.10c metadata",
+      "after": "5.10c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:latin-lover-smith",
+      "before": "5.12a metadata",
+      "after": "5.12a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:light-on-the-path-smith",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:lower-gorge-basalt-line-smith",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:lycopodophyta-smith",
+      "before": "5.7 metadata",
+      "after": "5.7",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:marsupials-route-line-smith",
+      "before": "5.8-5.14 metadata",
+      "after": "5.8-5.14",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:monkey-face-west-face-variant-smith",
+      "before": "5.9 A0 metadata",
+      "after": "5.9 A0",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:nine-gallon-buckets-smith",
+      "before": "5.10c metadata",
+      "after": "5.10c",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:phoenix-smith",
+      "before": "5.10a metadata",
+      "after": "5.10a",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:phone-call-from-satan-smith",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:sky-ridge-smith",
+      "before": "5.8 metadata",
+      "after": "5.8",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:spiderman-buttress-line-smith",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:sunset-slab-smith",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:the-optimist-smith",
+      "before": "5.14b metadata",
+      "after": "5.14b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:toxic-smith",
+      "before": "5.11b metadata",
+      "after": "5.11b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:vomit-launch-smith",
+      "before": "5.11b metadata",
+      "after": "5.11b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:watts-tots-smith",
+      "before": "5.12b metadata",
+      "after": "5.12b",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "smith-rock-usa:white-satin-smith",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:baby-frog-buttress-route-line-yangshuo",
+      "before": "5.7-5.11 metadata",
+      "after": "5.7-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:baby-frog-yangshuo",
+      "before": "5.9 metadata",
+      "after": "5.9",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:big-banyan-route-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:china-climb-yangshuo",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:dragon-spine-route-line-yangshuo",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:dragonfly-yangshuo",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:egg-mountain-route-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:grease-monkey-yangshuo",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:karst-tower-route-line-yangshuo",
+      "before": "5.8-5.13 metadata",
+      "after": "5.8-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:lei-pi-shan-route-line-yangshuo",
+      "before": "5.8-5.13 metadata",
+      "after": "5.8-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:lizard-king-yangshuo",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:lotus-cave-route-line-yangshuo",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:low-mountain-route-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:low-mountain-sport-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:moon-hill-arch-route-line-yangshuo",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:moon-hill-route-line-yangshuo",
+      "before": "5.8-5.13 metadata",
+      "after": "5.8-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:moonwalker-yangshuo",
+      "before": "5.13 metadata",
+      "after": "5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:morning-sun-route-line-yangshuo",
+      "before": "5.8-5.11 metadata",
+      "after": "5.8-5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:over-the-moon-yangshuo",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:panda-wall-route-line-yangshuo",
+      "before": "5.9-5.13 metadata",
+      "after": "5.9-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:red-dragon-yangshuo",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:river-arch-route-line-yangshuo",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:river-view-route-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:single-life-yangshuo",
+      "before": "5.11 metadata",
+      "after": "5.11",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:spicy-noodle-yangshuo",
+      "before": "5.13 metadata",
+      "after": "5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:sunset-wall-route-line-yangshuo",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:swiss-cheese-yangshuo",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:temple-crag-route-line-yangshuo",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:the-crag-route-line-yangshuo",
+      "before": "5.9-5.13 metadata",
+      "after": "5.9-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:the-dumpling-yangshuo",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:the-egg-sector-route-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:the-egg-yangshuo",
+      "before": "5.10 metadata",
+      "after": "5.10",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:the-wizard-yangshuo",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:thunder-yangshuo",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:twin-gates-route-line-yangshuo",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:twin-gates-sport-line-yangshuo",
+      "before": "5.9-5.12 metadata",
+      "after": "5.9-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:white-mountain-lines-yangshuo",
+      "before": "5.12 metadata",
+      "after": "5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:white-mountain-sport-line-yangshuo",
+      "before": "5.10-5.13 metadata",
+      "after": "5.10-5.13",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:wine-bottle-cliff-route-line-yangshuo",
+      "before": "5.7-5.12 metadata",
+      "after": "5.7-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    },
+    {
+      "routeKey": "yangshuo-china:wine-bottle-sport-line-yangshuo",
+      "before": "5.8-5.12 metadata",
+      "after": "5.8-5.12",
+      "action": "removed-exact-trailing-internal-marker"
+    }
+  ]
+}
