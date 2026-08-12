@@ -1,0 +1,1184 @@
+{
+  "schemaVersion": 1,
+  "batchId": "route-coverage-3-batch-3",
+  "generatedAt": "2026-08-12T03:58:35.686Z",
+  "baseUrl": "https://climbatlas.vercel.app",
+  "totalSamples": 56,
+  "destinationReports": [
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "candidateCount": 100,
+      "sampleCount": 20,
+      "representedAreas": [
+        "East Mountain"
+      ],
+      "representedSectors": [
+        "Aircraft Carrier, The",
+        "Chop Socky Rocks",
+        "Dark Heart, The",
+        "Donkey Show Wall, The",
+        "Dragon's Den",
+        "Five Bimbos, The",
+        "Maiden Gully",
+        "Meddle Shop",
+        "Moonshine Roof",
+        "North Dragon's Den",
+        "Raging Pecker Area",
+        "S-Curve",
+        "Tabloid Pass",
+        "Warm Up Roof"
+      ],
+      "representedTypes": [
+        "boulder"
+      ],
+      "representedGradeSystems": [
+        "v-scale"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "candidateCount": 100,
+      "sampleCount": 20,
+      "representedAreas": [
+        "Millbrook",
+        "Near Trapps Bouldering",
+        "Near Trapps, The",
+        "Peterskill",
+        "Peterskill Bouldering"
+      ],
+      "representedSectors": [
+        "Area 2 (Cream Cheese)",
+        "Cliff Area",
+        "Golden Wall Area",
+        "Playground: Area 1, The",
+        "Quarantine Area & Outbreak Boulder",
+        "Tiger Style Boulder",
+        "a. Beginning of cliff to Gelsa",
+        "c. LA Roof",
+        "d. Harvest Moon to the End",
+        "e. Breaker & Very Blocky Walls"
+      ],
+      "representedTypes": [
+        "boulder",
+        "top-rope",
+        "trad"
+      ],
+      "representedGradeSystems": [
+        "v-scale",
+        "yds"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "candidateCount": 8,
+      "sampleCount": 8,
+      "representedAreas": [
+        "Buttermilk Country"
+      ],
+      "representedSectors": [],
+      "representedTypes": [
+        "boulder"
+      ],
+      "representedGradeSystems": [
+        "v-scale"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "elite",
+        "intermediate",
+        "intro"
+      ]
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "candidateCount": 8,
+      "sampleCount": 8,
+      "representedAreas": [
+        "Black Velvet Canyon",
+        "Juniper Canyon",
+        "Oak Creek Canyon",
+        "Pine Creek Canyon"
+      ],
+      "representedSectors": [],
+      "representedTypes": [
+        "trad"
+      ],
+      "representedGradeSystems": [
+        "yds"
+      ],
+      "representedDifficultyBands": [
+        "advanced",
+        "intermediate",
+        "intro"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-05bfc7ff-d8a8-5a17-92fe-4ad07fa68487",
+      "name": "Unlock This AKA:The Locksmith sit-start",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-05bfc7ff-d8a8-5a17-92fe-4ad07fa68487",
+      "originalGrade": "V6",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Aircraft Carrier, The",
+      "exactSourceUrl": "https://openbeta.io/climb/05bfc7ff-d8a8-5a17-92fe-4ad07fa68487/unlock-this-akathe-locksmith-sit-start"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-202ff0a9-087f-5611-8219-1c06e9b3b386",
+      "name": "Porn Again",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-202ff0a9-087f-5611-8219-1c06e9b3b386",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Chop Socky Rocks",
+      "exactSourceUrl": "https://openbeta.io/climb/202ff0a9-087f-5611-8219-1c06e9b3b386/porn-again"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-03cd8c40-b57b-53ea-bd91-b0edbf95926b",
+      "name": "Something Different",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-03cd8c40-b57b-53ea-bd91-b0edbf95926b",
+      "originalGrade": "V8",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Dark Heart, The",
+      "exactSourceUrl": "https://openbeta.io/climb/03cd8c40-b57b-53ea-bd91-b0edbf95926b/something-different"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-00b7ae53-03bc-5cb5-b910-2b28cc8b1bd6",
+      "name": "Two Moves for Sister Sarah",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-00b7ae53-03bc-5cb5-b910-2b28cc8b1bd6",
+      "originalGrade": "V3",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Donkey Show Wall, The",
+      "exactSourceUrl": "https://openbeta.io/climb/00b7ae53-03bc-5cb5-b910-2b28cc8b1bd6/two-moves-for-sister-sarah"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-0d94498a-0c74-5fdf-9006-de60bc2ceac1",
+      "name": "Dry Dock",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-0d94498a-0c74-5fdf-9006-de60bc2ceac1",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Dragon's Den",
+      "exactSourceUrl": "https://openbeta.io/climb/0d94498a-0c74-5fdf-9006-de60bc2ceac1/dry-dock"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-3132c669-d32f-5435-b6bb-1f13b1dbe86e",
+      "name": "Full Service",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-3132c669-d32f-5435-b6bb-1f13b1dbe86e",
+      "originalGrade": "V10",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Dragon's Den",
+      "exactSourceUrl": "https://openbeta.io/climb/3132c669-d32f-5435-b6bb-1f13b1dbe86e/full-service"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-0fe27fb1-16a5-52b9-a6f9-40c4263653a3",
+      "name": "Satan, Satan, Satan",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-0fe27fb1-16a5-52b9-a6f9-40c4263653a3",
+      "originalGrade": "V1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Dragon's Den",
+      "exactSourceUrl": "https://openbeta.io/climb/0fe27fb1-16a5-52b9-a6f9-40c4263653a3/satan-satan-satan"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-05cdbf83-9a2a-59ed-b33a-9e7d9f767b86",
+      "name": "I Own It Sit",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-05cdbf83-9a2a-59ed-b33a-9e7d9f767b86",
+      "originalGrade": "V5",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Five Bimbos, The",
+      "exactSourceUrl": "https://openbeta.io/climb/05cdbf83-9a2a-59ed-b33a-9e7d9f767b86/i-own-it-sit"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-2370deb0-6360-557e-9ffc-89e04dc770ac",
+      "name": "Sledgehammer",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-2370deb0-6360-557e-9ffc-89e04dc770ac",
+      "originalGrade": "V8",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Maiden Gully",
+      "exactSourceUrl": "https://openbeta.io/climb/2370deb0-6360-557e-9ffc-89e04dc770ac/sledgehammer"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-13edc5e5-4f3a-53e6-a65b-2eda4d6acc47",
+      "name": "Creamy",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-13edc5e5-4f3a-53e6-a65b-2eda4d6acc47",
+      "originalGrade": "V3",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Maiden Gully",
+      "exactSourceUrl": "https://openbeta.io/climb/13edc5e5-4f3a-53e6-a65b-2eda4d6acc47/creamy"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-1e0731e1-7963-5da0-9819-9ddbf3dcd13b",
+      "name": "Funk's Arete",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-1e0731e1-7963-5da0-9819-9ddbf3dcd13b",
+      "originalGrade": "V8",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Meddle Shop",
+      "exactSourceUrl": "https://openbeta.io/climb/1e0731e1-7963-5da0-9819-9ddbf3dcd13b/funks-arete"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-8634c1b4-2918-577c-848b-807675ed36e2",
+      "name": "Power of Landjager",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-8634c1b4-2918-577c-848b-807675ed36e2",
+      "originalGrade": "V11",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Moonshine Roof",
+      "exactSourceUrl": "https://openbeta.io/climb/8634c1b4-2918-577c-848b-807675ed36e2/power-of-landjager"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-1cbb3ec9-6412-5f96-915c-3e308a0586b0",
+      "name": "Moonshine Right",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-1cbb3ec9-6412-5f96-915c-3e308a0586b0",
+      "originalGrade": "V5",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Moonshine Roof",
+      "exactSourceUrl": "https://openbeta.io/climb/1cbb3ec9-6412-5f96-915c-3e308a0586b0/moonshine-right"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-995eab5c-96f3-583c-9523-07f71c519c5d",
+      "name": "Low Dryer",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-995eab5c-96f3-583c-9523-07f71c519c5d",
+      "originalGrade": "V10",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "North Dragon's Den",
+      "exactSourceUrl": "https://openbeta.io/climb/995eab5c-96f3-583c-9523-07f71c519c5d/low-dryer"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-0d913fc4-5ecd-5c81-a175-851daa148184",
+      "name": "Conservative Backlash",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-0d913fc4-5ecd-5c81-a175-851daa148184",
+      "originalGrade": "V0",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "North Dragon's Den",
+      "exactSourceUrl": "https://openbeta.io/climb/0d913fc4-5ecd-5c81-a175-851daa148184/conservative-backlash"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-2d311111-35db-5a56-b776-6839efeacfc8",
+      "name": "Peckercracker",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-2d311111-35db-5a56-b776-6839efeacfc8",
+      "originalGrade": "V1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Raging Pecker Area",
+      "exactSourceUrl": "https://openbeta.io/climb/2d311111-35db-5a56-b776-6839efeacfc8/peckercracker"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-cc7c7308-0539-59e4-8cd5-14920cc58286",
+      "name": "Wutang",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-cc7c7308-0539-59e4-8cd5-14920cc58286",
+      "originalGrade": "V10",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "S-Curve",
+      "exactSourceUrl": "https://openbeta.io/climb/cc7c7308-0539-59e4-8cd5-14920cc58286/wutang"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-1135a43c-f9fb-5ada-a71e-00b4e1a95a56",
+      "name": "Sex After Death",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-1135a43c-f9fb-5ada-a71e-00b4e1a95a56",
+      "originalGrade": "V8",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Tabloid Pass",
+      "exactSourceUrl": "https://openbeta.io/climb/1135a43c-f9fb-5ada-a71e-00b4e1a95a56/sex-after-death"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-4c59b513-436d-537d-b55e-c2dad93ad2d1",
+      "name": "Human Shot Putt",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-4c59b513-436d-537d-b55e-c2dad93ad2d1",
+      "originalGrade": "V1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Tabloid Pass",
+      "exactSourceUrl": "https://openbeta.io/climb/4c59b513-436d-537d-b55e-c2dad93ad2d1/human-shot-putt"
+    },
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "routeId": "openbeta-d33b7086-0df2-5d69-8ac7-9e893180e087",
+      "name": "Mojo",
+      "path": "/destinations/hueco-tanks-usa/routes/openbeta-d33b7086-0df2-5d69-8ac7-9e893180e087",
+      "originalGrade": "V10",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "East Mountain",
+      "sectorName": "Warm Up Roof",
+      "exactSourceUrl": "https://openbeta.io/climb/d33b7086-0df2-5d69-8ac7-9e893180e087/mojo"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-0f9e8e9b-70f9-5081-bdd3-d6b7e8e085b8",
+      "name": "New Frontier",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-0f9e8e9b-70f9-5081-bdd3-d6b7e8e085b8",
+      "originalGrade": "5.11b",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Millbrook",
+      "exactSourceUrl": "https://openbeta.io/climb/0f9e8e9b-70f9-5081-bdd3-d6b7e8e085b8/new-frontier"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-03f88b60-0bd0-59c0-bd6f-57842570c12e",
+      "name": "Cruise Control",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-03f88b60-0bd0-59c0-bd6f-57842570c12e",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Millbrook",
+      "exactSourceUrl": "https://openbeta.io/climb/03f88b60-0bd0-59c0-bd6f-57842570c12e/cruise-control"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-18663fb0-832a-575a-8d73-4b83c1f19b96",
+      "name": "Westward Ha!",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-18663fb0-832a-575a-8d73-4b83c1f19b96",
+      "originalGrade": "5.7",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Millbrook",
+      "exactSourceUrl": "https://openbeta.io/climb/18663fb0-832a-575a-8d73-4b83c1f19b96/westward-ha"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-2443fabc-cc6f-5d0d-83dd-f7d9e5b86743",
+      "name": "Little Woman in Small World",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-2443fabc-cc6f-5d0d-83dd-f7d9e5b86743",
+      "originalGrade": "V6-",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Near Trapps Bouldering",
+      "sectorName": "Area 2 (Cream Cheese)",
+      "exactSourceUrl": "https://openbeta.io/climb/2443fabc-cc6f-5d0d-83dd-f7d9e5b86743/little-woman-in-small-world"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-5cfaabfa-96fe-5f95-9bf3-8417aa297cd6",
+      "name": "25 Years",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-5cfaabfa-96fe-5f95-9bf3-8417aa297cd6",
+      "originalGrade": "V5",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Near Trapps Bouldering",
+      "sectorName": "Cliff Area",
+      "exactSourceUrl": "https://openbeta.io/climb/5cfaabfa-96fe-5f95-9bf3-8417aa297cd6/25-years"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-128e2a5a-77c8-5eab-a9ee-09507bb5bbb4",
+      "name": "Blown O-Ring",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-128e2a5a-77c8-5eab-a9ee-09507bb5bbb4",
+      "originalGrade": "V9",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Near Trapps Bouldering",
+      "sectorName": "Playground: Area 1, The",
+      "exactSourceUrl": "https://openbeta.io/climb/128e2a5a-77c8-5eab-a9ee-09507bb5bbb4/blown-o-ring"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-29d6b2c2-4b4f-5cf9-9482-43d447cac576",
+      "name": "Out of the Ashes (Stand)",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-29d6b2c2-4b4f-5cf9-9482-43d447cac576",
+      "originalGrade": "V3",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Near Trapps Bouldering",
+      "sectorName": "Playground: Area 1, The",
+      "exactSourceUrl": "https://openbeta.io/climb/29d6b2c2-4b4f-5cf9-9482-43d447cac576/out-of-the-ashes-stand"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-22529de6-315f-5b7e-8fbc-c2ac36c96e71",
+      "name": "Where the Things Live",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-22529de6-315f-5b7e-8fbc-c2ac36c96e71",
+      "originalGrade": "V2",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Near Trapps Bouldering",
+      "sectorName": "Playground: Area 1, The",
+      "exactSourceUrl": "https://openbeta.io/climb/22529de6-315f-5b7e-8fbc-c2ac36c96e71/where-the-things-live"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-0a798181-2c41-55dc-9c12-ab73ea4541fb",
+      "name": "Requiem",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-0a798181-2c41-55dc-9c12-ab73ea4541fb",
+      "originalGrade": "5.12d",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Near Trapps, The",
+      "sectorName": "a. Beginning of cliff to Gelsa",
+      "exactSourceUrl": "https://openbeta.io/climb/0a798181-2c41-55dc-9c12-ab73ea4541fb/requiem"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-229a86df-b433-5229-af5c-6d560a437209",
+      "name": "Inverted Layback",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-229a86df-b433-5229-af5c-6d560a437209",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Near Trapps, The",
+      "sectorName": "a. Beginning of cliff to Gelsa",
+      "exactSourceUrl": "https://openbeta.io/climb/229a86df-b433-5229-af5c-6d560a437209/inverted-layback"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-077aadb4-4a28-5571-9172-41b1e8f70c12",
+      "name": "Broken Sling",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-077aadb4-4a28-5571-9172-41b1e8f70c12",
+      "originalGrade": "5.8+",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Near Trapps, The",
+      "sectorName": "a. Beginning of cliff to Gelsa",
+      "exactSourceUrl": "https://openbeta.io/climb/077aadb4-4a28-5571-9172-41b1e8f70c12/broken-sling"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-04a45866-03a1-5c11-b1cc-c0577e9b99b5",
+      "name": "Mac-Reppy",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-04a45866-03a1-5c11-b1cc-c0577e9b99b5",
+      "originalGrade": "5.11b",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Near Trapps, The",
+      "sectorName": "d. Harvest Moon to the End",
+      "exactSourceUrl": "https://openbeta.io/climb/04a45866-03a1-5c11-b1cc-c0577e9b99b5/mac-reppy"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-187fc3a5-e976-56a7-83a8-ce8b070bdc30",
+      "name": "Hang Ten",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-187fc3a5-e976-56a7-83a8-ce8b070bdc30",
+      "originalGrade": "5.10a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Near Trapps, The",
+      "sectorName": "d. Harvest Moon to the End",
+      "exactSourceUrl": "https://openbeta.io/climb/187fc3a5-e976-56a7-83a8-ce8b070bdc30/hang-ten"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-1efa2123-ca05-50e0-8e0c-e0c374696eb9",
+      "name": "Main Line",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-1efa2123-ca05-50e0-8e0c-e0c374696eb9",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Near Trapps, The",
+      "sectorName": "d. Harvest Moon to the End",
+      "exactSourceUrl": "https://openbeta.io/climb/1efa2123-ca05-50e0-8e0c-e0c374696eb9/main-line"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-b13945fb-d0af-5760-8981-e8c0cf19762c",
+      "name": "Village Idiot",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-b13945fb-d0af-5760-8981-e8c0cf19762c",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Peterskill Bouldering",
+      "sectorName": "Golden Wall Area",
+      "exactSourceUrl": "https://openbeta.io/climb/b13945fb-d0af-5760-8981-e8c0cf19762c/village-idiot"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-25a5428e-a465-5c2b-903b-d596dd0f6df3",
+      "name": "Tree Bola Arete",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-25a5428e-a465-5c2b-903b-d596dd0f6df3",
+      "originalGrade": "V3",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Peterskill Bouldering",
+      "sectorName": "Quarantine Area & Outbreak Boulder",
+      "exactSourceUrl": "https://openbeta.io/climb/25a5428e-a465-5c2b-903b-d596dd0f6df3/tree-bola-arete"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-02042678-d305-5f82-b56f-013522314548",
+      "name": "Whatever",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-02042678-d305-5f82-b56f-013522314548",
+      "originalGrade": "V0",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Peterskill Bouldering",
+      "sectorName": "Quarantine Area & Outbreak Boulder",
+      "exactSourceUrl": "https://openbeta.io/climb/02042678-d305-5f82-b56f-013522314548/whatever"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-875ad93b-56e5-570d-bd30-57002832b063",
+      "name": "Delicate Soul",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-875ad93b-56e5-570d-bd30-57002832b063",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Peterskill Bouldering",
+      "sectorName": "Tiger Style Boulder",
+      "exactSourceUrl": "https://openbeta.io/climb/875ad93b-56e5-570d-bd30-57002832b063/delicate-soul"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-48551d8d-26af-5a40-b03e-4b70644722aa",
+      "name": "LA Roof",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-48551d8d-26af-5a40-b03e-4b70644722aa",
+      "originalGrade": "5.13b",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Peterskill",
+      "sectorName": "c. LA Roof",
+      "exactSourceUrl": "https://openbeta.io/climb/48551d8d-26af-5a40-b03e-4b70644722aa/la-roof"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "routeId": "openbeta-0d33f9e4-02a7-539e-b140-15f1c98ce191",
+      "name": "Seams About Right",
+      "path": "/destinations/the-gunks-usa/routes/openbeta-0d33f9e4-02a7-539e-b140-15f1c98ce191",
+      "originalGrade": "5.6",
+      "gradeSystem": "yds",
+      "climbingType": "top-rope",
+      "areaName": "Peterskill",
+      "sectorName": "e. Breaker & Very Blocky Walls",
+      "exactSourceUrl": "https://openbeta.io/climb/0d33f9e4-02a7-539e-b140-15f1c98ce191/seams-about-right"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-36fee01c-564d-5d7f-a6c5-6bd89edbb84f",
+      "name": "Soul Slinger",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-36fee01c-564d-5d7f-a6c5-6bd89edbb84f",
+      "originalGrade": "V9",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/36fee01c-564d-5d7f-a6c5-6bd89edbb84f/soul-slinger"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-c2bc20b8-eaca-54d6-a1ea-503a0031f0b6",
+      "name": "The Mandala",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-c2bc20b8-eaca-54d6-a1ea-503a0031f0b6",
+      "originalGrade": "V12-",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/c2bc20b8-eaca-54d6-a1ea-503a0031f0b6/the-mandala"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-5bbaac9f-a588-5df7-aa4c-901082d364d3",
+      "name": "Iron Man Traverse",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-5bbaac9f-a588-5df7-aa4c-901082d364d3",
+      "originalGrade": "V4",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/5bbaac9f-a588-5df7-aa4c-901082d364d3/iron-man-traverse"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-344f3919-efe0-5f54-b2b1-da8b81f0a50f",
+      "name": "Buttermilk Stem",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-344f3919-efe0-5f54-b2b1-da8b81f0a50f",
+      "originalGrade": "V1",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/344f3919-efe0-5f54-b2b1-da8b81f0a50f/buttermilk-stem"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-3a916f50-d0a2-590e-90db-9d3961778a8c",
+      "name": "High Plains Drifter",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-3a916f50-d0a2-590e-90db-9d3961778a8c",
+      "originalGrade": "V7",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/3a916f50-d0a2-590e-90db-9d3961778a8c/high-plains-drifter"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-ed8be39a-c510-55ba-b440-105c90a1c843",
+      "name": "Evilution",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-ed8be39a-c510-55ba-b440-105c90a1c843",
+      "originalGrade": "V12-13",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/ed8be39a-c510-55ba-b440-105c90a1c843/evilution"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-84c0eb59-034e-52f4-8409-9711128fd164",
+      "name": "Bowling Pin",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-84c0eb59-034e-52f4-8409-9711128fd164",
+      "originalGrade": "V4+",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/84c0eb59-034e-52f4-8409-9711128fd164/bowling-pin"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "routeId": "openbeta-81ab6447-4b97-5330-a112-4640983442da",
+      "name": "Saigon",
+      "path": "/destinations/bishop-area-usa/routes/openbeta-81ab6447-4b97-5330-a112-4640983442da",
+      "originalGrade": "V6",
+      "gradeSystem": "v-scale",
+      "climbingType": "boulder",
+      "areaName": "Buttermilk Country",
+      "exactSourceUrl": "https://openbeta.io/climb/81ab6447-4b97-5330-a112-4640983442da/saigon"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-34740d29-7fe6-5a0d-a5a5-68281aecad5e",
+      "name": "Epinephrine",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-34740d29-7fe6-5a0d-a5a5-68281aecad5e",
+      "originalGrade": "5.9",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/34740d29-7fe6-5a0d-a5a5-68281aecad5e/epinephrine"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-74f2c1ea-4a6a-5107-98ab-86de017d4f36",
+      "name": "Frogland",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-74f2c1ea-4a6a-5107-98ab-86de017d4f36",
+      "originalGrade": "5.8",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/74f2c1ea-4a6a-5107-98ab-86de017d4f36/frogland"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-28e8f602-f986-546c-917c-4d3d6ac0a2b4",
+      "name": "Crimson Chrysalis",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-28e8f602-f986-546c-917c-4d3d6ac0a2b4",
+      "originalGrade": "5.8+",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Juniper Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/28e8f602-f986-546c-917c-4d3d6ac0a2b4/crimson-chrysalis"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-18b3ec70-b1d8-590a-bdad-3bf26f4c143e",
+      "name": "Levitation 29",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-18b3ec70-b1d8-590a-bdad-3bf26f4c143e",
+      "originalGrade": "5.11b/c",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Oak Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/18b3ec70-b1d8-590a-bdad-3bf26f4c143e/levitation-29"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-3a274d8e-f6c9-5d6f-831f-c35915b6ca2a",
+      "name": "Solar Slab",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-3a274d8e-f6c9-5d6f-831f-c35915b6ca2a",
+      "originalGrade": "5.6",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Oak Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/3a274d8e-f6c9-5d6f-831f-c35915b6ca2a/solar-slab"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-1abda280-6f00-5729-bea8-13eb3f555cce",
+      "name": "Cat in the Hat",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-1abda280-6f00-5729-bea8-13eb3f555cce",
+      "originalGrade": "5.6",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Pine Creek Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/1abda280-6f00-5729-bea8-13eb3f555cce/cat-in-the-hat"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-40d773d9-0d6d-5b56-bc34-ad3537d7f2e2",
+      "name": "Dream of Wild Turkeys",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-40d773d9-0d6d-5b56-bc34-ad3537d7f2e2",
+      "originalGrade": "5.10a",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/40d773d9-0d6d-5b56-bc34-ad3537d7f2e2/dream-of-wild-turkeys"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "routeId": "openbeta-52c7deca-4592-5570-93ba-944cdff9af78",
+      "name": "Prince of Darkness",
+      "path": "/destinations/red-rock-canyon-usa/routes/openbeta-52c7deca-4592-5570-93ba-944cdff9af78",
+      "originalGrade": "5.10c",
+      "gradeSystem": "yds",
+      "climbingType": "trad",
+      "areaName": "Black Velvet Canyon",
+      "exactSourceUrl": "https://openbeta.io/climb/52c7deca-4592-5570-93ba-944cdff9af78/prince-of-darkness"
+    }
+  ],
+  "httpValidation": {
+    "checked": 56,
+    "passed": 56,
+    "failed": 0,
+    "aliasRedirectsChecked": 0,
+    "results": [
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-05bfc7ff-d8a8-5a17-92fe-4ad07fa68487",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-202ff0a9-087f-5611-8219-1c06e9b3b386",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-03cd8c40-b57b-53ea-bd91-b0edbf95926b",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-00b7ae53-03bc-5cb5-b910-2b28cc8b1bd6",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-0d94498a-0c74-5fdf-9006-de60bc2ceac1",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-3132c669-d32f-5435-b6bb-1f13b1dbe86e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-0fe27fb1-16a5-52b9-a6f9-40c4263653a3",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-05cdbf83-9a2a-59ed-b33a-9e7d9f767b86",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-2370deb0-6360-557e-9ffc-89e04dc770ac",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-13edc5e5-4f3a-53e6-a65b-2eda4d6acc47",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-1e0731e1-7963-5da0-9819-9ddbf3dcd13b",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-8634c1b4-2918-577c-848b-807675ed36e2",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-1cbb3ec9-6412-5f96-915c-3e308a0586b0",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-995eab5c-96f3-583c-9523-07f71c519c5d",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-0d913fc4-5ecd-5c81-a175-851daa148184",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-2d311111-35db-5a56-b776-6839efeacfc8",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-cc7c7308-0539-59e4-8cd5-14920cc58286",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-1135a43c-f9fb-5ada-a71e-00b4e1a95a56",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-4c59b513-436d-537d-b55e-c2dad93ad2d1",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/hueco-tanks-usa/routes/openbeta-d33b7086-0df2-5d69-8ac7-9e893180e087",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-0f9e8e9b-70f9-5081-bdd3-d6b7e8e085b8",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-03f88b60-0bd0-59c0-bd6f-57842570c12e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-18663fb0-832a-575a-8d73-4b83c1f19b96",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-2443fabc-cc6f-5d0d-83dd-f7d9e5b86743",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-5cfaabfa-96fe-5f95-9bf3-8417aa297cd6",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-128e2a5a-77c8-5eab-a9ee-09507bb5bbb4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-29d6b2c2-4b4f-5cf9-9482-43d447cac576",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-22529de6-315f-5b7e-8fbc-c2ac36c96e71",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-0a798181-2c41-55dc-9c12-ab73ea4541fb",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-229a86df-b433-5229-af5c-6d560a437209",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-077aadb4-4a28-5571-9172-41b1e8f70c12",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-04a45866-03a1-5c11-b1cc-c0577e9b99b5",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-187fc3a5-e976-56a7-83a8-ce8b070bdc30",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-1efa2123-ca05-50e0-8e0c-e0c374696eb9",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-b13945fb-d0af-5760-8981-e8c0cf19762c",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-25a5428e-a465-5c2b-903b-d596dd0f6df3",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-02042678-d305-5f82-b56f-013522314548",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-875ad93b-56e5-570d-bd30-57002832b063",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-48551d8d-26af-5a40-b03e-4b70644722aa",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/the-gunks-usa/routes/openbeta-0d33f9e4-02a7-539e-b140-15f1c98ce191",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-36fee01c-564d-5d7f-a6c5-6bd89edbb84f",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-c2bc20b8-eaca-54d6-a1ea-503a0031f0b6",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-5bbaac9f-a588-5df7-aa4c-901082d364d3",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-344f3919-efe0-5f54-b2b1-da8b81f0a50f",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-3a916f50-d0a2-590e-90db-9d3961778a8c",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-ed8be39a-c510-55ba-b440-105c90a1c843",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-84c0eb59-034e-52f4-8409-9711128fd164",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/bishop-area-usa/routes/openbeta-81ab6447-4b97-5330-a112-4640983442da",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-34740d29-7fe6-5a0d-a5a5-68281aecad5e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-74f2c1ea-4a6a-5107-98ab-86de017d4f36",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-28e8f602-f986-546c-917c-4d3d6ac0a2b4",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-18b3ec70-b1d8-590a-bdad-3bf26f4c143e",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-3a274d8e-f6c9-5d6f-831f-c35915b6ca2a",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-1abda280-6f00-5729-bea8-13eb3f555cce",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-40d773d9-0d6d-5b56-bc34-ad3537d7f2e2",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      },
+      {
+        "path": "/destinations/red-rock-canyon-usa/routes/openbeta-52c7deca-4592-5570-93ba-944cdff9af78",
+        "status": 200,
+        "containsRouteName": true,
+        "containsExactSource": true,
+        "forbiddenPublicCopy": []
+      }
+    ],
+    "aliasResults": []
+  }
+}

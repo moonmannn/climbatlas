@@ -2,12 +2,14 @@
 
 Date: 2026-08-11 / 2026-08-12 UTC
 
-## Release Candidate
+## Release Summary
 
-- Status: hosted Preview validated; Production release pending.
+- Status: released to GitHub `main` and Vercel Production; Production smoke passed.
 - Preview commit: `c69da52 feat: preview route coverage batch three`.
 - Preview URL: `https://climbatlas-rfe4ggon9-moonmannns-projects.vercel.app`.
-- Production rollback commit: `22e578e` (current Production baseline before this batch).
+- Application release commit: `f2f86b2 docs: finalize route coverage batch three`.
+- Production rollback commit: `22e578e` (the stable Production baseline before this batch).
+- Rollback tag: `rc3-2-pre-release-2026-08-12`.
 - Destinations: **24 -> 26**.
 - Public routes: **1,807 -> 2,023**.
 - Imported Indexed Routes: **216**.
@@ -190,6 +192,33 @@ Verified on the hosted Preview:
   source enums;
 - the sampled Pick had no horizontal overflow at 390 x 844.
 
+## Production Release Evidence
+
+Commit `f2f86b2` was fast-forwarded to GitHub `main` and deployed successfully
+to the existing Vercel Production project. The release is available at
+`https://climbatlas.vercel.app/`. The Vercel deployment identifier is
+`HGRX8DsBe45uhBRHLiZrsMdcbNkM`.
+
+Production validation completed on `2026-08-12`:
+
+- the Batch 3 validator checked 56 balanced route samples across Hueco Tanks,
+  The Gunks, Bishop Area, and Red Rock Canyon;
+- all 56 pages returned HTTP 200, contained the expected route name and exact
+  source URL, and exposed none of the prohibited placeholder or internal copy;
+- the full Production smoke test checked 57 pages: the homepage, supporting
+  pages, all 26 destinations, and one representative route per destination;
+- Hueco Tanks and The Gunks each displayed 100 routes in the live browser;
+- the Gunks exposed separate semantic YDS and V Scale Grade groups;
+- a Hueco Indexed Route remained facts-only and Source-backed;
+- The Mandala displayed its V Scale facts and shared Pick experience layer
+  without an incorrect YDS label;
+- the sampled Production pages produced no horizontal overflow in the checked
+  layout.
+
+The first automated Production request encountered a transient network
+`ECONNRESET`. The complete validator subsequently produced a 56/56 passing
+report, and the independent Production smoke test passed 57/57 pages.
+
 ## Known Limitations
 
 - Destination DNA profiles currently cover 24 of 26 destinations. New River
@@ -200,8 +229,6 @@ Verified on the hosted Preview:
 - Destination artwork is explicitly labeled as editorial art, not an exact
   destination or route photograph.
 - No new runtime two-account RLS penetration test was created by this batch.
-- Production deployment and deployed Production smoke remain pending at the
-  time of this release-candidate report.
 
 ## Versioned Evidence
 
