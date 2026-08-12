@@ -3,7 +3,10 @@ import {
   dedupeNormalizedRouteSources,
   normalizeRouteSource
 } from "@/lib/routes/adapters/normalize-route-source";
-import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
+import {
+  normalizeEquivalentGrades,
+  parseRouteGrade
+} from "@/lib/routes/parse-route-grade";
 import type {
   RouteFactQualifier,
   RouteFormat,
@@ -68,13 +71,19 @@ export function adaptCanonicalRouteRecord(input: unknown): RouteRecord {
     route.destinationId,
     route.climbingType
   );
+  const equivalentGrades = normalizeEquivalentGrades(
+    route.grade.equivalentGrades,
+    route.destinationId,
+    route.climbingType
+  );
 
   return {
     ...route,
     grade: {
       ...route.grade,
       ...parsedGrade,
-      normalizedDifficulty: parsedGrade.sortValue
+      normalizedDifficulty: parsedGrade.sortValue,
+      equivalentGrades
     },
     lengthMeters: facts.lengthMeters,
     lengthFeet: facts.lengthFeet,

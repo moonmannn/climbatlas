@@ -64,6 +64,10 @@ for (const { destination, route } of publicRoutes) {
 
     assert.equal(english.viewModel.identity.id, route.id);
     assert.equal(chinese.identity.id, route.id);
+    if (route.verification.status === "source-backed") {
+      assert.equal(english.viewModel.badges.verificationLabel, "Source-backed");
+      assert.equal(chinese.badges.verificationLabel, "来自开放数据来源");
+    }
     duplicateSourcesRemoved += english.diagnostics.duplicateSourcesRemoved;
     duplicateResourcesRemoved += english.diagnostics.duplicateResourcesRemoved;
     invalidMedia.push(

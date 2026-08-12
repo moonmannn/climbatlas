@@ -1,6 +1,7 @@
 import { metadataRouteAliases } from "@/data/generatedRouteMetadata";
 import { routeCoverage3RouteAliases } from "@/data/routes/route-coverage-3-batch-1";
 import { routeCoverage3Batch2RouteAliases } from "@/data/routes/route-coverage-3-batch-2";
+import { routeCoverage3Batch3RouteAliases } from "@/data/routes/route-coverage-3-batch-3";
 import {
   cleanupRouteAliases,
   getCleanupRetiredRouteParams,
@@ -17,7 +18,11 @@ const routeAliases = {
   ...(process.env.CLIMBATLAS_EXCLUDE_ROUTE_COVERAGE_BATCH ===
   "route-coverage-3-batch-2"
     ? {}
-    : routeCoverage3Batch2RouteAliases)
+    : routeCoverage3Batch2RouteAliases),
+  ...(process.env.CLIMBATLAS_EXCLUDE_ROUTE_COVERAGE_BATCH ===
+  "route-coverage-3-batch-3"
+    ? {}
+    : routeCoverage3Batch3RouteAliases)
 };
 
 export function resolveRouteId(destinationSlug: string, routeId: string) {

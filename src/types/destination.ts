@@ -62,6 +62,9 @@ export type ExternalResource = {
   url: string;
   type: ExternalResourceType;
   linkStatus?: ExternalLinkStatus;
+  checkedAt?: string;
+  staleAfterDays?: number;
+  staleBehavior?: "link-only" | "warning" | "hide-summary";
   description: LocalizedText;
 };
 

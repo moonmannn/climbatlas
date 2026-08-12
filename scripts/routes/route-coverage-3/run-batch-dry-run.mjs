@@ -37,6 +37,17 @@ if (manifestArgument >= 0 && !process.argv[manifestArgument + 1]) {
   throw new Error("--manifest requires a file path.");
 }
 const manifest = readJson(manifestPath);
+const requiredSourceIdentities = manifest.requiredSourceIdentities ?? [];
+const requiredIdentityByKey = new Map();
+
+for (const identity of requiredSourceIdentities) {
+  const key = `${identity.destinationSlug}:${identity.externalId.toLowerCase()}`;
+  if (requiredIdentityByKey.has(key)) {
+    throw new Error(`Duplicate required source identity in manifest: ${key}.`);
+  }
+  requiredIdentityByKey.set(key, identity);
+}
+
 process.env.CLIMBATLAS_EXCLUDE_ROUTE_COVERAGE_BATCH = manifest.batchId;
 const parquetArgument = process.argv.indexOf("--parquet");
 const parquetPath =
@@ -88,13 +99,20 @@ const existingRoutes = routesModule
     (route) =>
       !publishedBatchRouteKeys.has(`${route.destinationId}:${route.id}`)
   );
-const existingPublicRoutes = publicRoutesModule
+const currentPublicRoutes = publicRoutesModule
   .getPublicRouteRecords()
-  .map(({ route }) => route)
+  .map(({ route }) => route);
+const existingPublicRoutes = currentPublicRoutes
   .filter(
     (route) =>
       !publishedBatchRouteKeys.has(`${route.destinationId}:${route.id}`)
   );
+const currentPublishedPickCount = currentPublicRoutes.filter(
+  publicRoutesModule.hasPublishedRouteEditorial
+).length;
+const baselinePublishedPicks = manifest.baselinePublishedPicks ?? 40;
+const finalPublishedPicks =
+  manifest.finalPublishedPicks ?? baselinePublishedPicks;
 const existingPublicDestinationIds = new Set(
   existingPublicRoutes.map((route) => route.destinationId)
 );
@@ -518,12 +536,22 @@ const currentCounts = Object.fromEntries(
 for (const scope of manifest.destinationScopes) {
   const scopedRows = rows.filter((row) => scopeMatch(row, scope).accepted);
   const target = manifest.destinationTargets[scope.destinationSlug];
+  const selectionPolicy =
+    manifest.selectionPolicies?.[scope.destinationSlug] ?? {};
+  const requiredForScope = requiredSourceIdentities.filter(
+    (identity) => identity.destinationSlug === scope.destinationSlug
+  );
   const needed = Math.max(0, target.target - currentCounts[scope.destinationSlug]);
   const normalized = [];
 
   for (const row of scopedRows) {
     const externalId = typeof row.climb_id === "string" ? row.climb_id : undefined;
     const name = typeof row.climb_name === "string" ? row.climb_name.trim() : "";
+    const requiredIdentity = externalId
+      ? requiredIdentityByKey.get(
+          `${scope.destinationSlug}:${externalId.toLowerCase()}`
+        )
+      : undefined;
     let reason;
 
     if (!externalId) reason = "missing OpenBeta route ID";
@@ -531,9 +559,18 @@ for (const scope of manifest.destinationScopes) {
       reason = "missing, redacted, or placeholder route name";
     }
     else if (!typePresent(row)) reason = "no supported climbing type in source row";
-    else if (supportedTypeCount(row) > 1) {
+    else if (
+      supportedTypeCount(row) > 1 &&
+      !requiredIdentity?.reviewedClimbingType
+    ) {
       reason =
         "multiple source climbing types cannot be losslessly represented";
+    }
+    else if (
+      requiredIdentity &&
+      name.toLowerCase() !== requiredIdentity.expectedName.trim().toLowerCase()
+    ) {
+      reason = `required identity name mismatch: expected ${requiredIdentity.expectedName}`;
     }
 
     if (reason) {
@@ -547,7 +584,28 @@ for (const scope of manifest.destinationScopes) {
       continue;
     }
 
-    const raw = toRawOpenBetaRoute(row, scope, manifest);
+    if (requiredIdentity?.reviewedClimbingType && supportedTypeCount(row) > 1) {
+      conflictLedger.push({
+        destinationSlug: scope.destinationSlug,
+        type: "source-climbing-type-conflict",
+        sourceExternalId: externalId,
+        sourceName: name,
+        sourceTypes: [
+          ...(row.is_sport === true ? ["sport"] : []),
+          ...(row.is_trad === true ? ["trad"] : []),
+          ...(row.is_boulder === true ? ["boulder"] : []),
+          ...(row.is_alpine === true ? ["alpine"] : []),
+          ...(row.is_top_rope === true ? ["top-rope"] : [])
+        ],
+        resolution: `reviewed as ${requiredIdentity.reviewedClimbingType}`,
+        reviewSourceUrl: requiredIdentity.reviewSourceUrl,
+        unresolved: false
+      });
+    }
+
+    const raw = toRawOpenBetaRoute(row, scope, manifest, undefined, {
+      requiredIdentity
+    });
     const route = raw
       ? openBetaNormalizationModule.normalizeOpenBetaRoute(
           raw,
@@ -567,7 +625,52 @@ for (const scope of manifest.destinationScopes) {
       continue;
     }
 
-    normalized.push({ row, raw, route });
+    if (
+      selectionPolicy.allowedClimbingTypes?.length &&
+      !selectionPolicy.allowedClimbingTypes.includes(route.climbingType)
+    ) {
+      rejectionLedger.push({
+        destinationSlug: scope.destinationSlug,
+        externalId,
+        name,
+        stage: "selection-policy",
+        reason: `${route.climbingType} is outside the reviewed climbing-type scope`
+      });
+      continue;
+    }
+
+    const requiredGradeSystem =
+      selectionPolicy.requiredGradeSystemByType?.[route.climbingType];
+    if (requiredGradeSystem && route.grade.system !== requiredGradeSystem) {
+      rejectionLedger.push({
+        destinationSlug: scope.destinationSlug,
+        externalId,
+        name,
+        stage: "selection-policy",
+        reason: `${route.climbingType} requires ${requiredGradeSystem}; source primary grade is ${route.grade.system}`
+      });
+      continue;
+    }
+
+    normalized.push({ row, raw, route, requiredIdentity });
+  }
+
+  for (const identity of requiredForScope) {
+    if (
+      !normalized.some(
+        (candidate) =>
+          candidate.raw.uuid.toLowerCase() === identity.externalId.toLowerCase()
+      )
+    ) {
+      conflictLedger.push({
+        destinationSlug: scope.destinationSlug,
+        type: "required-source-identity-missing",
+        sourceExternalId: identity.externalId,
+        expectedName: identity.expectedName,
+        resolution: "blocked",
+        unresolved: true
+      });
+    }
   }
 
   const sourceDuplicateIds = new Set();
@@ -660,7 +763,24 @@ for (const scope of manifest.destinationScopes) {
     });
   }
 
-  const ordered = balancedOrder(eligible, scope.destinationSlug);
+  const requiredIds = new Set(
+    requiredForScope.map((identity) => identity.externalId.toLowerCase())
+  );
+  const requiredEligible = requiredForScope.flatMap((identity) => {
+    const candidate = eligible.find(
+      (item) => item.raw.uuid.toLowerCase() === identity.externalId.toLowerCase()
+    );
+    return candidate ? [candidate] : [];
+  });
+  const ordered = [
+    ...requiredEligible,
+    ...balancedOrder(
+      eligible.filter(
+        (candidate) => !requiredIds.has(candidate.raw.uuid.toLowerCase())
+      ),
+      scope.destinationSlug
+    )
+  ];
   const linkCacheFile = path.join(outputDirectory, "openbeta-link-cache.json");
   const selected = [];
   const checkedCandidates = [];
@@ -668,6 +788,14 @@ for (const scope of manifest.destinationScopes) {
   const selectedTypeCounts = new Map();
 
   function typeWithinReleaseCap(route) {
+    const reviewedTarget =
+      selectionPolicy.targetTypeCounts?.[route.climbingType];
+    if (selectionPolicy.targetTypeCounts) {
+      return (
+        typeof reviewedTarget === "number" &&
+        (selectedTypeCounts.get(route.climbingType) ?? 0) < reviewedTarget
+      );
+    }
     if (route.climbingType !== "top-rope") return true;
     const cap = Math.max(1, Math.ceil(needed * 0.1));
     return (selectedTypeCounts.get("top-rope") ?? 0) < cap;
@@ -692,7 +820,9 @@ for (const scope of manifest.destinationScopes) {
       checkedCandidates.push({ candidate, link });
       if (!link || !["valid", "redirected"].includes(link.linkStatus)) continue;
 
-      const raw = toRawOpenBetaRoute(candidate.row, scope, manifest, link);
+      const raw = toRawOpenBetaRoute(candidate.row, scope, manifest, link, {
+        requiredIdentity: candidate.requiredIdentity
+      });
       const route = openBetaNormalizationModule.normalizeOpenBetaRoute(
         raw,
         scope.destinationSlug,
@@ -724,6 +854,27 @@ for (const scope of manifest.destinationScopes) {
   }
 
   const selectedRouteRecords = selected.map(({ route }) => route);
+  const selectedExternalIds = new Set(
+    selectedRouteRecords.flatMap((route) =>
+      route.sourceRecords
+        .filter((source) => source.provider === "openbeta" && source.externalId)
+        .map((source) => source.externalId.toLowerCase())
+    )
+  );
+  const missingRequiredSelections = requiredForScope.filter(
+    (identity) => !selectedExternalIds.has(identity.externalId.toLowerCase())
+  );
+  for (const identity of missingRequiredSelections) {
+    conflictLedger.push({
+      destinationSlug: scope.destinationSlug,
+      type: "required-source-identity-not-selected",
+      sourceExternalId: identity.externalId,
+      expectedName: identity.expectedName,
+      resolution: "blocked",
+      unresolved: true
+    });
+  }
+  identityConflictCount += missingRequiredSelections.length;
   selectedRoutes.push(...selectedRouteRecords);
   selectedLinks.push(...selected.map(({ link }) => link));
   identityRecords.push(
@@ -769,6 +920,10 @@ for (const scope of manifest.destinationScopes) {
     identityConflicts: identityConflictCount,
     eligibleNewRoutes: eligible.length,
     selectedForPreview: selectedRouteRecords.length,
+    requiredSourceIdentities: requiredForScope.length,
+    requiredSourceIdentitiesSelected:
+      requiredForScope.length - missingRequiredSelections.length,
+    selectionPolicy,
     eligibleButNotSelected: Math.max(0, eligible.length - selectedRouteRecords.length),
     targetReached: selectedRouteRecords.length === needed,
     exactRouteLinkCoverage:
@@ -778,7 +933,7 @@ for (const scope of manifest.destinationScopes) {
     distribution: distribution(selectedRouteRecords),
     difficultySpread: difficultySpread(selectedRouteRecords),
     selectionReason:
-      "Deterministic round-robin across destination-specific area/crag units, then climbing type, grade system, and difficulty band; stable route ID breaks ties.",
+      "Reviewed required source identities are selected first, then deterministic round-robin balances destination-specific area/crag units, climbing type, grade system, and difficulty band; stable route ID breaks ties.",
     selectedRoutes: selectedRouteRecords.map((route) => ({
       id: route.id,
       externalId: route.sourceRecords.find(
@@ -918,9 +1073,7 @@ const summary = {
   baseline: {
     destinations: existingPublicDestinationIds.size,
     publicRoutes: existingPublicRoutes.length,
-    publishedPicks: existingPublicRoutes.filter(
-      publicRoutesModule.hasPublishedRouteEditorial
-    ).length
+    publishedPicks: baselinePublishedPicks
   },
   preview: {
     selectedRoutes: selectedRoutes.length,
@@ -930,9 +1083,7 @@ const summary = {
         (scope) => !existingPublicDestinationIds.has(scope.destinationSlug)
       ).length,
     projectedPublicRoutes: existingPublicRoutes.length + selectedRoutes.length,
-    publishedPicks: existingPublicRoutes.filter(
-      publicRoutesModule.hasPublishedRouteEditorial
-    ).length,
+    publishedPicks: baselinePublishedPicks,
     exactRouteLinkCoverage:
       selectedLinks.length === 0
         ? 0
@@ -969,9 +1120,23 @@ const summary = {
             ["valid", "redirected"].includes(link.linkStatus)
           ).length / selectedLinks.length,
     majorGradeSystemFailures: majorGradeFailures,
-    publishedPicksRemain40:
-      existingPublicRoutes.filter(publicRoutesModule.hasPublishedRouteEditorial)
-        .length === 40,
+    publishedPicksMatchBaseline: [
+      baselinePublishedPicks,
+      finalPublishedPicks
+    ].includes(currentPublishedPickCount),
+    currentCatalogPublishedPicks: currentPublishedPickCount,
+    requiredSourceIdentitiesSelected:
+      candidateReports.every(
+        (report) =>
+          report.requiredSourceIdentities ===
+          report.requiredSourceIdentitiesSelected
+      ),
+    selectionTypeTargetsReached: candidateReports.every((report) =>
+      Object.entries(report.selectionPolicy.targetTypeCounts ?? {}).every(
+        ([climbingType, expected]) =>
+          report.distribution.byClimbingType[climbingType] === expected
+      )
+    ),
     destinationMinimumsReached: candidateReports.every((report) => {
       const minimum = manifest.destinationTargets[report.destinationSlug].minimum;
       return report.existingPublicRoutes + report.selectedForPreview >= minimum;

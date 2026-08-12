@@ -6,13 +6,26 @@ import process from "node:process";
 import { loadRouteProject } from "../load-route-project.mjs";
 
 const root = process.cwd();
-const batchId = "route-coverage-3-batch-1";
-const destinationSlugs = [
-  "joshua-tree-usa",
-  "squamish-canada",
-  "bishop-area-usa",
-  "red-rock-canyon-usa"
-];
+const manifestArgument = process.argv.indexOf("--manifest");
+const manifestPath =
+  manifestArgument >= 0
+    ? path.resolve(root, process.argv[manifestArgument + 1])
+    : path.join(
+        root,
+        "src",
+        "data",
+        "routes",
+        "manifests",
+        "route-coverage-3-batch-1.json"
+      );
+if (manifestArgument >= 0 && !process.argv[manifestArgument + 1]) {
+  throw new Error("--manifest requires a file path.");
+}
+const manifest = readJson(manifestPath);
+const batchId = manifest.batchId;
+const destinationSlugs = manifest.destinationScopes.map(
+  (scope) => scope.destinationSlug
+);
 const sampleSize = 20;
 const baseUrlArgument = process.argv.indexOf("--base-url");
 const baseUrl =
@@ -86,6 +99,9 @@ function htmlIncludesRouteName(html, name) {
 const snapshot = readJson(
   path.join(root, "src", "data", "routes", "imports", `${batchId}.json`)
 );
+const summary = readJson(
+  path.join(root, "outputs", batchId, "dry-run-summary.json")
+);
 const {
   publicRoutesModule,
   routeAliasesModule,
@@ -100,12 +116,20 @@ const publicByKey = new Map(
   ])
 );
 
-assert.equal(snapshot.routes.length, 394, "RC3-4 requires the reviewed 394-route snapshot.");
-assert.equal(publicRoutes.length, 1468, "RC3-4 requires the 1,468-route Preview catalog.");
+assert.equal(
+  snapshot.routes.length,
+  summary.preview.selectedRoutes,
+  "Preview route count differs from the reviewed dry-run snapshot."
+);
+assert.equal(
+  publicRoutes.length,
+  summary.preview.projectedPublicRoutes,
+  "Public Preview count differs from the reviewed dry-run projection."
+);
 assert.equal(
   publicRoutes.filter(({ route }) => publicRoutesModule.hasPublishedRouteEditorial(route)).length,
-  40,
-  "Published Picks changed before RC3-4."
+  manifest.finalPublishedPicks ?? manifest.baselinePublishedPicks ?? 40,
+  "Published Picks differ from the reviewed release manifest."
 );
 
 const samples = [];
@@ -115,8 +139,13 @@ for (const destinationSlug of destinationSlugs) {
   const candidates = snapshot.routes.filter(
     (route) => route.destinationId === destinationSlug
   );
-  const selected = balancedSample(candidates, sampleSize);
-  assert.equal(selected.length, sampleSize, `${destinationSlug} needs 20 Preview samples.`);
+  const expectedSampleSize = Math.min(sampleSize, candidates.length);
+  const selected = balancedSample(candidates, expectedSampleSize);
+  assert.equal(
+    selected.length,
+    expectedSampleSize,
+    `${destinationSlug} does not have the expected Preview sample.`
+  );
 
   for (const snapshotRoute of selected) {
     const key = `${destinationSlug}:${snapshotRoute.id}`;
@@ -156,7 +185,10 @@ for (const destinationSlug of destinationSlugs) {
       climbingType: snapshotRoute.climbingType,
       areaName: snapshotRoute.areaName,
       sectorName: snapshotRoute.sectorName,
-      exactSourceUrl: snapshotRoute.sourceRecords[0].sourceUrl
+      exactSourceUrl:
+        snapshotRoute.sourceRecords.find(
+          (source) => source.provider === "openbeta"
+        )?.sourceUrl ?? snapshotRoute.sourceRecords[0].sourceUrl
     });
   }
 
@@ -209,7 +241,10 @@ if (baseUrl) {
     });
   }
 
-  for (const merge of snapshot.sourceMerges.slice(0, 10)) {
+  const redirectMerges = snapshot.sourceMerges.filter(
+    (merge) => merge.mergedRouteId !== merge.canonicalRouteId
+  );
+  for (const merge of redirectMerges.slice(0, 10)) {
     const aliasPath = `/destinations/${merge.destinationSlug}/routes/${merge.mergedRouteId}`;
     const response = await fetch(`${baseUrl}${aliasPath}`, {
       redirect: "manual",

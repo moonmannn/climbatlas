@@ -10867,6 +10867,98 @@ export const destinations: Destination[] = [
     ]
   },
   {
+    slug: "hueco-tanks-usa",
+    name: "Hueco Tanks",
+    country: "USA",
+    latitude: 31.9175,
+    longitude: -106.0439,
+    climbingTypes: ["boulder"],
+    rockType: "Syenite",
+    bestSeasons: [],
+    difficultyRange: "V Scale routes indexed",
+    beginnerFriendly: false,
+    description:
+      "A bouldering destination in far west Texas. ClimbAtlas currently indexes source-backed V Scale records from North, East, East Spur, and West Mountain; use Route Explorer to compare grades and mountain areas before checking current park access requirements.",
+    localizedContent: {
+      description: {
+        en: "A bouldering destination in far west Texas. ClimbAtlas currently indexes source-backed V Scale records from North, East, East Spur, and West Mountain; use Route Explorer to compare grades and mountain areas before checking current park access requirements.",
+        zh: "Hueco Tanks 位于得克萨斯州最西部，是一处以抱石为主的目的地。ClimbAtlas 目前收录 North、East、East Spur 与 West Mountain 的 V Scale 线路记录；你可以先按难度和山体筛选，再通过公园官方页面核对最新通行要求。"
+      }
+    },
+    externalResources: [
+      {
+        title: "Texas Parks & Wildlife: Hueco Tanks",
+        url: "https://tpwd.texas.gov/state-parks/hueco-tanks/",
+        type: "official",
+        checkedAt: "2026-08-11",
+        staleAfterDays: 90,
+        staleBehavior: "hide-summary",
+        description: {
+          en: "Official park information. Check the current page before travelling.",
+          zh: "公园官方信息。出发前请再次核对当前页面。"
+        }
+      },
+      {
+        title: "Texas Parks & Wildlife: activities",
+        url: "https://tpwd.texas.gov/state-parks/hueco-tanks/activities",
+        type: "official",
+        checkedAt: "2026-08-11",
+        staleAfterDays: 90,
+        staleBehavior: "hide-summary",
+        description: {
+          en: "Official activity and visitor information; temporary arrangements remain on the source page.",
+          zh: "官方活动与访客信息；临时安排以来源页面为准。"
+        }
+      }
+    ]
+  },
+  {
+    slug: "the-gunks-usa",
+    name: "The Gunks",
+    country: "USA",
+    latitude: 41.742,
+    longitude: -74.197,
+    climbingTypes: ["trad", "boulder"],
+    rockType: "Quartz conglomerate",
+    bestSeasons: [],
+    difficultyRange: "YDS and V Scale routes indexed",
+    beginnerFriendly: false,
+    description:
+      "A New York climbing region represented here by trad, bouldering, and a limited top-rope index across The Trapps, Near Trapps, Peterskill, Millbrook, and their reviewed bouldering areas. Use Route Explorer to keep YDS and V Scale results separate.",
+    localizedContent: {
+      description: {
+        en: "A New York climbing region represented here by trad, bouldering, and a limited top-rope index across The Trapps, Near Trapps, Peterskill, Millbrook, and their reviewed bouldering areas. Use Route Explorer to keep YDS and V Scale results separate.",
+        zh: "The Gunks 位于纽约州。ClimbAtlas 目前收录 The Trapps、Near Trapps、Peterskill、Millbrook 及其已审核抱石区域中的传统攀、抱石和少量顶绳线路；可在路线目录中分别查看 YDS 与 V Scale。"
+      }
+    },
+    externalResources: [
+      {
+        title: "Mohonk Preserve: activities",
+        url: "https://www.mohonkpreserve.org/visit/activities/",
+        type: "official",
+        checkedAt: "2026-08-11",
+        staleAfterDays: 90,
+        staleBehavior: "hide-summary",
+        description: {
+          en: "Official preserve activity information. Check the current page before travelling.",
+          zh: "保护区官方活动信息。出发前请再次核对当前页面。"
+        }
+      },
+      {
+        title: "New York State Parks: Minnewaska",
+        url: "https://parks.ny.gov/parks/minnewaska",
+        type: "official",
+        checkedAt: "2026-08-11",
+        staleAfterDays: 90,
+        staleBehavior: "hide-summary",
+        description: {
+          en: "Official state-park information for Peterskill and the wider preserve context.",
+          zh: "Peterskill 及周边州立公园范围的官方信息。"
+        }
+      }
+    ]
+  },
+  {
     slug: "bishop-area-usa",
     name: "Bishop Area",
     country: "USA",

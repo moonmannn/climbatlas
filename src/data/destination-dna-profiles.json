@@ -540,6 +540,60 @@
     }
   },
   {
+    "destinationSlug": "hueco-tanks-usa",
+    "vector": {
+      "exploration": 82,
+      "performance": 90,
+      "adventure": 70,
+      "social": 62,
+      "comfort": 48,
+      "flow": 88
+    },
+    "summary": {
+      "en": "A focused bouldering destination where climbers can compare V Scale choices across four distinct mountain areas.",
+      "zh": "一处专注抱石的目的地，可在四个不同山体区域之间比较 V Scale 线路。"
+    },
+    "traits": {
+      "en": [
+        "bouldering focus",
+        "four mountain areas",
+        "broad V Scale index"
+      ],
+      "zh": [
+        "专注抱石",
+        "四个山体区域",
+        "覆盖多个 V Scale 难度带"
+      ]
+    }
+  },
+  {
+    "destinationSlug": "the-gunks-usa",
+    "vector": {
+      "exploration": 80,
+      "performance": 78,
+      "adventure": 74,
+      "social": 76,
+      "comfort": 58,
+      "flow": 80
+    },
+    "summary": {
+      "en": "A multi-area New York destination with trad, bouldering, and a smaller top-rope index kept separate by grade system.",
+      "zh": "一处由多个岩区组成的纽约目的地，收录传统攀、抱石和少量顶绳线路，并按难度系统分别浏览。"
+    },
+    "traits": {
+      "en": [
+        "trad and bouldering",
+        "separate crag areas",
+        "YDS and V Scale choices"
+      ],
+      "zh": [
+        "传统攀与抱石",
+        "多个独立岩区",
+        "YDS 与 V Scale 选择"
+      ]
+    }
+  },
+  {
     "destinationSlug": "bishop-area-usa",
     "vector": {
       "exploration": 90,

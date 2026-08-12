@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "route-experience-1.1",
+  "expectedPublishedPicks": 64,
+  "expectedPicksByDestination": {
+    "yosemite-usa": 8,
+    "red-river-gorge-usa": 8,
+    "squamish-canada": 8,
+    "fontainebleau-france": 8,
+    "kalymnos-greece": 8,
+    "joshua-tree-usa": 8,
+    "bishop-area-usa": 8,
+    "red-rock-canyon-usa": 8
+  }
+}

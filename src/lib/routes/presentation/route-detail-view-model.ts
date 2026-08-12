@@ -774,7 +774,7 @@ function verificationLabel(route: RouteRecord, locale: Locale) {
     return locale === "zh" ? "已核验事实" : "Verified facts";
   }
   if (route.verification.status === "source-backed") {
-    return locale === "zh" ? "有来源可查" : "Sources available";
+    return locale === "zh" ? "来自开放数据来源" : "Source-backed";
   }
   return undefined;
 }

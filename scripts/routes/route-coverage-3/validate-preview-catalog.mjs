@@ -104,7 +104,11 @@ assert.equal(audit.issues.length, 0, "Production My Atlas reference audit must h
 const publishedPicks = publicRoutes.filter(({ route }) =>
   publicRoutesModule.hasPublishedRouteEditorial(route)
 );
-assert.equal(publishedPicks.length, 40, "RC3-3 must not change Published Picks.");
+assert.equal(
+  publishedPicks.length,
+  manifest.finalPublishedPicks ?? manifest.baselinePublishedPicks ?? 40,
+  "Published Pick count does not match the reviewed release manifest."
+);
 
 for (const [destinationSlug, expected] of Object.entries(expectedCounts)) {
   assert.equal(
@@ -122,14 +126,30 @@ for (const route of snapshot.routes) {
   assert.notEqual(route.editorial.status, "published", `${key} must not become a Pick.`);
   assert.equal(route.experience, undefined, `${key} must not contain an experience profile.`);
   assert.equal(route.media?.length ?? 0, 0, `${key} must not import media.`);
-  assert.equal(route.sourceRecords.length, 1, `${key} must have one OpenBeta source record.`);
-  assert.equal(route.sourceRecords[0].purpose, "route-reference", `${key} source purpose must be route-reference.`);
-  assert.equal(route.sourceRecords[0].sourceRelease, snapshot.sourceRelease, `${key} source release mismatch.`);
+  const openBetaSources = route.sourceRecords.filter(
+    (source) => source.provider === "openbeta"
+  );
+  assert.equal(
+    openBetaSources.length,
+    1,
+    `${key} must have exactly one OpenBeta source record.`
+  );
+  assert.ok(
+    route.sourceRecords.every(
+      (source) => source.purpose === "route-reference"
+    ),
+    `${key} imported sources must remain route references.`
+  );
+  assert.equal(
+    openBetaSources[0].sourceRelease,
+    snapshot.sourceRelease,
+    `${key} OpenBeta source release mismatch.`
+  );
   assert.ok(
     route.externalResources.some(
       (resource) =>
         resource.linkStatus === "route-specific" &&
-        resource.url === route.sourceRecords[0].sourceUrl
+        resource.url === openBetaSources[0].sourceUrl
     ),
     `${key} must expose its exact route source link.`
   );

@@ -1,7 +1,11 @@
 import { loadRouteProject } from "./load-route-project.mjs";
 
 const { gradeParserModule, routesModule } = loadRouteProject();
-const { gradeRangesOverlap, parseRouteGrade } = gradeParserModule;
+const {
+  gradeRangesOverlap,
+  normalizeEquivalentGrades,
+  parseRouteGrade
+} = gradeParserModule;
 const issues = [];
 
 function approximatelyEqual(first, second) {
@@ -109,6 +113,30 @@ for (const sample of nonComparableCases) {
 
 if (!gradeRangesOverlap(9, 12, 10, 10) || gradeRangesOverlap(9, 12, 13, 13)) {
   issues.push("Grade range overlap must include contained grades and exclude separated grades");
+}
+
+const mismatchedEquivalentGrades = normalizeEquivalentGrades(
+  { yds: "V12-", "v-scale": "V12-" },
+  "bishop-area-usa",
+  "boulder"
+);
+if (
+  Object.keys(mismatchedEquivalentGrades).length !== 1 ||
+  mismatchedEquivalentGrades["v-scale"] !== "V12-"
+) {
+  issues.push("Equivalent grade normalization must discard values stored under the wrong grade system");
+}
+
+const validEquivalentGrades = normalizeEquivalentGrades(
+  { yds: "5.10a", "v-scale": "V4" },
+  "bishop-area-usa",
+  "boulder"
+);
+if (
+  validEquivalentGrades.yds !== "5.10a" ||
+  validEquivalentGrades["v-scale"] !== "V4"
+) {
+  issues.push("Equivalent grade normalization must preserve valid values from multiple grade systems");
 }
 
 const catalogRoutes = routesModule.getAllRouteRecordsWithDestinations();

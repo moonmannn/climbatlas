@@ -79,6 +79,11 @@ export function RouteDetailView({
                   {isZh ? "ClimbAtlas 精选" : "ClimbAtlas Pick"}
                 </span>
               )}
+              {viewModel.badges.verificationLabel && (
+                <span className="route-result-badge border border-brandforest/15 text-brandforest">
+                  {viewModel.badges.verificationLabel}
+                </span>
+              )}
               {viewModel.routeSources.length > 0 && (
                 <span className="route-result-badge border border-brandforest/15 text-brandforest">
                   {formatSourceCount(viewModel.routeSources.length, locale)}

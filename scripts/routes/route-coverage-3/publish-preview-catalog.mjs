@@ -67,8 +67,17 @@ if (summary.preview.selectedRoutes !== routeSnapshot.routes.length) {
 if (summary.identity.proposedMerges !== mergeSnapshot.merges.length) {
   fail("merge count differs from the merge-source snapshot");
 }
-if (summary.preview.publishedPicks !== 40) {
+if (
+  summary.preview.publishedPicks !==
+  (manifest.baselinePublishedPicks ?? 40)
+) {
   fail("Published Picks changed before preview publication");
+}
+if (!summary.qualityGates.requiredSourceIdentitiesSelected) {
+  fail("one or more reviewed required source identities were not selected");
+}
+if (!summary.qualityGates.selectionTypeTargetsReached) {
+  fail("one or more destination climbing-type targets were not reached");
 }
 if (!summary.qualityGates.destinationMinimumsReached) {
   fail("one or more destinations did not reach the reviewed minimum");

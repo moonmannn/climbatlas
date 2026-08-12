@@ -390,3 +390,26 @@ export function parseRouteGrade(
     parseStatus: detectedSystems.length > 1 ? "partial" : "parsed"
   };
 }
+
+/**
+ * Keeps only conversions whose displayed value can be parsed as the system
+ * named by its source field. This prevents an upstream field such as
+ * `yds: "V12-"` from appearing publicly as a YDS conversion.
+ */
+export function normalizeEquivalentGrades(
+  grades: Partial<Record<GradeSystem, string>> | undefined,
+  destinationId: string,
+  climbingType: RouteClimbingType
+): Partial<Record<GradeSystem, string>> {
+  return Object.fromEntries(
+    Object.entries(grades ?? {}).flatMap(([system, rawValue]) => {
+      const value = rawValue?.trim();
+      if (!value) return [];
+
+      const parsed = parseRouteGrade(value, destinationId, climbingType);
+      return parsed.detectedSystems.includes(system as GradeSystem)
+        ? [[system, value]]
+        : [];
+    })
+  );
+}

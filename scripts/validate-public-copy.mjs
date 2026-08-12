@@ -39,7 +39,6 @@ const internalPublicPatterns = [
   /editorial draft/i,
   /metadata-only/i,
   /source-backed route index/i,
-  /\bSource-backed\b/i,
   /route directory and quiz/i,
   /路线目录和小测试/u,
   /路线小测试/u,

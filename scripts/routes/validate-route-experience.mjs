@@ -27,15 +27,22 @@ const importedRouteCoverage3Count = routeCoverage3Snapshots.reduce(
   0
 );
 const EXPECTED_PUBLIC_ROUTES = reviewedBaseline + importedRouteCoverage3Count;
-const EXPECTED_PICKS = 40;
-const EXPECTED_PICKS_PER_DESTINATION = 8;
-const TARGET_DESTINATIONS = [
-  "yosemite-usa",
-  "red-river-gorge-usa",
-  "squamish-canada",
-  "fontainebleau-france",
-  "kalymnos-greece"
-];
+const releaseConfig = JSON.parse(
+  fs.readFileSync(
+    path.join(
+      process.cwd(),
+      "src",
+      "data",
+      "route-experiences",
+      "release-config.json"
+    ),
+    "utf8"
+  )
+);
+const EXPECTED_PICKS = releaseConfig.expectedPublishedPicks;
+const TARGET_DESTINATIONS = Object.keys(
+  releaseConfig.expectedPicksByDestination
+);
 
 const {
   publicRoutesModule,
@@ -238,11 +245,13 @@ for (const overlay of overlays) {
 }
 
 for (const destinationSlug of TARGET_DESTINATIONS) {
+  const expectedPicks =
+    releaseConfig.expectedPicksByDestination[destinationSlug];
   const count = picksByDestination.get(destinationSlug) ?? 0;
-  if (count !== EXPECTED_PICKS_PER_DESTINATION) {
+  if (count !== expectedPicks) {
     addError(
       destinationSlug,
-      `Expected ${EXPECTED_PICKS_PER_DESTINATION} Picks, received ${count}.`
+      `Expected ${expectedPicks} Picks, received ${count}.`
     );
   }
 

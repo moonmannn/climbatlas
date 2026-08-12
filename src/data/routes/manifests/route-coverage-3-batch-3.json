@@ -1,0 +1,305 @@
+{
+  "batchId": "route-coverage-3-batch-3",
+  "importerVersion": "rc3-parquet-importer/1.2.0",
+  "sourceProvider": "openbeta",
+  "sourceRelease": "v2026-08-02",
+  "sourceAssetUrl": "https://github.com/OpenBeta/parquet-exporter/releases/download/v2026-08-02/openbeta-climbs.parquet",
+  "sourceSha256": "6a655481a39727beb568e6365b159d9bbf371fbc8d83985c505ef1dec3c8e728",
+  "sourceSchemaSha256": "ce457a5fe56d4ad69f17db5a12ca83f8982d4a289a11c34d6d2a7f23561783d8",
+  "sourceCommitSha": "a5674424209294a69c5c86b247a78e3590927055",
+  "sourceRowCount": 231865,
+  "sourceCheckedAt": "2026-08-11",
+  "baselinePublishedPicks": 40,
+  "finalPublishedPicks": 64,
+  "destinationScopes": [
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Texas",
+          "region": "Hueco Tanks"
+        }
+      ],
+      "excludedPathTuples": [],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc32-b3-hueco-tanks-1"
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "The Trapps"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Near Trapps, The"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Trapps Bouldering"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Near Trapps Bouldering"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Peterskill"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Peterskill Bouldering"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Millbrook"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Sky Top"
+        },
+        {
+          "area": "Giants Workshop"
+        },
+        {
+          "area": "Lost City"
+        },
+        {
+          "crag": "c. Moe (closure) to Harvest Moon"
+        },
+        {
+          "crag": "b. Gelsa to Moe (closure)"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc32-b3-the-gunks-1"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Sierra Eastside",
+          "area": "Bishop Area"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mammoth Lakes Area"
+        },
+        {
+          "area": "Lone Pine Area"
+        },
+        {
+          "area": "June Lake Area"
+        },
+        {
+          "area": "Lee Vining Canyon / Tioga Road"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc32-b3-bishop-picks-1"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Nevada",
+          "region": "Southern Nevada",
+          "area": "Red Rocks"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mount Charleston"
+        },
+        {
+          "area": "Mount Potosi"
+        },
+        {
+          "area": "Keyhole Canyon"
+        },
+        {
+          "area": "La Madre Range"
+        },
+        {
+          "area": "Valley of Fire"
+        }
+      ],
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false,
+      "scopeVersion": "rc32-b3-red-rock-picks-1"
+    }
+  ],
+  "requiredSourceIdentities": [
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "344f3919-efe0-5f54-b2b1-da8b81f0a50f",
+      "expectedName": "Buttermilk Stem"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "5bbaac9f-a588-5df7-aa4c-901082d364d3",
+      "expectedName": "Iron Man Traverse"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "84c0eb59-034e-52f4-8409-9711128fd164",
+      "expectedName": "Bowling Pin"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "81ab6447-4b97-5330-a112-4640983442da",
+      "expectedName": "Saigon"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "3a916f50-d0a2-590e-90db-9d3961778a8c",
+      "expectedName": "High Plains Drifter"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "36fee01c-564d-5d7f-a6c5-6bd89edbb84f",
+      "expectedName": "Soul Slinger"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "c2bc20b8-eaca-54d6-a1ea-503a0031f0b6",
+      "expectedName": "The Mandala"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "externalId": "ed8be39a-c510-55ba-b440-105c90a1c843",
+      "expectedName": "Evilution"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "1abda280-6f00-5729-bea8-13eb3f555cce",
+      "expectedName": "Cat in the Hat"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "3a274d8e-f6c9-5d6f-831f-c35915b6ca2a",
+      "expectedName": "Solar Slab"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "74f2c1ea-4a6a-5107-98ab-86de017d4f36",
+      "expectedName": "Frogland"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "28e8f602-f986-546c-917c-4d3d6ac0a2b4",
+      "expectedName": "Crimson Chrysalis"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "34740d29-7fe6-5a0d-a5a5-68281aecad5e",
+      "expectedName": "Epinephrine"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "40d773d9-0d6d-5b56-bc34-ad3537d7f2e2",
+      "expectedName": "Dream of Wild Turkeys"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "52c7deca-4592-5570-93ba-944cdff9af78",
+      "expectedName": "Prince of Darkness",
+      "reviewedClimbingType": "trad",
+      "reviewSourceUrl": "https://www.mountainproject.com/route/105732458/prince-of-darkness",
+      "reviewNotes": "OpenBeta marks both sport and trad. The reviewed exact route page classifies the route as trad, so the catalog retains trad and records the source conflict."
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "externalId": "18b3ec70-b1d8-590a-bdad-3bf26f4c143e",
+      "expectedName": "Levitation 29"
+    }
+  ],
+  "selectionPolicies": {
+    "hueco-tanks-usa": {
+      "allowedClimbingTypes": ["boulder"],
+      "requiredGradeSystemByType": {
+        "boulder": "v-scale"
+      },
+      "targetTypeCounts": {
+        "boulder": 100
+      }
+    },
+    "the-gunks-usa": {
+      "allowedClimbingTypes": ["trad", "boulder", "top-rope"],
+      "requiredGradeSystemByType": {
+        "trad": "yds",
+        "boulder": "v-scale",
+        "top-rope": "yds"
+      },
+      "targetTypeCounts": {
+        "trad": 70,
+        "boulder": 20,
+        "top-rope": 10
+      }
+    },
+    "bishop-area-usa": {
+      "allowedClimbingTypes": ["boulder"],
+      "requiredGradeSystemByType": {
+        "boulder": "v-scale"
+      },
+      "targetTypeCounts": {
+        "boulder": 8
+      }
+    },
+    "red-rock-canyon-usa": {
+      "allowedClimbingTypes": ["trad"],
+      "requiredGradeSystemByType": {
+        "trad": "yds"
+      },
+      "targetTypeCounts": {
+        "trad": 8
+      }
+    }
+  },
+  "destinationTargets": {
+    "hueco-tanks-usa": {
+      "minimum": 90,
+      "target": 100,
+      "maximum": 110
+    },
+    "the-gunks-usa": {
+      "minimum": 90,
+      "target": 100,
+      "maximum": 110
+    },
+    "bishop-area-usa": {
+      "minimum": 108,
+      "target": 108,
+      "maximum": 112
+    },
+    "red-rock-canyon-usa": {
+      "minimum": 108,
+      "target": 108,
+      "maximum": 112
+    }
+  }
+}

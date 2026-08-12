@@ -1,4 +1,7 @@
-import { parseRouteGrade } from "@/lib/routes/parse-route-grade";
+import {
+  normalizeEquivalentGrades,
+  parseRouteGrade
+} from "@/lib/routes/parse-route-grade";
 import { normalizeRouteSource } from "@/lib/routes/adapters/normalize-route-source";
 import type {
   OpenBetaRawClimbType,
@@ -61,16 +64,26 @@ function routeGrade(
       .map((system) => available.find(([, candidate]) => candidate === system))
       .find(Boolean) ?? available[0];
   const [primaryField, primarySystem] = primary;
-  const equivalentGrades = Object.fromEntries(
-    available.map(([field, system]) => [system, grades?.[field]])
-  );
   const original = grades?.[primaryField]?.trim() ?? "";
   const parsed = parseRouteGrade(original, destinationId, climbingType);
+  const equivalentGrades = normalizeEquivalentGrades(
+    Object.fromEntries(
+      available.map(([field, system]) => [system, grades?.[field]])
+    ),
+    destinationId,
+    climbingType
+  );
+  const detectedSystems = Array.from(
+    new Set([
+      ...parsed.detectedSystems,
+      ...(Object.keys(equivalentGrades) as GradeSystem[])
+    ])
+  );
 
   return {
     ...parsed,
     system: primarySystem,
-    detectedSystems: available.map(([, system]) => system),
+    detectedSystems,
     primarySystem,
     primaryDisplay: parsed.primaryDisplay ?? original,
     normalizedDifficulty: parsed.sortValue,
@@ -96,6 +109,7 @@ export function adaptOpenBetaRoute(
     "https://github.com/OpenBeta/openbeta-graphql";
   const lengthMeters = raw.length > 0 ? raw.length : undefined;
   const normalizedHierarchy = raw.normalizedHierarchy;
+  const reviewedClimbingType = raw.reviewedClimbingType;
   const sectorName = normalizedHierarchy
     ? normalizedHierarchy.sectorName
     : raw.areaName;
@@ -104,7 +118,7 @@ export function adaptOpenBetaRoute(
   );
   const verifiedFields = [
     "name",
-    "climbingType",
+    ...(!reviewedClimbingType ? ["climbingType"] : []),
     ...(grade.original ? ["grade"] : []),
     ...(lengthMeters ? ["lengthMeters"] : []),
     ...(sectorName ? ["sectorName"] : [])
@@ -156,27 +170,58 @@ export function adaptOpenBetaRoute(
         verifiedFields,
         notes: "Imported from an OpenBeta metadata snapshot; descriptions and user content are excluded. The external ID preserves record-level provenance.",
         purpose: "route-reference"
-      })
+      }),
+      ...(reviewedClimbingType
+        ? [
+            normalizeRouteSource({
+              provider: "mountain-project",
+              label: "Reviewed route-type reference",
+              sourceUrl: reviewedClimbingType.sourceUrl,
+              checkedAt: reviewedClimbingType.checkedAt,
+              sourceType: "route-database-metadata",
+              trustLevel: "medium",
+              verifiedFields: ["climbingType"],
+              notes: reviewedClimbingType.notes,
+              purpose: "route-reference"
+            })
+          ]
+        : [])
     ],
     verification: {
       status: "source-backed",
       checkedAt,
       notes: "OpenBeta CC0 metadata; not independently field-verified by ClimbAtlas."
     },
-    externalResources: hasExactRouteLink
-      ? [
+    externalResources: [
+      ...(hasExactRouteLink
+        ? [
           {
             title: "OpenBeta route page",
             url: sourceUrl,
-            type: "route-database",
-            linkStatus: "route-specific",
+            type: "route-database" as const,
+            linkStatus: "route-specific" as const,
             description: {
               en: "Open the exact OpenBeta route page for current source information.",
               zh: "前往对应的 OpenBeta 线路页面查看当前来源信息。"
             }
           }
         ]
-      : [],
+        : []),
+      ...(reviewedClimbingType
+        ? [
+            {
+              title: "Reviewed route page",
+              url: reviewedClimbingType.sourceUrl,
+              type: "route-database" as const,
+              linkStatus: "route-specific" as const,
+              description: {
+                en: "Route-specific reference used to resolve the recorded climbing type.",
+                zh: "用于核对该线路攀岩类型的精确线路资料页。"
+              }
+            }
+          ]
+        : [])
+    ],
     media: [],
     normalization: {
       adapter: "openbeta",

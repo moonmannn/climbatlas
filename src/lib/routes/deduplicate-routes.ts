@@ -86,6 +86,20 @@ function compareRoutes(
   const exactExternalId = intersects(externalIds(first), externalIds(second));
   const exactRouteUrl = intersects(routeSpecificUrls(first), routeSpecificUrls(second));
 
+  // Reused route names are common across disciplines. Without a shared source
+  // identity, a boulder and a roped route are separate records rather than a
+  // duplicate candidate even when their normalized names match exactly.
+  const crossesBoulderAndRopedDisciplines =
+    (first.climbingType === "boulder") !==
+    (second.climbingType === "boulder");
+  if (
+    !exactExternalId &&
+    !exactRouteUrl &&
+    crossesBoulderAndRopedDisciplines
+  ) {
+    return undefined;
+  }
+
   if (exactExternalId) {
     score += 100;
     reasons.push("same external source ID");

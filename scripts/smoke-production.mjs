@@ -48,8 +48,7 @@ const forbiddenPublicText = [
   "needs upgrade",
   "imported index",
   "editorial draft",
-  "metadata-only",
-  "source-backed"
+  "metadata-only"
 ];
 let serverOutput = "";
 

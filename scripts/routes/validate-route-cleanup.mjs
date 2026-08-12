@@ -57,7 +57,19 @@ const importedCounts = routeCoverage3Snapshots
     return counts;
   }, {});
 const EXPECTED_PUBLIC_TOTAL = REVIEWED_CLEANUP_TOTAL + importedRouteCoverage3Count;
-const EXPECTED_PICKS = 40;
+const routeExperienceRelease = JSON.parse(
+  fs.readFileSync(
+    path.join(
+      process.cwd(),
+      "src",
+      "data",
+      "route-experiences",
+      "release-config.json"
+    ),
+    "utf8"
+  )
+);
+const EXPECTED_PICKS = routeExperienceRelease.expectedPublishedPicks;
 
 const {
   auditModule,

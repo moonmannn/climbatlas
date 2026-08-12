@@ -1,8 +1,8 @@
 # Legacy Route Index Cleanup
 
-Generated: 2026-08-06T06:20:21.414Z
+Generated: 2026-08-11T16:22:51.595Z
 
-The legacy cleanup changed the reviewed public baseline from **1107** to **1074** routes. Route Coverage 3.0 then added **394** reviewed Indexed Routes, producing **1468** current public routes. All 33 cleanup removals are listed in the JSON migration ledger. Published Picks remain at **40**.
+The legacy cleanup changed the reviewed public baseline from **1107** to **1074** routes. Route Coverage 3.0 then added **949** reviewed Indexed Routes, producing **2023** current public routes. All 33 cleanup removals are listed in the JSON migration ledger. Published Picks remain at **64**.
 
 ## Validation
 
@@ -17,10 +17,10 @@ The legacy cleanup changed the reviewed public baseline from **1107** to **1074*
 
 | Destination | Before | Removed | RC3 imported | After | Delta |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Yosemite | 128 | 1 | 0 | 127 | -1 |
-| Red River Gorge | 140 | 0 | 0 | 140 | 0 |
+| Yosemite | 128 | 1 | 48 | 175 | 47 |
+| Red River Gorge | 140 | 0 | 40 | 180 | 40 |
 | Joshua Tree | 42 | 0 | 108 | 150 | 108 |
-| Smith Rock | 109 | 0 | 0 | 109 | 0 |
+| Smith Rock | 109 | 0 | 51 | 160 | 51 |
 | Squamish | 64 | 0 | 86 | 150 | 86 |
 | El Potrero Chico | 40 | 0 | 0 | 40 | 0 |
 | Fontainebleau | 56 | 0 | 0 | 56 | 0 |
@@ -37,8 +37,12 @@ The legacy cleanup changed the reviewed public baseline from **1107** to **1074*
 | Railay / Tonsai | 40 | 2 | 0 | 38 | -2 |
 | Grampians | 40 | 21 | 0 | 19 | -21 |
 | Rocklands | 40 | 0 | 0 | 40 | 0 |
-| Bishop Area | 0 | 0 | 100 | 100 | 100 |
-| Red Rock Canyon | 0 | 0 | 100 | 100 | 100 |
+| Hueco Tanks | 0 | 0 | 100 | 100 | 100 |
+| The Gunks | 0 | 0 | 100 | 100 | 100 |
+| Bishop Area | 0 | 0 | 108 | 108 | 108 |
+| Red Rock Canyon | 0 | 0 | 108 | 108 | 108 |
+| New River Gorge | 0 | 0 | 100 | 100 | 100 |
+| Indian Creek | 0 | 0 | 100 | 100 | 100 |
 
 ## Removal Ledger
 

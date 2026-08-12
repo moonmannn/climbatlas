@@ -186,12 +186,23 @@ export function openBetaRouteUrl(externalId, name) {
   return `https://openbeta.io/climb/${externalId}/${slugify(name) || "route"}`;
 }
 
-export function toRawOpenBetaRoute(row, scope, manifest, link) {
+export function toRawOpenBetaRoute(row, scope, manifest, link, options = {}) {
   const hierarchy = sourceHierarchy(row);
   const externalId = cleanText(row.climb_id)?.toLowerCase();
   const name = cleanText(row.climb_name);
+  const reviewedClimbingType = options.requiredIdentity?.reviewedClimbingType;
 
   if (!externalId || !name) return undefined;
+
+  const reviewedTypeFlags = reviewedClimbingType
+    ? {
+        sport: reviewedClimbingType === "sport",
+        trad: reviewedClimbingType === "trad",
+        bouldering: reviewedClimbingType === "boulder",
+        alpine: reviewedClimbingType === "alpine",
+        tr: reviewedClimbingType === "top-rope"
+      }
+    : undefined;
 
   return {
     uuid: externalId,
@@ -202,13 +213,15 @@ export function toRawOpenBetaRoute(row, scope, manifest, link) {
       vscale: cleanText(row.grade_vscale),
       french: cleanText(row.grade_french)
     },
-    type: {
-      sport: row.is_sport === true,
-      trad: row.is_trad === true,
-      bouldering: row.is_boulder === true,
-      alpine: row.is_alpine === true,
-      tr: row.is_top_rope === true
-    },
+    type:
+      reviewedTypeFlags ??
+      {
+        sport: row.is_sport === true,
+        trad: row.is_trad === true,
+        bouldering: row.is_boulder === true,
+        alpine: row.is_alpine === true,
+        tr: row.is_top_rope === true
+      },
     pathTokens: [
       hierarchy.country,
       hierarchy.stateProvince,
@@ -226,7 +239,18 @@ export function toRawOpenBetaRoute(row, scope, manifest, link) {
     sourceUrl: link?.sourceUrl ?? openBetaRouteUrl(externalId, name),
     canonicalUrlCheckedAt: link?.canonicalUrlCheckedAt,
     finalResolvedUrl: link?.finalResolvedUrl,
-    linkStatus: link?.linkStatus ?? "unverified"
+    linkStatus: link?.linkStatus ?? "unverified",
+    reviewedClimbingType:
+      reviewedClimbingType && options.requiredIdentity?.reviewSourceUrl
+        ? {
+            value: reviewedClimbingType,
+            sourceUrl: options.requiredIdentity.reviewSourceUrl,
+            checkedAt: manifest.sourceCheckedAt,
+            notes:
+              options.requiredIdentity.reviewNotes ??
+              "Climbing type was resolved from a separately reviewed route-specific source."
+          }
+        : undefined
   };
 }
 

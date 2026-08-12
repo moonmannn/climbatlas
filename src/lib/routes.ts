@@ -3,6 +3,7 @@ import { applyRouteCatalogCleanup } from "@/data/route-catalog-cleanup";
 import openBetaPocSnapshot from "@/data/routes/imports/openbeta-poc.json";
 import { routeCoverage3BatchSnapshot } from "@/data/routes/route-coverage-3-batch-1";
 import { routeCoverage3Batch2Snapshot } from "@/data/routes/route-coverage-3-batch-2";
+import { routeCoverage3Batch3Snapshot } from "@/data/routes/route-coverage-3-batch-3";
 import { migrateLegacyRoute } from "@/lib/routes/migrate-legacy-route";
 import { adaptCanonicalRouteRecord } from "@/lib/routes/adapters/canonical-route-adapter";
 import {
@@ -46,7 +47,8 @@ const excludedRouteCoverageBatch =
   process.env.CLIMBATLAS_EXCLUDE_ROUTE_COVERAGE_BATCH;
 const activeRouteCoverageSnapshots = [
   routeCoverage3BatchSnapshot,
-  routeCoverage3Batch2Snapshot
+  routeCoverage3Batch2Snapshot,
+  routeCoverage3Batch3Snapshot
 ].filter((snapshot) => snapshot.batchId !== excludedRouteCoverageBatch);
 const importedOpenBetaRoutes = (
   openBetaPocSnapshot as unknown as RouteImportSnapshot

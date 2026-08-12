@@ -1,4 +1,6 @@
 import type {
+  GradeSystem,
+  RouteClimbingType,
   RouteNormalizedHierarchy,
   RouteRecord,
   RouteSourceHierarchy
@@ -29,6 +31,23 @@ export type DestinationImportScope = {
   scopeVersion: string;
 };
 
+export type RequiredRouteSourceIdentity = {
+  destinationSlug: string;
+  externalId: string;
+  expectedName: string;
+  reviewedClimbingType?: RouteClimbingType;
+  reviewSourceUrl?: string;
+  reviewNotes?: string;
+};
+
+export type DestinationSelectionPolicy = {
+  allowedClimbingTypes?: RouteClimbingType[];
+  targetTypeCounts?: Partial<Record<RouteClimbingType, number>>;
+  requiredGradeSystemByType?: Partial<
+    Record<RouteClimbingType, GradeSystem>
+  >;
+};
+
 export type RouteImportBatchManifest = {
   batchId: string;
   importerVersion: string;
@@ -40,7 +59,11 @@ export type RouteImportBatchManifest = {
   sourceCommitSha?: string;
   sourceRowCount: number;
   sourceCheckedAt: string;
+  baselinePublishedPicks?: number;
+  finalPublishedPicks?: number;
   destinationScopes: DestinationImportScope[];
+  requiredSourceIdentities?: RequiredRouteSourceIdentity[];
+  selectionPolicies?: Record<string, DestinationSelectionPolicy>;
   destinationTargets: Record<
     string,
     { minimum: number; target: number; maximum: number }
@@ -117,6 +140,12 @@ export type OpenBetaRawRoute = {
   canonicalUrlCheckedAt?: string;
   finalResolvedUrl?: string;
   linkStatus?: OpenBetaLinkStatus;
+  reviewedClimbingType?: {
+    value: RouteClimbingType;
+    sourceUrl: string;
+    checkedAt: string;
+    notes: string;
+  };
 };
 
 export type RouteSourceSnapshot = {
