@@ -1,13 +1,16 @@
 # Route Coverage 3.2 handoff — 2026-08-11
 
-## Resume point
+## Resume point (historical)
 
 - Branch: `codex/rc3-4-preview`
 - Stable Batch 2 commits already on the branch:
   - `f33d9cd feat: publish route coverage batch two`
   - `22e578e fix: hide internal source status from public copy`
-- Batch 3 remains uncommitted. Do not discard the working tree.
-- No Batch 3 GitHub push or Vercel deployment has been performed yet.
+- Batch 3 was subsequently committed as `c69da52` and pushed to
+  `codex/rc3-4-preview`.
+- The protected Vercel Preview and fresh Production My Atlas reference audit
+  were completed after this handoff. See `route-coverage-3-2-batch-report.md`
+  for current release evidence.
 
 ## Current catalog
 
@@ -71,7 +74,7 @@ Latest build generated `2,206` static pages successfully. The HTTP sample valida
 - The Mandala and The Gunks had no horizontal overflow at `390 x 844`.
 - The temporary browser console connection errors were caused by the local test server reaching its configured timeout, not by application code.
 
-## Remaining work for tomorrow
+## Original remaining work (completed after handoff)
 
 1. Deploy a Vercel Preview for Batch 3 and repeat the protected Preview smoke checks.
 2. Run a fresh production Supabase My Atlas reference audit with `--require-remote`; the current local gate uses the prior deidentified production snapshot.

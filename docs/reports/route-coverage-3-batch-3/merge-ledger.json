@@ -1,0 +1,32 @@
+{
+  "batchId": "route-coverage-3-batch-3",
+  "merges": [
+    {
+      "destinationSlug": "bishop-area-usa",
+      "sourceExternalId": "07b10922-2ddf-580f-9e93-7eda800f6bc8",
+      "sourceRouteId": "openbeta-07b10922-2ddf-580f-9e93-7eda800f6bc8",
+      "canonicalRouteId": "openbeta-07b10922-2ddf-580f-9e93-7eda800f6bc8",
+      "reason": "same OpenBeta external ID requires a source-record refresh",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "sourceExternalId": "d0d76ef7-c496-56b2-9df8-d77cb2d97b35",
+      "sourceRouteId": "openbeta-d0d76ef7-c496-56b2-9df8-d77cb2d97b35",
+      "canonicalRouteId": "openbeta-d0d76ef7-c496-56b2-9df8-d77cb2d97b35",
+      "reason": "same OpenBeta external ID requires a source-record refresh",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "sourceExternalId": "2c7bdddf-20f4-5680-aa0e-07d3b87462c8",
+      "sourceRouteId": "openbeta-2c7bdddf-20f4-5680-aa0e-07d3b87462c8",
+      "canonicalRouteId": "openbeta-2c7bdddf-20f4-5680-aa0e-07d3b87462c8",
+      "reason": "same OpenBeta external ID requires a source-record refresh",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0
+    }
+  ]
+}

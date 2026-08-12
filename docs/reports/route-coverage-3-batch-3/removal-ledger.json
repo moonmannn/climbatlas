@@ -1,0 +1,5 @@
+{
+  "batchId": "route-coverage-3-batch-3",
+  "removals": [],
+  "note": "RC3-1 and RC3-2 are dry-run phases and do not remove public routes."
+}

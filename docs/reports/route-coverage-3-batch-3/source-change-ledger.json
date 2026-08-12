@@ -1,0 +1,32 @@
+{
+  "batchId": "route-coverage-3-batch-3",
+  "changes": [
+    {
+      "destinationSlug": "bishop-area-usa",
+      "canonicalRouteId": "openbeta-07b10922-2ddf-580f-9e93-7eda800f6bc8",
+      "provider": "openbeta",
+      "externalId": "07b10922-2ddf-580f-9e93-7eda800f6bc8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "canonicalRouteId": "openbeta-d0d76ef7-c496-56b2-9df8-d77cb2d97b35",
+      "provider": "openbeta",
+      "externalId": "d0d76ef7-c496-56b2-9df8-d77cb2d97b35",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "canonicalRouteId": "openbeta-2c7bdddf-20f4-5680-aa0e-07d3b87462c8",
+      "provider": "openbeta",
+      "externalId": "2c7bdddf-20f4-5680-aa0e-07d3b87462c8",
+      "action": "append-source-identity-on-public-import",
+      "publicCountDelta": 0,
+      "status": "proposed"
+    }
+  ]
+}

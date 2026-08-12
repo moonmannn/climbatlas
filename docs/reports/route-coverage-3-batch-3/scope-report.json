@@ -1,0 +1,466 @@
+{
+  "batchId": "route-coverage-3-batch-3",
+  "reports": [
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "scopeVersion": "rc32-b3-hueco-tanks-1",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Texas",
+          "region": "Hueco Tanks"
+        }
+      ],
+      "excludedPathTuples": [],
+      "totalRowsInScope": 646,
+      "excludedSiblingRows": {
+        "count": 0,
+        "byRegion": {},
+        "byArea": {}
+      },
+      "acceptedDistribution": {
+        "byArea": {
+          "East Mountain": 139,
+          "East Spur": 81,
+          "North Mountain": 366,
+          "West Mountain": 60
+        },
+        "byCrag": {
+          "100 Proof Roof": 7,
+          "Adventureland": 3,
+          "Aircraft Carrier, The": 7,
+          "Asylum, The": 11,
+          "Back of the Maze": 10,
+          "Beehives, The": 9,
+          "Beggar’s Boulder": 1,
+          "Belly of the Beast": 2,
+          "Between": 9,
+          "Between the Sheets": 5,
+          "Big Time, The": 11,
+          "Bloodline": 2,
+          "Bobby's Bakery": 2,
+          "Cakewalk Wall": 4,
+          "Central Wall": 17,
+          "Chop Socky Rocks": 2,
+          "Crash Dummy": 1,
+          "Cueva de Leon": 1,
+          "Dab": 3,
+          "Dam Boulders": 3,
+          "Dark Heart, The": 17,
+          "Deliverance area": 3,
+          "Devil's Butthole, The": 1,
+          "Donkey Show Wall, The": 4,
+          "Double Vision": 4,
+          "Dragon's Den": 22,
+          "Drunk Tank": 2,
+          "Eagle, The": 2,
+          "End Loop Area": 4,
+          "First Love": 4,
+          "Five Bimbos, The": 6,
+          "Fluff Wall": 4,
+          "Forests of Azure": 1,
+          "Fox Tower": 2,
+          "Fox's Den": 1,
+          "Frogger": 3,
+          "Ghetto Simulator": 3,
+          "Girls of Juarez": 9,
+          "Grenade, The": 7,
+          "Gunks, The": 23,
+          "Guns of Navarone": 3,
+          "Gymnasium, The": 8,
+          "Hairy Boulder": 4,
+          "Home of the Stars": 1,
+          "Icarus Boulder": 10,
+          "Indecent Exposure Buttress": 5,
+          "Kitchen, The": 3,
+          "Laguna Corridor": 4,
+          "Loaded with Power": 2,
+          "Long Dong Roof": 1,
+          "Look Sharp Rock": 3,
+          "Lost Puppy Boulder": 1,
+          "Lower Forest": 4,
+          "Lower Lost Boulders": 9,
+          "Lunch Rocks": 15,
+          "Maiden Gully": 8,
+          "Mammary Lane": 2,
+          "Mantel Illness": 2,
+          "Martini Roof area": 10,
+          "Maze, The": 26,
+          "Meddle Shop": 2,
+          "Michael Kenyon": 4,
+          "Moonshine Roof": 6,
+          "Mopboys": 9,
+          "Morgue, The": 4,
+          "Mother of the Future": 1,
+          "Mushroom Boulder": 14,
+          "Nachoman": 2,
+          "Natural Buttress": 1,
+          "New Meadow, The": 22,
+          "North Dragon's Den": 9,
+          "North Of The Chains Overhang": 3,
+          "Norwegian Wall": 2,
+          "Office, The": 1,
+          "Perverted Sanctuary": 5,
+          "Planet Zeist": 1,
+          "Power of Silence area": 9,
+          "Raging Pecker Area": 1,
+          "Ranger Rock": 3,
+          "Round Room": 2,
+          "S-Curve": 6,
+          "Sausage Factory, The": 7,
+          "Scab Wall": 1,
+          "Scary Boulder": 1,
+          "Scary Movie Boulders": 2,
+          "Scepter, The": 3,
+          "Scream": 4,
+          "See-thru Hueco Boulder": 1,
+          "Shield, The": 3,
+          "Shroom and the Camel Toe": 4,
+          "Sign of the Choss": 5,
+          "Sign of the Cross": 11,
+          "Silverback": 2,
+          "Small Potatoes, The": 22,
+          "Southern Belle/ No Time To Die": 1,
+          "Split & Malice Boulders": 6,
+          "Stableboy Rock and Vicinity": 7,
+          "Star Power": 3,
+          "Stegasaur, The": 7,
+          "Summit Boulders": 3,
+          "Tabloid Pass": 5,
+          "Term Boulder": 6,
+          "Terminator Area": 11,
+          "Three Stack, The": 2,
+          "Trac II": 19,
+          "Trickster, The": 1,
+          "Veranda, The": 2,
+          "Wall of the rumbling rabbits": 1,
+          "Warm Up Boulder": 16,
+          "Warm Up Roof": 14,
+          "Warm Up Wall": 1,
+          "Water Dog Wall": 5,
+          "Wellsite, The": 9,
+          "Wish It Were Still Lost Boulder": 1
+        }
+      },
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false
+    },
+    {
+      "destinationSlug": "the-gunks-usa",
+      "scopeVersion": "rc32-b3-the-gunks-1",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "The Trapps"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Near Trapps, The"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Trapps Bouldering"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Near Trapps Bouldering"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Peterskill"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Peterskill Bouldering"
+        },
+        {
+          "country": "USA",
+          "stateProvince": "New York",
+          "region": "The Gunks",
+          "area": "Millbrook"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Sky Top"
+        },
+        {
+          "area": "Giants Workshop"
+        },
+        {
+          "area": "Lost City"
+        },
+        {
+          "crag": "c. Moe (closure) to Harvest Moon"
+        },
+        {
+          "crag": "b. Gelsa to Moe (closure)"
+        }
+      ],
+      "totalRowsInScope": 1017,
+      "excludedSiblingRows": {
+        "count": 110,
+        "byRegion": {
+          "The Gunks": 110
+        },
+        "byArea": {
+          "Giants Workshop": 3,
+          "Lost City, The": 1,
+          "Near Trapps, The": 82,
+          "Sky Top": 24
+        }
+      },
+      "acceptedDistribution": {
+        "byArea": {
+          "Millbrook": 22,
+          "Near Trapps Bouldering": 32,
+          "Near Trapps, The": 84,
+          "Peterskill": 191,
+          "Peterskill Bouldering": 29,
+          "The Trapps": 493,
+          "Trapps Bouldering": 166
+        },
+        "byCrag": {
+          "(missing)": 22,
+          "a. Beginning of cliff to Gelsa": 42,
+          "a. Khadejha Area": 7,
+          "a1. The Uberfall - left": 48,
+          "a2. The Uberfall - right": 39,
+          "Andrew Area": 13,
+          "Area 2 (Cream Cheese)": 2,
+          "b. Bunkbed Wall": 10,
+          "b. Jackie and friends": 39,
+          "Boxcar Area": 17,
+          "c. Frog's Head - the Arch": 36,
+          "c. LA Roof": 7,
+          "Cliff Area": 4,
+          "d. Breakfast Wall": 9,
+          "d. Harvest Moon to the End": 42,
+          "d. Strictly - The Ceiling": 27,
+          "Diving Board Boulder": 1,
+          "Doug's Roof": 20,
+          "e. Breaker & Very Blocky Walls": 13,
+          "e. The Mac Wall (Something Interesting)": 36,
+          "f. Off Limits & Reach Around Walls": 9,
+          "f. The Guides' Wall (Madame G's)": 35,
+          "g. Enterprise Wall": 9,
+          "g. V3 - Middle Earth": 47,
+          "Golden Wall Area": 2,
+          "Goldfish Boulder and Hector Boulder": 1,
+          "h. Genuflect Wall": 3,
+          "h. The Arrow Wall - CCK": 48,
+          "Herman Boulder": 5,
+          "Hot Springs Hotel": 2,
+          "i. High E": 30,
+          "i. Terror Dome": 5,
+          "j. Scrotum Pole/Drive in Area": 12,
+          "j. The Yellow Wall and The Seasons": 42,
+          "Jahboo Area": 1,
+          "k. Oops Wall": 11,
+          "k. The Slime Wall": 30,
+          "Kama Sutra Area": 4,
+          "Keyhole Cliff area": 14,
+          "Khadejha Area": 6,
+          "l. Cuckoo's Nest and the Crevice": 5,
+          "l. Sleepy Hollow": 36,
+          "m. Crevice right, and Psycho Wall": 9,
+          "n. Impossible Roof Area": 2,
+          "Nameless Area": 10,
+          "o. Big Slab & Compactor": 3,
+          "p. Little Havana": 9,
+          "Pebbles Boulders": 16,
+          "Playground: Area 1, The": 26,
+          "q. Chalkboard Wall": 12,
+          "Quarantine Area & Outbreak Boulder": 12,
+          "r. Lou's Wall": 5,
+          "s. The Golden Wall": 12,
+          "Sleepy Hollow": 7,
+          "SPF Boulder": 4,
+          "Stairmaster": 2,
+          "Steel Bridge Boulders": 19,
+          "Suzie A Boulders": 6,
+          "t. Mya to the East End": 14,
+          "Terrace Area": 7,
+          "Tiger Style Boulder": 3,
+          "Uberfall problems": 6,
+          "Wawarsing Parking Lot Boulders": 17,
+          "z.. Dickie Barre (upper PK cliff)": 25
+        }
+      },
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "scopeVersion": "rc32-b3-bishop-picks-1",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "California",
+          "region": "Sierra Eastside",
+          "area": "Bishop Area"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mammoth Lakes Area"
+        },
+        {
+          "area": "Lone Pine Area"
+        },
+        {
+          "area": "June Lake Area"
+        },
+        {
+          "area": "Lee Vining Canyon / Tioga Road"
+        }
+      ],
+      "totalRowsInScope": 2969,
+      "excludedSiblingRows": {
+        "count": 2764,
+        "byRegion": {
+          "Sierra Eastside": 2764
+        },
+        "byArea": {
+          "Beerhorn Crag": 1,
+          "Bridgeport": 1,
+          "Central Owens Valley": 7,
+          "Eastern Hills": 82,
+          "Fossil Falls": 30,
+          "Indian Wells Canyon": 12,
+          "June Lake Area": 438,
+          "Lee Vining Canyon / Tioga Road": 170,
+          "Lone Pine Area": 533,
+          "Mammoth Lakes Area": 1471,
+          "Wagon Wheel Boulders": 1,
+          "Walker River Canyon": 16,
+          "Westgard Pass East Side (Hwy 168)": 2
+        }
+      },
+      "acceptedDistribution": {
+        "byArea": {
+          "Bishop Area": 2969
+        },
+        "byCrag": {
+          "Bitterbrush Campground": 1,
+          "Buttermilk Country": 515,
+          "Cardinal Pinnacle": 20,
+          "Druid Stones": 154,
+          "Elderberry Canyon": 6,
+          "Hurd Lake": 24,
+          "Little Egypt": 45,
+          "Lower Rock Creek Wall": 2,
+          "Mountain Light Wall": 7,
+          "Owens River Gorge": 935,
+          "Pine Creek Canyon": 469,
+          "Sabrina Basin Bouldering": 4,
+          "South Lake": 30,
+          "Volcanic Tablelands (Happy/Sad Boulders)": 738,
+          "Wheeler Crest": 19
+        }
+      },
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "scopeVersion": "rc32-b3-red-rock-picks-1",
+      "acceptedPathTuples": [
+        {
+          "country": "USA",
+          "stateProvince": "Nevada",
+          "region": "Southern Nevada",
+          "area": "Red Rocks"
+        }
+      ],
+      "excludedPathTuples": [
+        {
+          "area": "Mount Charleston"
+        },
+        {
+          "area": "Mount Potosi"
+        },
+        {
+          "area": "Keyhole Canyon"
+        },
+        {
+          "area": "La Madre Range"
+        },
+        {
+          "area": "Valley of Fire"
+        }
+      ],
+      "totalRowsInScope": 3018,
+      "excludedSiblingRows": {
+        "count": 1335,
+        "byRegion": {
+          "Southern Nevada": 1335
+        },
+        "byArea": {
+          "Arrow Canyon": 40,
+          "Big Rocks Wilderness (aka Mecca)": 3,
+          "Blue Diamond Area": 39,
+          "Boy Scout Canyon": 26,
+          "Christmas Tree Pass": 40,
+          "Gold Strike Canyon": 6,
+          "Henderson Crags": 56,
+          "Keyhole Canyon": 171,
+          "La Madre Range": 137,
+          "Lake Mead Area": 18,
+          "Las Vegas Buildering": 1,
+          "Moapa Peak": 1,
+          "Moon (aka Knob Hill), The": 60,
+          "Mormon Mountains": 59,
+          "Mount Charleston": 357,
+          "Mount Potosi": 221,
+          "Needles and Haystacks": 3,
+          "Nelson Crags": 9,
+          "Prison Sex Bouldering Area (aka Jean Boulders)": 9,
+          "Rainbow Canyon": 56,
+          "Sun City": 23
+        }
+      },
+      "acceptedDistribution": {
+        "byArea": {
+          "Red Rocks": 3018
+        },
+        "byCrag": {
+          "Black Velvet Canyon": 148,
+          "Calico Basin": 391,
+          "Calico Peaks": 19,
+          "First Creek Canyon": 133,
+          "First Pullout (Calico I)": 327,
+          "Icebox Canyon": 76,
+          "Juniper Canyon": 139,
+          "Mt. Wilson": 42,
+          "Mud Spring Canyon": 14,
+          "Oak Creek Canyon": 108,
+          "Pine Creek Canyon": 218,
+          "Red Rock Bouldering": 637,
+          "Sandstone Canyon": 9,
+          "Sandstone Quarry": 249,
+          "Second Pullout (Calico II)": 240,
+          "Southern Outcrops": 39,
+          "The Promised Land": 16,
+          "White Rock Spring": 36,
+          "Willow Spring": 147,
+          "Windy Peak": 30
+        }
+      },
+      "coordinateUsage": "scope-validation-only",
+      "publishRouteCoordinates": false
+    }
+  ]
+}

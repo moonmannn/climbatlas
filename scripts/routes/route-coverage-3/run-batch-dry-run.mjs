@@ -88,6 +88,7 @@ const {
   destinationsModule,
   routesModule,
   publicRoutesModule,
+  routeExperienceModule,
   openBetaNormalizationModule,
   deduplicationModule,
   routeAliasesModule
@@ -107,9 +108,16 @@ const existingPublicRoutes = currentPublicRoutes
     (route) =>
       !publishedBatchRouteKeys.has(`${route.destinationId}:${route.id}`)
   );
-const currentPublishedPickCount = currentPublicRoutes.filter(
-  publicRoutesModule.hasPublishedRouteEditorial
-).length;
+const currentPublishedPickCount =
+  currentPublicRoutes.filter(publicRoutesModule.hasPublishedRouteEditorial)
+    .length +
+  // Excluding the published batch removes its imported routes before the
+  // catalog loads, so count reviewed overlays for those route keys directly.
+  routeExperienceModule.routeExperienceOverlays.filter((overlay) =>
+    publishedBatchRouteKeys.has(
+      `${overlay.destinationSlug}:${overlay.routeId}`
+    )
+  ).length;
 const baselinePublishedPicks = manifest.baselinePublishedPicks ?? 40;
 const finalPublishedPicks =
   manifest.finalPublishedPicks ?? baselinePublishedPicks;

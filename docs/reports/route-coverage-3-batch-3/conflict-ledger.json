@@ -1,0 +1,1951 @@
+{
+  "batchId": "route-coverage-3-batch-3",
+  "unresolved": 0,
+  "conflicts": [
+    {
+      "destinationSlug": "hueco-tanks-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "0377a29e-6e12-55e9-a485-be8bfd320f40",
+          "name": "Mopboys Crack Right",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Texas",
+            "region": "Hueco Tanks",
+            "area": "North Mountain",
+            "crag": "Mopboys"
+          }
+        },
+        {
+          "externalId": "8f98b3ef-8e62-54c9-be85-b864189e956d",
+          "name": "mopboys crack right",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "Texas",
+            "region": "Hueco Tanks",
+            "area": "North Mountain",
+            "crag": "Mopboys"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5aa06285-0749-57ca-84e4-167882d1a9ff",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "e8a082c3-edbf-5761-bd5a-b4e6e07ba0a4",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "978cd9fe-05d6-56f3-bcd2-50ef86ee1e8b",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "b5e2d897-f3b2-5e4a-a790-243ab9e669f1",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "4d145708-cb9d-5555-a7ae-cbcb5bda5d84",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "8d64e084-d5f1-5df6-a886-2b4b54a4d306",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "bf11b6f6-c0fd-5ef8-adfd-f2ffa451abf3",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "45495463-9786-518c-8927-362ff03a8ca5",
+          "name": "Problem A",
+          "grade": "V1-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "3a3e8f76-a27c-5482-845c-36a1c3c01c06",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "111a9f21-ff3a-5697-866a-2b3ccf71c97c",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "7845ab4c-5138-5036-bf87-540c1de88c4d",
+          "name": "Problem A",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "cc00d770-26a0-54b7-b407-9f7cfc772781",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "3398c4f7-10e5-51fa-9764-4233140449c6",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "460080a2-ba9b-5dd0-938c-c0e01ee6a84b",
+          "name": "Problem A",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "b4e8ef94-5d1b-5e19-bebd-54d0f00c0789",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "accd4f1e-b285-5ad1-b266-2fb3c427602d",
+          "name": "Problem B",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "9b83f145-093b-5ada-b729-66427c4722ae",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "efab2f79-8532-5d71-a337-5879c69f32c1",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "66d94fca-e492-51b5-b727-8d61891479dd",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "055fd80b-2d6f-5d14-b7d0-384915a6d12e",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "bc10c03b-f9e1-5219-b361-8a8cf0e3d2b9",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "12a031fe-518e-5c13-bd6f-ca3488d38a19",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "f7ea5d47-cd17-58dd-bc04-5d41c958262f",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "0dcb0761-8762-5253-985c-ba9560420da8",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "d5d7e752-cbb2-5c16-9da9-222581d757fe",
+          "name": "Problem C",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "acf12df3-6d2f-5912-80f3-7622f7b05f8b",
+          "name": "Problem C",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "70464244-4767-517c-80a9-cb0adcf95a66",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "069f6ff3-0a4e-5ffc-9233-749e1cc6c5bb",
+          "name": "Problem A",
+          "grade": "V1-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8324964d-0369-537a-be92-75e58f1a9f30",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "72480c49-952c-50cf-ab2a-94be4d173211",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "5d8fe859-0a81-5ece-8b4a-23c2381be699",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "130ff9ae-3193-5702-82fb-916038274b5b",
+          "name": "Problem A",
+          "grade": "V2+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "eff20573-958b-56c8-9a8a-3c0ceb60a488",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "d25f8d6e-2fb6-51c2-8a50-c68311c9015c",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "56848c33-df6a-5abf-b461-968e1b638eb2",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "680459e7-08be-5743-b915-742cd0ded274",
+          "name": "Problem A",
+          "grade": "V3+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "865c2423-e5cd-5783-9bbd-7cd02b239d02",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8cf9dea3-efcf-59d6-aa19-0eff6d8e6ced",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2e1be4cb-c693-5c98-8fd1-831d4ad81cfd",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "e4d33c78-45f6-57b8-b145-fc028926e213",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "e8f37482-aa88-5252-95f7-adb7ca168f7c",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "088cd1c6-a99c-54ed-976f-d1846cbade02",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "aa696c2a-39da-50d6-93d9-dacaa35f77ef",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "482ef86a-eee1-5a1f-83d0-eb6456f492f3",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "a1455e0e-ea36-520d-b79a-19b8add102cc",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6bc3078c-352e-5e17-96f8-69a6c49ac775",
+          "name": "Problem A",
+          "grade": "V4+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "82da5e6c-c0d9-52a5-a508-e2f841bcc8ec",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2053db21-a2b8-5863-8784-e1efb53fc6d8",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8157e413-572c-5fcd-aa89-9976f88d077e",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "01dff814-d763-5c45-9b82-c92caa3c362c",
+          "name": "Problem A",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2ec56417-db8b-5cda-83b1-8b6dff8b0149",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "90786d23-7a29-5cf7-b60b-46fb00e165c6",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "9b6d525d-bd02-5638-afcb-745b468a48e4",
+          "name": "Problem A",
+          "grade": "V3+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "8765677f-bc0f-5fc1-abbf-671cd8ad9530",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "7fe225b2-9ed5-5fec-835c-2531d167872d",
+          "name": "Problem A",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "25513137-a82d-5736-b977-00a3b24c3210",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "1f875f51-aad1-54b2-bf14-8b62521fc965",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "882153eb-320c-5f10-8045-a7533f05b624",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6cf3b28e-7a61-54e5-97fe-ccd9c5dc6094",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "226de143-c79b-5232-a6b5-1fb9db5e42c8",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "7695638f-9e36-5af3-bdd1-978f238ca297",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "3592ba65-45f6-5f7e-83dc-946c51351897",
+          "name": "Problem B",
+          "grade": "V7",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "0eb880e6-8a03-545d-ad86-17b63a0d45be",
+          "name": "Problem B",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "303ebc32-3094-5f18-ae57-6a14d9352005",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "fd7d8c48-c98d-50fa-a50a-d97512b611d5",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "1d119955-3dad-5349-8a4b-90a845d0226b",
+          "name": "Problem B",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "c6b44c45-2a22-5924-9349-6d7659f17221",
+          "name": "Problem B",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "ba9cb9f8-e22b-5f45-9d4d-68b9b9df8fed",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "b223b19b-bfeb-5b83-8068-021a0c290f21",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "a83691bf-365c-5975-bda5-0096931de112",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "6d0b6574-0886-5168-8989-0a004cf58575",
+          "name": "Problem C",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "923a4f5d-1923-5602-87f9-207bcf12adff",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "1d0db154-7f22-544b-b83c-f5ffe03af2c5",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "2bcdfc15-bfc2-5dbb-8c3f-f0dfb5d3a43b",
+          "name": "Problem C",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "a4d15c65-29f5-5fff-8c05-2a179fe1d21e",
+          "name": "Problem C",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "190ba7b5-66d1-52c6-8532-bfb4c812afae",
+          "name": "Kipper Snapper",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "54d1a9c9-80bf-5216-a0a0-c84c8a6fdd0a",
+          "name": "Kipper Snapper",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "dc77f445-8615-584c-aa24-b46e26920357",
+          "name": "Perulmutters pleasure",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "65757884-eb98-57c3-aa53-39c249b98e04",
+          "name": "Perulmutters pleasure",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "b1a2a012-7462-5ac3-a410-3583ed4fcc43",
+          "name": "Maximum Relaxum",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        },
+        {
+          "externalId": "5bd14596-3fa6-57e7-9d86-fdac9ff2a9e2",
+          "name": "Maximum Relaxum",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "218ab76e-3f98-542c-beb5-22de8599427d",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "ea1b2f78-0164-5bbd-b956-c51a2f0d51cd",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "bbf1eefe-b1e2-56be-bc35-961148b67d97",
+          "name": "Problem A",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "1b669de9-302e-52d7-8bce-b6490c46006b",
+          "name": "Problem A",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "0d21fde9-23f0-5e22-99d1-e67eb07f82bf",
+          "name": "Problem A",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "f67cf583-6cfc-5c92-8b39-5204379d5c39",
+          "name": "Problem A",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "5c0f7f9b-a4ab-5fec-818f-2583d444ff2c",
+          "name": "Problem A",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "5f5cfa2a-6817-5c52-a3e7-5bfb3dc8701e",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "508cbc3f-4251-566f-ba03-7c4be03c4fd2",
+          "name": "Problem A",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5c1f6167-0bca-5c19-a436-7b085f06d2b6",
+          "name": "Problem C",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "b5521d8b-0a38-5a12-856b-1159c2931446",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "c25991f1-5e73-567b-8524-a250fd165ddd",
+          "name": "Problem C",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "25caecc4-7a56-5a99-8fad-2ff9a5a83048",
+          "name": "Problem C",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "f0bffeda-4f7e-58e4-bb0d-37c227b43561",
+          "name": "Problem C",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "7bc062b9-f628-585f-b123-9305102f3463",
+          "name": "Problem C",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "6b5fcfcd-fdde-5462-b70c-b44d0cb8f404",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "d48976c5-b5c3-52c4-90f5-3c7f70384704",
+          "name": "Problem B",
+          "grade": "V0-",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "bab69efa-0b4d-5211-a522-0d18fd0b983e",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "c6b4ba2c-9218-5f64-b53c-fd38ee261f68",
+          "name": "Problem B",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "2fa8303b-4f54-5772-bd80-3d6d157bb3fc",
+          "name": "Problem B",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "5c46d0d4-70e0-5cd3-8929-9fb05c6e367e",
+          "name": "Problem B",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "cb5f47be-badb-5e12-a03f-a10ebcfdc41b",
+          "name": "Problem B",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "db390616-8926-5592-ba46-3473a01054d2",
+          "name": "Unnamed V0",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "93612019-022f-59ef-8539-40729660fa4d",
+          "name": "Unnamed V0",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "1898cb9e-7a35-53e8-b4ca-011f83c8b470",
+          "name": "Problem E",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "fd375b33-18d4-5840-b400-8261be1cc840",
+          "name": "Problem E",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "bcc225dd-004c-5b92-9ddd-3f35f6da24e6",
+          "name": "Problem E",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "cf21bd81-e424-503e-8e34-e8595caad549",
+          "name": "Problem D",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "293115c1-7965-56ee-bc3d-84b6bb291851",
+          "name": "Problem D",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "d5291724-ecd0-5ab1-9af4-b9f64e15d9e8",
+          "name": "problem D",
+          "grade": "V6",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "5a0a32b6-f6e8-5e78-97d9-10de927e80b0",
+          "name": "Unnamed Arete",
+          "grade": "V0+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "39367db4-60ff-5d41-bee2-0836fdb5d771",
+          "name": "Unnamed Arete",
+          "grade": "V0",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "2b6df48c-127f-5e07-9584-88d6218e1ab9",
+          "name": "Rail Problem",
+          "grade": "V5",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "158aa7d6-7b15-5e8c-bc20-de4048475f9a",
+          "name": "Rail Problem",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "79374c43-354a-515e-b7ca-f9f3fb141766",
+          "name": "Problem F",
+          "grade": "V1",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "41295542-b06a-57a7-80ff-32519fe2cd54",
+          "name": "Problem F",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "9bdd82f0-88ae-5418-aaff-6fa786b84cf8",
+          "name": "Unnamed V4",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "7c1308d5-9b9f-5197-b104-dedada457b9a",
+          "name": "Unnamed V4",
+          "grade": "V4",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "b7b7a9d7-9d07-53d7-b118-03b1f030af43",
+          "name": "Unnamed V3",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "ebdfa38a-be9c-5f60-a756-6291aa8837aa",
+          "name": "Unnamed V3",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "e62b7816-9bb1-51ab-8538-5fc0670fca0a",
+          "name": "Unnamed V2",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "284f9492-8ff4-52fa-9f6c-09a92c472657",
+          "name": "Unnamed V2",
+          "grade": "V1+",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "22aa6d66-711e-53db-b72b-dd4015b072fe",
+          "name": "Unnamed V2",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "01ff1465-3b2f-5f9f-8573-00702c11ab8e",
+          "name": "There Is No Party (Left Variation)",
+          "grade": "V2",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        },
+        {
+          "externalId": "2e19eb7e-7c8d-5700-abfa-b7c13717607b",
+          "name": "There is no Party Left (variation)",
+          "grade": "V3",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Druid Stones"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "same-source-identity-candidate",
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "candidates": [
+        {
+          "externalId": "ab397a52-d9ef-5bd4-9a16-cc3dba9d29c5",
+          "name": "Unnamed VB",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        },
+        {
+          "externalId": "4299d1f0-cf14-59d2-9b7f-c4ed82ff0bac",
+          "name": "Unnamed VB",
+          "grade": "V-easy",
+          "climbingType": "boulder",
+          "sourceHierarchy": {
+            "country": "USA",
+            "stateProvince": "California",
+            "region": "Sierra Eastside",
+            "area": "Bishop Area",
+            "crag": "Buttermilk Country"
+          }
+        }
+      ]
+    },
+    {
+      "destinationSlug": "bishop-area-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "b1348ca5-645f-5f7d-a823-08cab2579dae",
+      "sourceName": "Rude Awakening",
+      "sourceGrade": "V2",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "California",
+        "region": "Sierra Eastside",
+        "area": "Bishop Area",
+        "crag": "Volcanic Tablelands (Happy/Sad Boulders)"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-7c369915-51db-5a84-9623-ee0b81178cc5",
+          "name": "Rude Awakening",
+          "grade": "5.10b",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "source-climbing-type-conflict",
+      "sourceExternalId": "52c7deca-4592-5570-93ba-944cdff9af78",
+      "sourceName": "Prince of Darkness",
+      "sourceTypes": [
+        "sport",
+        "trad"
+      ],
+      "resolution": "reviewed as trad",
+      "reviewSourceUrl": "https://www.mountainproject.com/route/105732458/prince-of-darkness",
+      "unresolved": false
+    },
+    {
+      "destinationSlug": "red-rock-canyon-usa",
+      "type": "existing-route-identity-conflict",
+      "sourceExternalId": "29bcffa7-b658-53e9-8005-10776e9d9ecb",
+      "sourceName": "Jet Stream",
+      "sourceGrade": "5.10a",
+      "sourceHierarchy": {
+        "country": "USA",
+        "stateProvince": "Nevada",
+        "region": "Southern Nevada",
+        "area": "Red Rocks",
+        "crag": "First Creek Canyon"
+      },
+      "existingCandidates": [
+        {
+          "id": "openbeta-8779acdc-f6e0-5844-b90f-82611d4e6d94",
+          "name": "Jet Stream",
+          "grade": "5.13a",
+          "climbingType": "trad"
+        }
+      ],
+      "resolution": "quarantined-pending-review",
+      "unresolved": false,
+      "reason": "same normalized name conflicts with an existing route fact"
+    }
+  ]
+}
