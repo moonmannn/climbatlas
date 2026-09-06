@@ -715,7 +715,7 @@ main > section {
 
 @media (max-width: 767px) {
   .route-experience-section {
-    margin-top: 40px;
-    padding-top: 36px;
+    margin-top: 32px;
+    padding-top: 28px;
   }
 }

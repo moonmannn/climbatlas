@@ -73,12 +73,12 @@ export function RouteDnaMatchPanel({
     return (
       <section className="mt-6 border-y border-brandforest/15 py-7">
         <p className="editorial-kicker text-terracotta">
-          {isZh ? "路线 DNA 偏好匹配" : "Route DNA preference match"}
+          {isZh ? "线路 DNA 偏好匹配" : "Route DNA preference match"}
         </p>
         <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="display-serif text-3xl font-medium text-brandforest">
-              {isZh ? "这条路线适合你的偏好吗？" : "Does this route fit your preferences?"}
+              {isZh ? "这条线路适合你的偏好吗？" : "Does this route fit your preferences?"}
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-charcoal/60">
               {isZh
@@ -174,7 +174,7 @@ export function RouteDnaMatchPanel({
         </p>
         <p className="max-w-md sm:text-right">
           {isZh
-            ? "这是路线偏好匹配，不是安全、能力、天气或当前条件建议。"
+            ? "这是线路偏好匹配，不是安全、能力、天气或当前条件建议。"
             : "This is a route-preference match, not safety, ability, weather, or current-conditions advice."}
         </p>
       </div>

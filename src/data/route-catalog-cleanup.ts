@@ -148,8 +148,8 @@ function hidden(
 }
 
 const montBlancOverview: SourceSpec = {
-  label: "A concern for climbers: Mont Blanc routes",
-  url: "https://guides-montagne.org/sites/default/files/mtblanc-en.pdf",
+  label: "Fondation Petzl: Reaching the top of Mont Blanc",
+  url: "https://www.petzl.com/sfc/servlet.shepherd/version/download/068w0000002DIatAAG",
   verifies: ["name", "grade"],
   linkStatus: "guidebook-specific",
   type: "official",

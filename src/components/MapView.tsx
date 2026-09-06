@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { divIcon } from "leaflet";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   MapContainer,
   Marker,
@@ -107,6 +107,34 @@ function MapZoomTracker({ onZoomChange }: { onZoomChange: (zoom: number) => void
   return null;
 }
 
+function MapAccessibilityLabels({ locale }: { locale: "en" | "zh" }) {
+  const map = useMap();
+
+  useEffect(() => {
+    const updateLabels = () => {
+      const container = map.getContainer();
+      const labels = locale === "zh"
+        ? { close: "关闭弹窗", zoomIn: "放大", zoomOut: "缩小" }
+        : { close: "Close popup", zoomIn: "Zoom in", zoomOut: "Zoom out" };
+      const controls = [
+        [".leaflet-control-zoom-in", labels.zoomIn],
+        [".leaflet-control-zoom-out", labels.zoomOut],
+        [".leaflet-popup-close-button", labels.close]
+      ] as const;
+      controls.forEach(([selector, label]) => {
+        container.querySelectorAll<HTMLElement>(selector).forEach((element) => {
+          element.setAttribute("aria-label", label);
+          element.setAttribute("title", label);
+        });
+      });
+    };
+    updateLabels();
+    map.on("popupopen", updateLabels);
+    return () => { map.off("popupopen", updateLabels); };
+  }, [locale, map]);
+  return null;
+}
+
 function RegionMarker({
   count,
   locale,
@@ -181,6 +209,7 @@ export function MapView({
         zoom={2}
       >
         <MapZoomTracker onZoomChange={setZoom} />
+        <MapAccessibilityLabels locale={locale} />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

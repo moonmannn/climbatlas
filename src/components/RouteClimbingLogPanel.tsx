@@ -44,7 +44,7 @@ export function RouteClimbingLogPanel({
             </ul>
           ) : (
             <p className="mt-3 text-sm leading-6 text-charcoal/60">
-              {isZh ? "还没有这条路线的日志。" : "No logs for this route yet."}
+              {isZh ? "还没有这条线路的日志。" : "No logs for this route yet."}
             </p>
           )}
           <Link className="text-link mt-4 inline-flex" href="/my-atlas">

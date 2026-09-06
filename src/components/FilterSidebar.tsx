@@ -89,7 +89,7 @@ export function FilterSidebar({
           </h2>
           <p className="mt-3 text-sm font-bold leading-6 text-bark/68">
             {locale === "zh"
-              ? "先缩小目的地范围，也可以直接搜索路线名称。"
+              ? "先缩小目的地范围，也可以直接搜索线路名称。"
               : "Narrow the map by destination style, or search for a route directly."}
           </p>
         </div>
@@ -112,6 +112,7 @@ export function FilterSidebar({
           </span>
           <input
             className="mt-1 w-full rounded-md border border-ridge/40 bg-white/85 px-3 py-3 text-sm font-semibold text-bark outline-none transition placeholder:text-bark/40 focus:border-forest focus:ring-2 focus:ring-sunlit/45"
+            id="atlas-filter-search"
             onChange={(event) => updateFilters({ searchQuery: event.target.value })}
             placeholder={t.searchPlaceholder}
             type="search"

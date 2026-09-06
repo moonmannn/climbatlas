@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { destinations } from "@/data/destinations";
 import {
   getDestinationSearchText
@@ -12,7 +12,7 @@ import {
   type Filters,
   type SearchResults
 } from "@/components/FilterSidebar";
-import { useLanguage } from "@/components/LanguageProvider";
+import { LocalizedText, useLanguage } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { formatDestinationFact } from "@/lib/formatters";
 import {
@@ -25,7 +25,7 @@ const MapView = dynamic(
   {
     loading: () => (
       <div className="flex h-full min-h-[520px] items-center justify-center bg-parchment text-bark">
-        Loading map...
+        <LocalizedText en="Loading map..." zh="正在加载地图……" />
       </div>
     ),
     ssr: false
@@ -44,12 +44,61 @@ export function ExploreClient() {
   const { locale } = useLanguage();
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const filterDialogRef = useRef<HTMLDivElement>(null);
+  const filterTriggerRef = useRef<HTMLButtonElement | null>(null);
   const publicRoutes = useMemo(() => getPublicRouteSummaries(), []);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get("search") === "1") setIsFilterOpen(true);
   }, []);
+
+  useEffect(() => {
+    if (!isFilterOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const focusFrame = window.requestAnimationFrame(() => {
+      filterDialogRef.current?.querySelector<HTMLElement>("#atlas-filter-search")?.focus();
+    });
+    return () => {
+      window.cancelAnimationFrame(focusFrame);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isFilterOpen]);
+
+  function openFilters(trigger?: HTMLButtonElement) {
+    filterTriggerRef.current = trigger ?? null;
+    setIsFilterOpen(true);
+  }
+
+  function closeFilters() {
+    setIsFilterOpen(false);
+    window.requestAnimationFrame(() => filterTriggerRef.current?.focus());
+  }
+
+  function handleFilterDialogKeyDown(event: KeyboardEvent<HTMLDivElement>) {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeFilters();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const focusable = Array.from(
+      filterDialogRef.current?.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      ) ?? []
+    ).filter((element) => !element.hasAttribute("hidden"));
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
 
   const rockTypes = useMemo(() => {
     return Array.from(
@@ -133,6 +182,7 @@ export function ExploreClient() {
 
   return (
     <main className="phase6-content min-h-screen bg-cream text-charcoal">
+      <div inert={isFilterOpen ? true : undefined}>
       <SiteHeader />
       <section className="mx-auto grid min-h-[calc(100vh-73px)] max-w-[96rem] bg-cream lg:grid-cols-[minmax(0,1fr)_28rem]">
         <div className="relative min-h-[520px] border-r border-charcoal/10">
@@ -158,13 +208,13 @@ export function ExploreClient() {
             </h2>
             <p className="mt-3 text-sm font-semibold leading-6 text-charcoal/68">
               {locale === "zh"
-                ? "先从地图选择目的地。进入目的地后，再通过 DNA 偏好匹配和线路探索器比较具体路线。"
+                ? "先从地图选择目的地。进入目的地后，再通过 DNA 偏好匹配和线路探索器比较具体线路。"
                 : "Choose a destination from the map, then compare routes with DNA preference matching and the Route Explorer."}
             </p>
 
             <button
               className="mt-5 inline-flex w-full items-center justify-center rounded-md bg-brandforest px-4 py-3 text-sm font-black text-cream shadow-editorial transition hover:bg-terracotta"
-              onClick={() => setIsFilterOpen(true)}
+              onClick={(event) => openFilters(event.currentTarget)}
               type="button"
             >
               {locale === "zh" ? "筛选与搜索" : "Filter and search"}
@@ -173,7 +223,7 @@ export function ExploreClient() {
 
           <dl className="grid grid-cols-3 border-b border-charcoal/10 bg-charcoal p-5 text-cream">
             <AtlasStat label={locale === "zh" ? "目的地" : "Places"} value={destinations.length} />
-            <AtlasStat label={locale === "zh" ? "路线" : "Routes"} value={routeCount} />
+            <AtlasStat label={locale === "zh" ? "线路" : "Routes"} value={routeCount} />
             <AtlasStat label={locale === "zh" ? "国家" : "Countries"} value={stats.countries} />
           </dl>
 
@@ -184,7 +234,7 @@ export function ExploreClient() {
               </h2>
               <button
                 className="text-xs font-black text-brandforest underline decoration-terracotta/40 underline-offset-4"
-                onClick={() => setIsFilterOpen(true)}
+                onClick={(event) => openFilters(event.currentTarget)}
                 type="button"
               >
                 {locale === "zh" ? "查看全部" : "View all"}
@@ -232,7 +282,7 @@ export function ExploreClient() {
           <div className="border-t border-charcoal/10 p-5">
             <button
               className="flex w-full items-center justify-between rounded-md border border-charcoal/12 bg-white/65 px-4 py-4 text-left text-sm font-black text-brandforest shadow-sm transition hover:border-brandforest/35 hover:bg-white"
-              onClick={() => setIsFilterOpen(true)}
+              onClick={(event) => openFilters(event.currentTarget)}
               type="button"
             >
               <span>{locale === "zh" ? "打开地图手册" : "Open atlas guide"}</span>
@@ -245,20 +295,28 @@ export function ExploreClient() {
           </div>
         </aside>
       </section>
+      </div>
 
       {isFilterOpen && (
-        <div className="fixed inset-0 z-[1300] bg-bark/45 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[1300] bg-bark/45 backdrop-blur-sm" onKeyDown={handleFilterDialogKeyDown}>
           <button
             aria-label={locale === "zh" ? "关闭筛选" : "Close filters"}
             className="absolute inset-0 h-full w-full cursor-default"
-            onClick={() => setIsFilterOpen(false)}
+            onClick={closeFilters}
+            tabIndex={-1}
             type="button"
           />
-          <div className="absolute inset-y-0 right-0 w-full max-w-md overflow-y-auto bg-cream shadow-2xl">
+          <div
+            aria-label={locale === "zh" ? "筛选与搜索" : "Filter and search"}
+            aria-modal="true"
+            className="absolute inset-y-0 right-0 w-full max-w-md overflow-y-auto bg-cream shadow-2xl"
+            ref={filterDialogRef}
+            role="dialog"
+          >
             <FilterSidebar
               filters={filters}
               onChange={setFilters}
-              onClose={() => setIsFilterOpen(false)}
+              onClose={closeFilters}
               rockTypes={rockTypes}
               searchResults={searchResults}
               stats={stats}

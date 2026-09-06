@@ -67,7 +67,7 @@ export function RouteDetailView({
             <p className="editorial-kicker text-terracotta">
               {identity.destinationName}
             </p>
-            <h1 className="display-serif mt-3 text-5xl font-medium leading-[0.98] text-brandforest sm:text-6xl">
+            <h1 className="display-serif mt-3 text-4xl font-medium leading-[0.98] text-brandforest sm:text-6xl">
               {identity.name}
             </h1>
             <div className="mt-5 flex flex-wrap items-center gap-2">
@@ -110,7 +110,7 @@ export function RouteDetailView({
           )}
         </div>
 
-        <dl className="mt-8 grid border-y border-brandforest/15 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="mt-8 grid grid-cols-2 border-y border-brandforest/15 lg:grid-cols-4">
           {facts.originalGrade && (
             <Fact label={isZh ? "原始难度" : "Original grade"} value={facts.originalGrade} />
           )}
@@ -316,15 +316,27 @@ function EvidenceMeta({ evidence, isZh }: { evidence: PublicEvidenceViewModel; i
       {evidence.checkedAtLabel ? ` · ${evidence.checkedAtLabel}` : ""}
       {evidence.inferenceLabel && <span className="block">{evidence.inferenceLabel}</span>}
       {evidence.sources.length > 0 && (
-        <span className="mt-1 block">
-          {isZh ? "依据：" : "Evidence: "}
-          {evidence.sources.map((source, index) => (
-            <span key={source.id}>
-              {index > 0 ? ", " : ""}
-              <a className="text-link" href={source.url} rel="noreferrer" target="_blank">{source.label}</a>
+        <>
+          <span className="mt-1 hidden sm:block">
+            {isZh ? "依据：" : "Evidence: "}
+            {evidence.sources.map((source, index) => (
+              <span key={source.id}>
+                {index > 0 ? ", " : ""}
+                <a className="text-link" href={source.url} rel="noreferrer" target="_blank">{source.label}</a>
+              </span>
+            ))}
+          </span>
+          <details className="mt-1 sm:hidden">
+            <summary className="min-h-8 cursor-pointer py-1 font-semibold text-brandforest">
+              {isZh ? `查看依据（${evidence.sources.length}）` : `View evidence (${evidence.sources.length})`}
+            </summary>
+            <span className="mt-1 grid gap-1 pl-3">
+              {evidence.sources.map((source) => (
+                <a className="text-link" href={source.url} key={source.id} rel="noreferrer" target="_blank">{source.label}</a>
+              ))}
             </span>
-          ))}
-        </span>
+          </details>
+        </>
       )}
     </div>
   );
@@ -332,7 +344,7 @@ function EvidenceMeta({ evidence, isZh }: { evidence: PublicEvidenceViewModel; i
 
 function Fact({ label, value }: { label: string; value: string }) {
   return (
-    <div className="border-b border-brandforest/10 py-4 sm:px-5 sm:odd:border-r lg:border-b-0 lg:border-r">
+    <div className="border-b border-brandforest/10 px-3 py-4 odd:border-r sm:px-5 lg:border-b-0 lg:border-r">
       <dt className="text-xs font-semibold text-charcoal/48">{label}</dt>
       <dd className="mt-1 font-semibold text-brandforest">{value}</dd>
     </div>
@@ -351,24 +363,38 @@ function SourceSection({
   if (entries.length === 0 && !emptyText) return null;
   return (
     <section className="mt-8">
-      <h3 className="route-filter-label">{heading}</h3>
       {entries.length > 0 ? (
-        <div className="mt-3 divide-y divide-brandforest/12 border-y border-brandforest/15">
-          {entries.map((entry) => (
-            <div className="py-5" key={`${entry.purpose}-${entry.url}`}>
-              <a className="text-link" href={entry.url} rel="noreferrer" target="_blank">{entry.label}</a>
-              {(entry.attribution || entry.checkedAtLabel || entry.license) && (
-                <p className="mt-2 text-sm leading-6 text-charcoal/58">
-                  {[entry.attribution, entry.license, entry.checkedAtLabel].filter(Boolean).join(" · ")}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
+        <>
+          <div className="hidden sm:block">
+            <h3 className="route-filter-label">{heading}</h3>
+            <SourceEntries entries={entries} />
+          </div>
+          <details className="border-y border-brandforest/15 sm:hidden">
+            <summary className="flex min-h-12 cursor-pointer items-center justify-between gap-3 py-3 text-sm font-semibold text-brandforest">
+              <span>{heading}</span><span className="text-xs text-charcoal/48">{entries.length}</span>
+            </summary>
+            <SourceEntries entries={entries} compact />
+          </details>
+        </>
       ) : (
-        <p className="mt-3 border-y border-brandforest/15 py-4 text-sm leading-6 text-charcoal/58">{emptyText}</p>
+        <><h3 className="route-filter-label">{heading}</h3><p className="mt-3 border-y border-brandforest/15 py-4 text-sm leading-6 text-charcoal/58">{emptyText}</p></>
       )}
     </section>
+  );
+}
+
+function SourceEntries({ entries, compact = false }: { entries: PublicSourceViewModel[]; compact?: boolean }) {
+  return (
+    <div className={`${compact ? "border-t" : "mt-3 border-y"} divide-y divide-brandforest/12 border-brandforest/15`}>
+      {entries.map((entry) => (
+        <div className={compact ? "py-4" : "py-5"} key={`${entry.purpose}-${entry.url}`}>
+          <a className="text-link" href={entry.url} rel="noreferrer" target="_blank">{entry.label}</a>
+          {(entry.attribution || entry.checkedAtLabel || entry.license) && (
+            <p className="mt-2 text-sm leading-6 text-charcoal/58">{[entry.attribution, entry.license, entry.checkedAtLabel].filter(Boolean).join(" · ")}</p>
+          )}
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -376,19 +402,30 @@ function ResourceSection({ heading, resources }: { heading: string; resources: E
   if (resources.length === 0) return null;
   return (
     <section className="mt-8">
-      <h3 className="route-filter-label">{heading}</h3>
-      <div className="mt-3 divide-y divide-brandforest/12 border-y border-brandforest/15">
-        {resources.map((resource) => (
-          <div className="py-5" key={`${resource.purpose}-${resource.url}`}>
-            <div className="flex flex-wrap items-center gap-3">
-              <a className="text-link" href={resource.url} rel="noreferrer" target="_blank">{resource.title}</a>
-              <span className="text-xs font-semibold text-charcoal/48">{resource.linkStatusLabel ?? resource.typeLabel}</span>
-            </div>
-            {resource.description && <p className="mt-2 text-sm leading-6 text-charcoal/58">{resource.description}</p>}
-          </div>
-        ))}
-      </div>
+      <div className="hidden sm:block"><h3 className="route-filter-label">{heading}</h3><ResourceEntries resources={resources} /></div>
+      <details className="border-y border-brandforest/15 sm:hidden">
+        <summary className="flex min-h-12 cursor-pointer items-center justify-between gap-3 py-3 text-sm font-semibold text-brandforest">
+          <span>{heading}</span><span className="text-xs text-charcoal/48">{resources.length}</span>
+        </summary>
+        <ResourceEntries compact resources={resources} />
+      </details>
     </section>
+  );
+}
+
+function ResourceEntries({ compact = false, resources }: { compact?: boolean; resources: ExternalResourceViewModel[] }) {
+  return (
+    <div className={`${compact ? "border-t" : "mt-3 border-y"} divide-y divide-brandforest/12 border-brandforest/15`}>
+      {resources.map((resource) => (
+        <div className={compact ? "py-4" : "py-5"} key={`${resource.purpose}-${resource.url}`}>
+          <div className="flex flex-wrap items-center gap-3">
+            <a className="text-link" href={resource.url} rel="noreferrer" target="_blank">{resource.title}</a>
+            <span className="text-xs font-semibold text-charcoal/48">{resource.linkStatusLabel ?? resource.typeLabel}</span>
+          </div>
+          {resource.description && <p className="mt-2 text-sm leading-6 text-charcoal/58">{resource.description}</p>}
+        </div>
+      ))}
+      </div>
   );
 }
 

@@ -177,7 +177,7 @@ export function ClimbingLogForm({
           onChange={(event) => setNote(event.target.value)}
           placeholder={
             isZh
-              ? "记录这一天的感受或下次想尝试的方向。不要把它和长期路线笔记混在一起。"
+              ? "记录这一天的感受或下次想尝试的方向。不要把它和长期线路笔记混在一起。"
               : "Record how the day felt or what you want to revisit next time."
           }
           value={note}

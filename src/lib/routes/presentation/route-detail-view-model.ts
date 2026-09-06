@@ -1,7 +1,8 @@
 import {
   formatCheckedDate,
   formatClimbingType,
-  formatGradeSystem
+  formatGradeSystem,
+  formatImageCaption
 } from "@/lib/formatters";
 import type {
   Destination,
@@ -198,7 +199,7 @@ export function inspectRouteDetailViewModelBuild(
     locale,
     sourceResult.canonicalKeys
   );
-  const mediaResult = buildMedia(route.media ?? []);
+  const mediaResult = buildMedia(route.media ?? [], locale);
   const originalGrade = route.grade.original
     .replace(/\bmetadata\b/gi, "")
     .trim();
@@ -730,7 +731,7 @@ function buildResources(
   return { resources: Array.from(resources.values()), duplicatesRemoved };
 }
 
-function buildMedia(media: RouteMediaRecord[]) {
+function buildMedia(media: RouteMediaRecord[], locale: Locale) {
   const routeImages: PublicMediaViewModel[] = [];
   const contextImages: PublicMediaViewModel[] = [];
   const invalidMedia: RouteDetailBuildDiagnostics["invalidMedia"] = [];
@@ -755,7 +756,7 @@ function buildMedia(media: RouteMediaRecord[]) {
     const publicImage: PublicMediaViewModel = {
       alt: image.alt,
       attribution: image.credit,
-      caption: cleanOptional(image.caption),
+      caption: image.caption ? formatImageCaption(image.caption, locale) : undefined,
       kind: image.kind,
       license: image.license,
       sourceUrl: image.sourceUrl,

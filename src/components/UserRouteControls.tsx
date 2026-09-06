@@ -70,7 +70,7 @@ export function UserRouteControls({
             ? `已标记为${statusLabels[nextStatus].zh}。`
             : `Marked as ${statusLabels[nextStatus].en.toLowerCase()}.`
           : isZh
-            ? "已从路线本移除。"
+            ? "已从地图册移除。"
             : "Removed from your atlas."
       );
     }
@@ -98,7 +98,7 @@ export function UserRouteControls({
       <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.18em] text-forest">
-            {isZh ? "个人路线本" : "Personal route notebook"}
+            {isZh ? "个人地图册" : "Personal route notebook"}
           </p>
           <h2 className={`${isCompact ? "mt-1 text-lg" : "mt-1 text-2xl"} font-black text-bark`}>
             {isZh ? "把这条线放进你的计划" : "Save this route to your atlas"}
@@ -180,7 +180,7 @@ export function UserRouteControls({
               onChange={(event) => setNoteDraft(event.target.value)}
               placeholder={
                 isZh
-                  ? "只给自己看的路线想法、训练目标，或下次要确认的事项。"
+                  ? "只给自己看的线路想法、训练目标，或下次要确认的事项。"
                   : "Private thoughts, training goals, or things to confirm next time."
               }
               value={noteDraft}
@@ -246,7 +246,7 @@ export function UserRouteControls({
               onClick={() => void handleStatus(null)}
               type="button"
             >
-              {isZh ? "从路线本移除" : "Remove saved status"}
+              {isZh ? "从地图册移除" : "Remove saved status"}
             </button>
           </div>
 
@@ -263,7 +263,7 @@ export function UserRouteControls({
               onChange={(event) => setNoteDraft(event.target.value)}
               placeholder={
                 isZh
-                  ? "只给自己看的路线想法、训练目标，或下次要确认的事项。"
+                  ? "只给自己看的线路想法、训练目标，或下次要确认的事项。"
                   : "Private thoughts, training goals, or things to confirm next time."
               }
               value={noteDraft}

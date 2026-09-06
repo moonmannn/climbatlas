@@ -1,23 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 import { dnaArchetypes } from "@/data/dnaArchetypes";
 import {
   getDestinationDnaMatches,
   scoreDnaAnswers
 } from "@/lib/climbingDna";
-import { saveDnaAnswers } from "@/lib/climbingDnaStorage";
 import { decodeDnaAnswers } from "@/lib/climbingDnaUrl";
+import { formatClimbingType, formatDestinationFact } from "@/lib/formatters";
 import { dnaDimensions, type DnaDimension } from "@/types/climbingDna";
+import type { ClimbingType } from "@/types/destination";
 
 export type DestinationMatchCardData = {
   slug: string;
   name: string;
   country: string;
   rockType: string;
-  climbingTypes: string[];
+  climbingTypes: ClimbingType[];
   bestSeasons: string[];
   routeCount: number;
   image?: { src: string; alt: string };
@@ -38,42 +39,8 @@ const dimensionNames = {
     adventure: "冒险",
     social: "社交",
     comfort: "舒适",
-    flow: "流动"
+    flow: "动作流畅感"
   }
-};
-
-const factTranslations: Record<string, string> = {
-  Spring: "春季",
-  Summer: "夏季",
-  Fall: "秋季",
-  Winter: "冬季",
-  sport: "运动攀",
-  trad: "传统攀",
-  boulder: "抱石",
-  "multi-pitch": "多段攀登",
-  Granite: "花岗岩",
-  Limestone: "石灰岩",
-  Sandstone: "砂岩",
-  "Dolomite limestone": "白云岩",
-  "Jura limestone": "侏罗纪石灰岩",
-  "Karst limestone": "喀斯特石灰岩",
-  "Coastal sandstone": "海岸砂岩",
-  Quartzite: "石英岩",
-  "Volcanic tuff": "火山凝灰岩",
-  Gneiss: "片麻岩",
-  USA: "美国",
-  Canada: "加拿大",
-  Mexico: "墨西哥",
-  France: "法国",
-  Greece: "希腊",
-  Italy: "意大利",
-  Germany: "德国",
-  Spain: "西班牙",
-  China: "中国",
-  Taiwan: "中国台湾",
-  Thailand: "泰国",
-  Australia: "澳大利亚",
-  "South Africa": "南非"
 };
 
 const ui = {
@@ -82,7 +49,7 @@ const ui = {
     secondary: "with a {name} streak",
     profile: "Your DNA preference profile",
     profileScale: "Preference profile score (0–100)",
-    strengths: "Top strengths",
+    strengths: "What you tend to value",
     styles: "Route styles to explore",
     environments: "Environments that may fit",
     matches: "DNA preference matches",
@@ -110,15 +77,15 @@ const ui = {
     secondary: "同时带有{name}的倾向",
     profile: "你的 DNA 偏好画像",
     profileScale: "偏好画像分值（0–100）",
-    strengths: "你的主要优势",
-    styles: "值得探索的路线风格",
+    strengths: "你更看重的体验",
+    styles: "值得探索的线路风格",
     environments: "可能适合你的攀岩环境",
     matches: "DNA 偏好匹配",
     matchIntro: "这些地方匹配的是你的动作、氛围、旅行和挑战偏好，而不只是难度。",
     why: "为什么匹配",
     consider: "值得考虑",
     facts: "目的地速览",
-    routes: "条收录路线",
+    routes: "条收录线路",
     season: "推荐季节",
     open: "打开目的地攻略",
     explore: "探索地图",
@@ -129,13 +96,9 @@ const ui = {
     invalidTitle: "这个结果链接不完整。",
     invalidBody: "回答全部 10 个问题后，才能生成有效的攀岩 DNA 画像。",
     start: "开始测试",
-    note: "匹配结果反映偏好与氛围，不代表路线安全或当前条件。攀登前请始终核对最新当地信息。"
+    note: "匹配结果反映偏好与氛围，不代表线路安全或当前条件。攀登前请始终核对最新当地信息。"
   }
 };
-
-function localizeFact(value: string, locale: "en" | "zh") {
-  return locale === "zh" ? factTranslations[value] ?? value : value;
-}
 
 function getStrongestDimensions(scores: Record<DnaDimension, number>) {
   return [...dnaDimensions]
@@ -173,17 +136,12 @@ export function ClimbingDnaResult({
     const secondaryArchetype =
       dnaArchetypes.find((item) => item.id === profile.secondaryArchetypeId) ?? dnaArchetypes[1];
     return {
-      answers,
       profile,
       archetype,
       secondaryArchetype,
       matches: getDestinationDnaMatches(profile.scores, locale, 3)
     };
   }, [encodedAnswers, locale]);
-
-  useEffect(() => {
-    if (result) saveDnaAnswers(result.answers);
-  }, [result]);
 
   async function shareResult() {
     if (!result) return;
@@ -349,7 +307,7 @@ export function ClimbingDnaResult({
                       <div className="flex items-start justify-between gap-5">
                         <div>
                           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">
-                            0{index + 1} / {localizeFact(destination.country, locale)}
+                            0{index + 1} / {formatDestinationFact(destination.country, locale)}
                           </p>
                           <h3 className="display-serif mt-2 text-4xl font-medium text-brandforest">
                             {destination.name}
@@ -381,11 +339,11 @@ export function ClimbingDnaResult({
                       </ul>
                       <p className="editorial-kicker mt-6 text-charcoal/45">{text.facts}</p>
                       <p className="mt-3 text-sm leading-6 text-charcoal/62">
-                        {localizeFact(destination.rockType, locale)} · {destination.climbingTypes.map((type) => localizeFact(type, locale)).join(" / ")} · {destination.routeCount} {text.routes}
+                        {formatDestinationFact(destination.rockType, locale)} · {destination.climbingTypes.map((type) => formatClimbingType(type, locale)).join(" / ")} · {destination.routeCount} {text.routes}
                       </p>
                       {destination.bestSeasons.length > 0 ? (
                         <p className="mt-1 text-sm leading-6 text-charcoal/62">
-                          {text.season}: {destination.bestSeasons.map((season) => localizeFact(season, locale)).join(", ")}
+                          {text.season}: {destination.bestSeasons.map((season) => formatDestinationFact(season, locale)).join(", ")}
                         </p>
                       ) : null}
                       {match.watchDimension ? (

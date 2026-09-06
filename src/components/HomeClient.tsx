@@ -3,7 +3,7 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
-import { useLanguage } from "@/components/LanguageProvider";
+import { LocalizedText, useLanguage } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getDestinationDnaMatches } from "@/lib/climbingDna";
 import { loadDnaProfile } from "@/lib/climbingDnaStorage";
@@ -12,7 +12,7 @@ import type { Destination } from "@/types/destination";
 import type { DnaVector } from "@/types/climbingDna";
 
 const MapView = dynamic(() => import("@/components/MapView").then((module) => module.MapView), {
-  loading: () => <div className="flex h-full min-h-[340px] items-center justify-center bg-sky/20 text-sm font-medium text-brandforest">Loading map...</div>,
+  loading: () => <div className="flex h-full min-h-[340px] items-center justify-center bg-sky/20 text-sm font-medium text-brandforest"><LocalizedText en="Loading map..." zh="正在加载地图……" /></div>,
   ssr: false
 });
 
@@ -60,8 +60,8 @@ const copy = {
     mapBody: "Explore climbing destinations by season, style, and atmosphere.",
     atlasKicker: "Your climbing record",
     atlasTitle: "Build a personal atlas, one place at a time.",
-    atlasBody: "Save places. Plan journeys. Keep the routes and moments that matter to you.",
-    states: ["Want to go", "Planning", "Visited"],
+    atlasBody: "Save routes you want to climb, track completed climbs, and keep private notes.",
+    states: ["Want to climb", "Climbed", "Private notes"],
     openAtlas: "Open My Atlas",
     footer: "A source-aware guide to climbing places and the routes that shape them.",
     feedback: "Send feedback"
@@ -69,7 +69,7 @@ const copy = {
   zh: {
     eyebrow: "个性化攀岩发现",
     title: "找到真正适合你攀岩方式的地方。",
-    intro: "从你的动作偏好、攀岩动力和冒险倾向出发，发现更合拍的路线、岩场与攀岩体验。",
+    intro: "从你的动作偏好、攀岩动力和冒险倾向出发，发现更合拍的线路、岩场与攀岩体验。",
     primary: "发现我的攀岩 DNA",
     secondary: "探索地图",
     plate: "ClimbAtlas 户外研究",
@@ -81,23 +81,23 @@ const copy = {
     choiceKicker: "跟着直觉选择",
     choiceTitle: "什么样的攀岩最适合你？",
     choices: ["海边石灰岩", "森林花岗岩", "高山岩壁", "热闹岩场"],
-    choiceNotes: ["温暖岩石 / 开阔视野", "安静移动 / 林间凉意", "巨大尺度 / 高处空气", "共享能量 / 友好节奏"],
+    choiceNotes: ["温暖岩石 / 开阔视野", "专注攀爬 / 林间凉意", "巨大尺度 / 稀薄空气", "伙伴相伴 / 轻松交流"],
     matchesKicker: "值得探索的目的地",
     matchesTitle: "先从一个让你好奇的地方出发。",
     personalizedMatchesKicker: "你的 DNA 偏好匹配",
     personalizedMatchesTitle: "这些目的地更贴近你喜欢的攀岩方式。",
     preferenceMatch: "DNA 偏好匹配",
     matchCta: "完成 DNA 测试，查看个人匹配",
-    routes: "条路线",
+    routes: "条线路",
     mapKicker: "探索地图册",
     mapTitle: "世界就是你的岩壁。",
     mapBody: "按照季节、风格与氛围探索全球攀岩目的地。",
     atlasKicker: "你的攀岩记录",
     atlasTitle: "从一个地方开始，建立自己的攀岩地图册。",
-    atlasBody: "收藏目的地，计划旅程，留下对你真正重要的路线与时刻。",
-    states: ["想去", "计划中", "去过"],
+    atlasBody: "收藏想爬的线路，记录已爬线路，并保存私人笔记。",
+    states: ["想爬", "已爬", "私人笔记"],
     openAtlas: "打开我的地图册",
-    footer: "一份重视来源、帮助你发现攀岩目的地与路线的指南。",
+    footer: "一份重视来源、帮助你发现攀岩目的地与线路的指南。",
     feedback: "发送反馈"
   }
 };

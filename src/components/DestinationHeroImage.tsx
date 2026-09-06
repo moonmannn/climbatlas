@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
+import { formatImageCaption } from "@/lib/formatters";
 import type { ImageAsset } from "@/types/destination";
 
 const fallbackImages = [
@@ -36,7 +37,7 @@ export function DestinationHeroImage({ image, slug }: { image?: ImageAsset; slug
       <figcaption className="mt-3 text-xs leading-5 text-charcoal/48">
         {useFallback
           ? locale === "zh" ? "ClimbAtlas 原创编辑插画，不是这个目的地的精确照片。" : "Original ClimbAtlas editorial artwork, not an exact photo of this destination."
-          : `${image.caption} · ${image.credit} · ${image.license}`}
+          : `${formatImageCaption(image.caption, locale)} · ${image.credit} · ${image.license}`}
       </figcaption>
     </figure>
   );

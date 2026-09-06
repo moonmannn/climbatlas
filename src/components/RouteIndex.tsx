@@ -70,6 +70,10 @@ function routeSummary(route: RouteExplorerItem, locale: "en" | "zh") {
   return route.summary?.[locale] ?? route.summary?.en;
 }
 
+function normalizeStyleFilterTag(tag: string) {
+  return tag === "powerful" ? "power" : tag;
+}
+
 function formatRouteFactSummary(
   route: RouteExplorerItem,
   locale: "en" | "zh"
@@ -164,7 +168,7 @@ export function RouteIndex({
     [routes]
   );
   const styles = useMemo(
-    () => Array.from(new Set(routes.flatMap((route) => route.styleTags))).sort(),
+    () => Array.from(new Set(routes.flatMap((route) => route.styleTags.map(normalizeStyleFilterTag)))).sort(),
     [routes]
   );
   const availableDifficultyBands = useMemo(
@@ -262,7 +266,7 @@ export function RouteIndex({
           selectedGradeOptions.some((grade) =>
             routeMatchesGradeOption(route, grade)
           )) &&
-        (styleFilter === "all" || route.styleTags.includes(styleFilter)) &&
+        (styleFilter === "all" || route.styleTags.some((tag) => normalizeStyleFilterTag(tag) === styleFilter)) &&
         (sectorFilter === "all" || route.sectorName === sectorFilter) &&
         (personalFilter === "all" || personalStatus === personalFilter) &&
         (!normalizedQuery || searchable.includes(normalizedQuery))
@@ -450,13 +454,13 @@ export function RouteIndex({
       <div className="flex flex-col gap-5 xl:flex-row xl:items-end xl:justify-between">
         <div>
           <p className="editorial-kicker text-terracotta">
-            {isZh ? "路线探索器" : "Route explorer"}
+            {isZh ? "线路探索器" : "Route explorer"}
           </p>
           <h3 className="display-serif mt-2 text-4xl font-medium text-brandforest sm:text-5xl">
             {destinationName}
           </h3>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-charcoal/62">
-            <span>{routes.length} {isZh ? "条路线" : "routes"}</span>
+            <span>{routes.length} {isZh ? "条线路" : "routes"}</span>
             {user && (
               <span>{personalRoutes.length} {isZh ? "条个人记录" : "personal saves"}</span>
             )}
@@ -469,7 +473,7 @@ export function RouteIndex({
               </p>
             ) : (
               <Link className="text-link mt-4 inline-flex" href="/climbing-dna">
-                {isZh ? "完成 DNA 测试，个性化路线顺序" : "Take the DNA quiz to personalize route order"} →
+                {isZh ? "完成 DNA 测试，个性化线路顺序" : "Take the DNA quiz to personalize route order"} →
               </Link>
             )}
         </div>
@@ -522,7 +526,7 @@ export function RouteIndex({
             className="route-filter-control"
             id="route-explorer-search"
             onChange={(event) => setQuery(event.target.value)}
-            placeholder={isZh ? "路线名、等级或区域" : "Route, grade, or sector"}
+            placeholder={isZh ? "线路名、难度或区域" : "Route, grade, or sector"}
             value={query}
           />
         </label>
@@ -609,7 +613,7 @@ export function RouteIndex({
         {user && (
           <FilterSelect
             id="route-explorer-personal"
-            label={isZh ? "个人路线本" : "My atlas"}
+            label={isZh ? "个人地图册" : "My atlas"}
             onChange={(value) =>
               setPersonalFilter(value as "all" | SavedRouteStatus)
             }
@@ -714,7 +718,7 @@ export function RouteIndex({
       {filteredRoutes.length === 0 && (
         <div className="border-b border-brandforest/15 py-12 text-center">
           <p className="display-serif text-2xl text-brandforest">
-            {isZh ? "没有找到匹配路线" : "No routes match this view"}
+            {isZh ? "没有找到匹配线路" : "No routes match this view"}
           </p>
           <p className="mx-auto mt-3 max-w-lg text-sm leading-6 text-charcoal/58">
             {isZh
@@ -818,7 +822,7 @@ function GradeFilterControls({
                   htmlFor={inputId}
                 >
                   <input
-                    aria-label={`${formatGradeSystem(group.system, locale)}, ${group.routeCount} ${isZh ? "条路线" : "routes"}`}
+                    aria-label={`${formatGradeSystem(group.system, locale)}, ${group.routeCount} ${isZh ? "条线路" : "routes"}`}
                     checked={group.system === activeGroup.system}
                     className="sr-only"
                     id={inputId}

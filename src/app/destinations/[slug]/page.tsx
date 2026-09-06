@@ -240,7 +240,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                   <span className="mt-2 block text-[11px] font-semibold leading-4 text-bark/50">
                       <LocalizedText
                         en="Based on routes currently visible in ClimbAtlas."
-                        zh="根据 ClimbAtlas 当前公开可见的路线统计。"
+                        zh="根据 ClimbAtlas 当前公开可见的线路统计。"
                       />
                   </span>
                 )}

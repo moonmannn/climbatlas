@@ -87,7 +87,7 @@ const experienceLabels: Record<ExperienceLevel, { en: string; zh: string }> = {
 
 const tabLabels: Record<AtlasTab, { en: string; zh: string }> = {
   overview: { en: "Overview", zh: "概览" },
-  routes: { en: "Routes", zh: "路线" },
+  routes: { en: "Routes", zh: "线路" },
   journal: { en: "Journal", zh: "攀岩日志" },
   places: { en: "Saved places", zh: "收藏目的地" },
   dna: { en: "DNA & preferences", zh: "DNA 与偏好" },
@@ -235,7 +235,7 @@ export function MyAtlasClient({ destinationSummaries }: MyAtlasClientProps) {
     ...savedDestinations.map((item) => item.destination_slug)
   ]).size;
   const displayName =
-    profile?.display_name || user?.email?.split("@")[0] || "ClimbAtlas climber";
+    profile?.display_name || user?.email?.split("@")[0] || (isZh ? "ClimbAtlas 攀岩者" : "ClimbAtlas climber");
   const isLoading = isProfileLoading || areRoutesLoading || isAtlasLoading || areLogsLoading;
   const error = profileError ?? routesError ?? atlasError ?? logsError;
 
@@ -257,7 +257,7 @@ export function MyAtlasClient({ destinationSummaries }: MyAtlasClientProps) {
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-cream/75">
                 {profile?.bio || (isZh
-                  ? "保存路线、目的地和攀岩偏好。这里的内容仅你本人可见。"
+                  ? "保存线路、目的地和攀岩偏好。这里的内容仅你本人可见。"
                   : "Keep routes, destinations, and climbing preferences in one private place.")}
               </p>
               {user ? (
@@ -370,16 +370,16 @@ export function MyAtlasClient({ destinationSummaries }: MyAtlasClientProps) {
                   <AtlasPanel activeTab={activeTab} tab="routes">
                     <div className="grid gap-10">
                       <RouteSection
-                        emptyText={isZh ? "还没有想爬路线。打开任意路线即可加入计划。" : "No want-to-climb routes yet. Open a route to start a plan."}
+                        emptyText={isZh ? "还没有想爬线路。打开任意线路即可加入计划。" : "No want-to-climb routes yet. Open a route to start a plan."}
                         items={wantItems}
                         locale={locale}
-                        title={isZh ? "想爬路线" : "Want to climb"}
+                        title={isZh ? "想爬线路" : "Want to climb"}
                       />
                       <RouteSection
                         emptyText={isZh ? "还没有已爬记录。完成后可在线路页标记。" : "No climbed routes yet. Mark one after a climbing day."}
                         items={climbedItems}
                         locale={locale}
-                        title={isZh ? "已爬路线" : "Climbed"}
+                        title={isZh ? "已爬线路" : "Climbed"}
                       />
                       <RouteSection
                         emptyText={isZh ? "还没有私人笔记。你可以在线路页记录只给自己看的内容。" : "No private notes yet. Route pages can hold notes only you can see."}
@@ -500,7 +500,7 @@ function OverviewPanel({
       <section className="grid gap-6 border-b border-brandforest/15 pb-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="editorial-kicker text-terracotta">{isZh ? "最近保存" : "Recent saves"}</p>
-          <h2 className="display-serif mt-3 text-3xl text-brandforest">{isZh ? "继续你的路线计划" : "Continue your route planning"}</h2>
+          <h2 className="display-serif mt-3 text-3xl text-brandforest">{isZh ? "继续你的线路计划" : "Continue your route planning"}</h2>
           {recentItems.length ? (
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {recentItems.map((item) => (
@@ -508,10 +508,10 @@ function OverviewPanel({
               ))}
             </div>
           ) : (
-            <EmptyInline text={isZh ? "保存第一条路线后，它会出现在这里。" : "Your first saved route will appear here."} />
+            <EmptyInline text={isZh ? "保存第一条线路后，它会出现在这里。" : "Your first saved route will appear here."} />
           )}
           <button className="text-link mt-5" onClick={() => setActiveTab("routes")} type="button">
-            {isZh ? "查看全部路线" : "View all routes"} →
+            {isZh ? "查看全部线路" : "View all routes"} →
           </button>
         </div>
 
@@ -566,7 +566,7 @@ function OverviewPanel({
           <div>
             <p className="editorial-kicker text-terracotta">{isZh ? "收藏目的地" : "Saved places"}</p>
             <h2 className="display-serif mt-3 text-3xl text-brandforest">
-              {isZh ? `路线记录涉及 ${routeDestinationCount} 个目的地` : `Routes across ${routeDestinationCount} destinations`}
+              {isZh ? `线路记录涉及 ${routeDestinationCount} 个目的地` : `Routes across ${routeDestinationCount} destinations`}
             </h2>
           </div>
           <button className="text-link" onClick={() => setActiveTab("places")} type="button">
@@ -614,7 +614,7 @@ function JournalPanel({
       <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
         <h2 className="display-serif text-4xl text-brandforest">{isZh ? "记住每一次攀登" : "Keep the days that mattered"}</h2>
         <p className="max-w-lg text-sm leading-6 text-charcoal/60">
-          {isZh ? "日志只属于你。完攀会自动更新路线状态，尝试记录不会把路线标成已爬。" : "Logs stay private. Completed entries update route status; attempts do not mark a route as climbed."}
+          {isZh ? "日志只属于你。完攀会自动更新线路状态，尝试记录不会把线路标成已爬。" : "Logs stay private. Completed entries update route status; attempts do not mark a route as climbed."}
         </p>
       </div>
 
@@ -700,7 +700,7 @@ function JournalPanel({
           <p className="editorial-kicker text-terracotta">{isZh ? "待补充日期" : "Dates not recorded"}</p>
           <h3 className="display-serif mt-3 text-3xl text-brandforest">{isZh ? "保留的旧已爬记录" : "Earlier climbed statuses"}</h3>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-charcoal/60">
-            {isZh ? "这些路线仍然标记为已爬，但我们没有猜测实际日期。打开路线即可补一条真实日志。" : "These routes remain marked as climbed, but no date was invented. Open a route to add a real log."}
+            {isZh ? "这些线路仍然标记为已爬，但我们没有猜测实际日期。打开线路即可补一条真实日志。" : "These routes remain marked as climbed, but no date was invented. Open a route to add a real log."}
           </p>
           <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {legacyClimbedItems.map((item) => (
@@ -916,7 +916,7 @@ function AccountPanel({
             <h3 className="font-semibold text-red-950">{isZh ? "清空 My Atlas" : "Clear My Atlas"}</h3>
             <p className="mt-2 text-sm leading-6 text-charcoal/68">
               {isZh
-                ? "这会删除个人资料内容、路线状态、私人笔记、收藏目的地和 DNA。登录账户与邮箱仍会保留。"
+                ? "这会删除个人资料内容、线路状态、私人笔记、收藏目的地和 DNA。登录账户与邮箱仍会保留。"
                 : "This removes profile details, route statuses, private notes, saved places, and DNA. Your sign-in account remains."}
             </p>
             {!confirmClear ? (
@@ -1088,7 +1088,7 @@ function DestinationCard({ destination, locale }: { destination: MyAtlasDestinat
       {destination.image ? <img alt={destination.image.alt} className="aspect-[16/9] w-full rounded-md object-cover" loading="lazy" src={destination.image.src} /> : <div className="grid aspect-[16/9] place-items-center rounded-md bg-brandforest/8 text-3xl text-brandforest" aria-hidden="true">△</div>}
       <h3 className="mt-4 text-xl font-semibold text-brandforest">{destination.name}</h3>
       <p className="mt-1 text-sm text-charcoal/60">{formatDestinationFact(destination.country, locale)} / {formatDestinationFact(destination.rockType, locale)}</p>
-      <p className="mt-3 text-xs font-semibold uppercase tracking-[0.1em] text-terracotta">{destination.routeCount} {locale === "zh" ? "条公开路线" : "public routes"}</p>
+      <p className="mt-3 text-xs font-semibold uppercase tracking-[0.1em] text-terracotta">{destination.routeCount} {locale === "zh" ? "条公开线路" : "public routes"}</p>
     </Link>
   );
 }

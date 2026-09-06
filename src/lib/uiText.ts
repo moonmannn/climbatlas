@@ -113,8 +113,8 @@ export const uiText = {
     beginnerFriendlyOnly: "只看新手友好",
     bestFor: "适合谁",
     bestSeason: "最佳季节",
-    chooseNextClimb: "选择下一条路线",
-    climbedRoutes: "已爬路线",
+    chooseNextClimb: "选择下一条线路",
+    climbedRoutes: "已爬线路",
     climbingProfile: "攀岩画像",
     climbingType: "攀岩类型",
     collapse: "收起",
@@ -135,11 +135,11 @@ export const uiText = {
     imageSource: "图片来源",
     knownClimbingRealms: "已收录攀岩区域",
     movingFieldPanel: "正在移动面板",
-    noSearchResults: "暂时没有匹配的目的地或已验证路线。",
+    noSearchResults: "暂时没有匹配的目的地或已验证线路。",
     nonBetaTips: "非 beta tips",
     openFieldNotes: "打开野外笔记",
     openFilters: "打开筛选和搜索",
-    openRouteCard: "打开路线卡",
+    openRouteCard: "打开线路卡",
     originalNote: "ClimbAtlas 原创笔记",
     personalNotes: "个人笔记",
     photos: "照片",
@@ -149,8 +149,8 @@ export const uiText = {
     resetPosition: "重置位置",
     rock: "岩石",
     rockType: "岩石类型",
-    routeCards: "路线卡",
-    routes: "路线",
+    routeCards: "线路卡",
+    routes: "线路",
     savedLogs: "记录",
     searchAtlas: "搜索地图",
     season: "季节",
@@ -177,19 +177,19 @@ export const uiText = {
       experienced: "更适合系统扎实、户外经验更稳定的攀岩者。"
     },
     explorerIntro:
-      "一个中世纪探险地图风格的路线选择工作台，按心情、风格和状态选路线。它不是路书，也不提供路线 beta。",
+      "一个中世纪探险地图风格的线路选择工作台，按心情、风格和状态选线路。它不是路书，也不提供线路 beta。",
     savedLogsBody:
       "Beta 反馈会帮助决定之后先做想爬清单、已爬记录、私人笔记、公开 tips，还是条件更新。当前版本没有账号，也不会展示假用户数据。",
     galleryBody:
       "这些图片是目的地的授权/开放许可视觉参考，不是 topo，也不是路书替代品。",
     routeSectionBody:
-      "ClimbAtlas 展示可核验的路线事实和原创摘要，不发布 topo、beta、保护、approach 等路书细节。",
+      "ClimbAtlas 展示可核验的线路事实和原创摘要，不发布 topo、beta、保护、approach 等路书细节。",
     noRoutes:
-      "这个目的地还没有添加已验证路线。ClimbAtlas 只会在来源和图片许可检查后发布路线事实和媒体。",
+      "这个目的地还没有添加已验证线路。ClimbAtlas 只会在来源和图片许可检查后发布线路事实和媒体。",
     routePhotosNeeded:
-      "这条路线还需要照片。ClimbAtlas 只展示有明确授权和署名信息的图片。",
+      "这条线路还需要照片。ClimbAtlas 只展示有明确授权和署名信息的图片。",
     singleSource:
-      "单一来源路线。ClimbAtlas 会透明标注，直到补充第二个独立来源。",
+      "单一来源线路。ClimbAtlas 会透明标注，直到补充第二个独立来源。",
     communityComingSoon:
       "社区笔记在 Beta 阶段暂不开放。真实账号和审核机制上线前，不会预填评论、评分或用户 tips。",
     futureReviewBody:

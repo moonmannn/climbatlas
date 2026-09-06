@@ -15,7 +15,7 @@ import type { Locale, LocalizedText } from "@/types/destination";
 
 export const dnaDimensionLabels: LocalizedDimensionLabels = {
   en: { exploration: "Exploration", performance: "Performance", adventure: "Adventure", social: "Social", comfort: "Comfort", flow: "Flow" },
-  zh: { exploration: "探索", performance: "表现", adventure: "冒险", social: "社交", comfort: "舒适", flow: "流动" }
+  zh: { exploration: "探索", performance: "表现", adventure: "冒险", social: "社交", comfort: "舒适", flow: "动作流畅感" }
 };
 
 const reasonCopy: Record<Locale, Record<DnaDimension, string>> = {
