@@ -64,7 +64,9 @@ const copy = {
     states: ["Want to climb", "Climbed", "Private notes"],
     openAtlas: "Open My Atlas",
     footer: "A source-aware guide to climbing places and the routes that shape them.",
-    feedback: "Send feedback"
+    feedback: "Take the website survey",
+    surveyTitle: "Help shape ClimbAtlas.",
+    surveyBody: "6 choice questions and 1 optional comment about what felt interesting and useful. No sign-in needed."
   },
   zh: {
     eyebrow: "个性化攀岩发现",
@@ -98,7 +100,9 @@ const copy = {
     states: ["想爬", "已爬", "私人笔记"],
     openAtlas: "打开我的地图册",
     footer: "一份重视来源、帮助你发现攀岩目的地与线路的指南。",
-    feedback: "发送反馈"
+    feedback: "填写体验问卷",
+    surveyTitle: "分享你的 ClimbAtlas 体验。",
+    surveyBody: "6 道选择题，1 道选填题。告诉我们哪些地方有趣、哪些地方有用。无需登录。"
   }
 };
 
@@ -298,6 +302,16 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-brandforest/15 bg-sand/20 px-5 py-9 sm:px-8 lg:px-12">
+        <div className="mx-auto flex max-w-[1100px] flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+          <div>
+            <h2 className="display-serif text-2xl font-medium text-brandforest">{text.surveyTitle}</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-charcoal/65">{text.surveyBody}</p>
+          </div>
+          <Link className="text-link shrink-0" href="/feedback">{text.feedback} →</Link>
         </div>
       </section>
 

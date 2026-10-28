@@ -17,7 +17,7 @@ The project is still content-first, but V3 adds an optional private user noteboo
 - A unified public route catalog that keeps routes separate from area indexes and hides unreviewed editorial Picks
 - Climbing DNA preference matching for destinations and routes, with explicit limits: a match is not an ability, readiness, or safety score
 - Lightweight English / Chinese language switching
-- Built-in feedback page at `/feedback`
+- Seven-question English/Chinese website survey at `/feedback`, with direct submission and private CSV export through Supabase
 - Optional Supabase Auth for private saved routes and notes
 - `/my-atlas` private notebook for `want to climb`, `climbed`, and personal notes
 - Private profile fields for display name, home base, experience level, preferred styles, and bio
@@ -166,7 +166,7 @@ Then check the core flows locally:
 - Route Explorer search, mobile filter disclosure, type, difficulty, grade, sector, and sort controls work.
 - Route pages show route facts and only the editorial, photo, practice, story, source, or external-resource sections that actually have content.
 - Climbing DNA preference matches remain clearly separated from ability, readiness, and safety.
-- Feedback page opens at `/feedback`.
+- Website survey opens at `/feedback`; a submission reports success only after the answers are saved.
 - The `EN / 中文` language toggle works.
 - `/my-atlas` opens.
 - With Supabase configured, users can sign in, save a route, mark it climbed, and save a private note.
@@ -184,11 +184,10 @@ The simplest deployment path is Vercel:
    - Install command: `npm install`
    - Build command: `npm run build`
    - Output directory: leave empty/default
-4. Optional feedback setup:
-   - Copy `.env.example` as a reference for available feedback settings.
-   - Leave `NEXT_PUBLIC_FEEDBACK_URL` blank to use the built-in `/feedback` page.
-   - Add `NEXT_PUBLIC_FEEDBACK_EMAIL` if you want the feedback page to open an email draft.
-   - Add `NEXT_PUBLIC_FEEDBACK_URL` only if you later want the feedback button to open an external form service.
+4. Website survey setup:
+   - Run `supabase/migrations/20261028_site_survey.sql` in the existing project's Supabase SQL Editor.
+   - The survey reuses the Supabase environment variables below. No extra secret is needed.
+   - See `docs/site-survey.md` for channel links, CSV export and interpretation of responses.
 5. Optional Supabase setup:
    - Add `NEXT_PUBLIC_SUPABASE_URL`.
    - Add `NEXT_PUBLIC_SUPABASE_ANON_KEY`.

@@ -5,6 +5,7 @@ import { UserProfileProvider } from "@/components/UserProfileProvider";
 import { UserRoutesProvider } from "@/components/UserRoutesProvider";
 import { UserAtlasProvider } from "@/components/UserAtlasProvider";
 import { UserClimbingLogsProvider } from "@/components/UserClimbingLogsProvider";
+import { SiteSurveyAttribution } from "@/components/SiteSurveyAttribution";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <SiteSurveyAttribution />
         <LanguageProvider>
           <SupabaseProvider>
             <UserProfileProvider>

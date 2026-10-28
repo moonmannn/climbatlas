@@ -39423,7 +39423,7 @@
         {
           "provider": "openbeta",
           "label": "OpenBeta route metadata snapshot",
-          "sourceUrl": "https://openbeta.io/climb/5f015427-135f-457f-ad20-93b83ce3c38d/robyns-little-foot",
+          "sourceUrl": "https://github.com/OpenBeta/openbeta-graphql",
           "externalId": "5f015427-135f-457f-ad20-93b83ce3c38d",
           "sourceRelease": "v2026-08-02",
           "attribution": "OpenBeta contributors",
@@ -39447,18 +39447,7 @@
         "checkedAt": "2026-08-05",
         "notes": "OpenBeta CC0 metadata; not independently field-verified by ClimbAtlas."
       },
-      "externalResources": [
-        {
-          "title": "OpenBeta route page",
-          "url": "https://openbeta.io/climb/5f015427-135f-457f-ad20-93b83ce3c38d/robyns-little-foot",
-          "type": "route-database",
-          "linkStatus": "route-specific",
-          "description": {
-            "en": "Open the exact OpenBeta route page for current source information.",
-            "zh": "前往对应的 OpenBeta 线路页面查看当前来源信息。"
-          }
-        }
-      ],
+      "externalResources": [],
       "media": [],
       "normalization": {
         "adapter": "openbeta",
@@ -40231,7 +40220,7 @@
         {
           "provider": "openbeta",
           "label": "OpenBeta route metadata snapshot",
-          "sourceUrl": "https://openbeta.io/climb/7584872a-2bb4-4daa-a636-fd590d02f4b4/fly-you-fools",
+          "sourceUrl": "https://github.com/OpenBeta/openbeta-graphql",
           "externalId": "7584872a-2bb4-4daa-a636-fd590d02f4b4",
           "sourceRelease": "v2026-08-02",
           "attribution": "OpenBeta contributors",
@@ -40255,18 +40244,7 @@
         "checkedAt": "2026-08-05",
         "notes": "OpenBeta CC0 metadata; not independently field-verified by ClimbAtlas."
       },
-      "externalResources": [
-        {
-          "title": "OpenBeta route page",
-          "url": "https://openbeta.io/climb/7584872a-2bb4-4daa-a636-fd590d02f4b4/fly-you-fools",
-          "type": "route-database",
-          "linkStatus": "route-specific",
-          "description": {
-            "en": "Open the exact OpenBeta route page for current source information.",
-            "zh": "前往对应的 OpenBeta 线路页面查看当前来源信息。"
-          }
-        }
-      ],
+      "externalResources": [],
       "media": [],
       "normalization": {
         "adapter": "openbeta",
@@ -41871,7 +41849,7 @@
         {
           "provider": "openbeta",
           "label": "OpenBeta route metadata snapshot",
-          "sourceUrl": "https://openbeta.io/climb/fa1689ba-5310-4892-b1db-10e1448789b7/mr-underhill",
+          "sourceUrl": "https://github.com/OpenBeta/openbeta-graphql",
           "externalId": "fa1689ba-5310-4892-b1db-10e1448789b7",
           "sourceRelease": "v2026-08-02",
           "attribution": "OpenBeta contributors",
@@ -41895,18 +41873,7 @@
         "checkedAt": "2026-08-05",
         "notes": "OpenBeta CC0 metadata; not independently field-verified by ClimbAtlas."
       },
-      "externalResources": [
-        {
-          "title": "OpenBeta route page",
-          "url": "https://openbeta.io/climb/fa1689ba-5310-4892-b1db-10e1448789b7/mr-underhill",
-          "type": "route-database",
-          "linkStatus": "route-specific",
-          "description": {
-            "en": "Open the exact OpenBeta route page for current source information.",
-            "zh": "前往对应的 OpenBeta 线路页面查看当前来源信息。"
-          }
-        }
-      ],
+      "externalResources": [],
       "media": [],
       "normalization": {
         "adapter": "openbeta",
