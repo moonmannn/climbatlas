@@ -5,6 +5,7 @@ import type {
   RouteHighlight
 } from "@/types/destination";
 import { metadataRoutesByDestination } from "@/data/generatedRouteMetadata";
+import { destinationPhotosBySlug } from "@/data/destinationPhotos";
 import { resolveRouteId } from "@/lib/routeAliases";
 
 const lastChecked = "2026-06-10";
@@ -11110,6 +11111,11 @@ export const destinations: Destination[] = [
     ]
   }
 ];
+
+for (const destination of destinations) {
+  const photos = destinationPhotosBySlug[destination.slug];
+  if (photos?.length) destination.images = photos;
+}
 
 export function getDestinationBySlug(slug: string) {
   return destinations.find((destination) => destination.slug === slug);

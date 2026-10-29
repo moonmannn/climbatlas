@@ -4,6 +4,7 @@ import { LocalizedText } from "@/components/LanguageProvider";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedDestinationDescription } from "@/components/LocalizedDestinationDescription";
 import { DestinationHeroImage } from "@/components/DestinationHeroImage";
+import { DestinationGallery } from "@/components/DestinationGallery";
 import { DestinationDnaMatch } from "@/components/DestinationDnaMatch";
 import { DestinationPicks } from "@/components/DestinationPicks";
 import { RouteIndex } from "@/components/RouteIndex";
@@ -55,7 +56,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   }
 
   const heroImage = destination.images?.[0];
-  const galleryImages = destination.images?.slice(0, 4) ?? [];
+  const galleryImages = destination.images ?? [];
   const guideContent = destination.guideContent;
   const localizedDescription = getDestinationLocalizedContent(destination)?.description;
   const explorerRoutes = getPublicRoutesForDestination(destination.slug)
@@ -102,6 +103,9 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             <a href="#picks"><LocalizedText en="Picks" zh="精选" /></a>
           )}
           <a href="#all-routes"><LocalizedText en="All routes" zh="全部线路" /></a>
+          {galleryImages.length > 0 && (
+            <a href="#photos"><LocalizedText en="Photos" zh="照片" /> <span className="text-charcoal/50">{galleryImages.length}</span></a>
+          )}
           {guideContent && (
             <a href="#field-guide"><LocalizedText en="Field guide" zh="旅行手记" /></a>
           )}
@@ -292,60 +296,25 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           </section>
 
           {galleryImages.length > 0 && (
-            <section className="order-6 border-t border-ridge/30 p-6 sm:p-8">
+            <section className="order-6 scroll-mt-36 border-t border-ridge/30 p-6 sm:p-8" id="photos">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.2em] text-forest">
                     <LocalizedText en="Destination gallery" zh="目的地图库" />
                   </p>
                   <h2 className="mt-2 text-3xl font-black text-bark">
-                    <LocalizedText en="Visual context" zh="视觉参考" />
+                    <LocalizedText en="A look around" zh="看看这里" />
                   </h2>
                 </div>
                 <p className="max-w-xl text-sm leading-6 text-bark/70">
                   <LocalizedText
-                    en="These images are licensed context photos for the destination. They are not route topos or guidebook substitutes."
-                    zh="这些图片是目的地的授权/开放许可视觉参考，不是 topo，也不是路书替代品。"
+                    en="Explore the landscape and climbing areas. Select a photo to view it in full."
+                    zh="看看当地的地貌与岩场，点击照片可放大查看。"
                   />
                 </p>
               </div>
 
-              <div className="mt-5 grid gap-4 md:grid-cols-2">
-                {galleryImages.map((image) => (
-                  <figure
-                    className="overflow-hidden rounded-md border border-ridge/25 bg-white/45"
-                    key={image.src}
-                  >
-                    <img
-                      alt={image.alt}
-                      className="h-64 w-full object-cover"
-                      decoding="async"
-                      loading="lazy"
-                      src={image.src}
-                    />
-                    <figcaption className="space-y-1 p-3 text-xs leading-5 text-bark/70">
-                      <p className="font-bold text-bark">{image.caption}</p>
-                      <p>
-                        <LocalizedText
-                          en="Destination context photo."
-                          zh="目的地环境照片。"
-                        />
-                      </p>
-                      <p>
-                        {image.credit} - {image.license}
-                      </p>
-                      <a
-                        className="font-bold text-forest underline decoration-forest/40 underline-offset-4"
-                        href={image.sourceUrl}
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <LocalizedText en="Image source" zh="图片来源" />
-                      </a>
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
+              <DestinationGallery images={galleryImages} />
             </section>
           )}
 

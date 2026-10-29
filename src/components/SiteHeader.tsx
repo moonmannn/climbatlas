@@ -10,7 +10,8 @@ const navItems = [
   { href: "/", label: { en: "Discover", zh: "发现" } },
   { href: "/climbing-dna", label: { en: "Climbing DNA", zh: "攀岩 DNA" } },
   { href: "/explore", label: { en: "Map", zh: "地图" } },
-  { href: "/my-atlas", label: { en: "My Atlas", zh: "我的地图册" } }
+  { href: "/my-atlas", label: { en: "My Atlas", zh: "我的地图册" } },
+  { href: "/feedback", label: { en: "Website survey", zh: "体验问卷" } }
 ];
 
 export function SiteHeader() {
@@ -26,12 +27,14 @@ export function SiteHeader() {
           <span className="display-serif text-2xl font-medium leading-none">ClimbAtlas</span>
         </Link>
 
-        <nav className="mx-auto hidden h-full items-center gap-8 md:flex">
+        <nav aria-label={locale === "zh" ? "主导航" : "Main navigation"} className="mx-auto hidden h-full items-center gap-6 lg:flex">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname === item.href || pathname.startsWith(`${item.href}/`);
             return (
               <Link className={`relative flex h-full items-center text-sm font-medium transition-colors ${active ? "text-brandforest" : "text-charcoal/60 hover:text-brandforest"}`} href={item.href} key={item.href}>
-                {item.label[locale]}
+                {item.href === "/feedback" ? (
+                  <span className="rounded border border-terracotta/30 bg-terracotta/10 px-3 py-2 font-semibold text-brandforest">{item.label[locale]}</span>
+                ) : item.label[locale]}
                 {active ? <span className="absolute bottom-0 left-0 h-0.5 w-full bg-terracotta" /> : null}
               </Link>
             );
@@ -40,15 +43,15 @@ export function SiteHeader() {
 
         <div className="ml-auto flex shrink-0 items-center gap-2">
           <LanguageToggle />
-          <div className="hidden md:block"><AuthButton /></div>
-          <button aria-expanded={menuOpen} aria-label={locale === "zh" ? "打开导航菜单" : "Open navigation menu"} className="grid h-10 w-10 place-items-center border border-brandforest/15 text-xl text-brandforest md:hidden" onClick={() => setMenuOpen((current) => !current)} type="button">≡</button>
+          <div className="hidden lg:block"><AuthButton /></div>
+          <button aria-controls="mobile-navigation" aria-expanded={menuOpen} aria-label={locale === "zh" ? (menuOpen ? "关闭导航菜单" : "打开导航菜单") : (menuOpen ? "Close navigation menu" : "Open navigation menu")} className="grid h-10 w-10 place-items-center border border-brandforest/15 text-xl text-brandforest lg:hidden" onClick={() => setMenuOpen((current) => !current)} type="button">≡</button>
         </div>
 
         {menuOpen ? (
-          <div className="absolute left-5 right-5 top-[62px] border border-brandforest/15 bg-cream p-4 shadow-editorial md:hidden">
-            <nav className="grid">
+          <div className="absolute left-5 right-5 top-[62px] border border-brandforest/15 bg-cream p-4 shadow-editorial lg:hidden" id="mobile-navigation">
+            <nav aria-label={locale === "zh" ? "主导航" : "Main navigation"} className="grid">
               {navItems.map((item) => (
-                <Link className="border-b border-brandforest/10 py-3 text-sm font-medium text-brandforest last:border-0" href={item.href} key={item.href} onClick={() => setMenuOpen(false)}>{item.label[locale]}</Link>
+                <Link className={`border-b border-brandforest/10 py-3 text-sm text-brandforest last:border-0 ${item.href === "/feedback" ? "font-semibold underline decoration-terracotta underline-offset-4" : "font-medium"}`} href={item.href} key={item.href} onClick={() => setMenuOpen(false)}>{item.label[locale]}</Link>
               ))}
             </nav>
             <div className="mt-4"><AuthButton /></div>

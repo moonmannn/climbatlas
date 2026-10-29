@@ -65,8 +65,8 @@ const copy = {
     openAtlas: "Open My Atlas",
     footer: "A source-aware guide to climbing places and the routes that shape them.",
     feedback: "Take the website survey",
-    surveyTitle: "Help shape ClimbAtlas.",
-    surveyBody: "6 choice questions and 1 optional comment about what felt interesting and useful. No sign-in needed."
+    surveyTitle: "Share your experience",
+    surveyBody: "7 questions · No sign-in needed"
   },
   zh: {
     eyebrow: "个性化攀岩发现",
@@ -101,8 +101,8 @@ const copy = {
     openAtlas: "打开我的地图册",
     footer: "一份重视来源、帮助你发现攀岩目的地与线路的指南。",
     feedback: "填写体验问卷",
-    surveyTitle: "分享你的 ClimbAtlas 体验。",
-    surveyBody: "6 道选择题，1 道选填题。告诉我们哪些地方有趣、哪些地方有用。无需登录。"
+    surveyTitle: "分享你的使用体验",
+    surveyBody: "7 道题 · 无需登录"
   }
 };
 
@@ -162,6 +162,18 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
   return (
     <main className="min-h-screen bg-cream text-charcoal">
       <SiteHeader />
+
+      <aside aria-label={locale === "zh" ? "网站体验问卷" : "Website experience survey"} className="border-b border-brandforest/15 bg-sand/25 px-5 py-4 sm:px-8 lg:px-12">
+        <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4">
+          <div className="min-w-0 sm:flex sm:flex-wrap sm:items-center sm:gap-x-5 sm:gap-y-1">
+            <p className="text-sm font-semibold leading-6 text-brandforest">{text.surveyTitle}</p>
+            <p className="text-xs leading-5 text-charcoal/65 sm:text-sm">{text.surveyBody}</p>
+          </div>
+          <Link className="inline-flex min-h-11 shrink-0 items-center gap-3 rounded border border-brandforest bg-brandforest px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-pine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brandforest" href="/feedback">
+            {locale === "zh" ? "填写问卷" : "Take the survey"} <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </aside>
 
       <section className="px-5 py-[72px] sm:px-8 lg:px-12 lg:py-12">
         <div className="mx-auto grid max-w-[1440px] gap-14 lg:grid-cols-[42fr_58fr] lg:items-start">
@@ -251,7 +263,7 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
                 </div>
                 <div className="pt-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">{formatDestinationFact(destination.country, locale)}</p>
-                  <div className="mt-2 flex items-end justify-between gap-4">
+                  <div className="mt-2 flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
                     <h3 className="display-serif text-3xl font-medium text-brandforest">{destination.name}</h3>
                     {match ? (
                       <span className="max-w-32 text-right text-sm font-semibold text-brandforest">
@@ -302,16 +314,6 @@ export function HomeClient({ featuredDestinations, mapDestinations }: HomeClient
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="border-t border-brandforest/15 bg-sand/20 px-5 py-9 sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-[1100px] flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
-          <div>
-            <h2 className="display-serif text-2xl font-medium text-brandforest">{text.surveyTitle}</h2>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-charcoal/65">{text.surveyBody}</p>
-          </div>
-          <Link className="text-link shrink-0" href="/feedback">{text.feedback} →</Link>
         </div>
       </section>
 

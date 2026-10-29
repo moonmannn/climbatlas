@@ -5,6 +5,10 @@ The first six questions are required; the improvement comment is optional.
 No sign-in, name or email is required. This is a convenience sample recruited
 through social and community channels, not a representative population survey.
 
+The survey is linked in the homepage banner immediately below the header,
+the desktop navigation, the mobile navigation menu and the homepage footer.
+The banner is visible before scrolling in both languages.
+
 ## Enable storage
 
 Run `supabase/migrations/20261028_site_survey.sql` in the **existing ClimbAtlas

@@ -37,10 +37,17 @@ export type RouteSource = {
 export type ImageAsset = {
   src: string;
   alt: string;
+  altZh?: string;
   caption: string;
+  captionZh?: string;
+  title?: string;
   credit: string;
   license: string;
+  licenseUrl?: string;
   sourceUrl: string;
+  width?: number;
+  height?: number;
+  modification?: string;
   imageType: "route" | "area-context" | "destination-context";
 };
 

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
+    "photos:validate": "node scripts/validate-destination-photos.mjs",
     "routes:generate": "node scripts/route-metadata.mjs",
     "routes:validate-schema": "node scripts/validate-route-schema.mjs",
     "routes:validate": "node scripts/routes/validate-routes.mjs",
